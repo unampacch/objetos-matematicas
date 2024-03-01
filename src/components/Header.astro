@@ -1,0 +1,20 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<header class="fixed bg-slate-900/75 text-white w-screen py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0 animate-fade-down ease-out">
+  <div class="grid grid-cols-2 max-w-7xl mx-auto items-center justify-between">
+    <div class="w-1/2">
+      <a href="#">
+        <Logo />
+      </a>
+    </div>
+    <nav class="col-span-1 justify-self-center">
+      <ul class="flex gap-4 uppercase">
+        <li>Inicio</li>
+        <li>Catálogo</li>
+        <li>¿Que estoy viendo?</li>
+      </ul>
+    </nav>
+  </div>
+</header>
