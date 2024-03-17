@@ -1,0 +1,37 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
+const { matematicas_1 } = asignaturas;
+const { objetos_aprendizaje } = matematicas_1;
+---
+
+<Layout
+  title="Matemáticas 1"
+  description="Curso de matemáticas 1 para estudiantes de bachillerato. Aprende a resolver ecuaciones, desigualdades, funciones, gráficas y más."
+>
+  <h2>Matemáticas 1</h2>
+  <p>
+    Curso de matemáticas 1 para estudiantes de bachillerato. Aprende a resolver
+    ecuaciones, desigualdades, funciones, gráficas y más.
+  </p>
+  <h3>
+    Los siguientes son los objetos de aprendizaje que tenemos disponbles para
+    ti:
+  </h3>
+  <section
+    class="w-full max-w-[1400px] grid lg:grid-cols-3 auto-rows-[30rem] gap-4 mx-auto p-6 md:p-12 lg:p-20"
+  >
+    {
+      objetos_aprendizaje.map((objeto) => (
+        <div
+          class="flex justify-center text-center items-end size-50 backdrop-blur-lg bg-slate-300 mx-4"
+          style={`
+            background-image: url(${objeto.portada});
+          `}
+        >
+          <h4 class="text-xl">{objeto.titulo}</h4>
+        </div>
+      ))
+    }
+  </section>
+</Layout>

@@ -2,23 +2,23 @@
   "main": [
     {
       "name": "facebook",
-      "icon": "FaFacebook",
-      "link": "https://www.facebook.com/"
+      "icon": "bi:facebook",
+      "link": "https://www.facebook.com/portalacademico"
     },
     {
       "name": "twitter",
-      "icon": "FaTwitter",
-      "link": "https://twitter.com/"
+      "icon": "bi:twitter-x",
+      "link": "https://twitter.com/academico_cch"
     },
     {
-      "name": "github",
-      "icon": "FaGithub",
-      "link": "https://www.github.com/"
+      "name": "youtube",
+      "icon": "bi:youtube",
+      "link": "https://www.youtube.com/user/portalacademicocch"
     },
     {
-      "name": "linkedin",
-      "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/"
+      "name": "instagram",
+      "icon": "bi:instagram",
+      "link": "https://www.instagram.com/portalacademicocch"
     }
   ]
 }

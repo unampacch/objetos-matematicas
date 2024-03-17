@@ -1,0 +1,124 @@
+{
+  "asignaturas": {
+    "matematicas_1": {
+      "titulo": "Matemáticas 1",
+      "objetos_aprendizaje": [
+        {
+          "titulo": "Operaciones básicas",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Aprende las operaciones básicas de matemáticas."
+        },
+        {
+          "titulo": "Números naturales",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos y operaciones con números naturales."
+        },
+        {
+          "titulo": "Fracciones",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Aprende sobre fracciones y operaciones con ellas."
+        },
+        {
+          "titulo": "Geometría básica",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Introducción a la geometría básica."
+        },
+        {
+          "titulo": "Sistemas de medida",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Unidades de medida y conversiones."
+        }
+      ]
+    },
+    "matematicas_2": {
+      "titulo": "Matemáticas 2",
+      "objetos_aprendizaje": [
+        {
+          "titulo": "Álgebra básica",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos básicos de álgebra."
+        },
+        {
+          "titulo": "Geometría avanzada",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Figuras geométricas y sus propiedades."
+        },
+        {
+          "titulo": "Probabilidad",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos básicos de probabilidad."
+        },
+        {
+          "titulo": "Funciones",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Introducción a las funciones matemáticas."
+        },
+        {
+          "titulo": "Estadística básica",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos básicos de estadística."
+        }
+      ]
+    },
+    "estadistica": {
+      "titulo": "Estadística",
+      "objetos_aprendizaje": [
+        {
+          "titulo": "Introducción a la estadística",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos básicos de estadística."
+        },
+        {
+          "titulo": "Distribuciones de probabilidad",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Tipos de distribuciones de probabilidad."
+        },
+        {
+          "titulo": "Estadística descriptiva",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Análisis de datos estadísticos."
+        },
+        {
+          "titulo": "Inferencia estadística",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos básicos de inferencia estadística."
+        },
+        {
+          "titulo": "Regresión y correlación",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Análisis de regresión y correlación."
+        }
+      ]
+    },
+    "calculo": {
+      "titulo": "Cálculo",
+      "objetos_aprendizaje": [
+        {
+          "titulo": "Límites",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos básicos de límites en cálculo."
+        },
+        {
+          "titulo": "Derivadas",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Introducción al cálculo de derivadas."
+        },
+        {
+          "titulo": "Integrales",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos básicos de integración."
+        },
+        {
+          "titulo": "Ecuaciones diferenciales",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Introducción a las ecuaciones diferenciales."
+        },
+        {
+          "titulo": "Cálculo multivariable",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Conceptos básicos de cálculo multivariable."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+---
+import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
+const { matematicas_1 } = asignaturas;
+const { objetos_aprendizaje } = matematicas_1;
+---
+
+<div>
+  <h1>Objetos de Aprendizaje</h1>asd
+  <ul>
+    {objetos_aprendizaje.map((objeto) =>
+    <li>
+      {objeto.titulo}
+    </li>)}
+  </ul>
+</div>

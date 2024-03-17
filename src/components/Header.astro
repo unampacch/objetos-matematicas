@@ -1,7 +1,7 @@
 ---
-import Logo from "./Logo.astro";
-import menu from "../config/menu.json";
-import config from "../config/config.json";
+import Logo from "@/components/Logo.astro";
+import menu from "@/config/menu.json";
+import config from "@/config/config.json";
 export interface ChildNavigationLink {
   name: string;
   url: string;
@@ -19,34 +19,16 @@ const { settings } = config;
 const { pathname } = Astro.url;
 ---
 
-<header class="fixed bg-slate-900/75 text-white w-screen py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0 animate-fade-down ease-out">
-  <div class="grid grid-cols-2 max-w-7xl mx-auto items-center justify-between">
-    <nav class="navbar container">
+<header class="fixed bg-slate-900/75 text-white w-screen py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0">
+  <div class="max-w-7xl mx-auto items-center">
+    <nav class="navbar grid grid-cols-2 justify-between">
     <!-- logo -->
     <div class="order-0">
       <Logo />
     </div>
-    <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1"
-    >
-      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
-        <title>Menu Open</title>
-        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
-      </svg>
-      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
-        <title>Menu Close</title>
-        <polygon
-          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-          transform="rotate(45 10 10)"></polygon>
-      </svg>
-    </label>
-    <!-- /navbar toggler -->
     <ul
       id="nav-menu"
-      class="navbar-nav order-3 hidden w-full pb-6 lg:order-1 lg:flex lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8"
+      class="navbar-nav order-3 w-full pb-6 order-1 flex w-auto space-x-2 pb-0 xl:space-x-8"
     >
       {
         main.map((menu) => (
@@ -68,7 +50,7 @@ const { pathname } = Astro.url;
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </span>
-                <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                <ul class="nav-dropdown-list hidden overflow-hidden animate-fade-down group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
                   {menu.children?.map((child) => (
                     <li class="nav-dropdown-item">
                       <a
@@ -104,6 +86,6 @@ const { pathname } = Astro.url;
       }
 
     </ul>
-  </nav>
+    </nav>
   </div>
 </header>

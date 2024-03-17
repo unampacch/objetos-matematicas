@@ -11,37 +11,37 @@
       "children": [
         {
           "name": "Matemáticas 1",
-          "url": "/mate-1",
+          "url": "/asignaturas/matematicas-1",
           "hasChildren": true,
           "children": [
             {
               "name": "Operaciones básicas",
-              "url": "/mate-1/operaciones-basicas",
+              "url": "/matematicas-1/operaciones-basicas",
               "cover": "url_a_la_imagen.jpg",
               "description": "Aprende las operaciones básicas de matemáticas."
 
             },
             {
               "name": "Números naturales",
-              "url": "/mate-1/numeros-naturales",
+              "url": "/matematicas-1/numeros-naturales",
               "cover": "url_a_la_imagen.jpg",
               "description": "Conceptos y operaciones con números naturales."
             },
             {
               "name": "Fracciones",
-              "url": "/mate-1/fracciones",
+              "url": "/matematicas-1/fracciones",
               "cover": "url_a_la_imagen.jpg",
               "description": "Aprende sobre fracciones y operaciones con ellas."
             },
             {
               "name": "Geometría básica",
-              "url": "/mate-1/geometria-basica",
+              "url": "/matematicas-1/geometria-basica",
               "cover": "url_a_la_imagen.jpg",
               "description": "Introducción a la geometría básica."
             },
             {
               "name": "Sistemas de medida",
-              "url": "/mate-1/sistemas-de-medida",
+              "url": "/matematicas-1/sistemas-de-medida",
               "cover": "url_a_la_imagen.jpg",
               "description": "Unidades de medida y conversiones."
             }
