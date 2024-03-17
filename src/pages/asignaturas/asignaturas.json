@@ -5,26 +5,31 @@
       "objetos_aprendizaje": [
         {
           "titulo": "Operaciones básicas",
+          "slug": "/asignaturas/matematicas-1/operaciones-basicas",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Aprende las operaciones básicas de matemáticas."
         },
         {
           "titulo": "Números naturales",
+          "slug": "/asignaturas/matematicas-1/numeros-naturales",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos y operaciones con números naturales."
         },
         {
           "titulo": "Fracciones",
+          "slug": "/asignaturas/matematicas-1/fracciones",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Aprende sobre fracciones y operaciones con ellas."
         },
         {
           "titulo": "Geometría básica",
+          "slug": "/asignaturas/matematicas-1/geometria-basica",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Introducción a la geometría básica."
         },
         {
           "titulo": "Sistemas de medida",
+          "slug": "/asignaturas/matematicas-1/sistemas-de-medida",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Unidades de medida y conversiones."
         }
@@ -35,26 +40,31 @@
       "objetos_aprendizaje": [
         {
           "titulo": "Álgebra básica",
+          "slug": "/asignaturas/matematicas-2/algebra-basica",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos básicos de álgebra."
         },
         {
           "titulo": "Geometría avanzada",
+          "slug": "/asignaturas/matematicas-2/geometria-avanzada",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Figuras geométricas y sus propiedades."
         },
         {
           "titulo": "Probabilidad",
+          "slug": "/asignaturas/matematicas-2/probabilidad",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos básicos de probabilidad."
         },
         {
           "titulo": "Funciones",
+          "slug": "/asignaturas/matematicas-2/funciones",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Introducción a las funciones matemáticas."
         },
         {
           "titulo": "Estadística básica",
+          "slug": "/asignaturas/matematicas-2/estadistica-basica",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos básicos de estadística."
         }
@@ -65,26 +75,31 @@
       "objetos_aprendizaje": [
         {
           "titulo": "Introducción a la estadística",
+          "slug": "/asignaturas/estadistica/introduccion-estadistica",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos básicos de estadística."
         },
         {
           "titulo": "Distribuciones de probabilidad",
+          "slug": "/asignaturas/estadistica/distribuciones-probabilidad",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Tipos de distribuciones de probabilidad."
         },
         {
           "titulo": "Estadística descriptiva",
+          "slug": "/asignaturas/estadistica/estadistica-descriptiva",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Análisis de datos estadísticos."
         },
         {
           "titulo": "Inferencia estadística",
+          "slug": "/asignaturas/estadistica/inferencia-estadistica",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos básicos de inferencia estadística."
         },
         {
           "titulo": "Regresión y correlación",
+          "slug": "/asignaturas/estadistica/regresion-correlacion",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Análisis de regresión y correlación."
         }
@@ -95,26 +110,31 @@
       "objetos_aprendizaje": [
         {
           "titulo": "Límites",
+          "slug": "/asignaturas/calculo/limites",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos básicos de límites en cálculo."
         },
         {
           "titulo": "Derivadas",
+          "slug": "/asignaturas/calculo/derivadas",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Introducción al cálculo de derivadas."
         },
         {
           "titulo": "Integrales",
+          "slug": "/asignaturas/calculo/integrales",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos básicos de integración."
         },
         {
           "titulo": "Ecuaciones diferenciales",
+          "slug": "/asignaturas/calculo/ecuaciones-diferenciales",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Introducción a las ecuaciones diferenciales."
         },
         {
           "titulo": "Cálculo multivariable",
+          "slug": "/asignaturas/calculo/calculo-multivariable",
           "portada": "url_a_la_imagen.jpg",
           "descripcion": "Conceptos básicos de cálculo multivariable."
         }

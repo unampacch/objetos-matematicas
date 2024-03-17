@@ -1,8 +1,9 @@
 ---
-import Layout from "@/layouts/Layout.astro";
+import BentoItem from "@/components/BentoItem.astro";
 import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
 const { matematicas_1 } = asignaturas;
 const { objetos_aprendizaje } = matematicas_1;
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout
@@ -17,21 +18,37 @@ const { objetos_aprendizaje } = matematicas_1;
   <h3>
     Los siguientes son los objetos de aprendizaje que tenemos disponbles para
     ti:
+    <section
+      class={`
+    w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+    >
+      {
+        objetos_aprendizaje.map((objeto, index) => (
+          <div
+            class={`
+        col-span-10 lg:col-span-${index % 4 === 0 || index % 4 === 3 ? "4" : "6"}
+        flex flex-col
+      `}
+          >
+            <BentoItem title={objeto.titulo} class="flex-1" slug={objeto.slug}>
+              <div
+                slot="image"
+                class={`background transition-scale absolute bottom-0 left-0 top-0
+            -z-10 h-full w-full
+            ${index % 4 === 0 || index % 4 === 3 ? "bg-blue-950" : "bg-blue-800"}
+            bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110`}
+                data-src={index % 2 === 0 ? objeto.portada : "/pistas.webp"}
+              />
+              <p slot="content" class="max-w-xl text-base md:text-lg">
+                {/* Aquí deberías agregar el contenido dinámico si lo tienes */}
+              </p>
+            </BentoItem>
+          </div>
+        ))
+      }
+    </section>
   </h3>
-  <section
-    class="w-full max-w-[1400px] grid lg:grid-cols-3 auto-rows-[30rem] gap-4 mx-auto p-6 md:p-12 lg:p-20"
-  >
-    {
-      objetos_aprendizaje.map((objeto) => (
-        <div
-          class="flex justify-center text-center items-end size-50 backdrop-blur-lg bg-slate-300 mx-4"
-          style={`
-            background-image: url(${objeto.portada});
-          `}
-        >
-          <h4 class="text-xl">{objeto.titulo}</h4>
-        </div>
-      ))
-    }
-  </section>
 </Layout>
