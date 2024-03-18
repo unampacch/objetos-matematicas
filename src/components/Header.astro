@@ -19,73 +19,74 @@ const { settings } = config;
 const { pathname } = Astro.url;
 ---
 
-<header class="fixed bg-slate-900/75 text-white w-screen py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0">
-  <div class="max-w-7xl mx-auto items-center">
-    <nav class="navbar grid grid-cols-2 justify-between">
-    <!-- logo -->
-    <div class="order-0">
-      <Logo />
-    </div>
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-3 w-full pb-6 order-1 flex w-auto space-x-2 pb-0 xl:space-x-8"
-    >
-      {
-        main.map((menu) => (
-          <>
-            {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative">
-                <span
-                  class={`nav-link inline-flex items-center ${
-                    menu.children?.map(({ url }) => url).includes(pathname) ||
-                    menu.children
-                      ?.map(({ url }) => `${url}/`)
-                      .includes(pathname)
-                      ? "active"
-                      : ""
-                  }`}
-                >
-                  {menu.name}
-                  <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </span>
-                <ul class="nav-dropdown-list hidden overflow-hidden animate-fade-down group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
-                  {menu.children?.map((child) => (
-                    <li class="nav-dropdown-item">
-                      <a
-                        href={child.url}
-                        aria-label={child.name}
-                        class={`nav-dropdown-link block ${
-                          (pathname === `${child.url}/` ||
-                            pathname === child.url) &&
-                          "active"
-                        }`}
-                      >
-                        {child.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ) : (
-              <li class="nav-item">
-                <a
-                  href={menu.url}
-                  class={`nav-link block ${
-                    (pathname === `${menu.url}/` || pathname === menu.url) &&
-                    "active"
-                  }`}
-                >
-                  {menu.name}
-                </a>
-              </li>
-            )}
-          </>
-        ))
-      }
-
-    </ul>
+<header
+  class="fixed bg-light/[.9] w-screen py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0"
+>
+  <div class="max-w-[1400px] mx-auto">
+    <nav class="navbar bg-red-500 w-100 flex items-center justify-between">
+      <!-- logo -->
+      <div class="order-0">
+        <Logo class="bg-slate-50" />
+      </div>
+      <ul
+        id="nav-menu"
+        class="navbar-nav w-auto order-1 flex w-auto space-x-2 xl:space-x-8"
+      >
+        {
+          main.map((menu) => (
+            <>
+              {menu.hasChildren ? (
+                <li class="nav-item nav-dropdown group relative text-dark">
+                  <span
+                    class={`nav-link inline-flex items-center ${
+                      menu.children?.map(({ url }) => url).includes(pathname) ||
+                      menu.children
+                        ?.map(({ url }) => `${url}/`)
+                        .includes(pathname)
+                        ? "active"
+                        : ""
+                    }`}
+                  >
+                    {menu.name}
+                    <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                  <ul class="nav-dropdown-list hidden overflow-hidden animate-fade-down group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 absolute cursor-pointer list-disc">
+                    {menu.children?.map((child) => (
+                      <li class="nav-dropdown-item flex bg-yellow-500">
+                        <a
+                          href={child.url}
+                          aria-label={child.name}
+                          class={`nav-dropdown-link inline-block  ${
+                            (pathname === `${child.url}/` ||
+                              pathname === child.url) &&
+                            "active"
+                          }`}
+                        >
+                          {child.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ) : (
+                <li class="nav-item">
+                  <a
+                    href={menu.url}
+                    class={`nav-link block ${
+                      (pathname === `${menu.url}/` || pathname === menu.url) &&
+                      "active"
+                    }`}
+                  >
+                    {menu.name}
+                  </a>
+                </li>
+              )}
+            </>
+          ))
+        }
+      </ul>
     </nav>
   </div>
 </header>
