@@ -1,5 +1,6 @@
 ---
 import Logo from "@/components/Logo.astro";
+import LogoM from "@/components/LogoM.astro";
 import menu from "@/config/menu.json";
 import config from "@/config/config.json";
 export interface ChildNavigationLink {
@@ -20,23 +21,24 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class="fixed bg-light/[.9] w-screen py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0"
+  class="fixed bg-light/[.9] w-screen py-1 z-10 backdrop-blur-sm top-0 px-8 lg:px-4 hover:transition-all"
 >
   <div class="max-w-[1400px] mx-auto">
-    <nav class="navbar bg-red-500 w-100 flex items-center justify-between">
+    <nav class="navbar w-100 flex items-center justify-between">
       <!-- logo -->
       <div class="order-0">
-        <Logo class="bg-slate-50" />
+        <Logo class="hidden md:block h-10" />
+        <LogoM class="md:hidden size-7" />
       </div>
       <ul
         id="nav-menu"
-        class="navbar-nav w-auto order-1 flex w-auto space-x-2 xl:space-x-8"
+        class="navbar-nav order-1 flex w-auto space-x-2 xl:space-x-8 text-dark font-bold uppercase"
       >
         {
           main.map((menu) => (
             <>
               {menu.hasChildren ? (
-                <li class="nav-item nav-dropdown group relative text-dark">
+                <li class="nav-item nav-dropdown group">
                   <span
                     class={`nav-link inline-flex items-center ${
                       menu.children?.map(({ url }) => url).includes(pathname) ||
@@ -52,9 +54,9 @@ const { pathname } = Astro.url;
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                   </span>
-                  <ul class="nav-dropdown-list hidden overflow-hidden animate-fade-down group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 absolute cursor-pointer list-disc">
+                  <ul class="nav-dropdown-list hidden  animate-fade-down group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 absolute cursor-pointer bg-light">
                     {menu.children?.map((child) => (
-                      <li class="nav-dropdown-item flex bg-yellow-500">
+                      <li class="nav-dropdown-item hover:bg-blue hover:transition-all px-2 py-1">
                         <a
                           href={child.url}
                           aria-label={child.name}
@@ -74,7 +76,7 @@ const { pathname } = Astro.url;
                 <li class="nav-item">
                   <a
                     href={menu.url}
-                    class={`nav-link block ${
+                    class={`nav-link ${
                       (pathname === `${menu.url}/` || pathname === menu.url) &&
                       "active"
                     }`}

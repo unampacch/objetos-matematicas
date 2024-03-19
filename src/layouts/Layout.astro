@@ -1,6 +1,7 @@
 ---
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
+import GlobalStyles from "@/components/GlobalStyles.astro";
 import "@fontsource-variable/onest";
 interface Props {
   description: string;
@@ -27,20 +28,5 @@ const { description, title } = Astro.props;
     <Footer />
   </body>
 </html>
-<style is:global>
-
-  :root {
-    color-scheme: light dark;
-    --red-pantone: 230, 57, 70;
-    --honeydew: 241 250 238;
-    --non-photo-blue: 168, 218, 220;
-    --cerulean: 69, 123, 157;
-    --berkeley-blue: 4, 5, 5;
-    --darkest-blue: 10, 19, 31;
-  }
-  html {
-    font-family: "Onest Variable", sans-serif;
-    background: var(--darkest-blue);
-  }
-
-</style>
+<GlobalStyles />
+```
