@@ -21,13 +21,13 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class="fixed bg-light/[.9] w-screen py-1 z-10 backdrop-blur-sm top-0 px-8 lg:px-4 hover:transition-all"
+  class="fixed bg-light/[.9] w-full py-1 z-10 backdrop-blur-sm top-0 hover:transition-all"
 >
-  <div class="max-w-[1400px] mx-auto">
-    <nav class="navbar w-100 flex items-center justify-between">
+  <div class="mx-auto">
+    <nav class="navbar max-w-[1400px] mx-auto flex items-center justify-between">
       <!-- logo -->
       <div class="order-0">
-        <Logo class="hidden md:block h-10" />
+        <Logo class="hidden md:block h-10 w-15" />
         <LogoM class="md:hidden size-7" />
       </div>
       <ul
