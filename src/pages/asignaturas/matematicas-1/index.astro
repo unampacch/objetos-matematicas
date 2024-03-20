@@ -29,7 +29,7 @@ import Layout from "@/layouts/Layout.astro";
     </p>
     <section
       class={`
-      grid grid-cols-9 auto-rows-[30rem] gap-5
+      grid grid-cols-10 auto-rows-[30rem] gap-5
       mx-auto
     `}
     >
@@ -37,7 +37,7 @@ import Layout from "@/layouts/Layout.astro";
         objetos_aprendizaje.map((objeto, index) => (
           <div
             class={`
-          col-span-${index % 4 === 0 || index % 4 === 3 ? "4" : "5"}
+          col-span-${index % 4 === 0 || index % 4 === 3 ? "4" : "6"}
           flex flex-col
         `}
           >
@@ -60,3 +60,17 @@ import Layout from "@/layouts/Layout.astro";
     </section>
   </div>
 </Layout>
+<style>
+  .col-span-4 {
+    grid-column: span 10 / span 10;
+    @media screen and (min-width: 920px) {
+      grid-column: span 4 / span 4;
+    }
+  }
+  .col-span-6 {
+    grid-column: span 10 / span 10;
+    @media screen and (min-width: 920px) {
+    grid-column: span 6 / span 6;
+    }
+  }
+</style>
