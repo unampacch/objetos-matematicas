@@ -7,30 +7,32 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
 import { Icon } from "astro-icon/components";
 ---
 
-<footer class="bg-theme-light dark:bg-darkmode-theme-light">
-  <div class="container">
-    <i class="fa-brands fa-github"></i>
-    <div class="row items-center py-10">
-      <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
-        <Logo />
+<footer class="bg-lightblue">
+  <div class="container mx-auto text-darkblue">
+    <div class="flex row justify-around items-center py-10">
+      <div class="text-center lg:col-3 lg:mb-0 lg:text-left">
+        <Logo class="h-20" />
       </div>
-      <div class="mb-8 text-center lg:col-6 lg:mb-0">
+      <div class="text-center lg:col-6 lg:mb-0">
         <ul>
           {
             footer.map((menu) => (
               <li class="m-3 inline-block">
-                <a href={menu.url}>{menu.name}</a>
+                <a class="hover:text-blue transition-all" href={menu.url}>
+                  {menu.name}
+                </a>
               </li>
             ))
           }
         </ul>
       </div>
-      <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
+      <div class="text-center lg:col-3 lg:mb-0 lg:mt-0 lg:text-right">
         <ul>
           {
             social.main.map((socialItem) => (
               <li class="m-3 inline-block">
                 <a
+                  class="hover:text-blue transition-all"
                   href={socialItem.link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -44,10 +46,10 @@ import { Icon } from "astro-icon/components";
         </ul>
       </div>
     </div>
-    <div class="border-t border-border py-7 dark:border-darkmode-border">
-      <div class="container text-center text-light dark:text-darkmode-light">
-        <p set:html={config.params.copyright} />
-      </div>
+  </div>
+  <div class="border-t border-border py-7 border-dark">
+    <div class="container text-center text-dark mx-auto">
+      <p set:html={config.params.copyright} />
     </div>
   </div>
 </footer>

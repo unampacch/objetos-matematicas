@@ -1,32 +1,38 @@
 ---
+import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
-import GlobalStyles from "@/components/GlobalStyles.astro";
+import { ViewTransitions } from "astro:transitions";
 import "@fontsource-variable/onest";
-interface Props {
-  description: string;
-  title: string;
-}
 
-const { description, title } = Astro.props;
+import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
+const {
+  image,
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+  ogType,
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      ,
+      ogType={ogType}
+    />
+    {TRANSITION_API && <ViewTransitions />}
   </head>
-  <body>
-    <Header />
-    <main class="mt-20">
+</html>
+<body>
+  <Header title={SITE_TITLE} />
+  <div class="md:flex md:justify-center mb-10">
+    <main class="pt-16">
       <slot />
     </main>
-    <Footer />
-  </body>
-</html>
-<GlobalStyles />
-```
+  </div>
+  <Footer />
+</body>
