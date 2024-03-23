@@ -29,10 +29,8 @@ const {
 </html>
 <body>
   <Header title={SITE_TITLE} />
-  <div class="md:flex md:justify-center mb-10">
-    <main class="pt-16">
-      <slot />
-    </main>
-  </div>
+  <main class="md:flex md:justify-center">
+    <slot />
+  </main>
   <Footer />
 </body>

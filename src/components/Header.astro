@@ -21,10 +21,12 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class="fixed bg-light/[.9] w-full py-1 z-10 backdrop-blur-sm top-0 hover:transition-all"
+  class="bg-light/[.9] w-full py-4 z-50 backdrop-blur-sm top-0 hover:transition-all"
 >
   <div class="mx-auto">
-    <nav class="navbar max-w-[1400px] mx-auto flex items-center justify-between">
+    <nav
+      class="navbar max-w-[1400px] mx-auto flex items-center justify-between"
+    >
       <!-- logo -->
       <div class="order-0">
         <Logo class="hidden md:block h-10 w-15" />
@@ -32,7 +34,7 @@ const { pathname } = Astro.url;
       </div>
       <ul
         id="nav-menu"
-        class="navbar-nav order-1 flex w-auto space-x-2 xl:space-x-8 text-dark font-bold uppercase"
+        class="navbar-nav order-1 flex w-auto space-x-2 xl:space-x-8 text-dark font-semibold uppercase"
       >
         {
           main.map((menu) => (
@@ -56,7 +58,7 @@ const { pathname } = Astro.url;
                   </span>
                   <ul class="nav-dropdown-list hidden  animate-fade-down group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 absolute cursor-pointer bg-light">
                     {menu.children?.map((child) => (
-                      <li class="nav-dropdown-item hover:bg-blue hover:transition-all px-2 py-1">
+                      <li class="nav-dropdown-item hover:bg-lightblue hover:darkblue hover:transition-all px-2 py-1 font-light">
                         <a
                           href={child.url}
                           aria-label={child.name}
@@ -92,3 +94,23 @@ const { pathname } = Astro.url;
     </nav>
   </div>
 </header>
+<style>
+  a.active {
+    color: var(--css-cerulean);
+    font-weight: bold;
+  }
+</style>
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      if (header) {
+        if (window.scrollY > 0) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    });
+  });
+</script>

@@ -6,31 +6,31 @@
         {
           "titulo": "Operaciones básicas",
           "slug": "/asignaturas/matematicas-1/operaciones-basicas",
-          "portada": "./mate1-portada-1.webp",
+          "portada": "../mate1-portada-1.webp",
           "descripcion": "Aprende las operaciones básicas de matemáticas."
         },
         {
           "titulo": "Números naturales",
           "slug": "/asignaturas/matematicas-1/numeros-naturales",
-          "portada": "./mate1-portada-2.webp",
+          "portada": "../mate1-portada-2.webp",
           "descripcion": "Conceptos y operaciones con números naturales."
         },
         {
           "titulo": "Fracciones",
           "slug": "/asignaturas/matematicas-1/fracciones",
-          "portada": "./mate1-portada-3.webp",
+          "portada": "../mate1-portada-3.webp",
           "descripcion": "Aprende sobre fracciones y operaciones con ellas."
         },
         {
           "titulo": "Geometría básica",
           "slug": "/asignaturas/matematicas-1/geometria-basica",
-          "portada": "./mate1-portada-4.webp",
+          "portada": "../mate1-portada-4.webp",
           "descripcion": "Introducción a la geometría básica."
         },
         {
           "titulo": "Sistemas de medida",
           "slug": "/asignaturas/matematicas-1/sistemas-de-medida",
-          "portada": "./mate1-portada-5.webp",
+          "portada": "../mate1-portada-5.webp",
           "descripcion": "Unidades de medida y conversiones."
         }
       ]

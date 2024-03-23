@@ -17,8 +17,8 @@ module.exports = {
 			red: 'rgb(var(--red-pantone) / <alpha-value>)',
 			lightblue : 'rgb(var(--non-photo-blue) / <alpha-value>)',
 			blue: 'rgb(var(--cerulean) / <alpha-value>)',
-			darkblue: 'rgb(var(--berkeley-blue) / <alpha-value>)',
-			dark: 'rgb(var(--darkest-blue) / <alpha-value>)',
+			dark: 'rgb(var(--berkeley-blue) / <alpha-value>)',
+			darkblue: 'rgb(var(--darkest-blue) / <alpha-value>)',
 		}
 		},
 	},
