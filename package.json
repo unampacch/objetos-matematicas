@@ -17,10 +17,12 @@
     "@iconify-json/bi": "^1.1.23",
     "astro": "^4.4.6",
     "astro-icon": "^1.1.0",
+    "katex": "^0.16.9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@types/katex": "^0.16.7",
     "sass": "^1.72.0",
     "tailwindcss-animated": "^1.0.1"
   }

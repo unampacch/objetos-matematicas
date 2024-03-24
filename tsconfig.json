@@ -3,9 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@img/*": ["public/*"],
     }
-  },
-    "include": ["**/*.ts", "**/*.tsx", "**/*.astro"],
-  "exclude": ["node_modules"]
+  }
 }
