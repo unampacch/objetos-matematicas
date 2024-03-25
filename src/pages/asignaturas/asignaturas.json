@@ -1,6 +1,7 @@
 {
   "asignaturas": {
     "matematicas_1": {
+      "slug": "matematicas-1",
       "titulo": "Matemáticas 1",
       "descripcion": "Curso de Matemáticas 1 para estudiantes de bachillerato. Aprende a resolver problemas matemáticos de forma sencilla y divertida.",
       "objetos_aprendizaje": [
@@ -37,6 +38,7 @@
       ]
     },
     "matematicas_2": {
+      "slug": "matematicas-2",
       "titulo": "Matemáticas 2",
       "descripcion": "Curso de Matemáticas 2 para estudiantes de bachillerato. Aprende álgebra, geometría, probabilidad y estadística de forma sencilla y divertida.",
       "objetos_aprendizaje": [
@@ -73,6 +75,7 @@
       ]
     },
     "estadistica": {
+      "slug" : "estadistica",
       "titulo": "Estadística",
       "descripcion": "Curso de Estadística para estudiantes de bachillerato. Aprende a analizar datos y tomar decisiones basadas en la información.",
       "objetos_aprendizaje": [
@@ -109,6 +112,7 @@
       ]
     },
     "calculo": {
+      "slug": "calculo",
       "titulo": "Cálculo",
       "descripcion": "Curso de Cálculo para estudiantes de bachillerato. Aprende los conceptos básicos de cálculo diferencial e integral.",
       "objetos_aprendizaje": [
