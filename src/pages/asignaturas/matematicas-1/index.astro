@@ -35,10 +35,12 @@ import Layout from "@/layouts/Layout.astro";
         objetos_aprendizaje.map((objeto, index) => (
           <div
             class={`
-          col-span-${index % 4 === 0 || index % 4 === 3 ? "4" : "6"}
-          flex flex-col animate-fade
-        `}
+              col-span-${index % 4 === 0 || index % 4 === 3 ? "4" : "6"}
+              flex flex-col
+              ${index % 2 === 0 ? "animate-fade-right" : "animate-fade-left"}
+            `}
           >
+
             <BentoItem title={objeto.titulo} class="flex-1" slug={objeto.slug}>
               <img
                 slot="image"
