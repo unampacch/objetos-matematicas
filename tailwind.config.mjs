@@ -22,5 +22,8 @@ module.exports = {
 		}
 		},
 	},
-	plugins: [animations],
+	plugins: [
+		animations,
+		require('flowbite/plugin')
+	],
 }

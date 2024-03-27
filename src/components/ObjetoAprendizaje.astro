@@ -21,6 +21,7 @@ const { objetos_aprendizaje } = asignaturaData;
   duration-1000 ease-in-out
   -z-10 relative top-0 left-0 right-0 bottom-0"
 />
+
 <nav class="flex" aria-label="Breadcrumb">
   <ol
     class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
@@ -101,6 +102,30 @@ const { objetos_aprendizaje } = asignaturaData;
     {(titulo = objetos_aprendizaje[index].titulo)}
   </span>
 </h2>
+<section class="flex justify-center">
+  {
+    objetos_aprendizaje[index]?.pantallas?.map((pantalla: any, i: number) => (
+      <button
+        data-tooltip-target={i}
+        type="button"
+        class="mb-1 text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center"
+      >
+        <a href={pantalla.slug}>
+          {i + 1}
+        </a>
+        <div
+          id={i.toString()}
+          role="tooltip"
+          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-dark transition-opacity duration-300 bg-lightblue rounded-lg shadow-sm opacity-0 tooltip"
+        >{pantalla.titulo}
+          <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      </button>
+    )) || ""
+  }
+</section>
+
+
 <h3 class="ms-2 font-semibold text-gray-500 dark:text-gray-400">
   {(subtitulo = objetos_aprendizaje[index].descripcion)}
 </h3>

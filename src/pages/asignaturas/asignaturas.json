@@ -9,31 +9,126 @@
           "titulo": "Operaciones básicas",
           "slug": "/asignaturas/matematicas-1/operaciones-basicas",
           "portada": "../mate1-portada-1.webp",
-          "descripcion": "Aprende las operaciones básicas de matemáticas."
+          "descripcion": "Aprende las operaciones básicas de matemáticas.",
+          "pantallas": [
+            {
+              "titulo": "Suma",
+              "slug": "/asignaturas/matematicas-1/operaciones-basicas/suma",
+              "descripcion": "Aprende a sumar números."
+            },
+            {
+              "titulo": "Resta",
+              "slug": "/asignaturas/matematicas-1/operaciones-basicas/resta",
+              "descripcion": "Aprende a restar números."
+            },
+            {
+              "titulo": "Multiplicación",
+              "slug": "/asignaturas/matematicas-1/operaciones-basicas/multiplicacion",
+              "descripcion": "Aprende a multiplicar números."
+            },
+            {
+              "titulo": "División",
+              "slug": "/asignaturas/matematicas-1/operaciones-basicas/division",
+              "descripcion": "Aprende a dividir números."
+            }
+          ]
         },
         {
           "titulo": "Números naturales",
           "slug": "/asignaturas/matematicas-1/numeros-naturales",
           "portada": "../mate1-portada-2.webp",
-          "descripcion": "Conceptos y operaciones con números naturales."
+          "descripcion": "Conceptos y operaciones con números naturales.",
+          "pantallas": [
+            {
+              "titulo": "Números enteros",
+              "slug": "/asignaturas/matematicas-1/numeros-naturales/numeros-enteros",
+              "descripcion": "Conceptos y operaciones con números enteros."
+            },
+            {
+              "titulo": "Números racionales",
+              "slug": "/asignaturas/matematicas-1/numeros-naturales/numeros-racionales",
+              "descripcion": "Conceptos y operaciones con números racionales."
+            }
+          ]
         },
         {
           "titulo": "Fracciones",
           "slug": "/asignaturas/matematicas-1/fracciones",
           "portada": "../mate1-portada-3.webp",
-          "descripcion": "Aprende sobre fracciones y operaciones con ellas."
+          "descripcion": "Aprende sobre fracciones y operaciones con ellas.",
+          "pantallas": [
+            {
+              "titulo": "Suma de fracciones",
+              "slug": "/asignaturas/matematicas-1/fracciones/suma",
+              "descripcion": "Aprende a sumar fracciones."
+            },
+            {
+              "titulo": "Resta de fracciones",
+              "slug": "/asignaturas/matematicas-1/fracciones/resta",
+              "descripcion": "Aprende a restar fracciones."
+            },
+            {
+              "titulo": "Multiplicación de fracciones",
+              "slug": "/asignaturas/matematicas-1/fracciones/multiplicacion",
+              "descripcion": "Aprende a multiplicar fracciones."
+            },
+            {
+              "titulo": "División de fracciones",
+              "slug": "/asignaturas/matematicas-1/fracciones/division",
+              "descripcion": "Aprende a dividir fracciones."
+            }
+          ]
         },
         {
           "titulo": "Geometría básica",
           "slug": "/asignaturas/matematicas-1/geometria-basica",
           "portada": "../mate1-portada-4.webp",
-          "descripcion": "Introducción a la geometría básica."
+          "descripcion": "Introducción a la geometría básica.",
+          "pantallas": [
+            {
+              "titulo": "Figuras geométricas",
+              "slug": "/asignaturas/matematicas-1/geometria-basica/figuras-geometricas",
+              "descripcion": "Tipos de figuras geométricas."
+            },
+            {
+              "titulo": "Perímetro y área",
+              "slug": "/asignaturas/matematicas-1/geometria-basica/perimetro-area",
+              "descripcion": "Cálculo de perímetro y área de figuras geométricas."
+            },
+            {
+              "titulo": "Volumen",
+              "slug": "/asignaturas/matematicas-1/geometria-basica/volumen",
+              "descripcion": "Cálculo de volumen de figuras geométricas."
+            }
+          ]
         },
         {
           "titulo": "Sistemas de medida",
           "slug": "/asignaturas/matematicas-1/sistemas-de-medida",
           "portada": "../mate1-portada-5.webp",
-          "descripcion": "Unidades de medida y conversiones."
+          "descripcion": "Unidades de medida y conversiones.",
+          "pantallas": [
+            {
+              "titulo": "Longitud",
+              "slug": "/asignaturas/matematicas-1/sistemas-de-medida/longitud",
+              "descripcion": "Unidades de medida de longitud."
+            },
+            {
+              "titulo": "Masa",
+              "slug": "/asignaturas/matematicas-1/sistemas-de-medida/masa",
+              "descripcion": "Unidades de medida de masa."
+            },
+            {
+              "titulo": "Volumen",
+              "slug": "/asignaturas/matematicas-1/sistemas-de-medida/volumen",
+              "descripcion": "Unidades de medida de volumen."
+            },
+            {
+              "titulo": "Tiempo",
+              "slug": "/asignaturas/matematicas-1/sistemas-de-medida/tiempo",
+              "descripcion": "Unidades de medida de tiempo."
+            }
+          ]
         }
       ]
     },
@@ -46,31 +141,126 @@
           "titulo": "Álgebra básica",
           "slug": "/asignaturas/matematicas-2/algebra-basica",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de álgebra."
+          "descripcion": "Conceptos básicos de álgebra.",
+          "pantallas": [
+            {
+              "titulo": "Ecuaciones lineales",
+              "slug": "/asignaturas/matematicas-2/algebra-basica/ecuaciones-lineales",
+              "descripcion": "Resolución de ecuaciones lineales."
+            },
+            {
+              "titulo": "Ecuaciones cuadráticas",
+              "slug": "/asignaturas/matematicas-2/algebra-basica/ecuaciones-cuadraticas",
+              "descripcion": "Resolución de ecuaciones cuadráticas."
+            },
+            {
+              "titulo": "Sistemas de ecuaciones",
+              "slug": "/asignaturas/matematicas-2/algebra-basica/sistemas-ecuaciones",
+              "descripcion": "Resolución de sistemas de ecuaciones."
+            },
+            {
+              "titulo": "Inecuaciones",
+              "slug": "/asignaturas/matematicas-2/algebra-basica/inecuaciones",
+              "descripcion": "Resolución de inecuaciones."
+            }
+          ]
         },
         {
           "titulo": "Geometría avanzada",
           "slug": "/asignaturas/matematicas-2/geometria-avanzada",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Figuras geométricas y sus propiedades."
+          "descripcion": "Figuras geométricas y sus propiedades.",
+          "pantallas": [
+            {
+              "titulo": "Teorema de Pitágoras",
+              "slug": "/asignaturas/matematicas-2/geometria-avanzada/pitagoras",
+              "descripcion": "Teorema de Pitágoras y sus aplicaciones."
+            },
+            {
+              "titulo": "Teorema de Tales",
+              "slug": "/asignaturas/matematicas-2/geometria-avanzada/tales",
+              "descripcion": "Teorema de Tales y sus aplicaciones."
+            },
+            {
+              "titulo": "Teorema de Euclides",
+              "slug": "/asignaturas/matematicas-2/geometria-avanzada/euclides",
+              "descripcion": "Teorema de Euclides y sus aplicaciones."
+            }
+          ]
         },
         {
           "titulo": "Probabilidad",
           "slug": "/asignaturas/matematicas-2/probabilidad",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de probabilidad."
+          "descripcion": "Conceptos básicos de probabilidad.",
+          "pantallas": [
+            {
+              "titulo": "Eventos aleatorios",
+              "slug": "/asignaturas/matematicas-2/probabilidad/eventos-aleatorios",
+              "descripcion": "Definición de eventos aleatorios."
+            },
+            {
+              "titulo": "Regla de Laplace",
+              "slug": "/asignaturas/matematicas-2/probabilidad/regla-laplace",
+              "descripcion": "Cálculo de probabilidades con la regla de Laplace."
+            },
+            {
+              "titulo": "Distribuciones de probabilidad",
+              "slug": "/asignaturas/matematicas-2/probabilidad/distribuciones",
+              "descripcion": "Tipos de distribuciones de probabilidad."
+            }
+          ]
         },
         {
           "titulo": "Funciones",
           "slug": "/asignaturas/matematicas-2/funciones",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Introducción a las funciones matemáticas."
+          "descripcion": "Introducción a las funciones matemáticas.",
+          "pantallas": [
+            {
+              "titulo": "Funciones lineales",
+              "slug": "/asignaturas/matematicas-2/funciones/lineales",
+              "descripcion": "Definición y gráfica de funciones lineales."
+            },
+            {
+              "titulo": "Funciones cuadráticas",
+              "slug": "/asignaturas/matematicas-2/funciones/cuadraticas",
+              "descripcion": "Definición y gráfica de funciones cuadráticas."
+            },
+            {
+              "titulo": "Funciones exponenciales",
+              "slug": "/asignaturas/matematicas-2/funciones/exponenciales",
+              "descripcion": "Definición y gráfica de funciones exponenciales."
+            },
+            {
+              "titulo": "Funciones logarítmicas",
+              "slug": "/asignaturas/matematicas-2/funciones/logaritmicas",
+              "descripcion": "Definición y gráfica de funciones logarítmicas."
+            }
+          ]
         },
         {
           "titulo": "Estadística básica",
           "slug": "/asignaturas/matematicas-2/estadistica-basica",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de estadística."
+          "descripcion": "Conceptos básicos de estadística.",
+          "pantallas": [
+            {
+              "titulo": "Estadística descriptiva",
+              "slug": "/asignaturas/matematicas-2/estadistica-basica/descriptiva",
+              "descripcion": "Análisis de datos estadísticos."
+            },
+            {
+              "titulo": "Distribuciones de probabilidad",
+              "slug": "/asignaturas/matematicas-2/estadistica-basica/probabilidad",
+              "descripcion": "Tipos de distribuciones de probabilidad."
+            },
+            {
+              "titulo": "Inferencia estadística",
+              "slug": "/asignaturas/matematicas-2/estadistica-basica/inferencia",
+              "descripcion": "Conceptos básicos de inferencia estadística."
+            }
+          ]
         }
       ]
     },
@@ -83,31 +273,116 @@
           "titulo": "Introducción a la estadística",
           "slug": "/asignaturas/estadistica/introduccion-estadistica",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de estadística."
+          "descripcion": "Conceptos básicos de estadística.",
+           "pantallas": [
+            {
+              "titulo": "Estadística descriptiva",
+              "slug": "/asignaturas/matematicas-2/estadistica-basica/descriptiva",
+              "descripcion": "Análisis de datos estadísticos."
+            },
+            {
+              "titulo": "Distribuciones de probabilidad",
+              "slug": "/asignaturas/matematicas-2/estadistica-basica/probabilidad",
+              "descripcion": "Tipos de distribuciones de probabilidad."
+            },
+            {
+              "titulo": "Inferencia estadística",
+              "slug": "/asignaturas/matematicas-2/estadistica-basica/inferencia",
+              "descripcion": "Conceptos básicos de inferencia estadística."
+            }
+          ]
         },
         {
           "titulo": "Distribuciones de probabilidad",
           "slug": "/asignaturas/estadistica/distribuciones-probabilidad",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Tipos de distribuciones de probabilidad."
+          "descripcion": "Tipos de distribuciones de probabilidad.",
+          "pantallas": [
+            {
+              "titulo": "Distribución normal",
+              "slug": "/asignaturas/estadistica/distribuciones-probabilidad/normal",
+              "descripcion": "Distribución normal y sus aplicaciones."
+            },
+            {
+              "titulo": "Distribución binomial",
+              "slug": "/asignaturas/estadistica/distribuciones-probabilidad/binomial",
+              "descripcion": "Distribución binomial y sus aplicaciones."
+            },
+            {
+              "titulo": "Distribución de Poisson",
+              "slug": "/asignaturas/estadistica/distribuciones-probabilidad/poisson",
+              "descripcion": "Distribución de Poisson y sus aplicaciones."
+            }
+          ]
         },
         {
           "titulo": "Estadística descriptiva",
           "slug": "/asignaturas/estadistica/estadistica-descriptiva",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Análisis de datos estadísticos."
+          "descripcion": "Análisis de datos estadísticos.",
+          "pantallas": [
+            {
+              "titulo": "Medidas de tendencia central",
+              "slug": "/asignaturas/estadistica/estadistica-descriptiva/tendencia-central",
+              "descripcion": "Cálculo de medidas de tendencia central."
+            },
+            {
+              "titulo": "Medidas de dispersión",
+              "slug": "/asignaturas/estadistica/estadistica-descriptiva/dispersion",
+              "descripcion": "Cálculo de medidas de dispersión."
+            },
+            {
+              "titulo": "Gráficos estadísticos",
+              "slug": "/asignaturas/estadistica/estadistica-descriptiva/graficos",
+              "descripcion": "Representación gráfica de datos estadísticos."
+            }
+          ]
         },
         {
           "titulo": "Inferencia estadística",
           "slug": "/asignaturas/estadistica/inferencia-estadistica",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de inferencia estadística."
+          "descripcion": "Conceptos básicos de inferencia estadística.",
+          "pantallas": [
+            {
+              "titulo": "Estimación de parámetros",
+              "slug": "/asignaturas/estadistica/inferencia-estadistica/estimacion",
+              "descripcion": "Estimación de parámetros estadísticos."
+            },
+            {
+              "titulo": "Contraste de hipótesis",
+              "slug": "/asignaturas/estadistica/inferencia-estadistica/hipotesis",
+              "descripcion": "Contraste de hipótesis estadísticas."
+            },
+            {
+              "titulo": "Regresión y correlación",
+              "slug": "/asignaturas/estadistica/inferencia-estadistica/regresion-correlacion",
+              "descripcion": "Análisis de regresión y correlación."
+            }
+          ]
         },
         {
           "titulo": "Regresión y correlación",
           "slug": "/asignaturas/estadistica/regresion-correlacion",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Análisis de regresión y correlación."
+          "descripcion": "Análisis de regresión y correlación.",
+          "pantallas": [
+            {
+              "titulo": "Regresión lineal",
+              "slug": "/asignaturas/estadistica/regresion-correlacion/regresion-lineal",
+              "descripcion": "Análisis de regresión lineal."
+            },
+            {
+              "titulo": "Regresión no lineal",
+              "slug": "/asignaturas/estadistica/regresion-correlacion/regresion-no-lineal",
+              "descripcion": "Análisis de regresión no lineal."
+            },
+            {
+              "titulo": "Correlación lineal",
+              "slug": "/asignaturas/estadistica/regresion-correlacion/correlacion-lineal",
+              "descripcion": "Análisis de correlación lineal."
+            }
+          ]
         }
       ]
     },
@@ -120,31 +395,111 @@
           "titulo": "Límites",
           "slug": "/asignaturas/calculo/limites",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de límites en cálculo."
+          "descripcion": "Conceptos básicos de límites en cálculo.",
+          "pantallas": [
+            {
+              "titulo": "Definición de límite",
+              "slug": "/asignaturas/calculo/limites/definicion",
+              "descripcion": "Definición de límite de una función."
+            },
+            {
+              "titulo": "Límites laterales",
+              "slug": "/asignaturas/calculo/limites/laterales",
+              "descripcion": "Cálculo de límites laterales."
+            },
+            {
+              "titulo": "Límites infinitos",
+              "slug": "/asignaturas/calculo/limites/infinitos",
+              "descripcion": "Cálculo de límites infinitos."
+            }
+          ]
         },
         {
           "titulo": "Derivadas",
           "slug": "/asignaturas/calculo/derivadas",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Introducción al cálculo de derivadas."
+          "descripcion": "Introducción al cálculo de derivadas.",
+          "pantallas": [
+            {
+              "titulo": "Definición de derivada",
+              "slug": "/asignaturas/calculo/derivadas/definicion",
+              "descripcion": "Definición de derivada de una función."
+            },
+            {
+              "titulo": "Reglas de derivación",
+              "slug": "/asignaturas/calculo/derivadas/reglas",
+              "descripcion": "Reglas de derivación de funciones."
+            },
+            {
+              "titulo": "Derivadas parciales",
+              "slug": "/asignaturas/calculo/derivadas/parciales",
+              "descripcion": "Cálculo de derivadas parciales."
+            }
+          ]
         },
         {
           "titulo": "Integrales",
           "slug": "/asignaturas/calculo/integrales",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de integración."
+          "descripcion": "Conceptos básicos de integración.",
+          "pantallas": [
+            {
+              "titulo": "Definición de integral",
+              "slug": "/asignaturas/calculo/integrales/definicion",
+              "descripcion": "Definición de integral de una función."
+            },
+            {
+              "titulo": "Reglas de integración",
+              "slug": "/asignaturas/calculo/integrales/reglas",
+              "descripcion": "Reglas de integración de funciones."
+            },
+            {
+              "titulo": "Integrales impropias",
+              "slug": "/asignaturas/calculo/integrales/impropias",
+              "descripcion": "Cálculo de integrales impropias."
+            }
+          ]
         },
         {
           "titulo": "Ecuaciones diferenciales",
           "slug": "/asignaturas/calculo/ecuaciones-diferenciales",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Introducción a las ecuaciones diferenciales."
+          "descripcion": "Introducción a las ecuaciones diferenciales.",
+          "pantallas": [
+            {
+              "titulo": "Ecuaciones diferenciales ordinarias",
+              "slug": "/asignaturas/calculo/ecuaciones-diferenciales/ordinarias",
+              "descripcion": "Resolución de ecuaciones diferenciales ordinarias."
+            },
+            {
+              "titulo": "Ecuaciones diferenciales parciales",
+              "slug": "/asignaturas/calculo/ecuaciones-diferenciales/parciales",
+              "descripcion": "Resolución de ecuaciones diferenciales parciales."
+            }
+          ]
         },
         {
           "titulo": "Cálculo multivariable",
           "slug": "/asignaturas/calculo/calculo-multivariable",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de cálculo multivariable."
+          "descripcion": "Conceptos básicos de cálculo multivariable.",
+          "pantallas": [
+            {
+              "titulo": "Derivadas parciales",
+              "slug": "/asignaturas/calculo/calculo-multivariable/parciales",
+              "descripcion": "Cálculo de derivadas parciales."
+            },
+            {
+              "titulo": "Integrales múltiples",
+              "slug": "/asignaturas/calculo/calculo-multivariable/integrales",
+              "descripcion": "Cálculo de integrales múltiples."
+            },
+            {
+              "titulo": "Teorema de Stokes",
+              "slug": "/asignaturas/calculo/calculo-multivariable/stokes",
+              "descripcion": "Teorema de Stokes y sus aplicaciones."
+            }
+          ]
         }
       ]
     }
