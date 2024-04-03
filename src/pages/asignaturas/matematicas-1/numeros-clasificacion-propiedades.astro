@@ -1,0 +1,42 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+---
+
+<Layout
+  title="Objetos de Matemáticas - Los recursos para reforzar tus conocimientos"
+  description="Los objetos de matemáticas son recursos para reforzar tus conocimientos. Aquí encontrarás ejercicios, explicaciones y ejemplos para aprender matemáticas."
+>
+  <main>
+    <ObjetoAprendizaje index={0} asignatura={"matematicas_1"} />
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="max-w-screen-xl mx-auto">
+        <h3>Un poquito de historia</h3>
+        <p> Desde los inicios de la civilización, el ser humano ha buscado formas de contar, medir y comprender las cantidades que lo rodean. A medida que las antiguas sociedades cazadoras-recolectoras evolucionaban, desarrollaban sistemas rudimentarios de conteo, utilizando los dedos de las manos o incluso objetos como piedras y palos. ¡Imagina cómo debieron haber sido esas primitivas formas de comunicar y representar números! </p>
+        <div class="grid grid-cols-1 gap-10 mb-5 lg:grid-cols-2 items-center">
+          <div>
+            <p class="text-1xl">Pero las cosas no se quedaron ahí. A medida que las civilizaciones antiguas emergían, como la misteriosa Mesopotamia y el enigmático Egipto, los sistemas de numeración se volvieron más complejos y sofisticados. Los mesopotámicos, con su sistema sexagesimal basado en la numeración en base 60, utilizaron símbolos cuneiformes para representar los números. </p>
+          </div>
+          <div>
+            <img class="w-full aspect-square" src="https://picsum.photos/800" alt="" />
+          </div>
+        </div>
+        <p> Mientras tanto, en el antiguo Egipto, los jeroglíficos no solo revelaban secretos sobre la vida y la historia, sino también sobre su sistema decimal de numeración. ¿Puedes imaginar a los antiguos egipcios realizando cálculos y operaciones matemáticas utilizando esos enigmáticos símbolos? 🤔 </p>
+        <p> Pero fue en la antigua Grecia donde se produjo un verdadero salto conceptual en el mundo de los números. Los filósofos y matemáticos griegos, como el legendario Pitágoras, exploraron la esencia misma de los números naturales y su conexión con el universo. Además, descubrieron números irracionales que desafiaban las concepciones tradicionales, como la famosa raíz cuadrada de 2. </p>
+        <p> Pero la historia no termina ahí. En la antigua India, se desarrolló un sistema decimal posicional que sentó las bases para el sistema de numeración que utilizamos en la actualidad. </p>
+      </div>
+      <div class="min-w-full bg-blue lg:my-10 text-dark lg:py-3">
+        <img src="https://picsum.photos/720/480" class="aspect-video mx-auto" alt="">
+        <div class="img-caption mx-auto">
+          <p>Imagen de la antigua Grecia</p>
+        </div>
+      </div>
+      <div class="max-w-screen-lg mx-auto">
+        <p> En la Edad Media, el mundo islámico hizo importantes contribuciones al campo de los números. Los números arábigos, que introdujeron, reemplazaron a los sistemas anteriores y se difundieron por Europa. Además, ampliaron la noción de número al trabajar con números complejos y desarrollar conceptos algebraicos. ¡Imagina descubrir nuevos números y expandir las fronteras del conocimiento matemático! </p>
+        <p> Hoy en día, con los fundamentos matemáticos y la lógica avanzada, hemos llegado a una comprensión más profunda y rigurosa del concepto de número. Pero la historia del número es un reflejo del ingenio y la curiosidad humanas, y muestra cómo nuestra comprensión de los números ha evolucionado, desde primitivos sistemas de conteo hasta teorías matemáticas complejas que nos permiten explorar el universo con una precisión asombrosa. </p>
+        Ejemplo de latex <Latex formula="E=mc^2" />.
+      </div>
+    </div>
+  </main>
+</Layout>

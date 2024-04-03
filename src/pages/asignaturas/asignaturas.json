@@ -6,30 +6,46 @@
       "descripcion": "Curso de Matemáticas 1 para estudiantes de bachillerato. Aprende a resolver problemas matemáticos de forma sencilla y divertida.",
       "objetos_aprendizaje": [
         {
-          "titulo": "Operaciones básicas",
-          "slug": "/asignaturas/matematicas-1/operaciones-basicas",
+          "titulo": "Números Clasificación y propiedades",
+          "slug": "/asignaturas/matematicas-1/numeros-clasificacion-propiedades",
           "portada": "../mate1-portada-1.webp",
-          "descripcion": "Aprende las operaciones básicas de matemáticas.",
+          "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la clasificación de números en el ámbito de la matemática.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la clasificación de números en el ámbito de la matemática. Contiene una exploración exhaustiva de los números reales, enteros, irracionales y racionales, junto con sus propiedades inherentes. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "pantallas": [
             {
-              "titulo": "Suma",
-              "slug": "/asignaturas/matematicas-1/operaciones-basicas/suma",
-              "descripcion": "Aprende a sumar números."
+              "titulo": "¿Qué es un número?",
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion-propiedades/numero",
+              "descripcion": "Definición esencial y clara sobre el concepto de números, estableciendo las bases para comprender los conceptos numéricos más avanzados"
             },
             {
-              "titulo": "Resta",
-              "slug": "/asignaturas/matematicas-1/operaciones-basicas/resta",
-              "descripcion": "Aprende a restar números."
+              "titulo": "Números naturales",
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion-propiedades/numeros-naturales",
+              "descripcion": "Explora las propiedades y características distintivas de los números naturales, sentando las bases para comprender su papel en operaciones y aplicaciones más avanzadas."
             },
             {
-              "titulo": "Multiplicación",
-              "slug": "/asignaturas/matematicas-1/operaciones-basicas/multiplicacion",
-              "descripcion": "Aprende a multiplicar números."
+              "titulo": "Números enteros",
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion-propiedades/numeros-enteros",
+              "descripcion": "Este contenido proporciona una comprensión sólida de los números enteros y su papel en diversas áreas de las matemáticas y las ciencias."
             },
             {
-              "titulo": "División",
-              "slug": "/asignaturas/matematicas-1/operaciones-basicas/division",
-              "descripcion": "Aprende a dividir números."
+              "titulo": "Números racionales",
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion-propiedades/numeros-racionales",
+              "descripcion": "Conjunto matemático fundamental. Explora las propiedades y comportamientos únicos de los números racionales, preparando el terreno para su aplicación en una variedad de contextos matemáticos y prácticos."
+            },
+            {
+              "titulo": "Numeros irracionales",
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion-propiedades/numeros-irracionales",
+              "descripcion": "Este contenido proporciona una comprensión sólida de los números irracionales y su papel en diversas áreas de las matemáticas y las ciencias."
+            },
+            {
+              "titulo": "Números reales",
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion-propiedades/numeros-reales",
+              "descripcion": "Este contenido ofrece una comprensión profunda de los números reales y su aplicación en diversos campos de las matemáticas y las ciencias, estableciendo una base sólida para estudios posteriores."
+            },
+            {
+              "titulo": "Números complejos",
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion-propiedades/numeros-complejos",
+              "descripcion": "Este contenido proporciona una comprensión completa de los números complejos y su utilidad en diversos campos de las matemáticas y la física, preparando el terreno para un estudio más avanzado en esta área."
             }
           ]
         },

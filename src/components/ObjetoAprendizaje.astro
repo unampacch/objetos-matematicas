@@ -12,18 +12,21 @@ import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
 const asignaturaData = asignaturas[asignatura as keyof typeof asignaturas];
 const { objetos_aprendizaje } = asignaturaData;
 ---
-<img
-  src={`../${objetos_aprendizaje[index].portada}`}
-  alt="Portada Objeto de Aprendizaje"
+
+<!-- to do el background molaria dejarlo con parallax, no está funcionando bg-fixed -->
+<div
+  style={`background: url('../${objetos_aprendizaje[index].portada}'); background-size: cover; background-position: center; background-attachment: fixed;`}
   class="w-dvw h-32 md:h-52 lg:h-96 object-cover object-center mb-4 lg:mb-9
   animate-fade transform transition
-  duration-1000 ease-in-out
+  duration-1000 ease-in-out bg-fixed
   -z-10 relative top-0 left-0 right-0 bottom-0"
-/>
-<section class="max-w-screen-xl mx-auto">
+>
+</div>
+
+<section class="container mx-auto">
   <nav class="flex animate-fade-right" aria-label="Breadcrumb">
     <ol
-      class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+      class="block sm:inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
     >
       <li>
         <a
@@ -62,7 +65,8 @@ const { objetos_aprendizaje } = asignaturaData;
           </svg>
           <a
             class="ms-1 text-sm font-light text-gray-400 md:ms-2 hover:underline"
-            href={`../${(asignaturaData as any).slug}`}>{asignaturaData.titulo}</a
+            href={`../${(asignaturaData as any).slug}`}
+            >{asignaturaData.titulo}</a
           >
         </div>
       </li>
@@ -82,8 +86,7 @@ const { objetos_aprendizaje } = asignaturaData;
               stroke-width="2"
               d="m1 9 4-4-4-4"></path>
           </svg>
-          <span
-            class="ms-1 text-sm text-lightblue md:ms-2 font-extrabold"
+          <span class="ms-1 text-sm text-lightblue md:ms-2 font-extrabold"
             >{objetos_aprendizaje[index].titulo}</span
           >
         </div>
@@ -92,40 +95,37 @@ const { objetos_aprendizaje } = asignaturaData;
   </nav>
   <h2
     class="my-5 text-3xl font-extrabold dark:text-light md:text-5xl lg:text-6xl
-    animate-fade-down overflow-hidden transform transition
-                duration-1000 ease-in-out"
+    animate-fade-down overflow-hidden transform transition text-pretty
+    duration-1000 ease-in-out text-transparent bg-clip-text bg-gradient-to-r to-light from-blue"
   >
-    <span
-      class="text-transparent bg-clip-text bg-gradient-to-r to-light from-blue"
-    >
       {(titulo = objetos_aprendizaje[index].titulo)}
-    </span>
   </h2>
-  <article class="flex animate-fade-up justify-end items-center">
+  <article class="flex animate-fade-up justify-end items-center w-100">
+    <!-- to do : se sigue desbordando cuando se hace rize -->
     <span class="uppercase font-semibold text-lightblue">Pantallas</span>
     {
       objetos_aprendizaje[index]?.pantallas?.map((pantalla: any, i: number) => (
         <button
           data-tooltip-target={i}
           type="button"
-          class="mb-1 text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center"
+          class="text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center"
         >
-          <a href={pantalla.slug}>
-            {i + 1}
-          </a>
+          <a href={pantalla.slug}>{i + 1}</a>
           <div
             id={i.toString()}
             role="tooltip"
             class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-dark transition-opacity duration-300 bg-lightblue rounded-lg shadow-sm opacity-0 tooltip"
-          >{pantalla.titulo}
-            <div class="tooltip-arrow" data-popper-arrow></div>
+          >
+            {pantalla.titulo}
+            <div class="tooltip-arrow" data-popper-arrow />
           </div>
         </button>
       )) || ""
     }
   </article>
   <h3
-    class="ms-2 text-xl font-semibold text-gray-500 dark:text-gray-400 animate-fade-right my-5">
+    class="ms-2 text-xl font-semibold text-gray-500 dark:text-gray-400 animate-fade-right my-5"
+  >
     {(subtitulo = objetos_aprendizaje[index].descripcion)}
   </h3>
 </section>

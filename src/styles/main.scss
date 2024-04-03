@@ -24,3 +24,31 @@ header {
 body {
   background-color: var(--css-darkest-blue);
 }
+.objeto-aprendizaje {
+  h3{
+    color: var(--css-red-pantone);
+    font-weight: bolder;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    text-wrap: pretty;
+
+  }
+  p{
+    text-wrap:  pretty;
+  }
+  p:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.img-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 0.5rem;
+  border-left: .22rem var(--css-red-pantone) solid;
+  padding-left: 0.5rem;
+}
