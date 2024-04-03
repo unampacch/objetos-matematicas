@@ -29,12 +29,12 @@ const { pathname } = Astro.url;
     >
       <!-- logo -->
       <div class="order-0">
-        <Logo class="hidden md:block h-10 w-15" />
-        <LogoM class="md:hidden size-7" />
+        <a href="/"><Logo class="hidden md:block h-10 w-15" /></a>
+        <a href="/"><LogoM class="md:hidden size-7" /></a>
       </div>
       <ul
         id="nav-menu"
-        class="navbar-nav order-1 flex w-auto space-x-2 xl:space-x-8 text-dark font-semibold uppercase"
+        class="navbar-nav order-1 cursor-pointer flex w-auto space-x-2 xl:space-x-8 text-dark font-semibold uppercase"
       >
         {
           main.map((menu) => (
