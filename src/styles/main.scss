@@ -1,5 +1,5 @@
 :root {
-color-scheme: light dark;
+color-scheme: dark;
 --red-pantone: 230 57 70;
 --honeydew: 241 250 238;
 --non-photo-blue: 168 218 220;
@@ -14,12 +14,8 @@ color-scheme: light dark;
 --css-darkest-blue: rgb(8 20 36);
 }
 html {
-font-family: "Onest Variable", sans-serif;
-
-scroll-behavior: smooth;
-}
-header {
-  color-scheme: only light;
+  font-family: "Onest Variable", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--css-darkest-blue);
@@ -31,10 +27,9 @@ body {
     font-size: 2.1em;
     text-transform: uppercase;
     text-wrap: pretty;
-
   }
   p{
-    text-wrap:  pretty;
+    text-wrap: pretty;
   }
   p:not(:last-child) {
     margin-bottom: 0.5rem;
