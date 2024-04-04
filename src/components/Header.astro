@@ -2,7 +2,6 @@
 import Logo from "@/components/Logo.astro";
 import LogoM from "@/components/LogoM.astro";
 import menu from "@/config/menu.json";
-import config from "@/config/config.json";
 export interface ChildNavigationLink {
   name: string;
   url: string;
@@ -16,7 +15,6 @@ export interface NavigationLink {
 }
 
 const { main }: { main: NavigationLink[] } = menu;
-/* const { settings } = config; */
 const { pathname } = Astro.url;
 ---
 
@@ -30,7 +28,7 @@ const { pathname } = Astro.url;
       <!-- logo -->
       <div class="order-0">
         <a href="/"><Logo class="hidden md:block h-10 w-15" /></a>
-        <a href="/"><LogoM class="md:hidden size-7" /></a>
+        <a href="/"><LogoM class="md:hidden size-10" /></a>
       </div>
       <ul
         id="nav-menu"
@@ -40,9 +38,11 @@ const { pathname } = Astro.url;
           main.map((menu) => (
             <>
               {menu.hasChildren ? (
-                <li class="nav-item nav-dropdown group">
-                  <span
-                    class={`nav-link inline-flex items-center ${
+                <li>
+                  <a
+                    id="has-children"
+                    data-dropdown-toggle="child"
+                    class={`inline-flex items-center ${
                       menu.children?.map(({ url }) => url).includes(pathname) ||
                       menu.children
                         ?.map(({ url }) => `${url}/`)
@@ -52,33 +52,44 @@ const { pathname } = Astro.url;
                     }`}
                   >
                     {menu.name}
-                    <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                    <svg
+                      class="size-5 fill-current"
+                      viewBox="0 0 20 20"
+                    >
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
-                  </span>
-                  <ul class="nav-dropdown-list hidden  animate-fade-down group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 absolute cursor-pointer bg-light z-50">
-                    {menu.children?.map((child) => (
-                      <li class="nav-dropdown-item hover:bg-lightblue hover:darkblue hover:transition-all px-2 py-1 font-light">
-                        <a
-                          href={child.url}
-                          aria-label={child.name}
-                          class={`nav-dropdown-link inline-block  ${
-                            (pathname === `${child.url}/` ||
-                              pathname === child.url) &&
-                            "active"
-                          }`}
-                        >
-                          {child.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                  </a>
+                  <div
+                    id="child"
+                    class="z-50 hidden bg-whit shadow !top-4"
+                  >
+                    <ul
+                      class="cursor-pointer bg-light z-50"
+                      aria-labelledby="haschildren"
+                    >
+                      {menu.children?.map((child) => (
+                        <li class="hover:bg-lightblue hover:darkblue hover:transition-all px-2 py-1 font-light">
+                          <a
+                            href={child.url}
+                            aria-label={child.name}
+                            class={`inline-block  ${
+                              (pathname === `${child.url}/` ||
+                                pathname === child.url) &&
+                              "active"
+                            }`}
+                          >
+                            {child.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </li>
               ) : (
-                <li class="nav-item">
+                <li>
                   <a
                     href={menu.url}
-                    class={`nav-link ${
+                    class={`${
                       (pathname === `${menu.url}/` || pathname === menu.url) &&
                       "active"
                     }`}
