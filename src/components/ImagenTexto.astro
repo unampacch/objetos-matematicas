@@ -1,0 +1,16 @@
+---
+const { texto = "", imagen = "" } = Astro.props;
+---
+
+<div class="min-w-full lg:my-10 lg:py-3">
+  <div class="grid grid-cols-1 lg:gap-10 mb-5 lg:grid-cols-2 items-center">
+    <div class="pl-10 lg:pb-5 border-t-2 mt-5 lg:mt-0 lg:border-b-4 lg:border-t-0 border-lightblue">
+      <p class="text-lg">
+        {texto}
+      </p>
+    </div>
+    <div>
+      {(<img class="w-full aspect-video" src={imagen} alt="" />)}
+    </div>
+  </div>
+</div>
