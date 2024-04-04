@@ -105,12 +105,13 @@ const { objetos_aprendizaje } = asignaturaData;
     <span class="uppercase font-semibold text-lightblue">Pantallas</span>
     {
       objetos_aprendizaje[index]?.pantallas?.map((pantalla: any, i: number) => (
-        <button
+        <a
           data-tooltip-target={i}
-          type="button"
+          href={pantalla.slug}
           class="text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center"
+          data-tooltip-placement="bottom"
         >
-          <a href={pantalla.slug}>{i + 1}</a>
+          {i + 1}
           <div
             id={i.toString()}
             role="tooltip"
@@ -119,13 +120,11 @@ const { objetos_aprendizaje } = asignaturaData;
             {pantalla.titulo}
             <div class="tooltip-arrow" data-popper-arrow />
           </div>
-        </button>
+        </a>
       )) || ""
     }
   </article>
-  <h3
-    class="ms-2 text-xl font-semibold text-gray-400 animate-fade-right my-5"
-  >
+  <h3 class="ms-2 text-xl font-semibold text-gray-400 animate-fade-right my-5 relative -z-10">
     {(subtitulo = objetos_aprendizaje[index].descripcion)}
   </h3>
 </section>
