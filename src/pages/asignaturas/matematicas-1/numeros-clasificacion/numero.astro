@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout
+  title="Objetos de Matemáticas - Los recursos para reforzar tus conocimientos"
+  description="Los objetos de matemáticas son recursos para reforzar tus conocimientos. Aquí encontrarás ejercicios, explicaciones y ejemplos para aprender matemáticas."
+>
+  <main>
+    <ObjetoAprendizajePantalla index={0} pantallaIndex={0} asignatura={"matematicas_1"} />
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="max-w-screen-xl mx-auto">
+        <p>Un número es una abstracción matemática que representa una cantidad o una posición en una secuencia ordenada. Es una herramienta fundamental en las matemáticas y se utiliza para contar, medir, calcular y describir relaciones cuantitativas.</p>
+        <p>En su forma más básica, los números son símbolos o representaciones abstractas que nos permiten cuantificar objetos, cantidades o magnitudes. Nos permiten responder preguntas como "¿cuántos?" o "¿cuánto?". Por ejemplo, si tenemos tres libros, podemos representar esa cantidad con el número "3".</p>
+        <p>Los números se utilizan en una amplia variedad de disciplinas y aplicaciones, desde la ciencia y la tecnología hasta la economía y la física. Son una herramienta esencial para realizar cálculos matemáticos, resolver ecuaciones, representar medidas y describir patrones numéricos.</p>
+        <h3 class="my-5">Clasificación y propiedades de los números</h3>
+        <p>A medida que la humanidad avanzaba en su comprensión y aplicación de conceptos numéricos, surgió la necesidad de clasificar los números en diferentes categorías. Por ejemplo los números naturales, fueron los primeros en utilizarse, como el 1, 2, 3, que representan cantidades de elementos en una colección o conjunto.</p>
+        <p>Los números se pueden clasificar en varias categorías según sus propiedades y características. Una clasificación común de los números es la siguiente:</p>
+      </div>
+      <ImagenFullCaption src="/matematicas1/clasificacion-numeros.webp" caption="Clasificación de los números." bg="bg-blue" />
+    </div>
+  </main>
+</Layout>

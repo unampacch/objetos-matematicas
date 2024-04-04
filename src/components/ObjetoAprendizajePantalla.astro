@@ -5,25 +5,22 @@ interface Props {
   subtitulo?: string;
   index?: number;
   asignatura: string;
+  pantallaIndex: number;
 }
 
-let { subtitulo, titulo, index = 0, asignatura } = Astro.props;
+let { subtitulo, titulo, index = 0, asignatura, pantallaIndex } = Astro.props;
 import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
 const asignaturaData = asignaturas[asignatura as keyof typeof asignaturas];
 const { objetos_aprendizaje } = asignaturaData;
+
+// Acceder al título y descripción en pantallas según el índice proporcionado
+const tituloEnPantallas =
+  objetos_aprendizaje[index]?.pantallas[pantallaIndex]?.titulo;
+const descripcionEnPantallas =
+  objetos_aprendizaje[index]?.pantallas[pantallaIndex]?.descripcion;
 ---
 
-<!-- to do el background molaria dejarlo con parallax, no está funcionando bg-fixed -->
-<div
-  style={`background: url('../../${objetos_aprendizaje[index].portada}'); background-size: cover; background-position: center; background-attachment: fixed;`}
-  class="w-dvw h-32 md:h-52 lg:h-96 object-cover object-center mb-4 lg:mb-9
-  animate-fade transform transition
-  duration-1000 ease-in-out bg-fixed
-  -z-10 relative top-0 left-0 right-0 bottom-0"
->
-</div>
-
-<section class="container mx-auto">
+<section class="container mx-auto mt-10">
   <nav class="flex animate-fade-right" aria-label="Breadcrumb">
     <ol
       class="block sm:inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
@@ -70,7 +67,7 @@ const { objetos_aprendizaje } = asignaturaData;
           >
         </div>
       </li>
-      <li aria-current="page">
+      <li>
         <div class="flex items-center">
           <svg
             class="rtl:rotate-180 w-3 h-3 text-gray-300 font-light mx-1"
@@ -86,8 +83,31 @@ const { objetos_aprendizaje } = asignaturaData;
               stroke-width="2"
               d="m1 9 4-4-4-4"></path>
           </svg>
+          <a
+            class="ms-1 text-sm font-light text-gray-400 md:ms-2 hover:underline"
+            href={`${objetos_aprendizaje[index].slug}`}
+            >{objetos_aprendizaje[index].titulo}</a
+          >
+        </div>
+      </li>
+      <li aria-current="page">
+        <div class="flex items-center">
+          <svg
+            class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"></path>
+          </svg>
           <span class="ms-1 text-sm text-lightblue md:ms-2 font-extrabold"
-            >{objetos_aprendizaje[index].titulo}</span
+            >{tituloEnPantallas}</span
           >
         </div>
       </li>
@@ -98,7 +118,7 @@ const { objetos_aprendizaje } = asignaturaData;
     animate-fade-down transform transition text-pretty
     duration-1000 ease-in-out text-transparent bg-clip-text bg-gradient-to-r to-light from-blue"
   >
-    {(titulo = objetos_aprendizaje[index].titulo)}
+    {tituloEnPantallas}
   </h2>
   <article id="pantallas" class="flex animate-fade-up justify-end items-center">
     <!-- to do : se sigue desbordando cuando se hace rize -->
@@ -124,8 +144,10 @@ const { objetos_aprendizaje } = asignaturaData;
       )) || ""
     }
   </article>
-  <h3 class="ms-2 text-xl font-semibold text-gray-400 animate-fade-right my-5 relative -z-10">
-    {(subtitulo = objetos_aprendizaje[index].descripcion)}
+  <h3
+    class="ms-2 text-xl font-semibold text-gray-400 animate-fade-right my-5 relative -z-10"
+  >
+    {descripcionEnPantallas}
   </h3>
 </section>
 <script>
@@ -153,7 +175,7 @@ const { objetos_aprendizaje } = asignaturaData;
     transition: all 0.3s ease-in-out;
     z-index: 10;
   }
-  h2{
+  h2 {
     line-height: 2;
   }
 </style>
