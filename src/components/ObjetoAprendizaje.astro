@@ -98,9 +98,9 @@ const { objetos_aprendizaje } = asignaturaData;
     animate-fade-down overflow-hidden transform transition text-pretty
     duration-1000 ease-in-out text-transparent bg-clip-text bg-gradient-to-r to-light from-blue"
   >
-      {(titulo = objetos_aprendizaje[index].titulo)}
+    {(titulo = objetos_aprendizaje[index].titulo)}
   </h2>
-  <article class="flex animate-fade-up justify-end items-center w-100">
+  <article id="pantallas" class="flex animate-fade-up justify-end items-center">
     <!-- to do : se sigue desbordando cuando se hace rize -->
     <span class="uppercase font-semibold text-lightblue">Pantallas</span>
     {
@@ -129,3 +129,29 @@ const { objetos_aprendizaje } = asignaturaData;
     {(subtitulo = objetos_aprendizaje[index].descripcion)}
   </h3>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const header = document.getElementById("pantallas");
+    window.addEventListener("scroll", () => {
+      if (header) {
+        if (window.scrollY > 0) {
+          header.classList.add("pantallas");
+        } else {
+          header.classList.remove("pantallas");
+        }
+      }
+    });
+  });
+</script>
+<style>
+  .pantallas {
+    position: fixed;
+    top: 4.5rem;
+    left: 0;
+    padding: 0.3rem 1rem 0.3rem 0;
+    width: 100%;
+    background-color: var(--css-red-pantone);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+  }
+</style>
