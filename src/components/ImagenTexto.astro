@@ -1,5 +1,5 @@
 ---
-const { texto = "", imagen = "" } = Astro.props;
+const { texto = "", src = "" } = Astro.props;
 ---
 
 <div class="min-w-full lg:my-10 lg:py-3">
@@ -10,7 +10,7 @@ const { texto = "", imagen = "" } = Astro.props;
       </p>
     </div>
     <div>
-      {(<img class="w-full aspect-video" src={imagen} alt="" />)}
+      {(<img class="w-full aspect-video" src={src} alt="" />)}
     </div>
   </div>
 </div>
