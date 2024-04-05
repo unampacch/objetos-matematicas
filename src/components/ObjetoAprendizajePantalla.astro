@@ -7,6 +7,7 @@ interface Props {
   asignatura: string;
   pantallaIndex: number;
 }
+const { pathname } = Astro.url;
 
 let { subtitulo, titulo, index = 0, asignatura, pantallaIndex } = Astro.props;
 import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
@@ -128,7 +129,7 @@ const descripcionEnPantallas =
         <a
           data-tooltip-target={i}
           href={pantalla.slug}
-          class="text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center"
+          class={`text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center ${pathname === pantalla.slug ? "active" : ""}`}
           data-tooltip-placement="bottom"
         >
           {i + 1}
@@ -177,5 +178,9 @@ const descripcionEnPantallas =
   }
   h2 {
     line-height: 2;
+  }
+  .active {
+    background-color: var(--css-red-pantone);
+    color: var(--css-light);
   }
 </style>
