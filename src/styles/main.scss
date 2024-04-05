@@ -23,9 +23,15 @@ body {
 .objeto-aprendizaje {
   h3{
     color: var(--css-red-pantone);
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 2.1em;
     text-transform: uppercase;
+    text-wrap: pretty;
+  }
+  h4{
+    color: var(--css-red-pantone);
+    font-weight: 600;
+    font-size: 1.4em;
     text-wrap: pretty;
   }
   p{

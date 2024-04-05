@@ -2,7 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
-import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import BgFluido from "@/components/BgFluido.astro";
 ---
 
 <Layout
@@ -17,46 +17,182 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
     />
     <div class="objeto-aprendizaje mx-auto animate-fade">
       <div class="max-w-screen-xl mx-auto">
-        <h3><Latex formula="\N" /></h3>
+        <h3><Latex formula="\\mathbb{N}" /></h3>
         <p>
-          Un número es una abstracción matemática que representa una cantidad o
-          una posición en una secuencia ordenada. Es una herramienta fundamental
-          en las matemáticas y se utiliza para contar, medir, calcular y
-          describir relaciones cuantitativas.
+          Los números naturales son aquellos que surgieron por la necesidad del
+          humano de contar, se utilizan para contar objetos o elementos en una
+          colección. Comienzan desde el 1 y se extienden hasta el infinito.
         </p>
+        <div class="text-center text-2xl my-10">
+          <Latex
+            formula="\\mathbb{N}\\left \\{ 1,2,3,4,5\\cdots  \\right \\}"
+          />
+        </div>
+        <p>Algunas propiedades que distinguen a los números naturales son:</p>
+        <div class="grid lg:grid-cols-3 gap-7 lg:gap-10">
+          <div>
+            <h4>Cerradura bajo la adición</h4>
+            <p>
+              La suma de dos números naturales siempre da como resultado otro
+              número natural.
+            </p>
+            <p>
+              Por ejemplo, si tenemos los números naturales 3 y 4, su suma es 7,
+              que también es un número natural.
+            </p>
+          </div>
+          <div>
+            <h4>Cerradura bajo la multiplicaión</h4>
+            <p>
+              El producto de dos números naturales siempre da como resultado
+              otro número natural. Por ejemplo, si multiplicamos los números
+              naturales 2 y 45, obtenemos 90, que también es un número natural.
+            </p>
+          </div>
+          <div>
+            <h4>Propiedad conmutativa</h4>
+            <p>
+              La adición y la multiplicación de los números naturales son
+              conmutativas, lo que significa que el orden de los números no
+              afecta el resultado.
+            </p>
+          </div>
+        </div>
+      </div>
+      <BgFluido bg="bg-blue">
+        <div class="grid lg:grid-cols-3 items-center py-10">
+          <div class="text-center col-span-1">
+            <h4 class="!text-darkblue uppercase font-extrabold">Ejemplo</h4>
+          </div>
+          <div class="flex flex-row text-3xl items-end col-span-2">
+            <div class="flex-auto">
+              <div><Latex formula="a+b=b+a" /></div>
+              <div><Latex formula="2+3=3+2" /></div>
+            </div>
+            <div class="flex-auto">
+              <div><Latex formula="a\\times b=b\\times a" /></div>
+              <div><Latex formula="4\\times 5=5\\times 4" /></div>
+            </div>
+          </div>
+        </div>
+      </BgFluido>
+      <div class="max-w-screen-xl mx-auto container">
+        <h4>Propiedad asociativa</h4>
         <p>
-          En su forma más básica, los números son símbolos o representaciones
-          abstractas que nos permiten cuantificar objetos, cantidades o
-          magnitudes. Nos permiten responder preguntas como "¿cuántos?" o
-          "¿cuánto?". Por ejemplo, si tenemos tres libros, podemos representar
-          esa cantidad con el número "3".
-        </p>
-        <p>
-          Los números se utilizan en una amplia variedad de disciplinas y
-          aplicaciones, desde la ciencia y la tecnología hasta la economía y la
-          física. Son una herramienta esencial para realizar cálculos
-          matemáticos, resolver ecuaciones, representar medidas y describir
-          patrones numéricos.
-        </p>
-        <h3 class="my-5">Clasificación y propiedades de los números</h3>
-        <p>
-          A medida que la humanidad avanzaba en su comprensión y aplicación de
-          conceptos numéricos, surgió la necesidad de clasificar los números en
-          diferentes categorías. Por ejemplo los números naturales, fueron los
-          primeros en utilizarse, como el 1, 2, 3, que representan cantidades de
-          elementos en una colección o conjunto.
-        </p>
-        <p>
-          Los números se pueden clasificar en varias categorías según sus
-          propiedades y características. Una clasificación común de los números
-          es la siguiente:
+          La adición y la multiplicación de los números naturales son
+          asociativas, lo que significa que el agrupamiento de los números no
+          afecta el resultado.
         </p>
       </div>
-      <ImagenFullCaption
-        src="/matematicas1/clasificacion-numeros.webp"
-        caption="Clasificación de los números."
-        bg="bg-blue"
-      />
+      <BgFluido bg="bg-blue">
+        <div class="grid xl:grid-cols-3 grid-cols-1 items-center py-10">
+          <div class="text-center col-span-1">
+            <h4 class="!text-darkblue uppercase font-extrabold">Ejemplo</h4>
+          </div>
+          <div class="grid md:grid-cols-2 text-2xl col-span-2 gap-2">
+            <div class="col-span-1">
+              <div>
+                <Latex formula="a+\\left(b+c\\right)=\\left(a+b\\right)+c" />
+              </div>
+              <div class="mt-5">
+                <Latex
+                  inline={true}
+                  formula="2+\\left(3+4\\right)=\\left(2+3\\right)+4"
+                />
+                <Latex formula="2+\\left(7\\right)=\\left(5\\right)+4" />
+                <Latex inline={true} formula="9=9" />
+              </div>
+            </div>
+            <div class="col-span-1">
+              <Latex
+                formula="a\\times \\left(b\\times c\\right)=(a\\times b)\\times c"
+              />
+              <div class="mt-5">
+                <Latex
+                  formula="2\\times \\left(3\\times 4\\right)=(2\\times 3)\\times 4"
+                />
+                <Latex
+                  formula="2\\times \\left(3\\times 4\\right)=(2\\times 3)\\times 4"
+                />
+                <Latex formula="2\\times \\left(12\\right)=(6)\\times 4" />
+                <Latex formula="24=24" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </BgFluido>
+
+      <div class="max-w-screen-xl mx-auto container">
+        <h4>Propiedad distributiva</h4>
+        <p>
+          La multiplicación se distribuye sobre la adición en los números
+          naturales. Esto significa que si tienes tres números naturales a, b y
+          c, entonces:
+        </p>
+      </div>
+      <BgFluido bg="bg-blue">
+        <div class="grid xl:grid-cols-3 grid-cols-1 items-center py-10">
+          <div class="text-center col-span-1">
+            <h4 class="!text-darkblue uppercase font-extrabold">Ejemplo</h4>
+          </div>
+          <div class="text-2xl col-span-2">
+            <Latex
+              formula="a\\times \\left(b+c\\right)=\\left(a\\times b\\right)+(a\\times c)"
+            />
+            <div class="mt-5">
+              <Latex
+                formula="2\\times \\left(3+4\\right)=\\left(2\\times 3\\right)+\\left(2\\times 4\\right)"
+              />
+              <Latex
+                formula="2\\times \\left(7\\right)=\\left(6\\right)+\\left(8\\right)"
+              />
+              <Latex formula="14=14" />
+            </div>
+          </div>
+        </div>
+      </BgFluido>
+      <div class="max-w-screen-xl mx-auto container">
+        <h4>Elemento neutro de la adición</h4>
+        <p>
+          El número 0 es el elemento neutro para la adición en los números
+          naturales. Esto significa que si sumas 0 a cualquier número natural,
+          el resultado es el mismo número natural.
+        </p>
+      </div>
+      <BgFluido bg="bg-blue">
+        <div class="grid xl:grid-cols-3 grid-cols-1 items-center py-10">
+          <div class="text-center col-span-1">
+            <h4 class="!text-darkblue uppercase font-extrabold">Ejemplo</h4>
+          </div>
+          <div class="text-2xl col-span-2">
+            <Latex formula="a+0=a" />
+            <div class="mt-5">
+              <Latex formula="3+0=3" />
+            </div>
+          </div>
+        </div>
+      </BgFluido>
+      <div class="max-w-screen-xl mx-auto container">
+        <h4>Elemento neutro de la multiplicación</h4>
+        <p>
+          El número 1 es el elemento neutro para la multiplicación en los
+          números naturales. Esto significa que si multiplicas 1 por cualquier
+          número natural, el resultado es el mismo número natural.
+        </p>
+      </div>
+      <BgFluido bg="bg-blue">
+        <div class="grid xl:grid-cols-3 grid-cols-1 items-center py-10">
+          <div class="text-center col-span-1">
+            <h4 class="!text-darkblue uppercase font-extrabold">Ejemplo</h4>
+          </div>
+          <div class="text-2xl col-span-2">
+            <Latex formula="a\\times 1=a" />
+            <div class="mt-5">
+              <Latex formula="4\\times 1=4" />
+            </div>
+          </div>
+        </div>
+      </BgFluido>
     </div>
   </main>
 </Layout>
