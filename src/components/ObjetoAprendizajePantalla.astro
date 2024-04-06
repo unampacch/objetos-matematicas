@@ -7,7 +7,6 @@ interface Props {
   asignatura: string;
   pantallaIndex: number;
 }
-const { pathname } = Astro.url;
 
 let { subtitulo, titulo, index = 0, asignatura, pantallaIndex } = Astro.props;
 import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
@@ -19,6 +18,7 @@ const tituloEnPantallas =
   objetos_aprendizaje[index]?.pantallas[pantallaIndex]?.titulo;
 const descripcionEnPantallas =
   objetos_aprendizaje[index]?.pantallas[pantallaIndex]?.descripcion;
+const { pathname } = Astro.url;
 ---
 
 <section class="container mx-auto mt-10">
@@ -129,7 +129,10 @@ const descripcionEnPantallas =
         <a
           data-tooltip-target={i}
           href={pantalla.slug}
-          class={`text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center ${pathname === pantalla.slug ? "active" : ""}`}
+          class={`text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center
+          ${(pathname === `${pantalla.slug}/` || pathname === pantalla.slug) && "active"}
+
+          `}
           data-tooltip-placement="bottom"
         >
           {i + 1}
