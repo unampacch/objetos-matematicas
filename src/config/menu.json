@@ -10,153 +10,28 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Matemáticas 1",
-          "url": "/asignaturas/matematicas-1",
-          "hasChildren": true,
-          "children": [
-            {
-              "name": "Operaciones básicas",
-              "url": "/matematicas-1/operaciones-basicas",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Aprende las operaciones básicas de matemáticas."
-
-            },
-            {
-              "name": "Números naturales",
-              "url": "/matematicas-1/numeros-naturales",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos y operaciones con números naturales."
-            },
-            {
-              "name": "Fracciones",
-              "url": "/matematicas-1/fracciones",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Aprende sobre fracciones y operaciones con ellas."
-            },
-            {
-              "name": "Geometría básica",
-              "url": "/matematicas-1/geometria-basica",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Introducción a la geometría básica."
-            },
-            {
-              "name": "Sistemas de medida",
-              "url": "/matematicas-1/sistemas-de-medida",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Unidades de medida y conversiones."
-            }
-          ]
+          "name": "Matemáticas I",
+          "url": "/asignaturas/matematicas-1"
         },
         {
-          "name": "Matemáticas 2",
-          "url": "/matematicas-2",
-          "hasChildren": true,
-          "children": [
-            {
-              "name": "Álgebra básica",
-              "url": "/matematicas-2/algebra-basica",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos básicos de álgebra."
-            },
-            {
-              "name": "Geometría avanzada",
-              "url": "/matematicas-2/geometria-avanzada",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Figuras geométricas y sus propiedades."
-            },
-            {
-              "name": "Probabilidad",
-              "url": "/matematicas-2/probabilidad",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos básicos de probabilidad."
-            },
-            {
-              "name": "Funciones",
-              "url": "/matematicas-2/funciones",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Introducción a las funciones matemáticas."
-            },
-            {
-              "name": "Estadística básica",
-              "url": "/matematicas-2/estadistica-basica",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos básicos de estadística."
-            }
-          ]
+          "name": "Matemáticas II",
+          "url": "/matematicas-2"
         },
         {
-          "name": "Estadística",
-          "url": "/estadistica",
-          "hasChildren": true,
-          "children": [
-            {
-              "name": "Introducción a la estadística",
-              "url": "/estadistica/introduccion-a-la-estadistica",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos básicos de estadística."
-            },
-            {
-              "name": "Distribuciones de probabilidad",
-              "url": "/estadistica/distribuciones-de-probabilidad",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Tipos de distribuciones de probabilidad."
-            },
-            {
-              "name": "Estadística descriptiva",
-              "url": "/estadistica/estadistica-descriptiva",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Análisis de datos estadísticos."
-            },
-            {
-              "name": "Inferencia estadística",
-              "url": "/estadistica/inferencia-estadistica",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos básicos de inferencia estadística."
-            },
-            {
-              "name": "Regresión y correlación",
-              "url": "/estadistica/regresion-y-correlacion",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Análisis de regresión y correlación."
-            }
-          ]
+          "name":"Matemáticas III",
+          "url": "/matematicas-3"
         },
         {
-          "name": "Cálculo",
-          "url": "/calculo",
-          "hasChildren": true,
-          "children": [
-            {
-              "name": "Límites",
-              "url": "/calculo/limites",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos básicos de límites en cálculo."
-            },
-            {
-              "name": "Derivadas",
-              "url": "/calculo/derivadas",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Introducción al cálculo de derivadas."
-            },
-            {
-              "name": "Integrales",
-              "url": "/calculo/integrales",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos básicos de integración."
-            },
-            {
-              "name": "Ecuaciones diferenciales",
-              "url": "/calculo/ecuaciones-diferenciales",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Introducción a las ecuaciones diferenciales."
-            },
-            {
-              "name": "Cálculo multivariable",
-              "url": "/calculo/calculo-multivariable",
-              "cover": "url_a_la_imagen.jpg",
-              "description": "Conceptos básicos de cálculo multivariable."
-            }
-          ]
+          "name": "Matemáticas IV",
+          "url": "/matematicas-4"
+        },
+        {
+          "name": "Estadística y probabilidad",
+          "url": "/estadistica"
+        },
+        {
+          "name": "Cálculo diferencial e integral",
+          "url": "/calculo"
         }
       ]
     }

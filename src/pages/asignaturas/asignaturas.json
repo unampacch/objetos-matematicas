@@ -50,99 +50,104 @@
           ]
         },
         {
-          "titulo": "Números naturales",
-          "slug": "/asignaturas/matematicas-1/numeros-naturales",
+          "titulo": "Leyes de exponentes",
+          "slug": "/asignaturas/matematicas-1/leyes-exponentes",
           "portada": "../mate1-portada-2.webp",
-          "descripcion": "Conceptos y operaciones con números naturales.",
+          "descripcion": "Aprende las leyes de los exponentes y su aplicación en la resolución de problemas matemáticos.",
+          "resumen": "Este material aborda de manera detallada los conceptos fundamentales de las leyes de los exponentes en el ámbito de la matemática.",
           "pantallas": [
             {
-              "titulo": "Números enteros",
-              "slug": "/asignaturas/matematicas-1/numeros-naturales/numeros-enteros",
-              "descripcion": "Conceptos y operaciones con números enteros."
+              "titulo": "Propiedades de los exponentes",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/propiedades",
+              "descripcion": "Conceptos fundamentales de los exponentes y sus propiedades."
             },
             {
-              "titulo": "Números racionales",
-              "slug": "/asignaturas/matematicas-1/numeros-naturales/numeros-racionales",
-              "descripcion": "Conceptos y operaciones con números racionales."
+              "titulo": "Multiplicación de potencias",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/multiplicacion",
+              "descripcion": "Reglas para multiplicar potencias con la misma base."
+            },
+            {
+              "titulo": "División de potencias",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/division",
+              "descripcion": "Reglas para dividir potencias con la misma base."
+            },
+            {
+              "titulo": "Potencia de una potencia",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/potencia",
+              "descripcion": "Reglas para elevar una potencia a otra potencia."
+            },
+            {
+              "titulo": "Potencia de un producto",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/producto",
+              "descripcion": "Reglas para elevar un producto a una potencia."
+            },
+            {
+              "titulo": "Potencia de un cociente",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/cociente",
+              "descripcion": "Reglas para elevar un cociente a una potencia."
+            },
+            {
+              "titulo": "Raíces y exponentes fraccionarios",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/raices",
+              "descripcion": "Reglas para calcular raíces y exponentes fraccionarios."
             }
           ]
         },
         {
-          "titulo": "Fracciones",
-          "slug": "/asignaturas/matematicas-1/fracciones",
+          "titulo": "Solución de ecuaciones de primer grado",
+          "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado",
           "portada": "../mate1-portada-3.webp",
-          "descripcion": "Aprende sobre fracciones y operaciones con ellas.",
+          "descripcion": "Aprende a resolver ecuaciones de primer grado de forma sencilla y divertida.",
+          "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de ecuaciones de primer grado en el ámbito de la matemática.",
           "pantallas": [
             {
-              "titulo": "Suma de fracciones",
-              "slug": "/asignaturas/matematicas-1/fracciones/suma",
-              "descripcion": "Aprende a sumar fracciones."
+              "titulo": "Ecuaciones lineales",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-lineales",
+              "descripcion": "Resolución de ecuaciones lineales."
             },
             {
-              "titulo": "Resta de fracciones",
-              "slug": "/asignaturas/matematicas-1/fracciones/resta",
-              "descripcion": "Aprende a restar fracciones."
+              "titulo": "Ecuaciones con paréntesis",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-parentesis",
+              "descripcion": "Resolución de ecuaciones con paréntesis."
             },
             {
-              "titulo": "Multiplicación de fracciones",
-              "slug": "/asignaturas/matematicas-1/fracciones/multiplicacion",
-              "descripcion": "Aprende a multiplicar fracciones."
+              "titulo": "Ecuaciones con denominadores",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-denominadores",
+              "descripcion": "Resolución de ecuaciones con denominadores."
             },
             {
-              "titulo": "División de fracciones",
-              "slug": "/asignaturas/matematicas-1/fracciones/division",
-              "descripcion": "Aprende a dividir fracciones."
+              "titulo": "Ecuaciones con fracciones",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-fracciones",
+              "descripcion": "Resolución de ecuaciones con fracciones."
             }
           ]
         },
         {
-          "titulo": "Geometría básica",
-          "slug": "/asignaturas/matematicas-1/geometria-basica",
+          "titulo": "Solución de sistemas de ecuaciones lineales",
+          "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales",
           "portada": "../mate1-portada-4.webp",
-          "descripcion": "Introducción a la geometría básica.",
+          "descripcion": "Aprende a resolver sistemas de ecuaciones lineales de forma sencilla y divertida.",
+          "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de sistemas de ecuaciones lineales en el ámbito de la matemática.",
           "pantallas": [
             {
-              "titulo": "Figuras geométricas",
-              "slug": "/asignaturas/matematicas-1/geometria-basica/figuras-geometricas",
-              "descripcion": "Tipos de figuras geométricas."
+              "titulo": "Método de sustitución",
+              "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/sustitucion",
+              "descripcion": "Resolución de sistemas de ecuaciones lineales por el método de sustitución."
             },
             {
-              "titulo": "Perímetro y área",
-              "slug": "/asignaturas/matematicas-1/geometria-basica/perimetro-area",
-              "descripcion": "Cálculo de perímetro y área de figuras geométricas."
+              "titulo": "Método de igualación",
+              "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/igualacion",
+              "descripcion": "Resolución de sistemas de ecuaciones lineales por el método de igualación."
             },
             {
-              "titulo": "Volumen",
-              "slug": "/asignaturas/matematicas-1/geometria-basica/volumen",
-              "descripcion": "Cálculo de volumen de figuras geométricas."
-            }
-          ]
-        },
-        {
-          "titulo": "Sistemas de medida",
-          "slug": "/asignaturas/matematicas-1/sistemas-de-medida",
-          "portada": "../mate1-portada-5.webp",
-          "descripcion": "Unidades de medida y conversiones.",
-          "pantallas": [
-            {
-              "titulo": "Longitud",
-              "slug": "/asignaturas/matematicas-1/sistemas-de-medida/longitud",
-              "descripcion": "Unidades de medida de longitud."
+              "titulo": "Método de reducción",
+              "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/reduccion",
+              "descripcion": "Resolución de sistemas de ecuaciones lineales por el método de reducción."
             },
             {
-              "titulo": "Masa",
-              "slug": "/asignaturas/matematicas-1/sistemas-de-medida/masa",
-              "descripcion": "Unidades de medida de masa."
-            },
-            {
-              "titulo": "Volumen",
-              "slug": "/asignaturas/matematicas-1/sistemas-de-medida/volumen",
-              "descripcion": "Unidades de medida de volumen."
-            },
-            {
-              "titulo": "Tiempo",
-              "slug": "/asignaturas/matematicas-1/sistemas-de-medida/tiempo",
-              "descripcion": "Unidades de medida de tiempo."
+              "titulo": "Método gráfico",
+              "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/grafico",
+              "descripcion": "Resolución de sistemas de ecuaciones lineales por el método gráfico."
             }
           ]
         }
@@ -154,249 +159,434 @@
       "descripcion": "Curso de Matemáticas 2 para estudiantes de bachillerato. Aprende álgebra, geometría, probabilidad y estadística de forma sencilla y divertida.",
       "objetos_aprendizaje": [
         {
-          "titulo": "Álgebra básica",
-          "slug": "/asignaturas/matematicas-2/algebra-basica",
+          "titulo": "Factor común",
+          "slug": "/asignaturas/matematicas-2/factor-comun",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de álgebra.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del factor común en el ámbito de la matemática. Contiene una exploración exhaustiva de los factores comunes en monomios y polinomios, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Factor común y su aplicación en la simplificación de expresiones algebraicas.",
           "pantallas": [
             {
-              "titulo": "Ecuaciones lineales",
-              "slug": "/asignaturas/matematicas-2/algebra-basica/ecuaciones-lineales",
-              "descripcion": "Resolución de ecuaciones lineales."
+              "titulo": "Factor común monomio",
+              "slug": "/asignaturas/matematicas-2/factor-comun/monomio",
+              "descripcion": "Factor común monomio y su aplicación en la simplificación de expresiones algebraicas."
             },
             {
+              "titulo": "Factor común polinomio",
+              "slug": "/asignaturas/matematicas-2/factor-comun/polinomio",
+              "descripcion": "Factor común polinomio y su aplicación en la simplificación de expresiones algebraicas."
+            },
+            {
+              "titulo": "Factor común por agrupación",
+              "slug": "/asignaturas/matematicas-2/factor-comun/agrupacion",
+              "descripcion": "Factor común por agrupación y su aplicación en la simplificación de expresiones algebraicas."
+            }
+          ]
+        },
+        {
+          "titulo": "Factorización",
+          "slug": "/asignaturas/matematicas-2/factorizacion",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la factorización en el ámbito de la matemática. Contiene una exploración exhaustiva de los factores comunes, factorización por agrupación, factorización por trinomio cuadrado perfecto, factorización por diferencia de cuadrados, factorización por factor común y factorización por factorización por factorización de polinomios, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Factorización y su aplicación en la simplificación de expresiones algebraicas.",
+          "pantallas": [
+            {
+              "titulo": "Factorización por factor común",
+              "slug": "/asignaturas/matematicas-2/factorizacion/factor-comun",
+              "descripcion": "Factorización por factor común y su aplicación en la simplificación de expresiones algebraicas."
+            },
+            {
+              "titulo": "Factorización por agrupación",
+              "slug": "/asignaturas/matematicas-2/factorizacion/agrupacion",
+              "descripcion": "Factorización por agrupación y su aplicación en la simplificación de expresiones algebraicas."
+            },
+            {
+              "titulo": "Factorización por trinomio cuadrado perfecto",
+              "slug": "/asignaturas/matematicas-2/factorizacion/trinomio-cuadrado-perfecto",
+              "descripcion": "Factorización por trinomio cuadrado perfecto y su aplicación en la simplificación de expresiones algebraicas."
+            },
+            {
+              "titulo": "Factorización por diferencia de cuadrados",
+              "slug": "/asignaturas/matematicas-2/factorizacion/diferencia-cuadrados",
+              "descripcion": "Factorización por diferencia de cuadrados y su aplicación en la simplificación de expresiones algebraicas."
+            },
+            {
+              "titulo": "Factorización por factorización de polinomios",
+              "slug": "/asignaturas/matematicas-2/factorizacion/factorizacion-polinomios",
+              "descripcion": "Factorización por factorización de polinomios y su aplicación en la simplificación de expresiones algebraicas."
+            }
+          ]
+        },
+        {
+          "titulo": "Binomio cuadrado",
+          "slug": "/asignaturas/matematicas-2/binomio-cuadrado",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del binomio cuadrado en el ámbito de la matemática. Contiene una exploración exhaustiva de la identidad del binomio cuadrado, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Binomio cuadrado y su aplicación en la simplificación de expresiones algebraicas.",
+          "pantallas": [
+            {
+              "titulo": "Identidad del binomio cuadrado",
+              "slug": "/asignaturas/matematicas-2/binomio-cuadrado/identidad",
+              "descripcion": "Identidad del binomio cuadrado y su aplicación en la simplificación de expresiones algebraicas."
+            },
+            {
+              "titulo": "Aplicaciones del binomio cuadrado",
+              "slug": "/asignaturas/matematicas-2/binomio-cuadrado/aplicaciones",
+              "descripcion": "Aplicaciones del binomio cuadrado en la simplificación de expresiones algebraicas."
+            }
+          ]
+        },
+        {
+          "titulo": "Solución de ecuaciones de segundo grado",
+          "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de ecuaciones de segundo grado en el ámbito de la matemática. Contiene una exploración exhaustiva de las ecuaciones cuadráticas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Resolución de ecuaciones de segundo grado y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
               "titulo": "Ecuaciones cuadráticas",
-              "slug": "/asignaturas/matematicas-2/algebra-basica/ecuaciones-cuadraticas",
+              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/ecuaciones-cuadraticas",
               "descripcion": "Resolución de ecuaciones cuadráticas."
             },
             {
-              "titulo": "Sistemas de ecuaciones",
-              "slug": "/asignaturas/matematicas-2/algebra-basica/sistemas-ecuaciones",
-              "descripcion": "Resolución de sistemas de ecuaciones."
+              "titulo": "Fórmula general",
+              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/formula-general",
+              "descripcion": "Aplicación de la fórmula general para resolver ecuaciones cuadráticas."
             },
             {
-              "titulo": "Inecuaciones",
-              "slug": "/asignaturas/matematicas-2/algebra-basica/inecuaciones",
-              "descripcion": "Resolución de inecuaciones."
+              "titulo": "Fórmula cuadrática",
+              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/formula-cuadratica",
+              "descripcion": "Aplicación de la fórmula cuadrática para resolver ecuaciones cuadráticas."
             }
           ]
         },
         {
-          "titulo": "Geometría avanzada",
-          "slug": "/asignaturas/matematicas-2/geometria-avanzada",
+          "titulo": "Ecuación general de segundo grado, graﬁcación y determinación de raíces",
+          "slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Figuras geométricas y sus propiedades.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación general de segundo grado, graﬁcación y determinación de raíces en el ámbito de la matemática. Contiene una exploración exhaustiva de la ecuación general de segundo grado, junto con su aplicación en la graﬁcación y determinación de raíces. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Ecuación general de segundo grado, graﬁcación y determinación de raíces.",
           "pantallas": [
             {
-              "titulo": "Teorema de Pitágoras",
-              "slug": "/asignaturas/matematicas-2/geometria-avanzada/pitagoras",
-              "descripcion": "Teorema de Pitágoras y sus aplicaciones."
+              "titulo": "Ecuación general de segundo grado",
+              "slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado/ecuacion-general",
+              "descripcion": "Definición y aplicación de la ecuación general de segundo grado."
             },
             {
-              "titulo": "Teorema de Tales",
-              "slug": "/asignaturas/matematicas-2/geometria-avanzada/tales",
-              "descripcion": "Teorema de Tales y sus aplicaciones."
+              "titulo": "Graﬁcación de ecuaciones cuadráticas",
+              "slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado/graficacion",
+              "descripcion": "Graﬁcación de ecuaciones cuadráticas y su interpretación geométrica."
             },
             {
-              "titulo": "Teorema de Euclides",
-              "slug": "/asignaturas/matematicas-2/geometria-avanzada/euclides",
-              "descripcion": "Teorema de Euclides y sus aplicaciones."
-            }
-          ]
-        },
-        {
-          "titulo": "Probabilidad",
-          "slug": "/asignaturas/matematicas-2/probabilidad",
-          "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de probabilidad.",
-          "pantallas": [
-            {
-              "titulo": "Eventos aleatorios",
-              "slug": "/asignaturas/matematicas-2/probabilidad/eventos-aleatorios",
-              "descripcion": "Definición de eventos aleatorios."
-            },
-            {
-              "titulo": "Regla de Laplace",
-              "slug": "/asignaturas/matematicas-2/probabilidad/regla-laplace",
-              "descripcion": "Cálculo de probabilidades con la regla de Laplace."
-            },
-            {
-              "titulo": "Distribuciones de probabilidad",
-              "slug": "/asignaturas/matematicas-2/probabilidad/distribuciones",
-              "descripcion": "Tipos de distribuciones de probabilidad."
-            }
-          ]
-        },
-        {
-          "titulo": "Funciones",
-          "slug": "/asignaturas/matematicas-2/funciones",
-          "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Introducción a las funciones matemáticas.",
-          "pantallas": [
-            {
-              "titulo": "Funciones lineales",
-              "slug": "/asignaturas/matematicas-2/funciones/lineales",
-              "descripcion": "Definición y gráfica de funciones lineales."
-            },
-            {
-              "titulo": "Funciones cuadráticas",
-              "slug": "/asignaturas/matematicas-2/funciones/cuadraticas",
-              "descripcion": "Definición y gráfica de funciones cuadráticas."
-            },
-            {
-              "titulo": "Funciones exponenciales",
-              "slug": "/asignaturas/matematicas-2/funciones/exponenciales",
-              "descripcion": "Definición y gráfica de funciones exponenciales."
-            },
-            {
-              "titulo": "Funciones logarítmicas",
-              "slug": "/asignaturas/matematicas-2/funciones/logaritmicas",
-              "descripcion": "Definición y gráfica de funciones logarítmicas."
-            }
-          ]
-        },
-        {
-          "titulo": "Estadística básica",
-          "slug": "/asignaturas/matematicas-2/estadistica-basica",
-          "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de estadística.",
-          "pantallas": [
-            {
-              "titulo": "Estadística descriptiva",
-              "slug": "/asignaturas/matematicas-2/estadistica-basica/descriptiva",
-              "descripcion": "Análisis de datos estadísticos."
-            },
-            {
-              "titulo": "Distribuciones de probabilidad",
-              "slug": "/asignaturas/matematicas-2/estadistica-basica/probabilidad",
-              "descripcion": "Tipos de distribuciones de probabilidad."
-            },
-            {
-              "titulo": "Inferencia estadística",
-              "slug": "/asignaturas/matematicas-2/estadistica-basica/inferencia",
-              "descripcion": "Conceptos básicos de inferencia estadística."
+              "titulo": "Determinación de raíces",
+              "slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado/determinacion-raices",
+              "descripcion": "Métodos para determinar las raíces de una ecuación cuadrática."
             }
           ]
         }
       ]
     },
-    "estadistica": {
-      "slug" : "estadistica",
-      "titulo": "Estadística",
-      "descripcion": "Curso de Estadística para estudiantes de bachillerato. Aprende a analizar datos y tomar decisiones basadas en la información.",
+    "matematicas_3": {
+      "slug": "matematicas-3",
+      "titulo": "Matemáticas 3",
+      "descripcion": "Curso de Matemáticas 3 para estudiantes de bachillerato. Aprende geometría analítica, trigonometría y geometría euclidiana de forma sencilla y divertida.",
       "objetos_aprendizaje": [
         {
-          "titulo": "Introducción a la estadística",
-          "slug": "/asignaturas/estadistica/introduccion-estadistica",
+          "titulo": "Concepto de valor absoluto",
+          "slug": "/asignaturas/matematicas-3/valor-absoluto",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de estadística.",
-           "pantallas": [
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del valor absoluto en el ámbito de la matemática. Contiene una exploración exhaustiva del valor absoluto de un número real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Valor absoluto de un número real y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
             {
-              "titulo": "Estadística descriptiva",
-              "slug": "/asignaturas/matematicas-2/estadistica-basica/descriptiva",
-              "descripcion": "Análisis de datos estadísticos."
+              "titulo": "Definición de valor absoluto",
+              "slug": "/asignaturas/matematicas-3/valor-absoluto/definicion",
+              "descripcion": "Definición y propiedades del valor absoluto de un número real."
             },
             {
-              "titulo": "Distribuciones de probabilidad",
-              "slug": "/asignaturas/matematicas-2/estadistica-basica/probabilidad",
-              "descripcion": "Tipos de distribuciones de probabilidad."
+              "titulo": "Operaciones con valor absoluto",
+              "slug": "/asignaturas/matematicas-3/valor-absoluto/operaciones",
+              "descripcion": "Operaciones básicas con valor absoluto."
             },
             {
-              "titulo": "Inferencia estadística",
-              "slug": "/asignaturas/matematicas-2/estadistica-basica/inferencia",
-              "descripcion": "Conceptos básicos de inferencia estadística."
+              "titulo": "Desigualdades con valor absoluto",
+              "slug": "/asignaturas/matematicas-3/valor-absoluto/desigualdades",
+              "descripcion": "Resolución de desigualdades con valor absoluto."
             }
           ]
         },
         {
-          "titulo": "Distribuciones de probabilidad",
-          "slug": "/asignaturas/estadistica/distribuciones-probabilidad",
+          "titulo": "Ley de senos y cosenos",
+          "slug": "/asignaturas/matematicas-3/ley-senos-cosenos",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Tipos de distribuciones de probabilidad.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ley de senos y cosenos en el ámbito de la matemática. Contiene una exploración exhaustiva de la ley de senos y cosenos en triángulos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Ley de senos y cosenos en triángulos y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Distribución normal",
-              "slug": "/asignaturas/estadistica/distribuciones-probabilidad/normal",
-              "descripcion": "Distribución normal y sus aplicaciones."
+              "titulo": "Ley de senos",
+              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/senos",
+              "descripcion": "Definición y aplicación de la ley de senos en triángulos."
             },
             {
-              "titulo": "Distribución binomial",
-              "slug": "/asignaturas/estadistica/distribuciones-probabilidad/binomial",
-              "descripcion": "Distribución binomial y sus aplicaciones."
+              "titulo": "Ley de cosenos",
+              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/cosenos",
+              "descripcion": "Definición y aplicación de la ley de cosenos en triángulos."
             },
             {
-              "titulo": "Distribución de Poisson",
-              "slug": "/asignaturas/estadistica/distribuciones-probabilidad/poisson",
-              "descripcion": "Distribución de Poisson y sus aplicaciones."
+              "titulo": "Problemas de aplicación",
+              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/aplicacion",
+              "descripcion": "Resolución de problemas de aplicación de la ley de senos y cosenos."
             }
           ]
         },
         {
-          "titulo": "Estadística descriptiva",
-          "slug": "/asignaturas/estadistica/estadistica-descriptiva",
+          "titulo": "Manejo de sistemas coordenados en el plano",
+          "slug": "/asignaturas/matematicas-3/sistemas-coordenados",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Análisis de datos estadísticos.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del manejo de sistemas coordenados en el plano en el ámbito de la matemática. Contiene una exploración exhaustiva de los sistemas de coordenadas cartesianas, polares y paramétricas, junto con su aplicación en la representación de puntos y figuras geométricas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Sistemas de coordenadas cartesianas, polares y paramétricas y su aplicación en la representación de puntos y figuras geométricas.",
           "pantallas": [
             {
-              "titulo": "Medidas de tendencia central",
-              "slug": "/asignaturas/estadistica/estadistica-descriptiva/tendencia-central",
-              "descripcion": "Cálculo de medidas de tendencia central."
+              "titulo": "Coordenadas cartesianas",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/cartesianas",
+              "descripcion": "Definición y aplicación de las coordenadas cartesianas en el plano."
             },
             {
-              "titulo": "Medidas de dispersión",
-              "slug": "/asignaturas/estadistica/estadistica-descriptiva/dispersion",
-              "descripcion": "Cálculo de medidas de dispersión."
+              "titulo": "Coordenadas polares",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/polares",
+              "descripcion": "Definición y aplicación de las coordenadas polares en el plano."
             },
             {
-              "titulo": "Gráficos estadísticos",
-              "slug": "/asignaturas/estadistica/estadistica-descriptiva/graficos",
-              "descripcion": "Representación gráfica de datos estadísticos."
+              "titulo": "Coordenadas paramétricas",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/parametricas",
+              "descripcion": "Definición y aplicación de las coordenadas paramétricas en el plano."
             }
           ]
         },
         {
-          "titulo": "Inferencia estadística",
-          "slug": "/asignaturas/estadistica/inferencia-estadistica",
+          "titulo": "Ecuación de la recta",
+          "slug": "/asignaturas/matematicas-3/ecuacion-recta",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de inferencia estadística.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación de la recta en el ámbito de la matemática. Contiene una exploración exhaustiva de la ecuación general de la recta, junto con su aplicación en la representación de rectas en el plano. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Ecuación general de la recta y su aplicación en la representación de rectas en el plano.",
           "pantallas": [
             {
-              "titulo": "Estimación de parámetros",
-              "slug": "/asignaturas/estadistica/inferencia-estadistica/estimacion",
-              "descripcion": "Estimación de parámetros estadísticos."
+              "titulo": "Ecuación general de la recta",
+              "slug": "/asignaturas/matematicas-3/ecuacion-recta/general",
+              "descripcion": "Definición y aplicación de la ecuación general de la recta en el plano."
             },
             {
-              "titulo": "Contraste de hipótesis",
-              "slug": "/asignaturas/estadistica/inferencia-estadistica/hipotesis",
-              "descripcion": "Contraste de hipótesis estadísticas."
+              "titulo": "Ecuación punto-pendiente",
+              "slug": "/asignaturas/matematicas-3/ecuacion-recta/punto-pendiente",
+              "descripcion": "Definición y aplicación de la ecuación punto-pendiente de la recta."
             },
             {
-              "titulo": "Regresión y correlación",
-              "slug": "/asignaturas/estadistica/inferencia-estadistica/regresion-correlacion",
-              "descripcion": "Análisis de regresión y correlación."
+              "titulo": "Ecuación pendiente-intersección",
+              "slug": "/asignaturas/matematicas-3/ecuacion-recta/pendiente-interseccion",
+              "descripcion": "Definición y aplicación de la ecuación pendiente-intersección de la recta."
+            }
+          ]
+        }
+      ]
+    },
+    "matematicas_4": {
+      "slug": "matematicas-4",
+      "titulo": "Matemáticas 4",
+      "descripcion": "Curso de Matemáticas 4 para estudiantes de bachillerato. Aprende cálculo diferencial e integral, álgebra lineal y geometría diferencial de forma sencilla y divertida.",
+      "objetos_aprendizaje": [
+        {
+          "titulo": "Los logaritmos y sus propiedades",
+          "slug": "/asignaturas/matematicas-4/logaritmos",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de los logaritmos y sus propiedades en el ámbito de la matemática. Contiene una exploración exhaustiva de los logaritmos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Logaritmos y sus propiedades y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de logaritmo",
+              "slug": "/asignaturas/matematicas-4/logaritmos/definicion",
+              "descripcion": "Definición y propiedades de los logaritmos."
+            },
+            {
+              "titulo": "Propiedades de los logaritmos",
+              "slug": "/asignaturas/matematicas-4/logaritmos/propiedades",
+              "descripcion": "Propiedades de los logaritmos y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Cambio de base",
+              "slug": "/asignaturas/matematicas-4/logaritmos/cambio-base",
+              "descripcion": "Cambio de base de los logaritmos y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         },
         {
-          "titulo": "Regresión y correlación",
-          "slug": "/asignaturas/estadistica/regresion-correlacion",
+          "titulo": "Concepto de polinomio",
+          "slug": "/asignaturas/matematicas-4/polinomio",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Análisis de regresión y correlación.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del polinomio en el ámbito de la matemática. Contiene una exploración exhaustiva de los polinomios, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Polinomios y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Regresión lineal",
-              "slug": "/asignaturas/estadistica/regresion-correlacion/regresion-lineal",
-              "descripcion": "Análisis de regresión lineal."
+              "titulo": "Definición de polinomio",
+              "slug": "/asignaturas/matematicas-4/polinomio/definicion",
+              "descripcion": "Definición y propiedades de los polinomios."
             },
             {
-              "titulo": "Regresión no lineal",
-              "slug": "/asignaturas/estadistica/regresion-correlacion/regresion-no-lineal",
-              "descripcion": "Análisis de regresión no lineal."
+              "titulo": "Operaciones con polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/operaciones",
+              "descripcion": "Operaciones básicas con polinomios y su aplicación en la resolución de problemas matemáticos."
             },
             {
-              "titulo": "Correlación lineal",
-              "slug": "/asignaturas/estadistica/regresion-correlacion/correlacion-lineal",
-              "descripcion": "Análisis de correlación lineal."
+              "titulo": "Factorización de polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/factorizacion",
+              "descripcion": "Factorización de polinomios y su aplicación en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo": "Concepto de desigualdad",
+          "slug": "/asignaturas/matematicas-4/desigualdad",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la desigualdad en el ámbito de la matemática. Contiene una exploración exhaustiva de las desigualdades, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Desigualdades y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de desigualdad",
+              "slug": "/asignaturas/matematicas-4/desigualdad/definicion",
+              "descripcion": "Definición y propiedades de las desigualdades."
+            },
+            {
+              "titulo": "Resolución de desigualdades",
+              "slug": "/asignaturas/matematicas-4/desigualdad/resolucion",
+              "descripcion": "Resolución de desigualdades y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Desigualdades compuestas",
+              "slug": "/asignaturas/matematicas-4/desigualdad/compuestas",
+              "descripcion": "Desigualdades compuestas y su aplicación en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo": "Concepto de dominio, codominio y regla de correspondencia",
+          "slug": "/asignaturas/matematicas-4/dominio-codominio",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del dominio, codominio y regla de correspondencia en el ámbito de la matemática. Contiene una exploración exhaustiva de los conjuntos de partida y llegada, junto con su aplicación en la representación de funciones matemáticas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Dominio, codominio y regla de correspondencia en la representación de funciones matemáticas.",
+          "pantallas": [
+            {
+              "titulo": "Definición de dominio",
+              "slug": "/asignaturas/matematicas-4/dominio-codominio/dominio",
+              "descripcion": "Definición y propiedades del dominio en la representación de funciones matemáticas."
+            },
+            {
+              "titulo": "Definición de codominio",
+              "slug": "/asignaturas/matematicas-4/dominio-codominio/codominio",
+              "descripcion": "Definición y propiedades del codominio en la representación de funciones matemáticas."
+            },
+            {
+              "titulo": "Definición de regla de correspondencia",
+              "slug": "/asignaturas/matematicas-4/dominio-codominio/regla-correspondencia",
+              "descripcion": "Definición y propiedades de la regla de correspondencia en la representación de funciones matemáticas."
+            }
+          ]
+        },
+        {
+          "titulo": "Concepto de función",
+          "slug": "/asignaturas/matematicas-4/funcion",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la función en el ámbito de la matemática. Contiene una exploración exhaustiva de las funciones matemáticas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Funciones matemáticas y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de función",
+              "slug": "/asignaturas/matematicas-4/funcion/definicion",
+              "descripcion": "Definición y propiedades de las funciones matemáticas."
+            },
+            {
+              "titulo": "Tipos de funciones",
+              "slug": "/asignaturas/matematicas-4/funcion/tipos",
+              "descripcion": "Tipos de funciones matemáticas y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Representación gráfica de funciones",
+              "slug": "/asignaturas/matematicas-4/funcion/grafica",
+              "descripcion": "Representación gráfica de funciones matemáticas y su interpretación geométrica."
+            }
+          ]
+        },
+        {
+          "titulo": "Función exponencial y logarítmica",
+          "slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la función exponencial y logarítmica en el ámbito de la matemática. Contiene una exploración exhaustiva de las funciones exponenciales y logarítmicas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Funciones exponenciales y logarítmicas y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de función exponencial",
+              "slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/exponencial",
+              "descripcion": "Definición y propiedades de la función exponencial."
+            },
+            {
+              "titulo": "Definición de función logarítmica",
+              "slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/logaritmica",
+              "descripcion": "Definición y propiedades de la función logarítmica."
+            },
+            {
+              "titulo": "Aplicaciones de las funciones exponenciales y logarítmicas",
+              "slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/aplicaciones",
+              "descripcion": "Aplicaciones de las funciones exponenciales y logarítmicas en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo": "Gráﬁca de Funciones",
+          "slug": "/asignaturas/matematicas-4/grafica-funciones",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la gráﬁca de funciones en el ámbito de la matemática. Contiene una exploración exhaustiva de la representación gráﬁca de funciones matemáticas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Representación gráﬁca de funciones matemáticas y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de gráﬁca de funciones",
+              "slug": "/asignaturas/matematicas-4/grafica-funciones/definicion",
+              "descripcion": "Definición y propiedades de la representación gráﬁca de funciones matemáticas."
+            },
+            {
+              "titulo": "Tipos de gráﬁcas de funciones",
+              "slug": "/asignaturas/matematicas-4/grafica-funciones/tipos",
+              "descripcion": "Tipos de representación gráﬁca de funciones matemáticas y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Interpretación geométrica de las gráﬁcas de funciones",
+              "slug": "/asignaturas/matematicas-4/grafica-funciones/interpretacion",
+              "descripcion": "Interpretación geométrica de las representaciones gráﬁcas de funciones matemáticas."
+            }
+          ]
+        },
+        {
+          "titulo": "Funciones trigonométricas",
+          "slug": "/asignaturas/matematicas-4/funciones-trigonometricas",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las funciones trigonométricas en el ámbito de la matemática. Contiene una exploración exhaustiva de las funciones seno, coseno, tangente, cotangente, secante y cosecante, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Funciones trigonométricas y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de funciones trigonométricas",
+              "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/definicion",
+              "descripcion": "Definición y propiedades de las funciones trigonométricas."
+            },
+            {
+              "titulo": "Funciones seno y coseno",
+              "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/seno-coseno",
+              "descripcion": "Definición y propiedades de las funciones seno y coseno."
+            },
+            {
+              "titulo": "Funciones tangente y cotangente",
+              "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/tangente-cotangente",
+              "descripcion": "Definición y propiedades de las funciones tangente y cotangente."
+            },
+            {
+              "titulo": "Funciones secante y cosecante",
+              "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/secante-cosecante",
+              "descripcion": "Definición y propiedades de las funciones secante y cosecante."
             }
           ]
         }
@@ -408,112 +598,326 @@
       "descripcion": "Curso de Cálculo para estudiantes de bachillerato. Aprende los conceptos básicos de cálculo diferencial e integral.",
       "objetos_aprendizaje": [
         {
-          "titulo": "Límites",
-          "slug": "/asignaturas/calculo/limites",
+          "titulo": "Sucesiones y series ",
+          "slug": "/asignaturas/calculo/sucesiones-series",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de límites en cálculo.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las sucesiones y series en el ámbito de la matemática. Contiene una exploración exhaustiva de las sucesiones y series numéricas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de sucesiones",
+              "slug": "/asignaturas/calculo/sucesiones-series/sucesiones",
+              "descripcion": "Definición y propiedades de las sucesiones numéricas."
+            },
+            {
+              "titulo": "Definición de series",
+              "slug": "/asignaturas/calculo/sucesiones-series/series",
+              "descripcion": "Definición y propiedades de las series numéricas."
+            },
+            {
+              "titulo": "Convergencia y divergencia",
+              "slug": "/asignaturas/calculo/sucesiones-series/convergencia-divergencia",
+              "descripcion": "Criterios de convergencia y divergencia de sucesiones y series numéricas."
+            }
+          ]
+        },
+        {
+          "titulo": "Continuidad de funciones",
+          "slug": "/asignaturas/calculo/continuidad-funciones",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la continuidad de funciones en el ámbito de la matemática. Contiene una exploración exhaustiva de la continuidad de funciones reales, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Continuidad de funciones reales y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de continuidad",
+              "slug": "/asignaturas/calculo/continuidad-funciones/continuidad",
+              "descripcion": "Definición y propiedades de la continuidad de funciones reales."
+            },
+            {
+              "titulo": "Tipos de discontinuidades",
+              "slug": "/asignaturas/calculo/continuidad-funciones/discontinuidades",
+              "descripcion": "Tipos de discontinuidades de funciones reales y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Teorema del valor intermedio",
+              "slug": "/asignaturas/calculo/continuidad-funciones/valor-intermedio",
+              "descripcion": "Teorema del valor intermedio y su aplicación en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo": "Límite de una función ",
+          "slug": "/asignaturas/calculo/limite-funcion",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del límite de una función en el ámbito de la matemática. Contiene una exploración exhaustiva del límite de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Límite de una función real y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
               "titulo": "Definición de límite",
-              "slug": "/asignaturas/calculo/limites/definicion",
-              "descripcion": "Definición de límite de una función."
+              "slug": "/asignaturas/calculo/limite-funcion/limite",
+              "descripcion": "Definición y propiedades del límite de una función real."
             },
             {
-              "titulo": "Límites laterales",
-              "slug": "/asignaturas/calculo/limites/laterales",
-              "descripcion": "Cálculo de límites laterales."
+              "titulo": "Propiedades de los límites",
+              "slug": "/asignaturas/calculo/limite-funcion/propiedades",
+              "descripcion": "Propiedades de los límites de funciones reales y su aplicación en la resolución de problemas matemáticos."
             },
             {
-              "titulo": "Límites infinitos",
-              "slug": "/asignaturas/calculo/limites/infinitos",
-              "descripcion": "Cálculo de límites infinitos."
+              "titulo": "Cálculo de límites",
+              "slug": "/asignaturas/calculo/limite-funcion/calculo",
+              "descripcion": "Métodos para calcular límites de funciones reales y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         },
         {
-          "titulo": "Derivadas",
-          "slug": "/asignaturas/calculo/derivadas",
+          "titulo": "Concepto de derivada, su interpretación geométrica",
+          "slug": "/asignaturas/calculo/derivada-interpretacion",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Introducción al cálculo de derivadas.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la derivada y su interpretación geométrica en el ámbito de la matemática. Contiene una exploración exhaustiva de la derivada de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Derivada de una función real y su interpretación geométrica en la resolución de problemas matemáticos.",
           "pantallas": [
             {
               "titulo": "Definición de derivada",
-              "slug": "/asignaturas/calculo/derivadas/definicion",
-              "descripcion": "Definición de derivada de una función."
+              "slug": "/asignaturas/calculo/derivada-interpretacion/derivada",
+              "descripcion": "Definición y propiedades de la derivada de una función real."
+            },
+            {
+              "titulo": "Interpretación geométrica de la derivada",
+              "slug": "/asignaturas/calculo/derivada-interpretacion/interpretacion",
+              "descripcion": "Interpretación geométrica de la derivada de una función real y su aplicación en la resolución de problemas matemáticos."
             },
             {
               "titulo": "Reglas de derivación",
-              "slug": "/asignaturas/calculo/derivadas/reglas",
-              "descripcion": "Reglas de derivación de funciones."
-            },
-            {
-              "titulo": "Derivadas parciales",
-              "slug": "/asignaturas/calculo/derivadas/parciales",
-              "descripcion": "Cálculo de derivadas parciales."
+              "slug": "/asignaturas/calculo/derivada-interpretacion/reglas",
+              "descripcion": "Reglas de derivación de funciones reales y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         },
         {
-          "titulo": "Integrales",
-          "slug": "/asignaturas/calculo/integrales",
+          "titulo": "Derivación de funciones algebraicas simples",
+          "slug": "/asignaturas/calculo/derivacion-algebraicas",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de integración.",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la derivación de funciones algebraicas simples en el ámbito de la matemática. Contiene una exploración exhaustiva de la derivación de funciones polinómicas, racionales, irracionales y exponenciales, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Derivación de funciones algebraicas simples y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Derivación de funciones polinómicas",
+              "slug": "/asignaturas/calculo/derivacion-algebraicas/polinomicas",
+              "descripcion": "Derivación de funciones polinómicas y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Derivación de funciones racionales",
+              "slug": "/asignaturas/calculo/derivacion-algebraicas/racionales",
+              "descripcion": "Derivación de funciones racionales y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Derivación de funciones irracionales",
+              "slug": "/asignaturas/calculo/derivacion-algebraicas/irracionales",
+              "descripcion": "Derivación de funciones irracionales y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Derivación de funciones exponenciales",
+              "slug": "/asignaturas/calculo/derivacion-algebraicas/exponenciales",
+              "descripcion": "Derivación de funciones exponenciales y su aplicación en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo": "Puntos de inﬂexión de la curva, concepto de máximo y mínimo",
+          "slug": "/asignaturas/calculo/puntos-inflexion",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de los puntos de inﬂexión de la curva y el concepto de máximo y mínimo en el ámbito de la matemática. Contiene una exploración exhaustiva de los puntos de inﬂexión, máximos y mínimos de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Puntos de inﬂexión de la curva, máximos y mínimos de una función real y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de puntos de inﬂexión",
+              "slug": "/asignaturas/calculo/puntos-inflexion/inflexion",
+              "descripcion": "Definición y propiedades de los puntos de inﬂexión de una función real."
+            },
+            {
+              "titulo": "Criterios de máximos y mínimos",
+              "slug": "/asignaturas/calculo/puntos-inflexion/maximos-minimos",
+              "descripcion": "Criterios de máximos y mínimos de una función real y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Aplicaciones de los puntos de inﬂexión y máximos y mínimos",
+              "slug": "/asignaturas/calculo/puntos-inflexion/aplicaciones",
+              "descripcion": "Aplicaciones de los puntos de inﬂexión y máximos y mínimos en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo": "Aplicaciones físicas de la derivada",
+          "slug": "/asignaturas/calculo/aplicaciones-fisicas",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada las aplicaciones físicas de la derivada en el ámbito de la matemática. Contiene una exploración exhaustiva de las aplicaciones de la derivada en la física, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Aplicaciones físicas de la derivada y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Velocidad y aceleración",
+              "slug": "/asignaturas/calculo/aplicaciones-fisicas/velocidad-aceleracion",
+              "descripcion": "Aplicaciones de la derivada en la física: velocidad y aceleración."
+            },
+            {
+              "titulo": "Problemas de optimización",
+              "slug": "/asignaturas/calculo/aplicaciones-fisicas/optimizacion",
+              "descripcion": "Aplicaciones de la derivada en la física: problemas de optimización."
+            },
+            {
+              "titulo": "Problemas de crecimiento y decrecimiento",
+              "slug": "/asignaturas/calculo/aplicaciones-fisicas/crecimiento-decrecimiento",
+              "descripcion": "Aplicaciones de la derivada en la física: problemas de crecimiento y decrecimiento."
+            }
+          ]
+        },
+        {
+          "titulo":"Concepto de Integral",
+          "slug": "/asignaturas/calculo/integral",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la integral en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Integral de una función real y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
               "titulo": "Definición de integral",
-              "slug": "/asignaturas/calculo/integrales/definicion",
-              "descripcion": "Definición de integral de una función."
+              "slug": "/asignaturas/calculo/integral/definicion",
+              "descripcion": "Definición y propiedades de la integral de una función real."
             },
             {
-              "titulo": "Reglas de integración",
-              "slug": "/asignaturas/calculo/integrales/reglas",
-              "descripcion": "Reglas de integración de funciones."
+              "titulo": "Propiedades de la integral",
+              "slug": "/asignaturas/calculo/integral/propiedades",
+              "descripcion": "Propiedades de la integral de funciones reales y su aplicación en la resolución de problemas matemáticos."
             },
             {
-              "titulo": "Integrales impropias",
-              "slug": "/asignaturas/calculo/integrales/impropias",
-              "descripcion": "Cálculo de integrales impropias."
+              "titulo": "Métodos de integración",
+              "slug": "/asignaturas/calculo/integral/metodos",
+              "descripcion": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         },
         {
-          "titulo": "Ecuaciones diferenciales",
-          "slug": "/asignaturas/calculo/ecuaciones-diferenciales",
+          "titulo":"Interpretación geométrica de la integral",
+          "slug": "/asignaturas/calculo/interpretacion-integral",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Introducción a las ecuaciones diferenciales.",
+          "descripcion": "Este material aborda de manera detallada la interpretación geométrica de la integral en el ámbito de la matemática. Contiene una exploración exhaustiva de la interpretación geométrica de la integral de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Interpretación geométrica de la integral de una función real y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Ecuaciones diferenciales ordinarias",
-              "slug": "/asignaturas/calculo/ecuaciones-diferenciales/ordinarias",
-              "descripcion": "Resolución de ecuaciones diferenciales ordinarias."
+              "titulo": "Área bajo la curva",
+              "slug": "/asignaturas/calculo/interpretacion-integral/area-curva",
+              "descripcion": "Interpretación geométrica de la integral: área bajo la curva."
             },
             {
-              "titulo": "Ecuaciones diferenciales parciales",
-              "slug": "/asignaturas/calculo/ecuaciones-diferenciales/parciales",
-              "descripcion": "Resolución de ecuaciones diferenciales parciales."
+              "titulo": "Longitud de arco",
+              "slug": "/asignaturas/calculo/interpretacion-integral/longitud-arco",
+              "descripcion": "Interpretación geométrica de la integral: longitud de arco."
+            },
+            {
+              "titulo": "Volumen de sólidos de revolución",
+              "slug": "/asignaturas/calculo/interpretacion-integral/volumen-revolucion",
+              "descripcion": "Interpretación geométrica de la integral: volumen de sólidos de revolución."
             }
           ]
         },
         {
-          "titulo": "Cálculo multivariable",
-          "slug": "/asignaturas/calculo/calculo-multivariable",
+          "titulo":"La integral deﬁnida",
+          "slug": "/asignaturas/calculo/integral-definida",
           "portada": "url_a_la_imagen.jpg",
-          "descripcion": "Conceptos básicos de cálculo multivariable.",
+          "descripcion": "Este material aborda de manera detallada la integral deﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral deﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Integral deﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Derivadas parciales",
-              "slug": "/asignaturas/calculo/calculo-multivariable/parciales",
-              "descripcion": "Cálculo de derivadas parciales."
+              "titulo": "Definición de integral deﬁnida",
+              "slug": "/asignaturas/calculo/integral-definida/definicion",
+              "descripcion": "Definición y propiedades de la integral deﬁnida de una función real."
             },
             {
-              "titulo": "Integrales múltiples",
-              "slug": "/asignaturas/calculo/calculo-multivariable/integrales",
-              "descripcion": "Cálculo de integrales múltiples."
+              "titulo": "Teorema fundamental del cálculo",
+              "slug": "/asignaturas/calculo/integral-definida/teorema-fundamental",
+              "descripcion": "Teorema fundamental del cálculo y su aplicación en la resolución de problemas matemáticos."
             },
             {
-              "titulo": "Teorema de Stokes",
-              "slug": "/asignaturas/calculo/calculo-multivariable/stokes",
-              "descripcion": "Teorema de Stokes y sus aplicaciones."
+              "titulo": "Aplicaciones de la integral deﬁnida",
+              "slug": "/asignaturas/calculo/integral-definida/aplicaciones",
+              "descripcion": "Aplicaciones de la integral deﬁnida en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo":"La integral indeﬁnida",
+          "slug": "/asignaturas/calculo/integral-indefinida",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada la integral indeﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral indeﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Integral indeﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de integral indeﬁnida",
+              "slug": "/asignaturas/calculo/integral-indefinida/definicion",
+              "descripcion": "Definición y propiedades de la integral indeﬁnida de una función real."
+            },
+            {
+              "titulo": "Métodos de integración",
+              "slug": "/asignaturas/calculo/integral-indefinida/metodos",
+              "descripcion": "Métodos para calcular integrales indeﬁnidas de funciones reales y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Integración por partes",
+              "slug": "/asignaturas/calculo/integral-indefinida/partes",
+              "descripcion": "Método de integración por partes y su aplicación en la resolución de problemas matemáticos."
+            }
+          ]
+        }
+      ]
+    },
+    "estadistica": {
+      "slug" : "estadistica",
+      "titulo": "Estadística",
+      "descripcion": "Curso de Estadística para estudiantes de bachillerato. Aprende a analizar datos y tomar decisiones basadas en la información.",
+      "objetos_aprendizaje": [
+        {
+          "titulo": "Ordenaciones, permutaciones y combinaciones",
+          "slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las ordenaciones, permutaciones y combinaciones en el ámbito de la estadística. Contiene una exploración exhaustiva de las técnicas de ordenación y combinación de elementos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de ordenaciones",
+              "slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/ordenaciones",
+              "descripcion": "Definición y propiedades de las ordenaciones de elementos."
+            },
+            {
+              "titulo": "Definición de permutaciones",
+              "slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/permutaciones",
+              "descripcion": "Definición y propiedades de las permutaciones de elementos."
+            },
+            {
+              "titulo": "Definición de combinaciones",
+              "slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/combinaciones",
+              "descripcion": "Definición y propiedades de las combinaciones de elementos."
+            }
+          ]
+        },
+        {
+          "titulo":"Estadística descriptiva",
+          "slug": "/asignaturas/estadistica/descriptiva",
+          "portada": "url_a_la_imagen.jpg",
+          "descripcion": "Este material aborda de manera detallada la estadística descriptiva en el ámbito de la estadística. Contiene una exploración exhaustiva de las técnicas de análisis de datos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Estadística descriptiva y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de estadística descriptiva",
+              "slug": "/asignaturas/estadistica/descriptiva/definicion",
+              "descripcion": "Definición y propiedades de la estadística descriptiva."
+            },
+            {
+              "titulo": "Medidas de tendencia central",
+              "slug": "/asignaturas/estadistica/descriptiva/tendencia-central",
+              "descripcion": "Medidas de tendencia central y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Medidas de dispersión",
+              "slug": "/asignaturas/estadistica/descriptiva/dispersion",
+              "descripcion": "Medidas de dispersión y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         }
