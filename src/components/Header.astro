@@ -19,11 +19,11 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class="bg-light/[.8] w-full py-4 z-50 backdrop-blur-sm top-0 hover:transition-all sticky"
+  class="bg-darkblue/[.8] w-full py-4 z-50 backdrop-blur-sm top-0 hover:transition-all sticky"
 >
   <div class="mx-auto">
     <nav
-      class="navbar max-w-[1400px] mx-auto flex items-center justify-between"
+      class="navbar md:px-5 mx-auto flex items-center justify-between"
     >
       <!-- logo -->
       <div class="order-0">
@@ -32,7 +32,7 @@ const { pathname } = Astro.url;
       </div>
       <ul
         id="nav-menu"
-        class="navbar-nav order-1 cursor-pointer flex w-auto space-x-2 xl:space-x-8 text-dark font-semibold uppercase"
+        class="navbar-nav order-1 cursor-pointer flex w-auto space-x-2 xl:space-x-8 text-light font-semibold uppercase"
       >
         {
           main.map((menu) => (
@@ -61,7 +61,7 @@ const { pathname } = Astro.url;
                   </a>
                   <div
                     id="child"
-                    class="z-50 hidden bg-whit shadow !top-4"
+                    class="z-50 hidden text-darkblue shadow !top-4"
                   >
                     <ul
                       class="cursor-pointer bg-light z-50"
