@@ -1,17 +1,37 @@
 ---
 interface Props {
   src?: string;
+  nombre?: string;
+  instrucciones?: string;
 }
 
-const { src } = Astro.props as Props;
+const { src, nombre, instrucciones } = Astro.props as Props;
 ---
 
-<iframe
-  src=`${src}`
-  frameborder="0"
-  allowfullscreen="allowfullscreen"
-  allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"
-></iframe>
+
+<div class="container mx-auto">
+    <h3>{nombre}</h3>
+    <p class="text-lg">
+      <span class="text-lightblue font-semibold">Instrucciones:</span>
+      {instrucciones}
+    </p>
+
+</div>
+<section class="relative mt-5">
+  <div
+    class="bg-red min-w-full min-h-12 block absolute top-0 translate-y-10 z-10"
+  >
+  </div>
+  <div
+    class="relative z-20 max-w-screen-lg mx-auto bg-white p-5 shadow-slate-900/[.8] shadow-lg"
+  >
+    <iframe
+      src=`${src}`
+      allowfullscreen="allowfullscreen"
+      allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"
+    ></iframe>
+  </div>
+</section>
 
 <script
   is:inline
@@ -19,7 +39,11 @@ const { src } = Astro.props as Props;
   charset="UTF-8"></script>
 
 <style>
-  .h5p-content {
-    background: red !important;
+  h3 {
+    color: var(--css-red-pantone);
+    font-weight: 600;
+    font-size: 1.8em;
+    text-wrap: pretty;
+    text-transform: uppercase;
   }
 </style>

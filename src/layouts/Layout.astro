@@ -22,15 +22,15 @@ const {
       ogType={ogType}
     />
  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+  <script
+    is:inline
+    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+  ></script>
 </html>
-<body>
-  <Header title={SITE_TITLE} />
-  <main>
-    <slot />
-  </main>
-  <Footer />
-</body>
-<script
-  is:inline
-  src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
-></script>
