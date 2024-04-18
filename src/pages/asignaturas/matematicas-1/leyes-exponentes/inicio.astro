@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout
+  title="Números Clasificación y propiedades"
+  description="En este objeto de aprendizaje, aprenderás sobre los números, su clasificación y propiedades. ¡Vamos a explorar el fascinante mundo de los números juntos!"
+>
+  <main>
+    <ObjetoAprendizaje index={1} asignatura={"matematicas_1"} />
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="max-w-screen-xl mx-auto">
+        <h3>¿Que son las Leyes de los exponentes?</h3>
+        <p>
+          Conjunto de reglas establecidas para resolver operaciones matemáticas
+          con potencia.
+        </p>
+        <p>
+          La Potencia o potenciación consiste en la multiplicación de un número
+          por sí mismo varias veces, y se representan como:
+        </p>
+        <p>
+          <Latex
+            formula="a^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n \\text{ veces}}"
+          />
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>

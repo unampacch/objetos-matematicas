@@ -3,7 +3,7 @@
     "matematicas_1": {
       "slug": "matematicas-1",
       "titulo": "Matemáticas 1",
-      "descripcion": "Curso de Matemáticas 1 para estudiantes de bachillerato. Aprende a resolver problemas matemáticos de forma sencilla y divertida.",
+      "descripcion": "Al finalizar, el alumno: Será capaz de operar con los números racionales (enteros y no enteros) y resolver problemas aritméticos, aplicando algunas heurísticas para facilitar la comprensión, la búsqueda de un plan de resolución y su ejecución, con la finalidad de que haga suyos los recursos básicos para iniciarse en el uso del lenguaje algebraico para expresar la generalidad.",
       "objetos_aprendizaje": [
         {
           "titulo": "Números Clasificación y propiedades",
@@ -50,45 +50,38 @@
         },
         {
           "titulo": "Leyes de exponentes",
-          "slug": "/asignaturas/matematicas-1/leyes-exponentes",
+          "slug": "/asignaturas/matematicas-1/leyes-exponentes/inicio",
           "portada": "../mate1-portada-2.webp",
-          "descripcion": "Aprende las leyes de los exponentes y su aplicación en la resolución de problemas matemáticos.",
-          "resumen": "Este material aborda de manera detallada los conceptos fundamentales de las leyes de los exponentes en el ámbito de la matemática.",
+          "descripcion": "La ley de los exponentes son una forma de expresar la multiplicación de una expresión por sí misma un número determinado de veces. Para ello nos apoyamos de reglas establecidas con potencias. En esta secuencia se trata de analizar distintos ejemplos y situaciones, mediante la resolución de problemas",
+          "resumen": "Comprende cada una de las leyes de los exponentes para resolver problemas teóricos y de la vida cotidiana.",
           "pantallas": [
             {
-              "titulo": "Propiedades de los exponentes",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/propiedades",
-              "descripcion": "Conceptos fundamentales de los exponentes y sus propiedades."
+              "titulo": "Notación exponencial",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/notacion"
             },
             {
-              "titulo": "Multiplicación de potencias",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/multiplicacion",
-              "descripcion": "Reglas para multiplicar potencias con la misma base."
+              "titulo": "Leyes de los exponentes",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/leyes"
             },
             {
-              "titulo": "División de potencias",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/division",
-              "descripcion": "Reglas para dividir potencias con la misma base."
+              "titulo": "1ª. ley de los Exponentes",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/primera-ley"
             },
             {
-              "titulo": "Potencia de una potencia",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/potencia",
-              "descripcion": "Reglas para elevar una potencia a otra potencia."
+              "titulo": "2ª. ley de los Exponentes",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/segunda-ley"
             },
             {
-              "titulo": "Potencia de un producto",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/producto",
-              "descripcion": "Reglas para elevar un producto a una potencia."
+              "titulo": "3ª. ley de los Exponentes",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/tercera-ley"
             },
             {
-              "titulo": "Potencia de un cociente",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/cociente",
-              "descripcion": "Reglas para elevar un cociente a una potencia."
+              "titulo": "4ª. ley de los Exponentes",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/cuarta-ley"
             },
             {
-              "titulo": "Raíces y exponentes fraccionarios",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/raices",
-              "descripcion": "Reglas para calcular raíces y exponentes fraccionarios."
+              "titulo": "5ª. ley de los Exponentes",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/quinta-ley"
             }
           ]
         },
