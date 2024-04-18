@@ -1,0 +1,44 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import BgFluido from "@/components/BgFluido.astro";
+---
+
+<Layout
+  title="Números racionales"
+  description="Los números racionales son aquellos que se pueden expresar como el cociente de dos números enteros."
+>
+  <main>
+    <ObjetoAprendizajePantalla
+      index={0}
+      pantallaIndex={3}
+      asignatura={"matematicas_1"}
+    />
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="max-w-screen-xl mx-auto">
+        <h3><Latex formula="\\mathbb{Q}" /></h3>
+        <p>
+          Los números racionales son aquellos que pueden expresarse como una
+          fracción, donde el numerador y el denominador son números enteros y el
+          denominador no es cero. Incluyen a los números enteros y también a los
+          números decimales que tienen una representación finita o una
+          representación decimal periódica.
+        </p>
+      </div>
+      <BgFluido bg="bg-blue">
+        <div class="grid xl:grid-cols-3 grid-cols-1 items-center py-10">
+          <div class="text-center col-span-1">
+            <h4 class="!text-darkblue uppercase font-extrabold">Ejemplos</h4>
+          </div>
+          <div class="text-2xl col-span-2 text-center">
+            <Latex formula="a+\\left ( -a \\right )= 0" />
+            <div class="mt-5">
+              <Latex formula="7+\\left ( -7 \\right )= 0" />
+            </div>
+          </div>
+        </div>
+      </BgFluido>
+    </div>
+  </main>
+</Layout>

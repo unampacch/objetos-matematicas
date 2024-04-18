@@ -19,13 +19,12 @@
             },
             {
               "titulo": "Números naturales",
-              "slug": "/asignaturas/matematicas-1/numeros-clasificacion/numeros-naturales",
-              "descripcion": "Explora las propiedades y características distintivas de los números naturales, sentando las bases para comprender su papel en operaciones y aplicaciones más avanzadas."
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion/numeros-naturales"
             },
             {
               "titulo": "Números enteros",
-              "slug": "/asignaturas/matematicas-1/numeros-clasificacion/numeros-enteros",
-              "descripcion": "Este contenido proporciona una comprensión sólida de los números enteros y su papel en diversas áreas de las matemáticas y las ciencias."
+              "slug": "/asignaturas/matematicas-1/numeros-clasificacion/numeros-enteros"
+
             },
             {
               "titulo": "Números racionales",
