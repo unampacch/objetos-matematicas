@@ -44,9 +44,9 @@ import Layout from "@/layouts/Layout.astro";
             <BentoItem title={objeto.titulo} class="flex-1" slug={objeto.slug}>
               <img
                 slot="image"
-                class={`background transition-scale absolute bottom-0 left-0 top-0
-              -z-10 h-full w-full
-              bg-cover bg-center bg-no-repeat opacity-90 bg-blend-multiply duration-1000 ease-in-out group-hover:scale-110`}
+                class={`transition-scale absolute bottom-0 left-0 top-0
+              -z-10 h-full object-cover
+               opacity-90  duration-1000 ease-in-out group-hover:scale-110`}
                 src={objeto.portada}
               />
               <p slot="content" class="max-w-xl text-base md:text-lg">
