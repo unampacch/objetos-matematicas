@@ -3,6 +3,9 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import BgFluido from "@/components/BgFluido.astro";
+import Instrucciones from "@/components/Instrucciones.astro";
+import GeogebraLink from "@/components/GeogebraLink.astro";
 ---
 
 <Layout
@@ -22,12 +25,50 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
           La Potencia o potenciación consiste en la multiplicación de un número
           por sí mismo varias veces, y se representan como:
         </p>
-        <p>
+        <div class="text-center my-5 text-3xl">
           <Latex
             formula="a^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n \\text{ veces}}"
           />
+        </div>
+        <p>
+          La expresión <Latex inline={true} formula="a^n" /> se lee se lee
+          <Latex inline={true} formula="a" /> la enésima potencia o
+          <Latex inline={true} formula="a" /> la
+          <Latex inline={true} formula="n" />
+        </p>
+        <p>
+          El entero positivo <Latex inline={true} formula="n" />n se llama
+          exponente y el número real <Latex inline={true} formula="a" />, base
         </p>
       </div>
+      <ImagenFullCaption
+        src="matematicas1/base-exponente.webp"
+        caption="Base y exponente"
+        bg="bg-blue"
+      />
+      <BgFluido bg="bg-blue">
+        <div class="grid xl:grid-cols-2 grid-cols-1 items-center py-10">
+          <div class="text-center col-span-1">
+            <h4 class="!text-darkblue uppercase font-extrabold">Ejemplo</h4>
+          </div>
+          <div class="text-2xl col-span-1">
+            <Latex formula="a^1 = a " />
+            <div class="mt-5">
+              <Latex formula="a^3 = a \\cdot a \\cdot a " />
+            </div>
+            <div class="mt-5">
+              <Latex
+                formula="a^6 = a \\cdot a \\cdot a \\cdot a \\cdot a \\cdot a "
+              />
+            </div>
+          </div>
+        </div>
+      </BgFluido>
+    </div>
+    <div class="max-w-screen-xl mx-auto">
+      <Instrucciones />
+      Entra al siguiente simulador y explora los deslizadores
+      <GeogebraLink />
     </div>
   </main>
 </Layout>

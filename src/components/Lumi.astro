@@ -1,4 +1,6 @@
 ---
+import Instrucciones from './Instrucciones.astro';
+
 interface Props {
   src?: string;
   nombre?: string;
@@ -12,7 +14,7 @@ const { src, nombre, instrucciones } = Astro.props as Props;
 <div class="container mx-auto">
     <h3>{nombre}</h3>
     <p class="text-lg">
-      <span class="text-lightblue font-semibold">Instrucciones:</span>
+      <Instrucciones />
       {instrucciones}
     </p>
 

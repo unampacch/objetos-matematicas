@@ -5,12 +5,12 @@ interface Props {
   bg?: string;
 }
 
-const { caption , src , bg } = Astro.props as Props;
+const { caption, src, bg } = Astro.props as Props;
 ---
 
-<div class={`min-w-full lg:my-10 text-dark lg:py-3 ${bg}`}>
-  <img src={src} class="aspect-video mx-auto" alt="" />
-  <div class={`img-caption mx-auto ${bg ? 'text-dark' : 'text-white'}`}>
+<div class={`min-w-full py-1 lg:my-10 text-dark md:py-3 ${bg}`}>
+  <img src={`../../../${src}`} class="aspect-auto mx-auto" alt="" />
+  <div class={`img-caption mx-auto ${bg ? "text-dark" : "text-white"}`}>
     {caption}
   </div>
 </div>

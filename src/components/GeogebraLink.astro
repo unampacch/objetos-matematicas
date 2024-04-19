@@ -1,0 +1,20 @@
+---
+interface Props {
+  titulo?: string;
+  texto?: string;
+}
+import GeogebraIcon from "@/components/GeogebraIcon.astro";
+const { titulo, texto } = Astro.props as Props;
+---
+
+<div class="bg-blue">
+  <h4>{titulo}</h4>
+  <div class="flex">
+    <div class="w-1/2">
+      <p>{texto}</p>
+    </div>
+    <div class="w-1/2">
+      <GeogebraIcon class="w-100" />
+    </div>
+  </div>
+</div>

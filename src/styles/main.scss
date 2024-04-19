@@ -12,6 +12,8 @@ color-scheme: dark;
 --css-cerulean: rgb(69 123 157);
 --css-berkeley-blue: rgb(4 5 5);
 --css-darkest-blue: rgb(8 20 36);
+--headings-xl: clamp(1.7rem, 2.1vw, 2.2rem);
+--headings-lg: clamp(1.4rem, 1.7vw, 1.9rem);
 }
 html {
   font-family: "Onest Variable", sans-serif;
@@ -24,14 +26,14 @@ body {
   h3{
     color: var(--css-red-pantone);
     font-weight: 900;
-    font-size: 2.1em;
+    font-size: var(--headings-xl);
     text-transform: uppercase;
     text-wrap: pretty;
   }
   h4{
     color: var(--css-red-pantone);
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: var(--headings-lg);
     text-wrap: pretty;
   }
   p{
