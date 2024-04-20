@@ -2,19 +2,22 @@
 interface Props {
   titulo?: string;
   texto?: string;
+  href?: string;
 }
 import GeogebraIcon from "@/components/GeogebraIcon.astro";
-const { titulo, texto } = Astro.props as Props;
+const { titulo, texto, href } = Astro.props as Props;
 ---
 
-<div class="bg-blue">
-  <h4>{titulo}</h4>
-  <div class="flex">
-    <div class="w-1/2">
-      <p>{texto}</p>
+<div class="bg-orange-400 my-5 px-5 py-3 rounded-lg max-w-screen-md mx-auto">
+  <div class="flex items-center">
+    <div class="w-2/3 px-1">
+      <h4 class="text-slate text- text-lg md:text-3xl font-semibold">
+        {titulo}
+      </h4>
+      <a href={href} target="_blank" class="text-xl text-slate-800">{texto}</a>
     </div>
-    <div class="w-1/2">
-      <GeogebraIcon class="w-100" />
+    <div class="w-1/3 flex justify-center">
+      <a href={href} target="_blank" ><GeogebraIcon class="size-44"></a>
     </div>
   </div>
 </div>
