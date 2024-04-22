@@ -1,5 +1,5 @@
 ---
-import Instrucciones from './Instrucciones.astro';
+import Instrucciones from "./Instrucciones.astro";
 
 interface Props {
   src?: string;
@@ -10,14 +10,11 @@ interface Props {
 const { src, nombre, instrucciones } = Astro.props as Props;
 ---
 
-
 <div class="container mx-auto">
-    <h3>{nombre}</h3>
-    <p class="text-lg">
-      <Instrucciones />
-      {instrucciones}
-    </p>
-
+  <h3>{nombre}</h3>
+  <p class="text-lg">
+    <Instrucciones texto=`${instrucciones}` />
+  </p>
 </div>
 <section class="relative mt-5">
   <div

@@ -6,6 +6,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
 import BgFluido from "@/components/BgFluido.astro";
 import Instrucciones from "@/components/Instrucciones.astro";
 import GeogebraLink from "@/components/GeogebraLink.astro";
+import Lumi from "@/components/Lumi.astro";
 ---
 
 <Layout
@@ -63,14 +64,20 @@ import GeogebraLink from "@/components/GeogebraLink.astro";
         </div>
       </div>
     </BgFluido>
-  </div>
-  <div class="max-w-screen-xl mx-auto">
-    <Instrucciones />
-    Entra al siguiente simulador y explora los deslizadores
-    <GeogebraLink
-      href="https://www.geogebra.org/classic/rqftpc8z"
-      titulo="Simulador Potencias"
-      texto="Revisa el simulador dando clic aquí"
+    <div class="max-w-screen-xl mx-auto">
+      <Instrucciones
+        texto="Entra al siguiente simulador y explora los deslizadores"
+      />
+      <GeogebraLink
+        href="https://www.geogebra.org/classic/rqftpc8z"
+        titulo="Simulador Potencias"
+        texto="Revisa el simulador dando clic aquí"
+      />
+    </div>
+    <Lumi
+      src="https://app.Lumi.education/api/v1/run/wneZB_/embed"
+      nombre="Falso o Verdadero"
+      instrucciones="Después de revisar el simulador Potencias, te invitamos a identificar cual enunciado es Verdadero (v) o Falso (F), si es necesario regresa al simulador y explora nuevamente, con el fin de dar una respuesta correcta."
     />
   </div>
 </Layout>

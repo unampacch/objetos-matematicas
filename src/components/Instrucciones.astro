@@ -1,1 +1,8 @@
-<span class="text-lightblue font-semibold">Instrucciones:</span>
+---
+interface Props {
+  texto?: string;
+}
+const { texto } = Astro.props as Props;
+---
+
+<div><span class="text-lightblue font-semibold">Instrucciones:</span> {texto}</div>
