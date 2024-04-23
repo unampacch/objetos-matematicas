@@ -55,3 +55,42 @@ body {
   border-left: .22rem var(--css-red-pantone) solid;
   padding-left: 0.5rem;
 }
+
+.ol-alpha {
+  list-style: none;
+  counter-reset: item;
+  li {
+    counter-increment: item;
+    margin-bottom: 2rem;
+  }
+  li:before {
+    margin-right: 1rem;
+    content: counter(item, lower-alpha);
+    background: var(--css-cerulean);
+    border-radius: 100%;
+    color: var(--css-honeydew);
+    width: 2rem;
+    text-align: center;
+    font-weight: 900;
+    display: inline-block;
+  }
+}
+.ol-number {
+  list-style: none;
+  counter-reset: item;
+  li {
+    counter-increment: item;
+    margin-bottom: 2rem;
+  }
+  li:before {
+    margin-right: 1rem;
+    content: counter(item);
+    background: var(--css-cerulean);
+    border-radius: 100%;
+    color: var(--css-honeydew);
+    width: 2rem;
+    text-align: center;
+    font-weight: 900;
+    display: inline-block;
+  }
+}
