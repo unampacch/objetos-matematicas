@@ -3,7 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
-import BgFluido from "@/components/BgFluido.astro";
+import Lumi from "@/components/Lumi.astro";
 ---
 
 <Layout title="Notación exponencial">
@@ -13,7 +13,7 @@ import BgFluido from "@/components/BgFluido.astro";
     asignatura={"matematicas_1"}
   />
   <div class="objeto-aprendizaje mx-auto animate-fade">
-    <div class="max-w-screen-xl mx-auto">
+    <div class="max-w-screen-xl mx-auto mb-5">
       <h3 class="!lowercase"><Latex formula="a^n" /></h3>
       <p>
         La notación exponencial, fue desarrollada para multiplicaciones
@@ -94,6 +94,87 @@ import BgFluido from "@/components/BgFluido.astro";
           </li>
         </ol>
       </div>
+      <h4>Exponente cero y negativo</h4>
+      <p>Todo número elevado a la 0 es igual a 1</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th
+                >Definición <Latex
+                  inline={true}
+                  formula="\\left ( a\\neq 0 \\right )"
+                /></th
+              >
+              <th>Ejemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline={true} formula="a^0 = 1" /></td>
+              <td>
+                <ol class="ol-alpha">
+                  <li>
+                    <Latex inline={true} formula="3^0 = 1" />
+                  </li>
+                  <li>
+                    <Latex inline={true} formula="(-\\sqrt{2})^0 = 1 " />
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="a^{-1} = \\frac{1}{a^n} " /></td
+              >
+              <td>
+                <ol class="ol-alpha">
+                  <li>
+                    <Latex inline={true} formula="5^{-3} = \\frac{1}{5^3} " />
+                  </li>
+                  <li>
+                    <Latex
+                      inline={true}
+                      formula="(-3)^{-5} = \\frac{1}{(-3)^5}"
+                    />
+                  </li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h4 class="mt-5">Potencia a la 1</h4>
+      <p>Todo número elevado a 1 es igual a sí mismo.</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Definición <Latex inline={true} formula="n^1 = a" /></th>
+              <th>Ejemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline={true} formula="n^1 = a" /></td>
+              <td>
+                <ol class="ol-alpha">
+                  <li>
+                    <Latex inline={true} formula="25^1 = 25" />
+                  </li>
+                  <li>
+                    <Latex inline={true} formula="58^1 = 58 " />
+                  </li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+    <Lumi
+      src="https://app.Lumi.education/api/v1/run/z_jIuq/embed"
+      nombre="Notación exponencial - Relación de columnas"
+      instrucciones="Después de revisar los ejemplos y para identificar lo que has aprendido hasta el momento, te invitamos a dar respuesta a la siguiente relación de columnas: "
+    />
   </div>
 </Layout>
