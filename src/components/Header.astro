@@ -22,9 +22,7 @@ const { pathname } = Astro.url;
   class="bg-darkblue/[.8] w-full py-4 z-50 backdrop-blur-sm top-0 hover:transition-all sticky"
 >
   <div class="mx-auto">
-    <nav
-      class="navbar md:px-5 mx-auto flex items-center justify-between"
-    >
+    <nav class="navbar md:px-5 mx-auto flex items-center justify-between">
       <!-- logo -->
       <div class="order-0">
         <a href="/"><Logo class="hidden md:block h-10 w-15" /></a>
@@ -42,7 +40,7 @@ const { pathname } = Astro.url;
                   <a
                     id="has-children"
                     data-dropdown-toggle="child"
-                    class={`inline-flex items-center ${
+                    class={`inline-flex items-center hover:text-slate-400 transition-all ${
                       menu.children?.map(({ url }) => url).includes(pathname) ||
                       menu.children
                         ?.map(({ url }) => `${url}/`)
@@ -52,10 +50,7 @@ const { pathname } = Astro.url;
                     }`}
                   >
                     {menu.name}
-                    <svg
-                      class="size-5 fill-current"
-                      viewBox="0 0 20 20"
-                    >
+                    <svg class="size-5 fill-current" viewBox="0 0 20 20">
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                   </a>
@@ -72,10 +67,10 @@ const { pathname } = Astro.url;
                           <a
                             href={child.url}
                             aria-label={child.name}
-                            class={`inline-block  ${
+                            class={`block  ${
                               (pathname === `${child.url}/` ||
                                 pathname === child.url) &&
-                              "active"
+                              ""
                             }`}
                           >
                             {child.name}
@@ -89,7 +84,7 @@ const { pathname } = Astro.url;
                 <li>
                   <a
                     href={menu.url}
-                    class={`${
+                    class={`hover:text-slate-400 transition-all ${
                       (pathname === `${menu.url}/` || pathname === menu.url) &&
                       "active"
                     }`}
@@ -107,7 +102,7 @@ const { pathname } = Astro.url;
 </header>
 <style>
   a.active {
-    color: var(--css-cerulean);
-    font-weight: bold;
+
+    text-decoration: overline ;
   }
 </style>
