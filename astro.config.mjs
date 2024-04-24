@@ -14,7 +14,8 @@ export default defineConfig({
           'twitter-x',
           'youtube',
           'instagram',
-          'box-arrow-in-right'
+          'box-arrow-in-right',
+          'usb-c'
         ]
       }
     }

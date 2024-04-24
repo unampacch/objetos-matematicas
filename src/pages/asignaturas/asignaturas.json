@@ -64,24 +64,8 @@
               "slug": "/asignaturas/matematicas-1/leyes-exponentes/leyes"
             },
             {
-              "titulo": "1ª. ley de los Exponentes",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/primera-ley"
-            },
-            {
-              "titulo": "2ª. ley de los Exponentes",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/segunda-ley"
-            },
-            {
-              "titulo": "3ª. ley de los Exponentes",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/tercera-ley"
-            },
-            {
-              "titulo": "4ª. ley de los Exponentes",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/cuarta-ley"
-            },
-            {
-              "titulo": "5ª. ley de los Exponentes",
-              "slug": "/asignaturas/matematicas-1/leyes-exponentes/quinta-ley"
+              "titulo": "Actividad final",
+              "slug": "/asignaturas/matematicas-1/leyes-exponentes/actividad"
             }
           ]
         },
