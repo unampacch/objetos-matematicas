@@ -15,23 +15,23 @@
         },
         {
           "name": "Matemáticas II",
-          "url": "/matematicas-2"
+          "url": "/asignaturas/matematicas-2"
         },
         {
           "name":"Matemáticas III",
-          "url": "/matematicas-3"
+          "url": "/asignaturas/matematicas-3"
         },
         {
           "name": "Matemáticas IV",
-          "url": "/matematicas-4"
+          "url": "/asignaturas/matematicas-4"
         },
         {
           "name": "Estadística y probabilidad",
-          "url": "/estadistica"
+          "url": "/asignaturas/estadistica"
         },
         {
           "name": "Cálculo diferencial e integral",
-          "url": "/calculo"
+          "url": "/asignaturas/calculo"
         }
       ]
     }

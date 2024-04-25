@@ -269,7 +269,7 @@
         {
           "titulo": "Concepto de valor absoluto",
           "slug": "/asignaturas/matematicas-3/valor-absoluto",
-          "portada": "url_a_la_imagen.jpg",
+          "portada": "../mate3-portada-1.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del valor absoluto en el ámbito de la matemática. Contiene una exploración exhaustiva del valor absoluto de un número real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Valor absoluto de un número real y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
@@ -293,7 +293,7 @@
         {
           "titulo": "Ley de senos y cosenos",
           "slug": "/asignaturas/matematicas-3/ley-senos-cosenos",
-          "portada": "url_a_la_imagen.jpg",
+          "portada": "../mate3-portada-2.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ley de senos y cosenos en el ámbito de la matemática. Contiene una exploración exhaustiva de la ley de senos y cosenos en triángulos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Ley de senos y cosenos en triángulos y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
@@ -317,7 +317,7 @@
         {
           "titulo": "Manejo de sistemas coordenados en el plano",
           "slug": "/asignaturas/matematicas-3/sistemas-coordenados",
-          "portada": "url_a_la_imagen.jpg",
+          "portada": "../mate3-portada-3.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del manejo de sistemas coordenados en el plano en el ámbito de la matemática. Contiene una exploración exhaustiva de los sistemas de coordenadas cartesianas, polares y paramétricas, junto con su aplicación en la representación de puntos y figuras geométricas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Sistemas de coordenadas cartesianas, polares y paramétricas y su aplicación en la representación de puntos y figuras geométricas.",
           "pantallas": [
@@ -341,7 +341,7 @@
         {
           "titulo": "Ecuación de la recta",
           "slug": "/asignaturas/matematicas-3/ecuacion-recta",
-          "portada": "url_a_la_imagen.jpg",
+          "portada": "../mate3-portada-4.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación de la recta en el ámbito de la matemática. Contiene una exploración exhaustiva de la ecuación general de la recta, junto con su aplicación en la representación de rectas en el plano. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Ecuación general de la recta y su aplicación en la representación de rectas en el plano.",
           "pantallas": [
@@ -359,6 +359,30 @@
               "titulo": "Ecuación pendiente-intersección",
               "slug": "/asignaturas/matematicas-3/ecuacion-recta/pendiente-interseccion",
               "descripcion": "Definición y aplicación de la ecuación pendiente-intersección de la recta."
+            }
+          ]
+        },
+        {
+          "titulo": "Ecuación del círculo",
+          "slug": "/asignaturas/matematicas-3/ecuacion-circulo",
+          "portada": "../mate3-portada-5.webp",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación del círculo en el ámbito de la matemática. Contiene una exploración exhaustiva de la ecuación general del círculo, junto con su aplicación en la representación de círculos en el plano. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Ecuación general del círculo y su aplicación en la representación de círculos en el plano.",
+          "pantallas": [
+            {
+              "titulo": "Ecuación general del círculo",
+              "slug": "/asignaturas/matematicas-3/ecuacion-circulo/general",
+              "descripcion": "Definición y aplicación de la ecuación general del círculo en el plano."
+            },
+            {
+              "titulo": "Ecuación centro-radio",
+              "slug": "/asignaturas/matematicas-3/ecuacion-circulo/centro-radio",
+              "descripcion": "Definición y aplicación de la ecuación centro-radio del círculo."
+            },
+            {
+              "titulo": "Ecuación diámetro",
+              "slug": "/asignaturas/matematicas-3/ecuacion-circulo/diametro",
+              "descripcion": "Definición y aplicación de la ecuación diámetro del círculo."
             }
           ]
         }
