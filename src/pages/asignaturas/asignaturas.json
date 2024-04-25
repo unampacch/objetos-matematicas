@@ -316,25 +316,38 @@
         },
         {
           "titulo": "Manejo de sistemas coordenados en el plano",
-          "slug": "/asignaturas/matematicas-3/sistemas-coordenados",
+          "slug": "/asignaturas/matematicas-3/sistemas-coordenados/inicio",
           "portada": "../mate3-portada-3.webp",
-          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del manejo de sistemas coordenados en el plano en el ámbito de la matemática. Contiene una exploración exhaustiva de los sistemas de coordenadas cartesianas, polares y paramétricas, junto con su aplicación en la representación de puntos y figuras geométricas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-          "resumen": "Sistemas de coordenadas cartesianas, polares y paramétricas y su aplicación en la representación de puntos y figuras geométricas.",
+          "descripcion": "La Metodología de trabajo que usaremos es mediante la resolución Problemas, donde resolverás un problema real o simulado utilizando un sistema de coordenadas en el plano, reflexionaras y aplicaras el pensamiento crítico para llegar a una solución. Permitiéndote desarrollar habilidades prácticas y aplicar los conceptos aprendidos.",
+          "resumen": "Manejo de sistemas coordenados en el plano y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Coordenadas cartesianas",
-              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/cartesianas",
-              "descripcion": "Definición y aplicación de las coordenadas cartesianas en el plano."
+              "titulo": "Sistemas de coordenadas cartesianas o rectangulares",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/cartesianas"
             },
             {
-              "titulo": "Coordenadas polares",
-              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/polares",
-              "descripcion": "Definición y aplicación de las coordenadas polares en el plano."
+              "titulo": "Sistemas de coordenadas - Ejemplos",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/ejemplos"
             },
             {
-              "titulo": "Coordenadas paramétricas",
-              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/parametricas",
-              "descripcion": "Definición y aplicación de las coordenadas paramétricas en el plano."
+              "titulo": "Sistemas de coordenadas - Actividad",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/sistemas-actividad"
+            },
+            {
+              "titulo": "Sistemas de coordenadas Polares",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/polares"
+            },
+            {
+              "titulo": "Sistemas de coordenadas Polares - Actividad",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/polares-actividad"
+            },
+            {
+              "titulo": "Relación de coordenadas rectangulares y polares",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/relacion"
+            },
+            {
+              "titulo": "Relación de coordenadas rectangulares y polares - Actividad",
+              "slug": "/asignaturas/matematicas-3/sistemas-coordenados/relacion-actividad"
             }
           ]
         },

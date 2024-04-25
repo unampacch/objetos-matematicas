@@ -13,7 +13,7 @@ asignaturaNames.forEach((name) => {
 let randomIndex = Math.floor(Math.random() * objetos_aprendizaje.length);
 let objeto_aprendizaje = objetos_aprendizaje[randomIndex];
 ---
-
+<!-- Para mejorar esto podemos hacer que solo busque 1 en cada asgnaturaNames para evitar que se repitan -->
 <a href={objeto_aprendizaje.slug}>
   <article
     class="relative rounded-xl

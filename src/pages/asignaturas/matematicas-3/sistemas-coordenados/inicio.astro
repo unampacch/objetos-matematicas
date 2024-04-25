@@ -1,0 +1,29 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+---
+
+<Layout
+	title="Números Clasificación y propiedades"
+	description="En este objeto de aprendizaje, aprenderás sobre los números, su clasificación y propiedades. ¡Vamos a explorar el fascinante mundo de los números juntos!"
+>
+	<ObjetoAprendizaje index={2} asignatura={'matematicas_3'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3>Objetivos</h3>
+			<ol class="ol-alpha pl-10 mt-5">
+				<li>
+					Comprender y aplicar los conceptos básicos de los sistemas de coordenadas en el plano.
+				</li>
+				<li>Resolver problemas que involucren el uso de sistemas de coordenadas.</li>
+				<li>Conocer el sistema de coordenadas cartesianas y el sistema polar</li>
+			</ol>
+			<p>
+				En este tema aprenderás cómo manejar sistemas de coordenadas en el plano, aplicaras estos
+				conocimientos en la resolución de problemas. Donde, reflexionaras y aplicaras el pensamiento
+				crítico para llegar a una solución. Permitiéndote desarrollar habilidades prácticas y
+				aplicar los conceptos aprendidos.
+			</p>
+		</div>
+	</div>
+</Layout>

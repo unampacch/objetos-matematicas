@@ -62,6 +62,8 @@ body {
   li {
     counter-increment: item;
     margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
   }
   li:before {
     margin-right: 1rem;
@@ -69,10 +71,12 @@ body {
     background: var(--css-cerulean);
     border-radius: 100%;
     color: var(--css-honeydew);
-    width: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
     text-align: center;
     font-weight: 900;
-    display: inline-block;
+    line-height: 2rem;
+
   }
 }
 .ol-number {
@@ -81,6 +85,8 @@ body {
   li {
     counter-increment: item;
     margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
   }
   li:before {
     margin-right: 1rem;
@@ -88,13 +94,36 @@ body {
     background: var(--css-cerulean);
     border-radius: 100%;
     color: var(--css-honeydew);
-    width: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
     text-align: center;
     font-weight: 900;
-    display: inline-block;
+    line-height: 2rem;
   }
 }
+.ul-disc {
+  list-style: none;
 
+  li {
+
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: top;
+    justify-content: start;
+  }
+  li:before {
+    margin-right: 0.5rem;
+    content: "";
+    background: var(--css-cerulean);
+    border-radius: 100%;
+    color: var(--css-honeydew);
+    min-width: 1rem;
+    min-height: 1rem;
+    max-width: 1rem;
+    max-height: 1rem;
+    margin-top: 0.3rem;
+  }
+}
 
 .table-responsive {
   overflow-x:auto;
