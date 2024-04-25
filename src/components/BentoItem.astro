@@ -34,11 +34,13 @@ const { title, subtitle, slug } = Astro.props;
     <div
       class="relative z-20 flex h-full select-none flex-col justify-end gap-1 p-4 text-lg md:p-6"
     >
-      <h2
-        class="mb-4 text-balance text-3xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r to-light from-blue border-b-2 pb-1"
-      >
-        {title}
-      </h2>
+      <div class="bg-darkblue/[.7] rounded-tr-2xl px-3 py-2 backdrop-blur-md">
+        <h2
+          class="mb-1 text-balance text-3xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r to-light from-blue border-b-2 pb-1"
+        >
+          {title}
+        </h2>
+      </div>
 
       {
         subtitle && (
