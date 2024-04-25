@@ -23,7 +23,7 @@ const { objetos_aprendizaje } = asignaturaData;
 >
 </div>
 
-<section class="container mx-auto">
+<section class="max-w-screen-xl mx-auto">
   <nav class="flex animate-fade-right" aria-label="Breadcrumb">
     <ol
       class="block sm:inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
@@ -124,7 +124,9 @@ const { objetos_aprendizaje } = asignaturaData;
       )) || ""
     }
   </article>
-  <h3 class="text-xl font-semibold text-gray-400 animate-fade-right my-5 relative -z-10">
+  <h3
+    class="text-xl font-semibold text-gray-400 animate-fade-right my-5 relative -z-10"
+  >
     {(subtitulo = objetos_aprendizaje[index].descripcion)}
   </h3>
 </section>
@@ -153,7 +155,7 @@ const { objetos_aprendizaje } = asignaturaData;
     transition: all 0.3s ease-in-out;
     z-index: 10;
   }
-  h2{
+  h2 {
     line-height: 2;
   }
 </style>
