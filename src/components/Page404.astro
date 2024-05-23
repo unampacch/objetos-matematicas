@@ -1,4 +1,15 @@
-<div class="flex items-center justify-between lg:h-dvh">
-	<h2 class="text-8xl">Algo se perdió aquí...</h2>
-	<p class="">Regresa al <a href="/">inicio</a>.</p>
+---
+import Summary from '@/components/Summary.astro'
+import BotonRojo from '@/components/BotonRojo.astro'
+---
+
+<div class="flex items-center min-h-[50vh] pt-10">
+	<div class="mx-auto flex w-fit flex-col items-center gap-24">
+		<span class="relative">
+			<h2 class="relative z-10 text-4xl lg:text-8xl font-bold animate-fade">Algo se perdió aquí...</h2>
+			<span class="absolute -top-7 lg:-top-16 right-1 z-0 text-5xl lg:text-9xl font-black text-red/50 animate-fade-up">404</span>
+		</span>
+		<BotonRojo href='/' texto="Regresa al inicio" />
+	</div>
 </div>
+<Summary />
