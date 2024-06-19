@@ -19,7 +19,7 @@ const tituloEnPantallas = objetos_aprendizaje[index]?.pantallas[pantallaIndex]?.
 const { pathname } = Astro.url
 ---
 
-<section class="mx-auto mt-10 max-w-screen-xl mb-5">
+<section class="mx-auto mb-5 mt-5 max-w-screen-xl">
 	<nav class="flex animate-fade-right" aria-label="Breadcrumb">
 		<ol class="block items-center space-x-1 sm:inline-flex md:space-x-2 rtl:space-x-reverse">
 			<li>
@@ -109,8 +109,8 @@ const { pathname } = Astro.url
 	</nav>
 	<h2
 		class="my-5 transform animate-fade-down text-pretty bg-gradient-to-r from-blue
-    to-light bg-clip-text pb-1 text-3xl font-extrabold
-    text-light text-transparent transition duration-1000 ease-in-out md:text-5xl lg:text-6xl"
+    to-light bg-clip-text px-2 pb-1 text-3xl
+    font-extrabold text-light text-transparent transition duration-1000 ease-in-out md:px-0 md:text-5xl lg:text-6xl"
 	>
 		{tituloEnPantallas}
 	</h2>
@@ -120,11 +120,11 @@ const { pathname } = Astro.url
 		<a
 			onclick="handleClick(event)"
 			href="#"
-			class="ml-2 size-7 cursor-pointer rounded-md border bg-light text-center text-lg text-dark transition-all ease-in-out hover:scale-110 hover:bg-blue hover:text-light flex items-center justify-center"
+			class="ml-2 flex size-7 cursor-pointer items-center justify-center rounded-md border bg-light text-center text-lg text-dark transition-all ease-in-out hover:scale-110 hover:bg-blue hover:text-light"
 			data-tooltip-placement="bottom"
 		>
 			<svg
-				class="size-4 "
+				class="size-4"
 				aria-hidden="true"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="currentColor"
@@ -161,11 +161,12 @@ const { pathname } = Astro.url
 	</article>
 </section>
 <script is:inline>
-  function handleClick(e) {
-    e.preventDefault();
-    const newPath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/inicio';
-    window.location.href = newPath;
-  }
+	function handleClick(e) {
+		e.preventDefault()
+		const newPath =
+			window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/inicio'
+		window.location.href = newPath
+	}
 </script>
 <script>
 	document.addEventListener('DOMContentLoaded', () => {

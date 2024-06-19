@@ -92,8 +92,8 @@ const { objetos_aprendizaje } = asignaturaData
 	</nav>
 	<h2
 		class="my-5 transform animate-fade-down text-pretty bg-gradient-to-r from-blue
-    to-light bg-clip-text pb-1 text-3xl font-extrabold
-    text-light text-transparent transition duration-1000 ease-in-out md:text-5xl lg:text-6xl"
+    to-light bg-clip-text px-2 pb-1 text-3xl
+    font-extrabold text-light text-transparent transition duration-1000 ease-in-out md:px-0 md:text-5xl lg:text-6xl"
 	>
 		{(titulo = objetos_aprendizaje[index].titulo)}
 	</h2>
@@ -138,7 +138,9 @@ const { objetos_aprendizaje } = asignaturaData
 			)) || ''
 		}
 	</article>
-	<h3 class="relative -z-10 my-5 animate-fade-right text-xl font-semibold text-gray-400">
+	<h3
+		class="relative -z-10 my-5 animate-fade-right px-2 text-xl font-semibold text-gray-400 md:px-0"
+	>
 		{(subtitulo = objetos_aprendizaje[index].descripcion)}
 	</h3>
 </section>

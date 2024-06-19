@@ -15,6 +15,7 @@ color-scheme: dark;
 --headings-xl: clamp(1.7rem, 2.1vw, 2.2rem);
 --headings-lg: clamp(1.4rem, 1.7vw, 1.9rem);
 }
+
 html {
   font-family: "Onest Variable", sans-serif;
   scroll-behavior: smooth;
@@ -23,21 +24,35 @@ body {
   background-color: var(--css-darkest-blue);
 }
 .objeto-aprendizaje {
+
+
   h3{
     color: var(--css-red-pantone);
     font-weight: 900;
     font-size: var(--headings-xl);
     text-transform: uppercase;
     text-wrap: pretty;
+      padding:0 1rem;
+    @media (min-width: 768px) {
+      padding: 0;
+    }
   }
   h4{
     color: var(--css-red-pantone);
     font-weight: 600;
     font-size: var(--headings-lg);
     text-wrap: pretty;
+      padding:0 1rem;
+    @media (min-width: 768px) {
+      padding: 0;
+    }
   }
   p{
     text-wrap: pretty;
+      padding:0 1rem;
+    @media (min-width: 768px) {
+      padding: 0;
+    }
   }
   p:not(:last-child) {
     margin-bottom: 0.5rem;
