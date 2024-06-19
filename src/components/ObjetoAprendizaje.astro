@@ -1,161 +1,177 @@
 ---
 interface Props {
-  class?: string;
-  titulo?: string;
-  subtitulo?: string;
-  index?: number;
-  asignatura: string;
+	class?: string
+	titulo?: string
+	subtitulo?: string
+	index?: number
+	asignatura: string
 }
 
-let { subtitulo, titulo, index = 0, asignatura } = Astro.props;
-import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
-const asignaturaData = asignaturas[asignatura as keyof typeof asignaturas];
-const { objetos_aprendizaje } = asignaturaData;
+let { subtitulo, titulo, index = 0, asignatura } = Astro.props
+import { asignaturas } from '@/pages/asignaturas/asignaturas.json'
+const asignaturaData = asignaturas[asignatura as keyof typeof asignaturas]
+const { objetos_aprendizaje } = asignaturaData
 ---
 
 <!-- to do el background molaria dejarlo con parallax, no está funcionando bg-fixed -->
 <div
-  style={`background: url('../../${objetos_aprendizaje[index].portada}'); background-size: cover; background-position: center; background-attachment: fixed;`}
-  class="w-dvw h-32 md:h-52 lg:h-96 object-cover object-center mb-4 lg:mb-9
-  animate-fade transform transition
-  duration-1000 ease-in-out bg-fixed
-  -z-10 relative top-0 left-0 right-0 bottom-0"
+	style={`background: url('../../${objetos_aprendizaje[index].portada}'); background-size: cover; background-position: center; background-attachment: fixed;`}
+	class="relative bottom-0 left-0 right-0 top-0 -z-10 mb-4 h-32
+  w-dvw transform animate-fade
+  bg-fixed object-cover object-center
+  transition duration-1000 ease-in-out md:h-52 lg:mb-9 lg:h-96"
 >
 </div>
 
-<section class="max-w-screen-xl mx-auto">
-  <nav class="flex animate-fade-right" aria-label="Breadcrumb">
-    <ol
-      class="block sm:inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
-    >
-      <li>
-        <a
-          href="/"
-          class="inline-flex items-center text-sm font-light text-gray-400 hover:underline"
-        >
-          <svg
-            class="w-3 h-3 me-2.5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
-            ></path>
-          </svg>
-          Inicio
-        </a>
-      </li>
-      <li>
-        <div class="flex items-center">
-          <svg
-            class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"></path>
-          </svg>
-          <a
-            class="ms-1 text-sm font-light text-gray-400 md:ms-2 hover:underline"
-            href={`../../${(asignaturaData as any).slug}`}
-            >{asignaturaData.titulo}</a
-          >
-        </div>
-      </li>
-      <li aria-current="page">
-        <div class="flex items-center">
-          <svg
-            class="rtl:rotate-180 w-3 h-3 text-gray-300 font-light mx-1"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 6 10"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m1 9 4-4-4-4"></path>
-          </svg>
-          <span class="ms-1 text-sm text-lightblue md:ms-2 font-extrabold"
-            >{objetos_aprendizaje[index].titulo}</span
-          >
-        </div>
-      </li>
-    </ol>
-  </nav>
-  <h2
-    class="my-5 text-3xl font-extrabold text-light md:text-5xl lg:text-6xl
-    animate-fade-down transform transition text-pretty pb-1
-    duration-1000 ease-in-out text-transparent bg-clip-text bg-gradient-to-r to-light from-blue"
-  >
-    {(titulo = objetos_aprendizaje[index].titulo)}
-  </h2>
-  <article id="pantallas" class="flex animate-fade-up justify-end items-center">
-    <!-- to do : se sigue desbordando cuando se hace rize -->
-    <span class="uppercase font-semibold text-lightblue">Pantallas</span>
-    {
-      objetos_aprendizaje[index]?.pantallas?.map((pantalla: any, i: number) => (
-        <a
-          data-tooltip-target={i}
-          href={pantalla.slug}
-          class="text-lg text-dark hover:bg-blue transition-all ease-in-out hover:scale-110 cursor-pointer hover:text-light rounded-md border ml-2 bg-light size-7 text-center"
-          data-tooltip-placement="bottom"
-        >
-          {i + 1}
-          <div
-            id={i.toString()}
-            role="tooltip"
-            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-dark transition-opacity duration-300 bg-lightblue rounded-lg shadow-sm opacity-0 tooltip"
-          >
-            {pantalla.titulo}
-            <div class="tooltip-arrow" data-popper-arrow />
-          </div>
-        </a>
-      )) || ""
-    }
-  </article>
-  <h3
-    class="text-xl font-semibold text-gray-400 animate-fade-right my-5 relative -z-10"
-  >
-    {(subtitulo = objetos_aprendizaje[index].descripcion)}
-  </h3>
+<section class="mx-auto max-w-screen-xl">
+	<nav class="flex animate-fade-right" aria-label="Breadcrumb">
+		<ol class="block items-center space-x-1 sm:inline-flex md:space-x-2 rtl:space-x-reverse">
+			<li>
+				<a
+					href="/"
+					class="inline-flex items-center text-sm font-light text-gray-400 hover:underline"
+				>
+					<svg
+						class="me-2.5 h-3 w-3"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="currentColor"
+						viewBox="0 0 20 20"
+					>
+						<path
+							d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+						></path>
+					</svg>
+					Inicio
+				</a>
+			</li>
+			<li>
+				<div class="flex items-center">
+					<svg
+						class="mx-1 h-3 w-3 text-gray-400 rtl:rotate-180"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 6 10"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="m1 9 4-4-4-4"></path>
+					</svg>
+					<a
+						class="ms-1 text-sm font-light text-gray-400 hover:underline md:ms-2"
+						href={`../../${(asignaturaData as any).slug}`}>{asignaturaData.titulo}</a
+					>
+				</div>
+			</li>
+			<li aria-current="page">
+				<div class="flex items-center">
+					<svg
+						class="mx-1 h-3 w-3 font-light text-gray-300 rtl:rotate-180"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 6 10"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="m1 9 4-4-4-4"></path>
+					</svg>
+					<span class="ms-1 text-sm font-extrabold text-lightblue md:ms-2"
+						>{objetos_aprendizaje[index].titulo}</span
+					>
+				</div>
+			</li>
+		</ol>
+	</nav>
+	<h2
+		class="my-5 transform animate-fade-down text-pretty bg-gradient-to-r from-blue
+    to-light bg-clip-text pb-1 text-3xl font-extrabold
+    text-light text-transparent transition duration-1000 ease-in-out md:text-5xl lg:text-6xl"
+	>
+		{(titulo = objetos_aprendizaje[index].titulo)}
+	</h2>
+	<article id="pantallas" class="flex animate-fade-up items-center justify-end">
+		<!-- to do : se sigue desbordando cuando se hace rize -->
+		<span class="font-semibold uppercase text-lightblue">Pantallas</span>
+		<a
+			href="#"
+			class="active ml-2 flex size-7 cursor-pointer items-center justify-center rounded-md border bg-light text-center text-lg text-dark transition-all ease-in-out hover:scale-110 hover:bg-blue hover:text-light"
+			data-tooltip-placement="bottom"
+		>
+			<svg
+				class="size-4"
+				aria-hidden="true"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+			>
+				<path
+					d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+				></path>
+			</svg>
+		</a>
+		{
+			objetos_aprendizaje[index]?.pantallas?.map((pantalla: any, i: number) => (
+				<a
+					data-tooltip-target={i}
+					href={pantalla.slug}
+					class="ml-2 size-7 cursor-pointer rounded-md border bg-light text-center text-lg text-dark transition-all ease-in-out hover:scale-110 hover:bg-blue hover:text-light"
+					data-tooltip-placement="bottom"
+				>
+					{i + 1}
+					<div
+						id={i.toString()}
+						role="tooltip"
+						class="tooltip invisible absolute z-10 inline-block rounded-lg bg-lightblue px-3 py-2 text-sm font-medium text-dark opacity-0 shadow-sm transition-opacity duration-300"
+					>
+						{pantalla.titulo}
+						<div class="tooltip-arrow" data-popper-arrow />
+					</div>
+				</a>
+			)) || ''
+		}
+	</article>
+	<h3 class="relative -z-10 my-5 animate-fade-right text-xl font-semibold text-gray-400">
+		{(subtitulo = objetos_aprendizaje[index].descripcion)}
+	</h3>
 </section>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const header = document.getElementById("pantallas");
-    window.addEventListener("scroll", () => {
-      if (header) {
-        if (window.scrollY > 0) {
-          header.classList.add("pantallas");
-        } else {
-          header.classList.remove("pantallas");
-        }
-      }
-    });
-  });
+	document.addEventListener('DOMContentLoaded', () => {
+		const header = document.getElementById('pantallas')
+		window.addEventListener('scroll', () => {
+			if (header) {
+				if (window.scrollY > 0) {
+					header.classList.add('pantallas')
+				} else {
+					header.classList.remove('pantallas')
+				}
+			}
+		})
+	})
 </script>
 <style is:global>
-  .pantallas {
-    position: fixed;
-    top: 4.5rem;
-    left: 0;
-    padding: 0.3rem 1rem 0.3rem 0;
-    width: 100%;
-    background-color: var(--css-red-pantone);
-    transition: all 0.3s ease-in-out;
-    z-index: 10;
-  }
-  h2 {
-    line-height: 2;
-  }
+	.pantallas {
+		position: fixed;
+		top: 4.5rem;
+		left: 0;
+		padding: 0.3rem 1rem 0.3rem 0;
+		width: 100%;
+		background-color: var(--css-red-pantone);
+		transition: all 0.3s ease-in-out;
+		z-index: 10;
+	}
+	h2 {
+		line-height: 2;
+	}
+	.active {
+		background-color: var(--css-red-pantone);
+		color: var(--css-light);
+	}
 </style>
