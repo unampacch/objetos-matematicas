@@ -5,13 +5,58 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 ---
 
 <Layout
-  title=""
-  description=""
+  title="Sistemas de ecuaciones lineales de orden 2x2"
+	description="Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables."
 >
 
     <ObjetoAprendizaje index={3} asignatura={"matematicas_1"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <h3>Problema (Parte I)</h3>
+        <p>Diego fue a la papelería y compró 12 plumas y 6 lápices. Le cobraron $102, pero no recuerda el precio de cada una de las cosas. ¿Cuánto podría haber costado cada pluma y cada lápiz?</p>
+        <p>¿Puedes ayudar a Diego a encontrar tres precios posibles para cada lápiz y cada pluma? </p>
+        <p>Localiza en el siguiente applet las parejas de precios que sugeriste arriba, considera como la coordenada x  el precio de cada pluma y como la coordenada y  el precio de cada lápiz.</p>
+        <GeogebraLink
+				href="https://www.geogebra.org/m/srgnuhd9"
+				titulo="Problema de precios (Parte I)"
+				texto="Mueve los puntos A, B y C de tal manera que sus coordenadas coincidan con los precios que sugeriste en la parte de arriba."
+			/>
+      <p>Como puedes notar, existe más de una solución al problema de Diego. De hecho, si definimos como <Latex
+        formula="x"
+        inline={true}
+      /> el precio cada pluma y como <Latex
+      formula="y"
+      inline={true}
+    /> el precio de cada lápiz, podemos modelar el problema por medio de la ecuación <Latex
+    formula="12x+6y=102"
+    inline={true}
+  />.</p>
+      <p>Los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra. Mueve el punto P que se encuentra sobre la recta y explora los diferentes precios que podrían tener cada pluma y cada lápiz.</p>
+      <GeogebraLink
+      href="https://www.geogebra.org/m/degqf48k"
+      titulo="Ecuación Lineal en dos Variables"
+      texto="Revisa y explora el siguiente applet de GeoGebra"
+    />
+
+
+
+
+
+
+        <p>
+          El que más usaremos <Latex
+            formula="a^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n \\text{ veces}}"
+            inline={true}
+          /> recuerden usar inline true para que se vea en una sola linea, de lo contrario al no ponerlo
+          se verá en bloque.
+        </p>
+        <p>
+          Ahora pongamos una imagen con caption. Vean como tiene el atributo de caption para el pie de
+          página y el border que puede ser true o por default false, el borde es por si la imagen es
+          blanca y muy pegada al los borde separarla un poco.
+        </p>
+        <ImagenCaption src="/mate1-portada-1.webp" caption="Aqui va el pie de imagen" border={true} />
+      </div>
     </div>
 
 </Layout>
