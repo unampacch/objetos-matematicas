@@ -1,0 +1,114 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Latex from '@/components/Latex.astro'
+import BgFluido from '@/components/BgFluido.astro'
+---
+
+<Layout
+	title="Números irracionales"
+	description="Los números irracionales son aquellos que no pueden ser expresados como fracciones. En esta lección aprenderás qué son y cómo identificarlos."
+>
+	<ObjetoAprendizajePantalla index={0} pantallaIndex={4} asignatura={'matematicas_1'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3><Latex formula="\\mathbb{I}" /></h3>
+			<p>
+				Los números irracionales son aquellos que no pueden expresarse como el cociente exacto de
+				dos números enteros, es decir, en una fracción exacta. Tienen una expansión decimal infinita
+				y no periódica.
+			</p>
+			<BgFluido bg="bg-blue">
+				<div class="grid grid-cols-1 items-center py-10 xl:grid-cols-3">
+					<div class="col-span-1 text-center">
+						<h4 class="font-extrabold uppercase !text-darkblue">Ejemplos</h4>
+					</div>
+					<div class="col-span-2 text-center text-2xl">
+						<Latex formula="\\sqrt{2}, \\pi, e , \\ldots" />
+					</div>
+				</div>
+			</BgFluido>
+			<h4>Algunas de sus propiedades son:</h4>
+			<ol class="ol-number">
+				<li>
+					<div>
+						<p class="text-2xl">No pueden representarse con una fracción</p>
+						<p>
+							A diferencia de los números racionales, los números irracionales no se pueden
+							representar como una fracción de dos enteros. No existe una relación simple y exacta
+							entre su parte entera y su parte decimal.
+						</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="text-2xl">Infinidad decimal no periódica</p>
+						<p>
+							Los números irracionales tienen una expansión decimal infinita y no periódica. Esto
+							significa que no se puede encontrar un patrón repetitivo en sus dígitos decimales.
+						</p>
+						<div class="text-center">
+							<h4>Ejemplo</h4>
+							<Latex formula="\\sqrt{2} = 1.41421356\\ldots" />
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<p class="text-2xl">Trascendencia</p>
+						<p>
+							lgunos números irracionales son trascendentes, lo que significa que no son soluciones
+							de ninguna ecuación algebraica con coeficientes enteros. Esto implica que no se pueden
+							expresar como raíces de polinomios con coeficientes enteros.
+						</p>
+						<div class="text-center">
+							<h4>Ejemplo</h4>
+							<Latex formula="e, \\pi" />
+						</div>
+						<p>
+							<Latex inline={true} formula="e \\approx 2.71828" /> y <Latex
+								inline={true}
+								formula="\\pi \\approx 3.1416"
+							/>son números irracionales y trascendentes. Su irracionalidad significa que no puede
+							expresarse como una fracción exacta, y su trascendencia implica que no es la raíz de
+							ninguna ecuación polinómica con coeficientes enteros.
+						</p>
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div class="my-5 grid w-full grid-cols-1 gap-4 px-5 md:grid-cols-2">
+			<div class="bg-slate-100 p-5 text-dark">
+				<h4 class="font-extrabold uppercase !text-darkblue">
+					Cerradura bajo la suma y multiplicación
+				</h4>
+				<p>
+					Si sumas o multiplicas un número irracional con un número racional, el resultado siempre
+					es un número irracional.
+				</p>
+				<div class="text-center">
+					<h4>Ejemplos</h4>
+					<Latex formula="\\sqrt{2} + 3 \\approx 4.41421356\\ldots" />
+					<Latex formula="\\sqrt{2} \\times 3 \\approx 4.242640687\\ldots" />
+				</div>
+				<p>
+					La multiplicación de dos números irracionales puede dar como resultado un número racional.
+				</p>
+				<div class="text-center">
+					<h4>Ejemplo</h4>
+					<Latex formula="\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4" />
+				</div>
+			</div>
+			<div class="bg-slate-100 p-5 text-dark">
+				<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la resta</h4>
+				<p>
+					La resta de un número racional y un número irracional, siempre es un número irracional.
+				</p>
+				<div class="text-center">
+					<h4>Ejemplo</h4>
+					<Latex formula="3 - \\sqrt{2} = 1.58578643\\ldots  " />
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
