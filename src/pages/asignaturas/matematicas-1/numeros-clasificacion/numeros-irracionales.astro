@@ -18,16 +18,19 @@ import BgFluido from '@/components/BgFluido.astro'
 				dos números enteros, es decir, en una fracción exacta. Tienen una expansión decimal infinita
 				y no periódica.
 			</p>
-			<BgFluido bg="bg-blue">
-				<div class="grid grid-cols-1 items-center py-10 xl:grid-cols-3">
-					<div class="col-span-1 text-center">
-						<h4 class="font-extrabold uppercase !text-darkblue">Ejemplos</h4>
-					</div>
-					<div class="col-span-2 text-center text-2xl">
-						<Latex formula="\\sqrt{2}, \\pi, e , \\ldots" />
-					</div>
+		</div>
+
+		<BgFluido bg="bg-blue">
+			<div class="grid grid-cols-1 items-center py-10 xl:grid-cols-3">
+				<div class="col-span-1 text-center">
+					<h4 class="font-extrabold uppercase !text-darkblue">Ejemplos</h4>
 				</div>
-			</BgFluido>
+				<div class="col-span-2 text-center text-2xl">
+					<Latex formula="\\sqrt{2}, \\pi, e , \\ldots" />
+				</div>
+			</div>
+		</BgFluido>
+		<div class="mx-auto max-w-screen-xl">
 			<h4>Algunas de sus propiedades son:</h4>
 			<ol class="ol-number">
 				<li>
@@ -48,7 +51,7 @@ import BgFluido from '@/components/BgFluido.astro'
 							significa que no se puede encontrar un patrón repetitivo en sus dígitos decimales.
 						</p>
 						<div class="text-center">
-							<h4>Ejemplo</h4>
+							<p class="text-xl font-bold">Ejemplo</p>
 							<Latex formula="\\sqrt{2} = 1.41421356\\ldots" />
 						</div>
 					</div>
@@ -62,7 +65,7 @@ import BgFluido from '@/components/BgFluido.astro'
 							expresar como raíces de polinomios con coeficientes enteros.
 						</p>
 						<div class="text-center">
-							<h4>Ejemplo</h4>
+							<p class="text-xl font-bold">Ejemplo</p>
 							<Latex formula="e, \\pi" />
 						</div>
 						<p>
@@ -87,7 +90,7 @@ import BgFluido from '@/components/BgFluido.astro'
 					es un número irracional.
 				</p>
 				<div class="text-center">
-					<h4>Ejemplos</h4>
+					<p class="text-xl font-bold">Ejemplos</p>
 					<Latex formula="\\sqrt{2} + 3 \\approx 4.41421356\\ldots" />
 					<Latex formula="\\sqrt{2} \\times 3 \\approx 4.242640687\\ldots" />
 				</div>
@@ -95,7 +98,7 @@ import BgFluido from '@/components/BgFluido.astro'
 					La multiplicación de dos números irracionales puede dar como resultado un número racional.
 				</p>
 				<div class="text-center">
-					<h4>Ejemplo</h4>
+					<p class="text-xl font-bold">Ejemplo</p>
 					<Latex formula="\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4" />
 				</div>
 			</div>
@@ -105,7 +108,7 @@ import BgFluido from '@/components/BgFluido.astro'
 					La resta de un número racional y un número irracional, siempre es un número irracional.
 				</p>
 				<div class="text-center">
-					<h4>Ejemplo</h4>
+					<p class="text-xl font-bold">Ejemplo</p>
 					<Latex formula="3 - \\sqrt{2} = 1.58578643\\ldots  " />
 				</div>
 			</div>
