@@ -5,7 +5,7 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 ---
 
 <Layout
-  title=""
+  title="Solución de ecuaciones de primer grado"
   description=""
 >
 
@@ -38,15 +38,15 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
         <h4>Ejemplo:</h4>
         <p>¿Es <Latex formula="x = 3" inline={true}/> solución de la ecuación: <Latex formula="2x +4 = 4x -2" inline={true}/>?</p>
           <dd>Veamos si <Latex formula="x = 3" inline={true}/> satisface la ecuación:</dd>
-        <p style="text-align: center;"> <Latex formula="2x +4 = 4x -2"/></p>
+        <p class="text-center"> <Latex formula="2x +4 = 4x -2"/></p>
         <br>
         <p>Sustituyamos el valor de 3 en la incógnita x , el número de veces que se presente en la ecuación:</p>
           <br>
-          <p style="text-align: center;"><Latex formula="2(3) +4 = 4(3) -2"/></p>
+          <p class="text-center"><Latex formula="2(3) +4 = 4(3) -2"/></p>
           <br>
         <p>y resolvamos:</p>
-          <p style="text-align: center;"><Latex formula="6 +4 = 12 -2"/></p>
-          <p style="text-align: center;"><Latex formula="10 = 10"/></p>
+          <p class="text-center"><Latex formula="6 +4 = 12 -2"/></p>
+          <p class="text-center"><Latex formula="10 = 10"/></p>
           <br>
           <br>
           <p>como <Latex formula="10 = 10" inline={true}/> es verdadero, <Latex formula="x = 3" inline={true}/> satisface la ecuación. Es decir, <Latex formula="x = 3" inline={true}/> es una raíz o solución para esta ecuación.</p>
@@ -61,7 +61,7 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
           <br>
           <p>sabemos que <Latex formula="8" inline={true}/>  es diferente de <Latex formula="6" inline={true}/> , por lo que <Latex formula="8= 6" inline={true}/>  es falso, entonces <Latex formula="x = 2" inline={true}/> no satisface la ecuación, es decir, <Latex formula="x = 2" inline={true}/> no es solución de esta ecuación.</p>
         </div>
-                 
+
     </div>
 
 </Layout>

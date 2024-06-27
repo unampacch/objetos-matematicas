@@ -1,0 +1,20 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout
+  title="Resolución de ecuaciones de primer grado con una incógnita"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={2} pantallaIndex={1} asignatura={"matematicas_1"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+      <h3>Resolución de ecuaciones de primer grado con una incógnita</h3>
+      </div>
+    </div>
+
+</Layout>

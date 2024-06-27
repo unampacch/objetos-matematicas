@@ -77,24 +77,14 @@
           "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de ecuaciones de primer grado en el ámbito de la matemática.",
           "pantallas": [
             {
-              "titulo": "Ecuaciones lineales",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-lineales",
-              "descripcion": "Resolución de ecuaciones lineales."
+              "titulo": "Diferencia entre ecuación e identidad",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/diferencia-ecuacion-identidad",
+              "descripcion": "Diferencia entre ecuación e identidad."
             },
             {
-              "titulo": "Ecuaciones con paréntesis",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-parentesis",
-              "descripcion": "Resolución de ecuaciones con paréntesis."
-            },
-            {
-              "titulo": "Ecuaciones con denominadores",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-denominadores",
-              "descripcion": "Resolución de ecuaciones con denominadores."
-            },
-            {
-              "titulo": "Ecuaciones con fracciones",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-fracciones",
-              "descripcion": "Resolución de ecuaciones con fracciones."
+              "titulo": "Resolución de ecuaciones de primer grado con una incógnita",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-una-incognita",
+              "descripcion": "Resolución de ecuaciones de primer grado con una incógnita"
             }
           ]
         },
