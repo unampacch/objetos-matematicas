@@ -5,13 +5,147 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 ---
 
 <Layout
-  title=""
-  description=""
+  title="Binomio Cuadrado"
+  description="Este material aborda de manera detallada los conceptos fundamentales del binomio cuadrado en el ámbito de la matemática. Contiene una exploración exhaustiva de la identidad del binomio cuadrado, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial."
 >
 
     <ObjetoAprendizaje index={2} asignatura={"matematicas_2"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <p>Temática. Productos notables</p>
+        <p>Aprendizaje. El alumnado desarrolla algebraicamente un binomio al cuadrado.</p>
+        <p>Objetivo. Desarrollar el cuadrado de un binomio.</p>
+
+        <p>El binomio cuadrado es un concepto fundamental en el álgebra que aparece en la teoría y en la práctica de las matemáticas. Se refiere a la expansión de un binomio elevado al cuadrado y es una herramienta esencial para simplificar expresiones algebraicas y resolver ecuaciones. Dominar el binomio cuadrado no solo te ayudará a tus estudios actuales, sino que también sentará las bases para conceptos más avanzados en matemáticas y ciencias</p>
+
+        <h3>¿Qué es un binomio?</h3>
+        <p>En Matemáticas se denomina un binomio a la expresión algebraica formada por dos términos. Esto quiere decir que cualquier expresión formada por la suma o la resta de dos términos es un binomio. En otras palabras, a la expresión de la forma a+b se denomina binomio.</p>
+
+        <p>En general también, un polinomio que consta de dos términos se le llama binomio. Elevar un binomio a la n-ésima potencia equivale a multiplicar un binomio n veces por sí mismo.</p>
+
+        <p>En particular, la expresión que da como resultado elevar un binomio a la segunda potencia, o bien dicho en otras palabras, multiplicarlo por sí mismo, recibe el nombre de binomio al cuadrado. Las siguientes expresiones algebraicas son ejemplos de binomios al cuadrado:</p>
+        <ol class="ol-alpha mt-5 text-2xl">
+          <li>
+            <Latex
+            formula="(a+b)^2"
+            inline={true} />
+          </li>
+          <li>
+            <Latex
+            formula="(4x-8y^5 )^2"
+            inline={true} />
+          </li>
+          <li>
+            <Latex
+            formula="(5ax+1/2 m)^2"
+            inline={true} />
+          </li>
+          <li>
+            <Latex
+            formula="(nx^2-5y^3 )^2"
+            inline={true} />
+          </li>
+        </ol>
+        <p>Para calcular el cuadrado de un binomio recordemos uno de los axiomas de los números reales, que nos dice lo siguiente:</p>
+
+        <p>
+          Para toda <Latex
+          formula="a,b"
+          inline={true} /> y <Latex
+          formula="c"
+          inline={true} /> en los <Latex
+          formula="R"
+          inline={true} /> , <Latex
+          formula="a(b+c)=ab+ac"
+          inline={true} /> y <Latex
+          formula="(b+c)a=ba+ca"
+          inline={true}
+          /> .
+        </p>
+        
+        <p>Al anterior axioma, también se le da el nombre de ley distributiva.</p>
+        <p>Apliquemos esta ley para calcular el cuadrado de un binomio:</p>
+
+        <Latex
+        formula="(a+b)^2=(a+b)(a+b)=a^2+ab+ab+b^2"
+        inline={true} />
+
+        <p>Sumando términos semejantes:</p>
+
+        <Latex
+        formula="(a+b)^2=(a+b)(a+b)=a^2+2ab+b^2"
+        inline={true} />
+
+        <p>
+          Por lo tanto, <Latex
+          formula="(a+b)^2=a^2+2ab+b^2"
+          inline={true} /> , donde se puede observar que el resultado está formado por tres términos:
+        </p>
+
+        <ol class="ol-number mt-5 text-2xl">
+          <li>El cuadrado de <Latex
+          formula="a"
+          inline={true} />
+         </li>
+         <li>El doble del producto de <Latex
+          formula="a"
+          inline={true} /> y <Latex
+          formula="b"
+          inline={true} />
+         </li><li>El cuadrado de <Latex
+          formula="b"
+          inline={true} />
+         </li>
+        </ol>
+
+        <p>
+          Debe notarse que los términos <Latex
+          formula="a^2"
+          inline={true} /> y <Latex
+          formula="b^2"
+          inline={true} /> siempre son positivos, lo anterior porque el cuadrado de cualquier cantidad negativa o positiva, en todos los casos, es positiva. Sin embargo, el término <Latex
+          formula="2ab"
+          inline={true} /> puede ser positivo o negativo según sean <Latex 
+          formula="a"
+          inline={true} /> y <Latex
+          formula="b"
+          inline={true} /> del mismo signo, o de signos contrarios, respectivamente. Por ejemplo, elevemos al cuadrado el binomio <Latex
+          formula="(a-b)"
+          inline={true} /> :
+        </p>
+
+        <Latex
+        formula="(a-b)^2=(a-b)(a-b)=a^2-ab-ab+b^2"
+        inline={true} />
+
+        <p>Sumando términos semejantes:</p>
+
+        <Latex
+        formula="(a-b)^2=(a-b)(a-b)=a^2-2ab-b^2"
+        inline={true} />
+
+        <p>
+          Por lo tanto, <Latex
+          formula="(a-b)^2=a^2-2ab-b^2"
+          inline={true} /> . En este caso, como <Latex
+          formula="a"
+          inline={true} /> y <Latex
+          formula="b"
+          inline={true} /> tienen signos contrarios, el segundo término es negativo.
+        </p>
+        
+        <h3>Generalizando la solución de un binomio al cuadrado</h3>
+
+        <p>El cuadrado de un binomio se obtiene sumando algebraicamente el cuadrado del primer término, el doble del primer término por el segundo y el cuadrado del segundo término.</p>
+
+        <h3>Ejemplos.</h3>
+
+        <p>Calcular los siguientes binomios al cuadrado</p>
+
+      </div>
+
     </div>
+
+    
 
 </Layout>

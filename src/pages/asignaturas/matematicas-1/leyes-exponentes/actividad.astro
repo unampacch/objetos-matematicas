@@ -1,25 +1,21 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
-import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
-import Lumi from "@/components/Lumi.astro";
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import Lumi from '@/components/Lumi.astro'
 ---
 
 <Layout title="Notación exponencial">
-  <ObjetoAprendizajePantalla
-    index={1}
-    pantallaIndex={2}
-    asignatura={"matematicas_1"}
-  />
-  <div class="objeto-aprendizaje mx-auto animate-fade">
-    <div class="max-w-screen-xl mx-auto mb-5">
-      <p>Es momento de poner en práctica lo aprendido.</p>
-    </div>
-    <Lumi
-      src="https://app.Lumi.education/api/v1/run/PxbHh1/embed"
-      nombre="Actividad para el estudiante "
-      instrucciones="Utiliza las leyes de los exponentes para simplificar cada expresión:"
-    />
-  </div>
+	<ObjetoAprendizajePantalla index={1} pantallaIndex={2} asignatura={'matematicas_1'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<p>Es momento de poner en práctica lo aprendido.</p>
+		</div>
+		<Lumi
+			src="/matematicas1/leyes-exponentes/af.html"
+			nombre="Actividad para el estudiante "
+			instrucciones="Utiliza las leyes de los exponentes para simplificar cada expresión:"
+		/>
+	</div>
 </Layout>

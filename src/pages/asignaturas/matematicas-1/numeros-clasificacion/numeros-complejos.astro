@@ -1,0 +1,66 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Latex from '@/components/Latex.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import Lumi from '@/components/Lumi.astro'
+---
+
+<Layout title="Números reales">
+	<ObjetoAprendizajePantalla index={0} pantallaIndex={6} asignatura={'matematicas_1'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3><Latex formula="\\mathbb{C}" /></h3>
+			<p>
+				Los números complejos se componen de una parte real y una parte imaginaria. Se representan
+				en la forma <Latex inline={true} formula="a + bi" /> , donde " 𝑎 " y " 𝑏 " son números reales,
+				e "𝑖" es la unidad imaginaria <Latex inline={true} formula="\\sqrt{-1}" />
+			</p>
+			<h4>Números imaginarios</h4>
+			<p>
+				El número imaginario se denota por la letra <Latex inline={true} formula="i" /> , en matemáticas,
+				y se define como la raíz cuadrada de -1 <Latex inline={true} formula="\\sqrt{-1}" /> En otras
+				palabras, <Latex inline={true} formula="i^2 = -1" />. Se utiliza para extender los números
+				reales y permitir la solución de ecuaciones que no tienen solución en los números reales.
+			</p>
+			<p>
+				Por ejemplo, el número complejo <Latex inline={true} formula="3 + 2i" /> tiene una parte real
+				de 3 y una parte imaginaria de 2. Los números imaginarios y complejos son fundamentales en matemáticas,
+				especialmente en álgebra, análisis complejo y otras ramas de las matemáticas aplicadas.
+			</p>
+			<h4>Forma rectangular</h4>
+			<p>
+				Los números complejos se pueden representar en forma rectangular, donde se expresan como la
+				suma de una parte real “ 𝑎 ” y una parte imaginaria “ 𝑏 ” multiplicada por la unidad
+				imaginaria " 𝑖 ".
+			</p>
+			<div class="text-center text-2xl">
+				<Latex formula="z = a + bi" />
+			</div>
+			<h4>Forma polar</h4>
+			<p>
+				Los números complejos también se pueden representar en forma polar, donde se expresan como
+				una magnitud y un ángulo. La magnitud representa la distancia desde el origen hasta el
+				número complejo, y el ángulo representa la dirección en la que se encuentra.
+			</p>
+		</div>
+		<BgFluido bg="bg-blue">
+			<div class="mx-auto max-w-screen-xl">
+				<div class="grid w-full grid-cols-2 items-center">
+					<div>
+						<img src="/matematicas1/numeros-clasificacion/forma-polar.webp" alt="" />
+					</div>
+					<div class="text-center text-2xl">
+						<Latex formula="z = a + bi" />
+						<Latex formula="z = r (\\cos(\\varphi) + i \\sin(\\varphi))" />
+					</div>
+				</div>
+			</div>
+		</BgFluido>
+		<Lumi
+			src="/matematicas1/numeros-clasificacion/fv-repaso-final.html"
+			nombre="Ejercicios de repaso"
+			instrucciones="Lee cuidadosamente cada enunciado y elige si es falso o verdadero. "
+		/>
+	</div>
+</Layout>

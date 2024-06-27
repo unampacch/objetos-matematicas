@@ -1,79 +1,76 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
-import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
-import BgFluido from "@/components/BgFluido.astro";
-import GeogebraLink from "@/components/GeogebraLink.astro";
-import Lumi from "@/components/Lumi.astro";
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
 ---
 
 <Layout
-  title="Números Clasificación y propiedades"
-  description="En este objeto de aprendizaje, aprenderás sobre los números, su clasificación y propiedades. ¡Vamos a explorar el fascinante mundo de los números juntos!"
+	title="Números Clasificación y propiedades"
+	description="En este objeto de aprendizaje, aprenderás sobre los números, su clasificación y propiedades. ¡Vamos a explorar el fascinante mundo de los números juntos!"
 >
-  <ObjetoAprendizaje index={1} asignatura={"matematicas_1"} />
-  <div class="objeto-aprendizaje mx-auto animate-fade">
-    <div class="max-w-screen-xl mx-auto">
-      <h3>¿Que son las Leyes de los exponentes?</h3>
-      <p>
-        Conjunto de reglas establecidas para resolver operaciones matemáticas
-        con potencia.
-      </p>
-      <p>
-        La Potencia o potenciación consiste en la multiplicación de un número
-        por sí mismo varias veces, y se representan como:
-      </p>
-      <div class="text-center my-5 text-3xl">
-        <Latex
-          formula="a^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n \\text{ veces}}"
-        />
-      </div>
-      <p>
-        La expresión <Latex inline={true} formula="a^n" /> se lee se lee
-        <Latex inline={true} formula="a" /> la enésima potencia o
-        <Latex inline={true} formula="a" /> la
-        <Latex inline={true} formula="n" />
-      </p>
-      <p>
-        El entero positivo <Latex inline={true} formula="n" />n se llama
-        exponente y el número real <Latex inline={true} formula="a" />, base
-      </p>
-    </div>
-    <ImagenFullCaption
-      src="matematicas1/base-exponente.webp"
-      caption="Base y exponente"
-      bg="bg-blue"
-    />
-    <BgFluido bg="bg-blue">
-      <div class="grid xl:grid-cols-2 grid-cols-1 items-center py-10">
-        <div class="text-center col-span-1">
-          <h4 class="!text-darkblue uppercase font-extrabold">Ejemplo</h4>
-        </div>
-        <div class="text-2xl col-span-1">
-          <Latex formula="a^1 = a " />
-          <div class="mt-5">
-            <Latex formula="a^3 = a \\cdot a \\cdot a " />
-          </div>
-          <div class="mt-5">
-            <Latex
-              formula="a^6 = a \\cdot a \\cdot a \\cdot a \\cdot a \\cdot a "
-            />
-          </div>
-        </div>
-      </div>
-    </BgFluido>
-    <div class="max-w-screen-xl mx-auto">
-      <GeogebraLink
-        href="https://www.geogebra.org/classic/rqftpc8z"
-        titulo="Simulador Potencias"
-        texto="Revisa el simulador y explora los deslizadores"
-      />
-    </div>
-    <Lumi
-      src="https://app.Lumi.education/api/v1/run/wneZB_/embed"
-      nombre="Falso o Verdadero"
-      instrucciones="Después de revisar el simulador Potencias, te invitamos a identificar cual enunciado es Verdadero (v) o Falso (F), si es necesario regresa al simulador y explora nuevamente, con el fin de dar una respuesta correcta."
-    />
-  </div>
+	<ObjetoAprendizaje index={1} asignatura={'matematicas_1'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3>¿Que son las Leyes de los exponentes?</h3>
+			<p>Conjunto de reglas establecidas para resolver operaciones matemáticas con potencia.</p>
+			<p>
+				La Potencia o potenciación consiste en la multiplicación de un número por sí mismo varias
+				veces, y se representan como:
+			</p>
+			<div class="my-5 text-center text-3xl">
+				<Latex
+					formula="a^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n \\text{ veces}}"
+				/>
+			</div>
+			<p>
+				La expresión <Latex inline={true} formula="a^n" /> se lee se lee
+				<Latex inline={true} formula="a" /> la enésima potencia o
+				<Latex inline={true} formula="a" /> la
+				<Latex inline={true} formula="n" />
+			</p>
+			<p>
+				El entero positivo <Latex inline={true} formula="n" />n se llama exponente y el número real <Latex
+					inline={true}
+					formula="a"
+				/>, base
+			</p>
+		</div>
+		<ImagenFullCaption
+			src="matematicas1/base-exponente.webp"
+			caption="Base y exponente"
+			bg="bg-blue"
+		/>
+		<BgFluido bg="bg-blue">
+			<div class="grid grid-cols-1 items-center py-10 xl:grid-cols-2">
+				<div class="col-span-1 text-center">
+					<h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+				</div>
+				<div class="col-span-1 text-2xl">
+					<Latex formula="a^1 = a " />
+					<div class="mt-5">
+						<Latex formula="a^3 = a \\cdot a \\cdot a " />
+					</div>
+					<div class="mt-5">
+						<Latex formula="a^6 = a \\cdot a \\cdot a \\cdot a \\cdot a \\cdot a " />
+					</div>
+				</div>
+			</div>
+		</BgFluido>
+		<div class="mx-auto max-w-screen-xl">
+			<GeogebraLink
+				href="https://www.geogebra.org/classic/rqftpc8z"
+				titulo="Simulador Potencias"
+				texto="Revisa el simulador y explora los deslizadores"
+			/>
+		</div>
+		<Lumi
+			src="/matematicas1/leyes-exponentes/fv-potencias.html"
+			nombre="Falso o Verdadero"
+			instrucciones="Después de revisar el simulador Potencias, te invitamos a identificar cual enunciado es Verdadero (v) o Falso (F), si es necesario regresa al simulador y explora nuevamente, con el fin de dar una respuesta correcta."
+		/>
+	</div>
 </Layout>
