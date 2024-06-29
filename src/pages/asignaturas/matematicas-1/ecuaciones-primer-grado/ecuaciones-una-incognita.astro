@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import Lumi from "@/components/Lumi.astro";
 ---
 
 <Layout
@@ -14,7 +15,220 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
     <div class="objeto-aprendizaje mx-auto animate-fade">
       <div class="mx-auto max-w-screen-xl">
       <h3>Resolución de ecuaciones de primer grado con una incógnita</h3>
+      
+      <p class="my-5">Una ecuación de primer grado es una ecuación polinómica, que después de reducirla, el mayor de los grados de los monomios que contiene es uno. Es decir, presenta la siguiente forma:</p>
+         <p class="my-5 text-center"><Latex formula="ax+b=0" inline={true}/></p>
+      
+      <p class="my-5">Donde <Latex formula="a" inline={true}/> y <Latex formula="b" inline={true}/> son constantes y <Latex formula="a≠0" inline={true}/></p>
+      
+      <h4>Método intuitivo </h4>
+      
+      <p class="my-5">Revisa los siguientes videos que te explican el método intuitivo para resolver ecuaciones de manera intuitiva.</p>
+      
+      <div class="grid gap-7 lg:grid-cols-2 lg:gap-10">
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NtnTZKwrua0?si=d4RA3HyN6EpdGLIK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/57aKCWcxbQo?si=u6fji-UXmdqyvUTF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@elmatematicodecch/video/7312872875105537286" data-video-id="7312872875105537286" style="max-width: 605px;min-width: 300px;" > <section> <a target="_blank" title="@elmatematicodecch" href="https://www.tiktok.com/@elmatematicodecch?refer=embed">@elmatematicodecch</a> <p class="my-5"></p class="my-5"> <a target="_blank" title="♬ sonido original - S O Y E R" href="https://www.tiktok.com/music/sonido-original-7295565210826705669?refer=embed">♬ sonido original - S O Y E R</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+      </div>
+      
+      
+      
+      <Lumi
+			    src="https://app.Lumi.education/api/v1/run/rIMe5w/embed"
+			    nombre="Ejercicio"
+			    instrucciones="Encuentra la solución de las siguientes ecuaciones utilizando el método intuitivo."
+		    />
+      
+      
+      
+      <h3>Reducción de ecuaciones</h3>
+      
+      <p class="my-5">Revisa los siguientes videos que te explican cómo reducir los términos de una ecuación cuando hay signos de agrupación.</p>
+      
+      <div class="grid gap-7 lg:grid-cols-3 lg:gap-10">
+        <div>
+          <iframe width="372" height="210" src="https://www.youtube.com/embed/w3oi3H8S5Jg?si=BgXNh1KSbG_hpkh-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="372" height="210" src="https://www.youtube.com/embed/k5VxcZtkBSs?si=J1LRVzmYvTqjKf2J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="372" height="210" src="https://www.youtube.com/embed/r7OwZNKm_tM?si=Mw2kMxZXbpp31_Qi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
+      <Lumi
+			    src=""
+			    nombre="Ejercicios"
+			    instrucciones="Encuentra la solución de las siguientes ecuaciones de primer grado."
+		    />
+        
+        
+        <p class="my-5">En la práctica nos encontramos con ecuaciones un poco más elaboradas, donde la incógnita no solo se encuentra en un miembro de la ecuación, sino en ambos. Estas ecuaciones también pueden simplificarse para encontrar su solución.</p>
+        <p class="my-5">Aquí un ejemplo donde encontraremos la solución paso a paso</p>
+        
+        <p class="my-5 text-center"><Latex formula="4x+6=-2x" inline={true}/></p>
+        
+        <p class="my-5">En este ejemplo al ya no poder reducir más los términos de cada miembro de la ecuación, lo que debemos hacer es sumar <Latex formula="2x" inline={true}/> (propiedad de la suma) en ambos miembros de la ecuación para eliminar el término del segundo miembro.</p>
+        
+        <p class="my-5 text-center"><Latex formula="4x+6+2x=-2x+2x" inline={true}/></p>
+        
+        <p class="my-5">Simplificando los términos semejantes tenemos:</p>
+        
+        <p class="my-5 text-center"><Latex formula="6x+6=0" inline={true}/></p>
+        
+        <p class="my-5">Ahora para dejar el término con la incógnita solo, restamos 6 en ambos miembros de la ecuación </p>
+        
+        <p class="my-5 text-center"><Latex formula="6x+6-6=0-6" inline={true}/></p>
+        
+        <p class="my-5">Simplificado es</p>
+        
+        <p class="my-5 text-center"><Latex formula="6x=-6" inline={true}/></p>
+        
+        <p class="my-5">Por último, dividimos entre el coeficiente que acompaña a la incógnita (propiedad de la multiplicación, multiplicamos por el recíproco de 6,  <Latex formula="\\frac{1}{6}" inline={true}/> ambos miembros de la ecuación)</p>
 
+        <p class="my-5 text-center"><Latex formula="\\frac{6x}{6}= \\frac{-6}{6}" inline={true}/></p>
+        
+        <p class="my-5">encontrando así la solución</p>
+
+        <p class="my-5 text-center"><Latex formula="x=-1" inline={true}/></p>
+
+        <p class="my-5">Comprobemos</p>
+
+        <p class="my-5 text-center"><Latex formula="4x+6=-2x" inline={true}/></p>
+
+        <p class="my-5">Si <Latex formula="x=-1" inline={true}/> es solución, debe satisfacer la igualdad</p>
+
+        <p class="my-5 text-center"><Latex formula="4(-1)+6=-2(-1)" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="-4+6=2" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="2=2" inline={true}/></p>
+
+        <p class="my-5">Encontremos la solución de otra ecuación un poco más compleja</p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{3}{7} x + \\frac{5}{8} \\left(x - \\frac{3}{7} x\\right) + 12 = x" inline={true}/></p>
+
+        <p class="my-5">Observamos que hay términos en el primer miembro que se pueden reducir, así que empecemos por ahí</p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{3}{7} x + \\left(\\frac{5}{8}\\right)x - \\left(\\frac{5}{8}\\right)\\left(\\frac{3}{7} x\\right) + 12 = x" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{3}{7} x + \\frac{5}{8} x - \\frac{15}{56} x + 12 = x" inline={true}/></p>
+
+        <p class="my-5">Simplificamos términos semejantes</p>
+
+        <p class="my-5 text-center"><Latex formula="\\left(\\frac{3}{7} + \\frac{5}{8} - \\frac{15}{56}\\right)x + 12 = x" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{11}{14} x + 12 = x" inline={true}/></p>
+
+        <p class="my-5">Para evitar seguir trabajando con números racionales, podemos multiplicar toda la ecuación por 14 y así trabajar con una ecuación más sencilla:</p>
+
+        <p class="my-5 text-center"><Latex formula="14\\left(\\frac{11}{14} x + 12\\right) = 14x" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="11x + 168 = 14x" inline={true}/></p>
+
+        <p class="my-5">Ahora simplificamos para dejar la incógnita en un mismo miembro de la ecuación:</p>
+
+        <p class="my-5 text-center"><Latex formula="11x + 168 - 14x = 14x - 14x" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="-3x + 168 = 0" inline={true}/></p>
+
+        <p class="my-5">Dejamos el término con la incógnita sólo en uno de los miembros de la ecuación:</p>
+
+        <p class="my-5 text-center"><Latex formula="-3x + 168 - 168 = -168" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="-3x = -168" inline={true}/></p>
+
+        <p class="my-5">Dividimos entre el coeficiente que acompaña a la incógnita:</p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{-3x}{-3} = \\frac{-168}{-3}" inline={true}/></p>
+
+        <p class="my-5">Encontrando así la solución:</p>
+
+        <p class="my-5 text-center"><Latex formula="x = 56" inline={true}/></p>
+
+        <p class="my-5">Para comprobar nuestra solución, sustituyamos una vez más en la ecuación:</p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{3}{7} x + \\frac{5}{8} \\left( x - \\frac{3}{7} x \\right) + 12 = x" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{3}{7}(56) + \\frac{5}{8} \\left((56) - \\frac{3}{7}(56)\\right) + 12 = (56)" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="24 + \\frac{5}{8} \\left(56 - 24\\right) + 12 = 56" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="24 + \\frac{5}{8}(32) + 12 = 56" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="24 + 20 + 12 = 56" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="56 = 56" inline={true}/></p>
+
+        <p class="my-5">Comprobamos que <Latex formula="x=56" inline={true}/> sí satisface la igualdad, por lo tanto es solución.</p>
+
+        <p class="my-5">Veamos un último ejemplo:</p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{2(3-4x)}{5} = \\frac{1}{3} (x+4) - \\frac{3x+2}{2} " inline={true}/></p>
+
+        <p class="my-5">Resolvamos este ejemplo eliminando los denominadores como primer paso. Multipliquemos ambos miembros de la ecuación por 5:</p>
+
+        <p class="my-5 text-center"><Latex formula="5\\left(\\frac{2(3-4x)}{5}\\right) = 5\\left(\\frac{1}{3} (x+4) - \\frac{3x+2}{2}\\right)" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="2(3-4x) = \\frac{5}{3} (x+4) - \\frac{5(3x+2)}{2}" inline={true}/></p>
+
+        <p class="my-5">Ahora multipliquemos por 3:</p>
+
+        Y ahora multipliquemos por 2 para quitar ese último denominador:
+
+        <p class="my-5">Y ahora multipliquemos por 2 para quitar ese último denominador:</p>
+
+        <p class="my-5 text-center"><Latex formula="2\\left(6(3-4x)\\right) = 2\\left(5(x+4) - \\frac{15(3x+2)}{2}\\right)" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="12(3-4x) = 10(x+4) - 15(3x+2)" inline={true}/></p>
+
+        <p class="my-5">Ahora simplifiquemos términos de ambos miembros de la ecuación:</p>
+
+        <p class="my-5 text-center"><Latex formula="36 - 48x = 10x + 40 - 45x - 30" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="36 - 48x = -35x + 10" inline={true}/></p>
+
+        <p class="my-5">Y dejemos la incógnita en un mismo miembro de la ecuación y el término independiente en el otro:</p>
+
+        <p class="my-5 text-center"><Latex formula="36 - 48x + 35x = -35x + 10 + 35x" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="36 - 13x = 10" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="36 - 13x - 36 = 10 - 36" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="-13x = -26" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{-13x}{-13} = \\frac{-26}{-13}" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="x = 2" inline={true}/></p>
+
+        <p class="my-5">Comprobando la solución:</p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{2(3-4x)}{5} = \\frac{1}{3} (x+4) - \\frac{3x+2}{2}" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{2(3-4(2))}{5} = \\frac{1}{3} (2+4) - \\frac{3(2)+2}{2}" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{2(3-8)}{5} = \\frac{6}{3} - \\frac{6+2}{2}" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{2(-5)}{5} = 2 - 4" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="\\frac{-10}{5} = 2 - 4" inline={true}/></p>
+
+        <p class="my-5 text-center"><Latex formula="-2 = -2" inline={true}/></p>
+
+        <Lumi
+        src=""
+        nombre="Ejercicios"
+        instrucciones="Encuentra la solución de las siguientes ecuaciones de primer grado."
+      />
+
+    </div>
+    </div>
 </Layout>
+ 
