@@ -1,0 +1,139 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Latex from '@/components/Latex.astro'
+---
+
+<Layout title="Números reales">
+	<ObjetoAprendizajePantalla index={0} pantallaIndex={5} asignatura={'matematicas_1'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3><Latex formula="\\mathbb{R}" /></h3>
+			<p>
+				Los números reales incluyen tanto a los números racionales como a los irracionales.
+				Representan todos los puntos en la recta numérica continua, incluyendo las fracciones, los
+				números decimales finitos o infinitos, y los números irracionales.
+			</p>
+			<h4>Algunas propiedades que distinguen a los números reales son:</h4>
+		</div>
+	</div>
+	<div class="my-5 grid w-full grid-cols-1 gap-4 px-5 md:grid-cols-2 xl:grid-cols-4">
+		<div class="bg-slate-100 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la adición</h4>
+			<p>La suma de dos números reales siempre da como resultado otro número real.</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<p>
+					Si tienes dos números reales, como <Latex inline={true} formula="2.5 + 1.3 = 3.8" /> que también
+					es un número real.
+				</p>
+			</div>
+		</div>
+		<div class="bg-slate-100 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la sustracción</h4>
+			<p>La resta de dos números reales siempre da como resultado otro número real.</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<p>
+					Por ejemplo, si restamos <Latex inline={true} formula="8.2 - 5.7 = 2.5" /> que también es un
+					número real.
+				</p>
+			</div>
+		</div>
+		<div class="bg-slate-100 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la multiplicación</h4>
+			<p>El producto de dos números reales siempre da como resultado otro número real.</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<p>
+					Por ejemplo, si multiplicamos <Latex inline={true} formula="1.5 \\times 3.2 = 4.8" /> que también
+					es un número real.
+				</p>
+			</div>
+		</div>
+		<div class="bg-slate-100 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la división</h4>
+			<p>
+				La división de dos números reales siempre da como resultado otro número real, siempre y
+				cuando el divisor no sea cero.
+			</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<p>
+					Por ejemplo, si dividimos <Latex inline={true} formula="4.2 \\div 1.4 = 3" /> que también es
+					un número real.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="my-5 grid w-full grid-cols-1 place-content-center gap-4 px-5 lg:grid-cols-3">
+		<div class="bg-slate-300 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Propiedad conmutativa</h4>
+			<p>
+				La adición y la multiplicación de los números reales son conmutativas, lo que significa que
+				el orden de los números no afecta el resultado.
+			</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<p>
+					Por ejemplo, si dividimos <Latex inline={true} formula="2.5 + 1.3 = 1.3 + 2.5" /> y <Latex
+						inline={true}
+						formula="1.5 \\times 3.2 = 3.2 \\times 1.5"
+					/>
+				</p>
+			</div>
+		</div>
+		<div class="bg-slate-300 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Propiedad asociativa</h4>
+			<p>
+				La adición y la multiplicación de los números reales son asociativas, lo que significa que
+				el agrupamiento de los números no afecta el resultado.
+			</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<p>
+					Por ejemplo <Latex inline={true} formula="(2.5 + 1.3) + 4.7 = 2.5 + (1.3 + 4.7)" />
+					y <Latex
+						inline={true}
+						formula="(1.5 \\times 3.2) \\times 2.4 = 1.5 \\times (3.2 \\times 2.4)"
+					/>
+				</p>
+			</div>
+		</div>
+		<div class="bg-slate-300 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Propiedad distributiva</h4>
+			<p>
+				La multiplicación se distribuye sobre la adición en los números reales. Esto significa que
+				si tienes tres números reales a, b y c, entonces <Latex
+					inline={true}
+					formula="a × (b + c) "
+				/> es igual a <Latex inline={true} formula=" a (a × b) + (a × c) " />
+			</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<p>
+					Por ejemplo <Latex
+						inline={true}
+						formula="2.5 \\times (1.3 + 4.7) = 2.5 \\times 1.3 + 2.5 \\times 4.7"
+					/>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="my-5 grid w-full grid-cols-1 place-content-center gap-4 px-5 md:grid-cols-2">
+		<div class="bg-slate-400 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Inverso aditivo</h4>
+			<p>
+				Para cada número real, existe su inverso aditivo. Esto significa que para cualquier número
+				real "a", existe un número real "-a" tal que "a + (-a)" es igual a 0.
+			</p>
+			<p class="text-center text-xl">Por ejemplo, el inverso aditivo de 3.8 es -3.8.</p>
+		</div>
+		<div class="bg-slate-400 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Inversos multiplicativos</h4>
+			<p>
+				Para cada número real distinto de cero, existe su inverso multiplicativo. Esto significa que
+				si tienes un número real "a" distinto de cero, entonces existe un número real "<Latex
+					inline={true}
+					formula="\\frac {1}{a}"
+				/>" tal que "<Latex inline={true} formula="ax\\frac {1}{a}" />" es igual a 1.
+			</p>
+			<p class="text-center text-xl">
+				el inverso multiplicativo de 25 es <Latex inline={true} formula="\\frac {1}{25}" />
+			</p>
+		</div>
+	</div>
+</Layout>
