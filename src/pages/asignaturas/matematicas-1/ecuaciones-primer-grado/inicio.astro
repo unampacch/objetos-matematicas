@@ -5,13 +5,63 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 ---
 
 <Layout
-  title=""
+  title="Solución de ecuaciones de primer grado"
   description=""
 >
 
     <ObjetoAprendizaje index={2} asignatura={"matematicas_1"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+      <h3>¿Qué es una ecuación?</h3>
+          <br>
+        <p>Una ecuación es una <span><i>igualdad entre dos expresiones algebraicas</i></span> en las que hay al menos una incógnita cuyo valor se desconoce. El valor de la incógnita que vuelve verdadera la igualdad es la solución o raíz de la ecuación.</p>
+          <br>
+      <h3>Elementos de una ecuación</h3>
+          <br>
+        <p><b>Incógnita:</b> es la cantidad desconocida contenida en una ecuación; por ejemplo, en la ecuación <Latex formula="2x + 1 =  0" inline={true}/>, la incógnita es <Latex formula="x" inline={true}/> , es el valor desconocido que queremos encontrar</p>
+          <br>
+        <p> <b>Constantes:</b> Son valores numéricos que no cambian en la ecuación. Por ejemplo, en la ecuación <Latex formula="9x + 5 = y" inline={true}/>,  el número 5 es  una constante.</p>
+          <br>
+        <p><b>Término:</b> es un elemento de una expresión algebraica que está separado por signos de suma o resta. La expresión <Latex formula="4x^2  - 2xy + 7" inline={true}/>, consta  de tres términos separados por los signos "+" y "-" Cada término puede contener una o varias variables, y puede ser una constante o una variable elevada a un exponente.</p>
+          <br>
+        <p> <b>Expresión algebraica:</b> es la combinación de variables, constantes y operaciones matemáticas <Latex formula="(+,-,×,÷,^ )" inline={true}/>, que  se utiliza para representar situaciones y relaciones en términos numéricos.<p>
+          <br>
+        <p><b>Miembros de la ecuación:</b> son las expresiones algebraicas que están a ambos lados de la igualdad. Se le llama primer miembro al de la izquierda y segundo miembro al de la derecha.</p>
+          <br>
+        <p>La ecuación <Latex formula="4z + 7 = 14 – 6z" inline={true}/> tiene como primer miembro: <Latex formula="4z + 7" inline={true}/> y segundo miembro <Latex formula="14 – 6z" inline={true}/> </p>
+          <br>
+        <p><b>Grado:</b> Es el mayor de los grados de los monomios que aparecen en la ecuación una vez ésta ha sido reducida.</p>
+        <p>La ecuación <Latex formula="x^3+ 5x + 6 = 0" inline={true}/>  es de grado 3  porque el exponente de mayor grado es el del término x^(3 ).</p>
+          <br>
+        <p><b>Solución:</b> es el número o números tal que, cuando se sustituyen por las incógnitas en la ecuación, producen un enunciado verdadero, es decir, un número es solución si satisface a la ecuación. Otra forma de llamar a la solución es “raíz” de la ecuación. </p>
+          <br>
+        <h4>Ejemplo:</h4>
+        <p>¿Es <Latex formula="x = 3" inline={true}/> solución de la ecuación: <Latex formula="2x +4 = 4x -2" inline={true}/>?</p>
+          <dd>Veamos si <Latex formula="x = 3" inline={true}/> satisface la ecuación:</dd>
+        <p class="text-center"> <Latex formula="2x +4 = 4x -2"/></p>
+        <br>
+        <p>Sustituyamos el valor de 3 en la incógnita x , el número de veces que se presente en la ecuación:</p>
+          <br>
+          <p class="text-center"><Latex formula="2(3) +4 = 4(3) -2"/></p>
+          <br>
+        <p>y resolvamos:</p>
+          <p class="text-center"><Latex formula="6 +4 = 12 -2"/></p>
+          <p class="text-center"><Latex formula="10 = 10"/></p>
+          <br>
+          <br>
+          <p>como <Latex formula="10 = 10" inline={true}/> es verdadero, <Latex formula="x = 3" inline={true}/> satisface la ecuación. Es decir, <Latex formula="x = 3" inline={true}/> es una raíz o solución para esta ecuación.</p>
+          <br>
+          <br>
+          <p>Veamos ahora si <Latex formula="x = 2" inline={true}/> es raíz de la misma ecuación</p>
+          <br>
+          <p style="text-align: center;"><Latex formula="2(2)\ +4\ =\ 4(2)\ -2"/></p>
+          <p style="text-align: center;"><Latex formula="4 +4 = 8 -2"/></p>
+          <p style="text-align: center;"><Latex formula="8= 6"/></p>          
+          <br>
+          <br>
+          <p>sabemos que <Latex formula="8" inline={true}/>  es diferente de <Latex formula="6" inline={true}/> , por lo que <Latex formula="8= 6" inline={true}/>  es falso, entonces <Latex formula="x = 2" inline={true}/> no satisface la ecuación, es decir, <Latex formula="x = 2" inline={true}/> no es solución de esta ecuación.</p>
+        </div>
+
     </div>
 
 </Layout>
