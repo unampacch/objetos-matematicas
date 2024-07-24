@@ -90,10 +90,10 @@
         },
         {
           "titulo": "Solución de sistemas de ecuaciones lineales",
-          "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales",
+          "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/inicio",
           "portada": "/mate1-portada-4.webp",
-          "descripcion": "Aprende a resolver sistemas de ecuaciones lineales de forma sencilla y divertida.",
-          "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de sistemas de ecuaciones lineales en el ámbito de la matemática.",
+          "descripcion": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables.",
+          "resumen": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables..",
           "pantallas": [
             {
               "titulo": "Método de sustitución",
