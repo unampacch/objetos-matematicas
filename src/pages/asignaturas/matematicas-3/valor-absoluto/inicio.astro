@@ -7,42 +7,56 @@ import Lumi from '@/components/Lumi.astro'
 
 <Layout
 	title="Valor absoluto"
-	description=" En matemáticas, un concepto fundamental, pero que es bastante simple, es el valor absoluto. Sin embargo, su comprensión es crucial para abordar con éxito diversos problemas y teoremas tanto en álgebra como en análisis matemático.
-Comprender el valor absoluto no solo implica la parte operativa, sino también su utilidad práctica y teórica. A lo largo de este material, exploraremos qué es, cómo se representa y se calcula, y su relevancia en diferentes áreas de las matemáticas. Además, analizaremos problemas comunes y aplicaciones que ilustran la importancia de este concepto en la vida cotidiana y en el desarrollo del pensamiento matemático.
-El objetivo del tema de valor absoluto, también te permitirá aplicar este conocimiento de manera eficaz en tus estudios futuros y en situaciones prácticas. Al final de este recorrido, esperamos que reconozcas la sencillez y la potencia del valor absoluto como una herramienta matemática esencial."
+	description="En matemáticas, un concepto fundamental, pero que es bastante simple, es el valor absoluto. Sin embargo, su comprensión es crucial para abordar con éxito diversos problemas y teoremas tanto en álgebra como en análisis matemático. Comprender el valor absoluto no solo implica la parte operativa, sino también su utilidad práctica y teórica. A lo largo de este material, exploraremos qué es, cómo se representa y se calcula, y su relevancia en diferentes áreas de las matemáticas. Además, analizaremos problemas comunes y aplicaciones que ilustran la importancia de este concepto en la vida cotidiana y en el desarrollo del pensamiento matemático. El objetivo del tema de valor absoluto, también te permitirá aplicar este conocimiento de manera eficaz en tus estudios futuros y en situaciones prácticas. Al final de este recorrido, esperamos que reconozcas la sencillez y la potencia del valor absoluto como una herramienta matemática esencial."
 >
 	<ObjetoAprendizaje index={0} asignatura={'matematicas_3'} />
-	<div class="objeto-aprendizaje mx-auto animate-fade">
-		<h3>¿Qué es el valor absoluto?</h3>
-		<p>
-			El valor absoluto de un número es la distancia entre el número y el cero, por lo que siempre
-			es positivo o cero.
-		</p>
-		<p>
-			Se denota matemáticamente con dos líneas verticales y paralelas | |, en las que encierran al
-			valor, por ejemplo:
-		</p>
+	<div class="objeto-aprendizaje mx-auto animate-fade text-center">
+		<h3 class="text-center">¿Qué es el valor absoluto?</h3>
+		<div class="mx-auto">
+			<p>
+				El valor absoluto de un número es la distancia entre el número y el cero, por lo que siempre
+				es positivo o cero.
+			</p>
+			<p>
+				Se denota matemáticamente con dos líneas verticales y paralelas | |, en las que encierran al
+				valor, por ejemplo:
+			</p>
+		</div>
 		<div class="mx-auto my-10 text-center text-xl">
-			<Latex formula="$|x|$, $|4|$, $|-4|$, $|\frac{3}{4}|$" />
+			<Latex formula="$|x|$, $|4|$, $|-4|$, $| \frac{3}{4}|$" />
 		</div>
 		<p>
-			Ahora observa la siguiente recta numérica y calcularemos <Latex formula="$|5|$" /> la definición.
+			Ahora observa la siguiente recta numérica y calcularemos <Latex formula="$|5|$" /> según la definición.
 			La distancia que hay desde el 5 hasta el 0 son 5 unidades, como se muestra a continuación:
 		</p>
-		<div>ESQUEMA DE LA RECTA 1</div>
+
+		<img
+			class="flex justify-center"
+			src="pages/asignaturas/matematicas-3/valor.absoluto/esquema1.jpg"
+			alt="Esquema de la recta numerica 1"
+		/>
 
 		<p>Por lo que <Latex formula="$|5|$" />=5</p>
-		Ahora utilicemos este mismo procedimiento para calcular el valor absoluto de <Latex
-			formula="$|5|$"
-		/> La distancia que hay entre -5 y 0 son 5 unidades, como se muestran a continuación.
-		<div>ESQUEMA DE LA RECTA 2</div>
-		Por lo que <Latex formula="$|-5|$" />=5
 		<p>
-			De lo anterior podemos concluir que si el valor dentro de un valor absoluto es positivo o
-			negativo mantiene su valor siempre positivo, esto debido a que calculamos una distancia
-			(recuerda que no existen distancias negativas).
+			Ahora utilicemos este mismo procedimiento para calcular el valor absoluto de -5.<br />
+			La distancia que hay entre -5 y 0 son 5 unidades, como se muestra a continuación:
 		</p>
 
+		<img
+			class="flex justify-center"
+			src="pages/asignaturas/matematicas-3/valor.absoluto/esquema2.jpg"
+			alt="Esquema de la recta numerica 2"
+		/>
+
+		<p>Por lo que <Latex formula="$|-5|$" /> =5</p>
+
+		<div class="justify-center">
+			<p>
+				De lo anterior podemos concluir que si el valor dentro de un valor absoluto es positivo o
+				negativo, mantiene su valor siempre positivo, <br /> esto debido a que calculamos una distancia
+				(recuerda que no existen distancias negativas).
+			</p>
+		</div>
 		<p>
 			Tomando en cuenta lo anterior, la definición matemática del valor absoluto es la siguiente:
 		</p>
@@ -52,54 +66,53 @@ El objetivo del tema de valor absoluto, también te permitirá aplicar este cono
 			/>
 		</div>
 		<p>
-			¿Y qué pasa con el valor absoluto de cero?, esta es una propiedad de esta operación. Ahora
+			¿Y qué pasa con el valor absoluto de cero? Esta es una propiedad de esta operación. Ahora
 			revisemos las propiedades de esta operación.
 		</p>
-
 		<div class="my-5">
 			<ol>
 				<li>Propiedad de no negatividad:</li>
-			</ol>
-			<div class="text-x1 mx-auto my-10 text-center">
-				<Latex formula="$|x|\geq 0$" />
-			</div>
-			<div class="my-5">
+				<div class="text-x1 mx-auto my-10 text-center">
+					<Latex formula="$|x|\geq 0$" />
+				</div>
 				<p>El valor absoluto de cualquier número real siempre es no negativo Ejemplo:</p>
-			</div>
-			<div class="text-x1 mx-auto my-10 text-center">
-				<Latex formula="$|8|=8$" />
-				<Latex formula="$|-15|=15$" />
-			</div>
-			<li>Identidad del valor absoluto:</li>
-			<div class="text-x1 mx-auto my-10 text-center">
-				<Latex formula="$|x| = 0 \iff x = 0 $" />
-			</div>
-			<p>El valor absoluto de número es cero si y solo si el número mismo es cero. Ejemplo:</p>
-			<div class="text-x1 mx-auto my-10 text-center">
-				<Latex formula="$|0|=0$" />
-			</div>
-
-			<li>Multiplicativa:</li>
-			<div class="text-x1 mx-auto my-10 text-center">
-				<Latex formula="$|x \cdot y| = |x| \cdot |y|$" />
+				<div class="text-x1 mx-auto my-10 text-center">
+					<Latex formula="$|8|=8$" />
+					<Latex formula="$|-15|=15$" />
+				</div>
+				<li>Identidad del valor absoluto:</li>
+				<div class="text-x1 mx-auto my-10 text-center">
+					<Latex formula="$|x| = 0 \iff x = 0 $" />
+				</div>
+				<p>El valor absoluto de un número es cero si y solo si el número mismo es cero. Ejemplo:</p>
+				<div class="text-x1 mx-auto my-10 text-center">
+					<Latex formula="$|0|=0$" />
+				</div>
+				<li>Multiplicativa:</li>
+				<div class="text-x1 mx-auto my-10 text-center">
+					<Latex formula="$|x \cdot y| = |x| \cdot |y|$" />
+				</div>
 				<p>
 					El valor absoluto del producto de dos números es igual al producto de sus valores
 					absolutos. Ejemplo:
-					<div class="text-x1 mx-auto my-10 text-center">
-						<Latex formula="$|(4)(-3)|=|4| \cdot |-3|=4 \cdot 3 = 12$" />
-					</div>
 				</p>
-				<li>Divisibilidad</li>
+				<div class="text-x1 mx-auto my-10 text-center">
+					<Latex formula="$|(4)(-3)|=|4| \cdot |-3|=4 \cdot 3 = 12$" />
+				</div>
+				<li>Divisibilidad:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
 					<Latex formula="$|\frac{x}{y}|=\frac{|x|}{|y|} \text{ para } y \neq 0$" />
 				</div>
-				El valor absoluto del cociente de dos números es igual al cociente de sus valores absolutos Ejemplo:
+				<p>
+					El valor absoluto del cociente de dos números es igual al cociente de sus valores
+					absolutos Ejemplo:
+				</p>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|\frac{7}{-5}|=\frac{|7|}{|-5|}=|frac{7}{5}$" />
+					<Latex formula="$|\frac{7}{-5}|=\frac{|7|}{|-5|} = \frac{7}{5}$" />
 				</div>
-				<li>Desigualdad triangular del valor absoluto Para cualesquiera dos números reales xyy,</li>
+				<li>Desigualdad triangular del valor absoluto:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|x+y|=\leq |x|+|y|$" />
+					<Latex formula="$|x+y|\leq |x|+|y|$" />
 				</div>
 				<p>
 					Esta desigualdad afirma que el valor absoluto de la suma de dos números es siempre menor o
@@ -107,19 +120,26 @@ El objetivo del tema de valor absoluto, también te permitirá aplicar este cono
 				</p>
 				<p>Ejemplo:</p>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|(-5)+4|=\leq |-5|+|4|$" />
+					<Latex formula="$|(-5)+4|\leq |-5|+|4|$" />
 					<Latex formula="$|-1| \leq 5+4$" />
 					<Latex formula="$1 \leq 9$" />
 				</div>
-			</div>
+			</ol>
+			<p>Ejercicio.</p>
 			<p>
-				Ejercicio Instrucciones: Tomando en cuenta toda la información anterior, selecciona la
-				respuesta correcta :
+				Instrucciones: Tomando en cuenta toda la información anterior, selecciona la respuesta
+				correcta:
 			</p>
 		</div>
-		 <html class="h5p-iframe">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<div class="h5p-container">
+			<iframe
+				src="../valor-absoluto/ejercicio-valor-absoluto.html"
+				frameborder="0"
+				width="100%"
+				height="500px"
+				allowfullscreen
+			>
+			</iframe>
+		</div>
 	</div>
 </Layout>
