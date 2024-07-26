@@ -13,137 +13,158 @@ import GeogebraLink from "@/components/GeogebraLink.astro";
   description=""
 >
 
-    <ObjetoAprendizaje index={1} asignatura={"matematicas_3"} />
-    <div class="objeto-aprendizaje mx-auto animate-fade">
+<ObjetoAprendizaje index={1} asignatura={"matematicas_3"} />
+<div class="objeto-aprendizaje mx-auto animate-fade">
 
-      <div class="mx-auto max-w-screen-xl">
+    <div class="mx-auto max-w-screen-xl">
       <h3>Leyes de Senos y Cosenos</h3>
-      <p>En triángulos que no son rectángulos no se cumple el Teorema de Pitágoras; sin embargo, sus lados y sus ángulos guardan otras relaciones conocidas como la Ley de senos y la Ley de cosenos. </p>
+      <p class="text-2xl text-white">En triángulos que no son rectángulos no se cumple el Teorema de Pitágoras; sin embargo, sus lados y sus ángulos guardan otras relaciones conocidas como la Ley de senos y la Ley de cosenos. </p>
+    </div>
       
-      <div>
-        <img src="/matematicas3/leyes-senos-cosenos/tlsyc.webp" alt="Triangulo del Teorema de Pitagoras">
-      </div>
+       <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/tlsyc.webp" bg="bg-red" />
 
-         <p>Ley de Senos:</p>
-      <div>
+    <div class="mx-auto max-w-screen-xl">
+      <div class="my-5 text-center text-2xl">
+         <p class="text-2xl text-red">Ley de Senos:</p>
+      </div> 
+         <div class="text-center text-2xl">
       <p> <Latex formula="\\frac{sen\\;\\alpha}{a}=\\frac{sen\\;\\beta}{b}=\\frac{sen\\;\\gamma}{c}" inline={true}/></p>
-      </div>
-         <p>Ley de Cosenos:</p>
-      <div>
+         </div>
+        <div class="text-center text-2xl"> 
+        <p class="text-2xl text-red">Ley de Cosenos:</p>
+        </div>
+      <div class="text-center text-2xl">
         <p> <Latex formula="c^2=a^2+b^2-2ab\cos\gamma " inline={true}/></p>
             <Latex formula="b^2=a^2+c^2-2ac\cos\\beta " inline={true}/></p>
         <p> <Latex formula="a^2=b^2+c^2-2bc\cos\alpha " inline={true}/></p>
       </div>
-      <p>Estas igualdades nos permiten conocer las longitudes de los lados de un triángulo y la amplitud de sus ángulos a partir de algunas conocidas.</p>
-      <p>Ejemplo: Si conocemos la longitud de dos lados de un triángulo y la amplitud del ángulo formado por estos, es posible hallar la longitud del tercer lado, utilizando la ley de cosenos.</p>
-      <p>Consideremos el siguiente triángulo:</p>
+      <p class="text-2xl text-white">Estas igualdades nos permiten conocer las longitudes de los lados de un triángulo y la amplitud de sus ángulos a partir de algunas conocidas.</p>
+      <p class="text-2xl text-white">Ejemplo: Si conocemos la longitud de dos lados de un triángulo y la amplitud del ángulo formado por estos, es posible hallar la longitud del tercer lado, utilizando la ley de cosenos.</p>
+      <p class="text-2xl text-white">Consideremos el siguiente triángulo:</p>
+    </div>
 
-      <div>
-      <img src="/matematicas3/leyes-senos-cosenos/te1.webp" alt="Triangulo cuando se conoce  la longitud de dos lados y la amplitud del angulo formado por estos">
+       <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te1.webp" bg="bg-blue" /> 
+
+    <div class="mx-auto max-w-screen-xl">
+      <div class="text-center text-2xl"> 
+        <p>De acuerdo con la ley de cosenos:</p>
       </div>
-
-         <p>De acuerdo con la ley de cosenos:</p>
-      <div>
-        <p> <Latex formula="c^2=a^2+b^2-2ab\cos\gamma " inline={true}/></p>
+      <div class="text-center text-2xl">
+        <p> <Latex formula="c^2=a^2+b^2-2ab\cos\gamma"  inline={true}/></p>
         <p> <Latex formula="c^2=(5.66)^2+(4.47)^2-2(5.66)(4.47)\cos(71.57^o) " inline={true}/></p>
         <p> <Latex formula="c^2=36.02 " inline={true}/></p>
       </div>
-      <p>Entonces el valor del tercer lado es <Latex formula="c=6" inline={true}/></p>  
-
-      <div>
-        <img src="/matematicas3/leyes-senos-cosenos/te1-2.webp" alt="Resolucion del anterior triangulo">
+      <div class="text-center text-2xl">
+        <p>Entonces el valor del tercer lado es:</p>
       </div>
+      <div class="text-center text-2xl">
+        <p><Latex formula="c=6" inline={true}/></p>  
+      </div>
+    </div>
 
-         <p>Ahora, aplicando la ley de senos, podemos encontrar el valor del ángulo <Latex formula="\alpha" inline={true}/> </p>  
+        <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te1-2.webp" bg="bg-lightblue" /> 
+
+      <div class="mx-auto max-w-screen-xl"> 
+        <p class="text-2xl text-white">Ahora, aplicando la ley de senos, podemos encontrar el valor del ángulo. <Latex formula="\alpha" inline={true}/> </p>  
+      <div class="text-center text-2xl">
          <p>Por un lado:</p>
-      <div>
+      </div>
+      <div class="text-center text-2xl">
           <p> <Latex formula="\\frac{sen\\alpha}{a}=\\frac{sen\\gamma}{c}" inline={true}/></p>
       </div>
-         <p>lo que implica que:</p>
-      <div>
+      <div class="text-center text-2xl">
+        <p>lo que implica que:</p>
+      </div>
+      <div class="text-center text-2xl">
         <p> <Latex formula="sen\\;\\alpha=\\frac{a sen\\gamma}{c} " inline={true}/></p>
       </div>
+      <div class="text-center text-2xl">
          <p>y por lo tanto:</p>
-      <div>
+      </div>
+      <div class="text-center text-2xl">
         <p> <Latex formula="\\alpha=sen^{-1}\\left(\\frac{a sen\gamma}{c}\\right) " inline={true}/></p>
       </div>
+      <div class="text-center text-2xl">
          <p>Entonces:</p>
-      <div>
+      </div>
+      <div class="text-center text-2xl">
         <p> <Latex formula="\\alpha=sen^{-1}\\left(\\frac{(5.66) sen(71.57°)}{6}\\right) " inline={true}/></p>
         <p> <Latex formula="\alpha=63.5^o " inline={true}/></p>
       </div>
+      <div class="text-center text-2xl">
          <p>Finalmente podemos encontrar el valor del ángulo <Latex formula="\\beta" inline={true}/> usando el hecho de que la suma de los ángulos interiores de un triángulo es igual a 180°, es decir:</p>
-      <div>
+      </div>   
+      <div class="text-center text-2xl">
         <p> <Latex formula="63.5^o+\\beta+71.57^o=180^o, " inline={true}/></p>
       </div>
-         <p>Luego:</p>
-      <div>
+      <div class="text-center text-2xl">
+        <p>Luego:</p>
+      </div>
+      <div class="text-center text-2xl">
         <p> <Latex formula="\\beta=180^o-63.5^o-71.57^o=44.93^o. " inline={true}/></p>
       </div>
+    </div>
+         
+       <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te1-3.webp" bg="bg-red" /> 
 
-      <div>
-        <img src="matematicas3/leyes-senos-cosenos/te1-3.webp" alt="Resolucion del anterior triangulo">
-      </div>
+    <div class="mx-auto max-w-screen-xl"> 
+         <p class="text-center text-2xl text-red">Ejemplo: Supongamos que tenemos un triángulo del cual conocemos la longitud de sus lados: </p>
+    </div>
 
-         <p>Ejemplo: Supongamos que tenemos un triángulo del cual conocemos la longitud de sus lados: </p>
-
-         <div>
-          <img src="matematicas3/leyes-senos-cosenos/te2-1.webp" alt="Triangulo conociendo la longitud de sus lados">
-         </div>
-
-         <p>Podemos encontrar el valor de uno de sus ángulos realizando un despeje en la ley de cosenos.</p>
-         <p>Consideremos, por ejemplo a^2=b^2+c^2-2bccos<Latex formula="\\alpha" inline={true}/> y despejemos <Latex formula="\alpha$" inline={true}/> de la siguiente manera.</p>
-         <p>  Primero sumando <Latex formula="2bc\cos\alpha-a^2 " inline={true}/> de ambos lados, obtenemos:</p>
-      <div>
+       <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-1.webp" bg="bg-blue" /> 
+         
+    <div class="mx-auto max-w-screen-xl"> 
+         <p class="text-center text-2xl">Podemos encontrar el valor de uno de sus ángulos realizando un despeje en la ley de cosenos.</p>
+         <p class="text-center text-2xl">Consideremos, por ejemplo a^2=b^2+c^2-2bccos<Latex formula="\\alpha" inline={true}/> y despejemos <Latex formula="\\alpha" inline={true}/> de la siguiente manera.</p>
+         <p class="text-center text-2xl">  Primero sumando <Latex formula="2bc\cos\alpha-a^2 " inline={true}/> de ambos lados, obtenemos:</p>
+      <div class="text-center text-2xl">
           <p> <Latex formula="2bc\\cos\\alpha=b^2+c^2-a^2 " inline={true}/></p>
-      </div>
-         <p>Luego, suponiendo que <Latex formula="bc\\neq 0 " inline={true}/> y dividiento por <Latex formula="2bc" inline={true}/> tenemos:</p>
-      <div>
+      </div> 
+         <p class="text-center text-2xl">Luego, suponiendo que <Latex formula="bc\\neq 0 " inline={true}/> y dividiento por <Latex formula="2bc" inline={true}/> tenemos:</p>
+      <div class="text-center text-2xl">
           <p> <Latex formula="\\cos\\alpha=\\frac{b^2+c^2-a^2}{2bc} " inline={true}/></p>
       </div>
-          <p>Finalmente:</p>
-      <div>
+          <p class="text-center text-2xl">Finalmente:</p>
+      <div class="text-center text-2xl">
           <p> <Latex formula="\\alpha=cos^{-1}\\left(\\frac{b^2+c^2-a^2}{2bc}\\right) " inline={true}/></p>
       </div>   
-          <p>En nuestro caso <Latex formula="a=6 " inline={true}/>, <Latex formula="b=7 " inline={true}/>y <Latex formula="c=5 " inline={true}/>;entonces, sustituyendo en la fórmula anterior</p>
-      <div>
+          <p class="text-center text-2xl">En nuestro caso <Latex formula="a=6 " inline={true}/>, <Latex formula="b=7 " inline={true}/>y <Latex formula="c=5 " inline={true}/>;entonces, sustituyendo en la fórmula anterior</p>
+      <div class="text-center text-2xl">
           <p> <Latex formula="\\alpha=cos^{-1}\\left(\\frac{7^2+5^2-6^2}{2(7)(5)}\\right)=57.12^o " inline={true}/></p>
       </div>   
-     
-          <div>
-            <img src="matematicas3/leyes-senos-cosenos/te2-2.webp" alt="Resolucion del triangulo anterior">
-          </div>
+    </div>
 
-          <p>Ahora, podemos utilizar la ley de senos como en el ejemplo anterior, para encontrar el valor de <Latex formula="\\beta " inline={true}/> y después deducir el valor de <Latex formula="\\gamma" inline={true}/> , o podemos despejar <Latex formula="\\beta " inline={true}/> de la ecuación <Latex formula="b^2=a^2+c^2-2ac\\cos\\beta " inline={true}/>, obteniendo:</p>
-      <div>
+         <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-2.webp" bg="bg-lightblue" /> 
+          
+    <div class="mx-auto max-w-screen-xl"> 
+          <p class="text-2xl">Ahora, podemos utilizar la ley de senos como en el ejemplo anterior, para encontrar el valor de <Latex formula="\\beta " inline={true}/> y después deducir el valor de <Latex formula="\\gamma" inline={true}/> , o podemos despejar <Latex formula="\\beta " inline={true}/> de la ecuación <Latex formula="b^2=a^2+c^2-2ac\\cos\\beta " inline={true}/>, obteniendo:</p>
+      <div class="text-center text-2xl">
           <p> <Latex formula="\\beta=cos^{-1}\\left(\\frac{a^2+c^2-a^2}{2ac}\\right)" inline={true}/></p>
           <p> <Latex formula="\\beta=cos^{-1}\\left(\\frac{6^2+5^2-7^2}{2(6)(5)}\\right)" inline={true}/></p>
           <p> <Latex formula="\\beta=78.46^o" inline={true}/></p>
       </div>  
-
-      <div>
-        <img src="matematicas3/leyes-senos-cosenos/te2-3.webp" alt="Resolucion del triangulo anterior">
-      </div>
+    </div>
       
-      <p>Finalmente <Latex formula="57.12^o+78.46^o+\\gamma=180^o" inline={true}/>, de donde <Latex formula="\\gamma=180^o-57.12^o-78.46^o=44.42^o" inline={true}/> </p>
+          <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-3.webp" bg="bg-red" /> 
 
-      <div>
-        <img src="matematicas3/leyes-senos-cosenos/te2-4.webp" alt="Resolucion del triangulo anterior">
-      </div>
-
+    <div class="mx-auto max-w-screen-xl"> 
+      <p class="text-center text-2xl">Finalmente <Latex formula="57.12^o+78.46^o+\\gamma=180^o" inline={true}/>, de donde <Latex formula="\\gamma=180^o-57.12^o-78.46^o=44.42^o" inline={true}/> </p>
     </div>
 
+          <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-4.webp" bg="bg-blue" />       
+
+</div>
 
           <div class="mx-auto max-w-screen-xl">
-            <p> A continuación,se muestra dos applets don los que puedes practicar:</p>
+            <p class="text-2xl"> A continuación,se muestra dos applets con los que puedes practicar:</p>
             <GeogebraLink
                 href="https://www.geogebra.org/m/e4y4babj"
                 titulo="Ley de Cosenos"
-                texto="Ahora puedes practicar"/>
+                texto="¡Mejora y refuerza el conocimiento obtenido!"/>
             <GeogebraLink
                 href="https://www.geogebra.org/m/yvjgj8tv"
                 titulo="Ejercicios de aplicaión"
-                texto="Ahora puedes practicar"/>   
+                texto="¡Mejora y refuerza el conocimiento obtenido!"/>   
           </div>
 
 
