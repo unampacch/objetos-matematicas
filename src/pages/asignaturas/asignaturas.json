@@ -71,39 +71,29 @@
         },
         {
           "titulo": "Solución de ecuaciones de primer grado",
-          "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado",
+          "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/inicio",
           "portada": "/mate1-portada-3.webp",
           "descripcion": "Aprende a resolver ecuaciones de primer grado de forma sencilla y divertida.",
           "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de ecuaciones de primer grado en el ámbito de la matemática.",
           "pantallas": [
             {
-              "titulo": "Ecuaciones lineales",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-lineales",
-              "descripcion": "Resolución de ecuaciones lineales."
+              "titulo": "Diferencia entre ecuación e identidad",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/diferencia-ecuacion-identidad",
+              "descripcion": "Diferencia entre ecuación e identidad."
             },
             {
-              "titulo": "Ecuaciones con paréntesis",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-parentesis",
-              "descripcion": "Resolución de ecuaciones con paréntesis."
-            },
-            {
-              "titulo": "Ecuaciones con denominadores",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-denominadores",
-              "descripcion": "Resolución de ecuaciones con denominadores."
-            },
-            {
-              "titulo": "Ecuaciones con fracciones",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-fracciones",
-              "descripcion": "Resolución de ecuaciones con fracciones."
+              "titulo": "Resolución de ecuaciones de primer grado con una incógnita",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-una-incognita",
+              "descripcion": "Resolución de ecuaciones de primer grado con una incógnita"
             }
           ]
         },
         {
           "titulo": "Solución de sistemas de ecuaciones lineales",
-          "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales",
+          "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/inicio",
           "portada": "/mate1-portada-4.webp",
-          "descripcion": "Aprende a resolver sistemas de ecuaciones lineales de forma sencilla y divertida.",
-          "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de sistemas de ecuaciones lineales en el ámbito de la matemática.",
+          "descripcion": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables.",
+          "resumen": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables..",
           "pantallas": [
             {
               "titulo": "Método de sustitución",
@@ -212,26 +202,16 @@
           ]
         },
         {
-          "titulo": "Solución de ecuaciones de segundo grado",
-          "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado",
-          "portada": "/holder-cover.webp",
+          "titulo": "Métodos de solución de ecuaciones de segundo grado en una variable",
+          "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/inicio",
+          "portada": "/portadas/Firefly Ecuación general de segundo grado, graﬁcación y determinación de raíces 96342.jpg",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de ecuaciones de segundo grado en el ámbito de la matemática. Contiene una exploración exhaustiva de las ecuaciones cuadráticas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Resolución de ecuaciones de segundo grado y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Ecuaciones cuadráticas",
-              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/ecuaciones-cuadraticas",
-              "descripcion": "Resolución de ecuaciones cuadráticas."
-            },
-            {
-              "titulo": "Fórmula general",
-              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/formula-general",
+              "titulo": "Método de completar el trinomio cuadrado perfecto (fórmula general)",
+              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/metodo-solucion-formula-general",
               "descripcion": "Aplicación de la fórmula general para resolver ecuaciones cuadráticas."
-            },
-            {
-              "titulo": "Fórmula cuadrática",
-              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/formula-cuadratica",
-              "descripcion": "Aplicación de la fórmula cuadrática para resolver ecuaciones cuadráticas."
             }
           ]
         },
