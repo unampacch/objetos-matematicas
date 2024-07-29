@@ -136,27 +136,11 @@
       "objetos_aprendizaje": [
         {
           "titulo": "Factor común",
-          "slug": "/asignaturas/matematicas-2/factor-comun",
+          "slug": "/asignaturas/matematicas-2/factor-comun/inicio",
           "portada": "/holder-cover.webp",
-          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del factor común en el ámbito de la matemática. Contiene una exploración exhaustiva de los factores comunes en monomios y polinomios, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-          "resumen": "Factor común y su aplicación en la simplificación de expresiones algebraicas.",
-          "pantallas": [
-            {
-              "titulo": "Factor común monomio",
-              "slug": "/asignaturas/matematicas-2/factor-comun/monomio",
-              "descripcion": "Factor común monomio y su aplicación en la simplificación de expresiones algebraicas."
-            },
-            {
-              "titulo": "Factor común polinomio",
-              "slug": "/asignaturas/matematicas-2/factor-comun/polinomio",
-              "descripcion": "Factor común polinomio y su aplicación en la simplificación de expresiones algebraicas."
-            },
-            {
-              "titulo": "Factor común por agrupación",
-              "slug": "/asignaturas/matematicas-2/factor-comun/agrupacion",
-              "descripcion": "Factor común por agrupación y su aplicación en la simplificación de expresiones algebraicas."
-            }
-          ]
+          "descripcion": "En este objeto de aprendizaje se explica como resolver ecuaciones cuadráticas mediante diferentes métodos de solución transformando la ecucación cuadrática a la forma adecuada para su resolución por un método específico",
+          "resumen": "Factor común y su aplicación en la simplificación de expresiones algebraicas."
+        
         },
         {
           "titulo": "Factorización",
