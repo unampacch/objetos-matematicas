@@ -3,11 +3,12 @@ import Layout from '@/layouts/Layout.astro'
 import Latex from '@/components/Latex.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import Lumi from '@/components/Lumi.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 ---
 
 <Layout
 	title="Valor absoluto"
-	description="En matemáticas, un concepto fundamental, pero que es bastante simple, es el valor absoluto. Sin embargo, su comprensión es crucial para abordar con éxito diversos problemas y teoremas tanto en álgebra como en análisis matemático. Comprender el valor absoluto no solo implica la parte operativa, sino también su utilidad práctica y teórica. A lo largo de este material, exploraremos qué es, cómo se representa y se calcula, y su relevancia en diferentes áreas de las matemáticas. Además, analizaremos problemas comunes y aplicaciones que ilustran la importancia de este concepto en la vida cotidiana y en el desarrollo del pensamiento matemático. El objetivo del tema de valor absoluto, también te permitirá aplicar este conocimiento de manera eficaz en tus estudios futuros y en situaciones prácticas. Al final de este recorrido, esperamos que reconozcas la sencillez y la potencia del valor absoluto como una herramienta matemática esencial."
+	description="En matemáticas, un concepto fundamental, pero que es bastante simple, es el valor absoluto..."
 >
 	<ObjetoAprendizaje index={0} asignatura={'matematicas_3'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade text-center">
@@ -23,33 +24,30 @@ import Lumi from '@/components/Lumi.astro'
 			</p>
 		</div>
 		<div class="mx-auto my-10 text-center text-xl">
-			<Latex formula="$|x|$, $|4|$, $|-4|$, $| \frac{3}{4}|$" />
+			<Latex formula="|x|, |4|, |-10|, |\\frac{3}{4}|" />
 		</div>
 		<p>
-			Ahora observa la siguiente recta numérica y calcularemos <Latex formula="$|5|$" /> según la definición.
+			Ahora observa la siguiente recta numérica y calcularemos <Latex formula="|5|" /> según la definición.
 			La distancia que hay desde el 5 hasta el 0 son 5 unidades, como se muestra a continuación:
 		</p>
-
-		<img
-			class="flex justify-center"
-			src="pages/asignaturas/matematicas-3/valor.absoluto/esquema1.jpg"
-			alt="Esquema de la recta numerica 1"
-		/>
-
-		<p>Por lo que <Latex formula="$|5|$" />=5</p>
+		<div class="flex items-center justify-center">
+			<img
+				src="../../../../../public/matematicas3/valor-absoluto/EsquemaRecta1.png"
+				alt="Esquema de la recta numerica 1"
+			/>
+		</div>
+		<p>Por lo que <Latex formula="|5|" />=5</p>
 		<p>
-			Ahora utilicemos este mismo procedimiento para calcular el valor absoluto de -5.<br />
-			La distancia que hay entre -5 y 0 son 5 unidades, como se muestra a continuación:
+			Ahora utilicemos este mismo procedimiento para calcular el valor absoluto de -5.<br />La
+			distancia que hay entre -5 y 0 son 5 unidades, como se muestra a continuación:
 		</p>
-
-		<img
-			class="flex justify-center"
-			src="pages/asignaturas/matematicas-3/valor.absoluto/esquema2.jpg"
-			alt="Esquema de la recta numerica 2"
-		/>
-
-		<p>Por lo que <Latex formula="$|-5|$" /> =5</p>
-
+		<div class="flex items-center justify-center">
+			<img
+				src="../../../../../public/matematicas3/valor-absoluto/EsquemaRecta2.png"
+				alt="Esquema de la recta numerica 2"
+			/>
+		</div>
+		<p>Por lo que <Latex formula="|-5|" /> =5</p>
 		<div class="justify-center">
 			<p>
 				De lo anterior podemos concluir que si el valor dentro de un valor absoluto es positivo o
@@ -62,7 +60,7 @@ import Lumi from '@/components/Lumi.astro'
 		</p>
 		<div class="text-x1 mx-auto my-10 text-center">
 			<Latex
-				formula="\[ |x| = \begin{cases} x & \text{si } x \geq 0 \\ -x & \text{si } x < 0 \end{cases} \]"
+				formula="|x| = \\begin{cases} x & \\text{si} x \\geq 0 \\ -x & \\text{si } x < 0 \\end{cases} "
 			/>
 		</div>
 		<p>
@@ -73,46 +71,46 @@ import Lumi from '@/components/Lumi.astro'
 			<ol>
 				<li>Propiedad de no negatividad:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|x|\geq 0$" />
+					<Latex formula="|x| \\geq 0" />
 				</div>
 				<p>El valor absoluto de cualquier número real siempre es no negativo Ejemplo:</p>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|8|=8$" />
-					<Latex formula="$|-15|=15$" />
+					<Latex formula="|8|=8" />
+					<Latex formula="|-15|=15" />
 				</div>
 				<li>Identidad del valor absoluto:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|x| = 0 \iff x = 0 $" />
+					<Latex formula="|x| = 0 \\iff x = 0 " />
 				</div>
 				<p>El valor absoluto de un número es cero si y solo si el número mismo es cero. Ejemplo:</p>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|0|=0$" />
+					<Latex formula="|0|=0" />
 				</div>
 				<li>Multiplicativa:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|x \cdot y| = |x| \cdot |y|$" />
+					<Latex formula="|x \\cdot y| = |x| \\cdot |y|" />
 				</div>
 				<p>
 					El valor absoluto del producto de dos números es igual al producto de sus valores
 					absolutos. Ejemplo:
 				</p>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|(4)(-3)|=|4| \cdot |-3|=4 \cdot 3 = 12$" />
+					<Latex formula="|(4)(-3)|=|4| \\cdot |-3|=4 \\cdot 3 = 12" />
 				</div>
 				<li>Divisibilidad:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|\frac{x}{y}|=\frac{|x|}{|y|} \text{ para } y \neq 0$" />
+					<Latex formula="|\\frac{x}{y}|= \\frac{|x|}{|y|} \\text{ para } y \\neq 0" />
 				</div>
 				<p>
 					El valor absoluto del cociente de dos números es igual al cociente de sus valores
 					absolutos Ejemplo:
 				</p>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|\frac{7}{-5}|=\frac{|7|}{|-5|} = \frac{7}{5}$" />
+					<Latex formula="|\\frac{7}{-5}|=\\frac{|7|}{|-5|} = \\frac{7}{5}" />
 				</div>
 				<li>Desigualdad triangular del valor absoluto:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|x+y|\leq |x|+|y|$" />
+					<Latex formula="|x+y|\\leq |x|+|y|" />
 				</div>
 				<p>
 					Esta desigualdad afirma que el valor absoluto de la suma de dos números es siempre menor o
@@ -120,9 +118,9 @@ import Lumi from '@/components/Lumi.astro'
 				</p>
 				<p>Ejemplo:</p>
 				<div class="text-x1 mx-auto my-10 text-center">
-					<Latex formula="$|(-5)+4|\leq |-5|+|4|$" />
-					<Latex formula="$|-1| \leq 5+4$" />
-					<Latex formula="$1 \leq 9$" />
+					<Latex formula="|(-5)+4|\\leq |-5|+|4|" />
+					<Latex formula="|-1| \\leq 5+4" />
+					<Latex formula="1 \\leq 9" />
 				</div>
 			</ol>
 			<p>Ejercicio.</p>
