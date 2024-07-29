@@ -3,13 +3,12 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
-import ImagenCaption from "@/components/ImagenCaption.astro";
 import GeogebraLink from "@/components/GeogebraLink.astro";
 ---
 
 
 <Layout
-  title=""
+  title="Leyes de Senos y Cosenos"
   description=""
 >
 
@@ -148,13 +147,12 @@ import GeogebraLink from "@/components/GeogebraLink.astro";
           <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-3.webp" bg="bg-red" /> 
 
     <div class="mx-auto max-w-screen-xl"> 
-      <p class="text-center">Finalmente <Latex formula="57.12^o+78.46^o+\\gamma=180^o" inline={true}/>, de donde <Latex formula="\\gamma=180^o-57.12^o-78.46^o=44.42^o" inline={true}/> </p>
+      <p class="text-center">Finalmente<Latex formula="57.12^o+78.46^o+\\gamma=180^o" inline={true}/>, de donde <Latex formula="\\gamma=180^o-57.12^o-78.46^o=44.42^o" inline={true}/> </p>
     </div>
 
-          <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-4.webp" bg="bg-blue" />       
-
-</div>
-
+          <ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-4.webp" bg="bg-blue" />      
+        
+          
           <div class="mx-auto max-w-screen-xl">
             <p class="text-2xl"> A continuación,se muestra dos applets con los que puedes practicar:</p>
             <GeogebraLink
@@ -167,6 +165,6 @@ import GeogebraLink from "@/components/GeogebraLink.astro";
                 texto="¡Mejora y refuerza el conocimiento obtenido!"/>   
           </div>
 
+</div>
 
-    </div>
 </Layout>
