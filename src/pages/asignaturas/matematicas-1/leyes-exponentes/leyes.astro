@@ -1,226 +1,197 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
-import Hr from "@/components/Hr.astro";
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Hr from '@/components/Hr.astro'
 ---
 
 <Layout title="Leyes de los exponentes">
-  <ObjetoAprendizajePantalla
-    index={1}
-    pantallaIndex={1}
-    asignatura={"matematicas_1"}
-  />
-  <div class="objeto-aprendizaje mx-auto animate-fade">
-    <div class="max-w-screen-xl mx-auto mb-5">
-      <p>
-        En operaciones de suma, resta, multiplicación y división, con uno o
-        varios exponentes. Para ello estudiaremos las Leyes de los exponentes:
-      </p>
-      <h4>1<sup>a</sup> ley de los Exponentes</h4>
-      <p>
-        Cuando dos potencias de una misma base común se multiplican, la potencia
-        es igual a la base elevada a la suma de los exponentes, su
-        representación algebraica es:
-      </p>
-      <h5><Latex formula="a^m \\cdot a^n = a^{m+n} " /></h5>
-      <h4>Ejemplos</h4>
-      <div class="max-w-screen-lg mx-auto bg-red p-5 rounded-xl">
-        <ol class="text-2xl mt-5 ol-alpha">
-          <li>
-            <Latex
-              inline={true} 
-              formula="24 \\cdot 22 \\cdot 24 = 2(4 + 2 + 4) = 210 = 1024 "
-            />
-          </li>
-          <li>
-            <Latex
-              inline={true}
-              formula="5^2 \\cdot 5^7 = 5^{2+7} = 5^9 = 1953125 "
-            />
-          </li>
-          <li>
-            <Latex
-              inline={true}
-              formula="35 \\cdot 3^{-2} = 35 + (-2) = 35 - 2 = 33 = 27 "
-            />
-          </li>
-        </ol>
-      </div>
-      <Hr />
-      <h4>2<sup>a</sup> ley de los Exponentes</h4>
-      <p>
-        Una potencia elevada a una potencia es igual a la base elevada al
-        producto de los exponentes de las potencias, es decir:
-      </p>
-      <h5><Latex formula="(a^m)^n = a^{mn} " /></h5>
-      <h4>Ejemplos</h4>
-      <div class="max-w-screen-lg mx-auto bg-red p-5 rounded-xl">
-        <ol class="text-2xl mt-5 ol-alpha">
-          <li>
-            <Latex
-              inline={true}
-              formula="(2^3)^4 = 2^{3 \\cdot 4} = 2^{12} = 4096  "
-            />
-          </li>
-          <li>
-            <Latex inline={true} formula="(32)^3 = 36 = 729  " />
-          </li>
-          <li>
-            <Latex
-              inline={true}
-              formula="\\left(\\left(\\frac{1}{2}\\right)^5\\right)^3 = \\left(\\frac{1}{2}\\right)^5 \\cdot \\left(\\frac{1}{2}\\right)^5 \\cdot \\left(\\frac{1}{2}\\right)^5 = \\left(\\frac{1}{2}\\right)^{15}  "
-            />
-          </li>
-          <li>
-            <Latex
-              inline={true}
-              formula="\\left((-3)^2\\right)^4 = (-3)^2 \\cdot (-3)^2 \\cdot (-3)^2 \\cdot (-3)^2 = (-3)^8  "
-            />
-          </li>
-        </ol>
-      </div>
-      <p class="mt-5">
-        La generalización de los ejemplos particulares es mediante la expresión
-      </p>
-      <div class="text-center text-2xl my-5">
-        <Latex inline={true} formula="(a^m)^n = a^{mn} " /> veces el producto <Latex
-          inline={true}
-          formula="a^m"
-        />
-      </div>
-      <p>
-        El producto de <em>n</em> veces la potencia <em>am</em> , significa la suma
-        de <em>n</em> veces <em>m</em>, la cual se escribe como <em>mn</em>, por
-        lo tanto
-      </p>
-      <div class="text-center text-2xl my-5">
-        <Latex inline={true} formula="(a^m)^n = a^{mn}  " />
-      </div>
-      <Hr />
-      <h4>3<sup>a</sup> ley de los Exponentes</h4>
-      <p>
-        El producto de dos números elevados a la potencia <em>m</em>, es igual
-        al producto de la potencia <em>m</em> de cada número, es decir:
-      </p>
-      <h5><Latex formula="(ab)^n = a^n b^n  " /></h5>
-      <p>
-        Si consideramos las bases <em>a</em> y <em>b</em> de cualquier número real
-        y con exponente
-        <em>m</em> al desarrollar la potencia se tienen
-      </p>
-      <div class="text-center text-2xl my-5">
-        <Latex
-          inline={true}
-          formula="(ab)^n = (ab)(ab)(ab),\\ldots,(ab)(ab), m "
-        /> veces
-      </div>
-      <p>El producto (ab), es decir:</p>
-      <div class="text-center text-2xl my-5">
-        <Latex
-          inline={true}
-          formula="(ab)^n = (a)(a)(a), \\ldots, (a)(a) \\quad (b)(b)(b), \\ldots, (b)(b)"
-        />
-      </div>
-      <p>Por lo que:</p>
-      <div class="text-center text-2xl my-5">
-        <Latex inline={true} formula="(ab)^n = a^n b^n" />
-      </div>
-      <Hr />
-      <h4>4<sup>a</sup> ley de los Exponentes</h4>
-      <p>
-        La división de dos números elevado a la <em>m</em>- ésima potencia es
-        igual al cociente de las <em>m</em> – ésima potencias de tales números, es
-        decir:
-      </p>
-      <h5>
-        <Latex formula="\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n} " />
-      </h5>
-      <h4 class="mt-5">Ejemplos</h4>
-      <div class="max-w-screen-lg mx-auto bg-red p-5 rounded-xl mb-5">
-        <ol class="text-2xl mt-5 ol-alpha">
-          <li>
-            <Latex
-              inline={true}
-              formula="(2/5)^3 = 2^3/5^3 = \\frac{2 \\cdot 2 \\cdot 2}{5 \\cdot 5 \\cdot 5} = \\frac{8}{125} "
-            />
-          </li>
-          <li>
-            <Latex
-              inline={true}
-              formula="(3/(-4))^4 = 3^4/(-4)^4 = \\frac{(3 \\cdot 3 \\cdot 3 \\cdot 3)}{((-4) \\cdot (-4) \\cdot (-4) \\cdot (-4))} = \\frac{81}{256}  "
-            />
-          </li>
-        </ol>
-      </div>
-      <p>
-        Si consideramos las bases a y b de cualquier número real y con exponente
-        <em>m</em> al desarrollar la potencia del cociente se tiene
-      </p>
-      <div class="text-center text-2xl my-5">
-        <Latex
-          inline={true}
-          formula="\\left(\\frac{a}{b}\\right)^n = \\left(\\frac{a}{b}\\right) \\cdot \\left(\\frac{a}{b}\\right) \\cdot \\left(\\frac{a}{b}\\right) \\ldots \\left(\\frac{a}{b}\\right) \\quad m \\text{ veces} "
-        />
-      </div>
-      <p>Veces el producto</p>
-      <div class="text-center text-2xl my-5">
-        <Latex inline={true} formula="\\left ( \\frac{a}{b} \\right )" />
-      </div>
-      <p>Es decir:</p>
-      <div class="text-center text-2xl my-5">
-        <Latex
-          inline={true}
-          formula="\\left ( \\frac{a}{n} \\right )^{n} = \\frac{(a\\cdot a\\cdot a,\\ldots,a\\cdot a)}{(b\\cdot b\\cdot b,\\ldots,b\\cdot b)} = \\frac{(a)^n}{b^n} "
-        />
-      </div>
-      <Hr />
-      <h4>5<sup>a</sup> ley de los Exponentes</h4>
-      <p>
-        Cuando una potencia se <strong>divide</strong> con otra de la misma base,
-        la potencia es igual a la base elevada al exponente que resulta de la diferencia
-        del exponente de la potencia del numerador y el exponente de la potencia
-        del denominador, su representación es:
-      </p>
-      <h5><strong>Caso A</strong></h5>
-      <h5><Latex formula="\\frac{a^m}{a^n} = a^{m-n} " /></h5>
-      <p class="mt-5">Por ejemplo</p>
-      <div class="text-center text-2xl my-5">
-        <Latex
-          inline={true}
-          formula="\\frac{2^{^{5}}}{2^{3}} = \\frac{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2}{2 \\cdot 2 \\cdot 2} = 2 \\cdot 2 = 4 "
-        />
-      </div>
-      <p>Es decir:</p>
-      <div class="text-center text-2xl my-5">
-        <Latex
-          inline={true}
-          formula="\\frac{2^{^{5}}}{2^{3}}=2^{5-3}=2^{2}=4"
-        />
-      </div>
-      <h5><strong>Caso B</strong></h5>
-      <h5><Latex formula="\\frac{a^m}{a^n} = \\frac{1}{a^{m-n}}  " /></h5>
-      <p class="mt-5">Por ejemplo</p>
-      <div class="text-center text-2xl my-5">
-        <Latex
-          inline={true}
-          formula="\\frac{2^{^{5}}}{2^{3}} = \\frac{2 \\cdot 2 \\cdot 2}{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2} = \\frac{1}{2^2} = \\frac{1}{4}  "
-        />
-      </div>
-      <p>Es decir:</p>
-      <div class="text-center text-2xl my-5">
-        <Latex
-          inline={true}
-          formula="\\frac{2^{^{5}}}{2^{3}}=\\frac{1}{2^{5-3}}=\\frac{1}{2^{2}}=\\frac{1}{4}"
-        />
-      </div>
-    </div>
-  </div>
-  <style>
-    h5 {
-      color: var(--css-non-photo-blue);
-      font-size: 1.8rem;
-      padding-left: 1rem;
-    }
-  </style>
+	<ObjetoAprendizajePantalla index={1} pantallaIndex={1} asignatura={'matematicas_1'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<p>
+				En operaciones de suma, resta, multiplicación y división, con uno o varios exponentes. Para
+				ello estudiaremos las Leyes de los exponentes:
+			</p>
+			<h4>1<sup>a</sup> ley de los Exponentes</h4>
+			<p>
+				Cuando dos potencias de una misma base común se multiplican, la potencia es igual a la base
+				elevada a la suma de los exponentes, su representación algebraica es:
+			</p>
+			<h5><Latex formula="a^m \\cdot a^n = a^{m+n} " /></h5>
+			<h4>Ejemplos</h4>
+			<div class="mx-auto max-w-screen-lg rounded-xl bg-red p-5">
+				<ol class="ol-alpha mt-5 text-2xl">
+					<li>
+						<Latex inline={true} formula="24 \\cdot 22 \\cdot 24 = 2(4 + 2 + 4) = 210 = 1024 " />
+					</li>
+					<li>
+						<Latex inline={true} formula="5^2 \\cdot 5^7 = 5^{2+7} = 5^9 = 1953125 " />
+					</li>
+					<li>
+						<Latex inline={true} formula="35 \\cdot 3^{-2} = 35 + (-2) = 35 - 2 = 33 = 27 " />
+					</li>
+				</ol>
+			</div>
+			<Hr />
+			<h4>2<sup>a</sup> ley de los Exponentes</h4>
+			<p>
+				Una potencia elevada a una potencia es igual a la base elevada al producto de los exponentes
+				de las potencias, es decir:
+			</p>
+			<h5><Latex formula="(a^m)^n = a^{mn} " /></h5>
+			<h4>Ejemplos</h4>
+			<div class="mx-auto max-w-screen-lg rounded-xl bg-red p-5">
+				<ol class="ol-alpha mt-5 text-2xl">
+					<li>
+						<Latex inline={true} formula="(2^3)^4 = 2^{3 \\cdot 4} = 2^{12} = 4096  " />
+					</li>
+					<li>
+						<Latex inline={true} formula="(32)^3 = 36 = 729  " />
+					</li>
+					<li>
+						<Latex
+							inline={true}
+							formula="\\left(\\left(\\frac{1}{2}\\right)^5\\right)^3 = \\left(\\frac{1}{2}\\right)^5 \\cdot \\left(\\frac{1}{2}\\right)^5 \\cdot \\left(\\frac{1}{2}\\right)^5 = \\left(\\frac{1}{2}\\right)^{15}  "
+						/>
+					</li>
+					<li>
+						<Latex
+							inline={true}
+							formula="\\left((-3)^2\\right)^4 = (-3)^2 \\cdot (-3)^2 \\cdot (-3)^2 \\cdot (-3)^2 = (-3)^8  "
+						/>
+					</li>
+				</ol>
+			</div>
+			<p class="mt-5">La generalización de los ejemplos particulares es mediante la expresión</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex inline={true} formula="(a^m)^n = a^{mn} " /> veces el producto <Latex
+					inline={true}
+					formula="a^m"
+				/>
+			</div>
+			<p>
+				El producto de <em>n</em> veces la potencia <em>am</em> , significa la suma de <em>n</em> veces
+				<em>m</em>, la cual se escribe como <em>mn</em>, por lo tanto
+			</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex inline={true} formula="(a^m)^n = a^{mn}  " />
+			</div>
+			<Hr />
+			<h4>3<sup>a</sup> ley de los Exponentes</h4>
+			<p>
+				El producto de dos números elevados a la potencia <em>m</em>, es igual al producto de la
+				potencia <em>m</em> de cada número, es decir:
+			</p>
+			<h5><Latex formula="(ab)^n = a^n b^n  " /></h5>
+			<p>
+				Si consideramos las bases <em>a</em> y <em>b</em> de cualquier número real y con exponente
+				<em>m</em> al desarrollar la potencia se tienen
+			</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex inline={true} formula="(ab)^n = (ab)(ab)(ab),\\ldots,(ab)(ab), m " /> veces
+			</div>
+			<p>El producto (ab), es decir:</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex
+					inline={true}
+					formula="(ab)^n = (a)(a)(a), \\ldots, (a)(a) \\quad (b)(b)(b), \\ldots, (b)(b)"
+				/>
+			</div>
+			<p>Por lo que:</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex inline={true} formula="(ab)^n = a^n b^n" />
+			</div>
+			<Hr />
+			<h4>4<sup>a</sup> ley de los Exponentes</h4>
+			<p>
+				La división de dos números elevado a la <em>m</em>- ésima potencia es igual al cociente de
+				las <em>m</em> – ésima potencias de tales números, es decir:
+			</p>
+			<h5>
+				<Latex formula="\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n} " />
+			</h5>
+			<h4 class="mt-5">Ejemplos</h4>
+			<div class="mx-auto mb-5 max-w-screen-lg rounded-xl bg-red p-5">
+				<ol class="ol-alpha mt-5 text-2xl">
+					<li>
+						<Latex
+							inline={true}
+							formula="(\\frac{2}{5})^3 = \\frac{2^3}{5^3} = \\frac{2 \\cdot 2 \\cdot 2}{5 \\cdot 5 \\cdot 5} = \\frac{8}{125} "
+						/>
+					</li>
+					<li>
+						<Latex
+							inline={true}
+							formula="(\\frac{3}{-4})^4 = \\frac{3^4}{-4^4} = \\frac{(3 \\cdot 3 \\cdot 3 \\cdot 3)}{((-4) \\cdot (-4) \\cdot (-4) \\cdot (-4))} = \\frac{81}{256}  "
+						/>
+					</li>
+				</ol>
+			</div>
+			<p>
+				Si consideramos las bases a y b de cualquier número real y con exponente
+				<em>m</em> al desarrollar la potencia del cociente se tiene
+			</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex
+					inline={true}
+					formula="\\left(\\frac{a}{b}\\right)^n = \\left(\\frac{a}{b}\\right) \\cdot \\left(\\frac{a}{b}\\right) \\cdot \\left(\\frac{a}{b}\\right) \\ldots \\left(\\frac{a}{b}\\right) \\quad m \\text{ veces} "
+				/>
+			</div>
+			<p>Veces el producto</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex inline={true} formula="\\left ( \\frac{a}{b} \\right )" />
+			</div>
+			<p>Es decir:</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex
+					inline={true}
+					formula="\\left ( \\frac{a}{n} \\right )^{n} = \\frac{(a\\cdot a\\cdot a,\\ldots,a\\cdot a)}{(b\\cdot b\\cdot b,\\ldots,b\\cdot b)} = \\frac{(a)^n}{b^n} "
+				/>
+			</div>
+			<Hr />
+			<h4>5<sup>a</sup> ley de los Exponentes</h4>
+			<p>
+				Cuando una potencia se <strong>divide</strong> con otra de la misma base, la potencia es igual
+				a la base elevada al exponente que resulta de la diferencia del exponente de la potencia del
+				numerador y el exponente de la potencia del denominador, su representación es:
+			</p>
+			<h5><strong>Caso A</strong></h5>
+			<h5><Latex formula="\\frac{a^m}{a^n} = a^{m-n} " /></h5>
+			<p class="mt-5">Por ejemplo</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex
+					inline={true}
+					formula="\\frac{2^{^{5}}}{2^{3}} = \\frac{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2}{2 \\cdot 2 \\cdot 2} = 2 \\cdot 2 = 4 "
+				/>
+			</div>
+			<p>Es decir:</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex inline={true} formula="\\frac{2^{^{5}}}{2^{3}}=2^{5-3}=2^{2}=4" />
+			</div>
+			<h5><strong>Caso B</strong></h5>
+			<h5><Latex formula="\\frac{a^m}{a^n} = \\frac{1}{a^{m-n}}  " /></h5>
+			<p class="mt-5">Por ejemplo</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex
+					inline={true}
+					formula="\\frac{2^{^{5}}}{2^{3}} = \\frac{2 \\cdot 2 \\cdot 2}{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2} = \\frac{1}{2^2} = \\frac{1}{4}  "
+				/>
+			</div>
+			<p>Es decir:</p>
+			<div class="my-5 text-center text-2xl">
+				<Latex
+					inline={true}
+					formula="\\frac{2^{^{5}}}{2^{3}}=\\frac{1}{2^{5-3}}=\\frac{1}{2^{2}}=\\frac{1}{4}"
+				/>
+			</div>
+		</div>
+	</div>
+	<style>
+		h5 {
+			color: var(--css-non-photo-blue);
+			font-size: 1.8rem;
+			padding-left: 1rem;
+		}
+	</style>
 </Layout>
