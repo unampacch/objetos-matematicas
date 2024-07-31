@@ -1,16 +1,18 @@
 ---
 interface Props {
-  caption?: string;
-  src?: string;
-  bg?: string;
+	caption?: string
+	src?: string
+	bg?: string
 }
 
-const { caption, src, bg } = Astro.props as Props;
+const { caption, src, bg } = Astro.props as Props
 ---
 
 <div class={`min-w-full py-1 lg:my-10 text-dark md:py-3 ${bg}`}>
-  <img alt={caption} src={`${src}`} class="aspect-auto mx-auto p-5" alt="" />
-  <div class={`img-caption mx-auto ${bg ? "text-dark" : "text-white"}`}>
-    {caption}
-  </div>
+	<div class="mx-auto max-w-screen-lg">
+		<img alt={caption} src={`${src}`} class="mx-auto aspect-auto p-5" alt="" />
+		<div class={`img-caption mx-auto ${bg ? 'text-dark' : 'text-white'}`}>
+			{caption}
+		</div>
+	</div>
 </div>

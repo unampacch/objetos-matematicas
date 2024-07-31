@@ -2,16 +2,101 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import GeogebraLink from "@/components/GeogebraLink.astro";
+import ImagenCaption from "@/components/ImagenCaption.astro";
+import BgFluido from "@/components/BgFluido.astro";
 ---
 
 <Layout
-  title=""
-  description=""
+  title="Sistemas de ecuaciones lineales de orden 2x2"
+	description="Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables."
 >
 
     <ObjetoAprendizaje index={3} asignatura={"matematicas_1"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <h3>Problema (Parte I)</h3>
+        <p>Diego fue a la papelería y compró 12 plumas y 6 lápices. Le cobraron $102, pero no recuerda el precio de cada una de las cosas. ¿Cuánto podría haber costado cada pluma y cada lápiz?</p>
+        <p>¿Puedes ayudar a Diego a encontrar tres precios posibles para cada lápiz y cada pluma? </p>
+        <p>Localiza en el siguiente applet las parejas de precios que sugeriste arriba, considera como la coordenada x  el precio de cada pluma y como la coordenada y  el precio de cada lápiz.</p>
+        <GeogebraLink	href="https://www.geogebra.org/m/srgnuhd9"
+				titulo="Problema de precios (Parte I)"
+				texto="Mueve los puntos A, B y C de tal manera que sus coordenadas coincidan con los precios que sugeriste en la parte de arriba."
+			/>
+      <p>Como puedes notar, existe más de una solución al problema de Diego. De hecho, si definimos como <Latex
+        formula="x"
+        inline={true}
+      /> el precio cada pluma y como <Latex
+      formula="y"
+      inline={true}
+    /> el precio de cada lápiz, podemos modelar el problema por medio de la ecuación <Latex
+    formula="12x+6y=102"
+    inline={true}
+  />.</p>
+      <p>Los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra. Mueve el punto P que se encuentra sobre la recta y explora los diferentes precios que podrían tener cada pluma y cada lápiz.</p>
+      <GeogebraLink
+      href="https://www.geogebra.org/m/degqf48k"
+      titulo="Ecuación Lineal en dos Variables"
+      texto="Revisa y explora el siguiente applet de GeoGebra."
+    />
+    <p>Nota que existen soluciones que involucran números negativos; en el contexto del problema esto no tiene sentido, sin embargo, matemáticamente debemos considerarlas.</p>
+    <h3>Problema (Parte II)</h3>
+    <p>En la escuela, Diego se encontró con Paola y le comentó lo que le había ocurrido con su compra en la papelería. Paola se rio y le dijo que a ella le había ocurrido algo parecido; compró 5 plumas y 4 lápices y le cobraron 50 pesos, pero tampoco preguntó el precio de cada cosa.</p>
+    <p>¿Puedes encontrar tres posibles precios para cada pluma y cada lápiz en el caso de Paola?</p>
+    <p>Nuevamente, los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra, ¿puedes encontrar los puntos que representan los precios que consideraste en la pregunta anterior?</p>
+    <GeogebraLink href="https://www.geogebra.org/m/zrc3mk7s"
+    titulo="Ecuación Lineal en dos Variables (2)"
+    texto="Revisa y explora el siguiente applet de GeoGebra."
+  />
+  <h3>Problema (Parte III)</h3>
+  <p>Finalmente Paola y Diego se dieron cuenta que podrían conocer el costo de cada pluma y de cada lápiz, pues sólo bastaba encontrar un punto que satisficiera ambas ecuaciones. Gráficamente esto significa encontrar el punto de intersección de las rectas que representan a las ecuaciones.</p>
+  <GeogebraLink	href="https://www.geogebra.org/m/huvy4dk4"
+  titulo="Problema (Parte III)"
+  texto="Revisa y explora el siguiente applet de GeoGebra."
+/>
+<p>A una ecuación de la forma <Latex formula="ax+by=c" inline={true}/>, con <Latex formula="a" inline={true}/>, <Latex formula="b" inline={true}/> y <Latex formula="c" inline={true}/> números reales, se le conoce como <em>Ecuación lineal en dos variables</em>, y a un conjunto de dos ecuaciones lineales en dos variables se le conoce como <em>Sistema de Ecuaciones Lineales (SEL) de <Latex formula="2x2" inline={true}/></em>. </p>
+</div>
+
+<BgFluido bg="bg-blue">
+  <div class="grid grid-cols-1 items-center py-10 xl:grid-cols-2">
+    <div class="col-span-1 text-center">
+      <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+    </div>
+    <div class="col-span-1 text-2xl">
+      <Latex formula="3x-2y=8" />
+      <div class="mt-5">
+        <Latex formula="5x+4y=-4" />
+      </div>
+    </div>
+    <p class="mt-3">es un sistema de ecuaciones lineales de <Latex formula="2x2" inline={true}/>.</p>
+  </div>
+</BgFluido>
+<div class="mx-auto max-w-screen-xl">
+  <h4>¡Va chiste, va chiste! 😁</h4>
+  <p class="pl-5">--- Hola <Latex formula="3x+2y=10" inline={true}/>, ¿es cierto que no pudiste formar un <em>Sistema de Ecuaciones Lineales</em> con <Latex formula="x^2-y=0" inline={true}/>.</p>
+  <p class="pl-5">--- No, es un poco cuadrado. </p>
+  <p class="content-center mt-5">😛 😛 😛</p>
+  <p class="mt-5">Resolver un Sistema de Ecuaciones Lineales (SEL) de 2x2 significa encontrar valores para x  e y  que satisfagan ambas ecuaciones del sistema. Por ejemplo, en el problema de Diego y Paola, la solución del sistema</p>
+</div>
+
+
+
+
+
+        <p>
+          El que más usaremos <Latex
+            formula="a^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n \\text{ veces}}"
+            inline={true}
+          /> recuerden usar inline true para que se vea en una sola linea, de lo contrario al no ponerlo
+          se verá en bloque.
+        </p>
+        <p>
+          Ahora pongamos una imagen con caption. Vean como tiene el atributo de caption para el pie de
+          página y el border que puede ser true o por default false, el borde es por si la imagen es
+          blanca y muy pegada al los borde separarla un poco.
+        </p>
+        <ImagenCaption src="/mate1-portada-1.webp" caption="Aqui va el pie de imagen" border={true} />
+      </div>
     </div>
 
 </Layout>

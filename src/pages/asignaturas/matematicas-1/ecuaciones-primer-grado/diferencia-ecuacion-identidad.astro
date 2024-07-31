@@ -1,0 +1,59 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import Lumi from "@/components/Lumi.astro";
+---
+
+<Layout
+  title="Diferencia entre ecuación e identidad"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={2} pantallaIndex={0} asignatura={"matematicas_1"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+      <h3>Diferencia entre ecuación e identidad</h3>
+        <p>A diferencia de la ecuación, una identidad es una igualdad algebraica que siempre se cumple, sin importar los valores de sus incógnitas.</p>
+        <br>
+        <p>La expresión <Latex formula="3(x-5)= 3x -15" inline={true}/> es una identidad ya que no importa el valor que tome x , la igualdad siempre se cumple. Veamos:</p>
+        <div class="grid gap-7 lg:grid-cols-3 lg:gap-10">
+          <div>
+            <p>Si <Latex formula="x=-1:" inline={true}/></p>
+            <p><Latex formula="3((-1)-5)= 3(-1) -15"/> </p>
+            <p><Latex formula="3(-6)= -3 -15"/> </p>
+            <p><Latex formula="-18= -18"/> </p>
+          </div>
+          <div>
+            <p>Si <Latex formula="x=3:" inline={true}/></p>
+            <p><Latex formula="3((3)-5)= 3(3) -15"/> </p>
+            <p><Latex formula="3(-2)= 9 -15"/> </p>
+            <p><Latex formula="-6= -6"/> </p>
+          </div>
+          <div>
+            <p>Si <Latex formula="x=0:" inline={true}/></p>
+            <p><Latex formula="3((0)-5)= 3(0) -15"/> </p>
+            <p><Latex formula="3(-5)= 0 -15"/> </p>
+            <p><Latex formula="-15= -15"/> </p>
+          </div>
+        </div>
+        <br>
+      </div>
+        <Lumi
+			    src="/matematicas1/ecuaciones-primer-grado/Pant2-ej1.html"
+			    nombre="Ejercicio"
+			    instrucciones=" Arrastra la categoría que consideres correcta junto a la expresión"
+		    />
+        <br>
+        <br>
+        <br>
+        <Lumi
+			    src="/matematicas1/ecuaciones-primer-grado/pant2-ej2.html"
+			    nombre="Ejercicio verdadero o falso"
+			    instrucciones=" Verifica si los valores propuestos son solución de las ecuaciones dadas. Si los valores son raíces de la ecuación, selecciona la opción “Verdadero”; de lo contrario, selecciona “Falso”.  "
+		    />
+      
+    </div>
+
+</Layout>
