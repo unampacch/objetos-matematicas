@@ -374,27 +374,11 @@
       "objetos_aprendizaje": [
         {
           "titulo": "Los logaritmos y sus propiedades",
-          "slug": "/asignaturas/matematicas-4/logaritmos",
+          "slug": "/asignaturas/matematicas-4/logaritmos/inicio",
           "portada": "/holder-cover.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de los logaritmos y sus propiedades en el ámbito de la matemática. Contiene una exploración exhaustiva de los logaritmos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Logaritmos y sus propiedades y su aplicación en la resolución de problemas matemáticos.",
-          "pantallas": [
-            {
-              "titulo": "Definición de logaritmo",
-              "slug": "/asignaturas/matematicas-4/logaritmos/definicion",
-              "descripcion": "Definición y propiedades de los logaritmos."
-            },
-            {
-              "titulo": "Propiedades de los logaritmos",
-              "slug": "/asignaturas/matematicas-4/logaritmos/propiedades",
-              "descripcion": "Propiedades de los logaritmos y su aplicación en la resolución de problemas matemáticos."
-            },
-            {
-              "titulo": "Cambio de base",
-              "slug": "/asignaturas/matematicas-4/logaritmos/cambio-base",
-              "descripcion": "Cambio de base de los logaritmos y su aplicación en la resolución de problemas matemáticos."
-            }
-          ]
+          "pantallas": [ ]
         },
         {
           "titulo": "Concepto de polinomio",
