@@ -84,8 +84,15 @@ import Hr from '@/components/Hr.astro'
 			<p>Para separar cosas, usamos el Hr component 👻</p>
 			<Hr />
 			<p>Por cierto, hay unas clases que estamos usando para listas, por ejemplo:</p>
-			<ol class="ol-alpha mt-5 text-2xl">
-				<li>Primero</li>
+			<ol class="ol-alpha mt-5">
+				<li>
+					<p>Primero</p>
+					<ul class="ul">
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus reiciendis nemo, deserunt, excepturi possimus harum laudantium perferendis atque molestiae rem eveniet mollitia eum natus ex cumque nisi ullam porro?</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</li>
 				<li>Segundo</li>
 				<li>Tercero</li>
 			</ol>
@@ -95,6 +102,11 @@ import Hr from '@/components/Hr.astro'
 				<li>Segundo</li>
 				<li>Tercero</li>
 			</ol>
+			<ul class="ul-disc text-2xl">
+				<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui voluptatem expedita, voluptate delectus sint corrupti facere voluptas ipsa animi quia ut nam exercitationem aspernatur ipsum adipisci quibusdam explicabo minus dolorum.</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
 			<p>Las tablas las ponemos así:</p>
 			<div class="table-responsive">
 				<table class="table">
