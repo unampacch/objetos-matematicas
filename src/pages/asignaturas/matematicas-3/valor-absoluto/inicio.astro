@@ -11,9 +11,9 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 	description="En matemáticas, un concepto fundamental, pero que es bastante simple, es el valor absoluto..."
 >
 	<ObjetoAprendizaje index={0} asignatura={'matematicas_3'} />
-	<div class="objeto-aprendizaje mx-auto animate-fade text-center">
-		<h3 class="text-center">¿Qué es el valor absoluto?</h3>
-		<div class="mx-auto">
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3>¿Qué es el valor absoluto?</h3>
 			<p>
 				El valor absoluto de un número es la distancia entre el número y el cero, por lo que siempre
 				es positivo o cero.
@@ -22,54 +22,59 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 				Se denota matemáticamente con dos líneas verticales y paralelas | |, en las que encierran al
 				valor, por ejemplo:
 			</p>
+			<div class="mx-auto my-10 text-center text-xl">
+				<Latex formula="|x|, |4|, |-10|, |\\frac{3}{4}|" />
+			</div>
+			<p>
+				Ahora observa la siguiente recta numérica y calcularemos <Latex
+					formula="|5|"
+					inline={true}
+				/> según la definición.
+				<p>
+					La distancia que hay desde el 5 hasta el 0 son 5 unidades, como se muestra a continuación:
+				</p>
+			</p>
 		</div>
-		<div class="mx-auto my-10 text-center text-xl">
-			<Latex formula="|x|, |4|, |-10|, |\\frac{3}{4}|" />
-		</div>
-		<p>
-			Ahora observa la siguiente recta numérica y calcularemos <Latex formula="|5|" /> según la definición.
-			La distancia que hay desde el 5 hasta el 0 son 5 unidades, como se muestra a continuación:
-		</p>
 		<div class="flex items-center justify-center">
 			<ImagenFullCaption
-				src="../../../../../public/matematicas3/valor-absoluto/EsquemaRecta1.png"
+				src="/matematicas3/valor-absoluto/EsquemaRecta1.webp"
 				caption="Esquema de la recta numerica 1"
 				bg="bg-red"
 			/>
 		</div>
-		<p>Por lo que <Latex formula="|5|" />=5</p>
-		<p>
-			Ahora utilicemos este mismo procedimiento para calcular el valor absoluto de -5.<br />La
-			distancia que hay entre -5 y 0 son 5 unidades, como se muestra a continuación:
-		</p>
+		<div class="mx-auto max-w-screen-xl">
+			<p>Por lo que <Latex formula="|5|" inline={true} />=5</p>
+			<p>
+				Ahora utilicemos este mismo procedimiento para calcular el valor absoluto de -5. La
+				distancia que hay entre -5 y 0 son 5 unidades, como se muestra a continuación:
+			</p>
+		</div>
 		<div class="flex items-center justify-center">
 			<ImagenFullCaption
-				src="../../../../../public/matematicas3/valor-absoluto/EsquemaRecta2.png"
+				src="/matematicas3/valor-absoluto/EsquemaRecta2.webp"
 				caption="Esquema de la recta numerica 2"
 				bg="bg-red"
 			/>
 		</div>
-		<p>Por lo que <Latex formula="|-5|" /> =5</p>
-		<div class="justify-center">
+		<div class="mx-auto max-w-screen-xl">
+			<p>Por lo que <Latex formula="|-5|" inline={true} /> =5</p>
 			<p>
 				De lo anterior podemos concluir que si el valor dentro de un valor absoluto es positivo o
-				negativo, mantiene su valor siempre positivo, <br /> esto debido a que calculamos una distancia
+				negativo, mantiene su valor siempre positivo, esto debido a que calculamos una distancia
 				(recuerda que no existen distancias negativas).
 			</p>
-		</div>
-		<p>
-			Tomando en cuenta lo anterior, la definición matemática del valor absoluto es la siguiente:
-		</p>
-		<div class="text-x1 mx-auto my-10 text-center">
-			<Latex
-				formula="|x| = \\begin{cases} x & \\text{si } x \\geq 0 \\ -x & \\text{si } x < 0 \\end{cases} "
-			/>
-		</div>
-		<p>
-			¿Y qué pasa con el valor absoluto de cero? Esta es una propiedad de esta operación. Ahora
-			revisemos las propiedades de esta operación.
-		</p>
-		<div class="my-5">
+			<p>
+				Tomando en cuenta lo anterior, la definición matemática del valor absoluto es la siguiente:
+			</p>
+			<div class="text-x1 mx-auto my-10 text-center">
+				<Latex
+					formula="|x| = \\begin{cases} x & \\text{si } x \\geq 0 \\ -x & \\text{si } x < 0 \\end{cases} "
+				/>
+			</div>
+			<p>
+				¿Y qué pasa con el valor absoluto de cero? Esta es una propiedad de esta operación. Ahora
+				revisemos las propiedades de esta operación.
+			</p>
 			<ol class="ol-alpha mt-5">
 				<li>Propiedad de no negatividad:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
@@ -127,8 +132,9 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 			</ol>
 		</div>
 	</div>
+
 	<Lumi
-		src="../valor-absoluto/ejercicio-valor-absoluto.html"
+		src="/matematicas3/valor-absoluto/ejercicio-valor-absoluto.html"
 		nombre="Ejercicio de valor absoluto"
 		instrucciones="Tomando en cuenta toda la información anterior, selecciona la respuesta correcta:"
 	/>
