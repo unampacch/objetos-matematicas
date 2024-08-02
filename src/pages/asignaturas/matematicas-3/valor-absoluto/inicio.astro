@@ -31,9 +31,10 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 			La distancia que hay desde el 5 hasta el 0 son 5 unidades, como se muestra a continuación:
 		</p>
 		<div class="flex items-center justify-center">
-			<img
+			<ImagenFullCaption
 				src="../../../../../public/matematicas3/valor-absoluto/EsquemaRecta1.png"
-				alt="Esquema de la recta numerica 1"
+				caption="Esquema de la recta numerica 1"
+				bg="bg-red"
 			/>
 		</div>
 		<p>Por lo que <Latex formula="|5|" />=5</p>
@@ -42,9 +43,10 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 			distancia que hay entre -5 y 0 son 5 unidades, como se muestra a continuación:
 		</p>
 		<div class="flex items-center justify-center">
-			<img
+			<ImagenFullCaption
 				src="../../../../../public/matematicas3/valor-absoluto/EsquemaRecta2.png"
-				alt="Esquema de la recta numerica 2"
+				caption="Esquema de la recta numerica 2"
+				bg="bg-red"
 			/>
 		</div>
 		<p>Por lo que <Latex formula="|-5|" /> =5</p>
@@ -68,7 +70,7 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 			revisemos las propiedades de esta operación.
 		</p>
 		<div class="my-5">
-			<ol>
+			<ol class="ol-alpha mt-5">
 				<li>Propiedad de no negatividad:</li>
 				<div class="text-x1 mx-auto my-10 text-center">
 					<Latex formula="|x| \\geq 0" />
@@ -123,14 +125,11 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 					<Latex formula="1 \\leq 9" />
 				</div>
 			</ol>
-			<p>Ejercicio.</p>
-			<p>
-				Instrucciones: Tomando en cuenta toda la información anterior, selecciona la respuesta
-				correcta:
-			</p>
-		</div>
-		<div class="h5p-container">
-			<Lumi src="../valor-absoluto/ejercicio-valor-absoluto.html" />
 		</div>
 	</div>
+	<Lumi
+		src="../valor-absoluto/ejercicio-valor-absoluto.html"
+		nombre="Ejercicio de valor absoluto"
+		instrucciones="Tomando en cuenta toda la información anterior, selecciona la respuesta correcta:"
+	/>
 </Layout>

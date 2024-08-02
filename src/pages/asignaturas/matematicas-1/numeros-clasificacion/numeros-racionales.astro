@@ -1,44 +1,146 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
-import BgFluido from "@/components/BgFluido.astro";
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import BgFluido from '@/components/BgFluido.astro'
 ---
 
 <Layout
-  title="Números racionales"
-  description="Los números racionales son aquellos que se pueden expresar como el cociente de dos números enteros."
+	title="Números racionales"
+	description="Los números racionales son aquellos que se pueden expresar como el cociente de dos números enteros."
 >
-
-    <ObjetoAprendizajePantalla
-      index={0}
-      pantallaIndex={3}
-      asignatura={"matematicas_1"}
-    />
-    <div class="objeto-aprendizaje mx-auto animate-fade">
-      <div class="max-w-screen-xl mx-auto">
-        <h3><Latex formula="\\mathbb{Q}" /></h3>
-        <p>
-          Los números racionales son aquellos que pueden expresarse como una
-          fracción, donde el numerador y el denominador son números enteros y el
-          denominador no es cero. Incluyen a los números enteros y también a los
-          números decimales que tienen una representación finita o una
-          representación decimal periódica.
-        </p>
-      </div>
-      <BgFluido bg="bg-blue">
-        <div class="grid xl:grid-cols-3 grid-cols-1 items-center py-10">
-          <div class="text-center col-span-1">
-            <h4 class="!text-darkblue uppercase font-extrabold">Ejemplos</h4>
-          </div>
-          <div class="text-2xl col-span-2 text-center">
-            <Latex formula="a+\\left ( -a \\right )= 0" />
-            <div class="mt-5">
-              <Latex formula="7+\\left ( -7 \\right )= 0" />
-            </div>
-          </div>
-        </div>
-      </BgFluido>
-    </div>
-
+	<ObjetoAprendizajePantalla index={0} pantallaIndex={3} asignatura={'matematicas_1'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3><Latex formula="\\mathbb{Q}" /></h3>
+			<p>
+				Los números racionales son aquellos que pueden expresarse como una fracción, donde el
+				numerador y el denominador son números enteros y el denominador no es cero. Incluyen a los
+				números enteros y también a los números decimales que tienen una representación finita o una
+				representación decimal periódica.
+			</p>
+		</div>
+		<BgFluido bg="bg-blue">
+			<div class="grid grid-cols-1 items-center py-10 xl:grid-cols-3">
+				<div class="col-span-1 text-center">
+					<h4 class="font-extrabold uppercase !text-darkblue">Ejemplos</h4>
+				</div>
+				<div class="col-span-2 text-center text-2xl">
+					<Latex formula="a+\\left ( -a \\right )= 0" />
+					<div class="mt-5">
+						<Latex formula="7+\\left ( -7 \\right )= 0" />
+					</div>
+				</div>
+			</div>
+		</BgFluido>
+		<h4>Algunas propiedades que distinguen a los números racionales son:</h4>
+	</div>
+	<div class="my-5 grid w-full grid-cols-1 gap-4 px-5 md:grid-cols-2 xl:grid-cols-4">
+		<div class="bg-slate-100 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la adición</h4>
+			<p>La suma de dos números racionales siempre da como resultado otro número racional.</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<Latex formula="\\frac{1}{2} + \\frac{3}{5} = \\frac{11}{10}" />
+			</div>
+		</div>
+		<div class="bg-slate-100 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la sustracción</h4>
+			<p>La resta de dos números racionales siempre da como resultado otro número racional.</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<Latex formula="\\frac{3}{5} + \\frac{7}{8} = \\frac{29}{40}" />
+			</div>
+		</div>
+		<div class="bg-slate-100 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la multiplicación</h4>
+			<p>El producto de dos números racionales siempre da como resultado otro número racional.</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<Latex formula="\\left(\\frac{2}{3}\\right)\\left(\\frac{4}{5}\\right) = \\frac{8}{15}" />
+			</div>
+		</div>
+		<div class="bg-slate-100 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Cerradura bajo la división</h4>
+			<p>
+				La división de dos números racionales siempre da como resultado otro número racional,
+				siempre y cuando el divisor no sea cero.
+			</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<Latex
+					formula="\\frac{3}{4} \\div \\frac{2}{5} = \\frac{3}{4} \\times \\frac{5}{2} = \\frac{15}{8}"
+				/>
+			</div>
+		</div>
+	</div>
+	<div class="my-5 grid w-full grid-cols-1 place-content-center gap-4 px-5 lg:grid-cols-3">
+		<div class="bg-slate-300 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Propiedad conmutativa</h4>
+			<p>
+				La adición y la multiplicación de los números racionales son conmutativas, lo que significa
+				que el orden de los números no afecta el resultado.
+			</p>
+			<div class="grid grid-cols-2">
+				<div class="text-center">
+					<Latex formula="\\frac{a}{b} + \\frac{c}{d} = \\frac{c}{d} + \\frac{a}{b}" />
+					<Latex formula="\\frac{1}{2} + \\frac{3}{4} = \\frac{3}{4} + \\frac{1}{2}" />
+				</div>
+				<div class="text-center">
+					<Latex formula="\\frac{a}{b} \\times \\frac{c}{d} = \\frac{c}{d} \\times \\frac{a}{b}" />
+					<Latex formula="\\frac{2}{3} \\times \\frac{4}{5} = \\frac{4}{5} \\times \\frac{2}{3}" />
+				</div>
+			</div>
+		</div>
+		<div class="bg-slate-300 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Propiedad asociativa</h4>
+			<p>
+				La adición y la multiplicación de los números racionales son asociativas, lo que significa
+				que el resultado no depende de cómo se agrupan los números.
+			</p>
+			<div class="grid grid-cols-2">
+				<div class="text-center">
+					<Latex
+						formula="\\left(\\frac{a}{b} + \\frac{c}{d}\\right) + \\frac{e}{f} = \\frac{a}{b} + \\left(\\frac{c}{d} + \\frac{e}{f}\\right)"
+					/>
+					<Latex
+						formula="\\left(\\frac{1}{2} + \\frac{3}{4}\\right) + \\frac{5}{6} = \\frac{1}{2} + \\left(\\frac{3}{4} + \\frac{5}{6}\\right)"
+					/>
+				</div>
+				<div class="text-center">
+					<Latex
+						formula="\\left(\\frac{a}{b} \\times \\frac{c}{d}\\right) \\times \\frac{e}{f} = \\frac{a}{b} \\times \\left(\\frac{c}{d} \\times \\frac{e}{f}\\right)"
+					/>
+					<Latex
+						formula="\\left(\\frac{2}{3} \\times \\frac{4}{5}\\right) \\times \\frac{6}{7} = \\frac{2}{3} \\times \\left(\\frac{4}{5} \\times \\frac{6}{7}\\right)"
+					/>
+				</div>
+			</div>
+		</div>
+		<div class="bg-slate-300 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Propiedad distributiva</h4>
+			<p>
+				La multiplicación de un número racional por la suma de dos números racionales es igual a la
+				suma de los productos de ese número racional por cada uno de los números racionales.
+			</p>
+			<div class="mt-5 w-full text-center text-xl">
+				<Latex
+					formula="\\frac{1}{2} \\times \\left(\\frac{3}{4} + \\frac{5}{6}\\right) = \\frac{1}{2} \\times \\frac{3}{4} + \\frac{1}{2} \\times \\frac{5}{6}"
+				/>
+			</div>
+		</div>
+	</div>
+	<div class="my-5 grid w-full grid-cols-1 place-content-center gap-4 px-5">
+		<div class="bg-slate-400 p-5 text-dark">
+			<h4 class="font-extrabold uppercase !text-darkblue">Inversos multiplicativos</h4>
+			<p>Para cada número racional distinto de cero, existe su inverso multiplicativo</p>
+			<p class="text-center text-xl">
+				Si <Latex inline={true} formula="\\ a \\neq 0" /> entonces <Latex
+					inline={true}
+					formula="\\ b"
+				/> es el inverso multiplicativo de <Latex inline={true} formula="\\ a" />
+        <Latex
+          formula="\\ a \\times b = 1" />
+			</p>
+			<div class="mt-5 w-full text-center text-xl">
+        <Latex formula="\\frac{3}{4} \\times \\frac{4}{3} = 1" />
+			</div>
+		</div>
+	</div>
 </Layout>

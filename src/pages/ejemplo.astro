@@ -1,0 +1,139 @@
+---
+import BgFluido from '@/components/BgFluido.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import Latex from '@/components/Latex.astro'
+import Lumi from '@/components/Lumi.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import Layout from '@/layouts/Layout.astro'
+import Hr from '@/components/Hr.astro'
+---
+
+<Layout title="Ejemplo" description="Aca se describe un ejemplo"> <!-- El primer componente que encierra toda la página, este va sí o sí -->
+	<ObjetoAprendizaje index={1} asignatura={'estadistica'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<!--  Este primer div toma estilos de los objetos de aprendizaje y centra todo -->
+		<div class="mx-auto max-w-screen-xl">
+			<!-- y este es el contendeor, hay que usarlo a menos que quieran que todo se desborde, puede ser pero en general textos y todo es mejor en contenedor -->
+			<h3>Vamos a poner todos los componentes</h3>
+			<p>No es que se tengan que usar todos, solo es como ejemplo 😛</p>
+			<p>
+				El que más usaremos <Latex
+					formula="a^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n \\text{ veces}}"
+					inline={true}
+				/> recuerden usar inline true para que se vea en una sola linea, de lo contrario al no ponerlo
+				se verá en bloque.
+			</p>
+			<p>
+				Ahora pongamos una imagen con caption. Vean como tiene el atributo de caption para el pie de
+				página y el border que puede ser true o por default false, el borde es por si la imagen es
+				blanca y muy pegada al los borde separarla un poco.
+			</p>
+			<ImagenCaption src="/mate1-portada-1.webp" caption="Aqui va el pie de imagen" border={true} />
+		</div>
+		<!-- si quiero que elementos se vayan a ocupar el 100% del ancho primer hay que cerrar el contendor -->
+		<p>Ahora la misma imagen con un fondo y ocupando el 100%.</p>
+		<ImagenFullCaption src="/mate1-portada-1.webp" caption="Aqui va el pie de imagen" bg="bg-red" />
+		<p>Chequen este otro elemento fluido, o sea al 100 del ancho de la pantalla.</p>
+		<BgFluido bg="bg-blue">
+			<div class="grid grid-cols-1 items-center py-10 xl:grid-cols-2">
+				<div class="col-span-1 text-center">
+					<h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+				</div>
+				<div class="col-span-1 text-2xl">
+					<Latex formula="a^1 = a " />
+					<div class="mt-5">
+						<Latex formula="a^3 = a \\cdot a \\cdot a " />
+					</div>
+					<div class="mt-5">
+						<Latex formula="a^6 = a \\cdot a \\cdot a \\cdot a \\cdot a \\cdot a " />
+					</div>
+				</div>
+			</div>
+		</BgFluido>
+		<div class="mx-auto max-w-screen-xl">
+			<!-- y abrirlo de nuevo -->
+			<h4>Hola de nuevo ya estamos en contendor 😅</h4>
+			<p>
+				Ahora vamos a poner un componente Geogebra, es fácil. Solo no hay que olvidar poner los 3
+				atributos: href que es la liga, titulo y texto es lo que va abajo, también se pudo haber
+				llamado descripción 😅.
+			</p>
+			<GeogebraLink
+				href="https://www.geogebra.org/classic/rqftpc8z"
+				titulo="Simulador Potencias"
+				texto="Revisa el simulador y explora los deslizadores"
+				class='max-w-lg'
+			/>
+		</div>
+		<p>
+			Ahora una actividad H5P, se llama Lumi el componente por que en esa aplicación vamos a
+			desarrollar los ejercicios, los vamos a insertar directo como htmls independientes, ahí les va
+			el componente.
+		</p>
+		<p class="text-2xl text-red">
+			IMPORTANTE: este componente hay que ponerlo fluido, hay que sacarlo del contenedor.
+		</p>
+		<Lumi
+			src="/matematicas1/leyes-exponentes/fv-potencias.html"
+			nombre="Falso o Verdadero"
+			instrucciones="Después de revisar el simulador Potencias, te invitamos a identificar cual enunciado es Verdadero (v) o Falso (F), si es necesario regresa al simulador y explora nuevamente, con el fin de dar una respuesta correcta."
+		/>
+		<div class="mx-auto max-w-screen-xl">
+			<p>Para separar cosas, usamos el Hr component 👻</p>
+			<Hr />
+			<p>Por cierto, hay unas clases que estamos usando para listas, por ejemplo:</p>
+			<ol class="ol-alpha mt-5">
+				<li>
+					<p>Primero</p>
+					<ul class="ul">
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus reiciendis nemo, deserunt, excepturi possimus harum laudantium perferendis atque molestiae rem eveniet mollitia eum natus ex cumque nisi ullam porro?</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</li>
+				<li>Segundo</li>
+				<li>Tercero</li>
+			</ol>
+			<p>Y su variante con números:</p>
+			<ol class="ol-number mt-5 text-2xl">
+				<li>Primero</li>
+				<li>Segundo</li>
+				<li>Tercero</li>
+			</ol>
+			<ul class="ul-disc text-2xl">
+				<li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui voluptatem expedita, voluptate delectus sint corrupti facere voluptas ipsa animi quia ut nam exercitationem aspernatur ipsum adipisci quibusdam explicabo minus dolorum.</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+			<p>Las tablas las ponemos así:</p>
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Definición <Latex inline={true} formula="n^1 = a" /></th>
+							<th>Ejemplo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><Latex inline={true} formula="n^1 = a" /></td>
+							<td>
+								<ol class="ol-alpha">
+									<li>
+										<Latex inline={true} formula="25^1 = 25" />
+									</li>
+									<li>
+										<Latex inline={true} formula="58^1 = 58 " />
+									</li>
+								</ol>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="text-2xl text-center my-5">Y eso es todo por ahora, espero les haya servido de ejemplo 😅</p>
+		</div>
+	</div>
+</Layout>
