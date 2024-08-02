@@ -1,17 +1,76 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 ---
 
 <Layout
-  title=""
-  description=""
+	title="Concepto de función"
+	description="Una función es una relación en donde a cada elemento de un conjunto (A) le corresponde uno y sólo un elemento de otro conjunto (B)"
 >
+	<ObjetoAprendizaje index={4} asignatura={'matematicas_4'} />
+	<div class="objeto-aprendizaje mx-auto flex animate-fade items-center justify-center">
+		<p>
+			Una función es una relación en donde a cada elemento de un conjunto (A) le corresponde uno y
+			sólo un elemento de otro conjunto (B)
+		</p>
+	</div>
+	<div class="flex items-center justify-center">
+		<p>Nocion de función</p>
+	</div>
 
-    <ObjetoAprendizaje index={4} asignatura={"matematicas_4"} />
-    <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
-    </div>
+	<div class="my-4 flex items-center justify-center">
+		<img src="../../../../../public/matematicas4/funcion/funcion.jpg" />
+	</div>
+	<div class="flex items-center justify-center">
+		<p>
+			En la figura mostramos que es posible establecer relaciones entre conjuntos, pero debemos
+			tener en cuenta que no toda relación es una función.
+		</p>
+	</div>
+	<div class="flex items-center justify-center">
+		<p>Muchas cantidades se relacionan o dependen de otras, por ejemplo:</p>
+	</div>
+	<div class="my-4 flex items-center justify-center">
+		<ol class="list-decimal space-y-5">
+			<li>La ganancia de una empresa, depende de la cantidad de artículos por producir.</li>
+			<li>La deformación que sufre un resorte depende de la fuerza aplicada sobre él</li>
+			<li>El perímetro de una circunferencia depende de su radio.</li>
+			<li>Tu calificación depende de la cantidad de trabajo que entregues.</li>
+		</ol>
+	</div>
+	<div class="my-4 flex items-center justify-center">
+		En la siguiente actividad relacionarás el volumen de un cono y su altura, para comprender mejor,
+		ve a la siguiente dirección y realiza las actividades.
+	</div>
+	<div class="my-4 flex items-center justify-center font-bold text-red">
+		<a href="https://www.geogebra.org/m/wutg7sp6 "
+			>ACTIVIDAD: Volumen del cono inscrito como función de la altura</a
+		>
+	</div>
 
+	<div class="mx-10">
+		<p>Preguntas de repaso</p>
+	</div>
+	<div class="mx-10 my-4 flex items-center justify-center">
+		Instrucciones: Después de realizar las actividades de GeoGebra, responde las siguientes
+		preguntas:
+	</div>
+
+	<div class="h5p-container">
+		<iframe src="../" frameborder="0" width="100%" height="500px" allowfullscreen> </iframe>
+	</div>
+
+	<div class="mx-10">
+		<p>
+			Para continuar con nuestro estudio y entender mejor el concepto de función veamos el siguiente
+			problema:
+		</p>
+	</div>
+	<div class="mx-10">
+		<p>
+			En el mercado del centro están vendiendo juguetes artesanales por 7 pesos, ¿cuánto se paga por
+			3, 5, 7? Podemos establecer una relación entre la cantidad de lápices y el dinero: Tal como:
+		</p>
+	</div>
 </Layout>
