@@ -8,8 +8,7 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 
 <Layout
 	title="Valor absoluto"
-	description="En matemáticas, un concepto fundamental, pero que es bastante simple, es el valor absoluto..."
->
+	description="En matemáticas, un concepto fundamental, pero que es bastante simple, es el valor absoluto...">
 	<ObjetoAprendizaje index={0} asignatura={'matematicas_3'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade">
 		<div class="mx-auto max-w-screen-xl">
@@ -43,7 +42,7 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 			/>
 		</div>
 		<div class="mx-auto max-w-screen-xl">
-			<p>Por lo que <Latex formula="|5|" inline={true} />=5</p>
+			<p>Por lo que <Latex formula="|5|=5" inline={true} />5</p>
 			<p>
 				Ahora utilicemos este mismo procedimiento para calcular el valor absoluto de -5. La
 				distancia que hay entre -5 y 0 son 5 unidades, como se muestra a continuación:
@@ -57,7 +56,7 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 			/>
 		</div>
 		<div class="mx-auto max-w-screen-xl">
-			<p>Por lo que <Latex formula="|-5|" inline={true} /> =5</p>
+			<p>Por lo que <Latex formula="|-5|=5" inline={true} /></p>
 			<p>
 				De lo anterior podemos concluir que si el valor dentro de un valor absoluto es positivo o
 				negativo, mantiene su valor siempre positivo, esto debido a que calculamos una distancia
