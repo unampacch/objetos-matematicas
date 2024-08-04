@@ -126,26 +126,12 @@
       "objetos_aprendizaje": [
         {
           "titulo": "Factor común",
-          "slug": "/asignaturas/matematicas-2/factor-comun",
+          "slug": "/asignaturas/matematicas-2/factor-comun/inicio",
           "portada": "/holder-cover.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del factor común en el ámbito de la matemática. Contiene una exploración exhaustiva de los factores comunes en monomios y polinomios, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Factor común y su aplicación en la simplificación de expresiones algebraicas.",
           "pantallas": [
-            {
-              "titulo": "Factor común monomio",
-              "slug": "/asignaturas/matematicas-2/factor-comun/monomio",
-              "descripcion": "Factor común monomio y su aplicación en la simplificación de expresiones algebraicas."
-            },
-            {
-              "titulo": "Factor común polinomio",
-              "slug": "/asignaturas/matematicas-2/factor-comun/polinomio",
-              "descripcion": "Factor común polinomio y su aplicación en la simplificación de expresiones algebraicas."
-            },
-            {
-              "titulo": "Factor común por agrupación",
-              "slug": "/asignaturas/matematicas-2/factor-comun/agrupacion",
-              "descripcion": "Factor común por agrupación y su aplicación en la simplificación de expresiones algebraicas."
-            }
+           
           ]
         },
         {
@@ -412,25 +398,49 @@
         },
         {
           "titulo": "Concepto de polinomio",
-          "slug": "/asignaturas/matematicas-4/polinomio",
+          "slug": "/asignaturas/matematicas-4/polinomio/inicio",
           "portada": "/holder-cover.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del polinomio en el ámbito de la matemática. Contiene una exploración exhaustiva de los polinomios, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Polinomios y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Definición de polinomio",
-              "slug": "/asignaturas/matematicas-4/polinomio/definicion",
-              "descripcion": "Definición y propiedades de los polinomios."
+              "titulo": "Grados de polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla2grados",
+              "descripcion": "Identificacion de los grados en los polinomios."
             },
             {
-              "titulo": "Operaciones con polinomios",
-              "slug": "/asignaturas/matematicas-4/polinomio/operaciones",
-              "descripcion": "Operaciones básicas con polinomios y su aplicación en la resolución de problemas matemáticos."
+              "titulo": "Operaciones entre polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla3operaciones",
+              "descripcion": "Explicación de como resolver operaciones que implican polinomios.."
             },
             {
-              "titulo": "Factorización de polinomios",
-              "slug": "/asignaturas/matematicas-4/polinomio/factorizacion",
+              "titulo": "Productos de polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla4productos",
               "descripcion": "Factorización de polinomios y su aplicación en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo": "Concepto de desigualdad",
+          "slug": "/asignaturas/matematicas-4/desigualdad",
+          "portada": "/holder-cover.webp",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la desigualdad en el ámbito de la matemática. Contiene una exploración exhaustiva de las desigualdades, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Desigualdades y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de desigualdad",
+              "slug": "/asignaturas/matematicas-4/desigualdad/definicion",
+              "descripcion": "Definición y propiedades de las desigualdades."
+            },
+            {
+              "titulo": "Resolución de desigualdades",
+              "slug": "/asignaturas/matematicas-4/desigualdad/resolucion",
+              "descripcion": "Resolución de desigualdades y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Desigualdades compuestas",
+              "slug": "/asignaturas/matematicas-4/desigualdad/compuestas",
+              "descripcion": "Desigualdades compuestas y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         },
