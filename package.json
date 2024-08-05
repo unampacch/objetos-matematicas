@@ -19,7 +19,7 @@
     "astro": "^4.4.6",
     "astro-icon": "^1.1.0",
     "flowbite": "^2.3.0",
-    "katex": "^0.16.9",
+    "katex": "^0.16.11",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-tailwindcss": "^0.5.14",
