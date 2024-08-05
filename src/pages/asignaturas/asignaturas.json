@@ -591,19 +591,9 @@
           "resumen": "Continuidad de funciones reales y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Definición de continuidad",
+              "titulo": "Funciones continuas",
               "slug": "/asignaturas/calculo/continuidad-funciones/continuidad",
               "descripcion": "Definición y propiedades de la continuidad de funciones reales."
-            },
-            {
-              "titulo": "Tipos de discontinuidades",
-              "slug": "/asignaturas/calculo/continuidad-funciones/discontinuidades",
-              "descripcion": "Tipos de discontinuidades de funciones reales y su aplicación en la resolución de problemas matemáticos."
-            },
-            {
-              "titulo": "Teorema del valor intermedio",
-              "slug": "/asignaturas/calculo/continuidad-funciones/valor-intermedio",
-              "descripcion": "Teorema del valor intermedio y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         },
