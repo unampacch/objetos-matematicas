@@ -127,12 +127,9 @@
         {
           "titulo": "Factor común",
           "slug": "/asignaturas/matematicas-2/factor-comun/inicio",
-          "portada": "/holder-cover.webp",
-          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del factor común en el ámbito de la matemática. Contiene una exploración exhaustiva de los factores comunes en monomios y polinomios, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-          "resumen": "Factor común y su aplicación en la simplificación de expresiones algebraicas.",
-          "pantallas": [
-           
-          ]
+          "portada": "/matematicas2/Factor-Comun/factor-comun-portada.webp",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del factor común en el ámbito de la matemática. Contiene una exploración del factor común junto con su aplicación en la simplificación de expresiones algebraicas.",
+          "resumen": "Factor común y su aplicación en la simplificación de expresiones algebraicas."
         },
         {
           "titulo": "Factorización",
@@ -258,26 +255,12 @@
         },
         {
           "titulo": "Ley de senos y cosenos",
-          "slug": "/asignaturas/matematicas-3/ley-senos-cosenos",
+          "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/inicio",
           "portada": "/mate3-portada-2.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ley de senos y cosenos en el ámbito de la matemática. Contiene una exploración exhaustiva de la ley de senos y cosenos en triángulos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Ley de senos y cosenos en triángulos y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
-            {
-              "titulo": "Ley de senos",
-              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/senos",
-              "descripcion": "Definición y aplicación de la ley de senos en triángulos."
-            },
-            {
-              "titulo": "Ley de cosenos",
-              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/cosenos",
-              "descripcion": "Definición y aplicación de la ley de cosenos en triángulos."
-            },
-            {
-              "titulo": "Problemas de aplicación",
-              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/aplicacion",
-              "descripcion": "Resolución de problemas de aplicación de la ley de senos y cosenos."
-            }
+          
           ]
         },
         {
