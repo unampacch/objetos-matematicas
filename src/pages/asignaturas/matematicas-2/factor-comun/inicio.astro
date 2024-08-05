@@ -1,138 +1,228 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
-import Lumi from "@/components/Lumi.astro";
-import BgFluido from "@/components/BgFluido.astro";
-import GeogebraLink from "@/components/GeogebraLink.astro";
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import Lumi from '@/components/Lumi.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Hr from '@/components/Hr.astro'
 ---
 <Layout
-  title="Factor Común"
-  description="En este objeto de aprendizaje se explica como resolver ecuaciones cuadráticas mediante diferentes métodos de solución transformando la ecucación cuadrática a la forma adecuada para su resolución por un método específico">
-  <ObjetoAprendizaje index={0} asignatura={"matematicas_2"}/>
-  <div class="objeto-aprendizaje mx-auto animate-fade">
-  <div class="mx-auto max-w-screen-xl">
-  <h3>Identificar el Factor Común en las Expresiones de la Ecuación</h3>
-     <p class="my-5">Una expresión matemática se puede escribir como el producto de dos o más términos; a cada uno de estos términos se le llama factor. Decimos que dos expresiones tienen un <i>factor común</i>, sí existe un mismo factor que aparezca en la factorización de ambas expresiones.</p>
-     <p class="my-5">Consideremos las Expresiones <span data-inline="true">
-      <Latex inline={true} formula="5x^2y^2"/> 
-      <span class="mx-2"> y </span>
-      <Latex inline={true} formula="30x^3y"/>Por un lado</span></p>
-    <p class="text-2xl text-center my-5">
-      <Latex inline={true} formula="5x^2y^2=5xy(xy)"/>
-       <span class="mx-8"> y </span>
-      <Latex inline={true} formula="30x^3y=5xy(6x^2)"/>
-    </p>
-    <p class="my-8"> luego <span data-inline="true">
-      <Latex inline={true} formula="5x^2y^2"/>
-      es un factor común para
-      <Latex inline={true} formula="5x^2y^2"/>
-      <span class="mx-2"> y </span>
-      <Latex inline={true} formula="30x^3y"/>
-    .</p>
+	title="Factor Común"
+	description="En este objeto de aprendizaje se explica como resolver ecuaciones cuadráticas mediante diferentes métodos de solución transformando la ecucación cuadrática a la forma adecuada para su resolución por un método específico"
+>
+	<ObjetoAprendizaje index={0} asignatura={'matematicas_2'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3>Identificar el Factor Común en las Expresiones de la Ecuación</h3>
+			<p>
+				Una expresión matemática se puede escribir como el producto de dos o más términos; a cada
+				uno de estos términos se le llama factor. Decimos que dos expresiones tienen un <i
+					>factor común</i
+				>, sí existe un mismo factor que aparezca en la factorización de ambas expresiones.
+			</p>
+			<p class="my-5">
+				Consideremos las Expresiones <span data-inline="true">
+					<Latex inline={true} formula="5x^2y^2" />
+					<span class="mx-2"> y </span>
+					<Latex inline={true} formula="30x^3y" />Por un lado</span
+				>
+			</p>
+			<p class="my-5 text-center text-2xl">
+				<Latex inline={true} formula="5x^2y^2=5xy(xy)" />
+				<span class="mx-8"> y </span>
+				<Latex inline={true} formula="30x^3y=5xy(6x^2)" />
+			</p>
+			<p class="my-8">
+				luego <span data-inline="true">
+					<Latex inline={true} formula="5x^2y^2" />
+					es un factor común para
+					<Latex inline={true} formula="5x^2y^2" />
+					<span class="mx-2"> y </span>
+					<Latex inline={true} formula="30x^3y" />
+					.</span
+				>
 
-    <p class="my-10">Notemos por otro lado que</p>
-    <p class="text-2xl text-center my-5">
-      <Latex inline={true} formula="5x^2y^2=5x^2y(y)"/></Latex>
-    </p>
-    <p class="my-7"> y por lo tanto
-        <Latex inline={true} formula="5xy"/>
-      también es un factor común para 
-        <Latex inline={true} formula="5x^2y^2"></Latex>
-        <span class="mx-2"> y </span>
-        <Latex inline={true} formula="30x^3y"/>
-    .</p>
-      <h3 class="my-10"> Idenifica las opciones correctas</h3>
-      
-      <Lumi
-        src="/matematicas2/Factor-Comun/Ej-1-FC.html"
-        nombre="Ejercicio 1 Factor Comúm"
-        instrucciones="Selecciona las opciones que concideres correctas"   
-        />
-
-    <p class="my-10">Cuando tenemos una expresión de dos o más términos, podemos encontrar un factor a todos sus términos y escribirla como un producto; por ejemplo</p>
-    <p class="text-2xl text-center my-5">
-        <Latex inline={true} formula="3x^6y^3z^6+5x^4y^5z^5=x^4y^3z^5(3x^2z+5y^2)"/>
-    </p>
-    <p class="my-5"> En este 
-         <Latex inline={true} formula="x^4y^3z^5"/>
-        es factor común de
-         <Latex inline={true} formula="3x^6y^3z^6"/>
-          <span class="mx-2"> y </span>
-          <Latex inline={true} formula="5x^4y^5z^5"/>
-    .</p>
-    <h3 class="my-10"> Idenifica las opciones correctas</h3>
+				<p class="my-10">Notemos por otro lado que</p>
+				<p class="my-5 text-center text-2xl">
+					<Latex inline={true} formula="5x^2y^2=5x^2y(y)" />
+				</p>
+			</p>
+			<p class="my-7">
+				y por lo tanto
+				<Latex inline={true} formula="5xy" />
+				también es un factor común para
+				<Latex inline={true} formula="5x^2y^2" />
+				<span class="mx-2"> y </span>
+				<Latex inline={true} formula="30x^3y" />
+				.
+			</p>
+		</div>
+		<Lumi
+			src="/matematicas2/Factor-Comun/Ej-1-FC.html"
+			nombre="Ejercicio 1 Factor Comúm"
+			instrucciones="Selecciona las opciones que concideres correctas"
+		/>
+		<Hr />
+		<div class="mx-auto max-w-screen-xl">
+			<p class="my-10">
+				Cuando tenemos una expresión de dos o más términos, podemos encontrar un factor a todos sus
+				términos y escribirla como un producto; por ejemplo
+			</p>
+			<p class="my-5 text-center text-2xl">
+				<Latex inline={true} formula="3x^6y^3z^6+5x^4y^5z^5=x^4y^3z^5(3x^2z+5y^2)" />
+			</p>
+			<p class="my-5">
+				En este
+				<Latex inline={true} formula="x^4y^3z^5" />
+				es factor común de
+				<Latex inline={true} formula="3x^6y^3z^6" />
+				<span class="mx-2"> y </span>
+				<Latex inline={true} formula="5x^4y^5z^5" />
+				.
+			</p>
+		</div>
     <Lumi
-      src="/matematicas2/Factor-Comun/Ej-2-FC.html"
-      nombre="Ejercicio 2 Factor Comúm"
-      instrucciones="Selecciona las 2 opciones que concideres correctas"   
-      />
-    <p class="my-5"> Como se mencionó anterormente, dos términos pueden tener vaarios factores comunes, sin embargo, al factorizar una expresión con ds o más términos, debemos encontrar el factor común de mayor grado. Por ejemplo,</p>
-    <p class="text-2xl text-center my-5">
-          <Latex inline={true} formula="2x^4y^3z-4x^2y^2z^2+8x^2y^3z^4=2xyz(x^3y^2-2xyz+4xy^2z^3)"/>
-          <span class="mx-2"> y </span>
-          <Latex inline={true} formula="2x^4y^3z-4x^2y^2z^2+8x^2y^3z^4=2x^2y^2z(x^2y-2z+4yz^3)"/>
-    </p>
-    <p class="my-5">luego, la factorización buscada es la segunda debido a que el factor común es el de mayor grado posible.</p>
-    <p>Para factorizar una expresión (ponolimonial) con dos o más términos debemos seguir los siguientes pasos:</p>
-        <ol class="ol-number mt-5 text-2xl"> 
-            <li> 
-              <p>Determinar el factor común de grado mayor.</p>
-              <ol>
-              <li class="my-5"> a) Escribir el máximo común diisor de los coeficientes de los términos de la expresión. </li>
-              <li>b) Escribir la primera literal que aparece en todos los términos considerando el menor de los exponentes.</li> 
-              <li> c) Repetir el paso anterior con todas las literales que aparecen en todos los terminos. El producto de todos los términos aanteriores corresponderá al factor común.</li>                      
-              </ol>
-            </li>
-           
-            <li><p class="mx-2"> Dividir cada uno de los términos encontrado en 1 y simplificar
-              
-                <Latex formula="\\frac{a^n}{a^m}= a^{n-m}"> </p>
-                  <ol>
-                   <li>La factorización estará dada por el producto del factor común encontrado en 1 y la suma de las expresiones calculadas en este punto.</li>
-                  </ol>
-          </li>
-                  </ol>
-      <div class="text-white">
-        <BgFluido bg="bg-blue">
-        <h4>
-          <div class="text-dark blue">EJEMPLO:Factoricemos la expresión
-         <Latex inline={true} formula="30x^4z^4-72x^5y^3z^2+66x^3yz^3"/>
-        </h4>
+    src="/matematicas2/Factor-Comun/Ej-2-FC.html"
+    nombre="Ejercicio 2 Factor Comúm"
+    instrucciones="Selecciona las 2 opciones que concideres correctas"
+    />
+		<div class="mx-auto max-w-screen-xl mt-5">
+			<p class="my-5">
+				Como se mencionó anterormente, dos términos pueden tener vaarios factores comunes, sin
+				embargo, al factorizar una expresión con ds o más términos, debemos encontrar el factor
+				común de mayor grado. Por ejemplo,
+			</p>
+			<div class="my-12 text-center text-2xl bg-light p-10 text-dark">
+				<Latex inline={true} formula="2x^4y^3z-4x^2y^2z^2+8x^2y^3z^4=2xyz(x^3y^2-2xyz+4xy^2z^3)" />
+				<span class="block w-full mx-2 my-2"> y </span>
+				<Latex inline={true} formula="2x^4y^3z-4x^2y^2z^2+8x^2y^3z^4=2x^2y^2z(x^2y-2z+4yz^3)" />
+			</div>
+			<p>
+				Luego, la factorización buscada es la segunda debido a que el factor común es el de mayor
+				grado posible.
+			</p>
+			<h4>
+				Para factorizar una expresión (ponolimonial) con dos o más términos debemos seguir los
+				siguientes pasos:
+			</h4>
+			<ol class="ol-number mt-5">
+				<li>
+					<p class="text-lg font-bold">Determinar el factor común de grado mayor.</p>
+					<ol class="ol-letra">
+						<li class="my-5">
+							Escribir el máximo común diisor de los coeficientes de los términos de la
+							expresión.
+						</li>
+						<li>
+							Escribir la primera literal que aparece en todos los términos considerando el menor
+							de los exponentes.
+						</li>
+						<li>
+							Repetir el paso anterior con todas las literales que aparecen en todos los
+							terminos. El producto de todos los términos aanteriores corresponderá al factor común.
+						</li>
+					</ol>
+				</li>
 
-        <ol class="ol-number mt-5 text-2xl"> 
-          <li> 
-            <p> Determinamos el factor común de grado mayor.</p>
-              <ol>
-                 <li> a)El máximo común divisor de 30, 72 y 66 es 6.</li>
-                 <li> b) La primera literal que aparece en todos los términos es <p class="mx-2"><Latex inline={true}  formula="x"/></p><p class="mx-2">siendo 3 el menor exponente (tercer término); entonces debemos considerar</p> <Latex inline={true} formula="x^3"/>.</li> 
-                 <li> c)Ahora, la siguiente literal que aperece en todos los términos es <p class="mx-2"><Latex inline={true} formula="z"/></p><p class="mx-2"> y el exponente menor 2 (segundo término); por lo tanto, consideramos el término </p> <p class="mx-2"><Latex inline={true} formula="z^2"/></p> <p class="mx-2"> Notemos que la literal </p> <p class="mx-2"><Latex inline={true} formula="y"/></p> <p class="mx-2">sólo aparece en el segundo y tercer término y por lo tanto no se considera.</p></li>                      
-              </ol></p>
-          </li>
-          <p>Entonces el factor común de mayor grado es:</p> <Latex inline={true} formula="6x^3z^2"/>
+				<li>
+					<p class="text-lg font-bold">
+						Dividir cada uno de los términos encontrado en 1 y simplificar
+					</p>
+					<div class="w-100 text-center my-5 text-2xl">
+						<Latex formula="\\frac{a^n}{a^m}= a^{n-m}" />
 
-          <li> <p class="mx-20">Dividamos los términos de la expresión por el factor común y obtengamos la factorización.</p>
+					</div>
+					<p class="font-extrabold text-center text-xl">
+						La factorización estará dada por el producto del factor común encontrado en 1 y la
+						suma de las expresiones calculadas en este punto.
+					</p>
+				</li>
+      </ol>
+    </div>
+		<BgFluido bg="bg-light">
+			<div class="text-dark mx-auto max-w-screen-xl">
+				<h4 class="blue text-dark">
+					EJEMPLO:Factoricemos la expresión
+					<Latex inline={true} formula="30x^4z^4-72x^5y^3z^2+66x^3yz^3" />
+				</h4>
 
-            <ol>
-              <li><Latex formula="6x^3z^2\\left(\\frac{30x^4z^4}{6x^3z^2}-\\frac{72x^5y^3z^2}{6x^3z^2}+\\frac{66x^3yz^3}{6x^3z^2}\\right)"></li>
-              <li><Latex formula="6x^3z^2(5x^{4-3}z^{4-2}-12x^{5-3}y^3z^{2-2}+11x^{3-3}yz^{3-2})"></Latex></li>
-              <li><Latex formula="6x^3z^2(5x^{1}z^{2}-12x^{2}y^3z^{0}+11x^{0}yz^{1})"></li>
-              <li><Latex formula="6x^3z^2(5xz^{2}-12x^{2}y^3+11yz)"></li>
-            </ol>
-          </li>
-         </div>
-          </div> 
-          
-            </BgFluido>
-           
-            <p class="mx-20">Con el siguiente applet podrás practicar encontrando el factor común para varias expresiones, arrastra los números al lugar que corresponde y presiona el botón calificar para revisar tus respuestas:</p>
+				<ol class="ol-number mt-5">
+					<li>
+						<p class="text-lg font-bold">Determinamos el factor común de grado mayor.</p>
+						<ol class="ol-letra">
+							<li>El máximo común divisor de 30, 72 y 66 es 6.</li>
+							<li>
+								La primera literal que aparece en todos los términos es <p class="mx-2">
+									<Latex inline={true} formula="x" />
+								</p><p class="mx-2">
+									siendo 3 el menor exponente (tercer término); entonces debemos considerar
+								</p>
+								<Latex inline={true} formula="x^3" />.
+							</li>
+							<li>
+								Ahora, la siguiente literal que aperece en todos los términos es <p
+									class="mx-2"
+								>
+									<Latex inline={true} formula="z" />
+								</p><p class="mx-2">
+									y el exponente menor 2 (segundo término); por lo tanto, consideramos el
+									término
+								</p>
+								<p class="mx-2"><Latex inline={true} formula="z^2" /></p>
+								<p class="mx-2">Notemos que la literal</p>
+								<p class="mx-2"><Latex inline={true} formula="y" /></p>
+								<p class="mx-2">
+									sólo aparece en el segundo y tercer término y por lo tanto no se considera.
+								</p>
+							</li>
+						</ol>
+						<p class="font-bold mt-5">Entonces el factor común de mayor grado es:</p>
+						<div class="w-full text-center text-2xl">
+							<Latex inline={true} formula="6x^3z^2" />
+						</div>
+					</li>
 
-        <GeogebraLink 
-          texto="Con lo aprendido intenta resolver este pequeño ejercicio de Factor común, arrastrando la respuest hacia su casilla correspondiente"
-          titulo="¡Practiquemos con Geogebra!"
-          href="https://www.geogebra.org/m/ybfhc6dr"
-        />
-      
-  </div> 
-</div>
+
+				<li>
+					<p class="text-lg font-bold">
+						Dividamos los términos de la expresión por el factor común y obtengamos la
+						factorización.
+					</p>
+
+					<ol class="grid gap-10 text-center">
+						<li>
+							<Latex
+								formula="6x^3z^2\\left(\\frac{30x^4z^4}{6x^3z^2}-\\frac{72x^5y^3z^2}{6x^3z^2}+\\frac{66x^3yz^3}{6x^3z^2}\\right)"
+							/>
+							<li>
+								<Latex
+									formula="6x^3z^2(5x^{4-3}z^{4-2}-12x^{5-3}y^3z^{2-2}+11x^{3-3}yz^{3-2})"
+								/>
+							</li>
+							<li>
+								<Latex formula="6x^3z^2(5x^{1}z^{2}-12x^{2}y^3z^{0}+11x^{0}yz^{1})" />
+								<li><Latex formula="6x^3z^2(5xz^{2}-12x^{2}y^3+11yz)" /></li>
+							</li>
+						</li>
+					</ol>
+				</li>
+
+			</div>
+		</BgFluido>
+		<div class="mx-auto max-w-screen-xl mt-5">
+			<p>
+				Con el siguiente applet podrás practicar encontrando el factor común para varias
+				expresiones, arrastra los números al lugar que corresponde y presiona el botón
+				calificar para revisar tus respuestas:
+			</p>
+
+				<GeogebraLink
+					texto="Con lo aprendido intenta resolver este pequeño ejercicio de Factor común, arrastrando la respuest hacia su casilla correspondiente"
+					titulo="¡Practiquemos con Geogebra!"
+					href="https://www.geogebra.org/m/ybfhc6dr"
+				/>
+		</div>
+
+	</div>
 </Layout>

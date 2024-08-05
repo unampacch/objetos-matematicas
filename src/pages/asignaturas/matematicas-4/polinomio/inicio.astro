@@ -2,16 +2,118 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import BgFluido from "@/components/BgFluido.astro";
+import Lumi from "@/components/Lumi.astro";
+import Hr from "@/components/Hr.astro";
 ---
 
 <Layout
-  title=""
-  description=""
->
+  title="Funciones Polimoniales"
+  description="Con este contenido comprenderas el significado de la notación funcionas la cual utilizaras para representar y evaluar funciones polinomiales. Ademas de que usarás la notación de intervalos para representar dominio y rango de una función.">
 
     <ObjetoAprendizaje index={1} asignatura={"matematicas_4"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <h3>¿Qué es un polinomio?</h3>
+        <p class="my-5"><b>Polinomio</b> etimológicamente significa <i>muchos nómos</i>, es decir, muchos términos o monomios.<br>
+        En mátemáticas <b>Polinomio</b> es una expresión algebraica que se define como la suma infinita de varios términos o monomios, cada uno de los cuales tiene un coeficiente constante (valor númerico) y uns o más variables no necesariamente distintas 
+        <Latex inline formula="\(xx\), \(yy\), o , \(zz\).">
+        </p>
+        <p class="my-5">En la literatura podrás encontrar definido un polinomio en 
+          <Latex inline formula="\(x\)"> 
+        </p>
+        como:
+        <p class="text-2xl text-center my-5"> 
+          <Latex formula="a_n x^n+a_(n-1) x^(n-1)+a_(n-2) x^(n-2)+⋯+a_1 x^1+a_0 ">
+        </p>
+
+        <p class="my-10">en donde:
+          <Latex inline formula="a_0,a_1,a_2,…,a_n">
+          son numeros reales,
+          <Latex inline  formula="\(n\)">
+          es número entero positivo y con
+          <Latex inline formula="a_n≠0">
+        </p>
+
+        <p class="my-10"></p>
+
+        <BgFluido bg="bg-blue">
+          <h4>
+            <div class="text-white">EJEMPLO:
+          </h4>
+          <div class="text-white">
+          <ol class="ol-alpha mt-5 text-2Xl">
+                   <li><Latex inline formula="\(x\), \(3x^2\), \(-4xyz\), \(2x + 4y - 5z + 1\)"> <p class="my-3">, en donde las variables</p> <Latex inline formula="\(x\), \(y\),  \(z\),"><p class="my-3">representan valores numericos <b>no encontrados</b></p></li>
+                   <li><Latex inline formula="\(ax\), \(by\), \(cyz\),"> <p class="my-3">en donde las literales </p><Latex inline formula="\(a\), \(b\), \(c\),"> <p class="my-2"> representan valores constantes es decir, son valores númericos <b>conocidos</b></p></li> 
+          </ol>
+        
+            </div>
+            <Hr />
+        </BgFluido>
+
+        <p class="mx-5">Sí el polinomio solo tiene un término se llama <b>Monomio</b>.</p>
+        <p class="my-10"></p>
+
+        <BgFluido bg="bg-blue">
+          <h4 class="my-5">
+            <div class="text-white">EJEMPLO: </div>
+          </h4>
+          <div class="text-white">
+          <ol class="ol-alpha Mt-5 text-2Xl">
+            <li><Latex inline formula="\(5\)">
+            <li><Latex inline formula="\(3x^2\)">
+            <li><Latex inline formula="\(-4x\)">
+            <li><Latex inline formula="\(xy\)">
+          </div>
+          </ol>
+          <Hr />
+          </BgFluido>
+
+          <p class="mx-5, my-4">Sí el polinomio tiene dos términos se llama <b>Binomio</b>.</p>
+          <p class="my-10"></p>
+
+          <BgFluido bg="bg-blue">
+              <h4 class="my-5">
+                <div class="text-white">EJEMPLO:
+              </h4>
+              <div class="text-white">
+              <ol class="ol-alpha Mt-5 text-2Xl">
+           
+               <li><Latex formula="\(x + y\)">
+               <li><Latex formula="\(y + 1\)">
+               <li><Latex formula="\(3x^2 - 2y\)">
+            </div>
+            </ol>
+            <Hr />
+             </BgFluido>
+
+          <p class="mx-5, my-4">Sí el polinomio tiene tres términos se llama <b>Trinomio</b>.</p>
+          <p class="my-10"></p>
+          <BgFluido bg="bg-blue">
+            <h4 class="my-5">
+              <div class="text-white">EJEMPLO: </div>
+            </h4>
+            <div class="text-white">
+            <ol class="ol-alpha Mt-5 text-2Xl">
+              <li><Latex inline formula="\(x - y + 4z\)">
+              <li><Latex inline formula="\(-2x^2 + 3y - 5\)">
+            </div>
+            </ol>
+            <Hr />
+            </BgFluido>
+
+            <p class="mx-5, my-4">Cuando el polinomio tiene cuatro o más términos simplemente se llama <b>Polinomio</b>.</p>
+            <p class="my-10"></p>
+
+            <Lumi
+             src="/matematicas4/Funciones-Polinomiales/Ej-1-FP.html"
+             nombre="Ejercicio de Repaso"
+             instrucciones=""
+            />
+
+            <Hr />
+            </div>
+      </div>
     </div>
 
 </Layout>

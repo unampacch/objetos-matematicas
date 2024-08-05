@@ -71,39 +71,29 @@
         },
         {
           "titulo": "Solución de ecuaciones de primer grado",
-          "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado",
+          "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/inicio",
           "portada": "/mate1-portada-3.webp",
           "descripcion": "Aprende a resolver ecuaciones de primer grado de forma sencilla y divertida.",
           "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de ecuaciones de primer grado en el ámbito de la matemática.",
           "pantallas": [
             {
-              "titulo": "Ecuaciones lineales",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-lineales",
-              "descripcion": "Resolución de ecuaciones lineales."
+              "titulo": "Diferencia entre ecuación e identidad",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/diferencia-ecuacion-identidad",
+              "descripcion": "Diferencia entre ecuación e identidad."
             },
             {
-              "titulo": "Ecuaciones con paréntesis",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-parentesis",
-              "descripcion": "Resolución de ecuaciones con paréntesis."
-            },
-            {
-              "titulo": "Ecuaciones con denominadores",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-denominadores",
-              "descripcion": "Resolución de ecuaciones con denominadores."
-            },
-            {
-              "titulo": "Ecuaciones con fracciones",
-              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-fracciones",
-              "descripcion": "Resolución de ecuaciones con fracciones."
+              "titulo": "Resolución de ecuaciones de primer grado con una incógnita",
+              "slug": "/asignaturas/matematicas-1/ecuaciones-primer-grado/ecuaciones-una-incognita",
+              "descripcion": "Resolución de ecuaciones de primer grado con una incógnita"
             }
           ]
         },
         {
           "titulo": "Solución de sistemas de ecuaciones lineales",
-          "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales",
+          "slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/inicio",
           "portada": "/mate1-portada-4.webp",
-          "descripcion": "Aprende a resolver sistemas de ecuaciones lineales de forma sencilla y divertida.",
-          "resumen": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de sistemas de ecuaciones lineales en el ámbito de la matemática.",
+          "descripcion": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables.",
+          "resumen": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables..",
           "pantallas": [
             {
               "titulo": "Método de sustitución",
@@ -137,10 +127,9 @@
         {
           "titulo": "Factor común",
           "slug": "/asignaturas/matematicas-2/factor-comun/inicio",
-          "portada": "/holder-cover.webp",
-          "descripcion": "En este objeto de aprendizaje se explica como resolver ecuaciones cuadráticas mediante diferentes métodos de solución transformando la ecucación cuadrática a la forma adecuada para su resolución por un método específico",
+          "portada": "/matematicas2/Factor-Comun/factor-comun-portada.webp",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del factor común en el ámbito de la matemática. Contiene una exploración del factor común junto con su aplicación en la simplificación de expresiones algebraicas.",
           "resumen": "Factor común y su aplicación en la simplificación de expresiones algebraicas."
-        
         },
         {
           "titulo": "Factorización",
@@ -196,26 +185,16 @@
           ]
         },
         {
-          "titulo": "Solución de ecuaciones de segundo grado",
-          "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado",
-          "portada": "/holder-cover.webp",
+          "titulo": "Métodos de solución de ecuaciones de segundo grado en una variable",
+          "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/inicio",
+          "portada": "/portadas/Firefly Ecuación general de segundo grado, graﬁcación y determinación de raíces 96342.jpg",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la resolución de ecuaciones de segundo grado en el ámbito de la matemática. Contiene una exploración exhaustiva de las ecuaciones cuadráticas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Resolución de ecuaciones de segundo grado y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Ecuaciones cuadráticas",
-              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/ecuaciones-cuadraticas",
-              "descripcion": "Resolución de ecuaciones cuadráticas."
-            },
-            {
-              "titulo": "Fórmula general",
-              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/formula-general",
+              "titulo": "Método de completar el trinomio cuadrado perfecto (fórmula general)",
+              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/metodo-solucion-formula-general",
               "descripcion": "Aplicación de la fórmula general para resolver ecuaciones cuadráticas."
-            },
-            {
-              "titulo": "Fórmula cuadrática",
-              "slug": "/asignaturas/matematicas-2/ecuaciones-segundo-grado/formula-cuadratica",
-              "descripcion": "Aplicación de la fórmula cuadrática para resolver ecuaciones cuadráticas."
             }
           ]
         },
@@ -276,26 +255,12 @@
         },
         {
           "titulo": "Ley de senos y cosenos",
-          "slug": "/asignaturas/matematicas-3/ley-senos-cosenos",
+          "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/inicio",
           "portada": "/mate3-portada-2.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ley de senos y cosenos en el ámbito de la matemática. Contiene una exploración exhaustiva de la ley de senos y cosenos en triángulos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Ley de senos y cosenos en triángulos y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
-            {
-              "titulo": "Ley de senos",
-              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/senos",
-              "descripcion": "Definición y aplicación de la ley de senos en triángulos."
-            },
-            {
-              "titulo": "Ley de cosenos",
-              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/cosenos",
-              "descripcion": "Definición y aplicación de la ley de cosenos en triángulos."
-            },
-            {
-              "titulo": "Problemas de aplicación",
-              "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/aplicacion",
-              "descripcion": "Resolución de problemas de aplicación de la ley de senos y cosenos."
-            }
+
           ]
         },
         {
@@ -416,25 +381,49 @@
         },
         {
           "titulo": "Concepto de polinomio",
-          "slug": "/asignaturas/matematicas-4/polinomio",
+          "slug": "/asignaturas/matematicas-4/polinomio/inicio",
           "portada": "/holder-cover.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del polinomio en el ámbito de la matemática. Contiene una exploración exhaustiva de los polinomios, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Polinomios y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Definición de polinomio",
-              "slug": "/asignaturas/matematicas-4/polinomio/definicion",
-              "descripcion": "Definición y propiedades de los polinomios."
+              "titulo": "Grados de polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla2grados",
+              "descripcion": "Identificacion de los grados en los polinomios."
             },
             {
-              "titulo": "Operaciones con polinomios",
-              "slug": "/asignaturas/matematicas-4/polinomio/operaciones",
-              "descripcion": "Operaciones básicas con polinomios y su aplicación en la resolución de problemas matemáticos."
+              "titulo": "Operaciones entre polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla3operaciones",
+              "descripcion": "Explicación de como resolver operaciones que implican polinomios.."
             },
             {
-              "titulo": "Factorización de polinomios",
-              "slug": "/asignaturas/matematicas-4/polinomio/factorizacion",
+              "titulo": "Productos de polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla4productos",
               "descripcion": "Factorización de polinomios y su aplicación en la resolución de problemas matemáticos."
+            }
+          ]
+        },
+        {
+          "titulo": "Concepto de desigualdad",
+          "slug": "/asignaturas/matematicas-4/desigualdad",
+          "portada": "/holder-cover.webp",
+          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la desigualdad en el ámbito de la matemática. Contiene una exploración exhaustiva de las desigualdades, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "resumen": "Desigualdades y su aplicación en la resolución de problemas matemáticos.",
+          "pantallas": [
+            {
+              "titulo": "Definición de desigualdad",
+              "slug": "/asignaturas/matematicas-4/desigualdad/definicion",
+              "descripcion": "Definición y propiedades de las desigualdades."
+            },
+            {
+              "titulo": "Resolución de desigualdades",
+              "slug": "/asignaturas/matematicas-4/desigualdad/resolucion",
+              "descripcion": "Resolución de desigualdades y su aplicación en la resolución de problemas matemáticos."
+            },
+            {
+              "titulo": "Desigualdades compuestas",
+              "slug": "/asignaturas/matematicas-4/desigualdad/compuestas",
+              "descripcion": "Desigualdades compuestas y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         },
