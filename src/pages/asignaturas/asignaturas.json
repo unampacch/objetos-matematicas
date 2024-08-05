@@ -267,27 +267,10 @@
 			"objetos_aprendizaje": [
 				{
 					"titulo": "Concepto de valor absoluto",
-					"slug": "/asignaturas/matematicas-3/valor-absoluto",
-					"portada": "../mate3-portada-1.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales del valor absoluto en el ámbito de la matemática. Contiene una exploración exhaustiva del valor absoluto de un número real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-					"resumen": "Valor absoluto de un número real y su aplicación en la resolución de problemas matemáticos.",
-					"pantallas": [
-						{
-							"titulo": "Definición de valor absoluto",
-							"slug": "/asignaturas/matematicas-3/valor-absoluto/definicion",
-							"descripcion": "Definición y propiedades del valor absoluto de un número real."
-						},
-						{
-							"titulo": "Operaciones con valor absoluto",
-							"slug": "/asignaturas/matematicas-3/valor-absoluto/operaciones",
-							"descripcion": "Operaciones básicas con valor absoluto."
-						},
-						{
-							"titulo": "Desigualdades con valor absoluto",
-							"slug": "/asignaturas/matematicas-3/valor-absoluto/desigualdades",
-							"descripcion": "Resolución de desigualdades con valor absoluto."
-						}
-					]
+					"slug": "/asignaturas/matematicas-3/valor-absoluto/inicio",
+					"portada": "/matematicas3/valor-absoluto/mate3-portada-1.webp",
+					"descripcion": "En matemáticas, un concepto fundamental, pero que es bastante simple, es el valor absoluto.",
+					"resumen": "Valor absoluto de un número real y su aplicación en la resolución de problemas matemáticos."
 				},
 				{
 					"titulo": "Ley de senos y cosenos",
