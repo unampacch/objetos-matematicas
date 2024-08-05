@@ -585,14 +585,14 @@
         },
         {
           "titulo": "Continuidad de funciones",
-          "slug": "/asignaturas/calculo/continuidad-funciones",
+          "slug": "/asignaturas/calculo/continuidad-funciones/inicio",
           "portada": "/holder-cover.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la continuidad de funciones en el ámbito de la matemática. Contiene una exploración exhaustiva de la continuidad de funciones reales, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Continuidad de funciones reales y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
               "titulo": "Funciones continuas",
-              "slug": "/asignaturas/calculo/continuidad-funciones/continuidad",
+              "slug": "/asignaturas/calculo/continuidad-funciones/funciones-continuas",
               "descripcion": "Definición y propiedades de la continuidad de funciones reales."
             }
           ]
