@@ -542,31 +542,11 @@
         },
         {
           "titulo": "Funciones trigonométricas",
-          "slug": "/asignaturas/matematicas-4/funciones-trigonometricas",
+          "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/inicio",
           "portada": "/holder-cover.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las funciones trigonométricas en el ámbito de la matemática. Contiene una exploración exhaustiva de las funciones seno, coseno, tangente, cotangente, secante y cosecante, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Funciones trigonométricas y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
-            {
-              "titulo": "Definición de funciones trigonométricas",
-              "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/definicion",
-              "descripcion": "Definición y propiedades de las funciones trigonométricas."
-            },
-            {
-              "titulo": "Funciones seno y coseno",
-              "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/seno-coseno",
-              "descripcion": "Definición y propiedades de las funciones seno y coseno."
-            },
-            {
-              "titulo": "Funciones tangente y cotangente",
-              "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/tangente-cotangente",
-              "descripcion": "Definición y propiedades de las funciones tangente y cotangente."
-            },
-            {
-              "titulo": "Funciones secante y cosecante",
-              "slug": "/asignaturas/matematicas-4/funciones-trigonometricas/secante-cosecante",
-              "descripcion": "Definición y propiedades de las funciones secante y cosecante."
-            }
           ]
         }
       ]
