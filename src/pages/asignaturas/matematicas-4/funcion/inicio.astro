@@ -1,5 +1,174 @@
 ---
 import Layout from '@/layouts/Layout.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
 import Latex from '@/components/Latex.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
 ---
+
+<Layout
+	title="Concepto de función"
+	description="Una función es una relación en donde a cada elemento de un conjunto (A) le corresponde uno y sólo un elemento de otro conjunto (B)"
+>
+	<ObjetoAprendizaje index={4} asignatura={'matematicas_4'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				Una función es una relación en donde a cada elemento de un conjunto (A) le corresponde uno y
+				sólo un elemento de otro conjunto (B)
+			</p>
+
+			<div class="flex items-center justify-center">
+				<h3>Noción de función</h3>
+			</div>
+		</div>
+
+		<div class="flex items-center justify-center">
+			<ImagenCaption
+				src="/matematicas4/funcion/funcion.webp"
+				caption="Noción de función"
+				border={true}
+			/>
+		</div>
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				En la figura mostramos que es posible establecer relaciones entre conjuntos, pero debemos
+				tener en cuenta que no toda relación es una función.
+			</p>
+
+			<p>Muchas cantidades se relacionan o dependen de otras, por ejemplo:</p>
+
+			<ol class="ol-alpha mt-5">
+				<li>La ganancia de una empresa, depende de la cantidad de artículos por producir.</li>
+				<li>La deformación que sufre un resorte depende de la fuerza aplicada sobre él</li>
+				<li>El perímetro de una circunferencia depende de su radio.</li>
+				<li>Tu calificación depende de la cantidad de trabajo que entregues.</li>
+			</ol>
+
+			<p>
+				En la siguiente actividad relacionarás el volumen de un cono y su altura, para comprender
+				mejor, ve a la siguiente dirección y realiza las actividades.
+			</p>
+
+			<GeogebraLink
+				href="https://www.geogebra.org/m/wutg7sp6 "
+				titulo="Volumen del cono inscrito como función de la altura"
+				texto="Mueve el deslizador para observar la relación entre el volumen del cono y su altura"
+				class="max-w-lg"
+			/>
+		</div>
+		<Lumi
+			src="/matematicas4/funcion/preguntas-de-repaso-f1.html"
+			nombre="Preguntas de repaso"
+			instrucciones="Después  de realizar las actividades de GeoGebra, responde las siguientes preguntas:  "
+		/>
+
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				<br />
+				Para continuar con nuestro estudio y entender mejor el concepto de función veamos el siguiente
+				problema:
+			</p>
+
+			<p>
+				En el mercado del centro están vendiendo juguetes artesanales por 7 pesos, ¿cuánto se paga
+				por 3, 5, 7? Podemos establecer una relación entre la cantidad de lápices y el dinero:
+			</p>
+			<p>Tal como:</p>
+		</div>
+		<div class="flex items-center justify-center">
+			<ImagenFullCaption
+				src="/matematicas4/funcion/tabla.webp"
+				caption="Noción de función"
+				bg="bg-red"
+			/>
+		</div>
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				Como podemos observar, a cada elemento del conjunto de los lápices se les asocia con un y
+				sólo un elemento del conjunto dinero, un juguete no puede valer $7 pesos y $14 pesos al
+				mismo tiempo, por lo que la relación que se muestra la tabla es una <b>Función.</b>
+			</p>
+
+			<h4>Función en forma algebraica</h4>
+			<p>
+				A veces se puede obtener una representación o modelo algebraico para las funciones que nos
+				permite predecir. Para ver cómo y continuando con el ejemplo anterior respondamos la
+				siguiente pregunta ¿Cuánto pagaría por 62 juguetes?
+			</p>
+			<p>Modelo algebraico del problema:</p>
+			<div class="text-x1 mx-auto my-10 text-center">
+				<Latex formula="\[ y=7x \]" />
+			</div>
+			<p>Donde:</p>
+			<i>X: Cantidad de juguetes </i>
+			<br />
+			<i>Y: Cantidad de dinero</i>
+			<div>
+				<p>Por 62 juguetes pagaríamos:</p>
+				<div class="text-x1 mx-auto my-10 text-center">
+					<Latex formula="\[ y=7(62) = \\$434 \]" />
+				</div>
+			</div>
+
+			A continuación, te invitamos a realizar las siguientes actividades y posteriormente contestar
+			una serie de preguntas:
+			<GeogebraLink
+				href="https://www.geogebra.org/m/p6pfagdv"
+				titulo="Función"
+				texto="Identifica la relación entre los valores y llena las tablas."
+				class="max-w-lg"
+			/>
+		</div>
+
+		<Lumi
+			src="/matematicas4/funcion/funcion-tablas.html"
+			nombre="Funciones"
+			instrucciones="Realiza las siguientes actividades."
+		/>
+
+		<div class="mx-auto max-w-screen-xl">
+			<h4>Formas de Representar una Función:</h4>
+			<p>Como podrás notar, una función se puede representar a través de las siguientes formas:</p>
+
+			<ol class="ol-alpha mt-5">
+				<li>Tabla numérica</li>
+				<li>Gráfica</li>
+				<li>Expresión Algebraica</li>
+			</ol>
+			<p>
+				Te invitamos a que veas las gráficas que se generan por los modelos anteriores y contestar
+				unas preguntas.
+			</p>
+		</div>
+		<div class="flex items-center justify-center">
+			<ImagenCaption src="/matematicas4/funcion/imagenGeo.webp" caption="Gráfica" border={true} />
+		</div>
+		<div class="mx-auto max-w-screen-xl">
+			<GeogebraLink
+				href="https://www.geogebra.org/calculator"
+				titulo="Calculadora gráfica"
+				texto="Usa el enlace para abrir el graficador e inserta la función en la casilla de entrada como se muestra en la imagen:"
+				class="max-w-lg"
+			/>
+		</div>
+		<Lumi
+			src="/matematicas4/funcion/funciones-graficas.html"
+			nombre="Funciones gráficas"
+			instrucciones="Usando el enlace anterior, contesta las siguientes preguntas."
+		/>
+		<div class="mx-auto max-w-screen-xl">
+			<p class="mx-4">
+				Finalmente, para terminar con el estudio de Función te invitamos a ver el siguiente video:
+			</p>
+		</div>
+		<iframe class="aspect-video" src="https://www.youtube.com/watch?v=Ll7xfe3HoZE"></iframe>
+		<Lumi
+			src="/matematicas4/funcion/preguntas.html"
+			nombre="Funciones gráficas"
+			instrucciones="Usando el enlace anterior, contesta las siguientes preguntas."
+		/>
+	</div>
+</Layout>
