@@ -257,10 +257,10 @@
           "titulo": "Ley de senos y cosenos",
           "slug": "/asignaturas/matematicas-3/ley-senos-cosenos/inicio",
           "portada": "/mate3-portada-2.webp",
-          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ley de senos y cosenos en el ámbito de la matemática. Contiene una exploración exhaustiva de la ley de senos y cosenos en triángulos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "descripcion": "Este material aborda los conceptos fundamentales de la ley de senos y cosenos en triángulos, junto con su aplicación en la resolución de problemas matemáticos.",
           "resumen": "Ley de senos y cosenos en triángulos y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
-          
+
           ]
         },
         {
@@ -381,24 +381,24 @@
         },
         {
           "titulo": "Concepto de polinomio",
-          "slug": "/asignaturas/matematicas-4/polinomio",
+          "slug": "/asignaturas/matematicas-4/polinomio/inicio",
           "portada": "/holder-cover.webp",
-          "descripcion": "Este material aborda de manera detallada los conceptos fundamentales del polinomio en el ámbito de la matemática. Contiene una exploración exhaustiva de los polinomios, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+          "descripcion": "En este objeto de aprendizaje se explica como resolver ecuaciones cuadráticas mediante diferentes métodos de solución transformando la ecucación cuadrática a la forma adecuada para su resolución por un método específico.",
           "resumen": "Polinomios y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Definición de polinomio",
-              "slug": "/asignaturas/matematicas-4/polinomio/definicion",
+              "titulo": "Grados de polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla2grados",
               "descripcion": "Definición y propiedades de los polinomios."
             },
             {
-              "titulo": "Operaciones con polinomios",
-              "slug": "/asignaturas/matematicas-4/polinomio/operaciones",
+              "titulo": "Operaciones entre polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla3operaciones",
               "descripcion": "Operaciones básicas con polinomios y su aplicación en la resolución de problemas matemáticos."
             },
             {
-              "titulo": "Factorización de polinomios",
-              "slug": "/asignaturas/matematicas-4/polinomio/factorizacion",
+              "titulo": "Producto de polinomios",
+              "slug": "/asignaturas/matematicas-4/polinomio/pantalla4productos",
               "descripcion": "Factorización de polinomios y su aplicación en la resolución de problemas matemáticos."
             }
           ]
