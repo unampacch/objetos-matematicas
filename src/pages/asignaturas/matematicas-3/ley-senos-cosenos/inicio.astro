@@ -10,7 +10,7 @@ import BgFluido from '@/components/BgFluido.astro'
 <Layout title="Leyes de Senos y Cosenos" description="">
 	<ObjetoAprendizaje index={1} asignatura={'matematicas_3'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade">
-		<div class="mx-auto max-w-screen-xl">
+		<div class="mx-auto max-w-screen-xl mb-5">
 			<p>
 				En triángulos que no son rectángulos no se cumple el Teorema de Pitágoras; sin embargo, sus
 				lados y sus ángulos guardan otras relaciones conocidas como la Ley de senos y la Ley de
@@ -20,8 +20,8 @@ import BgFluido from '@/components/BgFluido.astro'
 
 		<ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/tlsyc.webp" bg="bg-red" />
 
-		<div class="mx-auto max-w-screen-xl">
-			<div class="mb-10 grid w-full grid-cols-2 text-center">
+		<div class="mx-auto max-w-screen-xl my-5">
+			<div class="mb-10 xl:grid w-full xl:grid-cols-2 text-center">
 				<div>
 					<h4>Ley de Senos:</h4>
 					<Latex
@@ -36,11 +36,11 @@ import BgFluido from '@/components/BgFluido.astro'
 				</div>
 				<p><Latex class="text-xl" formula="a^2=b^2+c^2-2bc\cos\alpha " /></p>
 			</div>
+      <p class="xl:text-center">
+        Estas igualdades nos permiten conocer las longitudes de los lados de un triángulo y la
+        amplitud de sus ángulos a partir de algunas conocidas.
+      </p>
 		</div>
-		<p class="text-center">
-			Estas igualdades nos permiten conocer las longitudes de los lados de un triángulo y la
-			amplitud de sus ángulos a partir de algunas conocidas.
-		</p>
 
 		<BgFluido bg="bg-lightblue">
 			<div class="mx-auto max-w-screen-xl">
@@ -190,7 +190,7 @@ import BgFluido from '@/components/BgFluido.astro'
 			</div>
 		</BgFluido>
 
-		<div class="mx-auto max-w-screen-xl">
+		<div class="mx-auto max-w-screen-xl mb-5">
 			<p>
 				Ahora, podemos utilizar la ley de senos como en el ejemplo anterior, para encontrar el valor
 				de <Latex formula="\\beta " inline={true} /> y después deducir el valor de <Latex
@@ -217,7 +217,7 @@ import BgFluido from '@/components/BgFluido.astro'
 
 		<ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-3.webp" bg="bg-red" />
 
-		<div class="mx-auto max-w-screen-xl">
+		<div class="mx-auto max-w-screen-xl my-5">
 			<p class="text-center">
 				Finalmente<Latex formula="57.12^o+78.46^o+\\gamma=180^o" inline={true} />, de donde <Latex
 					formula="\\gamma=180^o-57.12^o-78.46^o=44.42^o"
@@ -228,7 +228,7 @@ import BgFluido from '@/components/BgFluido.astro'
 
 		<ImagenFullCaption src="/matematicas3/leyes-senos-cosenos/te2-4.webp" bg="bg-blue" />
 
-		<div class="mx-auto max-w-screen-xl">
+		<div class="mx-auto max-w-screen-xl mt-5">
 			<p class="text-2xl">A continuación,se muestra dos applets con los que puedes practicar:</p>
       <div class="mb-10 w-full items-center gap-10 xl:grid xl:grid-cols-2">
 
