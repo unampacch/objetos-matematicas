@@ -4,7 +4,6 @@ import GeogebraLink from '@/components/GeogebraLink.astro'
 import Latex from '@/components/Latex.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import Lumi from '@/components/Lumi.astro'
-import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 import ImagenCaption from '@/components/ImagenCaption.astro'
 ---
 
@@ -19,13 +18,9 @@ import ImagenCaption from '@/components/ImagenCaption.astro'
 				Una función es una relación en donde a cada elemento de un conjunto (A) le corresponde uno y
 				sólo un elemento de otro conjunto (B)
 			</p>
-
-			<div class="flex items-center justify-center">
-				<h3>Noción de función</h3>
-			</div>
 		</div>
 
-		<div class="flex items-center justify-center">
+		<div class="flex items-center justify-center my-10">
 			<ImagenCaption
 				src="/matematicas4/funcion/funcion.webp"
 				caption="Noción de función"
@@ -78,35 +73,39 @@ import ImagenCaption from '@/components/ImagenCaption.astro'
 			</p>
 			<p>Tal como:</p>
 		</div>
-		<div class="my-4 flex items-center justify-center bg-red">
-			<table class="j table-auto border-collapse rounded-lg border-white bg-slate-900 text-white">
-				<thead>
-					<tr>
-						<th class="border border-white px-4 py-2 text-center"><b>DINERO</b></th>
-						<th class="border border-white px-4 py-2 text-center"><b>JUGUETES</b></th>
-					</tr></thead
-				>
-				<tr>
-					<td class="border border-white px-4 py-2 text-center">1</td>
-					<td class="border border-white px-4 py-2 text-center">$7</td>
-				</tr>
-				<tr>
-					<td class="border border-white px-4 py-2 text-center">2</td>
-					<td class="border border-white px-4 py-2 text-center">$14</td>
-				</tr>
-				<tr>
-					<td class="border border-white px-4 py-2 text-center">3</td>
-					<td class="border border-white px-4 py-2 text-center">$21</td>
-				</tr>
-				<tr>
-					<td class="border border-white px-4 py-2 text-center">5</td>
-					<td class="border border-white px-4 py-2 text-center">$35</td>
-				</tr>
-				<tr>
-					<td class="border border-white px-4 py-2 text-center">7</td>
-					<td class="border border-white px-4 py-2 text-center">$49</td>
-				</tr>
-			</table>
+		<div class="my-4 flex items-center justify-center bg-red py-10">
+			<div class="overflow-hidden rounded-3xl">
+				<table class="table-fixed border-collapse rounded-lg bg-slate-900 text-white">
+					<thead>
+						<tr class="border-b border-b-slate-50">
+							<th class="px-4 py-2 text-center text-red"><b>DINERO</b></th>
+							<th class="px-4 py-2 text-center text-red"><b>JUGUETES</b></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center">1</td>
+							<td class="border-b px-4 py-2 text-center">$7</td>
+						</tr>
+						<tr>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center">2</td>
+							<td class="border-b px-4 py-2 text-center">$14</td>
+						</tr>
+						<tr>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center">3</td>
+							<td class="border-b px-4 py-2 text-center">$21</td>
+						</tr>
+						<tr>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center">5</td>
+							<td class="border-b px-4 py-2 text-center">$35</td>
+						</tr>
+						<tr>
+							<td class="border-r border-slate-50 px-4 py-2 text-center">7</td>
+							<td class="px-4 py-2 text-center">$49</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 		<div class="mx-auto max-w-screen-xl">
 			<p>
@@ -152,7 +151,7 @@ import ImagenCaption from '@/components/ImagenCaption.astro'
 			instrucciones="Realiza las siguientes actividades."
 		/>
 
-		<div class="mx-auto max-w-screen-xl">
+		<div class="mx-auto max-w-screen-xl mt-10">
 			<h4>Formas de Representar una Función:</h4>
 			<p>Como podrás notar, una función se puede representar a través de las siguientes formas:</p>
 
