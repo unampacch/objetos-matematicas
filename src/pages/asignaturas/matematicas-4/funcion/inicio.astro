@@ -78,12 +78,35 @@ import ImagenCaption from '@/components/ImagenCaption.astro'
 			</p>
 			<p>Tal como:</p>
 		</div>
-		<div class="flex items-center justify-center">
-			<ImagenFullCaption
-				src="/matematicas4/funcion/tabla.webp"
-				caption="Noción de función"
-				bg="bg-red"
-			/>
+		<div class="my-4 flex items-center justify-center bg-red">
+			<table class="j table-auto border-collapse rounded-lg border-white bg-slate-900 text-white">
+				<thead>
+					<tr>
+						<th class="border border-white px-4 py-2 text-center"><b>DINERO</b></th>
+						<th class="border border-white px-4 py-2 text-center"><b>JUGUETES</b></th>
+					</tr></thead
+				>
+				<tr>
+					<td class="border border-white px-4 py-2 text-center">1</td>
+					<td class="border border-white px-4 py-2 text-center">$7</td>
+				</tr>
+				<tr>
+					<td class="border border-white px-4 py-2 text-center">2</td>
+					<td class="border border-white px-4 py-2 text-center">$14</td>
+				</tr>
+				<tr>
+					<td class="border border-white px-4 py-2 text-center">3</td>
+					<td class="border border-white px-4 py-2 text-center">$21</td>
+				</tr>
+				<tr>
+					<td class="border border-white px-4 py-2 text-center">5</td>
+					<td class="border border-white px-4 py-2 text-center">$35</td>
+				</tr>
+				<tr>
+					<td class="border border-white px-4 py-2 text-center">7</td>
+					<td class="border border-white px-4 py-2 text-center">$49</td>
+				</tr>
+			</table>
 		</div>
 		<div class="mx-auto max-w-screen-xl">
 			<p>
@@ -143,9 +166,7 @@ import ImagenCaption from '@/components/ImagenCaption.astro'
 				unas preguntas.
 			</p>
 		</div>
-		<div class="flex items-center justify-center">
-			<ImagenCaption src="/matematicas4/funcion/imagenGeo.webp" caption="Gráfica" border={true} />
-		</div>
+
 		<div class="mx-auto max-w-screen-xl">
 			<GeogebraLink
 				href="https://www.geogebra.org/calculator"
@@ -159,12 +180,21 @@ import ImagenCaption from '@/components/ImagenCaption.astro'
 			nombre="Funciones gráficas"
 			instrucciones="Usando el enlace anterior, contesta las siguientes preguntas."
 		/>
-		<div class="mx-auto max-w-screen-xl">
-			<p class="mx-4">
+		<div class="mx-auto my-4 max-w-screen-xl">
+			<p>
 				Finalmente, para terminar con el estudio de Función te invitamos a ver el siguiente video:
 			</p>
 		</div>
-		<iframe class="aspect-video" src="https://www.youtube.com/watch?v=Ll7xfe3HoZE"></iframe>
+		<div class="flex justify-center">
+			<iframe
+				class="aspect-video w-3/4 md:w-1/2 lg:w-1/3"
+				src="https://www.youtube.com/embed/Ll7xfe3HoZE?si=i0XCvt45dT88RKdJ"
+				title="Youtube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+		</div>
 		<Lumi
 			src="/matematicas4/funcion/preguntas.html"
 			nombre="Funciones gráficas"
