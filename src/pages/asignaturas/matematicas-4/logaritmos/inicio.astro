@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import Lumi from "@/components/Lumi.astro";
 ---
 
 <Layout
@@ -11,7 +12,125 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 
     <ObjetoAprendizaje index={0} asignatura={"matematicas_4"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <h3>Resolución de ecuaciones de primer grado con una incógnita</h3>
+      
+      <p class="my-5">Definimos el logaritmo en base a del número x de la siguiente manera</p>
+
+         <p class="my-5 text-center"><Latex formula="\\log_a{x}=y \\quad \\Leftrightarrow \\quad  a^y=x " inline={true}/></p>
+      
+      <p class="my-5">En donde <Latex formula="a>0" inline={true}/> y <Latex formula="a≠1" inline={true}/></p>
+
+      <p class="my-5">Esto es, el logaritmo en base <Latex formula="a" inline={true}/> del número <Latex formula="x" inline={true}/> es el número <Latex formula="y" inline={true}/>. Ese número <Latex formula="y" inline={true}/> cumple que al elevar la base <Latex formula="a" inline={true}/> al exponente <Latex formula="y" inline={true}/> el resultado obtenido es <Latex formula="x" inline={true}/>.Observemos debe cumplir que <Latex formula="x>0" inline={true}/></p>
+
+      <p class="my-5">Para comprender la definición del logaritmo, analiza la siguiente tabla.</p>
+
+      <div class="table-responsive">
+				<table class="table">
+          <tbody>
+            <tr>
+              <td>
+                <ul class="text-center mt-5">
+                  <li><Latex formula="\log_2{1}=0" inline={true}/></li>
+                  
+                  <li><Latex formula="\log_2{2}=1" inline={true}/></li>
+
+                  <li><Latex formula="\log_2{4}=2" inline={true}/></li>
+
+                  <li><Latex formula="\log_2{8}=3" inline={true}/></li>
+
+                  <li><Latex formula="\log_2{16}=4" inline={true}/></li>
+
+                  <li><Latex formula="\log_2{32}=5" inline={true}/></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><Latex formula="2^0=1" inline={true}/></li>
+                  
+                  <li><Latex formula="2^1=2" inline={true}/></li>
+
+                  <li><Latex formula="2^2=4" inline={true}/></li>
+
+                  <li><Latex formula="2^3=8" inline={true}/></li>
+
+                  <li><Latex formula="2^4=16" inline={true}/></li>
+                  
+                  <li><Latex formula="2^5=32" inline={true}/></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="my-5">De esta manera, podemos ver que los logaritmos y las potencias están muy relacionadas. Como primera actividad, te proponemos completar la siguiente tabla, arrastra a la celda correspondiente para obetner la relación entre logaritmo y potencia.</p>
+      </div>
+      <Lumi
+			    src="/matematicas4/logaritmos/p1-ej1.html"
+          instrucciones=" Arrastra los recuadros a la categoría que consideres correcta"
+		    />
+      <div class="mx-auto max-w-screen-xl">
+        <p class="my-5">Para estas actividades debes considerar la definición de logaritmo mencionado al principio.</p>
+      </div>
+      <Lumi
+			    src="/matematicas4/logaritmos/p1-ej2.html"
+			    nombre="Ejercicio"
+			    instrucciones="Determina el valor de y en cada una de las siguientes ecuaciones. "
+		    />
+        <Lumi
+			    src="/matematicas4/logaritmos/p1-ej3.html"
+			    nombre="Ejercicio"
+			    instrucciones="Determina si cada una de las siguientes igualdades propuestas es verdadera o falsa . "
+		    />
+        <Lumi
+			    src="/matematicas4/logaritmos/p1-ej4.html"
+			    nombre="Ejercicio"
+			    instrucciones="Usando la definición de logaritmo, determina el valor de x en cada una de las siguientes ecuaciones."
+		    />
+      <div class="mx-auto max-w-screen-xl">
+        <h3>El logaritmo natural</h3>
+
+        <p class="my-5"> El logaritmo natural de un número se define de la siguiente manera:</p>
+
+        <p class="my-5 text-center"><Latex formula="\ln{x}=\log_{e}{x}" inline={true}/></p>
+
+        <p class="my-5">En donde <Latex formula="e" inline={true}/> es el número de Euler, el cual está definido mediante el siguiente límite:</p>
+
+        <p class="my-5 text-center"><Latex formula="e=\\lim_{n\\to\\infty}{\\left(1+\\dfrac{1}{n} \\right)^n}" inline={true}/></p>
+
+        <h3>Propiedades de los logaritmos</h3>
+
+        <p class="my-5"> El logaritmo natural y el logaritmo en cualquier otra base cumplen las siguientes propiedades.</p>
+
+        <div class="mx-auto my-5 lg:max-w-screen-lg">
+          
+          <ol class="ol-alpha mt-5">
+                  <li><Latex formula="\\log_{a}{1}=0" inline={true}/></li>
+                  
+                  <li><Latex formula="\\log_{a}{a}=1" inline={true}/></li>
+
+                  <li><Latex formula="\\log_{a}{(x \\cdot y)}=\\log_{a}{x}+\\log_{a}{y}" inline={true}/></li>
+
+                  <li><Latex formula="\\log_{a}{\\left(\\dfrac{x}{y} \\right)}=\\log_{a}{x}-\\log_{a}{y}" inline={true}/></li>
+
+                  <li><Latex formula="\\log_{a}{x^y}=y \\cdot log_{a}{x}" inline={true}/></li>
+                  
+                  <li><Latex formula="\\log_{a}{x}=\\dfrac{\\log_{b}{x}}{\\log_{b}{a}}" inline={true}/>(cambio de base)</li>
+          </ol>
+        </div>
+        <p class="my-5">Después de revisar la definición de los logaritmos y sus propiedades, realiza las siguientes actividades.</p>
+      </div>
+          <Lumi
+          src="/matematicas4/logaritmos/p1-ej5.html"
+          nombre="Ejercicio"
+          instrucciones="Indica si las siguientes igualdades son ciertas o falsas."
+        />
+          <Lumi
+          src="/matematicas4/logaritmos/p1-ej6.html"
+          nombre="Ejercicio"
+          instrucciones="Relaciona las siguientes columnas de acuerdo con las propiedades de los logaritmos."
+        />
+
     </div>
 
 </Layout>
