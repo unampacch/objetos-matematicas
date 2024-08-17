@@ -1,0 +1,81 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Lumi from '@/components/Lumi.astro'
+---
+
+<Layout
+	title="Grado de un Polinomio"
+	description="Te explcaremos que son los grados de un polinomio y como identificarlos."
+>
+	<ObjetoAprendizajePantalla index={1} pantallaIndex={0} asignatura={'matematicas_4'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<p class="my-5">
+				El grado de un polinomio corresponde al valor mayor de la suma de los exponentes de las
+				variables de cada término.
+			</p>
+
+			<h4>EJEMPLO:</h4>
+
+			<p class="my-5 text-center">
+				El polinomio
+				<Latex inline formula="\[ 4x^3y^2+x^2 \]" />
+				es de grado 5, porque el primer término es el de grado mayor, ya que, corresponde a la suma de
+				los exponentres 3 y 2, y el segundo término tiene grado 2, en donde
+				<Latex inline formula="5 > 2">
+					Los polinomios se escriben en orden decreciente de mayor a menor: primero los términos de
+					grado mayor y luego los de menor.
+				</Latex>
+			</p>
+		</div>
+		<Lumi
+			src="/matematicas4/Funciones-Polinomiales/Ej-2-FP.html"
+			nombre="Ejercicio de Repaso"
+			instrucciones="Escribe con numero el grado de los siguientes polinomios. (Recuerda responder con numero, y evita contestar escribiendo el numero: [2]✅  [Dos] ❎)"
+		/>
+		<div class="mx-auto max-w-screen-xl">
+			<h3 class="my-10">Simplificación de términos</h3>
+			<p class="mx-5">
+				Para poder sumar dos o más términos de un polinomio estos deben ser términos semejantes, es
+				decir, los términos deben de contener a las mismas variables elevadas a os mismos exponentes
+			</p>
+			<p class="mx-5">
+				En el polinomio
+				<Latex inline formula="3xx+4x3y-2x2">
+					solo se pueden sumar el primer término y el tercer término ya que son los únicos términos
+					semejantes porque
+					<Latex inline formula="xx">
+						equivale a
+						<Latex inline formula="x^2">
+							, por lo que, el polinomio se puede simplificar de la siguiente manera:</Latex
+						>
+
+						<p class="my-5 text-center text-2xl">
+							<Latex formula="\(3x^2 + 4x^3 - 2x^2\)" />
+
+							<p class="my-5 text-center text-2xl">
+								<Latex inline formula="\( =3x^2 - 2x^2 + 4x^3\)">y propiedad conmutativa</Latex>
+								<p class="my-5 text-center text-2xl">
+									<Latex inline formula="\( =(3-2)x^2 + 4x^3\)"> y propiedad distributiva</Latex>
+									<p class="my-5 text-center text-2xl">
+										<Latex inline formula="\( =1x^2 + 4x^3\)"> y sustitución</Latex>
+										<p class="my-5 text-center text-2xl">
+											<Latex inline formula="\( =x^2 + 4x^3\) ">propiedas transitiva </Latex>
+										</p>
+									</p>
+								</p>
+							</p>
+						</p>
+					</Latex>
+				</Latex>
+			</p>
+		</div>
+		<Lumi
+			src="/matematicas4/Funciones-Polinomiales/Ej-3-FP.html"
+			nombre="Ejercicio"
+			instrucciones="Selecciona la opción de respuesta que simplifica la expresión polinómica a su forma más simple."
+		/>
+	</div>
+</Layout>
