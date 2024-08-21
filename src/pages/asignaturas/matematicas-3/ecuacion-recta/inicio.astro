@@ -2,16 +2,162 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import ImagenCaption from "@/components/ImagenCaption.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from "@/components/GeogebraLink.astro";
 ---
 
 <Layout
-  title=""
+  title="Ecuación General en la Recta"
   description=""
 >
 
     <ObjetoAprendizaje index={3} asignatura={"matematicas_3"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
-    </div>
+      <div class="mx-auto max-w-screen-xl">
+        <h3><b><i>Ecuación de la recta</i></b>
+        </h3>
+        <p>
+          En un sistema coordenado cartesiano, una recta se define como el lugar geométrico de todos los puntos que tomados
+          dos a dos, dan una pendiente, calculada por la fórmula 
+          <Latex inline formula="m=\\frac{y_2-y_1}{x_2-x_1}"/>
+          , que es siempre constante. Los puntos en cuestión tienen coordenadas
+          <Latex inline formula="P(x_1,y_1)"/>
+            y
+          <Latex inline formula="Q(x_2,y_2)"/>.
+        </p>
 
+        <p class="mt-4">
+         Geométricamente, un conjunto es una recta, si el ángulo de inclinación es el mismo para cualquier segmento
+         determinado por dos o puntos del conjunto. 
+        </p>
+
+        <ImagenFullCaption src="/matematicas3/ec-recta/ec-1.webp" caption="El segmento AB determina el mismo ángulo de inclinación que el segmento BC." bg="bg-blue"/>
+        <p class="my-8">Para determinar la ecuación de una recta, basta con conocer dos elementos de esta; al saber, un punto y su pendiente, o dos puntos.</p>
+        <p class="my-4">
+          En el primer caso, sí <Latex inline formula="P(x_1,y_1)"/>
+          es un punto de la recta y
+          <Latex inline formula="m"/>
+          su pendiente, cualquier punto
+          <Latex inline formula="Q(x,y)"/>
+          de la recta cumple con la ecuación
+          <Latex inline formula="y-y_1=m(x-x_1)"/>
+          conocida como la ecuación punto-pendiente de la recta.
+        </p>
+        <p class="my-4">
+          En el segundo caso, sí
+          <Latex inline formula="P(x_1,y_1)"/>
+          y
+          <Latex inline formula="Q(x_2,y_2)"/>
+          son dos puntos distintos de la recta, cualquier punto
+          <Latex inline formula="R(x,y)"/>
+          sobre ésta cumplirá la ecuación
+          <Latex inline formula="y-y_1=(y_2-y_1)/(x_2-x_1 )(x-x_1)"/>
+          conocida como la ecuación dos puntos de la recta.
+        </p>
+        
+        <p class="my-4">
+          En cualquiera de los dos casos, la ecuación que se obtiene al desarrollar los productos y simplificar es
+          <Latex inline formula="Ax+By+C=0"/>
+          conocida como la ecuación general de la recta. De manera recíproca, cualquier ecuación de esta forma representa una recta.
+        </p>
+
+        <h3 class="my-8">Graficación de una recta</h3>
+        <p class="my-4">
+          Para graficar una recta, basta con conocer un punto de ésta y su pendiente. Supongamos una recta con pendiente
+          <Latex inline formula="m=\\frac{a}{c}"/>
+          y pasa por el punto
+          <Latex inline formula="P(x_1,y_1)"/>
+          . Sí
+          <Latex inline formula="Q(x_2,y_2)"/>
+          es otro punto que ésta sobre la recta, se debe cumplir que
+        </p>
+        <p class="text-center my-4">
+        <Latex formula="m=\\frac{a}{c}=\\frac{y_2-y_1}{x_2-x_1 }"/>
+        </p>
+        <p class="my-4">
+          Entonces, sí consideramos
+          <Latex inline formula="c=x_2-x_1"/>
+          y
+          <Latex inline formula="a=y_2-y_1"/>
+          tenemos que 
+          <Latex inline formula="x_2=c+x_1"/>
+          y
+          <Latex inline formula="y_2=a+y_1"/>
+          es decir, podemos obtener el punto 
+          <Latex inline formula="Q(x_2,y_2)"/>
+          sumando
+          <Latex inline formula="c"/>
+          a la coordenda
+          <Latex inline formula="x_1"/>
+          de
+          <Latex inline formula="P"/>
+          y 
+          <Latex inline formula="a"/>
+          a la coordenada
+          <Latex inline formula="y_1"/>
+          .
+          </p>
+          <ImagenFullCaption src="/matematicas3/ec-recta/ec-2.webp" caption="Cuando tenemos dos puntos podemos trazar la recta." bg="bg-blue"/>
+          <p class="my-8">Si tenemos una recta con ecuación general 
+          <Latex inline formula="Ax+By+C=0"/>
+          con
+          <Latex inline formula="A,B≠0"/>
+          , es posible encontrar do puntos que la satisfacen, de la siguiente manera: primero sustituimos 
+          <Latex inline formula="x=0"/>
+          en la ecuación y obtenemos:
+          </p>
+          <p class="text-center my-4">
+          <Latex formula="A⋅0+By+C=0"/>
+          <Latex formula="By+C=0"/>
+          <Latex formula="y=-\\frac{c}{b}"/>
+          </p>
+
+          <p class="my-4">
+            Es decir, el punto
+            <Latex inline formula="R(0,-C/B)"/>
+            satisface la ecuación; la coordenada y de este punto se conoce como ordenada al origen de la recta y se denota por
+            <Latex inline formula="b"/>
+            . De manera análoga, sustituyendo
+            <Latex inline formula="y=0"/>
+            en la ecuación, encontramos que
+            <Latex inline formula="S=-\\frac{C}{A},0"/>
+            también la satisface. Ahora, sí calculamos la pendiente con las coordenadas de los puntos 
+            <Latex inline formula="R"/>
+            Y
+            <Latex inline formula="S"/>
+            , obtenemos
+          </p>
+          <p class="text-center my-4">
+            <Latex formula="m=\\frac{0-(-\\frac{C}{B})}{-\\frac{C}{A}-0}=\\frac{\\frac{C}{B}}{-\\frac{C}{A}}=-\\frac{A}{B}"/>
+          </p>
+          <p class="my-4">
+            Entonces, podemos graficar la recta con la ecuación
+            <Latex inline formula="Ax+By+C=0"/>
+            considerando el punto
+            <Latex inline formula="R(0,-C/B)=(0,b)"/>
+            y la pendiente
+            <Latex inline formula="m=-\\frac{A}{B}"/>
+            . Notemos que estos elementos se pueden obtener al despejar la variable y de la ecuación general de la recta:
+          </p>
+          <p class="text-center my-4">
+            <Latex formula="Ax+By+C=0"/>
+            <Latex formula="By=-Ax-C"/>
+            <Latex formula="y=-\\frac{A}{B}x-\\frac{C}{B}"/>
+            <Latex formula="y=mx+b"/>
+          </p>
+          <p class="my-4">
+            La última ecuación se conoce como ecuación ordenada-pendiente de la recta.
+          </p>
+          <ImagenFullCaption src="/matematicas3/ec-recta/ec-3.webp" bg="bg-blue"/>
+          <h4>
+          <div class="my-4">Revisa aquí el recurso <b><i>Graficación de una recta</i></b></div>
+          </h4>
+          <GeogebraLink
+					texto="Graficación en geogebra"
+					titulo="¡Practiquemos con Geogebra!"
+					href="https://www.geogebra.org/m/x59euysa "
+				  />
+      </div>
+    </div>
 </Layout>

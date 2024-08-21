@@ -1,0 +1,145 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import BgFluido from "@/components/BgFluido.astro";
+import Hr from "@/components/Hr.astro";
+---
+
+<Layout
+  title="Cálculo del ángulo entre dos rectas"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={3} pantallaIndex={0} asignatura={"matematicas_3"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+        <h3><b><i>Cálculo del ángulo entre dos rectas</i></b>
+        </h3>
+        <p class="my-4">
+          Sí
+          <Latex inline formula="θ"/>
+          es el ángulo de inclinación de una recta entonces su peniente,
+          <Latex inline formula="m"/>
+          , satisface
+        </p>
+        <p class="text-center my-4">
+          <Latex inline formula="tan⁡(θ)=m"/>
+        </p>
+        <p class="my-4">
+          Ahora, sí queremos calcular en ángulo entre dos rectas podemos considerar la diferencia del ángulo de inlcinación de cada una. Supongamos que
+          <Latex inline formula="l"/>
+          y
+          <Latex inline formula="n"/>
+          son dos rectas con ángulos de inclinación
+          <Latex inline formula="β"/>
+          y
+          <Latex inline formula="α"/>
+          respectivamente, como se muestra en la figura.
+        </p>
+
+        <ImagenFullCaption src="/matematicas3/ec-recta/ec-4.webp" bg="bg-blue"/>
+
+        <p class="my-4">
+          En ángulo entre las rectas Es
+          <Latex inline formula="θ"/>
+          y se puede calcular como:
+        </p>
+        <p class="text-center my-4">
+          <Latex formula="θ=β-α"/>
+        </p>
+        <p class=" text-center my-4">
+          Entonces, considerando que las pendientes de las rectas
+          <Latex inline formula="l"/>
+          y
+          <Latex inline formula="n"/>
+          satisfacen que 
+          <Latex inline formula="tan⁡(β)=m_l"/>
+          y
+          <Latex inline formula="tan⁡(α)=m_n"/>
+          , respectivamente, tenemos que:
+        </p>
+        
+        <p class="text-center my-4">
+          <Latex formula="\[tan⁡(θ)=tan⁡(β-α)\]"/>
+          <Latex formula="\[ \\tan{(β)}=\\frac{\\tan{(\\beta)}-tan{(\\alpha)}} {1+\\tan{(\\beta)}\\cdot \\tan{(\\alpha)}} \]"/>
+          <Latex formula="\[ \\tan{\\theta}=\\frac{m_l-m_n}{1+m_l\\cdot m_n}\]"/>
+        </p>
+        <p class="my-4">
+          Es decir, podemos calcular la tangente del á´ngulo entre las rectas
+          <Latex inline formula="l"/>
+          y
+          <Latex inline formula="n"/>
+          por medio de sus pendientes.
+        </p>
+        <p class="my-4"/>
+          Debemos notar que las rectas
+          <Latex inline formula="l"/>
+          y
+          <Latex inline formula="n"/>
+          determinan dos ángulos, 
+          <Latex inline formula="θ"/>
+          y
+          <Latex inline formula="ω"/>
+          . En ángulo que estamos calculando en este caso es 
+          <Latex inline formula="θ"/>
+          , pues estamos considerando primero el ángulo de inclinación
+          (y por lo tanto su pendiente) de la Recta
+          <Latex inline formula="l"/>.
+        </p> 
+        <ImagenFullCaption src="/matematicas3/ec-recta/ec-5.webp" bg="bg-blue"/>
+        <p class="my-4"/>
+        Sí consideramos el intervalo
+        <Latex inline formula="(-90°,90°)"/>
+        como el dominio de la función 
+        <Latex inline formula="(tan)"/>
+        , la función
+        <Latex inline formula="tan^\{-1}"/>
+        devolverá valores en este intervalo; por otro lado, el ángulo entre dos rectas toma valores en el intervalo
+        <Latex inline formula="(0°,180°)"/>
+        . Entonces para calcular el ángulo entre dos rectas debemos considerar los siguientes tres casos
+        </p> 
+        <Hr />
+
+        <BgFluido bg="bg-blue">
+         
+         <h4>
+          <div class="text-white">Caso 1: Sí</div>
+         </h4>
+          <p class="text-center">
+            <Latex inline formula="\\frac{m_l-m_n}{1+m_l⋅m_n} >0"/>
+            entonces
+            <Latex inline formula="θ=tan^(-1) \\frac{m_l-m_n}{1+m_l⋅m_n}"/>
+          </p>
+         <Hr />
+        </BgFluido>
+        <BgFluido bg="bg-blue">
+         
+          <h4>
+           <div class="text-white">Caso 2: Sí</div>
+          </h4>
+           <p class="text-center">
+            <Latex inline formula="\\frac{m_l-m_n}{1+m_l⋅m_n} <0"/>
+            entonces
+            <Latex inline formula="θ=180°+tan^(-1) \\frac{m_l-m_n}{1+m_l⋅m_n}"/>
+          </p>
+          <Hr />
+        </BgFluido>
+         
+        <BgFluido bg="bg-blue">
+         
+          <h4>
+           <div class="text-white">Caso 3: Sí</div>
+          </h4>
+           <p class="text-center">
+            <Latex inline formula="1+m_l⋅m_n=-1 "/>
+            entonces
+            <Latex inline formula="θ=90°"/>
+          </p>
+          <Hr />
+        </BgFluido>
+      </div>
+    </div>
+
+</Layout>
