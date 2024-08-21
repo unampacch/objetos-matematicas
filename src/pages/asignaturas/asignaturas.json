@@ -420,19 +420,7 @@
 					"slug": "/asignaturas/matematicas-4/funcion/inicio",
 					"portada": "/matematicas4/funcion/mate4-portada-5.webp",
 					"descripcion": "Explora diferentes relaciones, reconociendo las condiciones necesarias para determinar si una relación es función, la simboliza y distingue el dominio y el rango.",
-					"resumen": "Funciones matemáticas y su aplicación en la resolución de problemas matemáticos.",
-					"pantallas": [
-						{
-							"titulo": "Tipos de funciones",
-							"slug": "/asignaturas/matematicas-4/funcion/tipos",
-							"descripcion": "Tipos de funciones matemáticas y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Representación gráfica de funciones",
-							"slug": "/asignaturas/matematicas-4/funcion/grafica",
-							"descripcion": "Representación gráfica de funciones matemáticas y su interpretación geométrica."
-						}
-					]
+					"resumen": "Funciones matemáticas y su aplicación en la resolución de problemas matemáticos."
 				},
 				{
 					"titulo": "Función exponencial y logarítmica",
