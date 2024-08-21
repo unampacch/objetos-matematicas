@@ -285,26 +285,17 @@
         },
         {
           "titulo": "Ecuación de la recta",
-          "slug": "/asignaturas/matematicas-3/ecuacion-recta",
+          "slug": "/asignaturas/matematicas-3/ecuacion-recta/inicio",
           "portada": "/mate3-portada-4.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación de la recta en el ámbito de la matemática. Contiene una exploración exhaustiva de la ecuación general de la recta, junto con su aplicación en la representación de rectas en el plano. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Ecuación general de la recta y su aplicación en la representación de rectas en el plano.",
           "pantallas": [
             {
-              "titulo": "Ecuación general de la recta",
-              "slug": "/asignaturas/matematicas-3/ecuacion-recta/general",
+              "titulo": "Cálculo del ángulo entre dos rectas.",
+              "slug": "/asignaturas/matematicas-3/ecuacion-recta/pantalla1",
               "descripcion": "Definición y aplicación de la ecuación general de la recta en el plano."
-            },
-            {
-              "titulo": "Ecuación punto-pendiente",
-              "slug": "/asignaturas/matematicas-3/ecuacion-recta/punto-pendiente",
-              "descripcion": "Definición y aplicación de la ecuación punto-pendiente de la recta."
-            },
-            {
-              "titulo": "Ecuación pendiente-intersección",
-              "slug": "/asignaturas/matematicas-3/ecuacion-recta/pendiente-interseccion",
-              "descripcion": "Definición y aplicación de la ecuación pendiente-intersección de la recta."
             }
+ 
           ]
         },
         {
