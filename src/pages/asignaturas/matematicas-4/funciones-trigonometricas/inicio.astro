@@ -1,17 +1,435 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import BgFluido from '@/components/BgFluido.astro'
 ---
 
 <Layout
-  title=""
-  description=""
+	title="Trigonometría, funciones trigonométricas, graﬁcación de funciones trigonométricas."
+	description=""
 >
+	<ObjetoAprendizaje index={7} asignatura={'matematicas_4'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h4>Las razones trigonométricas</h4>
+			<div class="items-center gap-10 p-5 xl:flex">
+				<img
+					class="order-last xl:order-first"
+					src="/matematicas4/trigonometria/Trig1.webp"
+					alt=""
+				/>
+				<div class="text-slate-50">
+					Los lados de un triángulo rectángulo se nombran de la siguiente manera; los que forman el
+					ángulo recto se llaman catetos y el que es opuesto al ángulo recto se llama hipotenusa.
+				</div>
+			</div>
+			<div class="items-center gap-10 p-5 xl:flex">
+				<img
+					class="order-last xl:order-first"
+					src="/matematicas4/trigonometria/Trig2.webp"
+					alt=""
+				/>
+				<div class="text-slate-50">
+					Ademas,si se toma como referencia uno de los ángulos agudos del triángulo (α, en la
+					figura), es posible distinguir los catetos; el que es opuesto al ángulo se llamará cateto
+					opuesto y se denotará por CO y el que forma el ángulo con la hipotenusa se llamará cateto
+					adyacente y se denotará por CA. La hipotenusa se denota por H.
+				</div>
+			</div>
+			<p>
+				Con los lados del triángulo se pueden formar seis razones y éstas se nombran de acuerdo con
+				el ángulo elegido. Considerando la figura anterior se tiene la siguiente tabla.
+			</p>
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Nombres de la razón </th>
+							<th> Definición de la razón </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Seno </td>
+							<td>
+								<Latex formula="\[sen\\;\\alpha=\\frac{CO}{H}\]" />
+							</td>
+						</tr>
+						<tr>
+							<td> Coseno </td>
+							<td>
+								<Latex formula="\[cos\\;\\alpha=\\frac{CA}{H}\]" />
+							</td>
+						</tr>
+						<tr>
+							<td> Tangente </td>
+							<td>
+								<Latex formula="\[tan\\;\\alpha=\\frac{CO}{CA}\]" />
+							</td>
+						</tr>
+						<tr>
+							<td> Cotangente </td>
+							<td>
+								<Latex formula="\[cot\\;\\alpha=\\frac{CA}{CO}\]" />
+							</td>
+						</tr>
+						<tr>
+							<td> Secante </td>
+							<td>
+								<Latex formula="\[sec\\;\\alpha=\\frac{H}{CA}\]" />
+							</td>
+						</tr>
+						<tr>
+							<td> Cosecante </td>
+							<td>
+								<Latex formula="\[csc\\;\\alpha=\\frac{H}{CO}\]" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 
-    <ObjetoAprendizaje index={7} asignatura={"matematicas_4"} />
-    <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
-    </div>
+		<div class="mx-auto max-w-screen-xl">
+			<div class="items-center gap-10 p-5 xl:flex">
+				<img
+					class="order-last xl:order-first"
+					src="/matematicas4/trigonometria/Trig3.webp"
+					alt=""
+				/>
+				<div class="text-slate-50">
+					<h3>Las funciones trigonométricas y sus gráficas.</h3>
+					<p>
+						En principio, las razones trigonométricas están definidas únicamente para ángulos
+						agudos, es decir, para ángulos mayores a 0 y menores a <Latex
+							formula="\[\\frac{pi}{2}\]"
+							inline={true}
+						/> radianes; sin embargo, es posible extender estas definiciones a funciones que estén definidas
+						para cualquier número real. Consideremos el círculo de radio 1 con centro en el origen de
+						un plano cartesiano, y sea x la amplitud de un ángulo. Tracemos el radio CA que forma el
+						ángulo x con la dirección positiva del eje x.
+					</p>
+				</div>
+			</div>
+		</div>
 
+		<div class="mx-auto max-w-screen-xl">
+			<div class="items-center gap-10 p-5 xl:flex">
+				<img
+					class="order-last xl:order-first"
+					src="/matematicas4/trigonometria/Trig4.webp"
+					alt=""
+				/>
+				<div class="text-slate-50">
+					<p>
+						Definimos el seno y el coseno del ángulo x como las coordenadas del punto A, es decir,
+					</p>
+					<p class="text-center text-blue">Sen x=y1</p>
+					<p class="text-center">y</p>
+					<p class="text-center text-red">Cos x=x1</p>
+					<p>
+						Podemos notar que, en el triángulo ACP, Sen x coincide con la longitud del segmento AP
+						(cateto opuesto) y Cos x coincide con la longitud del segmento CP (cateto adyacente).
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="mx-auto max-w-screen-xl">
+			<div class="items-center gap-10 p-5 xl:flex">
+				<img
+					class="order-last xl:order-first"
+					src="/matematicas4/trigonometria/Trig5.webp"
+					alt=""
+				/>
+				<div class="text-slate-50">
+					<p>
+						También podemos observar que, cuando el ángulo x satisface <Latex
+							formula="\[\\frac{\pi}{2}<x<\pi\]"
+							inline={true}
+						/>,la abscisa de A es negativa y en consecuencia también lo es Cos x. En general, los
+						signos de Sen x y Cos x dependerán del cuadrante donde se encuentre el punto A.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				Ahora, identificando el ángulo x (en radianes) con un número real, podemos considerar
+				f(x)=Sen x y g(x)=Cos x como funciones con dominio en los números reales. Sus gráficas son
+				las que se muestran a continuación.
+			</p>
+		</div>
+
+		<ImagenFullCaption src="/matematicas4/trigonometria/Trig6.webp" bg="bg-red" />
+
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				La imagen de la función f(x)=Sen x es el intervalo [-1,1]; notemos que la longitud del
+				segmento AP de la figura anterior es menor o igual al radio del círculo, que en este caso es
+				igual a 1. Los ceros de esta función serán los puntos de la forma:
+			</p>
+			<p class="my-3 text-center">
+				<Latex formula="\[x=k\\pi,\\;k\\;n\\acute{u}mero\\;entero\]" inline={true} />
+			</p>
+			<p>
+				Notemos también que <Latex formula="\[f(x)=f(x+2\pi)\]" inline={true} />, es decir, la
+				gráfica de la función seno se repite cada intervalo de longitud 2π; además, este último
+				número, es el más pequeño que satisface la igualdad <Latex
+					formula="\[f(x)=f(x+p)\]"
+					inline={true}
+				/>. Decimos que el periodo de la función seno es 2π.
+			</p>
+			<p>
+				De manera análoga, la función g(x)=Cos x tiene como imagen el intervalo [-1,1] y sus ceros
+				serán los puntos de la forma
+			</p>
+			<p class="my-5 text-center">
+				<Latex
+					formula="\[x=\\frac{(2k+1)\\pi}{2},\\;k\\;n\\acute{u}mero\\;entero\]"
+					inline={true}
+				/>
+			</p>
+			<p class="text-center text-2xl text-red">El periodo de f(x)=Cos x también es 2π.</p>
+		</div>
+
+		<ImagenFullCaption src="/matematicas4/trigonometria/Trig7.webp" bg="bg-lightblue" />
+
+		<GeogebraLink
+			href="https://www.geogebra.org/m/c7qyvdud"
+			titulo="Funciones Seno y Coseno"
+			texto="Comprender mejor el trazo y el comportamiento de las funciones anteriores."
+		/>
+
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				Las funciones Seno y Coseno nos permiten definir las funciones trigonométricas restantes; a
+				saber,
+			</p>
+
+			<p class="text-center text-2xl text-red">Función Tangente:</p>
+			<p class="my-3 text-center">
+				<Latex formula="\[x=k\\pi,\\;k\\;n\\acute{u}mero\\;entero\]" inline={true} />
+			</p>
+
+			<p class="text-center text-2xl text-red">Función Cotangente:</p>
+			<p class="my-3 text-center">
+				<Latex
+					formula="\[i(x)=Cot\\;x:=\\frac{Cos\\;x}{Sen\\;x};\\quad x\\neq k\\pi,\\;k\\;n\\acute{u}mero\\;entero\]"
+					inline={true}
+				/>
+			</p>
+
+			<p class="text-center text-2xl text-red">Función Secante:</p>
+			<p class="my-3 text-center">
+				<Latex
+					formula="\[j(x)=Sec\\;x:=\\frac{1}{Cos\\;x};\\quad x\\neq\\frac{(2k+1)\\pi}{2},\\;k\\;n\\acute{u}mero\\;entero\]"
+					inline={true}
+				/>
+			</p>
+
+			<p class="text-center text-2xl text-red">Función Cosecante:</p>
+			<p class="my-3 text-center">
+				<Latex
+					formula="\[i(x)=Csc\\;x:=\\frac{1}{Sen\\;x};\\quad x\\neq k\\pi,\\;k\\;n\\acute{u}mero\\;entero\]"
+					inline={true}
+				/>
+			</p>
+
+			<p class="text-center">
+				Analicemos el comportamiento de la función Tangente. Primero notemos que, al tratarse de un
+				cociente, esta función no estará definida en los ceros de la función Coseno, es decir, en
+				los puntos de la forma:
+			</p>
+
+			<p class="my-3 text-center">
+				<Latex
+					formula="\[x\neq\\frac{(2k+1)\\pi}{2},\\;k\\;n\\acute{u}mero\\;entero\]"
+					inline={true}
+				/>
+			</p>
+
+			<p class="my-5">
+				De hecho, si por ejemplo sustituimos valores de x menores y muy cercanos a <Latex
+					formula="\[\\frac{\\pi}{2}\]"
+					inline={true}
+				/>, notaremos que h(x)=Tan x asignará valores positivos muy grandes, y si sustituimos
+				valores mayores y muy cercanos a <Latex formula="\[\\frac{\\pi}{2}\]" inline={true} />, la
+				función asignará valores muy grandes pero negativos.
+			</p>
+			<div class="table-responsive xl:my-11">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>x</th>
+							<th>h(x)=Tan x</th>
+							<th>x</th>
+							<th>h(x)=Tan x</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1.55</td>
+							<td>48.08</td>
+							<td><Latex formula="\[\\frac{\\pi}{2}\]" /></td>
+							<td>----</td>
+						</tr>
+						<tr>
+							<td>1.56</td>
+							<td>92.62</td>
+							<td>1.5708</td>
+							<td>-272241.81</td>
+						</tr>
+						<tr>
+							<td>1.57</td>
+							<td>1255.77</td>
+							<td>1.58</td>
+							<td>-108.65</td>
+						</tr>
+						<tr>
+							<td>1.5707</td>
+							<td>10381.33</td>
+							<td>1.59</td>
+							<td>-52.07</td>
+						</tr>
+						<tr>
+							<td><Latex formula="\[\\frac{\\pi}{2}\]" /></td>
+							<td>----</td>
+							<td>1.6</td>
+							<td>-34.23</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="my-5 text-center text-xl text-red">
+				Aproximado por la izquierda y Aproximado por la derecha
+			</p>
+			<p>
+				En este caso, la recta <Latex formula="\[x=\\frac{\\pi}{2}\]" inline={true} /> será una asíntota
+				vertical para la función h(x)=Tan x, y lo análogo ocurre para las rectas <Latex
+					formula="\[x=\\frac{(2k+1)\\pi}{2}\]"
+					inline={true}
+				/> , con k un número entero.
+			</p>
+		</div>
+		<ImagenFullCaption src="/matematicas4/trigonometria/Trig8.webp" bg="bg-blue" />
+
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				Ahora, los ceros de la función Tangente corresponderán a los ceros de la función Seno puesto
+				que
+			</p>
+			<div class="overscroll-auto text-center xl:my-10">
+				<Latex
+					formula="\[h(k\\pi)=Tan(k\\pi):=\\frac{Sen(k\\pi)}{Cos(k\\pi)}=\\frac{0}{\\pm 1}=0,\\; x\\neq\\frac{(2k+1)\\pi}{2},\\;k\\;n\\acute{u}mero\\;entero.\]"
+					inline={true}
+				/>
+			</div>
+			<p>
+				Finalmente notemos que el periodo de h(x)=Tan x es π, es decir, <Latex
+					formula="\[h(x)=h(x+\\pi)\]"
+					inline={true}
+				/> para cualquier valor de x.
+			</p>
+			<p>
+				A continuación, se muestran las gráficas de las funciones Cotangente, Secante y Cosecante, y
+				se da una tabla donde se resumen las características principales de las funciones
+				trigonométricas.
+			</p>
+			<p class="text-center text-2xl text-red">Función Cotangente: i(x)=Cot x.</p>
+		</div>
+
+		<ImagenFullCaption src="/matematicas4/trigonometria/Trig9.webp" bg="bg-red" />
+
+		<div class="mx-auto max-w-screen-xl">
+			<p class="text-center text-2xl text-red">Función Secante: j(x)=Sec x.</p>
+		</div>
+
+		<ImagenFullCaption src="/matematicas4/trigonometria/Trig10.webp" bg="bg-lightblue" />
+
+		<div class="mx-auto max-w-screen-xl">
+			<p class="text-center text-2xl text-red">Función Cosecante: k(x)=Csc x.</p>
+		</div>
+
+		<ImagenFullCaption src="/matematicas4/trigonometria/Trig11.webp" bg="bg-blue" />
+		<div class="mx-auto max-w-screen-xl">
+			<img src="/matematicas4/trigonometria/tabla.webp" class="lg:hidden my-10" alt="" />
+			<div class="table-responsive my-5 hidden lg:block">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Razón</th>
+							<th>Dominio</th>
+							<th>Rango</th>
+							<th>Periodo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><Latex formula="\[f(x)=Sen\\;x\]" /></td>
+							<td><Latex formula="\[(-\\infty,\\infty)\]" /></td>
+							<td>[-1,1]</td>
+							<td><Latex formula="\[2\\pi\]" /></td>
+						</tr>
+						<tr>
+							<td><Latex formula="\[g(x)=Cos\\;x\]" /></td>
+							<td><Latex formula="\[(-\\infty,\\infty)\]" /></td>
+							<td>[-1,1]</td>
+							<td><Latex formula="\[2\\pi\]" /></td>
+						</tr>
+						<tr>
+							<td><Latex formula="\[h(x)=Tan\\;x\]" /></td>
+							<td
+								><Latex
+									formula="\[\\left\\{x:x\\neq\\frac{(2k+1)\\pi}{2},\\;k\\;n\\acute{u}mero\\;entero\\right\\}\]"
+								/></td
+							>
+							<td><Latex formula="\[(-\\infty,\\infty)\]" /></td>
+							<td><Latex formula="\[\\pi\]" /></td>
+						</tr>
+						<tr>
+							<td><Latex formula="\[i(x)=Cot\\;x\]" /></td>
+							<td
+								><Latex
+									formula="\[\\left\\{x:x\\neq k\\pi,\\;k\\;n\\acute{u}mero\\;entero\\right\\}\]"
+								/></td
+							>
+							<td><Latex formula="\[(-\\infty,\\infty)\]" /></td>
+							<td><Latex formula="\[\\pi\]" /></td>
+						</tr>
+						<tr>
+							<td><Latex formula="\[j(x)=Sec\\;x\]" /></td>
+							<td
+								><Latex
+									formula="\[\\left\\{x:x\\neq\\frac{(2k+1)\\pi}{2},\\;k\\;n\\acute{u}mero\\;entero\\right\\}\]"
+								/></td
+							>
+							<td><Latex formula="\[(-\\infty-1]\\cup[1,\\infty)\]" /></td>
+							<td><Latex formula="\[2\\pi\]" /></td>
+						</tr>
+						<tr>
+							<td><Latex formula="\[k(x)=Csc\\;x\]" /></td>
+							<td
+								><Latex
+									formula="\[\\left\\{x:x\\neq k\\pi,\\;k\\;n\\acute{u}mero\\;entero\\right\\}\]"
+								/></td
+							>
+							<td><Latex formula="\[(-\\infty-1]\\cup[1,\\infty)\]" /></td>
+							<td><Latex formula="\[2\\pi\]" /></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>
+				Debemos aclarar que hemos definido las funciones trigonométricas de manera geométrica; sin
+				embargo, existe una definición más formal que utiliza elementos de Cálculo diferencial e
+				integral y que coincide con la nuestra, ver por ejemplo la segunda edición del libro
+				Calculus de Michael Spivak, páginas 425-456.
+			</p>
+		</div>
+	</div>
 </Layout>
