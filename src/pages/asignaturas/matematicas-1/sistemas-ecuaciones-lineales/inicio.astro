@@ -68,7 +68,9 @@ import BgFluido from "@/components/BgFluido.astro";
         <Latex formula="5x+4y=-4" />
       </div>
     </div>
+    <div class="col-span-1 text-center">
     <p class="mt-3">es un sistema de ecuaciones lineales de <Latex formula="2x2" inline={true}/>.</p>
+    </div>
   </div>
 </BgFluido>
 <div class="mx-auto max-w-screen-xl">
@@ -77,26 +79,20 @@ import BgFluido from "@/components/BgFluido.astro";
   <p class="pl-5">--- No, es un poco cuadrado. </p>
   <p class="content-center mt-5">😛 😛 😛</p>
   <p class="mt-5">Resolver un Sistema de Ecuaciones Lineales (SEL) de 2x2 significa encontrar valores para x  e y  que satisfagan ambas ecuaciones del sistema. Por ejemplo, en el problema de Diego y Paola, la solución del sistema</p>
+<div class="col-span-1 text-2xl">
+  <Latex formula="12x+6y=102" />
+  <div class="mt-5">
+    <Latex formula="5x+4y=50" />
+  </div>
+  <p class="mt-3">es el punto P(6,5).</p>
 </div>
-
-
-
-
-
-        <p>
-          El que más usaremos <Latex
-            formula="a^n = \\underbrace{a \\cdot a \\cdot a \\cdot \\ldots \\cdot a}_{n \\text{ veces}}"
-            inline={true}
-          /> recuerden usar inline true para que se vea en una sola linea, de lo contrario al no ponerlo
-          se verá en bloque.
-        </p>
-        <p>
-          Ahora pongamos una imagen con caption. Vean como tiene el atributo de caption para el pie de
-          página y el border que puede ser true o por default false, el borde es por si la imagen es
-          blanca y muy pegada al los borde separarla un poco.
-        </p>
-        <ImagenCaption src="/mate1-portada-1.webp" caption="Aqui va el pie de imagen" border={true} />
+<p class="mt-5">Existen diversos métodos para resolver un SEL de 2x2; por ejemplo, el sistema de ecuaciones anterior se resolvió por el método gráfico, es decir, se graficaron ambas ecuaciones y se estimaron las coordenadas del punto de intersección que representa a la solución del sistema.</p>
+<p>En los siguientes enlaces se describen otros métodos para resolver un SEL de 2x2. Síguelos y mira los videos con atención:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hunkxEtC9ZI?si=mRu3tQLZ7HqYhL6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X_Jrm2NnftA?si=ILA7yXpSs2q7EyNq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LGskA-HmSxY?si=6S_uI4WKby7OCjsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ksrhBSJBWFE?si=IMrrPW5TBux40nUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
       </div>
-    </div>
 
 </Layout>

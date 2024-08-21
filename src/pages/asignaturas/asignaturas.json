@@ -92,29 +92,7 @@
 					"slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/inicio",
 					"portada": "/mate1-portada-4.webp",
 					"descripcion": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables.",
-					"resumen": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables..",
-					"pantallas": [
-						{
-							"titulo": "Método de sustitución",
-							"slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/sustitucion",
-							"descripcion": "Resolución de sistemas de ecuaciones lineales por el método de sustitución."
-						},
-						{
-							"titulo": "Método de igualación",
-							"slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/igualacion",
-							"descripcion": "Resolución de sistemas de ecuaciones lineales por el método de igualación."
-						},
-						{
-							"titulo": "Método de reducción",
-							"slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/reduccion",
-							"descripcion": "Resolución de sistemas de ecuaciones lineales por el método de reducción."
-						},
-						{
-							"titulo": "Método gráfico",
-							"slug": "/asignaturas/matematicas-1/sistemas-ecuaciones-lineales/grafico",
-							"descripcion": "Resolución de sistemas de ecuaciones lineales por el método gráfico."
-						}
-					]
+					"resumen": "Resuelve algebraicamente problemas que lleven a un sistema de ecuaciones lineales con dos variables."
 				}
 			]
 		},
