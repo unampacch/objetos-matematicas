@@ -1,0 +1,82 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import Lumi from '@/components/Lumi.astro'
+---
+
+<Layout
+	title="Funciones Polimoniales"
+	description="Aprenderás como resolver las operaciones que impliquen uno o mas polinomios"
+>
+	<ObjetoAprendizajePantalla index={1} pantallaIndex={1} asignatura={'matematicas_4'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h3 class="my-5">SUMA O ADICIÓN</h3>
+			<p class="my-5">
+				La suma de dos polinomios se hace agrupando los términos que son semejantes y se les aplica
+				la propiedad distributiva de los números reales para poder simplificarlos
+			</p>
+
+			<h4>EJEMPLO:</h4>
+		</div>
+		<BgFluido bg="bg-blue">
+			<div class="mx-auto max-w-screen-xl text-center text-white">
+				<Latex class="mb-4 text-2xl" formula="\[ (4x^5-8x^3+x-2)+(6x^3+x^2+7) \]" />
+				<Latex class="mb-4 text-2xl" formula="\[ =4x^5+(-8x^3+6x^3)+x^2+x+(7-2)\]" />
+				<p class="mb-5">agrupación (propiedad conmutativa y asociativa)</p>
+				<Latex class="mb-4 text-2xl" formula="\[ =4x^5+(-8+6)x^3+x^2+x+(7-2) \]" />
+				<p class="mb-5">propiedad distributiva</p>
+				<Latex class="mb-4 text-2xl" formula="\[ =4x^5-2x^3+x^2+x+5 \]" />
+				<p class="mb-5">simplificación y sustitución</p>
+				<Latex
+					class="mb-4 text-2xl"
+					formula="\[ (4x^5-8x^3+x-2)+(6x^3+x^2+7)= 4x^5-2x^3+x^2+x+5\]"
+				/>
+				<p class="mb-5">propiedad transitiva</p>
+			</div>
+		</BgFluido>
+		<div class="mx-auto max-w-screen-xl">
+			<h3>RESTA O DIFERENCIA</h3>
+			<p class="my-5">
+				Es la suma de los inversos aditivos de cada uno de los términos del polinomios que se resta
+			</p>
+			<h4>EJEMPLO:</h4>
+			<BgFluido bg="bg-red">
+				<div class="text-white">
+					<Latex class="text-center text-2xl" formula="\[(2x^2y+x^2+5)-(x^2y-2x^2+x-1)\]" />
+					<p class="my-5">
+						Los inversos aditivos del segundo polinomio (sustraendo) respectivamente son:
+					</p>
+
+					<Latex class="text-center text-2xl"  formula="\[-x^2y+2x^2-x+1 \]" />
+					<p class="my-5">por lo que la diferencia se puede conviertir en suma de los polinomios</p>
+					<div class="text-center text-2xl">
+						<Latex formula="\[ (2x^2y+x^2+5)+(-x^2y+2x^2-x+1)\]" />
+						<Latex formula="\[=2x^2y+x^2+5-x^2y+2x^2-x+1\]" />
+						<Latex formula="\[=x^2y+3x^2-x+6\]" />
+					</div>
+					<p class="my-5">
+						La suma también puede realizarse verticalmente como una se hace la suma aritmética,
+						ordenando los términos semejantes uno debajo de otro.
+					</p>
+
+					<div class="text-center text-2xl">
+						<Latex formula="\[ 2x^2y+x^2+0x+5 \]" />
+
+						+
+						<Latex inline formula="\[-x^2y+2x^2-x+1 \]" />
+						<p class="my-1 text-center">--------------------------------------</p>
+						<Latex formula="\[x^2y+3x^2-x+6 \]" />
+					</div>
+				</div>
+			</BgFluido>
+		</div>
+		<Lumi
+			src="/matematicas4/Funciones-Polinomiales/Ej-4-FP.html"
+			nombre="Ejercicio de Reforzamiento"
+			instrucciones="Simplifica los polinomios realizando la operación indicada y selecciona la respuesta correcta (No olvides en darle al boton [Comprobar])."
+		/>
+	</div>
+</Layout>
