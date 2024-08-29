@@ -7,182 +7,145 @@ import GeogebraLink from '@/components/GeogebraLink.astro'
 import ImagenCaption from '@/components/ImagenCaption.astro'
 import BgFluido from '@/components/BgFluido.astro'
 import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import Lumi from "@/components/Lumi.astro";
 ---
 
 <Layout title="Sistema de coordenadas Polares">
 	<ObjetoAprendizajePantalla index={2} pantallaIndex={2} asignatura={'matematicas_3'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade">
 		<div class="mx-auto mb-5 max-w-screen-xl">
-			<GeogebraLink
-				texto="Con el uso de GeoGebra, puedes realizar la siguiente construcción:"
-				titulo="El plano cartesiano."
-				href="https://www.geogebra.org/classic?lang=es"
-			/>
-
-			<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-				<div class="w-full sm:w-1/2">
-					<p>
-						Aparece el plano cartesiano. El eje horizontal se llamará "x" y el eje vertical se
-						llamará "y".
-					</p>
-					<p>
-						Las coordenadas del punto son dos números que indican su ubicación en el plano. <strong
-							class="text-red"
-							>La coordenada “x” indica la distancia del punto al eje vertical y la coordenada “y”
-							indica la distancia del punto al eje horizontal</strong
-						>.
-					</p>
-				</div>
-				<div class="w-full sm:w-1/2">
+			<p>
+				Las coordenadas polares son un sistema de coordenadas bidimensional en el que cada punto del plano se determina por una distancia y un ángulo.
+			</p>
+			<p>
+				Un punto <Latex formula="P" inline={true}/> se define como un par ordenado <Latex formula="(r, θ)" inline={true}/>, donde:
+			</p>
+			<ul class="ul-disc">
+				<li>
+					r es la distancia del punto P al origen de coordenadas.
+				</li>
+				<li>
+					θ es el ángulo que forma el radio vector OP con el eje polar.
+				</li>				
+			</ul>
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
 					<ImagenCaption
-						src="matematicas3/sistemas-coordenados/img-01.webp"
+						src="/matematicas3/sistemas-coordenados/img-19.jpg"
+						caption="Coordenadas Polares"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p><b>Para definir las coordenadas polares en el plano</b> necesitamos un punto el que llamaremos origen y una línea a la que llamaremos eje polar.</p>
+
+			<p><b>Ángulo Polar:</b> Es el ángulo que hay entre el eje polar y la línea que une el origen con el punto P.</p>
+
+			<p><b>Los valores positivos del ángulo</b> indican ángulos medidos en sentido antihorario desde el eje polar.</p>
+
+			<p><b>Coordenadas polares <Latex formula="(r, θ)" inline={true}/></b> de un punto P que no sea el origen de coordenadas.  Indican la distancia <i>r</i> entre el punto P y el origen y el ángulo polar Ɵ del punto P. <b>Cualquier punto <Latex formula="(0,θ)" inline={true}/> representa el origen </b></p>
+
+			<ul class="ul-disc">
+				<li>
+					<Latex formula="θ" inline={true}/> es positivo cuando se mide en sentido contrario de las agujas del reloj y negativo cuando se mide en sentido de las manecillas.
+				</li>
+				<li>
+					El ángulo asociado con el punto no es único.
+				</li>				
+			</ul>
+			<p>En el sistema de coordenadas cartesianas o rectangulares usamos el plano cartesiano, en el que nos auxiliamos de una cuadricula para localizar puntos:</p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-01.jpg"
 						caption="Plano cartesiano"
 						border={true}
 					/>
 				</div>
-			</div>
-			<p>
-				Pasos para introducir las coordenadas de un punto, ejemplo <Latex
-					formula="(3, 4)"
-					inline={true}
-				/> hay dos formas:
-			</p>
+			</BgFluido>
+
+			<p>En el sistema de coordenadas polares usamos círculos y rayos. Cada circulo nos indica la distancia que hay hacia el polo y cada rayo nos indica los diversos ángulos, usualmente los encontramos separados de <Latex formula="30°" inline={true}/>. </p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-21.jpg"
+						caption="Plano para coordenadas polares"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p>En la imagen 21, podemos observar donde se encuentra el punto azul, para ello contamos en que circulo está y podemos notar que se encuentra en el cuarto, ese es nuestro valor de la distancia <i>r</i>entre el punto P y el origen y el ángulo polar <Latex formula="θ" inline={true}/> del punto se encuentra el <Latex formula="30°" inline={true}/>.</p>
+
+			<p>También es muy común encontrar la distancia en radianes, está medida se usa mucho en la asignatura de cálculo.</p>
+
+			<p>Para pasar los grados a radianes, considera que <Latex formula="180° = π rad" inline={true}/>. Si deseamos conocer cuánto vale 30° en radianes solo basta realizar una regla de tres:</p>
+			
+			<p class="text-center"><Latex formula="180^\\circ = \\pi \\, \\text{rad}"/></p>
+
+			<p class="text-center"><Latex formula="30^\\circ = x"/></p>
+
+			<p>Indicamos la operación <Latex formula="30°" inline={true}/>  por  <Latex formula="π rad" inline={true}/> entre <Latex formula="180°" inline={true}/> </p>
+
+			<p class="text-center"><Latex formula="\\frac{30^\\circ \\cdot \\pi \\, \\text{rad}}{180^\\circ} "/></p>
+
+			<p>Eliminamos el cero para simplificar la operación</p>
+
+			<p class="text-center"><Latex formula="\\frac{3\\pi \\, \\text{rad}}{18}"/></p>
+
+			<p>Sacamos tercera del numerador y del denominador</p>
+
+			<p class="text-center"><Latex formula="\\frac{1 \\pi \\, \\text{rad}}{6}"/></p>
+
+			<p class="text-center"><Latex formula="\\frac{\\pi \\, \\text{rad}}{6} = \\frac{\\pi}{6}"/></p>
+
+			<p>De esta manera también se puede ver que las coordenadas del punto de la imagen 20, con el ángulo medido en radianes, son el punto</p>
+
+			<p class="text-center"><Latex formula="(4, \\frac{\\pi}{3})"/></p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-22.jpg"
+						caption="Localización de un punto polar"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p>Ahora tratemos de localizar el punto (6, 120°), recuerda que tienes que ubicar en el eje polar el número 6, esa es nuestra distancia <i>r</i> entre el punto P y el origen y el ángulo polar Ɵ del punto ubicar donde se encuentra 120°, pero como ese punto se encuentra del lado negativo, entonces la coordenada polar es <Latex formula="(-6, 120^\\circ)" inline={true}/> y en radianes, la coordenada polar es <Latex formula="(-6, \\frac{2\\pi}{3})" inline={true}/></p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-23.jpg"
+						caption="Localización de un punto polar negativo"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p>Pero ¿qué tal si me solicitan el punto <Latex formula="(4, -30°)" inline={true}/>? Hay que ubicar en el eje polar el número 4, esa es nuestra distancia <i>r</i> entre el punto P y el origen y el ángulo polar <Latex formula="Ɵ " inline={true}/> del punto ubicar donde se encuentra de <Latex formula="-30°" inline={true}/>,  pero como es negativo, se busca en el sentido de las manecillas del reloj  .  Este punto también lo podemos  identificar como el punto  <Latex formula="(4, 330°)" inline={true}/>,  siendo su valor en radianes de <Latex formula="(4, \\frac{11\\pi}{6}) " inline={true}/>,  como se muestra en la imagen 24.</p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-24.jpg"
+						caption="Localización de un punto polar"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
 		</div>
-		<BgFluido bg="bg-lightblue">
-			<h4>Forma 1</h4>
-		</BgFluido>
-		<div class="mx-auto mb-5 max-w-screen-xl">
-			<ol class="ol-number">
-				<li>
-					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-						<div class="w-full sm:w-1/2">
-							<p>
-								Elige el segundo icono (flecha verde), posteriormente da clic en punto (flecha
-								amarilla)
-							</p>
-						</div>
-						<div class="w-full sm:w-1/2">
-							<ImagenCaption
-								src="matematicas3/sistemas-coordenados/img-02.webp"
-								caption="GeoGebra coordenadas de un punto "
-								border={true}
-							/>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-						<div class="w-full sm:w-1/2">
-							<p>
-								Arrastrar el punto al lugar correspondiente, sus coordenadas apareceran <strong
-									>Entrada</strong
-								>
-							</p>
-						</div>
-						<div class="w-full sm:w-1/2">
-							<ImagenCaption
-								src="matematicas3/sistemas-coordenados/img-03.webp"
-								caption="GeoGebra Entrada con un punto"
-								border={true}
-							/>
-						</div>
-					</div>
-				</li>
-			</ol>
-		</div>
-		<BgFluido bg="bg-lightblue">
-			<h4>Forma 2</h4>
-		</BgFluido>
-		<div class="mx-auto mb-5 max-w-screen-xl">
-			<ol class="ol-number">
-				<li>
-					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-						<div class="w-full sm:w-1/2">
-							<p>
-								Otra forma de obtener un punto es escribiendo en entrada la coordenada, ejemplo <Latex
-									formula="A = (3,4)"
-									inline={true}
-								/>
-							</p>
-						</div>
-						<div class="w-full sm:w-1/2">
-							<ImagenCaption
-								src="matematicas3/sistemas-coordenados/img-04.webp"
-								caption="GeoGebra Entrada con un punto "
-								border={true}
-							/>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-						<div class="w-full sm:w-1/2">
-							<p>
-								Introducir varios puntos. Puedes introducir varios puntos de la misma manera. Por
-								ejemplo, para introducir los puntos <Latex
-									inline={true}
-									formula="(2, 3) , (5, 2)"
-								/> y
-								<Latex inline={true} formula="(-1, -2)" />, escribe las coordenadas de cada punto en
-								la ventana de <strong>Entrada</strong>
-							</p>
-						</div>
-						<div class="w-full sm:w-1/2">
-							<ImagenCaption
-								src="matematicas3/sistemas-coordenados/img-05.webp"
-								caption="GeoGebra Entrada con varios puntos"
-								border={true}
-							/>
-						</div>
-					</div>
-				</li>
-			</ol>
-			<h4>Propiedades del sistema de coordenadas.</h4>
-			<ul class="ul-disc">
-				<li>Los puntos que se encuentran en el origen tienen coordenadas (0, 0).</li>
-				<li>
-					Los puntos que se encuentran en el primer cuadrante tienen coordenadas positivas en ambos
-					ejes.
-				</li>
-				<li>
-					Los puntos que se encuentran en el segundo cuadrante tienen coordenadas negativas en el
-					eje X y positivas en el eje Y.
-				</li>
-				<li>
-					Los puntos que se encuentran en el tercer cuadrante tienen coordenadas negativas en ambos
-					ejes.
-				</li>
-				<li>
-					Los puntos que se encuentran en el cuarto cuadrante tienen coordenadas positivas en el eje
-					X y negativas en el eje Y.
-				</li>
-			</ul>
-		</div>
-		<BgFluido bg="bg-blue">
-			<div class="mx-auto mb-5 max-w-screen-md">
-				<ImagenCaption
-					src="matematicas3/sistemas-coordenados/img-06.webp"
-					caption="GeoGebra cuadrantes y origen del plano cartesiano"
-					border={true}
-				/>
-			</div>
-		</BgFluido>
-		<div class="mx-auto mb-5 max-w-screen-xl">
-			<h4>Mover un punto</h4>
-			<p>
-				Selecciona uno de los puntos que acabas de crear, muévelo de lugar y observa en entrada como
-				cambian los valores de ese punto. Para ello selecciona el primer icono de GeoGebra y luego
-				selecciona el punto que deseas mover
-			</p>
-		</div>
-		<BgFluido bg="bg-blue">
-			<div class="mx-auto mb-5 max-w-screen-md">
-				<ImagenCaption
-					src="matematicas3/sistemas-coordenados/img-07.webp"
-					caption="GeoGebra cuadrantes, origen del plano cartesiano y puntos en movimiento"
-					border={true}
-				/>
-			</div>
-		</BgFluido>
+		
+		<Lumi
+		src="/matematicas3/sistemas-coordenados/pant-4.html"
+		nombre="Ejercicio"
+		instrucciones="De las siguientes imágenes identifica cual es verdadero (v) o Falso (F)."
+	/>
+
 	</div>
 </Layout>

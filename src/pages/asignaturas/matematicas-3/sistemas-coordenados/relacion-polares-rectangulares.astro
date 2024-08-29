@@ -7,182 +7,114 @@ import GeogebraLink from '@/components/GeogebraLink.astro'
 import ImagenCaption from '@/components/ImagenCaption.astro'
 import BgFluido from '@/components/BgFluido.astro'
 import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import Lumi from "@/components/Lumi.astro";
 ---
 
 <Layout title="Relación de coordenadas rectangulares y polares">
 	<ObjetoAprendizajePantalla index={2} pantallaIndex={3} asignatura={'matematicas_3'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade">
 		<div class="mx-auto mb-5 max-w-screen-xl">
-			<GeogebraLink
-				texto="Con el uso de GeoGebra, puedes realizar la siguiente construcción:"
-				titulo="El plano cartesiano."
-				href="https://www.geogebra.org/classic?lang=es"
-			/>
 
-			<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-				<div class="w-full sm:w-1/2">
-					<p>
-						Aparece el plano cartesiano. El eje horizontal se llamará "x" y el eje vertical se
-						llamará "y".
-					</p>
-					<p>
-						Las coordenadas del punto son dos números que indican su ubicación en el plano. <strong
-							class="text-red"
-							>La coordenada “x” indica la distancia del punto al eje vertical y la coordenada “y”
-							indica la distancia del punto al eje horizontal</strong
-						>.
-					</p>
-				</div>
-				<div class="w-full sm:w-1/2">
+			<p>Si consideramos un punto en el plano cartesiano <Latex formula="(x, y)" inline={true}/> </p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
 					<ImagenCaption
-						src="matematicas3/sistemas-coordenados/img-01.webp"
-						caption="Plano cartesiano"
+						src="/matematicas3/sistemas-coordenados/img-31.jpg"
+						caption="Coordenadas en el plano cartesiano"
 						border={true}
 					/>
 				</div>
-			</div>
-			<p>
-				Pasos para introducir las coordenadas de un punto, ejemplo <Latex
-					formula="(3, 4)"
-					inline={true}
-				/> hay dos formas:
-			</p>
-		</div>
-		<BgFluido bg="bg-lightblue">
-			<h4>Forma 1</h4>
-		</BgFluido>
-		<div class="mx-auto mb-5 max-w-screen-xl">
-			<ol class="ol-number">
-				<li>
-					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-						<div class="w-full sm:w-1/2">
-							<p>
-								Elige el segundo icono (flecha verde), posteriormente da clic en punto (flecha
-								amarilla)
-							</p>
-						</div>
-						<div class="w-full sm:w-1/2">
-							<ImagenCaption
-								src="matematicas3/sistemas-coordenados/img-02.webp"
-								caption="GeoGebra coordenadas de un punto "
-								border={true}
-							/>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-						<div class="w-full sm:w-1/2">
-							<p>
-								Arrastrar el punto al lugar correspondiente, sus coordenadas apareceran <strong
-									>Entrada</strong
-								>
-							</p>
-						</div>
-						<div class="w-full sm:w-1/2">
-							<ImagenCaption
-								src="matematicas3/sistemas-coordenados/img-03.webp"
-								caption="GeoGebra Entrada con un punto"
-								border={true}
-							/>
-						</div>
-					</div>
-				</li>
-			</ol>
-		</div>
-		<BgFluido bg="bg-lightblue">
-			<h4>Forma 2</h4>
-		</BgFluido>
-		<div class="mx-auto mb-5 max-w-screen-xl">
-			<ol class="ol-number">
-				<li>
-					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-						<div class="w-full sm:w-1/2">
-							<p>
-								Otra forma de obtener un punto es escribiendo en entrada la coordenada, ejemplo <Latex
-									formula="A = (3,4)"
-									inline={true}
-								/>
-							</p>
-						</div>
-						<div class="w-full sm:w-1/2">
-							<ImagenCaption
-								src="matematicas3/sistemas-coordenados/img-04.webp"
-								caption="GeoGebra Entrada con un punto "
-								border={true}
-							/>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
-						<div class="w-full sm:w-1/2">
-							<p>
-								Introducir varios puntos. Puedes introducir varios puntos de la misma manera. Por
-								ejemplo, para introducir los puntos <Latex
-									inline={true}
-									formula="(2, 3) , (5, 2)"
-								/> y
-								<Latex inline={true} formula="(-1, -2)" />, escribe las coordenadas de cada punto en
-								la ventana de <strong>Entrada</strong>
-							</p>
-						</div>
-						<div class="w-full sm:w-1/2">
-							<ImagenCaption
-								src="matematicas3/sistemas-coordenados/img-05.webp"
-								caption="GeoGebra Entrada con varios puntos"
-								border={true}
-							/>
-						</div>
-					</div>
-				</li>
-			</ol>
-			<h4>Propiedades del sistema de coordenadas.</h4>
-			<ul class="ul-disc">
-				<li>Los puntos que se encuentran en el origen tienen coordenadas (0, 0).</li>
-				<li>
-					Los puntos que se encuentran en el primer cuadrante tienen coordenadas positivas en ambos
-					ejes.
-				</li>
-				<li>
-					Los puntos que se encuentran en el segundo cuadrante tienen coordenadas negativas en el
-					eje X y positivas en el eje Y.
-				</li>
-				<li>
-					Los puntos que se encuentran en el tercer cuadrante tienen coordenadas negativas en ambos
-					ejes.
-				</li>
-				<li>
-					Los puntos que se encuentran en el cuarto cuadrante tienen coordenadas positivas en el eje
-					X y negativas en el eje Y.
-				</li>
-			</ul>
-		</div>
-		<BgFluido bg="bg-blue">
-			<div class="mx-auto mb-5 max-w-screen-md">
-				<ImagenCaption
-					src="matematicas3/sistemas-coordenados/img-06.webp"
-					caption="GeoGebra cuadrantes y origen del plano cartesiano"
-					border={true}
-				/>
-			</div>
-		</BgFluido>
-		<div class="mx-auto mb-5 max-w-screen-xl">
-			<h4>Mover un punto</h4>
-			<p>
-				Selecciona uno de los puntos que acabas de crear, muévelo de lugar y observa en entrada como
-				cambian los valores de ese punto. Para ello selecciona el primer icono de GeoGebra y luego
-				selecciona el punto que deseas mover
-			</p>
-		</div>
-		<BgFluido bg="bg-blue">
-			<div class="mx-auto mb-5 max-w-screen-md">
-				<ImagenCaption
-					src="matematicas3/sistemas-coordenados/img-07.webp"
-					caption="GeoGebra cuadrantes, origen del plano cartesiano y puntos en movimiento"
-					border={true}
-				/>
-			</div>
-		</BgFluido>
+			</BgFluido>
+
+			<p>Ese mismo punto tiene coordenadas polares.</p>
+			
+			<p>Si del origen al punto trazamos una línea, podemos conocer la distancia <i>r</i> entre el punto P y el origen y el ángulo polar <Latex formula="Ɵ" inline={true}/> del punto. De ahí que queremos conocer cómo se relacionan estas dos coordenadas</p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-32.jpg"
+						caption="Relación entre la coordenada rectangular y la polar"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p>Si observamos se forma un triángulo con un ángulo recto del lado derecho, x se encuentra en el eje polar, el lado opuesto de y mide lo mismo:</p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-33.jpg"
+						caption="Ubicación del triángulo rectángulo en el plano"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p>Usando trigonometría y el teorema de Pitágoras, podemos encontrar la relación entre las coordenadas polares y las rectangulares. Observa la imagen 35. </p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-34.jpg"
+						caption="Teorema de Pitágoras"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p>Si conocemos los valores de los ejes x y y podemos conocer el valor de <i>r</i>.</p>
+
+			<p>Al aplicar las razones trigonométricas podemos encontrar relación entre los distintos lados del triángulo rectángulo.</p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-35.jpg"
+						caption="Razones trigonométricas"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p>En este caso podemos conocer el ángulo polar <Latex formula="Ɵ" inline={true}/> del punto. Para ello nos podemos apoyar de la tangente </p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-36.jpg"
+						caption="Uso de la tangente"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<p>Si nosotros conocemos las coordenadas rectangulares x y y podemos obtener las coordenadas polares.</p>
+
+			<p>Pero como podemos conocer las coordenadas de polares a rectangulares, para ello nos podemos apoyar del seno y coseno </p>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-37.jpg"
+						caption="Uso del Seno y Coseno"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+		</div>	
+		<Lumi
+		src="/matematicas3/sistemas-coordenados/pant5-ej1.html"
+		nombre="Ejercicio"
+		instrucciones="Transforma las coordenadas Polares a coordenadas rectangulares de los puntos."
+	/>
+	<Lumi
+		src="/matematicas3/sistemas-coordenados/pant5-ej2.html"
+		nombre="Ejercicio"
+		instrucciones="Transforma las coordenadas rectangulares a coordenadas polares de los puntos."
+	/>
 	</div>
 </Layout>
