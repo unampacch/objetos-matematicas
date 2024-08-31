@@ -1,6 +1,9 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 ---
 
 <Layout
@@ -10,6 +13,13 @@ import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 	<ObjetoAprendizaje index={2} asignatura={'matematicas_3'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade">
 		<div class="mx-auto max-w-screen-xl">
+			<BgFluido>
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/Img-A.png"
+					/>
+				</div>
+			</BgFluido>
 			<h3>Objetivos</h3>
 			<ol class="ol-alpha pl-10 mt-5">
 				<li>
