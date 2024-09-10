@@ -1,0 +1,190 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Hr from '@/components/Hr.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+---
+
+<Layout title="Ejemplos de coordenadas">
+	<ObjetoAprendizajePantalla index={2} pantallaIndex={1} asignatura={'matematicas_3'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<p> Otros ejemplos cotidianos de coordenadas podrían ser:</p>
+			<ol class="ol-number pl-10 mt-5">
+				<li>
+					El Mapa de un supermercado.
+						<p>Eje x: puede representar los pasillos, desde la entrada hasta la parte trasera</p>
+						<p>Eje y: Puede representar los estantes, desde la parte inferior hasta la superior.</p>
+
+				</li>
+				<li>
+					La pantalla de un ordenador.
+					<p>Eje x: Puede representar la posición horizontal del cursor</p>
+					<p>Eje y: Puede representar la posición vertical del cursor</p>
+		 		</li>
+			</ol>
+			<p>
+				Ahora tracemos una línea recta en el plano cartesiano, está actividad la puedes realizar con el apoyo de GeoGebra o en tu libreta. Para ello necesitamos dos puntos <Latex formula="A(1, 2)\\quad y\\quad B(2, 5)" inline={true}/> puedes calcular la pendiente (m) y la ordenada al origen (b) y obtener la ecuación de la línea recta <Latex formula="\\quad y = mx + b" inline={true}/>  
+			</p>
+			<p>
+				Con el apoyo de GeoGebra,
+			</p>
+			<ol class="ol-alpha pl-10 mt-5">
+				<li>
+					Introduce las coordenadas <Latex formula="\\quad A (1,2)\\quad y\\quad B (2,5)" inline={true}/> en la barra de entrada. 
+				</li>
+				<li>
+					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
+						<div class="w-full sm:w-1/2">
+							<p>
+								Después selecciona el tercer icono de izquierda a derecha. Del menú desplegable elige “Recta”:
+							</p>
+						</div>
+						<div class="w-full sm:w-1/2">
+							<ImagenCaption
+								src="/matematicas3/sistemas-coordenados/img-15.jpg"
+								caption="Colocar dos coordenadas en entrada de GeoGebra"
+								border={true}
+							/>
+						</div>
+					</div>
+		 		</li>
+				 <li>
+					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
+						<div class="w-full sm:w-1/2">
+							<p>
+								Automáticamente aparecerá la ecuación de la recta y podrás observar en el plano cartesiano la imagen de la recta.
+							</p>
+						</div>
+						<div class="w-full sm:w-1/2">
+							<ImagenCaption
+								src="/matematicas3/sistemas-coordenados/img-16.jpg"
+								caption="Ecuación de la línea recta, partiendo de dos puntos, con pendiente positiva"
+								border={true}
+							/>
+						</div>
+					</div>
+		 		</li>
+			
+	  <div>
+		<table class="table border-collapse bg-slate-900 text-white">
+			<tbody>
+				<tr>
+					<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La ecuación de la línea recta <Latex formula="y = mx + b" inline={true}/></td>
+					<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="-3x + y = -1" inline={true}/></td>
+					<td class="border-b px-4 py-2 text-center">O lo que es lo mismo: <Latex formula="y = -1 + 3x" inline={true}/></td>
+				</tr>
+				<tr>
+					<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La pendiente (m)</td>
+					<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="m = 3" inline={true}/> </td>
+					<td class="border-b px-4 py-2 text-center">La pendiente es positiva su inclinación es de abajo hacia arriba y se encuentra en el cuadrante I, siendo su valor igual a 3</td>
+				</tr>
+				<tr>
+					<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La ordenada al origen (b)</td>
+					<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="b = -1" inline={true}/></td>
+					<td class="border-b px-4 py-2 text-center">Cuando <Latex formula="x = 0 \\ y = -1" inline={true}/></td>
+				</tr>
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+		<BgFluido bg="bg-blue">
+			<div class="mx-auto mb-5 max-w-screen-md">
+				<ImagenCaption
+					src="/matematicas3/sistemas-coordenados/img-17.jpg"
+					caption="Ecuación de la línea recta, partiendo de dos puntos, con pendiente positiva"
+					border={true}
+				/>
+			</div>
+
+	<div class="mx-auto mb-5 max-w-screen-xl">
+		</BgFluido>
+			<p>Análisis: Pendiente m: Cuando “x” aumenta una unidad, “y” aumenta 3 puntos </p>
+			<p> Ordenada al origen b: Cuando “x” toma el valor de cero, “y” vale -1 </p>
+	</div>	
+
+			<BgFluido>
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/Img-B.png"
+					/>
+				</div>
+			</BgFluido>
+	<div class="mx-auto mb-5 max-w-screen-xl">
+		<h4>Resuelve estos dos problemas:</h4>
+		<div>
+			<table class="table border-collapse bg-slate-900 text-white">
+				<tbody>
+					<tr>
+						<td class="border-b px-4 py-2"><b>Problema 1</b></td>
+						<td class="border-b px-4 py-2">Considera el plano de una casa (puedes usar una imagen de internet) determina 3 coordenadas, con el apoyo de GeoGebra
+
+						</td>
+						
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<GeogebraLink
+				texto="Con el uso de GeoGebra, puedes realizar la siguiente construcción:"
+				titulo="El plano cartesiano."
+				href="https://www.geogebra.org/classic?lang=es"
+			/>
+		<div>
+			<table class="table border-collapse bg-slate-900 text-white">
+				<tbody></tbody>
+					<tr>
+						<td class="border-b px-4 py-2"><b>Problema 2</b></td>
+						<td class="border-b px-4 py-2">Necesitamos dos puntos<Latex formula="A (2,16) y B (8,12)" inline={true}/> calcula la pendiente (m) y la ordenada al origen (b), obtener la ecuación de la línea recta <Latex formula="y = m x +b" inline={true}/> y analiza la información que encontraste </td>
+						
+					</tr>
+					
+					</tbody>
+				</table>
+			</div>
+		
+			<h4>Solución: Problema 2</h4>
+		</div>
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-18.jpg"
+						caption="Ecuación de la línea recta, partiendo de dos puntos, con pendiente negativa"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<div>
+				<table class="table border-collapse bg-slate-900 text-white">
+					<tbody>
+						<tr>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La ecuación de la línea recta <Latex formula="y = mx + b" inline={true}/></td>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="2x + 3y = 52" inline={true}/></td>
+							<td class="border-b px-4 py-2 text-center">O lo que es lo mismo: <Latex formula="y = 17.3 - 0.66x" inline={true}/></td>
+						</tr>
+						<tr>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La pendiente (m)</td>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="m = -0.66" inline={true}/> </td>
+							<td class="border-b px-4 py-2 text-center">La pendiente es negativa, su inclinación es de arriba hacia abajo, se encuentra en el cuadrante I, siendo su valor igual a -0.66</td>
+						</tr>
+						<tr>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La ordenada al origen (b)</td>
+							<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="b = 17.3" inline={true}/></td>
+							<td class="border-b px-4 py-2 text-center">Cuando x = 0 y y=17.3</td>
+						</tr>
+						
+						</tbody>
+					</table>
+				</div>
+				<p>Análisis: Pendiente m: Cuando “x” aumenta tres unidades, “y” disminuye 3 puntos</p>
+				<p>Ordenada al origen b: Cuando “x” toma el valor de cero, “y” vale -1</p>
+
+		</div>		
+	</div>
+</Layout>
