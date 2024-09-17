@@ -234,28 +234,17 @@
 						},
 						{
 							"titulo": "Sistemas de coordenadas - Ejemplos",
-							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/ejemplos"
-						},
-						{
-							"titulo": "Sistemas de coordenadas - Actividad",
-							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/sistemas-actividad"
+							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/ejemplos-cartesianos"
 						},
 						{
 							"titulo": "Sistemas de coordenadas Polares",
 							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/polares"
 						},
 						{
-							"titulo": "Sistemas de coordenadas Polares - Actividad",
-							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/polares-actividad"
-						},
-						{
 							"titulo": "Relación de coordenadas rectangulares y polares",
-							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/relacion"
-						},
-						{
-							"titulo": "Relación de coordenadas rectangulares y polares - Actividad",
-							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/relacion-actividad"
+							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/relacion-polares-rectangulares"
 						}
+						
 					]
 				},
 				{
@@ -803,4 +792,4 @@
 			]
 		}
 	}
-  }
+}
