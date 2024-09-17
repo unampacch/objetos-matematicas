@@ -1,16 +1,27 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 ---
 
 <Layout
-	title="Números Clasificación y propiedades"
-	description="En este objeto de aprendizaje, aprenderás sobre los números, su clasificación y propiedades. ¡Vamos a explorar el fascinante mundo de los números juntos!"
+	title="Manejo de sistemas coordenados en el plano"
+	description="Comprender y aplicar los conceptos básicos de los sistemas de coordenadas en el plano. Resolver problemas que involucren el uso de sistemas de coordenadas. Conocer el sistema de coordenadas cartesianas y el sistema polar."
 >
 	<ObjetoAprendizaje index={2} asignatura={'matematicas_3'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade">
 		<div class="mx-auto max-w-screen-xl">
-			<h3>Objetivos</h3>
+			<div class="grid gap-7 lg:grid-cols-2 lg:gap-10">
+			<BgFluido>
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/Img-A.png"
+					/>
+				</div>
+			</BgFluido>
+			<div><h3>Objetivos</h3>
 			<ol class="ol-alpha pl-10 mt-5">
 				<li>
 					Comprender y aplicar los conceptos básicos de los sistemas de coordenadas en el plano.
@@ -24,6 +35,8 @@ import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 				crítico para llegar a una solución. Permitiéndote desarrollar habilidades prácticas y
 				aplicar los conceptos aprendidos.
 			</p>
+		</div>
+		</div>
 		</div>
 	</div>
 </Layout>
