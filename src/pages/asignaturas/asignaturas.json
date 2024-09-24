@@ -637,30 +637,20 @@
         },
         {
           "titulo": "Derivación de funciones algebraicas simples",
-          "slug": "/asignaturas/calculo/derivacion-algebraicas",
+          "slug": "/asignaturas/calculo/derivacion-algebraicas/inicio",
           "portada": "/holder-cover.webp",
           "descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la derivación de funciones algebraicas simples en el ámbito de la matemática. Contiene una exploración exhaustiva de la derivación de funciones polinómicas, racionales, irracionales y exponenciales, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
           "resumen": "Derivación de funciones algebraicas simples y su aplicación en la resolución de problemas matemáticos.",
           "pantallas": [
             {
-              "titulo": "Derivación de funciones polinómicas",
-              "slug": "/asignaturas/calculo/derivacion-algebraicas/polinomicas",
-              "descripcion": "Derivación de funciones polinómicas y su aplicación en la resolución de problemas matemáticos."
-            },
+              "titulo": "Derivación de funciones algebraicas",
+              "slug": "/asignaturas/calculo/derivacion-por-regla-de-cadena/pantalla",
+              "descripcion": "Derivación de funciones algebraicas y su aplicación en la resolución de problemas matemáticos."
+            }
             {
-              "titulo": "Derivación de funciones racionales",
-              "slug": "/asignaturas/calculo/derivacion-algebraicas/racionales",
-              "descripcion": "Derivación de funciones racionales y su aplicación en la resolución de problemas matemáticos."
-            },
-            {
-              "titulo": "Derivación de funciones irracionales",
-              "slug": "/asignaturas/calculo/derivacion-algebraicas/irracionales",
-              "descripcion": "Derivación de funciones irracionales y su aplicación en la resolución de problemas matemáticos."
-            },
-            {
-              "titulo": "Derivación de funciones exponenciales",
-              "slug": "/asignaturas/calculo/derivacion-algebraicas/exponenciales",
-              "descripcion": "Derivación de funciones exponenciales y su aplicación en la resolución de problemas matemáticos."
+              "titulo": "Derivación de funciones algebraicas",
+              "slug": "/asignaturas/calculo/derivacion-por-regla-de-cadena/pantalla",
+              "descripcion": "Derivación de funciones algebraicas y su aplicación en la resolución de problemas matemáticos."
             }
           ]
         },
