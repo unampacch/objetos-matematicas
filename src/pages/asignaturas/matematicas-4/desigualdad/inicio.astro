@@ -1,17 +1,155 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
+import BgFluido from '@/components/BgFluido.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 ---
 
 <Layout
-  title=""
-  description=""
+  title="Desigualdad matemática"
 >
 
     <ObjetoAprendizaje index={2} asignatura={"matematicas_4"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <h4>Desigualdad matemática</h4>
+        <p>En los números reales existe un orden, es decir, dados dos números, siempre podemos compararlos utilizando los siguientes símbolos:</p>
+        <ul class="ul-disc">
+          <li> <Latex formula=">" inline={true}/> : mayor que (desigualdad estricta).</li>
+          <li> <Latex formula="<" inline={true}/> : menor que (desigualdad estricta).</li>
+          <li> <Latex formula="=" inline={true}/> : igual que.</li>
+        </ul>
+        <p>También se usan combinaciones de éstos:</p>
+        <ul class="ul-disc">
+          <li> <Latex formula="≥" inline={true}/> : mayor o igual que (desigualdad no estricta).</li>
+          <li> <Latex formula="≤" inline={true}/> : menor o igual que (desigualdad no estricta).</li>
+        </ul>
+        <p>De la misma manera, podemos proponer desigualdades entre expresiones algebraicas y preguntarnos sobre la existencia de números reales que la satisfagan.</p>
+        <p>Ejemplos:</p>
+        <div class="mx-auto max-w-screen-xl">
+          <GeogebraLink
+              href="https://www.geogebra.org/m/zjuryext"
+              texto="En este caso llamamos a esta comparación Desigualdad o Inecuación."
+          />
+        </div>
+        <p>Para determinar los valores de x que dan solución a una desigualdad, podemos usar las siguientes propiedades:
+          Propiedades de orden.
+        </p>
+        <ul class="ul-disc">
+          <li> (P1) Si <Latex formula="a<b" inline={true}/> entonces <Latex formula="a+c<b+c" inline={true}/>.</li>
+          <li> (P2) Si <Latex formula="a<b" inline={true}/> y <Latex formula="c>0" inline={true}/> entonces <Latex formula="ac<bc" inline={true}/>.</li>
+          <li> (P2) Si <Latex formula="a<b" inline={true}/> y <Latex formula="c<0" inline={true}/> entonces <Latex formula="ac>bc" inline={true}/>.</li>
+        </ul>
+      </div>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+        <p>Encontrar el conjunto solución de la desigualdad</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="3x+2>4x-3"/>
+        </div>
+        <p>Paso 1: sumamos -2 de ambos lados de la desigualdad (P1) y simplificamos.</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="3x+2+(-2)>4x-3+(-2)"/>
+          <Latex formula="3x>4x-5"/>
+        </div>
+        <p>Paso 2: sumamos -4x de ambos lados de la desigualdad (P1) y simplificamos.</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="(-1)(-x)>(-1)(-5)"/>
+          <Latex formula="x<5"/>
+        </div>
+        <p> Conjunto solución: <Latex formula="\{x:x<5\}=(-\\infty,5)" inline={true}/></p>
+      </BgFluido>
+      <div class="mx-auto max-w-screen-xl">
+        <div class="mx-auto max-w-screen-xl">
+          <GeogebraLink
+              href="https://www.geogebra.org/m/zjuryext"
+              texto="Ejercicios guiados para resolver desigualdades lineales."
+          />
+        </div>
+        <h4>Método gráfico para comprender y calcular el conjunto solución de una desigualdad cuadrática.</h4>
+        <p>Decimos que una desigualdad es cuadrática si el término de mayor grado que aparece en ésta es 2.</p>
+          <p>Ejemplos:</p>
+        <div class="mx-auto my-5 lg:max-w-screen-lg">
+          <ul class="ul-disc">
+            <li><Latex formula="3x^2-4x+2\\leq5x-1" inline={true}/>: sí es una desigualdad cuadrática debido a que el término de   mayor grado es <Latex formula="3x^2" inline={true}/>.</li>
+            <li> <Latex formula="5x^3-5x>3x^2-4" inline={true}/>: no es una desigualdad cuadrática debido a que el término de mayor grado es <Latex formula="5x^3" inline={true}/>, que tiene grado 3.</li>
+          </ul>
+        </div>
+        <p>Dada una desigualdad cuadrática siempre es posible llevarla a una de las siguientes formas: </p>
+        <ul class="ul-disc">
+          <li> <Latex formula="ax^2+bx+c>0" inline={true}/></li>
+          <li> <Latex formula="ax^2+bx+c\\geq 0" inline={true}/></li>
+        </ul>
+        <p>Esto es útil para comprender el significado de la desigualdad y determinar el conjunto solución de manera gráfica; si nosotros graficamos la función 
+          <Latex formula="f(x)=ax^2+bx+c" inline={true}/>, el conjunto solución de la desigualdad <Latex formula="ax^2+bx+c\\geq 0" inline={true}/>
+          corresponde a las abscisas de los puntos de la gráfica que se encuentran por encima o sobre el eje y.
+        </p>
+      </div>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+        <p>Consideremos la desigualdad <Latex formula="x^2+2x-3>0" inline={true}/></p>
+        <center><div class="mt-3 lg:w-1/2">
+          <ImagenFullCaption src="/matematicas4/desigualdad/grafica.png" caption="Ejemplo de desigualdad"/>
+        </div></center>
+      </BgFluido>
+      <div class="mx-auto max-w-screen-xl">
+        <h4>Método para resolver desigualdades cuadráticas.</h4>
+        <ol class="ol-number mt-5">
+          <li>Utilizando las propiedades P1, P2 y P3, llevamos la ecuación a una de las formas:
+            <ul class="ul-disc">
+              <li><Latex formula="ax^2+bx+c>0" inline={true}/> (estricta)</li>
+              <li><Latex formula="ax^2+bx+c\\geq 0" inline={true}/> (no estricta)</li>
+            </ul>
+          </li>
+          <li>Encontramos las raíces de la ecuación <Latex formula="ax^2+bx+c=0" inline={true}/>
+            <ul class="ul-disc">
+              <li>Caso 1: Si <Latex formula="b^2-4ac>0" inline={true}/>, tenemos dos raíces reales distintas, <Latex formula="x_1" inline={true}/> y <Latex formula="x_2" inline={true}/> (<Latex formula="x_1<x_2" inline={true}/>).
+                <div class="mx-auto my-5 lg:max-w-screen-lg">
+                  <p>Si <Latex formula="a>0" inline={true}/> ; el conjunto solución es:</p>
+                  <div class="mx-auto my-5 lg:max-w-screen-lg">
+                    <p><Latex formula="(-\\infty,x_1)\\cup (x_2,\\infty)\\qquad\\qquad" inline={true}/> (estricta)</p>
+                    <p><Latex formula="(-\\infty,x_1]\\cup [x_2,\\infty)\\qquad\\qquad" inline={true}/> (no estricta)</p>
+                  </div>
+                  <p>Si <Latex formula="a<0" inline={true}/> ; el conjunto solución es:</p>
+                  <div class="mx-auto my-5 lg:max-w-screen-lg">
+                    <p><Latex formula="(x_1,x_2)\\qquad\\qquad" inline={true}/> (estricta)</p>
+                    <p><Latex formula="[x_1,x_2]\\qquad\\qquad" inline={true}/> (no estricta)</p>
+                  </div>
+                </div>
+              </li>
+              <li>Caso 2: Si <Latex formula="b^2-4ac=0" inline={true}/>, tenemos una raíz doble <Latex formula="x_1" inline={true}/>.
+                <div class="mx-auto my-5 lg:max-w-screen-lg">
+                  <p>Si <Latex formula="a>0" inline={true}/> ; el conjunto solución es:</p>
+                  <div class="mx-auto my-5 lg:max-w-screen-lg">
+                    <p><Latex formula="(-\\infty,x_1)\\cup (x_1,\\infty)\\qquad\\qquad" inline={true}/> (estricta)</p>
+                    <p><Latex formula="(-\\infty,\\infty)\\qquad\\qquad" inline={true}/> (no estricta)</p>
+                  </div>
+                  <p>Si <Latex formula="a<0" inline={true}/> ; el conjunto solución es:</p>
+                  <div class="mx-auto my-5 lg:max-w-screen-lg">
+                    <p><Latex formula="\\phi\\qquad\\qquad" inline={true}/> (estricta)</p>
+                    <p><Latex formula="\{x_1\}\\qquad\\qquad" inline={true}/> (no estricta)</p>
+                  </div>
+                </div>
+              </li>
+              <li>Caso 3: Si <Latex formula="b^2-4ac<0" inline={true}/>, no tenemos raíces reales.
+                <div class="mx-auto my-5 lg:max-w-screen-lg">
+                  <p>Si <Latex formula="a>0" inline={true}/> ; el conjunto solución es:</p>
+                  <div class="mx-auto my-5 lg:max-w-screen-lg">
+                    <p><Latex formula="(-\\infty,\\infty)\\qquad\\qquad" inline={true}/> (estricta)</p>
+                    <p><Latex formula="(-\\infty,\\infty)\\qquad\\qquad" inline={true}/> (no estricta)</p>
+                  </div>
+                  <p>Si <Latex formula="a<0" inline={true}/> ; el conjunto solución es:</p>
+                  <div class="mx-auto my-5 lg:max-w-screen-lg">
+                    <p><Latex formula="\\phi\\qquad\\qquad" inline={true}/> (estricta)</p>
+                    <p><Latex formula="\\phi\\qquad\\qquad" inline={true}/> (no estricta)</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
     </div>
-
 </Layout>

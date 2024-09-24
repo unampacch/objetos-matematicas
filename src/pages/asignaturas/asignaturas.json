@@ -326,27 +326,10 @@
 				},
 				{
 					"titulo": "Concepto de desigualdad",
-					"slug": "/asignaturas/matematicas-4/desigualdad",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/matematicas-4/desigualdad/inicio",
+					"portada": "/portadas/portada-desigualdades.jpg",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la desigualdad en el ámbito de la matemática. Contiene una exploración exhaustiva de las desigualdades, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-					"resumen": "Desigualdades y su aplicación en la resolución de problemas matemáticos.",
-					"pantallas": [
-						{
-							"titulo": "Definición de desigualdad",
-							"slug": "/asignaturas/matematicas-4/desigualdad/definicion",
-							"descripcion": "Definición y propiedades de las desigualdades."
-						},
-						{
-							"titulo": "Resolución de desigualdades",
-							"slug": "/asignaturas/matematicas-4/desigualdad/resolucion",
-							"descripcion": "Resolución de desigualdades y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Desigualdades compuestas",
-							"slug": "/asignaturas/matematicas-4/desigualdad/compuestas",
-							"descripcion": "Desigualdades compuestas y su aplicación en la resolución de problemas matemáticos."
-						}
-					]
+					"resumen": "Desigualdades y su aplicación en la resolución de problemas matemáticos."
 				},
 				{
 					"titulo": "Concepto de dominio, codominio y regla de correspondencia",
@@ -467,25 +450,15 @@
 				},
 				{
 					"titulo": "Continuidad de funciones",
-					"slug": "/asignaturas/calculo/continuidad-funciones",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/continuidad-funciones/inicio",
+					"portada": "/portadas/Firefly Función exponencial y logarítmica, su representación gráﬁca 27114 (1).jpg",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la continuidad de funciones en el ámbito de la matemática. Contiene una exploración exhaustiva de la continuidad de funciones reales, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Continuidad de funciones reales y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
 							"titulo": "Definición de continuidad",
-							"slug": "/asignaturas/calculo/continuidad-funciones/continuidad",
+							"slug": "/asignaturas/calculo/continuidad-funciones/funciones-continuas",
 							"descripcion": "Definición y propiedades de la continuidad de funciones reales."
-						},
-						{
-							"titulo": "Tipos de discontinuidades",
-							"slug": "/asignaturas/calculo/continuidad-funciones/discontinuidades",
-							"descripcion": "Tipos de discontinuidades de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Teorema del valor intermedio",
-							"slug": "/asignaturas/calculo/continuidad-funciones/valor-intermedio",
-							"descripcion": "Teorema del valor intermedio y su aplicación en la resolución de problemas matemáticos."
 						}
 					]
 				},
