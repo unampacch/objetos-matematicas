@@ -5,13 +5,46 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 ---
 
 <Layout
-  title=""
-  description=""
+  title="Funciones exponenciales y logarítmicas."
+  description="Aquí vas a utilizar las funciones exponencial y logarítmica para representar formas de variación de fenómenos de la naturaleza, y que éstas permitan modelar."
 >
 
     <ObjetoAprendizaje index={5} asignatura={"matematicas_4"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <h3>Crecimiento o decaimiento exponencial</h3>
+        <h4>Introducción</h4>
+        <p>El crecimiento exponencial lo podemos observar en la vida cotidiana en las poblaciones de personas, bacterias o animales, ejemplo una familia de pollos, como se muestra en la imagen.</p>
+          <p>La función exponencial crece muy rápido para valores positivos de <Latex formula="x" inline={true}/>.</p>
+          <ImagenCaption src="/matematicas4/funciones-exp-logaritmicas/puma1.jpg" caption="Bienvenidxs a este tema" border={true} />
+
+
+
+        <p>Localiza en el siguiente applet las parejas de precios que sugeriste arriba, considera como la coordenada x  el precio de cada pluma y como la coordenada y  el precio de cada lápiz.</p>
+
+      <p>Como puedes notar, existe más de una solución al problema de Diego. De hecho, si definimos como <Latex
+        formula="x"
+        inline={true}
+      /> el precio cada pluma y como <Latex
+      formula="y"
+      inline={true}
+    /> el precio de cada lápiz, podemos modelar el problema por medio de la ecuación <Latex
+    formula="12x+6y=102"
+    inline={true}
+  />.</p>
+      <p>Los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra. Mueve el punto P que se encuentra sobre la recta y explora los diferentes precios que podrían tener cada pluma y cada lápiz.</p>
+
+    <p>Nota que existen soluciones que involucran números negativos; en el contexto del problema esto no tiene sentido, sin embargo, matemáticamente debemos considerarlas.</p>
+    <h3>Problema (Parte II)</h3>
+    <p>En la escuela, Diego se encontró con Paola y le comentó lo que le había ocurrido con su compra en la papelería. Paola se rio y le dijo que a ella le había ocurrido algo parecido; compró 5 plumas y 4 lápices y le cobraron 50 pesos, pero tampoco preguntó el precio de cada cosa.</p>
+    <p>¿Puedes encontrar tres posibles precios para cada pluma y cada lápiz en el caso de Paola?</p>
+    <p>Nuevamente, los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra, ¿puedes encontrar los puntos que representan los precios que consideraste en la pregunta anterior?</p>
+
+  <h3>Problema (Parte III)</h3>
+  <p>Finalmente Paola y Diego se dieron cuenta que podrían conocer el costo de cada pluma y de cada lápiz, pues sólo bastaba encontrar un punto que satisficiera ambas ecuaciones. Gráficamente esto significa encontrar el punto de intersección de las rectas que representan a las ecuaciones.</p>
+
+<p>A una ecuación de la forma <Latex formula="ax+by=c" inline={true}/>, con <Latex formula="a" inline={true}/>, <Latex formula="b" inline={true}/> y <Latex formula="c" inline={true}/> números reales, se le conoce como <em>Ecuación lineal en dos variables</em>, y a un conjunto de dos ecuaciones lineales en dos variables se le conoce como <em>Sistema de Ecuaciones Lineales (SEL) de <Latex formula="2x2" inline={true}/></em>. </p>
+</div>
     </div>
 
 </Layout>
