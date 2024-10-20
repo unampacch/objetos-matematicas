@@ -1,0 +1,264 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from "@/components/Lumi.astro"
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+---
+
+<Layout
+  title="Gráfica de una función"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={3} pantallaIndex={0} asignatura={"matematicas_4"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+      <p>La gráfica de una función <Latex formula="y=f(x)" inline={true}/>, esta formada por todos los puntos <Latex formula="(x, f(x))" inline={true}/>, donde <Latex formula="x" inline={true}/>, pertenece al dominio de <Latex formula="f" inline={true}/>.  Una recta vertical puede cortar a la gráfica de una función de <Latex formula="x" inline={true}/> a lo sumo una vez. Esta observación proporciona un criterio visual, <b>llamado criterio de la recta vertical.</b></p>
+    </div>
+
+      <div>
+        <BgFluido bg="bg-blue"> 
+				<table>
+					<tbody>
+						<tr>
+							<td class="px-10 py-4">
+
+                <div>
+                  <ImagenCaption
+                   src="/matematicas4/dominio-codominio/Imagen3.PNG"
+                   caption="No es función de "
+					          border={true}
+                  />
+                </div>
+                
+              </td>
+							<td>
+                <div >
+                  <ImagenCaption
+                   src="/matematicas4/dominio-codominio/Imagen4.PNG"
+                   caption="Una función de "
+					          border={true}
+                  />
+                </div>
+              </td>
+						</tr>
+						</tbody>
+					</table>
+        </BgFluido>
+			</div>
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <GeogebraLink
+				texto="Te invitamos a revisar la siguiente construcción y después trabajes con los ejercicios:"
+				titulo="Construcción en GeoGebra"
+				href="https://www.geogebra.org/calculator/jaryyfnd"
+			/>
+      </div>
+      <Lumi
+		src="/matematicas4/dominio-codominio/p2-ej1.html"
+		nombre="Reactivos"
+		instrucciones=": Determina si las siguientes gráficas corresponden a una “Función” o “No es una función de x”."
+    />
+    
+    <div class="mx-auto max-w-screen-xl" >
+      <br>
+      <h3> Aplicaciones </h3>
+    </div>
+      <BgFluido bg="bg-lightblue">
+        <h4>Movimiento Periódico</h4>
+      </BgFluido>
+
+      <div class="mx-auto max-w-screen-xl" >
+        <div>
+          <table class="table bg-slate-900 text-white">
+            <tbody>
+              
+              <tr>
+                <td class="border-b border-r border-slate-50 px-4 py-4 text-center"> Video <a href="https://youtu.be/af70k-3c9qo ">"SPIN"</a></td>
+                <td class="border-b border-r border-slate-50 px-4 py-4"> 
+                  <div>
+                  <ImagenCaption
+                   src="/matematicas4/dominio-codominio/Imagen9.png"
+                  />
+                </div> </td>
+                <td class="border-b border-r border-slate-50 px-4 py-4 text-center">Un docente pide a sus estudiantes analizar el movimiento que describe un punto sobre un spinner, y determinar cómo será la representación gráfica de su movimiento (a través del tiempo), con base en las siguientes variables:
+
+                  Visualiza un plano cartesiano teniendo como origen el centro del spinner.
+                  n es de abajo hacia arriba y se encuentra en el cuadrante I, siendo su valor igual a 3</td>
+              </tr>
+              
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+          </div>
+
+          <p> Dibuja en una hoja como consideras que sería el comportamiento de los siguientes desplazamientos.</p>
+          <div>
+            <table class="table "> 
+              <tbody> 
+                <tr>
+                  <td class="border-b border-r border-slate-50 px-4 py-4 text-center">Posición x (posición horizontal), y (posición vertical)</td>
+                  
+                  <td class="border-b border-r border-slate-50 px-4 py-4 text-center">
+                    Posición t (tiempo) vs y (posición vertical)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-b border-r border-slate-50 px-4 py-4 text-center">
+                    <ImagenCaption
+                    src="/matematicas4/dominio-codominio/T1.jpg" />
+                  </td>
+                  
+                  
+                  <td class="border-b border-r border-slate-50 px-4 py-4 text-center"> 
+                    <ImagenCaption
+                   src="/matematicas4/dominio-codominio/T2.jpg" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          
+        </div>
+
+      
+        <br>
+        <br>
+        <br>
+        <div>
+          <p>Observa el siguiente video, donde se analiza con tracker el movimiento del móvil, en las gráficas que aparecen a la derecha.</p>
+        </div> 
+        <br>
+        
+      </div>
+
+        <BgFluido bg="bg-blue">
+        <div class="mx-auto mb-5 max-w-screen-md">
+          <iframe width="840" height="473" src="https://www.youtube.com/embed/GjlgZyZ2Tyw?si=8UKPbG-iVii1p8hX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </BgFluido>
+    
+      <div class="mx-auto max-w-screen-xl">
+    <p>Las representaciones gráficas obtenidas de sus desplazamientos son los siguientes</p>
+  </div> 
+
+        <BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <ImagenCaption
+              src="/matematicas4/dominio-codominio/Imagen10.PNG"
+            />
+          </div>
+          </BgFluido> 
+
+          <div class="mx-auto max-w-screen-xl">
+            <p>1.	Según lo que observas ¿Cuál de estas afirmaciones es cierta?</p>
+            <ol class="ol-alpha">
+              <li>La posición horizontal vs la posición vertical del móvil representa una función.</li>
+              <li>El tiempo vs la posición vertical del móvil representa una función.</li>
+              <li>c)	Ambas gráficas representan una función.</li>
+              <li>d)	Ninguna de las gráficas representa una función.</li>
+            </ol>
+          </div> 
+
+          <BgFluido bg="bg-lightblue">
+            <h4>Tiro vertical</h4>
+          </BgFluido>
+
+          <div class="mx-auto max-w-screen-xl">
+            <p>Observa el siguiente video </p>
+          </div>
+
+          
+              <div class="mx-auto max-w-screen-xl"> 
+            <table class="table">
+              <tbody >
+                <tr>
+                  <td class=" px-4 py-4 text-center" >
+    
+                    <div >
+                      <ImagenCaption
+                       src="/matematicas4/dominio-codominio/Imagen11.PNG"
+                      />
+                    </div>
+                    
+                  </td>
+                  <td class=" px-4 py-4 text-center">
+                    <div  >
+                      
+                        <iframe width="840" height="473" src="https://www.youtube.com/embed/JqlqagimH4g?si=EGI4Wih7d4kdfPXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     
+                      
+                    </div>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+        <br>
+        <br>
+            <div class="mx-auto max-w-screen-xl">
+              <p> ¿Cómo será el comportamiento de su movimiento con base en las siguientes variables </p>
+            </div>
+            <br>
+        <br>
+        <br>
+
+
+            <div>
+              <table class="table "> 
+                <tbody> 
+                  <tr>
+                    <td class="border-b border-r border-slate-50 px-4 py-4 text-center">Posición x (posición horizontal), y(posición vertical)</td>
+                    
+                    <td class="border-b border-r border-slate-50 px-4 py-4 text-center">
+                      Posición t (tiempo) vs y(posición vertical)
+                    </td>
+                    <td class="border-b border-r border-slate-50 px-4 py-4 text-center">
+                      Posición t (tiempo) vs x(posición vertical)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-b border-r border-slate-50 px-4 py-4 text-center">
+                      <ImagenCaption
+                      src="/matematicas4/dominio-codominio/T1.jpg" />
+                    </td>
+                    
+                    
+                    <td class="border-b border-r border-slate-50 px-4 py-4 text-center"> 
+                      <ImagenCaption
+                     src="/matematicas4/dominio-codominio/T2.jpg" />
+                    </td>
+                    <td class="border-b border-r border-slate-50 px-4 py-4 text-center"> 
+                      <ImagenCaption
+                     src="/matematicas4/dominio-codominio/T4.jpg" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+  
+            
+          </div>
+
+          <Lumi
+		src="/matematicas4/dominio-codominio/p2-ej2.html"
+		nombre="Actividad"
+		instrucciones="Selecciona las respuestas correctas."
+    />
+            
+
+
+
+
+
+    
+
+</div> 
+    
+
+</Layout>

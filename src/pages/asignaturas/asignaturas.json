@@ -356,19 +356,14 @@
 					"resumen": "Dominio, codominio y regla de correspondencia en la representación de funciones matemáticas.",
 					"pantallas": [
 						{
-							"titulo": "Definición de dominio",
-							"slug": "/asignaturas/matematicas-4/dominio-codominio/dominio",
+							"titulo": "Gráfica de una función",
+							"slug": "/asignaturas/matematicas-4/dominio-codominio/grafica-funcion",
 							"descripcion": "Definición y propiedades del dominio en la representación de funciones matemáticas."
 						},
 						{
-							"titulo": "Definición de codominio",
-							"slug": "/asignaturas/matematicas-4/dominio-codominio/codominio",
+							"titulo": "Transformación de funciones",
+							"slug": "/asignaturas/matematicas-4/dominio-codominio/transformacion-funciones",
 							"descripcion": "Definición y propiedades del codominio en la representación de funciones matemáticas."
-						},
-						{
-							"titulo": "Definición de regla de correspondencia",
-							"slug": "/asignaturas/matematicas-4/dominio-codominio/regla-correspondencia",
-							"descripcion": "Definición y propiedades de la regla de correspondencia en la representación de funciones matemáticas."
 						}
 					]
 				},
