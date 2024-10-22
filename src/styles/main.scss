@@ -155,3 +155,34 @@ body {
     font-weight: 900;
   }
 }
+
+.table-responsive2 {
+  overflow-x:auto;
+}
+.table2 {
+	width:100%;
+  thead {
+    color: var(--css-honeydew);
+    background-color: rgb(196, 48, 4);
+    th {
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+  tbody{
+    tr {
+      background-color: rgb(250, 150, 120);
+      td {
+        padding: 1rem 2rem;
+      }
+      &:nth-of-type(odd) {
+        border-bottom:1px solid var(--css-berkeley-blue);
+        background-color: rgb(250, 205, 191);
+      }
+    }
+  }
+  th {
+    font-weight: 900;
+  }
+}
