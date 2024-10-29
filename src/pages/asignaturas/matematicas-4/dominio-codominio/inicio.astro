@@ -5,8 +5,6 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import GeogebraLink from '@/components/GeogebraLink.astro'
 import Lumi from "@/components/Lumi.astro"
 import ImagenCaption from '@/components/ImagenCaption.astro'
-import BgFluido from '@/components/BgFluido.astro'
-import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 ---
 
 <Layout
@@ -14,40 +12,37 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
   description="Explora diferentes relaciones, re¬conociendo las condiciones ne¬cesarias para determinar si una relación es función, la simboliza y distingue el dominio y el rango"
 >
 
-    <ObjetoAprendizaje index={3} asignatura={"matematicas_4"} />
-    <div class="objeto-aprendizaje mx-auto animate-fade">
-      <div class="mx-auto max-w-screen-xl">
+  <ObjetoAprendizaje index={3} asignatura={"matematicas_4"} />
+  <div class="objeto-aprendizaje mx-auto animate-fade">
+    <div class="mx-auto max-w-screen-xl my-9">
       <h3>Definición de función real de una variable real</h3>
       <p>Sean <Latex formula="X" inline={true}/> y <Latex formula="Y" inline={true}/>  conjuntos de números reales. Una función real <Latex formula="f" inline={true}/>  de una variable real <Latex formula="x" inline={true}/> de <Latex formula="X" inline={true}/> a <Latex formula="Y" inline={true}/> es una correspondencia que asigna a cada número <Latex formula="x" inline={true}/> de <Latex formula="X" inline={true}/> a <Latex formula="Y" inline={true}/> exactamente un número y  de <Latex formula="Y" inline={true}/>.</p>
 
       <p>El <i>dominio</i> de <Latex formula="f" inline={true}/> es el conjunto <Latex formula="X" inline={true}/>. El número <Latex formula="y" inline={true}/> es la imagen de <Latex formula="x" inline={true}/> bajo <Latex formula="f" inline={true}/> y se denota <Latex formula="y=f(x)" inline={true}/>, a lo cual se le llama el valor de <Latex formula="f" inline={true}/> en <Latex formula="x" inline={true}/>. El recorrido o rango de <Latex formula="f" inline={true}/> se define como el subconjunto de <Latex formula="Y" inline={true}/> formado por todas las imágenes de los números de <Latex formula="X" inline={true}/>.</p>
-      </div>
-
-      <GeogebraLink
-				texto="Te invitamos a revisar la siguiente construcción y después trabajes con los ejercicios:"
-				titulo="Construcción en GeoGebra."
-				href="https://www.geogebra.org/calculator/uub5rgyr"
-			/>
-
-    <Lumi
-		src="/matematicas4/dominio-codominio/p1e1.html"
-		nombre="Ejercicio"
-		instrucciones="Contesta las siguientes preguntas, con base en las siguientes gráficas"
-    />
-    <BgFluido>
-      <div class="mx-auto mb-5 max-w-screen-md">
-        <ImagenCaption
-          src="/matematicas4/dominio-codominio/imagen2.jpg"
-        />
-      </div>
-    </BgFluido>
-    <Lumi
-		src="/matematicas4/dominio-codominio/p1e2.html"
-		nombre="Ejercicio"
-		instrucciones="Con base en las gráficas de la infografía anterior, responde las siguientes preguntas."
-    />
-
-      
     </div>
 
+    <GeogebraLink
+      texto="Te invitamos a revisar la siguiente construcción y después trabajes con los ejercicios:"
+      titulo="Construcción en GeoGebra."
+      href="https://www.geogebra.org/calculator/uub5rgyr"
+    />
+
+  <Lumi
+  src="/matematicas4/dominio-codominio/p1e1.html"
+  nombre="Ejercicio"
+  instrucciones="Contesta las siguientes preguntas, con base en las siguientes gráficas"
+  />
+  <div class="mx-auto max-w-screen-sm my-5">
+    <ImagenCaption
+      src="/matematicas4/dominio-codominio/imagen2.jpg"
+    />
+  </div>
+  <Lumi
+  src="/matematicas4/dominio-codominio/p1e2.html"
+  nombre="Ejercicio"
+  instrucciones="Con base en las gráficas de la infografía anterior, responde las siguientes preguntas."
+  />
+
+
+  </div>
 </Layout>
