@@ -5,6 +5,7 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import GeogebraLink from '@/components/GeogebraLink.astro'
 import Lumi from "@/components/Lumi.astro"
 import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
 ---
 
 <Layout
@@ -32,11 +33,24 @@ import ImagenCaption from '@/components/ImagenCaption.astro'
   nombre="Ejercicio"
   instrucciones="Contesta las siguientes preguntas, con base en las siguientes gráficas"
   />
-  <div class="mx-auto max-w-screen-sm my-5">
-    <ImagenCaption
-      src="/matematicas4/dominio-codominio/imagen2.jpg"
-    />
-  </div>
+</div>
+
+  <BgFluido bg="bg-blue py-3">
+    <div class="mx-auto grid max-w-screen-lg items-center gap-5 xl:grid-cols-2">
+      <ImagenCaption
+        src="/matematicas4/dominio-codominio/dormir.webp"
+       
+        border={true}
+      />
+      <ImagenCaption
+        src="/matematicas4/dominio-codominio/graficaimg.webp"
+     
+        border={true}
+      />
+    </div>
+  </BgFluido>
+
+  
   <Lumi
   src="/matematicas4/dominio-codominio/p1e2.html"
   nombre="Ejercicio"

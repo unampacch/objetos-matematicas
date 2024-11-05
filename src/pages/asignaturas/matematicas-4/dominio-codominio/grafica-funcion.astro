@@ -28,12 +28,12 @@ import BgFluido from '@/components/BgFluido.astro'
 		<BgFluido bg="bg-blue py-3">
 			<div class="mx-auto grid max-w-screen-lg items-center gap-5 xl:grid-cols-2">
 				<ImagenCaption
-					src="/matematicas4/dominio-codominio/Imagen3.PNG"
+					src="/matematicas4/dominio-codominio/Imagen3.webp"
 					caption="No es función de "
 					border={true}
 				/>
 				<ImagenCaption
-					src="/matematicas4/dominio-codominio/Imagen4.PNG"
+					src="/matematicas4/dominio-codominio/Imagen4.webp"
 					caption="Una función de "
 					border={true}
 				/>
@@ -61,7 +61,7 @@ import BgFluido from '@/components/BgFluido.astro'
 		</BgFluido>
 
 		<div class="mx-auto max-w-screen-xl">
-			<div class="grid grid-cols-2 items-center gap-10">
+			<div class="grid grid-cols-3 items-center gap-5">
 				<div>
 					<h4 class="mb-3">Video "SPIN"</h4>
 					<iframe
@@ -74,6 +74,10 @@ import BgFluido from '@/components/BgFluido.astro'
 						allowfullscreen
 					>
 					</iframe>
+				</div>
+				<div>
+					<ImagenCaption src="/matematicas4/dominio-codominio/Imagen9.webp"/>
+
 				</div>
 				<div class="bg-slate-200 p-5 text-darkblue">
 					<p>
@@ -91,11 +95,11 @@ import BgFluido from '@/components/BgFluido.astro'
 			</p>
 			<div class="grid lg:grid-cols-2 lg:my-10">
 				<ImagenCaption
-					src="/matematicas4/dominio-codominio/T1.jpg"
+					src="/matematicas4/dominio-codominio/T1.webp"
 					caption="Posición x (posición horizontal), y (posición vertical)"
 				/>
 				<ImagenCaption
-					src="/matematicas4/dominio-codominio/T2.jpg"
+					src="/matematicas4/dominio-codominio/T2.webp"
 					caption="Posición t (tiempo) vs y (posición vertical)"
 				/>
 			</div>
@@ -115,6 +119,8 @@ import BgFluido from '@/components/BgFluido.astro'
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerpolicy="strict-origin-when-cross-origin"
 					allowfullscreen></iframe>
+
+					
 			</div>
 		</BgFluido>
 
@@ -122,9 +128,18 @@ import BgFluido from '@/components/BgFluido.astro'
 			<p>Las representaciones gráficas obtenidas de sus desplazamientos son los siguientes</p>
 		</div>
 
-		<BgFluido bg="bg-blue">
-			<div class="mx-auto mb-5 max-w-screen-md">
-				<ImagenCaption src="/matematicas4/dominio-codominio/Imagen10.PNG" />
+		<BgFluido bg="bg-blue py-3">
+			<div class="mx-auto grid max-w-screen-lg items-center gap-5 xl:grid-cols-2">
+				<ImagenCaption
+					src="/matematicas4/dominio-codominio/Imagen10_1.webp"
+				
+					border={true}
+				/>
+				<ImagenCaption
+					src="/matematicas4/dominio-codominio/Imagen10_2.webp"
+					
+					border={true}
+				/>
 			</div>
 		</BgFluido>
 
@@ -133,8 +148,8 @@ import BgFluido from '@/components/BgFluido.astro'
 			<ol class="ol-alpha">
 				<li>La posición horizontal vs la posición vertical del móvil representa una función.</li>
 				<li>El tiempo vs la posición vertical del móvil representa una función.</li>
-				<li>c) Ambas gráficas representan una función.</li>
-				<li>d) Ninguna de las gráficas representa una función.</li>
+				<li>Ambas gráficas representan una función.</li>
+				<li>Ninguna de las gráficas representa una función.</li>
 			</ol>
 		</div>
 
@@ -146,32 +161,27 @@ import BgFluido from '@/components/BgFluido.astro'
 			<p>Observa el siguiente video</p>
 		</div>
 
-		<div class="mx-auto max-w-screen-xl">
-			<table class="table">
-				<tbody>
-					<tr>
-						<td class="px-4 py-4 text-center">
-							<div>
-								<ImagenCaption src="/matematicas4/dominio-codominio/Imagen11.PNG" />
-							</div>
-						</td>
-						<td class="px-4 py-4 text-center">
-							<div>
-								<iframe
-									width="840"
-									height="473"
-									src="https://www.youtube.com/embed/JqlqagimH4g?si=EGI4Wih7d4kdfPXk"
-									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-									referrerpolicy="strict-origin-when-cross-origin"
-									allowfullscreen></iframe>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+		<BgFluido bg="bg-blue">
+			<div class="grid lg:grid-cols-2 lg:my-10">
+				<iframe
+          class="aspect-video w-full"
+		  width="840"
+		  height="473"
+		  src="https://www.youtube.com/embed/JqlqagimH4g?si=EGI4Wih7d4kdfPXk"
+		  title="YouTube video player"
+		  frameborder="0"
+		  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		  referrerpolicy="strict-origin-when-cross-origin"
+		  allowfullscreen></iframe>
+		
+
+		  <ImagenCaption src="/matematicas4/dominio-codominio/Imagen11.webp"/>
 		</div>
+		</BgFluido>
+
+		
+							
+			
 		<br />
 		<br />
 		<br />
@@ -182,35 +192,19 @@ import BgFluido from '@/components/BgFluido.astro'
 		<br />
 		<br />
 
-		<div>
-			<table class="table">
-				<tbody>
-					<tr>
-						<td class="border-b border-r border-slate-50 px-4 py-4 text-center"
-							>Posición x (posición horizontal), y(posición vertical)</td
-						>
-
-						<td class="border-b border-r border-slate-50 px-4 py-4 text-center">
-							Posición t (tiempo) vs y(posición vertical)
-						</td>
-						<td class="border-b border-r border-slate-50 px-4 py-4 text-center">
-							Posición t (tiempo) vs x(posición vertical)
-						</td>
-					</tr>
-					<tr>
-						<td class="border-b border-r border-slate-50 px-4 py-4 text-center">
-							<ImagenCaption src="/matematicas4/dominio-codominio/T1.jpg" />
-						</td>
-
-						<td class="border-b border-r border-slate-50 px-4 py-4 text-center">
-							<ImagenCaption src="/matematicas4/dominio-codominio/T2.jpg" />
-						</td>
-						<td class="border-b border-r border-slate-50 px-4 py-4 text-center">
-							<ImagenCaption src="/matematicas4/dominio-codominio/T4.jpg" />
-						</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="grid lg:grid-cols-3 lg:my-10">
+			<ImagenCaption
+				src="/matematicas4/dominio-codominio/T1.webp"
+				caption="Posición x (posición horizontal), y (posición vertical)"
+			/>
+			<ImagenCaption
+				src="/matematicas4/dominio-codominio/T2.webp"
+				caption="Posición t (tiempo) vs y (posición vertical)"
+			/>
+			<ImagenCaption
+				src="/matematicas4/dominio-codominio/T4.webp"
+				caption="Posición t (tiempo) vs y (posición vertical)"
+			/>
 		</div>
 
 		<Lumi
