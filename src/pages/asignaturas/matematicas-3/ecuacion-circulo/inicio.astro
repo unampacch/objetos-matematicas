@@ -1,17 +1,145 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
+import Lumi from '@/components/Lumi.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 ---
 
 <Layout
-  title=""
-  description=""
+  title="Ecuación de la circunferencia"
 >
 
     <ObjetoAprendizaje index={4} asignatura={"matematicas_3"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <h4>Ecuación de la circunferencia</h4>
+        <p>La circunferencia se define como el lugar geométrico que describe un punto que se mueve en el plano de tal manera que su distancia a un punto fijo llamado centro, es equidistante, es decir, que está a la misma <strong>distancia</strong>.</p>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/01.png" caption="Circunferencia"/>
+        </div>
+        <h4>Elementos de la circunferencia:</h4>
+        <ul class="ul-disc">
+          <li><strong>Centro</strong>: Es el punto fijo que se denota con la letra <Latex formula="C" inline={true}/>. Su coordenada en <Latex formula="x" inline={true}/> esta denotada por la letra <Latex formula="h" inline={true}/> y su coordenada en <Latex formula="y" inline={true}/>, se denota por la letra <Latex formula="k" inline={true}/>.</li>
+          <li><strong>Radio</strong>: Es la distancia que hay entre el centro <Latex formula="C(h,k)" inline={true}/> y cualquiera de sus puntos <Latex formula="P(x,y)" inline={true}/>. Se representa por la letra <Latex formula="r" inline={true}/>.</li>
+        </ul>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/02.png" caption="Elementos de la circunferencia"/>
+        </div>
+        <p>Para obtener la ecuación que describe a este lugar geométrico, se aplica la fórmula de distancia entre los puntos <Latex formula="C(h,k)" inline={true}/> y <Latex formula="P(x,y)" inline={true}/>.</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="d=\\sqrt{(x-h)^2 + (y-k)^2}"/>
+        </div>
+        <p>La distancia que se obtendrá es igual al radio, por lo que:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=\\sqrt{(x-h)^2 + (y-k)^2}"/>
+        </div>
+        <p>Elevando al cuadrado ambos miembros de la ecuación, se obtiene la ecuación ordinaria o canónica de la circunferencia con centro en <Latex formula="C(h,k)" inline={true}/> y radio <Latex formula="r" inline={true}/>.</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r^2=(x-h)^2 + (y-k)^2"/>
+        </div>  
+        <p>Para el caso especial en que el centro se localice en el origen, la ecuación quedaría de la siguiente forma:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r^2=x^2 + y^2"/>
+        </div>
+        <p>Te invitamos a revisar el siguiente applet de GeoGebra, en donde podrás observar cómo se comporta la circunferencia al variar los valores de <Latex formula="h,\\;k" inline={true}/> y <Latex formula="r" inline={true}/>.</p>
+        <GeogebraLink
+              href="https://www.geogebra.org/m/mddgbt9y"
+              texto="Comportamiento de la circunferencia"
+        />
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/03.png" caption="Ecuación ordinaria de la circunferencia"/>
+        </div>
+        
+      </div>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo 1</h4>
+        <p>Determina el centro, el radio y grafica de la circunferencia, cuya ecuación ordinaria es:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x^2 + y^2=9"/>
+        </div>
+        <p>Solución:</p>
+        <p>De acuerdo con la ecuación se puede observar que tanto <Latex formula="h" inline={true}/> y <Latex formula="k" inline={true}/> valen 0, por lo que el centro de la circunferencia es <Latex formula="C(0,0)" inline={true}/>.</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r^2=9"/>
+        </div>
+        <p>Aplicando raíz cuadrada a ambos miembros de la ecuación, se obtiene:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=\\sqrt{9}=3"/>
+        </div>
+        <p>El bosquejo de la gráfica quedaría:</p>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/04.png" caption="Ejemplo 1. Gráfica"/>
+        </div>
+      </BgFluido>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo 2</h4>
+        <p>Determina el centro, el radio y grafica de la circunferencia, cuya ecuación ordinaria es:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="(x+4)^2 + (y-8)^2 = 16"/>
+        </div>
+        <p>Solución:</p>
+        <p>De acuerdo con la ecuación se puede observar que:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="h=-4"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="k=8"/>
+        </div>
+        <p>Por lo que el centro de la circunferencia es: <Latex formula="C(-4,8)" inline={true}/></p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r^2 = 16"/>
+        </div>
+        <p>Aplicando raíz cuadrada a ambos miembros de la ecuación, se obtiene:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=\\sqrt{16}=4"/>
+        </div>
+        <p>El bosquejo de la gráfica quedaría:</p>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/05.png" caption="Ejemplo 2. Gráfica"/>
+        </div>
+      </BgFluido>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo 3</h4>
+        <p>Obtén la ecuación de la circunferencia con centro en <Latex formula="(2,4)" inline={true}/> y que pasa por el punto <Latex formula="P (8,12)" inline={true}/></p>
+        <p>Solución:</p>
+        <p>Como el centro está en <Latex formula="(2,4)" inline={true}/>, por lo tanto:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="h=2\\;y\\;k=4"/>
+        </div>
+        <p>Ahora debemos de hallar el valor del radio, por lo que emplearemos la fórmula de la distancia para encontrar dicho valor.</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=\\sqrt{(x-h)^2 + (y-k)^2}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=\\sqrt{(8-2)^2 + (12-4)^2}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=\\sqrt{(6)^2 + (8)^2}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=\\sqrt{36+64}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=\\sqrt{100}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="r=10"/>
+        </div>
+        <p>La ecuación de la circunferencia:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="(x-2)^2+(y-4)^2=100"/>
+        </div>
+        <p>El bosquejo de la gráfica quedaría de la siguiente forma:</p>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/06.png" caption="Ejemplo 3. Gráfica"/>
+        </div>
+      </BgFluido>
+      <div class="mx-auto max-w-screen-xl">
+        <h3>Actividad: Selecciona la respuesta correcta.</h3>
+      </div>
     </div>
 
 </Layout>

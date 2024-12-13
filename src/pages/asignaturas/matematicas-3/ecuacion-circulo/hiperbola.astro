@@ -1,0 +1,126 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import BgFluido from '@/components/BgFluido.astro'
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout
+  title="Hipérbola"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={4} pantallaIndex={4} asignatura={"matematicas_3"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+        <div class="mx-auto max-w-screen-xl">
+            <p>En esta sección se repasará el tema de la hipérbola, donde conocerás los elementos que la caracterizan, como son: los vértices, los focos, el centro, los lados rectos y sus asíntotas. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él.</p>
+            <h4>Hipérbola</h4>
+            <p>La hipérbola cumple la condición de que la diferencia de las distancias de los focos a cualquier punto de la curva permanece constante.</p>
+            <div class="my-5 text-center text-xl">
+                <Latex formula="\\left|d1-d2\\right|=2a"/>
+            </div>
+            <div class="mx-auto  lg:w-1/2">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/34.PNG" caption="Hipérbola"/>
+            </div>
+            <p>La hipérbola también se define como la sección cónica de una curva abierta de dos ramas obtenida al cortar un cono por un plano perpendicular a la base de este.</p>
+            <div class="mx-auto  lg:w-1/2">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/35.PNG" caption=""/> <a href="https://es.wikipedia.org/wiki/Hip%C3%A9rbola" target="_blank" ></a>
+            </div>
+            <BgFluido bg="bg-blue">
+                <h4 class="font-extrabold uppercase !text-stone-50">Definición de hipérbola</h4>
+                <p>La hipérbola es el lugar geométrico de todos los puntos de un plano, tales que la diferencia de sus distancias a dos puntos fijos llamados focos, siempre es constante. A esta distancia constante se le denomina longitud del eje transverso. También existe el eje conjugado, perpendicular al eje transverso y de longitud finita.</p>
+                <p>La hipérbola puede tener el eje transverso paralelo al eje “X”, paralelo al eje “Y” o bien oblicuos.</p>
+            </BgFluido>
+            <p><strong>Elementos de una hipérbola</strong></p>
+            <ul class="ul-disc">
+                <li>El <b>centro C</b> es el punto donde se intersecan los ejes mayor y menor, representa además el punto medio entre los focos y los vértices.</li>
+                <li>Los <b>vértices V1 y V2</b> son los puntos de intersección del eje focal con la hipérbola, la distancia entre ellos es  <Latex formula="2a" inline={true}/>.</li>
+                <li>Los <b>focos F1 y F2</b> son los puntos ubicados sobre el eje focal dentro de la hipérbola, designando a la distancia entre ellos como <b><Latex formula="2c" inline={true}/></b>.</li>
+                <li><b>Eje transversal  <Latex formula="2a" inline={true}/></b> es la distancia entre los vértices “V1” y “V2”.</li>
+                <li><b>Eje conjugado   <Latex formula="2a" inline={true}/></b> es la distancia entre “B1” y “B2” y es perpendicular al eje mayor.</li>
+                <li><b>Lado Recto L.R.</b> son los segmentos que pasan por cada foco y que son perpendiculares al eje transversal.</li>
+                <li><b>Distancia Focal <Latex formula="2c" inline={true}/></b> es la distancia que existe entre los focos.</li>
+                <li><b>Excentricidad  <Latex formula="e" inline={true}/></b> es la relación que existe entre la distancia focal <Latex formula="(2c)" inline={true}/> y la longitud del eje mayor <Latex formula="(2a)" inline={true}/>.</li>
+            </ul>
+            <div class="mx-auto  lg:w-1/2">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/36.PNG" caption="Elementos de una hipérbola"/>
+            </div>
+            <h4>Ecuación y elementos de la hipérbola con centro en el origen</h4>
+            <p>Una hipérbola de centro en el origen y ejes paralelos a los cartesianos puede ser vertical u horizontal dependiendo de si su eje focal es paralelo al eje <Latex formula="x" inline={true}/>  o al eje <Latex formula="y" inline={true}/>.</p>
+            <p><strong>Hipérbola horizontal con centro en el origen.</strong></p>
+            <p>El eje transversal coincide con el eje <Latex formula="X" inline={true}/>.</p>
+            <div class="mx-auto  lg:w-1/2">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/37.png" caption="Ecuación canónica"/>
+            </div>
+            <p>Ecuación canónica:</p>
+            <div class="my-5 text-center text-xl">
+                <Latex formula="\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1"/>
+            </div>
+            <h4>Elementos</h4>
+            <ul class="ul-disc">  
+                <li>Vértices: <Latex formula="V1(a,0)" inline={true}/> y <Latex formula="V2(-a,0)" inline={true}/></li>
+                <li>Focos: <Latex formula="F1(c,0)" inline={true}/> y <Latex formula="F2(-c,0)" inline={true}/></li>
+                <li>Extremos del eje conjugado: <Latex formula="B1(0,b)" inline={true}/> y <Latex formula="B2(0,-b)" inline={true}/></li>
+                <li>Asíntotas: <Latex formula="l1:y=\\frac{b}{a}x\\hspace{1cm}l2:y=-\\frac{b}{a}x" inline={true}/></li>
+                <li>Lado Recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|" inline={true}/></li>
+                <li>Excentricidad: <Latex formula="e=\\frac{c}{a}\\hspace{1cm}(e>1)" inline={true}/></li>
+            </ul>
+            <p>La hipérbola es horizontal cuando en la ecuación canónica la <Latex formula="x^2" inline={true}/> es  positiva y vertical cuando la <Latex formula="y^2" inline={true}/> es positiva.</p>
+            <p><strong>Hipérbola vertical con centro en el origen.</strong></p>
+            <p>El eje transversal coincide con el eje <Latex formula="Y" inline={true}/>.</p>
+            <div class="mx-auto  lg:w-1/2">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/38.png" caption="Ecuación canónica"/>
+            </div>
+            <p>Ecuación canónica:</p>
+            <div class="my-5 text-center text-xl">
+                <Latex formula="\\frac{y^2}{a^2}-\\frac{x^2}{b^2}=1"/>
+            </div>
+            <h4>Elementos</h4>
+            <ul class="ul-disc">  
+                <li>Vértices: <Latex formula="V1(0,a)" inline={true}/> y <Latex formula="V2(0,-a)" inline={true}/></li>
+                <li>Focos: <Latex formula="F1(0,c)" inline={true}/> y <Latex formula="F2(0,-c)" inline={true}/></li>
+                <li>Extremos del eje conjugado: <Latex formula="B1(b,0)" inline={true}/> y <Latex formula="B2(-b,0)" inline={true}/></li>
+                <li>Asíntotas: <Latex formula="l1:y=\\frac{a}{b}x\\hspace{1cm}l2:y=-\\frac{a}{b}x" inline={true}/></li>
+                <li>Lado Recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|" inline={true}/></li>
+                <li>Excentricidad: <Latex formula="e=\\frac{c}{a}\\hspace{1cm}(e>1)" inline={true}/></li>
+            </ul>
+        </div>
+        <BgFluido bg="bg-blue">
+            <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+        </BgFluido>
+        <div class="mx-auto max-w-screen-xl">
+            <p>Determina los elementos de la hipérbola dada la siguiente ecuación:</p>
+            <div class="my-5 text-center text-xl">
+                <Latex formula="\\frac{y^2}{36}-\\frac{x^2}{16}=1"/>
+            </div>
+            <p><strong>Solución</strong></p>
+            <p>Para esta ecuación la <Latex formula="y^2" inline={true}/> es positiva, por lo que es una hipérbola vertical.</p>
+            <p>Por lo que <Latex formula="a^2=36" inline={true}/> y <Latex formula="b^2=16" inline={true}/></p>   
+            <p>Obteniendo raíz cuadrada: Obteniendo el valor de c  : y <Latex formula="b=4" inline={true}/></p>
+            <p>Obteniendo el valor de <Latex formula="c" inline={true}/>:</p>
+            <div class="my-5 text-center text-xl">
+                <Latex formula="c=\\sqrt{a^2+b^2}"/>
+            </div>
+            <div class="my-5 text-center text-xl">
+                <Latex formula="c=\\sqrt{36+16}"/>
+            </div>
+            <div class="my-5 text-center text-xl">
+                <Latex formula="\\sqrt{52}"/>
+            </div>
+            <p>Sustituyendo los valores de a, b y c, los elementos de la elipse quedarían de la siguiente forma:</p>
+
+            <ul class="ul-disc">  
+                <li>Vértices: <Latex formula="V1(0,6)" inline={true}/> y <Latex formula="V2(0,-6)" inline={true}/></li>
+                <li>Focos: <Latex formula="F1(0,\\sqrt{52})" inline={true}/> y <Latex formula="F2(0,-\\sqrt{52})" inline={true}/></li>
+                <li>Extremos del eje conjugado: <Latex formula="B1(b,0)" inline={true}/> y <Latex formula="B2(-b,0)" inline={true}/></li>
+                <li>Asíntotas: <Latex formula="l1:y=\\frac{6}{4}x\\hspace{1cm}l2:y=-\\frac{6}{4}x" inline={true}/></li>
+                <li>Lado Recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|=\\left|\\frac{2*16}{6}\\right|=\\left|\\frac{32}{6}\\right|=5.3" inline={true}/></li>
+                <li>Excentricidad: <Latex formula="e=\\frac{\\sqrt{52}}{6}\\hspace{1cm}(e>1)" inline={true}/></li>
+            </ul>
+            <div class="mx-auto  lg:w-1/2">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/39.png" caption="Ejemplo. Gráfica"/>
+            </div>
+        </div>
+    </div>
+</Layout>

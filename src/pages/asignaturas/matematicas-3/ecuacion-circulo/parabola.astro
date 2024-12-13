@@ -1,0 +1,234 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import BgFluido from '@/components/BgFluido.astro'
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout
+  title="Parabola"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={4} pantallaIndex={0} asignatura={"matematicas_3"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+        <p>En esta sección se repasará el tema de la parábola, en donde conocerás los elementos que definen a la parábola, como son: el vértice, el foco, la directriz y el lado recto. Además, se revisará su ecuación ordinaria con centro en el origen y fuera de él.</p>
+        <h4>Parabola</h4>
+        <p>Revisa el siguiente recurso >> <a href="https://view.genially.com/655a2d237702540011ccb8fa/interactive-image-elementos-de-la-parabola" target="_blank" ><b>Elementos de la parábola</b></a></p>
+        <div class="mx-auto ">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/07.png" caption="Elementos de la parábola"/>
+        </div>
+        <BgFluido bg="bg-blue">
+          <h4 class="font-extrabold uppercase !text-stone-50">Definición de una parabola</h4>
+          <p>Una parábola es el conjunto de puntos <Latex formula="P(x,y)" inline={true}/> en el plano que son equidistantes a una recta fija <Latex formula="l" inline={true}/> llamada directriz, y a un punto fijo <Latex formula="F" inline={true}/>,  llamado foco.</p>
+        </BgFluido>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/08.png" caption="Elementos de la parábola"/>
+        </div>
+        <p>El eje de la parábola es la recta que pasa por <Latex formula="F" inline={true}/> y  es perpendicular a la directriz. El vértice de la parábola es el punto <Latex formula="V" inline={true}/> sobre el eje situado a media distancia entre <Latex formula="F" inline={true}/> y  <Latex formula="l" inline={true}/>. El vértice es el punto en la parábola más cercano a la directriz.</p>
+        <p>De acuerdo con la figura, el foco <Latex formula="F" inline={true}/> tiene  coordenadas <Latex formula="(0,p)" inline={true}/> para  algún número real <Latex formula="p≠ 0" inline={true}/>, y la ecuación de la directriz es <Latex formula="y=-p" inline={true}/>. (La figura muestra el caso <Latex formula="p > 0" inline={true}/>.) Por la fórmula de la distancia, un punto <Latex formula="P(x,y)" inline={true}/> está  en la gráfica de la parábola si y sólo si <Latex formula="d(P,F) = d(P,P')" inline={true}/> es  decir, si:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\sqrt{(x-0)^2 + (y-p)^2}=\\sqrt{(x-x)^2+(y+p)^2}"/>
+        </div>
+        <p>Elevando al cuadrado ambos miembros de la ecuación y simplificando:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x^2 + (y-p)^2=(y+p)^2"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x^2 + y^2 -2yp+p^2 = y^2 +2yp+p^2"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x^2=4py"/>
+        </div>
+        <p>Una ecuación equivalente para la parábola es:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="y=\\frac1{4p}x^2"/>
+        </div>
+        <p>Se ha demostrado que las coordenadas de todo punto <Latex formula="(x,y)" inline={true}/> sobre  la parábola satisface <Latex formula="x^2=4y" inline={true}/>. A la inversa, si <Latex formula="(x,y)" inline={true}/> es  una solución de <Latex formula="x^2=4y" inline={true}/>, entonces al revertir los pasos previos vemos que el punto <Latex formula="(x,y)" inline={true}/> está  sobre la parábola.</p>
+        <p>Si <Latex formula="p > 0" inline={true}/>, la parábola abre hacia arriba, como se muestra en la figura. Si <Latex formula="p < 0" inline={true}/>, la parábola abre hacia abajo. La gráfica es simétrica con respecto al eje y porque la sustitución de <Latex formula="-x" inline={true}/>  por <Latex formula="x" inline={true}/> no cambia la ecuación <Latex formula="x^2=4y" inline={true}/>.</p>
+        <p>Si intercambiamos los papeles de <Latex formula="x" inline={true}/> y  <Latex formula="y" inline={true}/>,  obtenemos:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="y^2=4px"/>
+        </div>
+        <p>o bien, lo que es equivalente</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x=\\frac1{4p}y^2"/>
+        </div>
+        <p>Ésta es una ecuación de una parábola con vértice en el origen, foco <Latex formula="F(p,0)" inline={true}/> y  abre a la derecha si <Latex formula="p > 0" inline={true}/>, o a la izquierda si <Latex formula="p < 0" inline={true}/>. La ecuación de la directriz es <Latex formula="x = -p" inline={true}/>.</p>
+        <div class="my-5 text-center text-xl">
+          <h4>Parábolas con vértice <Latex formula="V(0,0)" inline={true}/></h4>
+        </div>
+        <table class="table border-collapse bg-slate-900 text-white">
+          <tbody>
+            <tr>
+              <td class="border-b border-r border-slate-50 px-4 py-2 text-center w-1/6">Ecuación, foco, directriz</td>
+              <td class="border-b border-r border-slate-50 px-4 py-2 text-center">Gráfica para <Latex formula="p<0" inline={true}/></td>
+              <td class="border-b px-4 py-2 text-center">Gráfica para <Latex formula="p>0" inline={true}/></td>
+            </tr>
+            <tr>
+              <td class="border-b border-r border-slate-50 px-4 py-2 text-center">
+                <Latex formula="x^2=4py" inline={true}/>
+                <Latex formula="y=\\frac1{4p}x^2" inline={true}/>
+                <p>Foco <Latex formula="F(0,p)" inline={true}/></p>
+                <p>directriz <Latex formula="y=-p" inline={true}/></p>
+                <p>Lado recto <Latex formula="\\left|4p\\right|" inline={true}/></p>
+              </td>
+              <td class="border-b border-r border-slate-50 px-4 py-2 text-center">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/09.png" caption="Parábola"/>
+              </td>
+              <td class="border-b px-4 py-2 text-center">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/10.png" caption="Parábola"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="border-b border-r border-slate-50 px-4 py-2 text-center">
+                <Latex formula="y^2=4px" inline={true}/>
+                <Latex formula="x=\\frac1{4p}y^2" inline={true}/>
+                <p>Foco <Latex formula="F(p,0)" inline={true}/></p>
+                <p>directriz <Latex formula="x=-p" inline={true}/></p>
+                <p>Lado recto <Latex formula="\\left|4p\\right|" inline={true}/></p>
+              </td>
+              <td class="border-b border-r border-slate-50 px-4 py-2 text-center">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/11.png" caption="Parábola"/>
+              </td>
+              <td class="border-b px-4 py-2 text-center">
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/12.png" caption="Parábola"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo 1</h4>
+      </BgFluido>
+      <div class="mx-auto max-w-screen-xl">
+        <p>Encuentre el foco y directriz de la parábola <Latex formula="y=-\\frac{2}{4}x^2" inline={true}/> y trace su gráfica.</p>
+        <p><strong>Solución</strong></p>
+        <p>La ecuación tiene la forma <Latex formula="y=\\frac{1}{4p}x^2" inline={true}/></p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\frac{1}{4p}=-\\frac{2}{4}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="1=-\\frac{8p}{4}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="1=-2p"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="p=-\\frac{1}{2}"/>
+        </div>
+        <p>Ahora, podemos utilizar esta información para encontrar otros elementos de la parábola:</p>
+        <ol class="ol-number mt-5">
+          <li><strong>Vértice</strong> es el origen <Latex formula="(0,0)" inline={true}/>.</li>
+          <li><strong>Foco <Latex formula="F(0,p)" inline={true}/></strong>. Dado  que <Latex formula="p=-\\frac{1}{2}" inline={true}/> el foco se encuentra en <Latex formula="F(0,-\\frac{1}{2})" inline={true}/>.</li>
+          <li><strong>Directriz</strong>. La directriz de la parábola está dada por la ecuación <Latex formula="y=-p" inline={true}/>. Sustituyendo:
+            <div class="my-5 text-center text-xl">
+              <Latex formula="y=-(-\\frac{1}{2})"/>
+            </div>
+            <div class="my-5 text-center text-xl">
+              <Latex formula="y=\\frac{1}{2}"/>
+            </div>
+          </li>
+          <li><strong>Longitud del lado recto (la distancia focal)</strong>. La longitud del lado recto de la parábola es  <Latex formula="\\left|4p\\right|" inline={true}/>, por lo que:
+            <div class="my-5 text-center text-xl">
+              <Latex formula="\\left|4(-\\frac{1}{2})\\right|"/>
+            </div>
+            <div class="my-5 text-center text-xl">
+              <Latex formula="\\left|-\\frac{4}{2}\\right|"/>
+            </div>
+            <div class="my-5 text-center text-xl">
+              <Latex formula="\\frac{4}{2}=2"/>
+            </div>
+          </li>
+        </ol>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/13.png" caption="Ejemplo 1. Gráfica"/>
+        </div>
+      </div>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo 2</h4>
+      </BgFluido>
+      <div class="mx-auto max-w-screen-xl">
+        <p>Encuentre los elementos de la parábola cuya ecuación es:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x^2=16y"/>
+        </div>
+        <p><strong>Solución</strong></p>
+        <p>Esta ecuación está en la forma ordinaria de la ecuación de una parábola vertical. La forma general de la ecuación de una parábola de este tipo es <Latex formula="x^2=4py" inline={true}/>, donde es la distancia del vértice al foco y también la distancia del vértice a la directriz.</p>
+        <p>Comparando con la ecuación dada <Latex formula="x^2=16y" inline={true}/> podemos identificar:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="4p=16"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="p=\\frac{16}{4}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="p=4"/>
+        </div>
+        <p>Ahora, podemos utilizar esta información para encontrar otros elementos de la parábola:</p>
+        <ol class="ol-number mt-5">
+          <li><strong>Vértice</strong> es el origen <Latex formula="(0,0)" inline={true}/>.</li>
+          <li><strong>Foco <Latex formula="F(0,p)" inline={true}/></strong>. Dado que el vértice es  <Latex formula="(0,0)" inline={true}/> y <Latex formula="p=4" inline={true}/>, el foco se encuentra en <Latex formula="F(0,4)" inline={true}/>.</li>
+          <li><strong>Directriz</strong>. La directriz de la parábola está dada por la ecuación <Latex formula="y=-p" inline={true}/>. Sustituyendo: <Latex formula="y=-4" inline={true}/></li>
+          <li><strong>Longitud del lado recto (la distancia focal)</strong>. La longitud del lado recto de la parábola es <Latex formula="\\left|4p\\right|" inline={true}/>, por lo que:
+            <div class="my-5 text-center text-xl">
+              <Latex formula="\\left|4p\\right|=\\left|4(4)\\right|=16"/>
+            </div>
+          </li>
+        </ol>
+        <p>Entonces, los elementos de la parábola son:</p>
+        <ul class="ul-disc">
+          <li>Vértice: <Latex formula="(0,0)" inline={true}/></li>
+          <li>Foco: <Latex formula="(0,4)" inline={true}/></li>
+          <li>Directriz: <Latex formula="y=-4" inline={true}/></li>
+          <li>Longitud del lado recto: <Latex formula="16" inline={true}/></li>
+        </ul>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/14.png" caption="Ejemplo 2. Gráfica"/>
+        </div>
+      </div>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo 3</h4>
+      </BgFluido> 
+      <div class="mx-auto max-w-screen-xl">
+        <p>Encuentre los elementos de la parábola cuya ecuación es:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="y^2=12x"/>
+        </div>
+        <p><strong>Solución</strong></p>
+        <p>Esta ecuación está en la forma ordinaria de la ecuación de una parábola horizontal. La forma general de la ecuación de una parábola de este tipo es <Latex formula="y^2=4px" inline={true}/>, donde <Latex formula="p" inline={true}/> es la distancia del vértice al foco y también la distancia del vértice a la directriz.</p>
+        <p>Comparando con la ecuación dada <Latex formula="y^2=12x" inline={true}/>, podemos identificar:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="4p = 12"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="p=\\frac{12}{4}= 3"/>
+        </div>
+        <p>Los elementos de la parábola quedarían como:</p>
+        <ol class="ol-number mt-5">
+          <li><strong>Vértice</strong> es el origen <Latex formula="(0,0)" inline={true}/>.</li>
+          <li><strong>Foco <Latex formula="F(0,p)" inline={true}/></strong>. Dado que el vértice es  <Latex formula="(0,0)" inline={true}/> y <Latex formula="p=3" inline={true}/>, el foco se encuentra en <Latex formula="F(0,3)" inline={true}/>.</li>
+          <li><strong>Directriz</strong>. La directriz de la parábola está dada por la ecuación <Latex formula="x=-p" inline={true}/>. Sustituyendo: <Latex formula="x=-3" inline={true}/></li>
+          <li><strong>Longitud del lado recto (la distancia focal)</strong>. La longitud del lado recto de la parábola es <Latex formula="\\left|4p\\right|" inline={true}/>, por lo que:
+            <div class="my-5 text-center text-xl">
+              <Latex formula="\\left|4p\\right|=\\left|4(3)\\right|=12"/>
+            </div>
+          </li>
+        </ol>
+        <p>Entonces, los elementos de la parábola son:</p>
+        <ul class="ul-disc">
+          <li>Vértice: <Latex formula="(0,0)" inline={true}/></li>
+          <li>Foco: <Latex formula="(0,3)" inline={true}/></li>
+          <li>Directriz: <Latex formula="x=-3" inline={true}/></li>
+          <li>Longitud del lado recto: <Latex formula="12" inline={true}/></li>
+        </ul>
+        <div class="mx-auto  lg:w-1/2">
+          <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/15.png" caption="Ejemplo 3. Gráfica"/>
+        </div>
+        <h3>Actividad: Selecciona la respuesta correcta.</h3>
+      </div> 
+    </div>
+
+</Layout>
