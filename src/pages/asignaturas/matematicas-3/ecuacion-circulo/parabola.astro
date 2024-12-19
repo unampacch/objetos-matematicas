@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
+import Lumi from '@/components/Lumi.astro'
 import BgFluido from '@/components/BgFluido.astro'
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
@@ -227,8 +228,12 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <div class="mx-auto  lg:w-1/2">
           <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/15.png" caption="Ejemplo 3. Gráfica"/>
         </div>
-        <h3>Actividad: Selecciona la respuesta correcta.</h3>
       </div> 
+      <Lumi
+		    src="/matematicas3/ecuaciones-conicas/Parabola.html"
+		    nombre="Actividad"
+		    instrucciones="Selecciona la respuesta correcta."
+	    />
     </div>
-
+    
 </Layout>

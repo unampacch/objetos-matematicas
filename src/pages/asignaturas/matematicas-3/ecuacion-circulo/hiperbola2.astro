@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
+import Lumi from '@/components/Lumi.astro'
 import BgFluido from '@/components/BgFluido.astro'
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
@@ -48,7 +49,11 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <li>Lado Recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|" inline={true}/></li>
         <li>Excentricidad: <Latex formula="e=\\frac{c}{a}\\hspace{1cm}(e>1)" inline={true}/></li>
       </ul>
-      <h3>Actividad: Selecciona la respuesta correcta</h3>
       </div>
+      <Lumi
+		    src="/matematicas3/ecuaciones-conicas/Hiperbola.html"
+		    nombre="Actividad"
+		    instrucciones="Selecciona la respuesta correcta."
+	    />
     </div>
 </Layout>
