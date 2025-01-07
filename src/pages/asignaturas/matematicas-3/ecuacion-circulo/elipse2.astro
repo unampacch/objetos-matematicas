@@ -15,7 +15,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
     <ObjetoAprendizajePantalla index={4} pantallaIndex={3} asignatura={"matematicas_3"}/> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
     <div class="objeto-aprendizaje mx-auto animate-fade">
       <div class="mx-auto max-w-screen-xl">
-        <p>La ecuación de la elipse en su forma general está dada por <Latex formula="Ax^2+Cy^2+Dx+Ey+F=0" inline={true}/> con <Latex formula="A\\neqC" inline={true}/> y ambas cantidades de igual signo.</p>
+        <p>La ecuación de la elipse en su forma general está dada por <Latex formula="Ax^2+Cy^2+Dx+Ey+F=0" inline={true}/> con <Latex formula="A\\neq C" inline={true}/> y ambas cantidades de igual signo.</p>
         <p><u>Elipse horizontal</u></p>
         <p>El eje mayor es paralelo al eje <Latex formula="X" inline={true}/>.</p>
         <p>Ecuación canónica:</p>
@@ -30,7 +30,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
             <li>Focos: <Latex formula="F1(h+c,k)\\;y\\;F2 (h-c,k)" inline={true}/></li>
             <li>Extremos del eje menor: <Latex formula="B1(h,k+b)\\;y\\;B2(h,k-b)" inline={true}/></li>
             <li>Lado recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|" inline={true}/></li>
-            <li>Excentricidad: <Latex formula="e=\\frac{c}{a" inline={true}/></li>
+            <li>Excentricidad: <Latex formula="e=\\frac{c}{a}" inline={true}/></li>
         </ul>
 
         <p><u>Elipse vertical</u></p>
@@ -47,7 +47,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
             <li>Focos: <Latex formula="F1(h,k+c)\\;y\\;F2(h,k-c)" inline={true}/></li>
             <li>Extremos del eje menor: <Latex formula="B1(h+b,k)\\;y\\;B2(h-b,k)" inline={true}/></li>
             <li>Lado recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|" inline={true}/></li>
-            <li>Excentricidad: <Latex formula="e=\\frac{c}{a" inline={true}/></li>
+            <li>Excentricidad: <Latex formula="e=\\frac{c}{a}" inline={true}/></li>
         </ul>
         <BgFluido bg="bg-blue">
             <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
@@ -63,9 +63,9 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
             <p>Obteniendo el valor de c:</p>
             <p>Sustituyendo los valores de <Latex formula="a" inline={true}/>, <Latex formula="b" inline={true}/> y <Latex formula="c" inline={true}/>, los elementos de la elipse quedarían de la siguiente forma:</p>
             <ul class="ul-disc">
-                <li>Vértices: <Latex formula="	V1(5,-2+4)\\;y\\;V2(5,-2-4)\\longrightarrowV1(5,2)\\;y\\;V2(5,-6)" inline={true}/></li>
-                <li>Focos: <Latex formula="F1(5,-2+\\sqrt{7})\\;y\\;F2(5,-2-\\sqrt{7})\\longrightarrowF1(5,0.65)\\;y\\;F2(5,-4.65)" inline={true}/></li>
-                <li>Extremos del eje menor: <Latex formula="B1(5+3,-2)\\;y\\;B2(5-3,-2)\\longrightarrowB1(8,-2)\\;y\\;B2(2,-2)" inline={true}/></li>
+                <li>Vértices: <Latex formula="	V1(5,-2+4)\\;y\\;V2(5,-2-4)\\longrightarrow V1(5,2)\\;y\\;V2(5,-6)" inline={true}/></li>
+                <li>Focos: <Latex formula="F1(5,-2+\\sqrt{7})\\;y\\;F2(5,-2-\\sqrt{7})\\longrightarrow F1(5,0.65)\\;y\\;F2(5,-4.65)" inline={true}/></li>
+                <li>Extremos del eje menor: <Latex formula="B1(5+3,-2)\\;y\\;B2(5-3,-2)\\longrightarrow B1(8,-2)\\;y\\;B2(2,-2)" inline={true}/></li>
                 <li>Lado recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|=\\left|\\frac{2*9}{4}\\right|=\\left|\\frac{18}{4}\\right|=4.5" inline={true}/></li>
                 <li>Excentricidad: <Latex formula="e=\\frac{c}{a}=\\frac{\\sqrt{7}}{4}=0.66" inline={true}/></li>
             </ul>
