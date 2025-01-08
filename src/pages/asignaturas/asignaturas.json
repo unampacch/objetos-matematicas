@@ -378,26 +378,36 @@
 					"resumen": "Funciones matemáticas y su aplicación en la resolución de problemas matemáticos."
 				},
 				{
-					"titulo": "Función exponencial y logarítmica",
-					"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica",
-					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la función exponencial y logarítmica en el ámbito de la matemática. Contiene una exploración exhaustiva de las funciones exponenciales y logarítmicas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-					"resumen": "Funciones exponenciales y logarítmicas y su aplicación en la resolución de problemas matemáticos.",
+					"titulo": "Funciones exponenciales y logarítmicas",
+					"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/crecimiento-decaimiento",
+					"portada": "/matematicas4/funciones-exp-logaritmicas/portada-funcion-exp.jpg",
+					"descripcion": "Explora situaciones o fenómenos que corresponden a crecimiento o decaimiento exponencial, las relaciones o condiciones existentes y analiza las formas de variación.",
+					"resumen": "Aquí vas a utilizar las funciones exponencial y logarítmica para representar formas de variación de fenómenos de la naturaleza, y que éstas permitan modelar.",
 					"pantallas": [
 						{
-							"titulo": "Definición de función exponencial",
-							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/exponencial",
-							"descripcion": "Definición y propiedades de la función exponencial."
+							"titulo": "Comportamiento de funciones exponenciales",
+							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/comportamiento-exponencial",
+							"descripcion": "Identifica patrones de cambio involucrados en el crecimiento o decrecimiento de una función exponencial y bosqueja su gráfica."
 						},
 						{
-							"titulo": "Definición de función logarítmica",
-							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/logaritmica",
-							"descripcion": "Definición y propiedades de la función logarítmica."
+							"titulo": "Importancia y caracterización del número e",
+							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/importancia-numero-e",
+							"descripcion": "Identifica patrones de cambio involucrados en el crecimiento o decrecimiento de una función exponencial y bosqueja su gráfica."
 						},
 						{
-							"titulo": "Aplicaciones de las funciones exponenciales y logarítmicas",
-							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/aplicaciones",
-							"descripcion": "Aplicaciones de las funciones exponenciales y logarítmicas en la resolución de problemas matemáticos."
+							"titulo": "Noción de función inversa",
+							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/funcion-inversa",
+							"descripcion": "Analiza la relación entre las gráficas de funciones exponenciales con diferentes bases."
+						},
+						{
+							"titulo": "Logaritmos con base 10 y naturales",
+							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/logaritmos-base-10",
+							"descripcion": "Analiza la relación entre las gráficas de funciones exponenciales con diferentes bases."
+						},
+						{
+							"titulo": "Gráficas de funciones logarítmicas",
+							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/graficas-funciones-logaritmicas",
+							"descripcion": "Analiza la relación entre las gráficas de funciones exponenciales con diferentes bases."
 						}
 					]
 				},
