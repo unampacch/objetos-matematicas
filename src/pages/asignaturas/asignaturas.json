@@ -454,12 +454,12 @@
 					"resumen": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Procesos infinitos",
+							"titulo": "Situaciones que dan lugar a procesos infinitos",
 							"slug": "/asignaturas/calculo/sucesiones-series/situacion-procesos-infinitos",
 							"descripcion": "Definición y propiedades de las sucesiones numéricas."
 						},
 						{
-							"titulo": "Suma parcial",
+							"titulo": "Suma parcial de una serie",
 							"slug": "/asignaturas/calculo/sucesiones-series/suma-parcial",
 							"descripcion": "Definición y propiedades de las series numéricas."
 						},
@@ -469,7 +469,7 @@
 							"descripcion": "Criterios de convergencia y divergencia de sucesiones y series numéricas."
 						},
 						{
-							"titulo": "ejemplos resueltos",
+							"titulo": "Ejemplos resueltos",
 							"slug": "/asignaturas/calculo/sucesiones-series/ejemplos-resueltos",
 							"descripcion": "Criterios de convergencia y divergencia de sucesiones y series numéricas."
 						}
