@@ -448,26 +448,32 @@
 			"objetos_aprendizaje": [
 				{
 					"titulo": "Sucesiones y series ",
-					"slug": "/asignaturas/calculo/sucesiones-series",
+					"slug": "/asignaturas/calculo/sucesiones-series/inicio",
 					"portada": "/holder-cover.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las sucesiones y series en el ámbito de la matemática. Contiene una exploración exhaustiva de las sucesiones y series numéricas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de sucesiones",
-							"slug": "/asignaturas/calculo/sucesiones-series/sucesiones",
+							"titulo": "Procesos infinitos",
+							"slug": "/asignaturas/calculo/sucesiones-series/situacion-procesos-infinitos",
 							"descripcion": "Definición y propiedades de las sucesiones numéricas."
 						},
 						{
-							"titulo": "Definición de series",
-							"slug": "/asignaturas/calculo/sucesiones-series/series",
+							"titulo": "Suma parcial",
+							"slug": "/asignaturas/calculo/sucesiones-series/suma-parcial",
 							"descripcion": "Definición y propiedades de las series numéricas."
 						},
 						{
-							"titulo": "Convergencia y divergencia",
-							"slug": "/asignaturas/calculo/sucesiones-series/convergencia-divergencia",
+							"titulo": "Procesos infinitos",
+							"slug": "/asignaturas/calculo/sucesiones-series/procesos-infinitos",
+							"descripcion": "Criterios de convergencia y divergencia de sucesiones y series numéricas."
+						},
+						{
+							"titulo": "ejemplos resueltos",
+							"slug": "/asignaturas/calculo/sucesiones-series/ejemplos-resueltos",
 							"descripcion": "Criterios de convergencia y divergencia de sucesiones y series numéricas."
 						}
+
 					]
 				},
 				{

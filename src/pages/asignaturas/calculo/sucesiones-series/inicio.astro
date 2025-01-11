@@ -2,16 +2,118 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
 ---
 
 <Layout
-  title=""
+  title="Sucesión"
   description=""
 >
 
-    <ObjetoAprendizaje index={0} asignatura={"calculo"} />
+    <ObjetoAprendizaje index={1} asignatura={"calculo"} />
+
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+          <div class="bg-slate-200 p-5 text-darkblue">
+            <p>
+              En forma general, en matemáticas una sucesión <Latex formula="\\{a_n\\}" inline={true}/>  es considerada como un conjunto de números escritos en un orden definido. De manera formal una sucesión puede definirse como una función de los números naturales cuyo rango es un conjunto <b>A</b> cualquiera de los números reales.
+            </p>
+            <p class="text-center">
+              <Latex formula=" f: \\{ 1, 2, 3, 4, 5,... \\} \\rightarrow\\ A " inline={true}/>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <h3>Ejemplo 1</h3>
+        <p>El siguiente conjunto de números forma una sucesión:</p>
+        <p class="text-center text-lg"><Latex formula="\\{1,\\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\frac{1}{5},...\\}" inline={true}/></p>
+        <p>De manera iterada se va aumentando el valor del denominador en una unidad, en esta sucesión cada término se puede expresar a través de una función como:</p>
+        <p class="text-center text-lg">
+          <Latex formula="a_n=\\frac{1}{n}" inline={true}/> con <Latex formula="n=1, 2, 3, 4, ..." inline={true}/> 
+        </p>
+        <p>Dicha expresión nos permite predecir el valor que tendrá algún elemento de la sucesión, por ejemplo, el elemento 30 de la sucesión será:</p>
+        <p class="text-center text-lg">
+          <Latex formula="a_{30}=\\frac{1}{30}" inline={true}/>
+        </p>
+      </div> 
+              <Lumi
+            src="/calculo/sucesiones-series/p1 ej1.html"
+            nombre="Actividad"
+            instrucciones="Contesta las siguientes preguntas, con base en las siguientes gráficas"
+            />
+        <br>
+        <br>
+
+      <div class="mx-auto mb-5 max-w-screen-xl">
+
+        <h3 class="mx-auto">Límite de una sucesión</h3>
+        <p>Consideremos que cada elemento de una sucesión es generado por la siguiente relación:</p>
+
+        <p class="text-center text-lg">
+          <Latex formula="a_n=\\frac{1}{n}" inline={true}/> con <Latex formula="n=1, 2, 3, 4, ..." inline={true}/>
+        </p>
+
+      </div>
+
+      <GeogebraLink
+      texto="para poder visualizar y poder entender de mejor manera el comportamiento de la sucesión grafiquemos las parejas n, a, n:"
+				href="https://www.geogebra.org/m/ca43ajce"
+			/>
+      <div class="mx-auto mb-5 max-w-screen-xl">
+
+      <p>Como se puede observar los términos de la sucesión  <Latex formula="a_n=\\frac{1}{n}" inline={true}/> se hacen pequeños a medida que el valor de <Latex formula="n" inline={true}/> se hace grande, de hecho, los términos serán tan pequeños que se considera que tienden a cero conforme los valores de n son suficientemente grandes.</p>
+      </div>
+
+          <Lumi
+          src="/calculo/sucesiones-series/p1 ej2.html"
+          nombre="Actividad"
+          instrucciones="Contesta las siguiente pregunta"
+          />
+          <br>
+          <br>
+          <br>
+          <div class="mx-auto mb-5 max-w-screen-xl">
+            <p>Dada la sucesión <Latex formula="a_n=\\frac{2n-4}{n-1}" inline={true}/> , usa el applet y responde:</p>
+          </div>
+          <GeogebraLink
+      texto="applet"
+				href="https://www.geogebra.org/m/cchrjret"
+			/>
+
+          <Lumi
+          src="/calculo/sucesiones-series/p1 ej3.html"
+          nombre="Actividad"
+          instrucciones="Usa el applet y responde"
+          />
+
+          <br>
+          <br>
+          <br>
+
+
+          <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+            <div class="bg-slate-200 p-5 text-darkblue">
+              <p>
+                En forma general, si los términos <Latex formula="a_n" inline={true}/> de una sucesión se aproximan a un valor <Latex formula="L" inline={true}/> cuando n se aproxima al infinito el valor límite de esta sucesión será <Latex formula="L" inline={true}/>.
+              </p>
+              <p class="text-center">
+                <Latex formula="\\lim_{n\\rightarrow \\infty}a_n=L" inline={true}/>
+              </p>
+            </div>
+          </div>
+
+
+
+      
+
+
+
+
     </div>
 
 </Layout>
