@@ -16,7 +16,101 @@ import BgFluido from '@/components/BgFluido.astro'
 
     <ObjetoAprendizajePantalla index={0} pantallaIndex={2} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <p>Una pregunta interesante sería intentar responder:</p>
+
+        <p><i> ¿Cuál sería la distancia que la pelota recorrería si pudiera rebotar una infinidad de veces bajo las mismas condiciones? </i></p>
+
+        <p>Sabemos que la distancia recorrida en <i>n</i>-ésimo rebote está dado por la expresión:</p>
+
+        <p class="text-center">
+          <Latex formula="s_n=a+\\sum_{n=0}^{3}a\\left(\\frac{1}{2}\\right)^n=a+a\\left(1+\\frac{1}{2}+\\frac{1}{2^2}+\\frac{1}{2^3}+\\frac{1}{2^4}+\\frac{1}{2^5}+\\cdots+\\frac{1}{2^n}\\right)" inline={true}/>
+        </p>
+
+        <p>Y estamos interesados en conocer el valor límite de esta suma si es que la pelota rebotara una infinidad de veces. En matemáticas este hecho se puede expresar:</p>
+
+        <p class="text-center">
+          <Latex formula="d_{recorrida}=\\lim_{n\\rightarrow \\infty}S_n " inline={true}/>
+        </p>
+
+        <p>En esta expresión se indica que estamos interesados en conocer el valor límite de la sucesión cuando la cantidad de rebotes “<i>n</i>” tiende a infinito, esto es, se toman valores de <i>n</i> cada vez más grandes.</p>
+
+        <h3>Suma infinita de una serie</h3>
+
+        <p>Es interesante notar que el proceso del rebote de una pelota que hemos venido trabajando se puede realizar en teoría una cantidad infinita de veces, por lo cual sería interesante conocer ¿Cuál es el valor límite de la suma?</p>
+
+        <p>Para ello consideremos que el valor de la razón común en la serie r tiene un valor <Latex formula="-1<x<1" inline={true}/> , entonces, cuando n tiende a infinito <Latex formula="n\\rightarrow \\infty" inline={true}/>   el valor de la razón elevado a la potencia n como hemos visto tenderá a cero <Latex formula="r^n \\rightarrow 0" inline={true}/> , en otras palabras, el valor límite de la suma será:</p>
+
+        <div class="mx-auto mb-5 max-w-screen-md">
+          <ImagenCaption
+            src="/calculo/sucesiones-series/img02.PNG"
+          />
+        </div>
+
+        <p>Por lo anterior el valor límite de la serie será:</p>
+
+        <p class="text-center">
+          <Latex formula="S=\\lim_{n\\rightarrow\\infty}S_n=\\sum_{n=1}^{\\infty}ar^{n-1}=\\frac{a}{(1-r)} " inline={true}/>
+        </p>
+
+        <p>Con esta herramienta podemos conocer la distancia que recorrería hipotéticamente la pelota del ejemplo, si rebotara una infinidad de veces.</p>
+
+        <p>En cuanto a la suma infinita S (suma de todos los términos), converge cuando <Latex formula="-1<r<1" inline={true}/> </p>
+
+        <p class="text-center">
+          <Latex formula="S = \\lim_{n\\rightarrow \\infty} S_n = \\lim_{n\\rightarrow \\infty} \\left(\\sum_{k=0}^{n} ar^{k-1}\\right) = \\lim_{n\\rightarrow \\infty} \\frac{a - ar^n}{1 - r} = \\frac{a}{1 - r}" inline={true}/>
+        </p>
+
+        <p>En nuestro caso dicha distancia recorrida será:</p>
+
+        <p class="text-center">
+          <Latex formula="d_{recorrida} = a + \\sum_{n=0}^{\\infty} a\\left(\\frac{1}{2}\\right)^{n}" inline={true}/>
+        </p>
+
+        <p>Como podemos observar el valor de <i>r</i> es menor uno, por lo que la serie converge a:</p>
+
+        <p class="text-center">
+          <Latex formula="d_{recorrida}=a+\\frac{a}{1-\\frac{1}{2}}" inline={true}/>
+        </p>
+
+        <p class="text-center">
+          <Latex formula="d_{recorrida}=a+2a=3a " inline={true}/>
+        </p>
+
+        <p>Por ejemplo, si la altura de la que cae es de 2m la distancia total que recorrería en el infinito sería de:</p>
+
+        <p class="text-center">
+          <Latex formula="d_{recorrida}=3(2m)=6m" inline={true}/>
+        </p>
+
+        <p>Es interesante notar que, en la tabla realizada previamente, nos sugería que la distancia recorrida se aproximaba al valor de seis metros. La convergencia de la serie geométrica nos permite determinar su valor. </p>
+
+        <p>En resumen:</p>
+
+        <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+          <div class="bg-slate-200 p-5 text-darkblue">
+            <p>
+              Una serie geométrica es de la forma:
+            </p>
+            <p class="text-center">
+              <Latex formula="\\sum_{n=1}^{\\infty}{ar^{n-1}}=a+ar+ar^2+ar^3+\\dots+ar^{n-1}+\\dots" inline={true}/>
+            </p>
+            <p>
+              Dicha serie converge siempre que <Latex formula="-1<r<1" inline={true}/>, siendo el valor de su suma:
+            </p>
+            <p class="text-center">
+              <Latex formula="\\sum_{n=1}^{\\infty} ar^{n-1} = \\frac{a}{1 - r}" inline={true}/>
+            </p>
+            <p>
+              Y diverge cuando 
+            </p>
+            <p class="text-center">
+              <Latex formula="r\\leq -1" inline={true}/> o bien <Latex formula="r\\geq 1" inline={true}/>
+            </p>
+          </div>
+
+
+      </div>
     </div>
 
 </Layout>
