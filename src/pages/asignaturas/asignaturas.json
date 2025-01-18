@@ -740,26 +740,16 @@
 			"descripcion": "Curso de Estadística para estudiantes de bachillerato. Aprende a analizar datos y tomar decisiones basadas en la información.",
 			"objetos_aprendizaje": [
 				{
-					"titulo": "Ordenaciones, permutaciones y combinaciones",
-					"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones",
-					"portada": "/holder-cover.webp",
+					"titulo": "Combinaciones",
+					"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/inicio",
+					"portada": "/portadas/Combinaciones-96342.jpg",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las ordenaciones, permutaciones y combinaciones en el ámbito de la estadística. Contiene una exploración exhaustiva de las técnicas de ordenación y combinación de elementos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de ordenaciones",
-							"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/ordenaciones",
-							"descripcion": "Definición y propiedades de las ordenaciones de elementos."
-						},
-						{
-							"titulo": "Definición de permutaciones",
-							"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/permutaciones",
-							"descripcion": "Definición y propiedades de las permutaciones de elementos."
-						},
-						{
-							"titulo": "Definición de combinaciones",
-							"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/combinaciones",
-							"descripcion": "Definición y propiedades de las combinaciones de elementos."
+							"titulo": "Combinaciones (Particiones Ordenadas)",
+							"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/combinaciones-particiones",
+							"descripcion": ""
 						}
 					]
 				},

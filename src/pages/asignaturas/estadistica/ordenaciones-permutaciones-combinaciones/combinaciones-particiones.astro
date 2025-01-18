@@ -1,0 +1,34 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Lumi from '@/components/Lumi.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+---
+
+<Layout title="Combinaciones (Particiones ordenadas)" description="">
+	<ObjetoAprendizajePantalla index={0} pantallaIndex={0} asignatura={'estadistica'} />
+	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h4>Combinaciones (Particiones ordenadas)</h4>
+			<p><b>Teorema</b></p>
+			<p>Sea <Latex formula="A" inline={true}/> compuesto de <Latex formula="n" inline={true}/> elementos y sean <Latex formula="n_1, n_{2},\\ldots,n_r" inline={true}/> enteros positivos con <Latex formula="n_1, n_{2},\\ldots,n_r=n" inline={true}/>. Entonces existen: <Latex formula="\\frac{n!}{n_1!n_2!n_3!\\ldots n_r!}" inline={true}/></p>
+			<p>Particiones ordenadas diferentes de <Latex formula="A" inline={true}/> de la forma <Latex formula="(A_1, A_2, \\ldots, A_r)" inline={true}/>. Donde: <Latex formula="A_1" inline={true}/>  consta de <Latex formula="n_1" inline={true}/>  elementos, <Latex formula="A_2" inline={true}/>  consta de <Latex formula="n_2" inline={true}/>  elementos, <Latex formula="\\ldots" inline={true}/>, <Latex formula="A_r" inline={true}/>  consta de <Latex formula="n_r" inline={true}/>  elementos.</p>
+			<p>Para comprender un poco de más del tema te invito a ver el video >> <a href="https://youtu.be/ChAO2sjNaUg" target="_blank"><b>COMBINACIONES (PARTICIONES ORDENADAS)</b></a>.</p>
+			<Lumi
+		    src="/estadistica/combinaciones/Actividad_4.html"
+		    nombre="Actividad 4"
+		    instrucciones="Después de revisar el video y para identificar lo que has aprendido hasta el momento, te invitamos a dar respuesta a la siguiente trivia."
+	    	/>
+			<div class="mx-auto  lg:w-1/2">
+				<ImagenFullCaption src="/estadistica/combinaciones/combinacionesfin.jpg" caption=""/>
+		  	</div>
+			<p><b>Referencias bibliográficas</b></p>
+			<p>SEYMOUR LIPSCHUTZ & MARC LIPSON (2010) PROBABILIDAD, Segunda edición. Editorial Mc Graw Hill. Páginas 49 a 60</p>
+			<p>Haroldo Elorza (2000) Estadística para las ciencias sociales y del comportamiento, Segunda edición. Editorial OXFORD. Páginas 187 a 189</p>
+			<p>Montes de Oca Francisco (1983) Resolución total de Probabilidad y Estadística. Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas del IPN, Páginas 90 a 96</p>
+			<p>Miller I., Freund J, & Johnson R. (1992) Probabilidad y Estadística para Ingenieros. Cuarta Edición. Editorial Prentice- Hall. Hispano Americana, S.A. Páginas 50 a 55</p>
+		</div>
+	</div>
+</Layout>
