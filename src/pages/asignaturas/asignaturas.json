@@ -244,7 +244,7 @@
 							"titulo": "Relación de coordenadas rectangulares y polares",
 							"slug": "/asignaturas/matematicas-3/sistemas-coordenados/relacion-polares-rectangulares"
 						}
-						
+
 					]
 				},
 				{
@@ -753,32 +753,36 @@
 			"descripcion": "Curso de Estadística para estudiantes de bachillerato. Aprende a analizar datos y tomar decisiones basadas en la información.",
 			"objetos_aprendizaje": [
 				{
-					"titulo": "Ordenaciones, permutaciones y combinaciones",
-					"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones",
+					"titulo": "Permutaciones",
+					"slug": "/asignaturas/estadistica/permutaciones/inicio",
 					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las ordenaciones, permutaciones y combinaciones en el ámbito de la estadística. Contiene una exploración exhaustiva de las técnicas de ordenación y combinación de elementos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+					"descripcion": "Las permutaciones en la estadistica son un tema importante para el análisis de datos.",
 					"resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
 							"titulo": "Definición de ordenaciones",
-							"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/ordenaciones",
+							"slug": "/asignaturas/estadistica/permutaciones/difinicion",
 							"descripcion": "Definición y propiedades de las ordenaciones de elementos."
-						},
-						{
-							"titulo": "Definición de permutaciones",
-							"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/permutaciones",
-							"descripcion": "Definición y propiedades de las permutaciones de elementos."
-						},
+						}
+					]
+				},
+				{
+					"titulo": "Combinaciones",
+					"slug": "/asignaturas/estadistica/combinaciones/inicio",
+					"portada": "/holder-cover.webp",
+					"descripcion": "Las combinaciones en la estadistica son un tema importante para el análisis de datos.",
+					"resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
+					"pantallas": [
 						{
 							"titulo": "Definición de combinaciones",
-							"slug": "/asignaturas/estadistica/ordenaciones-permutaciones-combinaciones/combinaciones",
+							"slug": "/asignaturas/estadistica/combinaciones/definicion",
 							"descripcion": "Definición y propiedades de las combinaciones de elementos."
 						}
 					]
 				},
 				{
 					"titulo": "Estadística descriptiva",
-					"slug": "/asignaturas/estadistica/descriptiva",
+					"slug": "/asignaturas/estadistica/descriptiva/inicio",
 					"portada": "/holder-cover.webp",
 					"descripcion": "Este material aborda de manera detallada la estadística descriptiva en el ámbito de la estadística. Contiene una exploración exhaustiva de las técnicas de análisis de datos, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Estadística descriptiva y su aplicación en la resolución de problemas matemáticos.",
