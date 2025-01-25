@@ -699,26 +699,12 @@
 				},
 				{
 					"titulo": "La integral deﬁnida",
-					"slug": "/asignaturas/calculo/integral-definida",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/integral-definida/inicio",
+					"portada": "/calculo/definicion-integral/calculo-portada-10.webp",
 					"descripcion": "Este material aborda de manera detallada la integral deﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral deﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral deﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						{
-							"titulo": "Definición de integral deﬁnida",
-							"slug": "/asignaturas/calculo/integral-definida/definicion",
-							"descripcion": "Definición y propiedades de la integral deﬁnida de una función real."
-						},
-						{
-							"titulo": "Teorema fundamental del cálculo",
-							"slug": "/asignaturas/calculo/integral-definida/teorema-fundamental",
-							"descripcion": "Teorema fundamental del cálculo y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Aplicaciones de la integral deﬁnida",
-							"slug": "/asignaturas/calculo/integral-definida/aplicaciones",
-							"descripcion": "Aplicaciones de la integral deﬁnida en la resolución de problemas matemáticos."
-						}
+						
 					]
 				},
 				{
