@@ -681,19 +681,14 @@
 					"resumen": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Integración por partes",
-							"slug": "/asignaturas/calculo/metodos-integracion/partes",
+							"titulo": "Tipos de métodos de integración",
+							"slug": "/asignaturas/calculo/metodos-integracion/metodo-integracion",
 							"descripcion": "Método de integración por partes y su aplicación en la resolución de problemas matemáticos."
 						},
 						{
-							"titulo": "Integración por sustitución",
-							"slug": "/asignaturas/calculo/metodos-integracion/sustitucion",
+							"titulo": "Ejemplos de métodos de integración",
+							"slug": "/asignaturas/calculo/metodos-integracion/ejemplos",
 							"descripcion": "Método de integración por sustitución y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Integración de funciones trigonométricas",
-							"slug": "/asignaturas/calculo/metodos-integracion/trigonometricas",
-							"descripcion": "Método de integración de funciones trigonométricas y su aplicación en la resolución de problemas matemáticos."
 						}
 					]
 				},
