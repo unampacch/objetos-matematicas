@@ -1,0 +1,227 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+---
+
+<Layout
+  title="Ejemplos"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={9} pantallaIndex={1} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto mb-5 max-w-screen-xl">
+      <p>Para ejemplificar el procedimiento anterior, resolvamos la siguiente integral:</p>
+      <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int{\\dfrac{2x-5}{(x-3)(7x-2)}} dx"/></p>
+      <ol class="ol-number">
+        <li><p>Es el caso 1 porque los factores del denominador son diferentes; debemos asignar dos letras A y B porque el denominador es de segundo grado, entonces:</p> 
+          <p class="text-center"><Latex inline={true} formula="\\dfrac{2x-5}{(x-3)(7x+2)}=\\dfrac{A}{x-3}+\\dfrac{B}{7x+2} "/></p>
+       </li>
+        <li>Multiplicamos la ecuación por el denominador factorizado
+          <ImagenFullCaption src="/calculo/metodos-integracion/img03.PNG" />
+        </li>
+        <li>Planteamos el sistema de ecuaciones.
+          <p class="text-center"><Latex inline={true} formula="2x-5=(7A+B)x +(2A-3B)"/></p>
+          <p class="text-center"><Latex inline={true} formula="\\begin{cases} 7A +B &= 2 \\\\ 2A -3B &= -5 \\end{cases}"/></p>
+          <p>Al resolver el sistema de ecuaciones, se encuentra que <Latex inline={true} formula="A=\\dfrac{1}{23}"/> y <Latex inline={true} formula="B=\\dfrac{39}{23} "/></p>
+          <p>Sustituyendo en las integrales queda:</p>
+          <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int{\\dfrac{2x-5}{(x-3)(7x+2)}} dx=\\int{\\left[ \\dfrac{\\frac{1}{23}}{x-3} + \\dfrac{\\frac{39}{23}}{7x+2} \\right]} dx "/></p>
+          <p>Luego:</p>
+          <p class="text-center"><Latex inline={true} formula="\\displaystyle I= \\dfrac{1}{23}\\int{\\dfrac{dx}{x-3}}+\\dfrac{39}{23}\\int{\\dfrac{dx}{7x+2}} "/></p>
+        </li>
+        <li>Completamos lo que falte de la diferencial, para poder aplicar un cambio de variable, usando la regla de integración <Latex inline={true} formula="\\displaystyle \\int{\\dfrac{du}{u}}=\\ln \\left| u \\right| +C"/></li>
+        <p class="text-center"><Latex inline={true} formula="\\displaystyle I= \\dfrac{1}{23}\\int{\\dfrac{dx}{x-3}}+\\dfrac{39}{23(7)}\\int{\\dfrac{(7)dx}{7x+2}} "/></p>
+        <p class="text-center"><Latex inline={true} formula="\\displaystyle I= \\dfrac{1}{23}\\int{\\dfrac{du}{u}}+\\dfrac{39}{161}\\int{\\dfrac{du}{u}} "/></p>
+        <p class="text-center"><Latex inline={true} formula="I=\\dfrac{1}{23}\\ln \\left| x-3 \\right| + \\dfrac{39}{161}\\ln \\left| 7x+2 \\right| "/></p>
+      </ol> 
+
+      <h4> Profundización en el tema </h4>
+
+        <p>Para profundizar en este método con más ejercicios consulta el video “Integración por fracciones parciales”</p>
+
+        </div>
+
+        <BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/ASRWHY3rKPk?si=FCQahUsSBQdUmLC1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+
+    <Lumi
+        src="/calculo/metodos-integracion/p3 ej1.html"
+        nombre="Actividad"
+        instrucciones="Después de ver el video, resuelve las siguientes integrales y responde correctamente"
+        />
+        <div class="mx-auto mb-5 max-w-screen-xl">
+          <br> 
+          <h4>Método de integración por sustitución trigonométrica</h4>
+
+          <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+            <div class="bg-rose-300 p-5 text-darkblue">
+              <p>
+                Se utiliza este método cuando requiere integrar raíces cuadradas de sumas o restas de cuadrados, siempre que no aplique cambio de variable.</p>
+            </div>
+          </div>
+          <br>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Justificación</th>
+                    <th>Relación entre los lados del triángulo</th>
+                    <th>Razones trigonométricas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                  <td class="border border-gray-400 p-4">
+                    <ImagenCaption
+                      src="/calculo/metodos-integracion/img04.PNG"
+                      />
+                  </td>
+                    <td class="border border-gray-400 p-4">
+                        <p>Despejando la hipotenusa:</p>
+                        <p class="text-center"><Latex inline={true} formula="c= \\sqrt{a^2+b^2} "/></p>
+                        <p>Cuando se deba integrar la raíz de una suma de cuadrados, esta será una hipotenusa.</p>
+                    </td>
+                    <td class="border border-gray-400 p-4" rowspan="2">
+                      <p class="text-center"><Latex inline={true} formula="\\sin(\\theta)=\\dfrac{co}{hip} "/></p>
+                      <p class="text-center"><Latex inline={true} formula="\\cos(\\theta)=\\dfrac{ca}{hip} "/></p>
+                      <p class="text-center"><Latex inline={true} formula="\\tan(\\theta)=\\dfrac{co}{ca} "/></p>
+                      <p class="text-center"><Latex inline={true} formula="\\cot(\\theta)=\\dfrac{ca}{co} "/></p>
+                      <p class="text-center"><Latex inline={true} formula="\\sec(\\theta)=\\dfrac{hip}{ca}"/></p>
+                      <p class="text-center"><Latex inline={true} formula="\\csc(\\theta)=\\dfrac{hip}{co} "/></p>
+                    </td>
+                </tr>
+                <tr >
+                  <td class="border border-gray-400 p-4"> 
+                    <p>Teorema de Pitágoras</p> 
+                    <p class="text-center"><Latex inline={true} formula="c^2=a^2+b^2"/></p>
+                  </td>
+                    <td class="border border-gray-400 p-4">
+                        <p>Despejando un cateto:</p>
+                        <p class="text-center"><Latex inline={true} formula="a=\\sqrt{c^2-b^2} "/></p>
+                        <p>Cuando se deba integrar la raíz de una resta de cuadrados, esta será un cateto.</p>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        
+          </div>
+
+          <h4>Sistematización</h4>
+          <p>Explicaremos los pasos a seguir, a partir de la resolución de la siguiente integral:</p>
+          <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int{\\dfrac{5dx}{\\sqrt{9x^2+4}}} "/></p>
+
+          <div class="table-responsive">
+            <table class="table">
+            <tbody>
+                <tr >
+                  <td class="border border-gray-400 p-4">
+                    <p><b>1) Construir el triángulo:</b></p>
+                  </td>
+                    <td class="border border-gray-400 p-4">
+                        <p><b>2) Definir 2 razones trigonométricas: </b></p>
+                    </td>  
+                </tr>
+                <tr>
+                  <td class="border border-gray-400 p-4"> 
+                    <p>Observamos que en la integral hay una raíz cuadrada de una suma de cuadrados, por lo que esta raíz representa a la hipotenusa.</p> 
+                    <ImagenCaption
+                    src="/calculo/metodos-integracion/img05.PNG"
+                    />
+                  </td>
+                    <td class="border border-gray-400 p-4">
+                        <ol class="ol-number">
+                          <li>en la primera se relaciona la medida constante con la raíz:
+                            <p class="text-center"><Latex inline={true} formula="\\csc(\\theta)=\\dfrac{\\sqrt{x^2+4}}{2}"/> de donde <Latex inline={true} formula="\\sqrt{x^2 +4}=2\\csc (\\theta) "/></p>
+                          </li>
+                          <li>en la segunda se relaciona la medida constante con el otro lado variable del triángulo, en este caso <Latex inline={true} formula="3x"/>
+                            <p class="text-center"><Latex inline={true} formula="\\cot (\\theta)=\\dfrac{x}{2}"/> de donde <Latex inline={true} formula="x=2 \\cot (\\theta)"/></p>
+                            <p>Luego, al derivar tenemos:</p>
+                            <p class="text-center"><Latex inline={true} formula="dx=-2\\csc^2(\\theta) d\\theta "/></p>
+                          </li>
+                    </td>
+                </tr>
+                <tr >
+                  <td class="border border-gray-400 p-4">
+                    <p><b>3) Sustituir las partes en la integral </b></p>
+                  </td>
+                    <td class="border border-gray-400 p-4">
+                      <p><b>4) Resolver la integral</b></p>
+                    </td>
+                   
+                </tr>
+                <tr >
+                  <td class="border border-gray-400 p-4" rowspan="3">
+                    <p class="text-center"><Latex inline={true} formula="I=\\displaystyle \\int{\\dfrac{5[-2\\csc^2(\\theta)d\\theta}{2\\csc(\\theta)}} "/></p>
+                  </td>
+                    <td class="border border-gray-400 p-4">
+                      <p class="text-center"><Latex inline={true} formula="I=-5\\displaystyle \\int{\\csc(\\theta)d\\theta} =-5\\ln\\left| \\csc(\\theta)-\\cot(\\theta) \\right|+C "/></p>
+                    </td>
+                   
+                </tr>
+                <tr >
+                  <td class="border border-gray-400 p-4">
+                    <p><b>5) Expresar la integral en términos de la variable original</b></p>
+                  </td>
+                  
+                </tr>
+                <tr >
+                  <td class="border border-gray-400 p-4">
+                    <p class="text-center"><Latex inline={true} formula="I=-5\\ln\\left| \\dfrac{\\sqrt{x^2+4}}{2}-\\dfrac{x}{2} \\right| +C =-5\\ln\\left| \\dfrac{\\sqrt{x^2+4}-x}{2} \\right| +C "/></p>
+                  </td>
+                </tr>
+                <tr >
+                  <td class="border border-gray-400 p-4" colspan="2">
+                    <p>NOTAS:</p>
+                    <ul class="list-disc">
+                      <li>	El nombramiento de los catetos con medidas x y 2, pudo haberse hecho invertido, lo cual ocasionaría la obtención de un resultado aparentemente diferente, pero éste es equivalente.</li>
+                      <li>En las 2 razones trigonométricas que se definan, conviene usar aquellas en las que la variable esté en el numerador.</li>
+                  </td>
+                </tr>
+            </tbody>
+            </table>
+        
+          </div>
+
+          <h4>Profundización en el tema</h4>
+          <p>Para profundizar en este método con más ejercicios consulta el video “Integración por sustitución trigonométrica”</p>
+
+        </div>
+
+        <BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/bt8mXM9fX-Y?si=gIbXTnYERDzMmDP0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+
+        <Lumi
+        src="/calculo/metodos-integracion/p3 ej2.html"
+        nombre="Actividad"
+        instrucciones="Después de ver el video, resuelve las siguientes integrales y selecciona la respuesta correcta. NOTA: recuerda que hay dos maneras correctas de estructurar la repuesta, dependiendo del acomodo que hayas hecho de los catetos en el triángulO; por lo tanto, hay dos respuestas correctas."
+        />
+
+    </div>
+
+</Layout>

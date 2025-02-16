@@ -1,0 +1,171 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import Video from '@/components/Video.astro'
+---
+
+<Layout
+  title="Procesos infinitos"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={0} pantallaIndex={0} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <p>Imaginemos que tenemos una pelota a cierta altura del suelo, la cual dejamos caer y rebota varias veces de manera vertical, en su primer rebote contra el suelo llega a la mitad de la altura inicial, en el segundo nuevamente alcanza la mitad del rebote anterior y continua este proceso de manera sucesiva. </p>
+      </div>
+      <GeogebraLink
+      texto="Proceso finito"
+				href="https://www.geogebra.org/m/syfz5qgv"
+			/>
+
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <p class="text-center text text-violet-400 text-xl">¿Si la pelota rebota 3 veces qué distancia recorrió la pelota?</p>
+        <p class="text-center text text-violet-400 text-xl">¿Si la pelota rebota 5 veces qué distancia recorrió la pelota?</p>
+        <p class="text-center text text-violet-400 text-xl">¿Si la pelota rebota 8 veces qué distancia recorrió la pelota?</p>
+
+        <h3>Análisis del proceso</h3>
+      </div>
+      <div class="mx-auto mb-5 max-w-screen-md">
+        <ImagenCaption
+          src="/calculo/sucesiones-series/img01.PNG"
+        />
+      </div>
+
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <p>El primer momento seria cuando cae <Latex formula="a" inline={true}/> unidades, el segundo sería <Latex formula=" \\frac{a}{2}" inline={true}/>, el tercero <Latex formula="\\frac{a}{4}" inline={true}/>y así sucesivamente por lo que es claro que esta sucesión seria:</p>
+
+        <p class="text-center text-xl">
+          <Latex formula="a, \\frac{a}{2}, \\frac{a}{4}, \\frac{a}{8}, \\frac{a}{16}, \\frac{a}{32}, \\frac{a}{64}, \\dots" inline={true}/>
+        </p>
+
+        <p>Para conocer la distancia recorrida por la pelota es necesario sumar cada uno de los términos de esta sucesión dos veces, ya que la pelota sube y después baja.</p>
+
+        <p class="text-center text-xl">
+          <Latex formula="d_{recorrida}=s_n=a+\\frac{2a}{2}+\\frac{2a}{4}+\\frac{2a}{8}+\\frac{2a}{16}+\\frac{2a}{32}+\\dots " inline={true}/>
+        </p>
+
+        <p>Simplificando</p>
+
+        <p class="text-center text-xl">
+          <Latex formula="d_{recorrida}=s_n=2a+\\frac{a}{2}+\\frac{a}{4}+\\frac{a}{8}+\\frac{a}{16}+\\frac{a}{32}+\\cdots " inline={true}/>
+        </p>
+
+        <p class="text-center text-xl">
+          <Latex formula="d_{recorrida}=s_n=a+a(1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16}+\\frac{1}{32}+\\cdots) " inline={true}/>
+        </p>
+
+        <p>A partir de esta última expresión es posible contestar preguntas tales como:</p>
+
+        <p class="text-center text text-violet-400 text-xl">¿Si la pelota rebota 3 veces qué distancia recorrió la pelota?</p>
+
+        <h3>Solución</h3>
+
+        <p class="text-center text-xl">
+          <Latex formula="s_3=2+2(1+\\frac{1}{2}+\\frac{1}{4})=5.5 m " inline={true}/>
+        </p>
+
+        <p>En la primera vez que cae recorre dos metros, en el primer rebote sube y baja un metro, entonces ha recorrido cuatro metros; en el segundo rebote sube y baja 0.5 metros, con lo que ha recorrido 5 metros; finalmente, en el tercer rebote, sube y baja  0.25 metros, y en total 5.5 metros.</p>
+
+        <p>Con la información obtenida completa la tabla:</p>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Rebotes</th>
+                <th> s, n</th>
+                <th>Distancia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td class="text-center"><Latex formula="s_1=2+2(1)" inline={true}/> </td>
+                <td class="text-center">4 m</td>
+              </tr>
+              <tr>
+                <td class="text-center">2</td>
+                <td class="text-center"><Latex formula="s_2=2+2\\left(1+\\frac{1}{2}\\right)" inline={true}/></td>
+                <td class="text-center"></td>
+              </tr>
+              <tr>
+                <td class="text-center">3</td>
+                <td class="text-center"><Latex formula="s_3=2+2\\left(1+\\frac{1}{2}+\\frac{1}{4}\\right)" inline={true}/></td>
+                <td class="text-center"></td>
+              </tr>
+              <tr>
+                <td class="text-center">4</td>
+                <td class="text-center"><Latex formula="s_4=2+2\\left(1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}\\right) " inline={true}/></td>
+                <td class="text-center">5.75 m</td>
+              </tr>
+              <tr>
+                <td class="text-center">5</td>
+                <td class="text-center"><Latex formula="s_5=2+2\\left(1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16}\\right) " inline={true}/></td>
+                <td class="text-center">5.875 m</td>
+              </tr>
+              <tr>
+                <td class="text-center">6</td>
+                <td class="text-center"><Latex formula="s_6=2+2\\left (1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16}+\\frac{1}{32}\\right) " inline={true}/></td>
+                <td class="text-center"></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mx-auto mb-5 max-w-screen-xl">
+
+          <p>La expresión</p>
+
+          <p class="text-center text-xl">
+            <Latex formula="d_{recorrida}=s_n=a+\\frac{2a}{2}+\\frac{2a}{4}+\\frac{2a}{8}+\\frac{2a}{16}+\\frac{2a}{32}+\\dots " inline={true}/>
+          </p>
+
+          <p>Se puede también expresar de la siguiente manera:</p>
+
+          <p class="text-center text-xl">
+            <Latex formula="d_{recorrida}=2+2\\cdot\\sum_{n=1}^{n}\\left(\\frac{1}{2}\\right)^{n-1} " inline={true}/>
+          </p>
+
+          <p>Esta expresión es la sumatoria de todos los términos la cual se denomina <b>serie</b> y se simboliza por la letra sigma (∑).</p>
+
+          <p>Ésta es otra manera de expresar la sumatoria, para entender mejor supongamos que estamos interesados en conocer la distancia recorrida en el cuarto rebote, entonces:</p>
+
+          <p class="text-center text-xl">
+            <Latex formula="d_{recorrida}=2+2\\cdot\\sum_{n=1}^{n}\\left(\\frac{1}{2}\\right)^{n-1}=a+a\\left(\\left(\\frac{1}{2}\\right)^0+\\left(\\frac{1}{2}\\right)^1+\\left(\\frac{1}{2}\\right)^2+\\left(\\frac{1}{2}\\right)^3\\right) " inline={true}/>
+          </p>
+
+          <p>Elevando las potencias de los paréntesis:</p>
+
+          <p class="text-center text-xl">
+            <Latex formula="d_{recorrida}=a+a\\left(1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}\\right) " inline={true}/>
+          </p>
+
+          <p>En el caso en el que <Latex formula="a = 2m" inline={true}/> tenemos: </p>
+
+          <p class="text-center text-xl">
+            <Latex formula="d_{recorrida}=2+2\\left(1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}\\right)=5.75 m" inline={true}/>
+          </p>
+
+          <p>Usa la serie que encontramos para determinar:</p>
+
+          <p class="text-center text-xl">
+            <Latex formula="d_{recorrida}=2+2\\cdot\\sum_{i=1}^{n} \\left(\\frac{1}{2}\\right)^{i-1}" inline={true}/>
+          </p>
+
+          <p>Esta expresión nos permite hacer uso de la calculadora para poder hacer cálculos.</p>
+
+      </div>
+
+      
+      
+    </div>
+
+</Layout>

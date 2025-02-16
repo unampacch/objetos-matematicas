@@ -1,0 +1,216 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+---
+
+<Layout
+  title="Tipos de métodos de integración"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={9} pantallaIndex={0} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <p>Existen algunas integrales que no son rápidas de resolver, y que requieren el empleo de ciertas metodologías para construir su solución.</p>
+
+        <h3>Método de integración por Cambio de variable</h3>
+
+      <br>
+
+        <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+          <div class="bg-rose-300 p-5 text-darkblue">
+            <p>
+              Se utiliza cambio de variable cuando se tiene la integral de una función, y al lado está su derivada o casi su derivada. </p>
+              <p>
+              El método consiste en transformar la integral original en términos de una nueva variable llamada <Latex inline={true} formula="u" /> de manera que la integral nueva se resuelva como una integral inmediata.
+            </p>
+          </div>
+        </div>
+
+        <br>
+
+        <p>Resolvamos la integral</p>
+
+        <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int{e^5x}dx"/></p>
+
+        <p>A primera instancia, parece una integral tan sencilla como <Latex inline={true} formula="\\displaystyle \\int{e^x}dx=e^x +C "/>, sin embargo, al no ser el exponente una simple <Latex inline={true} formula="x"/>, entonces debemos reconocerla como una nueva variable <Latex inline={true} formula="u"/>, por lo que nuestra regla se ha actualizado a:</p>
+
+        <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int{e^u}du=e^u +C "/></p>
+
+        <p>Procedamos entonces:</p>
+
+        <p>De acuerdo con la fórmula, debemos llamar <Latex inline={true} formula="u"/> al exponente de la función, además, debe estar multiplicando a su diferencial para poder integrar.</p>
+
+        <p>Si tenemos <Latex inline={true} formula="\\displaystyle \\int{e^{5x}}dx → u=5x; du=5dx"/> </p>
+
+        <p>Nos damos cuenta de que en la integral hace falta multiplicar por 5 para tener completa la diferencial, sin embargo, también se divide por 5, de manera que integral no se altere.</p>
+
+        <p class="text-center"><Latex inline={true} formula="\\int \\dfrac{e^{5x} \\cdot 5 \\,dx}{5} = \\int \\dfrac{e^u \\,du}{5}"/></p>
+
+        <p>Ahora podemos integrar</p>
+
+        <p class="text-center"><Latex inline={true} formula="I=\\dfrac{1}{5}\\displaystyle \\int{e^u} du=\\dfrac{1}{5}e^u +C "/></p>
+
+        <p>Para terminar, expresamos en términos de la variable original <Latex inline={true} formula="x"/>:</p>
+
+        <p class="text-center"><Latex inline={true} formula="I=\\dfrac{1}{5}e^{5x} +C "/></p>
+
+      </div>
+
+      <Lumi
+        src="/calculo/metodos-integracion/p2 ej1.html"
+        nombre="Actividad"
+        instrucciones="Determina la solución de cada una de las siguientes integrales indefinidas."
+        />
+
+        <div class="mx-auto mb-5 max-w-screen-xl"> 
+          <h3>Profundización en el tema</h3>
+
+          <p>Para profundizar en este método con más ejercicios, revisa el video “Integración por  cambio de variable”</p>
+        </div>
+
+        <BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/zw2HAwkhOaI?si=s23bkVv1maHyABYe"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+
+        <Lumi
+        src="/calculo/metodos-integracion/p2 ej2.html"
+        nombre="Actividad"
+        instrucciones="Ahora, resuelve las siguientes integrales y selecciona la respuesta correcta"
+        />
+
+        <div class="mx-auto mb-5 max-w-screen-xl">
+          <h3>Método de integración por partes</h3>
+          <br>
+          <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+            <div class="bg-rose-300 p-5 text-darkblue">
+              <p>
+                Se utiliza este método para integrar un producto de funciones donde ninguna de ellas es derivada de la otra.</p>
+                <p>
+                La regla es la siguiente:</p>
+                <p class="text-center"><Latex inline={true} formula="\\int udv = uv - \\int vdu" /></p>
+            </div>
+          </div>
+          <br>
+          <p>Las funciones que se multiplican en el integrando se llaman <Latex inline={true} formula="u" /> y <Latex inline={true} formula="du" /></p>
+
+          <p class="text-center"> Donde <Latex inline={true} formula="u" /> se deriva para obtener <Latex inline={true} formula="du"/>; <Latex inline={true} formula="dv"/> se integra para obtener <Latex inline={true} formula="v" /> </p>
+
+          <h4>Elección de u y dv</h4>
+          <p>La elección de las funciones del integrando como u y dv es importante, pues si no se hace adecuadamente, se tendrá un proceso de integración más complejo. Según el tipo de funciones que se tengan, aquella que esté más arriba en la siguiente tabla tiene preferencia para ser elegida como u</p>
+
+        </div>
+
+        <BgFluido bg="bg-blue">
+          <ImagenCaption
+          src="/calculo/metodos-integracion/img06.JPG"
+          />
+        </BgFluido>
+
+        <div class="mx-auto mb-5 max-w-screen-xl"> 
+        <h4>Ejemplo</h4>
+        <p>Resolvamos la siguiente integral <Latex inline={true} formula="\\displaystyle \\int{x \\cdot e^x} dx" /></p>
+
+        <p>Una función es algebraica y la otra exponencial, por lo que: </p>
+        </div> 
+
+        <BgFluido bg="bg-blue">
+          <ImagenCaption
+          src="/calculo/metodos-integracion/img02.PNG"
+          />
+        </BgFluido>
+
+        <div class="mx-auto mb-5 max-w-screen-xl"> 
+        <p>Luego, sustituimos en la fórmula de integración por partes</p>
+
+        <p class="text-center"><Latex inline={true} formula="\\displaystyle I=u \\cdot v -\\int{v\\, du}=x\\cdot e^x - \\int{e^x} dx " /></p>
+
+        <p>Concluimos resolviendo la integral pendiente:</p>
+
+        <p class="text-center"><Latex inline={true} formula="x\\cdot e^x-e^x +C" /></p>
+
+        <h4> Profundización en el tema </h4>
+
+        <p>Para profundizar en este método con ejercicios más elaborados, consulta el video “Integración por partes”</p>
+
+        </div>
+
+        <BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/SXFT7Af69QU?si=XHS92pH9oNwCT9Y0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+
+        <Lumi
+        src="/calculo/metodos-integracion/p2 ej3.html"
+        nombre="Actividad"
+        instrucciones="Ahora, resuelve las siguientes integrales y selecciona la respuesta correcta"
+        />
+
+        <br>
+
+        <div class="mx-auto mb-5 max-w-screen-xl"> 
+          <h3>Método de integración por fracciones parciales</h3>
+          <br>
+          <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+            <div class="bg-rose-300 p-5 text-darkblue">
+              <p>
+                Se utiliza este método para integrar funciones racionales propias, siempre que no aplique el método de cambio de variable</p>
+                <p>Consiste en descomponer la funcion racional del integrando en fracciones simples que sean más fáciles de integrar</p>
+            </div>
+          </div>
+          <br>
+
+          <h4>Sistematización del método</h4>
+
+          <p>Para resolver integrales con este método se deben seguir los siguientes pasos:</p>
+
+          <ol class="ol-number">
+            <li><p>Identificar el caso de descomposición que asignando una letra por cada factor del denominador.</p> 
+            <p>Existen principalmente 3 casos y dependiendo de cual se tenga, se hará el acomodo de las letras, como se muestra:</p>
+            <ol class="ol-alpha">
+              <li>Factores que originan raíces distintas
+                <p class="text-center"><Latex inline={true} formula="\\dfrac{\\text{Numerador}}{(x-2)(x+5)(2x-3)}=\\dfrac{A}{x-2}+\\dfrac{B}{x+5}+\\dfrac{C}{2x-3} " /></p>
+              </li>
+              <li>Factores que originan raíces repetidas
+                <p class="text-center"><Latex inline={true} formula="\\dfrac{\\text{Numerador}}{(x-4)(2x-3)^2}=\\dfrac{A}{x-4}+\\dfrac{B}{2x-3}+\\dfrac{C}{(2x-3)^2}" /></p>
+              </li>
+              <li>Factores que originan raíces complejas (comúnmente suma de cuadrados).
+                <p class="text-center"><Latex inline={true} formula="\\dfrac{\\text{Numerador}}{(x-1)(x^2+4)}=\\dfrac{A}{x-1}+\\dfrac{Bx+C}{x^2+4} " /></p>
+              </li>
+              <li><p class="text-center">El número de letras asignadas debe ser igual al grado del polinomio del denominador.</p></li>
+            </ol>
+           </li>
+            <li>Multiplicar ambos miembros de la igualdad por el denominador factorizado.</li>
+            <li>Plantear y resolver un sistema de ecuaciones para determinar el valor de cada letra; dichos valores serán sustituidos en las fracciones simples.</li>
+            <li>Integrar cada una de las fracciones simples. </li>
+          </ol> 
+
+        </div>
+
+
+    </div>
+
+</Layout>
