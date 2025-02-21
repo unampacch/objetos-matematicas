@@ -627,26 +627,12 @@
 				},
 				{
 					"titulo": "Concepto de Integral",
-					"slug": "/asignaturas/calculo/integral",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/integral/inicio",
+					"portada": "/calculo/definicion-integral/calculo-portada-10.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la integral en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						{
-							"titulo": "Definición de integral",
-							"slug": "/asignaturas/calculo/integral/definicion",
-							"descripcion": "Definición y propiedades de la integral de una función real."
-						},
-						{
-							"titulo": "Propiedades de la integral",
-							"slug": "/asignaturas/calculo/integral/propiedades",
-							"descripcion": "Propiedades de la integral de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Métodos de integración",
-							"slug": "/asignaturas/calculo/integral/metodos",
-							"descripcion": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						}
+						
 					]
 				},
 				{
