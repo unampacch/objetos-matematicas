@@ -628,7 +628,7 @@
 				{
 					"titulo": "Concepto de Integral",
 					"slug": "/asignaturas/calculo/integral/inicio",
-					"portada": "/calculo/definicion-integral/calculo-portada-10.webp",
+					"portada": "/calculo/definicion-integral/calculo-portada-8.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la integral en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
@@ -690,26 +690,12 @@
 				},
 				{
 					"titulo": "La integral indeﬁnida",
-					"slug": "/asignaturas/calculo/integral-indefinida",
+					"slug": "/asignaturas/calculo/integral-indefinida/inicio",
 					"portada": "/holder-cover.webp",
 					"descripcion": "Este material aborda de manera detallada la integral indeﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral indeﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral indeﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						{
-							"titulo": "Definición de integral indeﬁnida",
-							"slug": "/asignaturas/calculo/integral-indefinida/definicion",
-							"descripcion": "Definición y propiedades de la integral indeﬁnida de una función real."
-						},
-						{
-							"titulo": "Métodos de integración",
-							"slug": "/asignaturas/calculo/integral-indefinida/metodos",
-							"descripcion": "Métodos para calcular integrales indeﬁnidas de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Integración por partes",
-							"slug": "/asignaturas/calculo/integral-indefinida/partes",
-							"descripcion": "Método de integración por partes y su aplicación en la resolución de problemas matemáticos."
-						}
+						
 					]
 				}
 			]
