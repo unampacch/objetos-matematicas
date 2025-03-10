@@ -1,0 +1,98 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+---
+
+<Layout
+  title="Suma parcial de una serie"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={0} pantallaIndex={1} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto mb-5 max-w-screen-xl">
+       <p>
+        Como se ha comentado estamos interesados en conocer ¿Cómo se calcula la suma de los n términos de una serie geométrica? Para dar respuesta a esta pregunta consideremos la siguiente serie:
+       </p>
+
+       <p class="text-center">
+        <Latex formula="S_n=a+ar+ar^2+ar^3+ar^4+\\dots+ar^{n-1} " inline={true}/> con <Latex formula="-1<r<1" inline={true}/>
+      </p>
+
+      <p>
+        Si multiplicamos esta serie por la razón común <Latex formula="r" inline={true}/>
+      </p>
+
+      <p class="text-center">
+        <Latex formula="rS_n=ar+ar^2+ar^3+ar^4+\\dots+ar^n " inline={true}/>
+      </p>
+
+      <p>
+        Si restamos ambas series obtendremos:
+      </p>
+
+      <p class="text-center"><Latex formula="S_n-rrS_n=a+\\sout{ar-ar+ar^2-ar^2+ar^3-ar^3+\\dots+ar^{n-1}-ar^{n-1}}-ar^n " inline={true}/></p>
+
+      <p class="text-center"><Latex formula="S_n-rS_n=a-ar^n" inline={true}/></p>
+
+      <p>De esta expresión podemos factorizar y despejar el valor de la sumatoria:</p>
+
+      <p class="text-center"><Latex formula="(1-r)S_n=a-ar^n" inline={true}/></p>
+      
+      <p class="text-center"><Latex formula="S_n=ar+ar^2+ar^3+ar^4+\\dots+ar^{n-1}=\\frac{a-ar^n}{\\left(1-r\\right)}" inline={true}/></p>
+
+      <p>Esta última expresión es usual expresarla mediante el símbolo sigma ∑ para indicar un proceso de suma.</p>
+
+      <p class="text-center"><Latex formula="S_n=\\sum_{k=0}^{n}{ar^n}=\\frac{a-ar^n}{\\left(1-r\\right)} " inline={true}/> con <Latex formula="S-1<r<1" inline={true}/></p>
+
+      <p>Este resultado nos permite conocer el valor de la suma para algún valor de n en especial.</p>
+
+      <p>En el problema de la pelota que rebota <Latex formula="a=2" inline={true}/>, <Latex formula="r=\\frac{1}{2}" inline={true}/> </p>
+
+      <p class="text-center"><Latex formula="d_{recorrida} = 2 + \\sum_{k=0}^{n}{2\\left(\\frac{1}{2}\\right)^{k-1}} = 2 + \\frac{2 - 2 \\left(\\frac{1}{2}\\right)^n}{1 - \\frac{1}{2}}" inline={true}/></p>
+
+      <p>Si usamos el resultado encontrado</p>
+
+      <p class="text-center"><Latex formula="d_{recorrida}=2+\\frac{2-2 \\left(\\frac{1}{2}\\right)^4}{\\left(1-\\frac{1}{2} \\right)}=2+\\frac{2-\\frac{2}{16}}{\\frac{1}{2}}=2+\\frac{\\frac{30}{16}}{\\frac{1}{2}}=2+\\frac{30}{8}=\\frac{46}{8}=5.75 m " inline={true}/></p>
+
+      <p>Como ya sabíamos, podemos notar la serie expresada en la notación sigma es una forma “compacta” de expresar la suma de todos los elementos de una sucesión.</p>
+
+      <p>Usa el valor de la serie que encontramos y contesta las preguntas:</p>
+
+      <p class="text-center"><Latex formula="d_{recorrida}=2+\\frac{2-2 \\left(\\frac{1}{2}\\right)^4}{\\left(1-\\frac{1}{2} \\right)}=2+\\frac{2-\\frac{2}{16}}{\\frac{1}{2}}=2+\\frac{\\frac{30}{16}}{\\frac{1}{2}}=2+\\frac{30}{8}=\\frac{46}{8}=5.75 m " inline={true}/></p>
+
+      <p class="text-center"><Latex formula="d_{recorrida} = 2 + \\sum_{k=0}^{n}{2\\left(\\frac{1}{2}\\right)^{k-1}} = 2 + \\frac{2 - 2 \\left(\\frac{1}{2}\\right)^n}{1 - \\frac{1}{2}}" inline={true}/></p>
+
+      <ol class="ol-number pl-10 mt-5">
+        <li>Determina la distancia recorrida si la pelota rebota 8 veces
+        </li>
+        <li>Determina la distancia recorrida si la pelota rebota 10 veces</li>
+        <li>Determina la recorrida si la pelota rebota 20 veces</li>
+        <li>La serie converge: <b>Si</b> </li>
+        <li>El valor al que converge la serie es 6: <b>Si</b></li>
+      </ol>
+
+      <p>De manera general:</p>
+
+      <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+        <div class="bg-slate-200 p-5 text-darkblue">
+          <p>
+            Una sumatoria de <Latex formula="n" inline={true}/> términos de la forma:
+          </p>
+          <p class="text-center">
+            <Latex formula="S_n = a + ar + ar^2 + ar^3 + ar^4 + \\dots + ar^{n-1} = \\sum_{k=1}^{n}{ar^{k-1}} = \\frac{a - ar^n}{1 - r}" inline={true}/>
+          </p>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+</Layout>

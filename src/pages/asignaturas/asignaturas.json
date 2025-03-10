@@ -350,25 +350,20 @@
 				},
 				{
 					"titulo": "Concepto de dominio, codominio y regla de correspondencia",
-					"slug": "/asignaturas/matematicas-4/dominio-codominio",
+					"slug": "/asignaturas/matematicas-4/dominio-codominio/inicio",
 					"portada": "/holder-cover.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales del dominio, codominio y regla de correspondencia en el ámbito de la matemática. Contiene una exploración exhaustiva de los conjuntos de partida y llegada, junto con su aplicación en la representación de funciones matemáticas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Dominio, codominio y regla de correspondencia en la representación de funciones matemáticas.",
 					"pantallas": [
 						{
-							"titulo": "Definición de dominio",
-							"slug": "/asignaturas/matematicas-4/dominio-codominio/dominio",
+							"titulo": "Gráfica de una función",
+							"slug": "/asignaturas/matematicas-4/dominio-codominio/grafica-funcion",
 							"descripcion": "Definición y propiedades del dominio en la representación de funciones matemáticas."
 						},
 						{
-							"titulo": "Definición de codominio",
-							"slug": "/asignaturas/matematicas-4/dominio-codominio/codominio",
+							"titulo": "Transformación de funciones",
+							"slug": "/asignaturas/matematicas-4/dominio-codominio/transformacion-funciones",
 							"descripcion": "Definición y propiedades del codominio en la representación de funciones matemáticas."
-						},
-						{
-							"titulo": "Definición de regla de correspondencia",
-							"slug": "/asignaturas/matematicas-4/dominio-codominio/regla-correspondencia",
-							"descripcion": "Definición y propiedades de la regla de correspondencia en la representación de funciones matemáticas."
 						}
 					]
 				},
@@ -453,26 +448,32 @@
 			"objetos_aprendizaje": [
 				{
 					"titulo": "Sucesiones y series ",
-					"slug": "/asignaturas/calculo/sucesiones-series",
+					"slug": "/asignaturas/calculo/sucesiones-series/inicio",
 					"portada": "/holder-cover.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las sucesiones y series en el ámbito de la matemática. Contiene una exploración exhaustiva de las sucesiones y series numéricas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de sucesiones",
-							"slug": "/asignaturas/calculo/sucesiones-series/sucesiones",
+							"titulo": "Situaciones que dan lugar a procesos infinitos",
+							"slug": "/asignaturas/calculo/sucesiones-series/situacion-procesos-infinitos",
 							"descripcion": "Definición y propiedades de las sucesiones numéricas."
 						},
 						{
-							"titulo": "Definición de series",
-							"slug": "/asignaturas/calculo/sucesiones-series/series",
+							"titulo": "Suma parcial de una serie",
+							"slug": "/asignaturas/calculo/sucesiones-series/suma-parcial",
 							"descripcion": "Definición y propiedades de las series numéricas."
 						},
 						{
-							"titulo": "Convergencia y divergencia",
-							"slug": "/asignaturas/calculo/sucesiones-series/convergencia-divergencia",
+							"titulo": "Procesos infinitos",
+							"slug": "/asignaturas/calculo/sucesiones-series/procesos-infinitos",
+							"descripcion": "Criterios de convergencia y divergencia de sucesiones y series numéricas."
+						},
+						{
+							"titulo": "Ejemplos resueltos",
+							"slug": "/asignaturas/calculo/sucesiones-series/ejemplos-resueltos",
 							"descripcion": "Criterios de convergencia y divergencia de sucesiones y series numéricas."
 						}
+
 					]
 				},
 				{
@@ -626,26 +627,12 @@
 				},
 				{
 					"titulo": "Concepto de Integral",
-					"slug": "/asignaturas/calculo/integral",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/integral/inicio",
+					"portada": "/calculo/definicion-integral/calculo-portada-8.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la integral en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						{
-							"titulo": "Definición de integral",
-							"slug": "/asignaturas/calculo/integral/definicion",
-							"descripcion": "Definición y propiedades de la integral de una función real."
-						},
-						{
-							"titulo": "Propiedades de la integral",
-							"slug": "/asignaturas/calculo/integral/propiedades",
-							"descripcion": "Propiedades de la integral de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Métodos de integración",
-							"slug": "/asignaturas/calculo/integral/metodos",
-							"descripcion": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						}
+						
 					]
 				},
 				{
@@ -674,74 +661,41 @@
 				},
 				{
 					"titulo": "Métodos de integración",
-					"slug": "/asignaturas/calculo/metodos-integracion",
+					"slug": "/asignaturas/calculo/metodos-integracion/inicio",
 					"portada": "/holder-cover.webp",
 					"descripcion": "Este material aborda de manera detallada los métodos de integración en el ámbito de la matemática.",
 					"resumen": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Integración por partes",
-							"slug": "/asignaturas/calculo/metodos-integracion/partes",
+							"titulo": "Tipos de métodos de integración",
+							"slug": "/asignaturas/calculo/metodos-integracion/metodo-integracion",
 							"descripcion": "Método de integración por partes y su aplicación en la resolución de problemas matemáticos."
 						},
 						{
-							"titulo": "Integración por sustitución",
-							"slug": "/asignaturas/calculo/metodos-integracion/sustitucion",
+							"titulo": "Ejemplos de métodos de integración",
+							"slug": "/asignaturas/calculo/metodos-integracion/ejemplos",
 							"descripcion": "Método de integración por sustitución y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Integración de funciones trigonométricas",
-							"slug": "/asignaturas/calculo/metodos-integracion/trigonometricas",
-							"descripcion": "Método de integración de funciones trigonométricas y su aplicación en la resolución de problemas matemáticos."
 						}
 					]
 				},
 				{
 					"titulo": "La integral deﬁnida",
-					"slug": "/asignaturas/calculo/integral-definida",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/integral-definida/inicio",
+					"portada": "/calculo/definicion-integral/calculo-portada-10.webp",
 					"descripcion": "Este material aborda de manera detallada la integral deﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral deﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral deﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						{
-							"titulo": "Definición de integral deﬁnida",
-							"slug": "/asignaturas/calculo/integral-definida/definicion",
-							"descripcion": "Definición y propiedades de la integral deﬁnida de una función real."
-						},
-						{
-							"titulo": "Teorema fundamental del cálculo",
-							"slug": "/asignaturas/calculo/integral-definida/teorema-fundamental",
-							"descripcion": "Teorema fundamental del cálculo y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Aplicaciones de la integral deﬁnida",
-							"slug": "/asignaturas/calculo/integral-definida/aplicaciones",
-							"descripcion": "Aplicaciones de la integral deﬁnida en la resolución de problemas matemáticos."
-						}
+						
 					]
 				},
 				{
 					"titulo": "La integral indeﬁnida",
-					"slug": "/asignaturas/calculo/integral-indefinida",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/integral-indefinida/inicio",
+					"portada": "/calculo/integral-indefinida/calculo-portada-12.webp",
 					"descripcion": "Este material aborda de manera detallada la integral indeﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral indeﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral indeﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						{
-							"titulo": "Definición de integral indeﬁnida",
-							"slug": "/asignaturas/calculo/integral-indefinida/definicion",
-							"descripcion": "Definición y propiedades de la integral indeﬁnida de una función real."
-						},
-						{
-							"titulo": "Métodos de integración",
-							"slug": "/asignaturas/calculo/integral-indefinida/metodos",
-							"descripcion": "Métodos para calcular integrales indeﬁnidas de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Integración por partes",
-							"slug": "/asignaturas/calculo/integral-indefinida/partes",
-							"descripcion": "Método de integración por partes y su aplicación en la resolución de problemas matemáticos."
-						}
+						
 					]
 				}
 			]

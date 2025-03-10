@@ -1,0 +1,89 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from "@/components/Lumi.astro"
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+
+---
+
+<Layout
+  title="Transformación de funciones"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={3} pantallaIndex={1} asignatura={"matematicas_4"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+        <p>La representación gráfica de una función g(x) se puede obtener a partir de transformaciones elementales sobre otra función f(x) cuya gráfica conocemos. Existen los siguientes tipos básicos de transformación.</p>
+  
+
+  <div class="table-responsive">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Traslación</td>
+          <td>
+            <ul>
+              <li>
+                <Latex inline={true} formula="y = f(x-c)" />
+              </li>
+              <li>
+                <Latex inline={true} formula="y = f(x+c)" />
+              </li>
+              <li>
+                <Latex inline={true} formula="y = f(x+c)" />
+              </li>
+              <li>
+                <Latex inline={true} formula="y = f(x)+c " />
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Reflexión</td>
+          <td>
+            <ul>
+              <li>
+                <Latex inline={true} formula="y = -f(x) " />
+              </li>
+              <li>
+                <Latex inline={true} formula="y = f(-x)" />
+              </li>
+              <li>
+                <Latex inline={true} formula="y = -f(-x)" />
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+ <GeogebraLink
+				texto="Te invitamos a revisar la siguiente construcción y después trabajes con los ejercicios traslación:"
+			 	titulo="Construcción en GeoGebra."
+				href="https://www.geogebra.org/calculator/drxsb83e"  
+			/>
+      
+
+
+      <GeogebraLink
+				texto="Te invitamos a revisar la siguiente construcción y después trabajes con los ejercicios de reflexión:"
+			 	titulo="Construcción en GeoGebra."
+        href="https://www.geogebra.org/calculator/kpcckcxj"
+			/>
+
+
+      <Lumi
+		src="/matematicas4/dominio-codominio/p3-ej1.html"
+		nombre="Reactivos"
+		instrucciones="Escribe los números que correspondan a la ecuación."
+    />
+  </div>
+
+
+</Layout>
