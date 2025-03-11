@@ -1,10 +1,54 @@
 ---
 import Layout from '@/layouts/Layout.astro'
+import Lumi from '@/components/Lumi.astro'
 import Latex from '@/components/Latex.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 ---
 
-<Layout title="" description="">
-	<ObjetoAprendizaje index={0} asignatura={'estadistica'} />
-	<div class="objeto-aprendizaje mx-auto animate-fade">Aquí va el contenido 👈</div>
+<Layout title="Combinaciones" description="">
+	<ObjetoAprendizaje index={1} asignatura={'estadistica'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<div class="mx-auto  lg:w-1/2">
+				<ImagenFullCaption src="/estadistica/combinaciones/combinaciones.jpg" caption=""/>
+		  	</div>
+			<h4>Introducción</h4>
+			<p>Método para contar las distintas agrupaciones o formas de ordenar un determinado número de elementos.</p>
+			<p>Llamemos una Combinación de <b>n</b> objetos tomados de <b>r</b> en <b>r</b>.</p>
+			<p>El número de combinaciones de <b>n</b> objetos tomados de <b>r</b> en <b>r</b>, se denota por: <Latex formula="c_r^n" inline={true}/></p>
+			<p>Para comprender un poco de más del tema te invito a ver el video >> <a href="https://youtu.be/ERQVkKE5VuI" target="_blank"><b>COMBINACIONES</b></a>.</p>
+			<Lumi
+		    src="/estadistica/combinaciones/Actividad_1.html"
+		    nombre="Actividad 1"
+		    instrucciones="De estos enunciados identifica cuál es verdadero (V) o Falso (F)."
+	    	/>
+			<h4>Combinaciones (Sin repeticiones)</h4>
+			<p><b>Teorema</b></p>
+			<p>El número en que <Latex formula="r" inline={true}/> objetos pueden seleccionarse <b><u>sin importar el orden</u></b> de un conjunto de <Latex formula="n" inline={true}/> objetos es:</p>
+			<p><b>Sin repetición</b></p>
+			<div class="my-5 text-center text-xl">
+				<Latex formula="C_n^r=\\binom{n}{r}=\\frac{n!}{r!(n-r)!}"/>
+			</div>
+			<p>Para comprender un poco de más del tema te invito a ver el video >> <a href="https://youtu.be/EvoLR6Y_7FI" target="_blank"><b>COMBINACIONES SIN REPETICIÓN</b></a>.</p>
+			<Lumi
+		    src="/estadistica/combinaciones/Actividad_2.html"
+		    nombre="Actividad 2"
+		    instrucciones="Después de revisar el video y para identificar lo que has aprendido hasta el momento, te invitamos a dar respuesta a la siguiente trivia."
+	    	/>
+			<h4>Combinaciones (Con repeticiones)</h4>
+			<p><b>Teorema</b></p>
+			<p>El número en que <Latex formula="r" inline={true}/> objetos pueden seleccionarse <b><u>sin importar el orden</u></b> de un conjunto de <Latex formula="n" inline={true}/> objetos es:</p>
+			<p><b>Con repetición</b></p>
+			<div class="my-5 text-center text-xl">
+				<Latex formula="C_r^n =\\frac{(n+r-1)!}{r!(n-r)!}"/>
+			</div>
+			<p>Para comprender un poco de más del tema te invito a ver el video >> <a href="https://youtu.be/Lo0_G3eHqGc" target="_blank"><b>COMBINACIONES CON REPETICIÓN</b></a>.</p>
+			<Lumi
+		    src="/estadistica/combinaciones/Actividad_3.html"
+		    nombre="Actividad 3"
+		    instrucciones="De estos enunciados identifica cuál es verdadero (V) o Falso (F)."
+	    	/>
+		</div>
+	</div>
 </Layout>

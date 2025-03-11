@@ -262,26 +262,41 @@
 					]
 				},
 				{
-					"titulo": "Ecuación del círculo",
-					"slug": "/asignaturas/matematicas-3/ecuacion-circulo",
+					"titulo": "Ecuación del círculo, elipse, parábola e hipérbola",
+					"slug": "/asignaturas/matematicas-3/ecuacion-circulo/inicio",
 					"portada": "/mate3-portada-5.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación del círculo en el ámbito de la matemática. Contiene una exploración exhaustiva de la ecuación general del círculo, junto con su aplicación en la representación de círculos en el plano. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-					"resumen": "Ecuación general del círculo y su aplicación en la representación de círculos en el plano.",
+					"descripcion": "En esta sección se repasarán algunos temas de la circunferencia, conocerás los elementos que caracterizan a la circunferencia, como son el radio y las coordenadas del centro. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él.",
+					"resumen": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación del círculo, elipse, parábola e hipérbola en el ámbito de la matemática. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"pantallas": [
 						{
-							"titulo": "Ecuación general del círculo",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/general",
-							"descripcion": "Definición y aplicación de la ecuación general del círculo en el plano."
+							"titulo": "La parabola y su ecuación cartesiana",
+							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/parabola",
+							"descripcion": ""
 						},
 						{
-							"titulo": "Ecuación centro-radio",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/centro-radio",
-							"descripcion": "Definición y aplicación de la ecuación centro-radio del círculo."
+							"titulo": "Ecuación ordinaria de la parábola con vértice en cualquier punto del plano cartesiano",
+							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/parabola2",
+							"descripcion": ""
 						},
 						{
-							"titulo": "Ecuación diámetro",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/diametro",
-							"descripcion": "Definición y aplicación de la ecuación diámetro del círculo."
+							"titulo": "Circunferencia, la elipse y sus ecuaciones cartesianas",
+							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/elipse",
+							"descripcion": ""
+						},
+						{
+							"titulo": "Elementos y ecuación de una elipse con centro en (𝒉,𝒌)",
+							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/elipse2",
+							"descripcion": ""
+						},
+						{
+							"titulo": "Hipérbola",
+							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/hiperbola",
+							"descripcion": "En esta sección se repasará el tema de la hipérbola, donde conocerás los elementos que la caracterizan, como son: los vértices, los focos, el centro, los lados rectos y sus asíntotas. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él."
+						},
+						{
+							"titulo": "Elementos y ecuación de una hipérbola con centro en (𝒉,𝒌)",
+							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/hiperbola2",
+							"descripcion": ""
 						}
 					]
 				}
@@ -326,27 +341,10 @@
 				},
 				{
 					"titulo": "Concepto de desigualdad",
-					"slug": "/asignaturas/matematicas-4/desigualdad",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/matematicas-4/desigualdad/inicio",
+					"portada": "/portadas/portada-desigualdades.jpg",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la desigualdad en el ámbito de la matemática. Contiene una exploración exhaustiva de las desigualdades, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-					"resumen": "Desigualdades y su aplicación en la resolución de problemas matemáticos.",
-					"pantallas": [
-						{
-							"titulo": "Definición de desigualdad",
-							"slug": "/asignaturas/matematicas-4/desigualdad/definicion",
-							"descripcion": "Definición y propiedades de las desigualdades."
-						},
-						{
-							"titulo": "Resolución de desigualdades",
-							"slug": "/asignaturas/matematicas-4/desigualdad/resolucion",
-							"descripcion": "Resolución de desigualdades y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Desigualdades compuestas",
-							"slug": "/asignaturas/matematicas-4/desigualdad/compuestas",
-							"descripcion": "Desigualdades compuestas y su aplicación en la resolución de problemas matemáticos."
-						}
-					]
+					"resumen": "Desigualdades y su aplicación en la resolución de problemas matemáticos."
 				},
 				{
 					"titulo": "Concepto de dominio, codominio y regla de correspondencia",
@@ -478,25 +476,15 @@
 				},
 				{
 					"titulo": "Continuidad de funciones",
-					"slug": "/asignaturas/calculo/continuidad-funciones",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/continuidad-funciones/inicio",
+					"portada": "/calculo-portada-1.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la continuidad de funciones en el ámbito de la matemática. Contiene una exploración exhaustiva de la continuidad de funciones reales, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Continuidad de funciones reales y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
 							"titulo": "Definición de continuidad",
-							"slug": "/asignaturas/calculo/continuidad-funciones/continuidad",
+							"slug": "/asignaturas/calculo/continuidad-funciones/funciones-continuas",
 							"descripcion": "Definición y propiedades de la continuidad de funciones reales."
-						},
-						{
-							"titulo": "Tipos de discontinuidades",
-							"slug": "/asignaturas/calculo/continuidad-funciones/discontinuidades",
-							"descripcion": "Tipos de discontinuidades de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Teorema del valor intermedio",
-							"slug": "/asignaturas/calculo/continuidad-funciones/valor-intermedio",
-							"descripcion": "Teorema del valor intermedio y su aplicación en la resolución de problemas matemáticos."
 						}
 					]
 				},
@@ -632,7 +620,7 @@
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la integral en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						
+
 					]
 				},
 				{
@@ -685,7 +673,7 @@
 					"descripcion": "Este material aborda de manera detallada la integral deﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral deﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral deﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						
+
 					]
 				},
 				{
@@ -695,7 +683,7 @@
 					"descripcion": "Este material aborda de manera detallada la integral indeﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral indeﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral indeﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						
+
 					]
 				}
 			]
@@ -722,13 +710,13 @@
 				{
 					"titulo": "Combinaciones",
 					"slug": "/asignaturas/estadistica/combinaciones/inicio",
-					"portada": "/holder-cover.webp",
+					"portada": "/estadistica-portada-2.webp",
 					"descripcion": "Las combinaciones en la estadistica son un tema importante para el análisis de datos.",
 					"resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
 							"titulo": "Definición de combinaciones",
-							"slug": "/asignaturas/estadistica/combinaciones/definicion",
+							"slug": "/asignaturas/estadistica/combinaciones/combinaciones-particiones",
 							"descripcion": "Definición y propiedades de las combinaciones de elementos."
 						}
 					]
