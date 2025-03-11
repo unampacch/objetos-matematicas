@@ -620,7 +620,7 @@
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la integral en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						
+
 					]
 				},
 				{
@@ -673,7 +673,7 @@
 					"descripcion": "Este material aborda de manera detallada la integral deﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral deﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral deﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						
+
 					]
 				},
 				{
@@ -683,7 +683,7 @@
 					"descripcion": "Este material aborda de manera detallada la integral indeﬁnida en el ámbito de la matemática. Contiene una exploración exhaustiva de la integral indeﬁnida de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Integral indeﬁnida de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						
+
 					]
 				}
 			]
@@ -710,13 +710,13 @@
 				{
 					"titulo": "Combinaciones",
 					"slug": "/asignaturas/estadistica/combinaciones/inicio",
-					"portada": "/holder-cover.webp",
+					"portada": "/estadistica-portada-2.webp",
 					"descripcion": "Las combinaciones en la estadistica son un tema importante para el análisis de datos.",
 					"resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
 							"titulo": "Definición de combinaciones",
-							"slug": "/asignaturas/estadistica/combinaciones/definicion",
+							"slug": "/asignaturas/estadistica/combinaciones/combinaciones-particiones",
 							"descripcion": "Definición y propiedades de las combinaciones de elementos."
 						}
 					]
