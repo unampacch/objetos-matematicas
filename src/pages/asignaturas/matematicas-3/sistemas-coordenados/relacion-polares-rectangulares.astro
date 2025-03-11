@@ -1,0 +1,150 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Hr from '@/components/Hr.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import Lumi from "@/components/Lumi.astro";
+---
+
+<Layout title="Relación de coordenadas rectangulares y polares">
+	<ObjetoAprendizajePantalla index={2} pantallaIndex={3} asignatura={'matematicas_3'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<p>Si consideramos un punto en el plano cartesiano <Latex formula="(x, y)" inline={true}/> </p>
+		</div>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-31.jpg"
+						caption="Coordenadas en el plano cartesiano"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<p>Ese mismo punto tiene coordenadas polares.</p>
+			
+			<p>Si del origen al punto trazamos una línea, podemos conocer la distancia <i>r</i> entre el punto P y el origen y el ángulo polar <Latex formula="Ɵ" inline={true}/> del punto. De ahí que queremos conocer cómo se relacionan estas dos coordenadas</p>
+
+			</div>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-32.jpg"
+						caption="Relación entre la coordenada rectangular y la polar"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+			<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<p>Si observamos se forma un triángulo con un ángulo recto del lado derecho, x se encuentra en el eje polar, el lado opuesto de y mide lo mismo:</p>
+			</div>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-33.jpg"
+						caption="Ubicación del triángulo rectángulo en el plano"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+			<div class="mx-auto mb-5 max-w-screen-xl"></div>
+
+			<p>Usando trigonometría y el teorema de Pitágoras, podemos encontrar la relación entre las coordenadas polares y las rectangulares. Observa la imagen 35. </p>
+
+			</div>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-34.jpg"
+						caption="Teorema de Pitágoras"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<p>Si conocemos los valores de los ejes x y y podemos conocer el valor de <i>r</i>.</p>
+
+			<p>Al aplicar las razones trigonométricas podemos encontrar relación entre los distintos lados del triángulo rectángulo.</p>
+
+			</div>	
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-35.jpg"
+						caption="Razones trigonométricas"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<p>En este caso podemos conocer el ángulo polar <Latex formula="Ɵ" inline={true}/> del punto. Para ello nos podemos apoyar de la tangente </p>
+
+			</div>	
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-36.jpg"
+						caption="Uso de la tangente"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<p>Si nosotros conocemos las coordenadas rectangulares x y y podemos obtener las coordenadas polares.</p>
+
+			<p>Pero como podemos conocer las coordenadas de polares a rectangulares, para ello nos podemos apoyar del seno y coseno </p>
+
+			</div>
+
+			<BgFluido bg="bg-blue">
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/img-37.jpg"
+						caption="Uso del Seno y Coseno"
+						border={true}
+					/>
+				</div>
+			</BgFluido>
+
+			<BgFluido>
+				<div class="mx-auto mb-5 max-w-screen-md">
+					<ImagenCaption
+						src="/matematicas3/sistemas-coordenados/Img-B.png"
+					/>
+				</div>
+			</BgFluido>
+
+		</div>	
+		<Lumi
+		src="/matematicas3/sistemas-coordenados/pant5-ej1.html"
+		nombre="Ejercicio"
+		instrucciones="Transforma las coordenadas Polares a coordenadas rectangulares de los puntos."
+	/>
+	<Lumi
+		src="/matematicas3/sistemas-coordenados/pant5-ej2.html"
+		nombre="Ejercicio"
+		instrucciones="Transforma las coordenadas rectangulares a coordenadas polares de los puntos."
+	/>
+	</div>
+</Layout>

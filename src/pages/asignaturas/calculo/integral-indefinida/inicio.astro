@@ -2,16 +2,175 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import Video from '@/components/Video.astro'
 ---
 
 <Layout
-  title=""
+  title="Integral indefinida"
   description=""
 >
 
     <ObjetoAprendizaje index={11} asignatura={"calculo"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+          <div class="bg-green-200 p-5 text-darkblue">
+            <p>
+              Decimos que una función <Latex inline={true} formula="F(x)"/> es la integral indefinida de la función <Latex inline={true} formula="f(x)"/> si se cumple que:<Latex inline={true} formula="F’(x)= f(x)"/> </p>
+             <p> Así <Latex inline={true} formula=" F(x) = \\frac{x^3}{3}"/> es la integral indefinida o primitiva de <Latex inline={true} formula="f(x)=x^2"/>, ya que <Latex inline={true} formula="F' (x)=f(x)"/> </p>
+             <p> La operación para determinar todas las soluciones de esta ecuación se denomina antiderivada, es decir, la derivada de <Latex inline={true} formula="F(x)"/> nos da como resultado <Latex inline={true} formula="f(x)"/>. Por lo tanto decimos que derivada e integral son operaciones inversas. A la integral indefinida también se le conoce como primitiva de la función <Latex inline={true} formula="f(x)"/>.
+            </p>
+          </div>
+        </div>
+
+          <p>Te invitamos a revisar la siguiente construcción y después trabajes con los ejercicios:</p>
+        </div>
+        <GeogebraLink
+            href="https://www.geogebra.org/calculator/dkmyys6s"
+            titulo="Movimiento de un móvil"
+            texto="Revisa la siguiente construcción"
+            class='max-w-lg'
+          />
+
+          <Lumi
+            src="/calculo/integral-indefinida/p1 ej1.html"
+            nombre="Actividad"
+            instrucciones="Relaciona las columnas, escribiendo el número correspondiente."
+            />
+            <br>
+            <br>
+            <br>
+
+          <div class="mx-auto mb-5 max-w-screen-xl">
+            <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+              <div class="bg-green-200 p-5 text-darkblue">
+                <p>
+                  Si F es una antiderivada de <Latex inline={true} formula="f"/> en un intervalo <Latex inline={true} formula="I"/>, entonces <Latex inline={true} formula="G"/>, es una antiderivada de <Latex inline={true} formula="f"/> en el intervalo <Latex inline={true} formula="I"/> si y sólo sí <Latex inline={true} formula="G"/> es de la forma <Latex inline={true} formula="G(x)=F(x)+c"/>, para toda <Latex inline={true} formula="x"/> en <Latex inline={true} formula="I"/>, donde <Latex inline={true} formula="C"/> es una constante.</p>
+              </div>
+            </div>
+            </div>
+
+            <Lumi
+            src="/calculo/integral-indefinida/p1 ej2.html"
+            nombre="Actividad"
+            instrucciones="Selecciona la respuesta correcta."
+            />
+            <br>
+            <br>
+
+            <div class="mx-auto mb-5 max-w-screen-xl">
+              <p>Te invitamos a revisar la siguiente construcción y después trabajes con los ejercicios:</p>
+            </div>
+        
+            <GeogebraLink
+            href="https://www.geogebra.org/classic/uffqpjaw"
+            titulo="Memorama"
+            texto="Revisa el siguiente memorama"
+            class='max-w-lg'
+          />
+
+          <div class="mx-auto mb-5 max-w-screen-xl">
+            <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+              <div class="bg-green-200 p-5 text-darkblue">
+                <p>
+                    Cuando se busca una ecuación tal que </p>
+
+                    <p class="text-center"> <Latex inline={true} formula="\\frac{dy}{dx} = f(x) "/></p>
+
+                    <p>Es conveniente escribirla de la forma equivalente</p>
+                    <p class="text-center"> <Latex inline={true} formula="dy = f(x) \\, dx "/></p>
+                    <p>La operación para determinar todas las soluciones de esta ecuación se denomina antiderivada o integración indefinida y se denota mediante un signo integral <Latex inline={true} formula="∫"/>. La solución general se denota mediante</p>
+                    <p class="text-center"> <Latex inline={true} formula="y = \\int f(x) \\, dx = F(x) + C "/></p>
+                    <p></p>
+                    La expresión <Latex inline={true} formula="\\int f(x) \\, dx "/>, se lee como la antiderivada o primitiva de <Latex inline={true} formula="f"/> con respecto de a <Latex inline={true} formula="x"/>.
+                </p>
+              </div>
+            </div>
+            </div>
+
+            <Lumi
+            src="/calculo/integral-indefinida/p1 ej3.html"
+            nombre="Actividad"
+            instrucciones="Relaciona las columnas, escribiendo el número correspondiente."
+            />
+            <br>
+            <br>
+
+
+            <div class="mx-auto mb-5 max-w-screen-xl">
+              <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+                <div class="bg-green-200 p-5 text-darkblue">
+                  <p>
+                    En cálculo infinitesimal, la función primitiva o antiderivada de una función f es una función F cuya derivada es f, es decir,  <Latex inline={true} formula="F’(x)=f(x) "/>. </p>"
+  
+                </div>
+              </div>
+
+              <h4>Ejemplo:</h4>
+              <h5>¿Qué función tuve que derivar para obtener como resultado <Latex inline={true} formula="f(x)=2x"/>?</h5>
+              <ol class="ol-alpha">
+                <li>
+                  <p><Latex inline={true} formula="F(x)= 2x^2 "/></p>
+                </li>
+                <li>
+                  <p><Latex inline={true} formula="F(x)= 2x + 1 "/></p>
+                </li>
+                <li>
+                  <p><Latex inline={true} formula="F(x)= x^2 + 2 "/></p>
+                </li>
+                <li>
+                  <p><Latex inline={true} formula=" F(x)= x^2 "/></p>
+                </li>
+                <li>
+                  <p><Latex inline={true} formula="F(x)= x^2 – 5 "/></p>
+                </li>
+
+              
+
+              <p>Para dar respuesta a la pregunta debemos derivar cada inciso</p>
+              <p>Como podrás observar existen en ese conjunto de respuestas tres funciones que cumplen con esta condición</p>
+
+              <p class="text-center"> <Latex inline={true} formula="F(x)= x^2 + 2 "/> entonces <Latex inline={true} formula="F'(x) \\&= f(x) = 2x "/></p>
+              <p class="text-center"> <Latex inline={true} formula="F(x)= x^2 "/> entonces <Latex inline={true} formula="F'(x) \\&= f(x) = 2x"/></p>
+              <p class="text-center"> <Latex inline={true} formula="F(x)= x^2 - 5"/> entonces <Latex inline={true} formula="F'(x) \\&= f(x) = 2x "/></p>
+
+            <p>Cualquiera de estas funciones se llama antiderivada o primitiva de <Latex inline={true} formula="f(x)"/>. El proceso de hallar la primitiva de una función se conoce como integración indefinida y se considera el proceso inverso de la derivación.</p>
+            </div>
+
+            <Lumi
+            src="/calculo/integral-indefinida/p1 ej4.html"
+            nombre="Actividad"
+            instrucciones="Relaciona las columnas, escribiendo el número correspondiente."
+            />
+            <br>
+            <br>
+
+
+            <div class="mx-auto mb-5 max-w-screen-xl"> 
+            <p>Desplegar explicación: dada la función <Latex inline={true} formula="f(x)=2x"/>, es claro que esta puede provenir de derivar a la función <Latex inline={true} formula="F(x)=x^2+C"/>, donde “C” toma cualquier valor en los números reales. Es importante decir que no toda función tiene necesariamente una función antiderivada.</p>
+          </div>
+
+          <GeogebraLink
+            href="https://www.geogebra.org/m/yjd9665u"
+            titulo="Actividad"
+            texto="Realiza la siguiente actividad para encontrar antiderivadas:"
+            class='max-w-lg'
+          />
+
+          <div class="mx-auto mb-5 max-w-screen-xl"> 
+            <p>En resumen:</p>
+            <p><Latex inline={true} formula="F(x)"/> es una familia de funciones que son la antiderivada de <Latex inline={true} formula="f(x)"/> y para conocer el valor de estas antiderivadas debemos realizar el procero de integración, es decir:</p> 
+            <p class="text-center"> <Latex inline={true} formula="F(x) = \\int f(x)dx + c "/></p>
+            <p>Para resolver el problema de encontrar la derivada necesitamos conocer métodos de integración.</p>
+           
+          </div>
+
+
     </div>
 
 </Layout>

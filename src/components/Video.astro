@@ -1,0 +1,30 @@
+---
+interface Props {
+	src: string
+	pie?: string
+    class?: string
+}
+
+const { src, pie, class: className, ...rest } = Astro.props as Props
+---
+<div
+	class={`${className}`}
+>
+    <iframe class="w-full aspect-video" src=`${src}` title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class={`video-caption mx-auto text-white`}>
+		{pie}
+	</div>
+</div>
+
+<style>
+.video-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0.5rem;
+    border-left: .22rem var(--css-red-pantone) solid;
+    padding-left: 0.5rem;
+  }</style>

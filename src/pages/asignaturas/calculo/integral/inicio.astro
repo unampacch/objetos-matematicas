@@ -2,6 +2,12 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import Video from '@/components/Video.astro'
 ---
 
 <Layout
@@ -11,7 +17,38 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 
     <ObjetoAprendizaje index={7} asignatura={"calculo"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <p>¿Qué significa calcular el área de una figura? La mayoría de las personas saben que el área es una medida del relleno o interior de una figura cerrada. Dado que la figura más sencilla a la cual se puede calcular el área es el cuadrado, y el más simple de éstos el cuadrado de lado uno, entonces la respuesta a la pregunta de cuál es el área de una figura, consiste en calcular cuántos cuadrados de lado uno le caben en su interior.</p>
+
+        <p>La gran dificultad de este método es que hay figuras a las cuales parece no caberle cuadrados de manera entera, como puede ser el caso de figuras curvas o irregulares. Una estrategia para salvar este problema, consiste en considerar fracciones simples de un cuadrado: mitades, tercios, o cuartas partes.</p>
+
+        <p>En el siguiente video se explica cómo aproximar el área interior de una figura irregular.</p>
+
+        </div>
+
+        <div class="mx-auto mb-5 max-w-screen-md">
+          <ImagenCaption
+            src="/calculo/definicion-integral/img01.PNG"           
+          />
+          <a href="https://www.loom.com/share/f43b6e982bd74f2c91b6667a699bf6e5?sid=584002b7-17a0-47c2-8a10-c23accee22d1" target="_blank" class="text-center block text-blue-500">haz click aqui para ver el video</a>
+          </div>
+
+          <div class="mx-auto mb-5 max-w-screen-xl">
+          <h3>Actividad</h3>
+          <p>Abre una hoja de trabajo en GeoGebra y traza una figura cerrada libre.</p>
+
+          <p>A continuación, realiza las siguientes 5 aproximaciones del área, mediante el método de refinamientos, considerando:</p>
+
+          <ol class="ol-number">
+            <li>Cuadrados enteros.</li>
+            <li>Mitades.</li>
+            <li>Tercios.</li>
+            <li>Cuartos.</li>
+            <li>Quintos.</li>
+          </ol>   
+          <p>Comprueba que cada aproximación mejora a la anterior.</p> 
+
+        </div>
     </div>
 
 </Layout>
