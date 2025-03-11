@@ -2,16 +2,83 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
 ---
 
 <Layout
-  title=""
+  title="Inicio"
   description=""
 >
 
     <ObjetoAprendizaje index={9} asignatura={"calculo"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <p>Con seguridad has escuchado que se les llama antiderivadas a las integrales, precisamente porque operativamente son opuestas a las derivadas. Esto significa que debemos tener nociones de derivadas para entrar al mundo de las integrales.</p>
+        <p>¿Has jugado a adivinar una palabra o personaje a partir de ciertas pistas?</p>
+        <p>Entendamos el proceso de integración de funciones como un juego entre dos personas, en el que una de ellas debe elegir una función y la otra persona debe adivinarla. </p>
+
+        <p><b>Lee la siguiente conversación entre dos personajes que probablemente has visto</b></p>
+       </div>
+
+       <BgFluido>
+        <ImagenCaption
+        src="/calculo/metodos-integracion/img01.PNG">
+        </ImagenCaption>
+       </BgFluido>
+
+        <div class="mx-auto mb-5 max-w-screen-xl">
+          <p class="text-teal-300 text-2xl">¿Por qué no descrubrió Reese la función de Malcom?</p>
+          <p class="text-teal-300 text-2xl">¿Reese hizo un razonamiento erróneo?, ¿ Malcom engañó a Reese?    
+          </p>
+          <p>Reese respondió acertadamente que <Latex inline={true} formula="2x" /> es derivada de la función <Latex inline={true} formula="f(x)=x^2" />, lo que no tomó en cuenta es que también es derivada de las funciones <Latex inline={true} formula="f(x)=x^2 +5" />, <Latex inline={true} formula="f(x)=x^2-\\dfrac{1}{3} " />, <Latex inline={true} formula="f(x)=x^2-1000000..." /> y por supuesto, de la función que Malcom eligió <Latex inline={true} formula="f(x)=x^2+3" /> </p>
+
+          <div class="mx-auto grid max-w-screen-lg items-center gap-10 xl:grid-cols-1">         
+            <div class="bg-green-200 p-5 text-darkblue">
+              <p>
+                Siempre que resolvamos una integralindefinida se debe agregar una constante de integración <Latex inline={true} formula="+C" /> ya que no sabemos si la funcion original tenía una constante antes de ser derivada. En otras palabras, existe una infinidad de funciones que tienen la misma derivada.
+              </p>
+            </div>
+          </div>
+          <br>
+
+          <p>Cuando resolvemos una integral, estamos jugando el papel de Rise, es decir, nos toca adivinar la función que se tenía antes de ser derivada y como no tendremos certeza de si había alguna constante en la función elegida (llamada función primitiva) debemos agregar una constante de integración.</p>
+
+          <h4>Función primitiva</h4>
+
+          <br>
+
+          <p>Sea <Latex inline={true} formula="f(x)"/> una función real de variable real definida en un intervalor cerrado <Latex inline={true} formula="[a.b]"/> dentro de los reales. Se llama función primitiva de <Latex inline={true} formula="f(x)"/> a otra función <Latex inline={true} formula="F(x)"/> cuya derivada es <Latex inline={true} formula="f(x)"/> en dicho intervalo. </p>
+
+          <h4>Integral indefinida</h4>
+
+          <br>
+
+          <p>Se llama integral indefinida de <Latex inline={true} formula="f(x)"/> al conjunto de todas las funciones primitivas de <Latex inline={true} formula="f(x)"/> y se representa por </p>
+
+          <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int{f(x)}\\, dx "/></p>
+
+          <p>Si <Latex inline={true} formula="F(x)"/> es una primitiva de <Latex inline={true} formula="f(x)"/>, entonces se cumple que:</p>
+
+          <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int{f(x)}\\, dx=F(x)+C,\\quad C\\in \\mathbb{R} "/></p>
+
+          <h4>Integrales inmediatas</h4>
+
+          <br>
+
+          <p>Para calcular una integral es necesario conocer las derivadas de distintas funciones, pues hay que determinar aquella función cuya derivada es la función que está dentro de la integral, por lo que es necesario el ejercicio inverso al de obtener la derivada de una función.  Se puede construir una tabla con las integrales que se conocen de manera inmediata a partir de las derivadas de funciones conocidas. A estas integrales cuya primitiva es fácil de conocer se le llaman integrales inmediatas. </p>
+          
+        </div> 
+
+        <Lumi
+        src="/calculo/metodos-integracion/p1 ej1.html"
+        nombre="Actividad"
+        instrucciones="Arrastra y coloca cada una de las siguientes tarjetas en la posición que complete adecuadamente la regla de integración a partir de responder a la pregunta: ¿De qué función F(x) es derivada la función del integrando f(x)?"
+        />
+
+      
     </div>
 
 </Layout>

@@ -1,0 +1,143 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+---
+
+<Layout
+  title="Procesos infinitos"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={0} pantallaIndex={3} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto mb-5 max-w-screen-xl">
+        <p>En esta sección se presentan algunos ejemplos de aplicación de las sucesiones y series geométricas</p>
+
+        <h3>Ejemplo 1</h3>
+
+        <p>A una partícula que se mueve en línea recta, se le aplica una fuerza, de manera que cada segundo la partícula recorre la mitad de la distancia que ha recorrido en el segundo anterior. Si la partícula recorre 20 cm en el primer segundo. ¿Qué distancia total recorrerá?</p>
+
+        <h4>Solución</h4>
+
+        <p>A una partícula que se mueve en línea recta, se le aplica una fuerza, de manera que cada segundo la partícula recorre la mitad de la distancia que ha recorrido en el segundo anterior. Si la partícula recorre 20 cm en el primer segundo. ¿Qué distancia total recorrerá?</p>
+
+        <p class="text-center">
+          <Latex formula="d_{total}=d_{inicial}+\\frac{d_{inicial}}{2}+\\frac{d_{inicial}}{4}+\\frac{d_{inicial}}{8}+\\frac{d_{inicial}}{16}+\\frac{d_{inicial}}{32}+\\cdots " inline={true}/>
+        </p>
+
+        <p>Factorizando <Latex formula="d_{inicial}" inline={true}/> tenemos:</p>
+
+        <p class="text-center">
+          <Latex formula="d_{total}=d_{inicial}+d_{inicial}\\left[\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16}+\\frac{1}{32}+\\cdots\\right]" inline={true}/>
+        </p>
+
+        <p>Esto se puede escribir como:</p>
+
+        <p class="text-center">
+          <Latex formula="d_{total}=d_{inicial}+d_{inicial}\\left[\\frac{1}{2}+\\frac{1}{2^2}+\\frac{1}{2^3}+\\frac{1}{2^4}+\\frac{1}{2^5}+\\cdots\\right] " inline={true}/>
+        </p>
+
+        <p>O bien:</p>
+
+        <p class="text-center">
+          <Latex formula="d_{total}=d_{inicial}+d_{inicial}\\cdot\\sum_{n=1}^{\\infty}\\frac{1}{2}\\left(\\frac{1}{2}\\right)^{n-1} " inline={true}/>
+        </p>
+
+        <p>En nuestro problema sabemos que:</p>
+
+        <p class="text-center">
+          <Latex formula="\\sum_{n=1}^{\\infty}ar^{n-1}=\\frac{a}{(1-r)} " inline={true}/>  y  <Latex formula="d_{inicial}=20\\; cm " inline={true}/>
+        </p>
+
+        <p class="text-center">
+          <Latex formula="d_{total} = 20 + 20 \\sum_{n=1}^{\\infty} \\frac{1}{2} \\left(\\frac{1}{2}\\right)^{n-1} = 20 + 20 \\left(\\frac{\\frac{1}{2}}{1 - \\frac{1}{2}}\\right) = 20 + 20 = 40\\; \\text{cm}" inline={true}/>
+        </p>
+
+        <p class="text-center">
+          <Latex formula="d_{total} = 20 + 20 \\sum_{n=1}^{\\infty} \\frac{1}{2} \\left(\\frac{1}{2}\\right)^{n-1} = 20 + 20 \\left(\\frac{\\frac{1}{2}}{1 - \\frac{1}{2}}\\right) = 20 + 20 = 40\\; \\text{cm}" inline={true}/>
+        </p>
+
+       <h3>Ejemplo 2</h3>
+
+       <p>Se deja caer una pelota de una altura de 10 metros, la cual rebota varias veces. En el primer rebote llega a las dos terceras parte de la altura inicial, en el segundo recorre la novena parte de la altura inicial, en el tercero rebota una veintisieteava parte, en el cuarto una ochentaiunava y así sucesivamente. </p>
+
+       <ol class="ol-alpha pl-10 mt-5">
+        <li>a)¿Cuál será la distancia recorrida por la pelota después de 5 rebotes, si continua el mismo proceso?
+        </li>
+        <li>¿Cuál será la máxima distancia recorrida?</li>
+      </ol>
+
+      <h4>Solución</h4>
+
+      <ol class="ol-alpha pl-10 mt-5">
+        <li>
+          <p><Latex formula="d_n=10+\\frac{2}{3}(10)+\\frac{2}{3^2}(10)+\\frac{2}{3^3}(10) +\\frac{2}{3^4}(10)+\\cdots +\\frac{2}{3^n}(10)" inline={true}/></p>
+
+          <p><Latex formula="d_n=10+2(10)\\left[\\frac{1}{3}+\\frac{1}{3}\\cdot\\frac{1}{3}+\\frac{1}{3}\\cdot\\frac{1}{3^2}+\\frac{1}{3}\\cdot\\frac{1}{3^3}+\\cdots+\\frac{1}{3}\\cdot\\frac{1}{3^{n-1}}\\right] " inline={true}/></p>
+
+          <p><Latex formula="d_n=10+20\\cdot\\sum\\frac{1}{3}\\cdot\\left(\\frac{1}{3}\\right)^{n-1}" inline={true}/></p>
+
+          <p><Latex formula="d_n=10+20\\left[\\frac{\\frac{1}{3}-\\frac{1}{3}\\left(\\frac{1}{3}\\right)^n}{1-\\frac{1}{3}}\\right] " inline={true}/></p>
+
+          <p><Latex formula="d_5=10+20\\left[\\frac{\\frac{1}{3}-\\frac{1}{3}\\left(\\frac{1}{3}\\right)^5}{1-\\frac{1}{3}}\\right]=10+20\\left(\\frac{121}{243}\\right)=\\frac{4850}{243}=19.9588 \\; m" inline={true}/></p>
+
+
+        </li>
+        <li>
+          En el límite cuando n tiende a infinito tenemos:
+
+          <p><Latex formula="\\lim_{n\\rightarrow\\infty}{d_n}=10+20\\left[\\frac{\\frac{1}{3}}{1-\\frac{1}{3}}\\right]=10+20\\left[\\frac{1}{2}\\right]=20\\; m" inline={true}/></p>
+
+        </li>
+      </ol>
+
+      <h3>Ejemplo 3</h3>
+
+      <p>Expresa el número decimal periódico 0.73 ̅ como una suma infinita y calcula su valor.</p>
+
+      <h4>Solución</h4>
+
+      <p>El número decimal periódico se puede escribir como:</p>
+
+      <p class="text-center">
+        <Latex formula="0.7\\bar{3}=0.7+0.03+0.003+0.0003+0.00003+0.000003+\\dots " inline={true}/>
+      </p>
+
+      <p>Otra forma de escribirlo es:</p>
+
+      <p class="text-center">
+        <Latex formula="0.7\\bar{3}=\\frac{7}{10} +3\\left(\\frac{1}{10}\\right)^2  +3\\left(\\frac{1}{10}\\right)^3 +3\\left(\\frac{1}{10}\\right)^4 +3\\left(\\frac{1}{10}\\right)^5 +3\\left(\\frac{1}{10}\\right)^6 +\\cdots " inline={true}/>
+      </p>
+
+      <p>Factorizando la expresión <Latex formula="3\\left(\\frac{1}{10}\\right) " inline={true}/> podemos escribir este número como:</p>
+
+      <p class="text-center">
+        <Latex formula="0.7\\bar{3} \\approx \\frac{7}{10}+3\\frac{1}{10}\\left[\\left(\\frac {1}{10}\\right)+\\left(\\frac {1}{10}\\right)^2 +\\left(\\frac{1}{10}\\right)^3 +\\left(\\frac{1}{10}\\right)^4 +\\left(\\frac{1}{10}\\right)^5+\\cdots \\right]" inline={true}/>
+      </p>
+
+      <p class="text-center">
+        <Latex formula="0.73 \\approx \\frac{7}{10} + \\frac{3}{\\left(\\frac{1}{10}\\right)} \\left[\\left(\\frac{1}{10}\\right) + \\left(\\frac{1}{10}\\right)^2 + \\left(\\frac{1}{10}\\right)^3 + \\left(\\frac{1}{10}\\right)^4 + \\left(\\frac{1}{10}\\right)^5 + \\cdots \\right]" inline={true}/>
+      </p>
+
+      <p>En forma de sumatoria:</p>
+
+      <p class="text-center">
+        <Latex formula="0.7\\bar{3}=\\frac{7}{10}+3\\left(\\frac{1}{10}\\right)\\cdot\\sum_{n=0}^{\\infty}\\frac{1}{10}\\left(\\frac{1}{10}\\right)^n=\\frac{7}{10}+3\\left(\\frac{1}{10}\\right)\\cdot\\frac{\\frac{1}{10}}{\\left(1-\\frac{1}{10}\\right)} " inline={true}/>
+      </p>
+
+      <p class="text-center">
+        <Latex formula="0.7\\bar{3}=\\frac{7}{10}+3\\left(\\frac{1}{10}\\right) \\left(\\frac{1}{9}\\right)= \\frac{7}{10}+\\frac{1}{30}=\\frac{11}{15}" inline={true}/>
+      </p>
+
+
+
+      </div>
+    </div>
+
+</Layout>
