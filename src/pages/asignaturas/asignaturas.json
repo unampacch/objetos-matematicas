@@ -447,7 +447,7 @@
 				{
 					"titulo": "Sucesiones y series ",
 					"slug": "/asignaturas/calculo/sucesiones-series/inicio",
-					"portada": "/holder-cover.webp",
+					"portada": "/calculo-portada-0.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las sucesiones y series en el ámbito de la matemática. Contiene una exploración exhaustiva de las sucesiones y series numéricas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
@@ -490,26 +490,12 @@
 				},
 				{
 					"titulo": "Límite de una función ",
-					"slug": "/asignaturas/calculo/limite-funcion",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/limite-funcion/inicio",
+					"portada": "/calculo-portada-2.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales del límite de una función en el ámbito de la matemática. Contiene una exploración exhaustiva del límite de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Límite de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						{
-							"titulo": "Definición de límite",
-							"slug": "/asignaturas/calculo/limite-funcion/limite",
-							"descripcion": "Definición y propiedades del límite de una función real."
-						},
-						{
-							"titulo": "Propiedades de los límites",
-							"slug": "/asignaturas/calculo/limite-funcion/propiedades",
-							"descripcion": "Propiedades de los límites de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Cálculo de límites",
-							"slug": "/asignaturas/calculo/limite-funcion/calculo",
-							"descripcion": "Métodos para calcular límites de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						}
+						
 					]
 				},
 				{
