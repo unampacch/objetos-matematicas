@@ -617,19 +617,9 @@
 					"resumen": "Interpretación geométrica de la integral de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Área bajo la curva",
-							"slug": "/asignaturas/calculo/interpretacion-integral/area-curva",
-							"descripcion": "Interpretación geométrica de la integral: área bajo la curva."
-						},
-						{
-							"titulo": "Longitud de arco",
-							"slug": "/asignaturas/calculo/interpretacion-integral/longitud-arco",
-							"descripcion": "Interpretación geométrica de la integral: longitud de arco."
-						},
-						{
-							"titulo": "Volumen de sólidos de revolución",
-							"slug": "/asignaturas/calculo/interpretacion-integral/volumen-revolucion",
-							"descripcion": "Interpretación geométrica de la integral: volumen de sólidos de revolución."
+							"titulo": "Aproximación al valor del área sin integrales",
+							"slug": "/asignaturas/calculo/interpretacion-integral/aproximacion-integrales",
+							"descripcion": "Aproximación al valor del área sin integrales."
 						}
 					]
 				},
