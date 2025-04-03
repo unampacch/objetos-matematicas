@@ -1,0 +1,61 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Video from '@/components/Video.astro'
+import Hr from '@/components/Hr.astro'
+---
+
+<Layout title="Leyes de los exponentes">
+	<ObjetoAprendizajePantalla index={1} pantallaIndex={1} asignatura={'matematicas_2'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h4>Polinomios grado 2 (expresión completa)</h4>
+			<p>
+				Un polinomio es de segundo grado cuando el exponente máximo en la variable es 2. Se tiene la
+				expresión en forma completa si aparecen los tres términos del polinomio.
+			</p>
+			<div class="mx-auto my-10 max-w-lg">
+				<img src="/matematicas2/factorizacion/polinomios-grado2-1.webp" alt="" />
+			</div>
+			<p>
+				Para aprender a factorizar polinomios de segundo grado, en su versión completa, te pedimos
+				revisar el video “Factorización de polinomios grado 2 (expresión completa), disponible en:
+			</p>
+			<div class="mx-auto my-10 max-w-2xl">
+				<Video
+					src="https://www.youtube.com/embed/_idwulYMNvA"
+					pie="Factorización de polinomios grado 2 (expresión completa)"
+				/>
+			</div>
+			<h4>Polinomios grado 2 (expresión incompleta)</h4>
+			<p>
+				Se tiene un polinomio cuadrático en forma incompleta cuando no aparecen los tres términos
+				del polinomio.
+			</p>
+			<div class="my-10 grid grid-cols-2 gap-4">
+				<article class="bg-slate-600 p-4">
+					<p class="font-bold">Factor común</p>
+					<p>Se utiliza cuando en el polinomio de segundo grado no hay término independiente.</p>
+				</article>
+				<article class="bg-slate-600 p-4">
+					<p class="font-bold">Diferencia de cuadrados</p>
+					<p>
+						Se usa cuando el polinomio de grado 2 no tiene término lineal y además se presenta una
+						resta entre los términos cuadrático e independiente.
+					</p>
+				</article>
+			</div>
+			<p>
+				Para aprender a factorizar polinomios de segundo grado, en su versión completa, te pedimos
+				revisar el video “Factorización de polinomios grado 2 (expresión completa), disponible en:
+			</p>
+			<div class="mx-auto my-10 max-w-2xl">
+				<Video
+					src="https://www.youtube.com/embed/_idwulYMNvA"
+					pie="Factorización de polinomios grado 2 (expresión incompleta)"
+				/>
+			</div>
+		</div>
+	</div>
+</Layout>

@@ -110,29 +110,29 @@
 				},
 				{
 					"titulo": "Factorización",
-					"slug": "/asignaturas/matematicas-2/factorizacion",
+					"slug": "/asignaturas/matematicas-2/factorizacion/inicio",
 					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la factorización en el ámbito de la matemática. Contiene una exploración exhaustiva de los factores comunes, factorización por agrupación, factorización por trinomio cuadrado perfecto, factorización por diferencia de cuadrados, factorización por factor común y factorización por factorización por factorización de polinomios, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+					"descripcion": "Resuelve ecuaciones cuadráticas mediante los diferentes métodos de solución. Transformando la ecuación cuadrática a la forma adecuada para su resolución por un método específico.",
 					"resumen": "Factorización y su aplicación en la simplificación de expresiones algebraicas.",
 					"pantallas": [
 						{
-							"titulo": "Factorización por factor común",
-							"slug": "/asignaturas/matematicas-2/factorizacion/factor-comun",
-							"descripcion": "Factorización por factor común y su aplicación en la simplificación de expresiones algebraicas."
+							"titulo": "Reglas del rompecabezas ",
+							"slug": "/asignaturas/matematicas-2/factorizacion/rompecabezas",
+							"descripcion": "Reglas del rompecabezas y su aplicación en la simplificación de expresiones algebraicas."
 						},
 						{
-							"titulo": "Factorización por agrupación",
-							"slug": "/asignaturas/matematicas-2/factorizacion/agrupacion",
-							"descripcion": "Factorización por agrupación y su aplicación en la simplificación de expresiones algebraicas."
+							"titulo": "Factorización de polinomios grados 2",
+							"slug": "/asignaturas/matematicas-2/factorizacion/polinomios-grado-2",
+							"descripcion": "Factorización de polinomios de grado 2 y su aplicación en la simplificación de expresiones algebraicas."
 						},
 						{
-							"titulo": "Factorización por trinomio cuadrado perfecto",
-							"slug": "/asignaturas/matematicas-2/factorizacion/trinomio-cuadrado-perfecto",
-							"descripcion": "Factorización por trinomio cuadrado perfecto y su aplicación en la simplificación de expresiones algebraicas."
+							"titulo": "Factorización de polinomios grados 3 y superior",
+							"slug": "/asignaturas/matematicas-2/factorizacion/polinomios-grado-3",
+							"descripcion": "Factorización de polinomios de grado 3 y superior y su aplicación en la simplificación de expresiones algebraicas."
 						},
 						{
-							"titulo": "Factorización por diferencia de cuadrados",
-							"slug": "/asignaturas/matematicas-2/factorizacion/diferencia-cuadrados",
+							"titulo": "Simplificación de expresiones algebraicas",
+							"slug": "/asignaturas/matematicas-2/factorizacion/simplificacion",
 							"descripcion": "Factorización por diferencia de cuadrados y su aplicación en la simplificación de expresiones algebraicas."
 						},
 						{
