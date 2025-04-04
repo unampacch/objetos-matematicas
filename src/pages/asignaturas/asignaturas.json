@@ -111,7 +111,7 @@
 				{
 					"titulo": "Factorización",
 					"slug": "/asignaturas/matematicas-2/factorizacion/inicio",
-					"portada": "/holder-cover.webp",
+					"portada": "/matematicas2/factorizacion/portada-factorizacion.webp",
 					"descripcion": "Resuelve ecuaciones cuadráticas mediante los diferentes métodos de solución. Transformando la ecuación cuadrática a la forma adecuada para su resolución por un método específico.",
 					"resumen": "Factorización y su aplicación en la simplificación de expresiones algebraicas.",
 					"pantallas": [
@@ -134,11 +134,6 @@
 							"titulo": "Simplificación de expresiones algebraicas",
 							"slug": "/asignaturas/matematicas-2/factorizacion/simplificacion",
 							"descripcion": "Factorización por diferencia de cuadrados y su aplicación en la simplificación de expresiones algebraicas."
-						},
-						{
-							"titulo": "Factorización por factorización de polinomios",
-							"slug": "/asignaturas/matematicas-2/factorizacion/factorizacion-polinomios",
-							"descripcion": "Factorización por factorización de polinomios y su aplicación en la simplificación de expresiones algebraicas."
 						}
 					]
 				},

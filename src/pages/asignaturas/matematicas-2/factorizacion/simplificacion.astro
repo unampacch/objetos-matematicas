@@ -2,8 +2,7 @@
 import Layout from '@/layouts/Layout.astro'
 import Latex from '@/components/Latex.astro'
 import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
-import Video from '@/components/Video.astro'
-import Hr from '@/components/Hr.astro'
+import Lumi from '@/components/Lumi.astro'
 ---
 
 <Layout title="Leyes de los exponentes">
@@ -50,10 +49,11 @@ import Hr from '@/components/Hr.astro'
 					</tbody>
 				</table>
 			</div>
-			<p>
-				Relaciona las expresiones racionales con su forma simplificada, colocando dentro de cada
-				cuadro la letra que corresponda a su simplificación.
-			</p>
+			<Lumi
+				src="/matematicas2/factorizacion/expresion-racional.html"
+				nombre="Arrastra la opción correcta"
+				instrucciones="Relaciona las expresiones racionales con su forma simplificada, colocando dentro de cada cuadro la letra que corresponda a su simplificación."
+			/>
 		</div>
 	</div>
 </Layout>

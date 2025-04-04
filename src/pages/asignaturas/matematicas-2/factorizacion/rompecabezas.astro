@@ -3,12 +3,13 @@ import Layout from '@/layouts/Layout.astro'
 import Latex from '@/components/Latex.astro'
 import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
 import Video from '@/components/Video.astro'
+import Lumi from '@/components/Lumi.astro'
 ---
 
 <Layout title="Leyes de los exponentes">
 	<ObjetoAprendizajePantalla index={1} pantallaIndex={0} asignatura={'matematicas_2'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade">
-		<div class="mx-auto max-w-screen-xl">
+		<div class="mx-auto max-w-screen-xl mb-10">
 			<p>Disponemos de los siguientes tipos de tarjetas, las cuales se distinguen por su área:</p>
 
 			<div class="my-10 grid grid-cols-2 items-center gap-4">
@@ -71,15 +72,21 @@ import Video from '@/components/Video.astro'
 				de una aplicación que te permite simular este juego de rompecabezas para factorizar otras
 				expresiones:
 			</p>
-      <Video
-        src="https://www.youtube.com/embed/VtdyuvS9IdI"
-        pie="Mathigon para factorizar"
-        class="mx-auto my-10 max-w-2xl"
-      />
-      <p>
-        Ahora, utiliza la aplicación <a href="https://es.mathigon.org/polypad" target="_blank">Mathigon</a> para construir
-        el rompecabezas que factoriza cada uno de los polinomios de la columna izquierda.
-      </p>
+			<Video
+				src="https://www.youtube.com/embed/VtdyuvS9IdI"
+				pie="Mathigon para factorizar"
+				class="mx-auto my-10 max-w-2xl"
+			/>
+			<p>
+				Ahora, utiliza la aplicación <a href="https://es.mathigon.org/polypad" target="_blank"
+					>Mathigon</a
+				> para construir el rompecabezas que factoriza cada uno de los polinomios de la columna izquierda.
+			</p>
 		</div>
+		<Lumi
+			src="/matematicas2/factorizacion/polis.html"
+			nombre="Arrastra la factoización a la expresión correcta"
+			instrucciones="Apoyándote de los rompecabezas que construiste, arrastra las siguientes tarjetas colocándolas frente al polinomio que factoriza."
+		/>
 	</div>
 </Layout>
