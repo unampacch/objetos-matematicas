@@ -1,0 +1,59 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Lumi from '@/components/Lumi.astro'
+---
+
+<Layout title="Leyes de los exponentes">
+	<ObjetoAprendizajePantalla index={1} pantallaIndex={3} asignatura={'matematicas_2'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<p>
+				Las técnicas de factorización son indispensables en el área de matemáticas, ya que son una
+				herramienta para el estudio de funciones y la resolución de límites, derivadas e integrales
+				que a su vez son necesarias para acceder a conocimientos y aplicaciones más profundas en
+				ingeniería y ciencias.
+			</p>
+			<p>
+				Simplificaremos diversas expresiones para poner en práctica las factorizaciones aprendidas.
+				Observa el ejemplo:
+			</p>
+			<div class="table-responsive my-10">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Expresión</th>
+							<th>Explicación</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<Latex inline={true} formula="\\dfrac{x-3}{x^2-11x+24}" />
+							</td>
+							<td> Al ser de grado 2, es posible simplificar el polinomio del denominador. </td>
+						</tr>
+						<tr>
+							<td>
+								<Latex inline={true} formula="\\dfrac{\\cancel{x-3}}{\\cancel{(x-3)}(x-8)}" />
+							</td>
+							<td> La división de factores iguales da por resultado 1. </td>
+						</tr>
+						<tr>
+							<td>
+								<Latex inline={true} formula="\\dfrac{1}{x-8}" />
+							</td>
+							<td> Expresión simplificada. </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<Lumi
+				src="/matematicas2/factorizacion/expresion-racional.html"
+				nombre="Arrastra la opción correcta"
+				instrucciones="Relaciona las expresiones racionales con su forma simplificada, colocando dentro de cada cuadro la letra que corresponda a su simplificación."
+			/>
+		</div>
+	</div>
+</Layout>

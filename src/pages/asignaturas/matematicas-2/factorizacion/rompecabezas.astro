@@ -1,0 +1,92 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Video from '@/components/Video.astro'
+import Lumi from '@/components/Lumi.astro'
+---
+
+<Layout title="Leyes de los exponentes">
+	<ObjetoAprendizajePantalla index={1} pantallaIndex={0} asignatura={'matematicas_2'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl mb-10">
+			<p>Disponemos de los siguientes tipos de tarjetas, las cuales se distinguen por su área:</p>
+
+			<div class="my-10 grid grid-cols-2 items-center gap-4">
+				<img src="/matematicas2/factorizacion/rompecabezas-1.webp" alt="Tarjeta 1" />
+				<p>
+					El <strong>rectángulo verde</strong> mide "<Latex inline formula="x" />" en su lado mayor
+					y este es del mismo tamaño que el lado del <strong>cuadrado azul</strong>. Además, el lado
+					menor del rectángulo verde mide "<Latex inline formula="1" />" y es del mismo tamaño que
+					el lado del <strong>cuadrado anaranjado</strong>.
+				</p>
+			</div>
+			<div class="my-10 grid grid-cols-2 items-center gap-4">
+				<img src="/matematicas2/factorizacion/rompecabezas-2.webp" alt="Tarjeta 2" />
+				<p>
+					Todas las fichas anteriores tienen su equivalente de <strong>color rojo</strong>, sólo que
+					estas últimas representan áreas negativas.
+				</p>
+			</div>
+			<h3>Armado del rompecabezas e interpretación</h3>
+			<p>
+				Debes utilizar el número de tarjetas de cada tipo que indique el polinomio, para armar un
+				rompecabezas que al final resulte cuadrilátero.
+			</p>
+			<div class="my-10 text-center text-2xl">¡Debes utilizar todas las tarjetas!</div>
+			<p>
+				Cuando logres armar el rompecabezas, las medidas de esta figura, multiplicadas serán la
+				factorización.
+			</p>
+			<h4>Por ejemplo</h4>
+			<p>Factorizaremos el polinomio <Latex inline formula="\(x^2+7x+10\)" /></p>
+			<p>
+				Según la ecuación, el número de tarjetas para armar nuestro rompecabezas es el siguiente:
+			</p>
+			<div class="mx-auto my-10 max-w-2xl">
+				<img src="/matematicas2/factorizacion/rompecabezas-3.webp" alt="Tarjeta 3" />
+			</div>
+			<p>Aquí nuestro primer intento:</p>
+			<div class="mx-auto my-10 max-w-2xl">
+				<img src="/matematicas2/factorizacion/rompecabezas-4.webp" alt="Tarjeta 4" />
+			</div>
+			<p>La configuración no es exitosa porque no hemos logrado armar un cuadrilátero.</p>
+			<div class="my-10 text-center text-2xl">
+				¡Qué deseable sería disponer de algunas fichas más para completarlo!
+			</div>
+			<p>Intentemos de nuevo…</p>
+			<div class="my-10 grid grid-cols-2 items-center gap-4">
+				<article>
+					<img src="/matematicas2/factorizacion/rompecabezas-5.webp" alt="Tarjeta 2" />
+				</article>
+				<article>
+					<p>
+						¡Lo hemos logrado! ¡Armamos un cuadrilátero usando todas las tarjetas! Las medidas del
+						cuadrilátero que formó nos proporcionan la factorización:
+					</p>
+					<Latex class="my-10 text-center" formula="\(x^2+7x+10=(x+5)(x+2)\)" />
+				</article>
+			</div>
+			<p>
+				Observa el siguiente video “Mathigon para factorizar” donde te explicamos el funcionamiento
+				de una aplicación que te permite simular este juego de rompecabezas para factorizar otras
+				expresiones:
+			</p>
+			<Video
+				src="https://www.youtube.com/embed/VtdyuvS9IdI"
+				pie="Mathigon para factorizar"
+				class="mx-auto my-10 max-w-2xl"
+			/>
+			<p>
+				Ahora, utiliza la aplicación <a href="https://es.mathigon.org/polypad" target="_blank"
+					>Mathigon</a
+				> para construir el rompecabezas que factoriza cada uno de los polinomios de la columna izquierda.
+			</p>
+		</div>
+		<Lumi
+			src="/matematicas2/factorizacion/polis.html"
+			nombre="Arrastra la factoización a la expresión correcta"
+			instrucciones="Apoyándote de los rompecabezas que construiste, arrastra las siguientes tarjetas colocándolas frente al polinomio que factoriza."
+		/>
+	</div>
+</Layout>

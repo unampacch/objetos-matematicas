@@ -24,6 +24,11 @@ body {
   background-color: var(--css-darkest-blue);
 }
 .objeto-aprendizaje {
+  > div.max-w-screen-xl, .max-charater {
+    max-width: clamp(50ch, 80%, 75ch);
+  }
+}
+.objeto-aprendizaje {
 
 
   h3{
