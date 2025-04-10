@@ -1,0 +1,103 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Hr from '@/components/Hr.astro'
+---
+
+<Layout title="Leyes de los exponentes">
+	<ObjetoAprendizajePantalla index={2} pantallaIndex={0} asignatura={'matematicas_2'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<p>El cuadrado de un binomio se obtiene sumando algebraicamente el cuadrado del primer término, el doble del primer término por el segundo y el cuadrado del segundo término.</p>
+      <h4 class="my-5">Ejemplos</h4>
+      <p>Calcular los siguientes binomios al cuadrado:</p>
+      <ol class="ol-number mt-5">
+        <li>
+          <p><Latex formula='(x-4y)^2' /></p>
+          <p><strong>Primer término</strong> <Latex inline formula='x' /></p>
+          <p><strong>Segundo término</strong> <Latex inline formula='-4y' /></p>
+          <div class="inline-flex flex-row flex-wrap items-center gap-5 my-5 justify-center">
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='x^2' />
+              </div>
+              <p class="mt-2">Cuadrado del primer término</p>
+            </div>
+            <div class="text-3xl">+</div>
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='-8xy' />
+              </div>
+              <p class="mt-2">Cuadrado del primer término</p>
+            </div>
+            <div class="text-3xl">+</div>
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='16y^2' />
+              </div>
+              <p class="mt-2">Cuadrado del segundo término</p>
+            </div>
+          </div>
+          <p><Latex class="text-center my-5" formula='(x-4y)^2=x^2-8xy+16y^2' /></p>
+        </li>
+        <li>
+          <p><Latex formula='(-2a+3b)^2' /></p>
+          <p><strong>Primer término</strong> <Latex inline formula='-2a' /></p>
+          <p><strong>Segundo término</strong> <Latex inline formula='3b' /></p>
+          <div class="inline-flex flex-row flex-wrap items-center gap-5 my-5 justify-center">
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='4a^2' />
+              </div>
+              <p class="mt-2">Cuadrado del primer término</p>
+            </div>
+            <div class="text-3xl">+</div>
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='12ab' />
+              </div>
+              <p class="mt-2">Cuadrado del primer término</p>
+            </div>
+            <div class="text-3xl">+</div>
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='9b^2' />
+              </div>
+              <p class="mt-2">Cuadrado del segundo término</p>
+            </div>
+          </div>
+          <p><Latex class="text-center my-5" formula='(-2a+3b)^2=4a^2-12ab+9b^2' /></p>
+        </li>
+        <li>
+          <p><Latex formula='(9a^2+3by^3)^2' /></p>
+          <p><strong>Primer término</strong> <Latex inline formula='9a^2' /></p>
+          <p><strong>Segundo término</strong> <Latex inline formula='3by^3' /></p>
+          <div class="inline-flex flex-row flex-wrap items-center gap-5 my-5 justify-center">
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='81a^4' />
+              </div>
+              <p class="mt-2">Cuadrado del primer término</p>
+            </div>
+            <div class="text-3xl">+</div>
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='54a^2by^3' />
+              </div>
+              <p class="mt-2">Cuadrado del primer término</p>
+            </div>
+            <div class="text-3xl">+</div>
+            <div class="text-center md:max-w-[23%]">
+              <div class="border-white border-2 rounded-xl px-5 py-2">
+                <Latex formula='9b^2y^6' />
+              </div>
+              <p class="mt-2">Cuadrado del segundo término</p>
+            </div>
+          </div>
+          <p><Latex class="text-center my-5" formula='(9a^2+3by^3)^2=81a^4+54a^2by^3+9b^2y^6' /></p>
+        </li>
+      </ol>
+		</div>
+	</div>
+</Layout>
