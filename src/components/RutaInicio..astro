@@ -1,28 +1,42 @@
-<section class="max-w-5xl mx-auto mt-10">
+---
+import Abaco from "@/icons/Abaco.astro";
+import Graduado from "@/icons/Graduado.astro";
+import Libro from "@/icons/Libro.astro";
+import TarjetaNivel from "@/components/TarjetaNivel.astro";
+---
+<section class="max-w-5xl mx-auto mt-10 px-4">
+  <!-- Título principal con gradiente -->
   <h2
-  class="my-5 text-3xl font-extrabold text-light lg:text-4xl
-  animate-fade-down overflow-hidden transform transition
-  duration-1000 ease-in-out"
+    class="my-5 text-3xl font-extrabold text-light lg:text-4xl animate-fade-down overflow-hidden transform transition duration-1000 ease-in-out"
   >
     <span
-    class="text-transparent bg-clip-text bg-gradient-to-r to-light from-lightblue"
+      class="text-transparent bg-clip-text bg-gradient-to-r to-light from-lightblue"
     >
-    No importa en qué punto estés, tenemos algo para ti.
+      No importa en qué punto estés, tenemos algo para ti.
     </span>
   </h2>
-  <p class="text-2xl mb-10">No importa tu nivel, puedes empezar a construir desde ahí.</p>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    <div class="bg-lightblue/70 p-5 rounded-lg shadow-lg">
-      <h3 class="text-darkblue font-bold text-xl">Nivel 1</h3>
-      <p class="text-dark">“Estoy en bachillerato”</p>
-    </div>
-    <div class="bg-lightblue/70 p-5 rounded-lg shadow-lg">
-      <h3 class="text-darkblue font-bold text-xl">Nivel 2</h3>
-      <p class="text-dark"> “Me estoy preparando para un examen”</p>
-    </div>
-    <div class="bg-lightblue/70 p-5 rounded-lg shadow-lg">
-      <h3 class="text-darkblue font-bold text-xl">Nivel 3</h3>
-      <p class="text-dark">“Acabo de entrar a la uni”</p>
-    </div>
+
+  <!-- Subtítulo -->
+  <p class="text-2xl mb-10 text-light">
+    Empieza a construir desde aquí.
+  </p>
+
+  <!-- Tarjetas -->
+  <div class="grid grid-cols-1 px-14 md:px-0 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <TarjetaNivel
+      icono={Abaco}
+      nivel="Nivel 1"
+      descripcion="“Estoy en bachillerato”"
+    />
+    <TarjetaNivel
+      icono={Libro}
+      nivel="Nivel 2"
+      descripcion="“Me estoy preparando para un examen”"
+    />
+    <TarjetaNivel
+      icono={Graduado}
+      nivel="Nivel 3"
+      descripcion="“Acabo de entrar a la uni”"
+    />
   </div>
 </section>
