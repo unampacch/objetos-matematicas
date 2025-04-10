@@ -1,5 +1,6 @@
 ---
 import menu from "@/config/menu.json";
+import Lupa from "@/icons/Lupa.astro";
 
 export interface NavigationLink {
   name: string;
@@ -42,8 +43,8 @@ animate-fade animate-once animate-duration-[2000ms] animate-ease-in-out animate-
     </div>
     <div class="w-full  mx-auto flex flex-col bg-darkblue/70 pb-5 md:pb-0 md:p-5  lg:p-10 shadow-2xl h-full ">
       <div class="h-full flex flex-col justify-between md:items-center md:justify-center">
-        <div class="bg-slate-50 px-4 py-1 md:rounded-3xl text-pretty uppercase font-extrabold text-1xl lg:text-xl text-darkblue self-center w-full md:w-auto border border-slate md:order-2">
-          🔍 Explora por asignatura
+        <div class="bg-slate-50 px-4 py-1 md:rounded-3xl text-pretty uppercase font-extrabold text-1xl lg:text-xl text-darkblue self-center w-full md:w-auto border border-slate md:order-2 flex items-center gap-2">
+          <Lupa class="size-6 inline" /> Explora por asignatura
         </div>
         <div class="flex flex-wrap gap-x-5 gap-y-2 pt-5 justify-center my-10">
           {main.map((menu) =>
