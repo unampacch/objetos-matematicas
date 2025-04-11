@@ -167,10 +167,10 @@
 				},
 				{
 					"titulo": "Ecuación general de segundo grado, graﬁcación y determinación de raíces",
-					"slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado",
+					"slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado/inicio",
 					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación general de segundo grado, graﬁcación y determinación de raíces en el ámbito de la matemática. Contiene una exploración exhaustiva de la ecuación general de segundo grado, junto con su aplicación en la graﬁcación y determinación de raíces. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-					"resumen": "Ecuación general de segundo grado, graﬁcación y determinación de raíces.",
+					"descripcion": "Generaliza el método de completar el trinomio cuadrado perfecto y obtiene la fórmula general para resolver",
+					"resumen": "Fórmula general para resolver una ecuación cuadrática.",
 					"pantallas": [
 						{
 							"titulo": "Ecuación general de segundo grado",
@@ -183,8 +183,8 @@
 							"descripcion": "Graﬁcación de ecuaciones cuadráticas y su interpretación geométrica."
 						},
 						{
-							"titulo": "Determinación de raíces",
-							"slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado/determinacion-raices",
+							"titulo": "Raíces de la función cuadrática",
+							"slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado/raices",
 							"descripcion": "Métodos para determinar las raíces de una ecuación cuadrática."
 						}
 					]

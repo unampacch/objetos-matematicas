@@ -4,14 +4,37 @@ import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 ---
 
-<Layout
-  title=""
-  description=""
->
-
-    <ObjetoAprendizaje index={4} asignatura={"matematicas_2"} />
-    <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+<Layout>
+  <ObjetoAprendizaje index={4} asignatura={"matematicas_2"} />
+  <div class="objeto-aprendizaje mx-auto animate-fade">
+    <div class="mx-auto max-w-screen-xl leading-relaxed">
+      <p>En las ecuaciones de <strong>primer grado con una sola variable</strong> se busca determinar el valor de una incógnita bajo ciertas condiciones, y donde dicha incógnita aparece elevada a la primera potencia.</p>
+      <p>La <strong>ecuación general de segundo grado</strong>, también conocida como <strong>ecuación cuadrática</strong>, es uno de los conceptos más importantes y fundamentales en el álgebra. Este tipo de ecuación aparece en una amplia variedad de problemas matemáticos y aplicaciones prácticas, desde el cálculo de trayectorias en física hasta la optimización en economía. Comprender y resolver ecuaciones de segundo grado es esencial, ya que se sienta las bases para estudios avanzados en matemáticas y ciencias.</p>
+      <div class="max-w-3xl mx-auto text-center text-xl bg-slate-200 text-darkblue p-4 my-10">
+        <p class="text-2xl">¡Recuerda!</p>
+        <p>Una ecuación es una igualdad matemática que involucra una o más incógnitas y establece que dos expresiones son iguales.</p>
+      </div>
+      <p>Las ecuaciones son fundamentales en matemáticas y se utilizan en una variedad de contextos para modelar y resolver problemas en diversas disciplinas como álgebra, geometría, física, ingeniería, economía y muchas más.</p>
+      <p>Existen varios tipos de ecuaciones en matemáticas, y se clasifican según las propiedades de sus términos y las operaciones involucradas. Uno de esos tipos se denomina ecuación polinomial con una incógnita, e involucra una variable y expresiones polinómicas. Un polinomio es una suma de términos, cada uno de los cuales es el producto de una constante, llamada coeficiente, y una potencia de la incógnita. La forma general de una ecuación polinomial es:</p>
+      <p class="text-center lg:text-xl my-10"><Latex formula="a_nx^n+a_{n-1}x^{n-1}+\\dotsm+a_2x^2+a_1x+a_0=0" /></p>
+      Donde:
+      <div class="max-w-2xl mx-auto my-10 border-slate-100 px-5 border-2"><Latex inline formula="n" />es el grado del polinomio, que es el exponente más alto al que está elevada la incógnita <Latex inline formula="x" />, y este debe de ser un numero natural. <Latex inline formula="a_n, a_{n-1}, \\dotsm, a_1, a_0" />  con los coeficientes del polinomio, siendo <Latex inline formula="a_n\\neq0" />.</div>
+      <p>Las ecuaciones polinomiales se clasifican según su grado:</p>
+      <ol class="ol-number">
+        <li>Un polinomio de primer grado <Latex inline formula="(n=1)" /> es una ecuación lineal. Las cuales (como ya hemos mencionado), ya las has estudiado en la unidad anterior.</li>
+        <li>Un polinomio de segundo grado <Latex inline formula="(n=2)" /> es una ecuación cuadrática. Las cuáles serán objeto de nuestro estudio en esta unidad.</li>
+        <li>Un polinomio de tercer grado <Latex inline formula="(n=3)" /> es una ecuación cúbica.</li>
+        <li>Y así sucesivamente.</li>
+      </ol>
+      <p>Sustituyendo <Latex inline formula="(n=2)" /> en la ecuación general de un polinomio obtenemos:</p>
+      <p class="text-center lg:text-xl my-10"><Latex formula="a_2x^2+a_1x+a_0=0" /></p>
+      <p>Si substituimos los coeficientes <Latex inline formula="a_2" />, <Latex inline formula="a_a" /> y <Latex inline formula="a_0" />, por los coeficientes <Latex inline formula="a" />, <Latex inline formula="b" /> y <Latex inline formula="c" />, obtenemos la ecuación general de segundo grado como comúnmente se conoce:</p>
+      <p class="text-center lg:text-xl my-10"><Latex formula="ax^2+bx+c=0" /></p>
+      <p>Donde <Latex inline formula="a" />, <Latex inline formula="b" /> y <Latex inline formula="c" /> son números reales (<Latex inline formula="\\mathbb{R}" />), con <Latex inline formula="a\\neq0" /> y <Latex inline formula="x" /> es la incógnita.</p>
+      <div class="max-w-3xl mx-auto text-center text-xl bg-slate-200 text-darkblue p-4 my-10">
+        <p class="text-2xl">Nota</p>
+        <p>La incógnita puede ser reemplazada por cualquier otra literal, por lo general para representar incógnitas en una ecuación se utilizan las letras <Latex inline formula="x" />, <Latex inline formula="y" /> o <Latex inline formula="z" /></p>
+      </div>
     </div>
-
+  </div>
 </Layout>
