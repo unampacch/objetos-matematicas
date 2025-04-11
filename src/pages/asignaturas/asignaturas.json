@@ -140,7 +140,7 @@
 				{
 					"titulo": "Binomio cuadrado",
 					"slug": "/asignaturas/matematicas-2/binomio-cuadrado/inicio",
-					"portada": "/holder-cover.webp",
+					"portada": "/matematicas2/binomio-cuadrado/portada-binomio-cuadrado.webp",
 					"descripcion": "Resuelve ecuaciones cuadráticas mediante los diferentes métodos de solución. Transformando la ecuación cuadrática a la forma adecuada para su resolución por un método específico.",
 					"resumen": "Binomio cuadrado y su aplicación en la simplificación de expresiones algebraicas.",
 					"pantallas": [

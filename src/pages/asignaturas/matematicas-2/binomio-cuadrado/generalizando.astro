@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro'
 import Latex from '@/components/Latex.astro'
 import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Lumi from '@/components/Lumi.astro'
 import Hr from '@/components/Hr.astro'
 ---
 
@@ -100,4 +101,18 @@ import Hr from '@/components/Hr.astro'
       </ol>
 		</div>
 	</div>
+  <Lumi
+    nombre="Ejercicios"
+    instrucciones="Calcula los siguientes binomios al cuadrado, escribiendo en la casilla correspondiente lo que se te pide."
+    src="/matematicas2/binomio-cuadrado/content/ejercicio-1.html"
+  />
+  <Lumi
+    src="/matematicas2/binomio-cuadrado/content/ejercicio-2.html"
+  />
+  <Lumi
+    src="/matematicas2/binomio-cuadrado/content/ejercicio-3.html"
+  />
+  <Lumi
+    src="/matematicas2/binomio-cuadrado/content/ejercicio-4.html"
+  />
 </Layout>
