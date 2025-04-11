@@ -256,7 +256,7 @@
 					"slug": "/asignaturas/matematicas-3/ecuacion-circulo/inicio",
 					"portada": "/mate3-portada-5.webp",
 					"descripcion": "En esta sección se repasarán algunos temas de la circunferencia, conocerás los elementos que caracterizan a la circunferencia, como son el radio y las coordenadas del centro. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él.",
-					"resumen": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación del círculo, elipse, parábola e hipérbola en el ámbito de la matemática. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+					"resumen": "Ecuación del círculo, elipse, parábola e hipérbola y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
 							"titulo": "La parabola y su ecuación cartesiana",
@@ -437,8 +437,8 @@
 				{
 					"titulo": "Sucesiones y series ",
 					"slug": "/asignaturas/calculo/sucesiones-series/inicio",
-					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las sucesiones y series en el ámbito de la matemática. Contiene una exploración exhaustiva de las sucesiones y series numéricas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+					"portada": "/calculo/sucesiones-series/suceciones-series-portada.webp",
+					"descripcion": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"resumen": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
@@ -640,8 +640,8 @@
 				{
 					"titulo": "Métodos de integración",
 					"slug": "/asignaturas/calculo/metodos-integracion/inicio",
-					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los métodos de integración en el ámbito de la matemática.",
+					"portada": "/calculo/metodos-integracion/metodos-integracion-portada.webp",
+					"descripcion": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos.",
 					"resumen": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
