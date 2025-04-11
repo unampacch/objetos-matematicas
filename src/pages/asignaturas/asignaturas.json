@@ -139,20 +139,15 @@
 				},
 				{
 					"titulo": "Binomio cuadrado",
-					"slug": "/asignaturas/matematicas-2/binomio-cuadrado",
-					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales del binomio cuadrado en el ámbito de la matemática. Contiene una exploración exhaustiva de la identidad del binomio cuadrado, junto con su aplicación en la simplificación de expresiones algebraicas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+					"slug": "/asignaturas/matematicas-2/binomio-cuadrado/inicio",
+					"portada": "/matematicas2/binomio-cuadrado/portada-binomio-cuadrado.webp",
+					"descripcion": "Resuelve ecuaciones cuadráticas mediante los diferentes métodos de solución. Transformando la ecuación cuadrática a la forma adecuada para su resolución por un método específico.",
 					"resumen": "Binomio cuadrado y su aplicación en la simplificación de expresiones algebraicas.",
 					"pantallas": [
 						{
-							"titulo": "Identidad del binomio cuadrado",
-							"slug": "/asignaturas/matematicas-2/binomio-cuadrado/identidad",
+							"titulo": "Generalizando la solución de un binomio al cuadrado",
+							"slug": "/asignaturas/matematicas-2/binomio-cuadrado/generalizando",
 							"descripcion": "Identidad del binomio cuadrado y su aplicación en la simplificación de expresiones algebraicas."
-						},
-						{
-							"titulo": "Aplicaciones del binomio cuadrado",
-							"slug": "/asignaturas/matematicas-2/binomio-cuadrado/aplicaciones",
-							"descripcion": "Aplicaciones del binomio cuadrado en la simplificación de expresiones algebraicas."
 						}
 					]
 				},
@@ -261,7 +256,7 @@
 					"slug": "/asignaturas/matematicas-3/ecuacion-circulo/inicio",
 					"portada": "/mate3-portada-5.webp",
 					"descripcion": "En esta sección se repasarán algunos temas de la circunferencia, conocerás los elementos que caracterizan a la circunferencia, como son el radio y las coordenadas del centro. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él.",
-					"resumen": "Este material aborda de manera detallada los conceptos fundamentales de la ecuación del círculo, elipse, parábola e hipérbola en el ámbito de la matemática. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+					"resumen": "Ecuación del círculo, elipse, parábola e hipérbola y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
 							"titulo": "La parabola y su ecuación cartesiana",
@@ -344,7 +339,7 @@
 				{
 					"titulo": "Concepto de dominio, codominio y regla de correspondencia",
 					"slug": "/asignaturas/matematicas-4/dominio-codominio/inicio",
-					"portada": "/holder-cover.webp",
+					"portada": "/matematicas4/dominio-codominio/dominio-condominio-portada.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales del dominio, codominio y regla de correspondencia en el ámbito de la matemática. Contiene una exploración exhaustiva de los conjuntos de partida y llegada, junto con su aplicación en la representación de funciones matemáticas. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Dominio, codominio y regla de correspondencia en la representación de funciones matemáticas.",
 					"pantallas": [
@@ -442,8 +437,8 @@
 				{
 					"titulo": "Sucesiones y series ",
 					"slug": "/asignaturas/calculo/sucesiones-series/inicio",
-					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las sucesiones y series en el ámbito de la matemática. Contiene una exploración exhaustiva de las sucesiones y series numéricas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+					"portada": "/calculo/sucesiones-series/suceciones-series-portada.webp",
+					"descripcion": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"resumen": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
@@ -645,8 +640,8 @@
 				{
 					"titulo": "Métodos de integración",
 					"slug": "/asignaturas/calculo/metodos-integracion/inicio",
-					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los métodos de integración en el ámbito de la matemática.",
+					"portada": "/calculo/metodos-integracion/metodos-integracion-portada.webp",
+					"descripcion": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos.",
 					"resumen": "Métodos para calcular integrales de funciones reales y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{

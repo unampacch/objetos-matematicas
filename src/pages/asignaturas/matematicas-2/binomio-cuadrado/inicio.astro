@@ -1,17 +1,49 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import Layout from '@/layouts/Layout.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import Latex from '@/components/Latex.astro'
 ---
 
-<Layout
-  title=""
-  description=""
->
-
-    <ObjetoAprendizaje index={2} asignatura={"matematicas_2"} />
-    <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+<Layout title="" description="">
+	<ObjetoAprendizaje index={2} asignatura={'matematicas_2'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl leading-relaxed">
+			<p>El binomio cuadrado es un concepto fundamental en el álgebra que aparece en la teoría y en la práctica de las matemáticas. Se refiere a la expansión de un binomio elevado al cuadrado y es una herramienta esencial para simplificar expresiones algebraicas y resolver ecuaciones. Dominar el binomio cuadrado no solo te ayudará a tus estudios actuales, sino que también sentará las bases para conceptos más avanzados en matemáticas y ciencias</p>
+      <h3>¿Qué es un binomio?</h3>
+      <p>En Matemáticas se denomina un <em>binomio</em> a la expresión algebraica formada por dos términos. Esto quiere decir que cualquier expresión formada por la suma o la resta de dos términos es un binomio. En otras palabras, a la expresión de la forma <Latex inline formula="a+b" />  se denomina binomio.</p>
+      <p>En general también, un polinomio que consta de dos términos se le llama binomio.</p>
+      <p>Elevar un binomio a la n-ésima potencia equivale a multiplicar un binomio <Latex inline formula="n" /> veces por sí mismo.</p>
+      <p>En particular, la expresión que da como resultado elevar un binomio a la segunda potencia, o bien dicho en otras palabras, multiplicarlo por sí mismo, recibe el nombre de binomio al cuadrado. Las siguientes expresiones algebraicas son ejemplos de binomios al cuadrado:</p>
+      <ul class="ul-disc text-xl my-5">
+        <li><Latex inline formula="(a+b)^2" /></li>
+        <li><Latex inline formula="(4x-8y^5)^2" /></li>
+        <li><Latex inline formula="(5ax+\\frac{1}{2}m)^2" /></li>
+        <li><Latex inline formula="(nx^2-5y^3)^2" /></li>
+      </ul>
+      <p>Para calcular el cuadrado de un binomio recordemos uno de los axiomas de los números reales, que nos dice lo siguiente:</p>
+      <div class="max-w-2xl mx-auto text-center bg-slate-200 text-darkblue p-5 rounded-lg my-5">
+        Para toda <Latex inline formula="a, b" /> y <Latex inline formula="c" /> en los números reales <Latex inline formula="\\mathbb{R}" />, <Latex inline formula="a(b+c)=ab+ac" /> y <Latex inline formula="(b+c)a=ba+ca" />.
+      </div>
+      <p>Al anterior axioma, también se le da el nombre de <em>ley distributiva</em>.</p>
+      <p>Apliquemos esta ley para calcular el cuadrado de un binomio:</p>
+      <div class="max-w-xl mx-auto bg-white px-5 my-5">
+        <img src="/matematicas2/binomio-cuadrado/formula-01.webp" alt="Ley distributiva" class="" />
+      </div>
+      <p>Sumando términos semejantes:</p>
+      <Latex class="text-center my-10" formula='(a+b)^2=(a+b)(a+b)=a^2+2ab+b^2' />
+      <p>Por lo tanto, <Latex inline formula='(a+b)^2=a^2+2ab+b^2' />, donde se puede observar que el resultado está formado por tres términos:</p>
+      <ol class="ol-number">
+        <li>El cuadrado de <Latex inline formula="a" /></li>
+        <li>El doble del producto de <Latex inline formula="a" /> y <Latex inline formula="b" /></li>
+        <li>El cuadrado de <Latex inline formula="b" /></li>
+      </ol>
+      <p>Debe notarse que los términos <Latex inline formula="a^2" /> y <Latex inline formula="b^2" /> siempre son positivos, lo anterior porque el cuadrado de cualquier cantidad negativa o positiva, en todos los casos, es positiva. Sin embargo, el término  puede ser positivo o negativo según sean <Latex inline formula="a" /> y <Latex inline formula="b" /> del mismo signo, o de signos contrarios, respectivamente. Por ejemplo, elevemos al cuadrado el binomio <Latex inline formula="(a-b)" />:</p>
+      <div class="max-w-xl mx-auto bg-white px-5 my-5">
+        <img src="/matematicas2/binomio-cuadrado/formula-02.webp" alt="Ley distributiva" class="" />
+      </div>
+      <p>Sumando términos semejantes:</p>
+      <Latex class="text-center my-10" formula='(a-b)^2=(a-b)(a-b)=a^2-2ab+b^2' />
+      <p>Por lo tanto, <Latex inline formula='(a-b)^2=a^2-2ab-b^2' />. En este caso, como <Latex inline formula="a" /> y <Latex inline formula="b" /> tienen signos contrarios, el segundo término es negativo.</p>
     </div>
-
+	</div>
 </Layout>

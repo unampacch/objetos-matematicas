@@ -2,40 +2,42 @@
 import Instrucciones from './Instrucciones.astro'
 
 interface Props {
-	src?: string
-	nombre?: string
-	instrucciones?: string
+    src?: string
+    nombre?: string
+    instrucciones?: string
 }
 
 const { src, nombre, instrucciones } = Astro.props as Props
 ---
 
 <div class="container mx-auto">
-	<div class="max-charater mx-auto">
-		<h3>{nombre}</h3>
-		<p class="text-lg">
-			<Instrucciones texto=`${instrucciones}` />
-		</p>
-	</div>
+    <div class="max-charater mx-auto">
+        {nombre && <h3>{nombre}</h3>}
+        {instrucciones && (
+            <p class="text-lg">
+                <Instrucciones texto={`${instrucciones}`} />
+            </p>
+        )}
+    </div>
 </div>
 <section class="relative mt-5">
-	<div class="absolute top-0 z-10 block min-h-12 min-w-full translate-y-10 bg-red"></div>
-	<div class="relative z-20 mx-auto max-w-screen-lg bg-white p-5 shadow-lg shadow-slate-900/[.8]">
-		<iframe
-			src=`${src}`
-			allowfullscreen="allowfullscreen"
-			allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
-	</div>
+    <div class="absolute top-0 z-10 block min-h-12 min-w-full translate-y-10 bg-red"></div>
+    <div class="relative z-20 mx-auto max-w-screen-lg bg-white p-5 shadow-lg shadow-slate-900/[.8]">
+        <iframe
+            src={`${src}`}
+            allowfullscreen="allowfullscreen"
+            allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
+    </div>
 </section>
 
 <script is:inline src="/scripts/h5p-resizer.js" charset="UTF-8"></script>
 
 <style>
-	h3 {
-		color: var(--css-red-pantone);
-		font-weight: 600;
-		font-size: 1.8em;
-		text-wrap: pretty;
-		text-transform: uppercase;
-	}
+    h3 {
+        color: var(--css-red-pantone);
+        font-weight: 600;
+        font-size: 1.8em;
+        text-wrap: pretty;
+        text-transform: uppercase;
+    }
 </style>
