@@ -403,25 +403,15 @@
 				},
 				{
 					"titulo": "Gráﬁca de Funciones",
-					"slug": "/asignaturas/matematicas-4/grafica-funciones",
+					"slug": "/asignaturas/matematicas-4/grafica-funciones/inicio",
 					"portada": "/holder-cover.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la gráﬁca de funciones en el ámbito de la matemática. Contiene una exploración exhaustiva de la representación gráﬁca de funciones matemáticas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Representación gráﬁca de funciones matemáticas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de gráﬁca de funciones",
-							"slug": "/asignaturas/matematicas-4/grafica-funciones/definicion",
+							"titulo": "Gráfica de funciones algebraicas",
+							"slug": "/asignaturas/matematicas-4/grafica-funciones/grafica-funciones-algebraicas",
 							"descripcion": "Definición y propiedades de la representación gráﬁca de funciones matemáticas."
-						},
-						{
-							"titulo": "Tipos de gráﬁcas de funciones",
-							"slug": "/asignaturas/matematicas-4/grafica-funciones/tipos",
-							"descripcion": "Tipos de representación gráﬁca de funciones matemáticas y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Interpretación geométrica de las gráﬁcas de funciones",
-							"slug": "/asignaturas/matematicas-4/grafica-funciones/interpretacion",
-							"descripcion": "Interpretación geométrica de las representaciones gráﬁcas de funciones matemáticas."
 						}
 					]
 				},
