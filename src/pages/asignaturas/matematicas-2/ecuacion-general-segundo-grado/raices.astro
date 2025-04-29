@@ -1,0 +1,56 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import GeogebraLink from "@/components/GeogebraLink.astro";
+import Lumi from "@/components/Lumi.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout>
+  <ObjetoAprendizajePantalla index={4} pantallaIndex={1} asignatura={"matematicas_2"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+  <div class="objeto-aprendizaje mx-auto animate-fade">
+    <div class="mx-auto max-w-screen-xl mb-10">
+      <p>Ahora nos centraremos en encontrar las raíces de la función cuadrática.</p>
+      <div class="max-w-3xl mx-auto text-center text-xl bg-slate-200 text-darkblue p-4 my-10">
+        <p class="text-2xl">¡Recuerda!</p>
+        <p>Las raíces de una función <Latex inline formula="y=f(x)" /> son los valores de <Latex inline formula="x" /> donde la función <Latex inline formula="f(x)" /> se hace cero, esto es <Latex inline formula="y=f(x)=0" />.</p>
+      </div>
+      <p>En una función cuadrática podemos tener 1 o 2 raíces, en otras palabras y en términos geométricos donde la parábola corta al eje <Latex inline formula="x" />.</p>
+      <p>Para determinar estas raíces, solo tenemos que igualar la función a cero y resolver la ecuación, esto lo podemos hacer mediante la formula general para resolver ecuaciones cuadráticas: </p>
+      <p class="text-center md:text-2xl my-10"><Latex formula="x_{1,2}=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}" /></p>
+      <p>Recuerda que según el valor del discriminante <Latex inline formula="\\Delta=b^2-4ac" />, las soluciones de la ecuación cuadrática pertenecerán al conjunto de los números reales o al conjunto de los números complejos.</p>
+      <p>En el ámbito geométrico:</p>
+      <ul class="list-disc list-inside">
+        <li>Si <Latex inline formula="\\Delta>0" />, la gráfica cortará al menos una vez al eje de las <Latex inline formula="x" />.</li>
+        <li>Si <Latex inline formula="\\Delta=0" />, la gráfica no cortará al eje de las <Latex inline formula="x" />.</li>
+      </ul>
+      <p class="text-center text-2xl font-bold my-10">¡Ahora estamos listos para calcular las raíces de una función cuadrática!</p>
+      <h4 class="my-5">Calcular las raíces de la función <Latex inline formula="f(x)=x^2+4x-5" /></h4>
+      <p>Para esta función en particular <Latex inline formula="\\Delta\\geq0" />, por lo que la gráfica de la función cortará al menos una vez al eje de las <Latex inline formula="x" />. Te invitamos a que compruebes por tu cuenta, que el valor del discriminante es mayor a cero.</p>
+      <p>Para calcular las raíces de la función sigue los siguientes pasos:</p>
+      <ul class="ul-disc">
+        <li>
+          <p><strong>Paso 1.</strong> Igualar la función a cero <Latex inline formula="f(x)=0" /> </p>
+          <p><Latex inline formula="x^2+4x-5=0" /></p>
+        </li>
+        <li>
+          <p><strong>Paso 2.</strong> dentificar los valores de los coeficientes cuadrático, lineal y constante.</p>
+          <p><Latex inline formula="a=1, b=4, c=-5" /></p>
+        </li>
+        <li>
+          <p><strong>Paso 3.</strong> Sustituir los valores de los coeficientes cuadrático, lineal y constante en la formula general para resolver ecuación de segundo grado.</p>
+          <p class="md:text-xl"><Latex inline formula="x_{1,2}=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}" /></p>
+          <p class="md:text-xl"><Latex inline formula="x_{1,2}=\\frac{-4\\pm\\sqrt{4^2-4(1)(-5)}}{2(1)}" /></p>
+          <p class="md:text-xl"><Latex inline formula="x_1=1" /></p>
+          <p class="md:text-xl"><Latex inline formula="x_2=-5" /></p>
+        </li>
+        <li>
+          <p><strong>Paso 4.</strong> Con las herramientas digitales que se te dieron, grafica la función y comprueba que la gráfica de la función corta al eje de las <Latex inline formula="x" /> en <Latex inline formula="x_1=1" /> y <Latex inline formula="x_2=-5" /></p>
+        </li>
+      </ul>
+      <h4>Calcular las raíces de la función <Latex inline formula="f(x)=x^2+4x+5" /></h4>
+      <p>Para esta función en particular <Latex inline formula="\\Delta<0" />, por lo que la gráfica de la función no cortará al eje de las <Latex inline formula="x" />. Te invitamos a que compruebes por tu cuenta, que el valor del discriminante es menor a cero. Para que puedas comprobar lo anteriormente mencionado, grafica la función con las herramientas digitales dadas</p>
+    </div>
+  </div>
+</Layout>

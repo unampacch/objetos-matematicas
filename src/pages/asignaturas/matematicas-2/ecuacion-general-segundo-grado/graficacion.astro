@@ -1,0 +1,136 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import GeogebraLink from "@/components/GeogebraLink.astro";
+import Lumi from "@/components/Lumi.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout>
+    <ObjetoAprendizajePantalla index={4} pantallaIndex={1} asignatura={"matematicas_2"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl mb-10">
+        <p>Ahora analicemos la gráfica de una de una ecuación de segundo grado con una incógnita.</p>
+        <p>Para ello hagamos variar con diferentes valores la incógnita de una ecuación de segundo grado y veamos los diferentes valores resultantes. Si realizamos lo anterior, la incógnita y el resultado de la ecuación realmente se comportarán como variables, además dichos valores que toma ambas variables están relacionadas bajo una regla de correspondencia.</p>
+        <p>De lo anteriormente mencionado, deberías haber notado que se parece a un concepto que probablemente ya has revisado antes, este es un concepto muy importante en matemáticas y es el concepto de <strong>función</strong>.</p>
+        <div class="max-w-3xl mx-auto text-center text-xl bg-slate-200 text-darkblue p-4 my-10">
+          <p class="text-2xl">¡Recuerda!</p>
+          <p>Una función es una regla de correspondencia entre dos conjuntos de tal manera que a cada elemento del primer conjunto le corresponde uno y sólo un elemento del segundo conjunto.</p>
+        </div>
+        <p>La gráfica de una función es el conjunto de puntos en el plano de la forma <Latex inline formula="(x,y)" />  en donde <Latex inline formula="x" /> está en el dominio de la función y, además <Latex inline formula="y=f(x)" />. A continuación, revisaremos y discutiremos algunas cuestiones importantes de una función cuadrática:</p>
+        <p class="text-center lg:text-xl my-10"><Latex formula="y=ax^2+bx+c" /></p>
+        <p>Primero, <strong>¿Qué tipo de forma geométrica resulta tras ver la sucesión de puntos en el plano?</strong></p>
+        <GeogebraLink
+          titulo="Funciones cuadráticas con el método de tabulación"
+          href="https://www.geogebra.org/m/z6dyzfh4"
+          texto="Para ello, te invito a realizar la gráfica de diferentes funciones cuadráticas con el método de tabulación ingresando en el siguiente enlace:"
+        />
+        <h4>¿Qué figura geométrica resulto después de graficar las distintas funciones cuadráticas en el plano cartesiano?</h4>
+        <ul class="gap-5 flex items bg-center justify-center bg-slate-600 p-3 my-10">
+          <li>¿Línea recta</li>
+          <li>Hipérbola</li>
+          <li>Parábola</li>
+          <li>Circulo</li>
+          <li>Variada?</li>
+        </ul>
+        <p>Si tu respuesta fue <strong>“parábola”</strong>, estás en lo correcto.</p>
+        <p>Algunas de las características de las parábolas son las siguientes:</p>
+        <ul class="ul-disc">
+          <li><strong>Vértice</strong>. El vértice de una parábola es su punto más bajo (cuando los brazos de la parábola abren hacia arriba) o su punto más alto (cuando la parábola abre hacia abajo)</li>
+          <li><strong>Eje de simetría</strong>. La parábola tiene un eje de simetría vertical que pasa por el vértice. Este eje divide la parábola en dos mitades simétricas.</li>
+          <li><strong>Dirección de apertura</strong>. Cuando los brazos de la parábola abren hacia arriba o hacia abajo.</li>
+          <p>Para graficar una función cuadrática sin pasar por el proceso de tabulación estudiaremos las características antes mencionadas. Primero revisaremos la dirección de apertura o concavidad de la parábola revisando la función <Latex inline formula="y=ax^2" /> .  Para ello te pedimos que ingreses al siguiente enlace: <a href="https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_all.html?locale=es" target="_blank">Graficando cuadráticas</a>.</p>
+        </ul>
+        <ul class="list-disc list-inside">
+          <li>Elige la opción explorar.</li>
+          <li>Varia el coeficiente <Latex inline formula="a" /> con los deslizadores</li>
+        </ul>
+      </div>
+      <Lumi
+        src="/matematicas2/ecuacion-general-segundo-grado/variacion-coeficiente-0.html"
+        nombre="Variación del coeficiente"
+        instrucciones="Describe con tus propias palabras que observas con los brazos de la parábola cuando haces variar el coeficiente a"
+      />
+      <Lumi
+        src="/matematicas2/ecuacion-general-segundo-grado/positivo-negativo.html"
+        nombre="Positivo o negativo"
+        instrucciones="Elige la opción correcta:"
+      />
+      <div class="mx-auto max-w-screen-xl leading-relaxed">
+        <p>Ahora, revisemos cómo determinar las coordenadas del vértice de la parábola revisando la función:</p>
+        <p class="text-center lg:text-xl my-10"><Latex formula="y=a(x-h)^2+k" /></p>
+        <p>La anterior función también es cuadrática, sin embargo, esta en su forma estándar o canónica.</p>
+        <p>Para ello te pedimos que ingreses al siguiente enlace: <a href="https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_all.html?locale=es" target="_blank">Graficando cuadráticas</a>.</p>
+        <ul class="list-disc list-inside">
+          <li>Elige la opción <strong>vértice</strong>.</li>
+          <li>Varia el coeficiente <Latex inline formula="k" /> y observa que le sucede a la parábola.</li>
+          <li>Con cualquiera de los visores que se encuentran en la parte inferior de la gráfica, sitúalos en el vértice de la parábola para observar las coordenadas del vértice.</li>
+        </ul>
+      </div>
+      <Lumi
+        src="/matematicas2/ecuacion-general-segundo-grado/variacion-coeficiente-1.html"
+        nombre="Variación del coeficiente"
+        instrucciones="DDescribe con tus propias palabras sobre lo que le pasa al vértice de la parábola cuando haces variar el coeficiente k"
+      />
+      <div class="mx-auto max-w-screen-xl leading-relaxed">
+        <ul class="list-disc list-inside">
+          <li>Varia el coeficiente <Latex inline formula="h" /> y observa que le sucede a la parábola.</li>
+          <li>Con cualquiera de los visores que se encuentran en la parte inferior de la gráfica, sitúalos en el vértice de la parábola para observar las coordenadas del vértice. </li>
+        </ul>
+      </div>
+      <Lumi
+        src="/matematicas2/ecuacion-general-segundo-grado/variacion-coeficiente-2.html"
+        nombre="Variación del coeficiente"
+        instrucciones="Describe con tus propias palabras sobre lo que le pasa al vértice de la parábola cuando haces variar el coeficiente h"
+      />
+      <div class="mx-auto max-w-screen-xl leading-relaxed">
+        <p>Como puedes observar, cuando hacemos variar los coeficientes <Latex inline formula="h" /> y <Latex inline formula="k" />, en realidad estás moviendo el vértice de la parábola, por lo que las coordenadas del vértice estarán en el punto:</p>
+        <p class="text-center lg:text-xl my-10"><Latex formula="V(h,k)" /></p>
+        <p>Lo anterior, tomando en cuenta la función cuadrática en su forma estándar o canónica:</p>
+        <p class="text-center lg:text-xl my-10"><Latex formula="y=a(x-h)^2+k" /></p>
+        <p>Pero ¿cómo saber las coordenadas del vértice de la parábola en función de los coeficientes de la función cuadrática en su forma general  <Latex inline formula="y=ax^2+bx+c" />?</p>
+        <p>Para ello, utilizaremos la siguiente fórmula:</p>
+        <p class="text-center lg:text-xl my-10">Coordenada en <Latex inline formula="x" /> del vértice <Latex inline formula="V_x=-\\frac{b}{2a}" /></p>
+        <p class="text-center lg:text-xl my-10">Coordenada en <Latex inline formula="y" /> del vértice <Latex inline formula="V_y=y(x=-\\frac{b}{2a})" /></p>
+        <p>Para que tengas más claridad en la aplicación de las anteriores formulas hagamos dos ejemplos:</p>
+        <p>Determina la concavidad y las coordenadas del vértice de las siguientes funciones cuadráticas:</p>
+        <h4 class="my-10"><Latex formula="y=2x^2+4x-3" /></h4>
+        <ul class="ul-disc">
+          <li>
+            <p><strong>Paso 1:</strong> Determinar si el coeficiente  es mayor o menor a cero.</p>
+            <p>En este caso, <Latex inline formula="a>0" /> por lo que los brazos de la parábola abren hacia arriba (concavidad positiva).</p>
+          </li>
+          <li>
+            <p><strong>Paso 2:</strong> Determinar las coordenada <Latex inline formula="x" /> del vértice.</p>
+            <p class="text-center lg:text-xl my-10"><Latex class="text-ellipsis" formula="V_x=-\\frac{b}{2a}=-\\frac{4}{2(2)}=-1" /></p>
+          </li>
+          <li>
+            <p><strong>Paso 3:</strong> Determinar las coordenada <Latex inline formula="y" /> del vértice.</p>
+            <p class="text-center lg:text-xl my-10"><Latex class="text-ellipsis" formula="V_y=y(x=-\\frac{b}{2a})=y(x=-1)=2(-1)^2+4(-1)-3=-5" /></p>
+          </li>
+          <li>
+            <p>Por lo que el vértice tiene coordenadas <Latex inline formula="V(-1, -5)" /></p>
+          </li>
+        </ul>
+        <h4 class="my-10"><Latex formula="y=-x^2+4x+2" /></h4>
+        <ul class="ul-disc">
+          <li>
+            <p><strong>Paso 1:</strong> Determinar si el coeficiente <Latex inline formula="a" /> es mayor o menor a cero.</p>
+            <p>En este caso, <Latex inline formula="a<0" /> por lo que los brazos de la parábola abren hacia abajo (concavidad negativa).</p>
+          </li>
+          <li>
+            <p><strong>Paso 2:</strong> Determinar las coordenada <Latex inline formula="x" /> del vértice.</p>
+            <p class="text-center lg:text-xl my-10"><Latex class="text-ellipsis" formula="V_x=-\\frac{b}{2a}=-\\frac{4}{2(-1)}=2" /></p>
+          </li>
+          <li>
+            <p><strong>Paso 3:</strong> Determinar las coordenada <Latex inline formula="y" /> del vértice.</p>
+            <p class="text-center lg:text-xl my-10"><Latex class="text-ellipsis" formula="V_y=y(x=-\\frac{b}{2a})=y(x=2)=-(2)^2+4(2)+2=6" /></p>
+          </li>
+          <li>
+            <p>Por lo que el vértice tiene coordenadas <Latex inline formula="V(2, 6)" /></p>
+        </ul>
+        <p>Puedes comprobar los valores obtenidos, ingresando de nuevo a <a href="https://phet.colorado.edu/sims/html/graphing-quadratics/latest/graphing-quadratics_all.html?locale=es" target="_blank">Graficando cuadráticas</a>, eligiendo la opción de forma estándar e ingresando los valores del coeficiente cuadrático <Latex inline formula="a" />, lineal <Latex inline formula="b" /> y constante <Latex inline formula="c" />.</p>
+      </div>
+    </div>
+</Layout>

@@ -7,7 +7,7 @@ import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.as
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
 ---
 
-<Layout title="Método de completar el trinomio cuadrado perfecto">
+<Layout>
   <ObjetoAprendizajePantalla index={3} pantallaIndex={0} asignatura={"matematicas_2"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
     <div class="objeto-aprendizaje mx-auto animate-fade">
       <div class="mx-auto max-w-screen-xl">
@@ -92,13 +92,13 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <div class="my-5 text-center text-xl">
           <Latex formula="x=\\frac{-b\\;-\\;\\sqrt{b^2\\;-\\;4ac}}{2a}"/>
         </div>
-        <p>Las fórmulas anteriores suelen escribirse en una sola utilizando el símbolo ±, y se conoce como Fórmula General 
+        <p>Las fórmulas anteriores suelen escribirse en una sola utilizando el símbolo ±, y se conoce como Fórmula General
           para resolver la ecuación general de segundo grado <Latex formula="\\;ax^2+bx+c=0" inline={true}/>.
         </p>
         <div class="my-5 text-center text-xl">
           <Latex formula="x=\\frac{-b\\;\\pm\\;\\sqrt{b^2\\;-\\;4ac}}{2a}"/>
         </div>
-        <p>El número <Latex formula="\\;\\Delta=b^2-4ac,\\;" inline={true}/> que se encuentra dentro de la raíz de la 
+        <p>El número <Latex formula="\\;\\Delta=b^2-4ac,\\;" inline={true}/> que se encuentra dentro de la raíz de la
           Fórmula General, se conoce como <i>discriminante</i> de la ecuación y nos ayuda a clasificar las ecuaciones cuadráticas de la siguiente manera:
         </p>
         <div class="mx-auto my-5 lg:max-w-screen-lg">

@@ -9,7 +9,7 @@ import BgFluido from '@/components/BgFluido.astro'
 import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 ---
 
-<Layout title="Ejemplos de coordenadas">
+<Layout>
 	<ObjetoAprendizajePantalla index={2} pantallaIndex={1} asignatura={'matematicas_3'} />
 	<div class="objeto-aprendizaje mx-auto animate-fade">
 		<div class="mx-auto mb-5 max-w-screen-xl">
@@ -28,14 +28,14 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 		 		</li>
 			</ol>
 			<p>
-				Ahora tracemos una línea recta en el plano cartesiano, está actividad la puedes realizar con el apoyo de GeoGebra o en tu libreta. Para ello necesitamos dos puntos <Latex formula="A(1, 2)\\quad y\\quad B(2, 5)" inline={true}/> puedes calcular la pendiente (m) y la ordenada al origen (b) y obtener la ecuación de la línea recta <Latex formula="\\quad y = mx + b" inline={true}/>  
+				Ahora tracemos una línea recta en el plano cartesiano, está actividad la puedes realizar con el apoyo de GeoGebra o en tu libreta. Para ello necesitamos dos puntos <Latex formula="A(1, 2)\\quad y\\quad B(2, 5)" inline={true}/> puedes calcular la pendiente (m) y la ordenada al origen (b) y obtener la ecuación de la línea recta <Latex formula="\\quad y = mx + b" inline={true}/>
 			</p>
 			<p>
 				Con el apoyo de GeoGebra,
 			</p>
 			<ol class="ol-alpha pl-10 mt-5">
 				<li>
-					Introduce las coordenadas <Latex formula="\\quad A (1,2)\\quad y\\quad B (2,5)" inline={true}/> en la barra de entrada. 
+					Introduce las coordenadas <Latex formula="\\quad A (1,2)\\quad y\\quad B (2,5)" inline={true}/> en la barra de entrada.
 				</li>
 				<li>
 					<div class="flex flex-col items-center gap-3 sm:flex-row md:my-10 md:gap-6">
@@ -69,7 +69,7 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 						</div>
 					</div>
 		 		</li>
-			
+
 	  <div>
 		<table class="table border-collapse bg-slate-900 text-white">
 			<tbody>
@@ -88,7 +88,7 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 					<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="b = -1" inline={true}/></td>
 					<td class="border-b px-4 py-2 text-center">Cuando <Latex formula="x = 0 \\ y = -1" inline={true}/></td>
 				</tr>
-				
+
 				</tbody>
 			</table>
 		</div>
@@ -106,7 +106,7 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 		</BgFluido>
 			<p>Análisis: Pendiente m: Cuando “x” aumenta una unidad, “y” aumenta 3 puntos </p>
 			<p> Ordenada al origen b: Cuando “x” toma el valor de cero, “y” vale -1 </p>
-	</div>	
+	</div>
 
 			<BgFluido>
 				<div class="mx-auto mb-5 max-w-screen-md">
@@ -125,7 +125,7 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 						<td class="border-b px-4 py-2">Considera el plano de una casa (puedes usar una imagen de internet) determina 3 coordenadas, con el apoyo de GeoGebra
 
 						</td>
-						
+
 					</tr>
 				</tbody>
 			</table>
@@ -141,13 +141,13 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 					<tr>
 						<td class="border-b px-4 py-2"><b>Problema 2</b></td>
 						<td class="border-b px-4 py-2">Necesitamos dos puntos<Latex formula="A (2,16) y B (8,12)" inline={true}/> calcula la pendiente (m) y la ordenada al origen (b), obtener la ecuación de la línea recta <Latex formula="y = m x +b" inline={true}/> y analiza la información que encontraste </td>
-						
+
 					</tr>
-					
+
 					</tbody>
 				</table>
 			</div>
-		
+
 			<h4>Solución: Problema 2</h4>
 		</div>
 			<BgFluido bg="bg-blue">
@@ -178,13 +178,13 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 							<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="b = 17.3" inline={true}/></td>
 							<td class="border-b px-4 py-2 text-center">Cuando x = 0 y y=17.3</td>
 						</tr>
-						
+
 						</tbody>
 					</table>
 				</div>
 				<p>Análisis: Pendiente m: Cuando “x” aumenta tres unidades, “y” disminuye 3 puntos</p>
 				<p>Ordenada al origen b: Cuando “x” toma el valor de cero, “y” vale -1</p>
 
-		</div>		
+		</div>
 	</div>
 </Layout>
