@@ -173,12 +173,7 @@
 					"resumen": "Fórmula general para resolver una ecuación cuadrática.",
 					"pantallas": [
 						{
-							"titulo": "Ecuación general de segundo grado",
-							"slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado/ecuacion-general",
-							"descripcion": "Definición y aplicación de la ecuación general de segundo grado."
-						},
-						{
-							"titulo": "Graﬁcación de ecuaciones cuadráticas",
+							"titulo": "Gráfica de una ecuación de segundo grado",
 							"slug": "/asignaturas/matematicas-2/ecuacion-general-segundo-grado/graficacion",
 							"descripcion": "Graﬁcación de ecuaciones cuadráticas y su interpretación geométrica."
 						},
