@@ -1,0 +1,148 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import Lumi from '@/components/Lumi.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout
+  title="Elipse"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={4} pantallaIndex={2} asignatura={"matematicas_3"}/> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+        <h4>Propósito:</h4>
+        <p>En esta sección se revisará el tema de la elipse, en donde conocerás los elementos que la caracterizan, como son: los vértices, los focos, los extremos y los lados rectos. Además, se revisará su ecuación ordinaria con centro en el origen y fuera de él.</p>
+        <h4>Elipse</h4>
+        <p>La elipse es el lugar geométrico de los puntos del plano tales que la suma de sus distancias a dos puntos fijos llamados focos siempre es constante.</p>
+        <div class="mx-auto ">
+            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/24.png" caption="Elipse"/>
+        </div>
+        <div class="my-5 text-center text-xl !text-red">
+            <Latex formula="d1+d2=constante"/>
+        </div>
+        <p>La elipse también se define como la sección cónica que resulta de cortar un cono con un plano inclinado paralelo al de su generatriz.</p>
+        <div class="mx-auto ">
+            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/25.png" caption="Cono"/>
+        </div>
+        <div class="my-5 text-center">
+            <p>Fuente: <a href="https://recursoslibres.reformamatematica.net/cono-glosario" target="_blank">https://recursoslibres.reformamatematica.net/cono-glosario</a></p>
+        </div>
+        <BgFluido bg="bg-blue">
+            <h4 class="font-extrabold uppercase !text-stone-50">Definición de Elipse</h4>
+            <p>La elipse es el lugar geométrico de un punto P que se mueve en el plano, de tal manera que la suma de las distancias del punto P a dos puntos fijos llamados focos mantienen la suma constante.</p>
+            <p><strong>Elementos de la elipse</strong></p>
+            <p>Una elipse tiene los siguientes elementos: <strong>centro, 2 vértices, 2 focos, eje mayor, eje menor, 2 lados rectos, distancia focal, excentricidad y eje focal.</strong></p>
+            <p><strong>El centro C</strong> es el punto donde se intersecan los ejes mayor y menor, representa además el punto medio entre los focos y los vértices.</p>
+            <p><strong>Los vértices <Latex formula="V_1\\;y\\;V_2" inline={true}/></strong> son los puntos de intersección del eje focal con la elipse, la distancia entre ellos es <Latex formula="2a" inline={true}/>.</p>
+            <p><strong>Los focos <Latex formula="F_1\\;y\\;F_2" inline={true}/></strong> son los puntos ubicados sobre el eje focal dentro de la elipse, designando a la distancia entre ellos como <Latex formula="2c" inline={true}/>.</p>
+            <p>Eje mayor <Latex formula="2a" inline={true}/> es la distancia entre los vértices “<Latex formula="V_1\\;y\\;V_2" inline={true}/>”.</p>
+            <p>Eje menor o transversal <Latex formula="2b" inline={true}/> es la distancia entre “B1 y B2” y es perpendicular al eje mayor.</p>
+            <p><strong>Lado Recto LR</strong>. son los segmentos que pasan por cada foco y que son perpendiculares al eje mayor.</p>
+            <p>Distancia Focal <Latex formula="2c" inline={true}/> es la distancia que existe entre los focos.</p>
+            <p>Excentricidad <Latex formula="e" inline={true}/> es la relación que existe entre la distancia focal (2c) y la longitud del eje mayor (2a).</p>
+        </BgFluido>
+        <div class="mx-auto ">
+            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/26.png" caption="Cono"/>
+        </div>
+        <h4>Ecuación y elementos de la elipse con centro en el origen</h4>
+        <p><strong><u>Ecuación de la elipse horizontal</u></strong></p>
+        <p>El eje mayor coincide con el eje de las <Latex formula="X" inline={true}/>.</p>
+        <p>Ecuación canónica:</p>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1"/>
+        </div>
+        <div class="mx-auto ">
+            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/27.png" caption="Elipse horizontal"/>
+        </div>
+        <ul class="ul-disc">
+            <li>Vértices: <Latex formula="V1(a,0)\\;y\\;V2(-a,0) " inline={true}/></li>
+            <li>Focos: <Latex formula="F1(c,0)\\;y\\;F2(-c,0)" inline={true}/></li>
+            <li>Extremos del eje menor: <Latex formula="B1(0,b)\\;y\\;B2(0,-b) " inline={true}/></li>
+            <li>Lado recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|" inline={true}/></li>
+            <li>Excentricidad: <Latex formula="e=\\frac{c}{a}" inline={true}/></li>
+        </ul>
+        <h4>Excentricidad de la elipse</h4>
+        <p>En una elipse, la razón que existe entre c y a que expresado como cociente es <Latex formula="ca" inline={true}/>, se llama excentricidad de la elipse. Se determina con la siguiente expresión:</p>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="e=\\frac{c}{a}"/>
+        </div>
+        <p>Si se desconoce el valor de <Latex formula="c" inline={true}/>, se puede calcular con base en el triángulo <Latex formula="F1\\;C\\;B1" inline={true}/>, aplicando el teorema de Pitágoras.</p>
+        <div class="mx-auto ">
+            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/28.png" caption="Excentricidad de la elipse"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="a^2=b^2+c^2"/>
+        </div>
+        <p>Despejando <Latex formula="c" inline={true}/>:</p>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="c^2=a^2-b^2"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="c=\\sqrt{a^2-b^2}"/>
+        </div>
+        <p>La excentricidad indica la forma de la elipse cuyo valor varía de <Latex formula="0<e<1" inline={true}/>.</p>
+        <ul class="ul-disc">
+            <li>Cuando e se aproxima a cero la curva se asemeja a una circunferencia.</li>
+            <li>Cuando e se aproxima a 1 la elipse se alarga y se hace angosta.</li>
+        </ul>
+        <p><strong><u>Elipse vertical</u></strong></p>
+        <p>El eje mayor coincide con el eje <Latex formula="Y" inline={true}/>.</p>
+        <p>Ecuación canónica:</p>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="\\frac{x^2}{b^2}+\\frac{y^2}{a^2}=1"/>
+        </div>
+        <div class="mx-auto ">
+            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/29.png" caption="Elipse vertical"/>
+        </div>
+        <ul class="ul-disc">
+            <li>Vértices: <Latex formula="V1(0,a)\\;y\\;V2(0,-a)" inline={true}/></li>
+            <li>Focos: <Latex formula="F1(0,c)\\;y\\;F2(0,-c)" inline={true}/></li>
+            <li>Extremos del eje menor: <Latex formula="B1(b,0)\\;y\\;B2(-b,0) " inline={true}/></li>
+            <li>Lado recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|" inline={true}/></li>
+            <li>Excentricidad: <Latex formula="e=\\frac{c}{a}" inline={true}/></li>
+        </ul>
+      </div>
+      <BgFluido bg="bg-blue">
+        <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+      </BgFluido>
+      <div class="mx-auto max-w-screen-xl">
+        <p>Determina los elementos de la elipse, cuya ecuación es:</p>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="\\frac{x^2}{25}+\\frac{y^2}{4}=1"/>
+        </div>
+        <p><u>Solución:</u></p>
+        <p>Como el denominador mayor esta debajo de las x, por lo tanto el eje mayor coincide con el eje de x, por lo que sería una elipse horizontal.</p>
+        <p>Por lo que <Latex formula="a^2=25\\;y\\;b^2=4" inline={true}/></p>
+        <p>Obteniendo raíz cuadrada: <Latex formula="a=5\\;y\\;b=2" inline={true}/></p>
+        <p>Obteniendo el valor de c:</p>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="c=\\sqrt{25-4}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+            <Latex formula="c=\\sqrt{21}"/>
+        </div>
+        <p>Sustituyendo los valores de <Latex formula="a" inline={true}/>, <Latex formula="b" inline={true}/> y <Latex formula="c" inline={true}/>, los elementos de la elipse quedarían de la siguiente forma:</p>
+        <ul class="ul-disc">
+            <li>Vértices: <Latex formula="V1(5,0)\\;y\\;V2(-5,0)" inline={true}/></li>
+            <li>Focos: <Latex formula="F1(\\sqrt{21},0)\\;y\\;F2(0,-\\sqrt{21})" inline={true}/></li>
+            <li>Extremos del eje menor: <Latex formula="B1(0,2)\\;y\\;B2(0,-2) " inline={true}/></li>
+            <li>Lado recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|=\\left|\\frac{2*4}{5}\\right|=\\left|\\frac{8}{5}\\right|=1.6" inline={true}/></li>
+            <li>Excentricidad: <Latex formula="e=\\frac{c}{a}=\\frac{\\sqrt{21}}{5}=0.92" inline={true}/></li>
+        </ul>
+        <div class="mx-auto ">
+            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/30.png" caption="Ejemplo. Gráfica"/>
+        </div>
+      </div>
+      <Lumi
+		    src="/matematicas3/ecuaciones-conicas/Elipse.html"
+		    nombre="Actividad"
+		    instrucciones="Selecciona la respuesta correcta."
+	  />
+    </div>
+    
+</Layout>

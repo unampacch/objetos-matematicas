@@ -7,108 +7,66 @@ import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 ---
 
-<Layout title="Solución de ecuaciones de segundo grado">
-	<ObjetoAprendizaje index={3} asignatura={'matematicas_2'} />
-	<div class="objeto-aprendizaje mx-auto animate-fade">
-		<div class="mx-auto max-w-screen-xl">
-			<h4>¿Qué es una ecuación de segundo grado?</h4>
-			<p>
-				Una ecuación de segundo grado (en una variable) es una ecuación de la forma
-				<Latex formula="ax^2+bx+c=0" inline={true} /> con <Latex formula="a≠0" inline={true} />
-			</p>
-			<p>
-				Los valores de x que satisfacen la ecuación se llaman soluciones de la ecuación y existen
-				diversos métodos para determinar su existencia.
-			</p>
-			<br />
-			<h4>Método por factorización</h4>
-			<p>
-				En algunos casos, es posible factorizar la expresión <Latex
-					formula="ax^2+bx+c"
-					inline={true}
-				/> como producto de factores lineales:
-			</p>
-			<div class="my-5 text-center text-3xl">
-				<Latex formula="ax^2+bx+c=(Ax+B)(Cx+D)" />
-			</div>
-			<p>Cuando esto es posible, de la ecuación:</p>
-			<div class="my-5 text-center text-3xl">
-				<Latex formula="ax^2+bx+c=(Ax+B)(Cx+D)=0" />
-			</div>
-			<p>
-				Se desprenden dos ecuaciones lineales, <Latex formula="Ax+B=0" inline={true} /> y <Latex
-					formula="Cx+D=0"
-					inline={true}
-				/> , cuyas soluciones corresponden a las de la ecuación de segundo grado.
-			</p>
-			<p>
-				Supongamos que <Latex formula="ax^2+bx+c=(Ax+B)(Cx+D)" inline={true} /> y desarrollemos el lado
-				derecho de la ecuación:
-			</p>
-			<div class="my-5 text-center text-3xl">
-				<Latex formula="(Ax+B)(Cx+D)=ACx^2+(AD+BC)x+BD" />
-			</div>
-			<p>Entonces, si la factorización es posible, se debe cumplir:</p>
-			<div class="my-5 text-center text-3xl">
-				<Latex formula="a=AC;\\;b=AD+BC\\;y\\;c=BD" />
-			</div>
-			<p>El siguiente arreglo facilita el cálculo de A, B, C y D.</p>
-			<div class="mx-auto lg:w-1/2">
-				<ImagenFullCaption src="/matematicas2/arreglo-general.png" caption="Arreglo general" />
-			</div>
-		</div>
-		<BgFluido bg="bg-blue">
-
-      <div class="grid grid-cols-1 items-center py-10 xl:grid-cols-3">
-        <div class="text-center">
-          <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+<Layout>
+    <ObjetoAprendizaje index={3} asignatura={"matematicas_2"} />
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+        <h3>¿Qué es una ecuación de segundo grado?</h3>
+        <p>Una ecuación de segundo grado (en una variable) es una ecuación de la forma
+          <Latex formula="ax^2+bx+c=0" inline={true}/> con <Latex formula="a≠0" inline={true}/></p>
+        <p>	Los valores de x que satisfacen la ecuación se llaman soluciones de la ecuación y existen diversos métodos para determinar su existencia.</p>
+        <br>
+        <h4>Método por factorización</h4>
+        <p>	En algunos casos, es posible factorizar la expresión <Latex formula="ax^2+bx+c" inline={true}/> como producto de factores lineales:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="ax^2+bx+c=(Ax+B)(Cx+D)"/>
         </div>
-        <div class="col-span-2">
-          <p>
-            Consideremos la ecuación <Latex formula="16x^2-24x-55=0" inline={true} /> y encontremos
-            números A, B, C y D que satisfagan las condiciones:
-          </p>
-          <div class="mt-5">
-            <Latex formula="16=AC;\\;-24=AD+BC\\;y\\;-55=BD" />
-          </div>
-          <div class="mt-5">
-            <p>
-              Si <Latex formula="A=4;\\; B=5;\\; C=4\\; y \\; D=-11" inline={true} /> tenemos:
-            </p>
-          </div>
-          <div class="">
-            <ImagenFullCaption
-              src="/matematicas2/arreglo-ejemplo.png"
-              caption="Ejemplo de arreglo"
-            />
-          </div>
-          <div class="mt-5">
-            <p>Luego <Latex formula="16x^2-24x-55=(4x+5)(4x-11)=0" inline={true} /></p>
-          </div>
-          <div class="mt-5">
-            <Latex formula="4x+5=0\\;y\\;4x-11=0" />
-          </div>
-          <div class="mt-5">
-            <p>
-              Con soluciones <Latex formula="x_1=-\\frac{5}{4}\\;" inline={true} /> y <Latex
-                formula="\\;x_2=\\frac{11}{4}"
-                inline={true}
-              />
-            </p>
-          </div>
+        <p>Cuando esto es posible, de la ecuación:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="ax^2+bx+c=(Ax+B)(Cx+D)=0"/>
+        </div>
+        <p>	Se desprenden dos ecuaciones lineales, <Latex formula="Ax+B=0" inline={true}/>  y <Latex formula="Cx+D=0" inline={true}/> , cuyas soluciones corresponden a las de la ecuación de segundo grado.</p>
+        <p>	Supongamos que <Latex formula="ax^2+bx+c=(Ax+B)(Cx+D)" inline={true}/> y desarrollemos el lado derecho de la ecuación:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="(Ax+B)(Cx+D)=ACx^2+(AD+BC)x+BD"/>
+        </div>
+        <p>	Entonces, si la factorización es posible, se debe cumplir:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="a=AC;\\;b=AD+BC\\;y\\;c=BD"/>
+        </div>
+        <p>El siguiente arreglo facilita el cálculo de A, B, C y D.</p>
+        <div class="mx-auto lg:w-1/2">
+          <ImagenFullCaption src="/matematicas2/arreglo-general.png" caption="Arreglo general"/>
+        </div>
+        <BgFluido bg="bg-blue">
+              <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo</h4>
+              <p>Consideremos la ecuación <Latex formula="16x^2-24x-55=0" inline={true}/> y encontremos números A, B, C y D que satisfagan las condiciones:</p>
+              <div class="mt-5">
+                <Latex formula="16=AC;\\;-24=AD+BC\\;y\\;-55=BD"/>
+              </div>
+              <div class="mt-5">
+                <p>Si <Latex formula="A=4;\\; B=5;\\; C=4\\; y \\; D=-11" inline={true}/> tenemos:</p>
+              </div>
+              <div class="mt-3">
+                <ImagenFullCaption src="/matematicas2/arreglo-ejemplo.png" caption="Ejemplo de arreglo"/>
+              </div>
+              <div class="mt-5">
+                <p>Luego <Latex formula="16x^2-24x-55=(4x+5)(4x-11)=0," inline={true}/> de donde se desprenden las ecuaciones:</p>
+              </div>
+              <div class="mt-5">
+                <center><Latex formula="4x+5=0\\;y\\;4x-11=0"/></center>
+              </div>
+              <div class="mt-5">
+                <p>Con soluciones <Latex formula="x_1=-\\frac{5}{4}\\;" inline={true}/> y <Latex formula="\\;x_2=\\frac{11}{4}" inline={true}/></p>
+              </div>
+         </BgFluido>
+        <p>En el siguiente applet se proponen ejercicios para practicar el método descrito.</p>
+        <div class="mx-auto max-w-screen-xl">
+          <GeogebraLink
+              href="https://www.geogebra.org/m/mddgbt9y"
+              texto="Solución de ecuaciones de segundo grado por factorización."
+          />
         </div>
       </div>
-
-
-    </BgFluido>
-			<div class="mx-auto max-w-screen-xl">
-				<p>En el siguiente applet se proponen ejercicios para practicar el método descrito.</p>
-				<div class="mx-auto max-w-screen-xl">
-					<GeogebraLink
-						href="https://www.geogebra.org/m/mddgbt9y"
-						texto="Solución de ecuaciones de segundo grado por factorización."
-					/>
-				</div>
-			</div>
-	</div>
+    </div>
 </Layout>

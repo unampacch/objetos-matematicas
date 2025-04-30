@@ -1,0 +1,23 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Video from '@/components/Video.astro'
+---
+
+<Layout>
+	<ObjetoAprendizajePantalla index={1} pantallaIndex={2} asignatura={'matematicas_2'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<p>Existen algunas reglas de factorización para polinomios de grado mayor a 2, como la diferencia o suma de cubos o binomios elevados a una potencia <Latex inline formula='n' />.</p>
+			<p>En el afán de no aprender las factorizaciones como la memorización de infinitas reglas, estudiaremos una estructura más general que nos ayudará a factorizar polinomios de cualquier grado, siempre que tengas raíces reales enteras o racionales, el cual se conoce como DIVISIÓN SINTÉTICA.</p>
+			<p>Para aprender a factorizar polinomios de grado mayor a 2 revisa el video “Algoritmo de la división sintética”, disponible en:</p>
+			<div class="mx-auto my-10 max-w-2xl">
+				<Video
+					src="https://www.youtube.com/embed/maTZD4wwqtM"
+					pie="Algoritmo de la división sintética"
+				/>
+			</div>
+		</div>
+	</div>
+</Layout>

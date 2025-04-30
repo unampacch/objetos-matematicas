@@ -7,121 +7,105 @@ import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.as
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
 ---
 
-<Layout title="Método de completar el trinomio cuadrado perfecto">
-
-    <ObjetoAprendizajePantalla index={3} pantallaIndex={0} asignatura={"matematicas_2"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+<Layout>
+  <ObjetoAprendizajePantalla index={3} pantallaIndex={0} asignatura={"matematicas_2"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
     <div class="objeto-aprendizaje mx-auto animate-fade">
       <div class="mx-auto max-w-screen-xl">
         <p>Existen expresiones de segundo grado, en una variable, que no pueden factorizarse como producto de expresiones lineales, o simplemente su factorización no es inmediata. En este caso podemos despejar
           <Latex formula="x\\;" inline={true}/> de la ecuación <Latex formula="\\;ax^2+bx+c=0\\;" inline={true}/> de la siguiente manera:
         </p>
-        <ol class="ol-number">
-          <li>
-            <p>Sumamos <Latex formula="\\;-c\\;" inline={true}/> de ambos lados de la ecuación:</p>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="ax^2+bx+c+(-c)=0+(-c)"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="ax^2+bx=-c"/>
-            </div>
-          </li>
-          <li>
-            <p>Multiplicamos por <Latex formula="\\;\\frac{1}{a}\\;" inline={true}/> de ambos lados de la ecuación:</p>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="\\frac{1}{a}(ax^2+bx)=\\frac{1}{a}(-c)"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x^2+\\frac{b}{a}x=-\\frac{c}{a}"/>
-            </div>
-          </li>
-          <li>
-            <p>Sumamos <Latex formula="\\;\\left(\\frac{b}{2a}\\right)^2\\;" inline={true}/> de ambos lados, notando que en el lado izquierdo se completa el trinomio cuadrado perfecto (TCP), factorizamos y simplificamos del lado derecho:</p>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x^2+\\frac{b}{a}x=-\\frac{c}{a}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x^2+\\frac{b}{a}x+\\left(\\frac{b}{2a}\\right)^2=-\\frac{c}{a}+\\left(\\frac{b}{2a}\\right)^2"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="\\left(x+\\frac{b}{2a}\\right)^2=-\\frac{c}{a}+\\frac{b^2}{4a^2}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="\\left(x+\\frac{b}{2a}\\right)^2=-\\frac{4ac}{4a^2}+\\frac{b^2}{4a^2}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="\\left(x+\\frac{b}{2a}\\right)^2=\\frac{-4ac\\;+\\;b^2}{4a^2}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="\\left(x+\\frac{b}{2a}\\right)^2=\\frac{b^2\\;-\\;4ac}{4a^2}"/>
-            </div>
-          </li>
-          <li>
-            <p>Obtenemos la raíz cuadrada en ambos lados de la igualdad, suponiendo que <Latex formula="\\;b^2-4ac≥0" inline={true}/>:</p>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="\\sqrt{\\left(x+\\frac{b}{2a}\\right)^2}=\\sqrt{\\frac{b^2\\;-\\;4ac}{4a^2}}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="\\left|x+\\frac{b}{2a}\\right|=\\frac{\\sqrt{b^2\\;-\\;4ac}}{\\sqrt{4a^2}}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="\\left|x+\\frac{b}{2a}\\right|=\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
-            </div>
-          </li>
-          <li>
-
-            <p>5.	Consideramos los dos casos que se desprenden de la ecuación anterior:</p>
-            <h4><strong>Caso 1:</strong> <Latex formula="\\;x+\\frac{b}{2a}\\geq0" inline={true}/></h4>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x+\\frac{b}{2a}=\\frac{\\sqrt{b^2-4ac}}{2|a|}"/>
-            </div>
-            <p>Sumamos <Latex formula="\\;-\\frac{b}{2a}\\;" inline={true}/> de ambos lados, obteniendo:</p>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x+\\frac{b}{2a}+\\left(-\\frac{b}{2a}\\right)=\\left(-\\frac{b}{2a}\\right)+\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x=-\\frac{b}{2a}+\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
-            </div>
-            <h4><strong>Caso 2:</strong> <Latex formula="\\;x+\\frac{b}{2a}<0" inline={true}/></h4>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="-\\left(x+\\frac{b}{2a}\\right)=\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x+\\frac{b}{2a}=-\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
-            </div>
-            <p>Sumamos <Latex formula="\\;-\\frac{b}{2a}\\;" inline={true}/> de ambos lados, obteniendo:</p>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x+\\frac{b}{2a}+\\left(-\\frac{b}{2a}\\right)=\\left(-\\frac{b}{2a}\\right)-\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x=-\\frac{b}{2a}-\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
-            </div>
-            <p>Notemos que, para cada caso, en la solución aparece la expresión <Latex formula="\\;|a|.\\;" inline={true}/>
-              Al considerar los subcasos <Latex formula="\\;a>0\\;\\;y\\;\\;a<0\\;" inline={true}/> obtenemos las mismas soluciones, a saber,
-            </p>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x=\\frac{-b\\;+\\;\\sqrt{b^2\\;-\\;4ac}}{2a}"/>
-            </div>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x=\\frac{-b\\;-\\;\\sqrt{b^2\\;-\\;4ac}}{2a}"/>
-            </div>
-            <p>Las fórmulas anteriores suelen escribirse en una sola utilizando el símbolo ±, y se conoce como Fórmula General
-              para resolver la ecuación general de segundo grado <Latex formula="\\;ax^2+bx+c=0" inline={true}/>.
-            </p>
-            <div class="my-5 text-center text-3xl">
-              <Latex formula="x=\\frac{-b\\;\\pm\\;\\sqrt{b^2\\;-\\;4ac}}{2a}"/>
-            </div>
-            <p>El número <Latex formula="\\;\\Delta=b^2-4ac,\\;" inline={true}/> que se encuentra dentro de la raíz de la
-              Fórmula General, se conoce como discriminante de la ecuación y nos ayuda a clasificar las ecuaciones cuadráticas de la siguiente manera:
-            </p>
-            <div class="mx-auto my-5 lg:max-w-screen-lg">
-              <p>1. Si <Latex formula="\\;\\Delta>0\\;" inline={true}/> la ecuación tiene dos soluciones distintas.</p>
-              <p>2. Si <Latex formula="\\;\\Delta=0\\;" inline={true}/> la ecuación tiene una solución única.</p>
-              <p>3. Si <Latex formula="\\;\\Delta<0\\;" inline={true}/> la ecuación no tiene soluciones reales.</p>
-            </div>
-          </li>
-
-        </ol>
-      </div>
+        <p>1. Sumamos <Latex formula="\\;-c\\;" inline={true}/> de ambos lados de la ecuación:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="ax^2+bx+c+(-c)=0+(-c)"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="ax^2+bx=-c"/>
+        </div>
+        <p>2. Multiplicamos por <Latex formula="\\;\\frac{1}{a}\\;" inline={true}/> de ambos lados de la ecuación:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\frac{1}{a}(ax^2+bx)=\\frac{1}{a}(-c)"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x^2+\\frac{b}{a}x=-\\frac{c}{a}"/>
+        </div>
+        <p>3. Sumamos <Latex formula="\\;\\left(\\frac{b}{2a}\\right)^2\\;" inline={true}/> de ambos lados, notando que en el lado izquierdo se completa el trinomio cuadrado perfecto (TCP), factorizamos y simplificamos del lado derecho:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x^2+\\frac{b}{a}x=-\\frac{c}{a}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x^2+\\frac{b}{a}x+\\left(\\frac{b}{2a}\\right)^2=-\\frac{c}{a}+\\left(\\frac{b}{2a}\\right)^2"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\left(x+\\frac{b}{2a}\\right)^2=-\\frac{c}{a}+\\frac{b^2}{4a^2}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\left(x+\\frac{b}{2a}\\right)^2=-\\frac{4ac}{4a^2}+\\frac{b^2}{4a^2}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\left(x+\\frac{b}{2a}\\right)^2=\\frac{-4ac\\;+\\;b^2}{4a^2}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\left(x+\\frac{b}{2a}\\right)^2=\\frac{b^2\\;-\\;4ac}{4a^2}"/>
+        </div>
+        <p>4. Obtenemos la raíz cuadrada en ambos lados de la igualdad, suponiendo que <Latex formula="\\;b^2-4ac≥0" inline={true}/>:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\sqrt{\\left(x+\\frac{b}{2a}\\right)^2}=\\sqrt{\\frac{b^2\\;-\\;4ac}{4a^2}}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\left|x+\\frac{b}{2a}\\right|=\\frac{\\sqrt{b^2\\;-\\;4ac}}{\\sqrt{4a^2}}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="\\left|x+\\frac{b}{2a}\\right|=\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
+        </div>
+        <p>5.	Consideramos los dos casos que se desprenden de la ecuación anterior:</p>
+        <h4><strong>Caso 1:</strong> <Latex formula="\\;x+\\frac{b}{2a}\\geq0" inline={true}/></h4>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x+\\frac{b}{2a}=\\frac{\\sqrt{b^2-4ac}}{2|a|}"/>
+        </div>
+        <p>Sumamos <Latex formula="\\;-\\frac{b}{2a}\\;" inline={true}/> de ambos lados, obteniendo:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x+\\frac{b}{2a}+\\left(-\\frac{b}{2a}\\right)=\\left(-\\frac{b}{2a}\\right)+\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x=-\\frac{b}{2a}+\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
+        </div>
+        <h4><strong>Caso 2:</strong> <Latex formula="\\;x+\\frac{b}{2a}<0" inline={true}/></h4>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="-\\left(x+\\frac{b}{2a}\\right)=\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x+\\frac{b}{2a}=-\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
+        </div>
+        <p>Sumamos <Latex formula="\\;-\\frac{b}{2a}\\;" inline={true}/> de ambos lados, obteniendo:</p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x+\\frac{b}{2a}+\\left(-\\frac{b}{2a}\\right)=\\left(-\\frac{b}{2a}\\right)-\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x=-\\frac{b}{2a}-\\frac{\\sqrt{b^2\\;-\\;4ac}}{2|a|}"/>
+        </div>
+        <p>Notemos que, para cada caso, en la solución aparece la expresión <Latex formula="|a|.\\;" inline={true}/>
+          Al considerar los subcasos <Latex formula="\\;a>0\\;\\;y\\;\\;a<0\\;" inline={true}/> obtenemos las mismas soluciones, a saber,
+        </p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x=\\frac{-b\\;+\\;\\sqrt{b^2\\;-\\;4ac}}{2a}"/>
+        </div>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x=\\frac{-b\\;-\\;\\sqrt{b^2\\;-\\;4ac}}{2a}"/>
+        </div>
+        <p>Las fórmulas anteriores suelen escribirse en una sola utilizando el símbolo ±, y se conoce como Fórmula General
+          para resolver la ecuación general de segundo grado <Latex formula="\\;ax^2+bx+c=0" inline={true}/>.
+        </p>
+        <div class="my-5 text-center text-xl">
+          <Latex formula="x=\\frac{-b\\;\\pm\\;\\sqrt{b^2\\;-\\;4ac}}{2a}"/>
+        </div>
+        <p>El número <Latex formula="\\;\\Delta=b^2-4ac,\\;" inline={true}/> que se encuentra dentro de la raíz de la
+          Fórmula General, se conoce como <i>discriminante</i> de la ecuación y nos ayuda a clasificar las ecuaciones cuadráticas de la siguiente manera:
+        </p>
+        <div class="mx-auto my-5 lg:max-w-screen-lg">
+          <p>1. Si <Latex formula="\\;\\Delta>0\\;" inline={true}/> la ecuación tiene dos soluciones distintas.</p>
+          <p>2. Si <Latex formula="\\;\\Delta=0\\;" inline={true}/> la ecuación tiene una solución única.</p>
+          <p>3. Si <Latex formula="\\;\\Delta<0\\;" inline={true}/> la ecuación no tiene soluciones reales.</p>
+        </div>
         <BgFluido bg="bg-blue">
           <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo 1</h4>
           <p>Consideremos la ecuación <Latex formula="\\;2x^2-3x+5=0\\;" inline={true}/> y calculemos su discriminante. Por un lado
@@ -156,5 +140,4 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         </div>
       </div>
     </div>
-
 </Layout>
