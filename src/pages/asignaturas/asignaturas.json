@@ -534,8 +534,8 @@
 							"descripcion": "Derivadas por regla de la cadena y su aplicación en la resolución de problemas matemáticos."
 						},
 						{
-							"titulo": "Profundicacion",
-							"slug": "/asignaturas/calculo/derivacion-algebraicas/profundicacion",
+							"titulo": "Profundización en la derivación de funciones. Derivada de un producto",
+							"slug": "/asignaturas/calculo/derivacion-algebraicas/profundizacion",
 							"descripcion": "Profundización en la derivación de funciones algebraicas simples y su aplicación en la resolución de problemas matemáticos."
 						}
 					]

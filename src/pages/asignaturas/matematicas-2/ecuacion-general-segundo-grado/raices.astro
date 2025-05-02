@@ -2,9 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
-import GeogebraLink from "@/components/GeogebraLink.astro";
-import Lumi from "@/components/Lumi.astro";
-import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import ResalteBlanco from "@/components/ResalteBlanco.astro";
 ---
 
 <Layout>
@@ -12,10 +10,10 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
   <div class="objeto-aprendizaje mx-auto animate-fade">
     <div class="mx-auto max-w-screen-xl mb-10">
       <p>Ahora nos centraremos en encontrar las raíces de la función cuadrática.</p>
-      <div class="max-w-3xl mx-auto text-center text-xl bg-slate-200 text-darkblue p-4 my-10">
+      <ResalteBlanco>
         <p class="text-2xl">¡Recuerda!</p>
         <p>Las raíces de una función <Latex inline formula="y=f(x)" /> son los valores de <Latex inline formula="x" /> donde la función <Latex inline formula="f(x)" /> se hace cero, esto es <Latex inline formula="y=f(x)=0" />.</p>
-      </div>
+      </ResalteBlanco>
       <p>En una función cuadrática podemos tener 1 o 2 raíces, en otras palabras y en términos geométricos donde la parábola corta al eje <Latex inline formula="x" />.</p>
       <p>Para determinar estas raíces, solo tenemos que igualar la función a cero y resolver la ecuación, esto lo podemos hacer mediante la formula general para resolver ecuaciones cuadráticas: </p>
       <p class="text-center md:text-2xl my-10"><Latex formula="x_{1,2}=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}" /></p>

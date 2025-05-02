@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import ResalteBlanco from "@/components/ResalteBlanco.astro";
 ---
 
 <Layout>
@@ -18,10 +19,10 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
       <ImagenFullCaption src="/calculo/derivacion-algebraicas/interpretacion-geometrica-derivada.webp" bg="bg-red" />
 
       <div class="mx-auto max-w-screen-xl">
-        <div class="max-w-3xl mx-auto text-center text-xl bg-slate-200 text-darkblue p-4 my-10">
+        <ResalteBlanco>
           <p>La derivada de una función <Latex inline formula="f" /> en un punto <Latex inline formula="x" /> es el límite del cociente incremental cuando el incremento de la variable independiente tiende a cero. Se denota por:</p>
           <div class="mt-10 text-ellipsis"><Latex formula="f’(x)= \\displaystyle \\lim_{h\\to 0}\\dfrac{f(x+h)-f(x)}{h}" /></div>
-        </div>
+        </ResalteBlanco>
         <p>Grandes matemáticos aportaron su propia forma de representarla: </p>
         <img src="/calculo/derivacion-algebraicas/representaciones-derivada.webp" alt="Representaciones de la derivada" class="mx-auto my-10" />
 
@@ -81,9 +82,9 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
 
            <p>Una herramienta que debes tener presente al obtener derivadas son las leyes de los exponentes,
            ya que éstas nos ayudan a estructurar mejor algunas expresiones de manera que sea aplicable la fórmula de derivación. </p>
-           <div class="max-w-3xl mx-auto text-center text-xl bg-slate-200 text-darkblue p-4 my-10">
+           <ResalteBlanco>
              <p>¡Veamos si las recuerdas!</p>
-           </div>
+           </ResalteBlanco>
            <p>ACTIVIDAD: Escribe en el recuadro la letra a o la letra b para la ley de exponentes correcta.  </p>
       </div>
 

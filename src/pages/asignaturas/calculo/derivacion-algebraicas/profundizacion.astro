@@ -1,0 +1,139 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import Video from "@/components/Video.astro";
+import Lumi from "@/components/Lumi.astro";
+import ResalteBlanco from "@/components/ResalteBlanco.astro";
+import ResalteOutline from "@/components/ResalteOutline.astro";
+---
+
+<Layout>
+
+  <ObjetoAprendizajePantalla index={4} pantallaIndex={1} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+  <div class="objeto-aprendizaje mx-auto animate-fade">
+    <div class="mx-auto max-w-screen-xl">
+      <h3>Ahora, derivemos la función <Latex formula="f(x)=(4-x^3)^5 (x^2-x)" inline/></h3>
+      <div class="table-responsive xl:my-11">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>Reescribimos</th>
+              <td><Latex formula="f(x)=(4-x^3)^5 (x^2-x)" inline/> </td>
+            </tr>
+            <tr>
+              <th>Aplicamos regla del producto</th>
+              <td><Latex formula="f’(x)=(4-x^3)^5 \\cdot D_x (x^2-x)+(x^2-x)\\cdot D_x (4-x^3)^5" inline/> </td>
+            </tr>
+            <tr>
+              <th>Derivar con regla de la Cadena</th>
+              <td><Latex formula="f’(x)=(4-x^3)^5 \\cdot (2x-1)+(x^2-x)\\cdot 5(4-x^3)^4\\cdot D_x (4-x^3)" inline/> </td>
+            </tr>
+            <tr>
+              <th>Derivamos la función interna</th>
+              <td><Latex formula="f’(x)=(4-x^3)^5 \\cdot (2x-1)+(x^2-x)\\cdot 5(4-x^3)^4\\cdot (-3x^2)" inline/> </td>
+            </tr>
+            <tr>
+              <th>Aplicamos factor común</th>
+              <td><Latex formula="f’(x)=(4-x^3)^4 [(4-x^3)(2x-1)+(x^2-x)\\cdot 5(-3x^2)] " inline/> </td>
+            </tr>
+            <tr>
+              <th>Operamos dentro del corchete</th>
+              <td><Latex formula=" f’(x)=(4-x^3)^4 [8x-4-2x^4+x^3-15x^4+15x^3] " inline/> </td>
+            </tr>
+            <tr>
+              <th>Simplificamos</th>
+              <td><Latex formula="f’(x)=(4-x^3)^4 [-17x^4+16x^3+8x-4]" inline/> </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>En el video “Derivada de un producto”, donde se detalla la obtención y simplificación de una derivada más compleja.</p>
+      <Video src="https://www.youtube.com/embed/PJT2Juklvws" pie="Derivada de un producto" class="my-10" />
+      <p>Después de ver el video, responde los siguientes ejercicios:</p>
+    </div>
+    <Lumi
+    src=""
+    nombre="Obten la derivada de la función 3"
+    instrucciones="Deriva las siguientes funciones y elige la forma simplificada de su derivada, como se explica en el video anterior."
+    />
+    <div class="mx-auto max-w-screen-xl mb-10">
+      <ResalteOutline>
+        <h4 class="flex justify-center">Derivada de un cociente de funciones</h4>
+        <div class="my-10"><Latex formula="D_x \\left( \\dfrac{u}{v} \\right)=\\dfrac{v\\cdot D_x u + u \\cdot D_x v}{v^2}" /></div>
+        <p>Donde <Latex inline formula="u" /> y <Latex inline formula="v" /> son funciones de <Latex inline formula="x" />.</p>
+      </ResalteOutline>
+      <h4>Ejemplos de práctica</h4>
+      <p>Derivemos la función <Latex formula="h(m)=\\dfrac{4m^7 -1}{2m-m^3}" inline/></p>
+      <div class="table-responsive xl:my-11">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Identificamos a las funciones</td>
+              <td class="flex justify-between"><Latex formula="u=4m^7-1" inline/>
+                <Latex formula="v=2m-m^3" inline/></td>
+            </tr>
+            <tr>
+              <td>Usamos la regla para derivar un cociente</td>
+              <td><Latex formula="h’(m)=\\dfrac{(2m-m^3)\\cdot D_m (4m^7-1)+(4m^7-1)\\cdot D_m (2m-m^3)}{(2m-m^3)^2}" inline/></td>
+            </tr>
+            <tr>
+              <td>Derivamos</td>
+              <td><Latex formula="h’(m)=\\dfrac{(2m-m^3)(28m^6)+(4m^7-1)(2-3m^2)}{(2m-m^3)^2}" inline/></td>
+            </tr>
+            <tr>
+              <td>Efectuamos las multiplicaciones</td>
+              <td><Latex formula="h’(m)=\\dfrac{56m^7-28m^{9}+8m^7-12m^{9}-2+3m^2}{(2m-m^3)^2}" inline/></td>
+            </tr>
+            <tr>
+              <td>Simplificamos terminos semejantes</td>
+              <td><Latex formula=" h’(m)=\\dfrac{-16m^9+48m^7-3m^2+2}{(2m-m^3)^2}" inline/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-10">Ahora, derivemos la función <Latex inline formula="w(x)=\\dfrac{5x^4}{(3x^2-4x)^3}" /></p>
+      <div class="table-responsive xl:my-11">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>Aplicamos la regla del cociente</th>
+              <td><Latex formula="w’(x)=\\dfrac{(3x^2-4x)^3 \\cdot D_x (5x^4) -5x^4\\cdot D_x (3x^2-4x)^3}{[(3x^2-4x)^3]^2}" /></td>
+            </tr>
+            <tr>
+              <th>Derivamos usando regla de la cadena</th>
+              <td><Latex formula="w’(x)=\\dfrac{(3x^2-4x)^3 \\cdot 20x^3) -5x^4\\cdot  3(3x^2-4x)^2 (6x-4)}{(3x^2-4x)^6}" /></td>
+            </tr>
+            <tr>
+              <th>Derivamos la función interna</th>
+              <td><Latex formula="w’(x)=\\dfrac{(3x^2-4x)^3 \\cdot 20x^3) -15x^4 (3x^2-4x)^2 (6x-4)}{(3x^2-4x)^6}" /></td>
+            </tr>
+            <tr>
+              <th>Factorizamos</th>
+              <td><Latex formula="w’(x)=\\dfrac{5x^3(3x^2-4x)^2 [4(3x^2-4x)-3x(6x-4)]}{(3x^2-4x)^6}" /></td>
+            </tr>
+            <tr>
+              <th>Operamos dentro del corchete</th>
+              <td><Latex formula=" w’(x)=\\dfrac{5x^3(3x^2-4x)^2 [12x^2 -16x-18x^2+12x]}{(3x^2-4x)^6}" /></td>
+            </tr>
+            <tr>
+              <th>Simplificamos</th>
+              <td><Latex formula="w’(x)=\\dfrac{5x^3 [-6x^2-4x]}{(3x^2-4x)^4}" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <Lumi
+    src=""
+    nombre="Obten la derivada de la función 4"
+    instrucciones="Escribe cuál de las opciones (a, b, c) es la expresión que es derivada de la función dada. "
+    />
+  </div>
+</Layout>
+<style>
+  .table th {
+    padding-left: 0.5rem;
+  }
+</style>
