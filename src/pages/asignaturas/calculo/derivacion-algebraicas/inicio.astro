@@ -4,6 +4,7 @@ import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
 import ResalteBlanco from "@/components/ResalteBlanco.astro";
+import Lumi from "@/components/Lumi.astro";
 ---
 
 <Layout>
@@ -33,7 +34,7 @@ import ResalteBlanco from "@/components/ResalteBlanco.astro";
 
       <ImagenFullCaption src="/calculo/derivacion-algebraicas/infografia-derivada.webp" bg="bg-blue" />
 
-      <div class="mx-auto max-w-screen-xl">
+      <div class="mx-auto max-w-screen-xl mb-10">
         <h4>Resumiendo:</h4>
 
         <div class="table-responsive xl:my-11">
@@ -85,9 +86,12 @@ import ResalteBlanco from "@/components/ResalteBlanco.astro";
            <ResalteBlanco>
              <p>¡Veamos si las recuerdas!</p>
            </ResalteBlanco>
-           <p>ACTIVIDAD: Escribe en el recuadro la letra a o la letra b para la ley de exponentes correcta.  </p>
       </div>
-
+      <Lumi
+        src=""
+        nombre="Leyes de exponentes"
+        instrucciones="Escribe en el recuadro la letra a o la letra b para la ley de exponentes correcta"
+        />
       <div class="mx-auto max-w-screen-xl mt-10">
         <h4>Propiedades de las derivadas </h4>
         <p>Como en los límites, existen propiedades de las derivadas que pueden ser aplicadas a la función,
@@ -149,22 +153,14 @@ import ResalteBlanco from "@/components/ResalteBlanco.astro";
             </tbody>
           </table>
         </div>
-
-        <p>ACTIVIDAD: Elige de entre las tres opciones dadas (a, b, c) como derivada de cada función aquella que sea correcta
-           (de ser necesario, aplica propiedades de las derivadas o leyes de los exponentes). Escribe en el recuadro la opción correcta. </p>
       </div>
+      <Lumi
+        src=""
+        nombre="Obtén  la derivada de la función 1"
+        instrucciones="Elige de entre las tres opciones dadas (a, b, c) como derivada de cada función aquella que sea correcta (de ser necesario, aplica propiedades de las derivadas o leyes de los exponentes). Escribe en el recuadro la opción correcta. "
+      />
 
     </div>
-
-
-
-
-
-
-
-
-    </div>
-
 </Layout>
 
 <Latex formula="" inline={true}/>
