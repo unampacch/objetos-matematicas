@@ -52,15 +52,16 @@ body {
       padding: 0;
     }
   }
-  p{
+  p {
     text-wrap: pretty;
-      padding:0 1rem;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
     @media (min-width: 768px) {
       padding: 0;
     }
   }
-  p:not(:last-child) {
-    margin-bottom: 0.5rem;
+  p:last-child {
+    margin-bottom: 0;
   }
   a {
     text-decoration: underline;
