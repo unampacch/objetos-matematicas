@@ -15,7 +15,7 @@ import BgFluido from '@/components/BgFluido.astro'
 
     <ObjetoAprendizaje index={8} asignatura={"calculo"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      <div class="mx-auto mb-5 max-w-screen-xl"> 
+      <div class="mx-auto mb-5 max-w-screen-xl">
         <p>En la siguiente imagen se tiene “La representación de una integral definida”</p>
 
         <ImagenCaption
@@ -23,27 +23,27 @@ import BgFluido from '@/components/BgFluido.astro'
               />
 
         <p>La interpretación gráfica del resultado de una integral definida es el área bajo la curva de la función asociada, siempre que ésta sea continua en el intervalo de integración <Latex formula="[a,b]" inline={true}/>. Cumplido lo anterior, dada una función <Latex formula="f(x)" inline={true}/> de variable real <Latex formula="x" inline={true}/>, la integral definida <Latex formula="\\int_{a}^{b} f(x) \\, dx" inline={true}/> representa el área de la región del plano <Latex formula="XY" inline={true}/> limitada entre la gráfica de la función, el eje X y las rectas <Latex formula="x=a" inline={true}/> y <Latex formula="x=b" inline={true}/>.</p>
-      
+
       <div class="table-responsive">
         <table class="table">
         <tbody>
-            
+
             <tr>
-              <td class="border border-gray-400 p-4"> 
-                
+              <td class="border border-gray-400 p-4">
+
                 <ImagenCaption
                 src="/calculo/interpretacion-integral/imagen2.PNG"
                 />
-                <p class="text-center">(Área bajo la curva 1)</p> 
+                <p class="text-center">(Área bajo la curva 1)</p>
               </td>
                 <td class="border border-gray-400 p-4">
                     <p>Se puede observar que el área encerrada por la gráfica de la función tiene signo positivo cuando la curva de la función está sobre el eje X, y negativa cuando está por debajo de éste.</p>
                 </td>
             </tr>
-            
+
         </tbody>
         </table>
-    
+
       </div>
 
       <h4>Consideraciones para el cálculo del área </h4>
@@ -53,14 +53,14 @@ import BgFluido from '@/components/BgFluido.astro'
       <div class="table-responsive">
         <table class="table">
         <tbody>
-            
+
             <tr>
-              <td class="border border-gray-400 p-4"> 
-                
+              <td class="border border-gray-400 p-4">
+
                 <ImagenCaption
                 src="/calculo/interpretacion-integral/imagen3.PNG"
                 />
-                <p class="text-center">(Área bajo la curva 2)</p> 
+                <p class="text-center">(Área bajo la curva 2)</p>
                 <p>Si queremos saber el valor del área encerrada por el eje X y la función <Latex formula="f(x)" inline={true}/> en el intervalo <Latex formula="[a,b]" inline={true}/>, lo cual se expresa:</p>
                 <p class="text-center"><Latex inline={true} formula=" A_2= \\int_{c}^{b}{f(x)\\, dx}=-2"/></p>
               </td>
@@ -75,21 +75,21 @@ import BgFluido from '@/components/BgFluido.astro'
                 </td>
             </tr>
             <tr>
-              <td class="border border-gray-400 p-4"> 
-                
+              <td class="border border-gray-400 p-4">
+
                 <p>Al resolver la integral, obtendríamos que el valor es <Latex inline={true} formula="A=4.5-2=2.5"/>, lo cual es un resultado erróneo puesto que no se ha considerado que hay una región de área en el que la función es negativa. </p>
-                
+
               </td>
                 <td class="border border-gray-400 p-4">
                     <p>Por lo que el área encerrada por el eje X y la función <Latex formula="f(x)" inline={true}/> en el intervalo <Latex formula="[a,b]" inline={true}/> es:</p>
                     <p class="text-center"><Latex inline={true} formula="A=A_{1}+A_{2}=4.5+2=6.5 "/></p>
-                    
+
                 </td>
             </tr>
-            
+
         </tbody>
         </table>
-    
+
       </div>
 
     </div>

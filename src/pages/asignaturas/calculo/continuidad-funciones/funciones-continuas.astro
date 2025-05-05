@@ -5,7 +5,7 @@ import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.as
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
 ---
 
-<Layout title="Funciones de continuidad">
+<Layout>
 
     <ObjetoAprendizajePantalla index={1} pantallaIndex={0} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
     <div class="objeto-aprendizaje mx-auto animate-fade">
@@ -24,19 +24,19 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <p><font color="#3f87ab" size="4"><b>A)</b></font> Comprobar que la función <Latex formula="f(x)=x^2+3x" inline={true}/> es continua en <Latex formula="{x}_{0}=-1" inline={true}/>.</p>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>1.	El límite <Latex formula="\\lim\\limits_{x\\to{x}_{0}}f(x)" inline={true}/> existe.</p>
-        </div>  
+        </div>
         <div class="my-5 text-center text-xl">
           <Latex formula="\\lim\\limits_{x\\to-1}(x^2+3x)=1-3=-2"/>
         </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>2.	La función está definida en <Latex formula="{x}_{0}=-1" inline={true}/>.</p>
-        </div>  
+        </div>
         <div class="my-5 text-center text-xl">
           <Latex formula="f(-1)=(-1)^2+3(-1)=-2"/>
         </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>3.	Se cumple la igualdad <Latex formula="\\lim\\limits_{x\\to{x}_{0}}f(x)=f({x}_{0})" inline={true}/>.</p>
-        </div>  
+        </div>
         <div class="my-5 text-center text-xl">
           <Latex formula="\\lim\\limits_{x\\to{x}_{0}}f(x) = f({x}_{0})"/>
         </div>
@@ -51,7 +51,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <p>Comprobemos si se cumplen los tres puntos anteriores.</p>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>1.	El límite <Latex formula="\\lim\\limits_{t\\to{t}_{0}}f(t)" inline={true}/> existe.</p>
-        </div>  
+        </div>
         <div class="my-5 text-center text-xl">
           <Latex formula="\\lim\\limits_{t\\to2} f(t)=\\lim\\limits_{t\\to 2}\\frac{t-2}{t^2-4}=\\lim\\limits_{t\\to2}\\frac{t-2}{(t+2)(t-2)}=\\lim\\limits_{t\\to2}\\frac{1}{t+2}=\\frac{1}{4}"/>
         </div>
@@ -60,10 +60,10 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>2.	La función está definida en <Latex formula="{t}_{0}=2" inline={true}/>.</p>
-        </div>  
+        </div>
         <div class="my-5 text-center text-xl">
           <Latex formula="f(2)=\\frac{2-2}{2^2-4}=\\frac{0}{0}"/>
-        </div> 
+        </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>Lo anterior es una <b>indeterminación</b>, por lo que la función no está definida en <Latex formula="{t}_{0}=2" inline={true}/>.</p>
           <br><p>Como no satisface el segundo punto, podemos decir que la función <b>no es continua en el valor <Latex formula="{t}_{0}=2" inline={true}/></b>.</p>
@@ -79,26 +79,26 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <p>Si definimos a una nueva función <Latex formula="g(t)" inline={true}/>  de la siguiente manera:</p>
         <div class="my-5 text-center text-xl">
           <Latex formula="g(t)=\\begin{Bmatrix} \\frac{t-2}{t^2-4} & si & t \\neq 2 \\\\ \\frac{1}{4} & si & t = 2 \\ \\end{Bmatrix}"/>
-        </div> 
+        </div>
         <p>Entonces la función es continua, como se pude comprobar a continuación:</p>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>1.	El límite <Latex formula="\\lim\\limits_{t\\to{t}_{0}}g(t)" inline={true}/> existe.</p>
-        </div>  
+        </div>
         <div class="my-5 text-center text-xl">
           <Latex formula="\\lim\\limits_{t\\to2} g(t)= \\lim\\limits_{t\\to2} \\frac{t-2}{t^2-4}=\\lim\\limits_{t\\to2} \\frac{t-2}{(t+2)(t-2)}= \\lim\\limits_{t\\to2} \\frac{1}{t+2}=\\frac{1}{4}"/>
         </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>Por lo que el límite existe.</p>
-        </div>  
+        </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>2.	La función está definida en <Latex formula="{t}_{0}=2" inline={true}/>.</p>
-        </div>  
+        </div>
         <div class="my-5 text-center text-xl">
           <Latex formula="g(2)=\\frac{1}{4}"/>
         </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>3.	Se cumple la igualdad <Latex formula="\\lim\\limits_{t\\to{t}_{0}}g(t)=g({t}_{0})" inline={true}/>.</p>
-        </div>  
+        </div>
         <div class="my-5 text-center text-xl">
           <Latex formula="\\lim\\limits_{t\\to{t}_{0}} g(t)=g({t}_{0})"/>
         </div>

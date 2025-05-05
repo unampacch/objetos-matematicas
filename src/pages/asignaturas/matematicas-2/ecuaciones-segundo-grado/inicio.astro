@@ -7,12 +7,12 @@ import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 ---
 
-<Layout title="Solución de ecuaciones de segundo grado">
+<Layout>
     <ObjetoAprendizaje index={3} asignatura={"matematicas_2"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
       <div class="mx-auto max-w-screen-xl">
         <h3>¿Qué es una ecuación de segundo grado?</h3>
-        <p>Una ecuación de segundo grado (en una variable) es una ecuación de la forma 
+        <p>Una ecuación de segundo grado (en una variable) es una ecuación de la forma
           <Latex formula="ax^2+bx+c=0" inline={true}/> con <Latex formula="a≠0" inline={true}/></p>
         <p>	Los valores de x que satisfacen la ecuación se llaman soluciones de la ecuación y existen diversos métodos para determinar su existencia.</p>
         <br>

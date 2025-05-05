@@ -1,0 +1,133 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout
+  title="Derivadas de funciones algebraicas"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={4} pantallaIndex={0} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+      <h4>Derivadas por regla de la cadena </h4>
+      <p class="text-lightblue">Se utiliza para derivar composiciones de funciones, es decir,
+         cuando se tiene una función dentro de otra función.</p>
+         <p class="text-center"><Latex formula=" \\dfrac{d}{dx}\\left[ f(g(x)) \\right]=f’(g(x))\\cdot g’(x) " inline/></p>
+         <p>De manera simple, esta regla indica que en las funciones compuestas se deriva primero
+          la función externa, y después la función interna.</p>
+      </div>
+
+      <ImagenFullCaption src="/Calculo/Funciones algebraicas simples/regla-cadenas.webp" bg="bg-blue" />
+
+      <div class="mx-auto max-w-screen-xl">
+        <p class="text-red"> Ejemplo:</p>
+        <p>Derivemos la función <Latex formula=" g(x)=(x^2-7x)^5" inline/></p>
+        <div class="table-responsive xl:my-11">
+          <table class="table">
+              <tbody>
+                <tr>
+                  <td>Se deriva la funcion externa</td>
+                  <td><Latex formula=" g’(x)=5(x^2-7x)^4 \\cdot D_{x}(x^2-7x) " inline/> </td>
+                </tr>
+                <tr>
+                  <td>Ahora, se deriva la función interna</td>
+                  <td><Latex formula=" g’(x)==5(x^2-7x)^4 (2x-7) " inline/></td>
+                </tr>
+                <tr>
+                  <td>Se operan los paréntesis sin potencia</td>
+                  <td><Latex formula=" g’(x)=(10x-35)(x^2-7x)^4 " inline/></td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+
+        <p>Actividad: Arrastra a la columna “Elección” una de las 2 opciones que se proponen en cada paso
+           para llegar a la obtención correcta de la derivada de la función
+           <Latex formula=" f’(t)=\\dfrac{1}{\\sqrt{3t+1}} " inline/></p>
+
+
+
+           <p>Actividad: Escribe cuál de las opciones (a, b, c) es la derivada de la función correcta.
+
+
+           </p>
+      </div>
+
+      <ImagenFullCaption src="/Calculo/Funciones algebraicas simples/cierto-o-falso.webp" bg="bg-lightblue" />
+
+      <div class="mx-auto max-w-screen-xl">
+      <p>Respuesta: Falso, a continuación, veremos el por qué.</p>
+      </div>
+
+      <ImagenFullCaption src="/Calculo/Funciones algebraicas simples/derivada.webp" bg="bg-lightblue" />
+
+      <div class="mx-auto max-w-screen-xl">
+        <p>Como ejemplo, derivemos la función <Latex formula=" g(x)=(3x-4)(2x^5+x) " inline/></p>
+
+        <div class="table-responsive xl:my-11">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Identificamos a las funciones</td>
+                <td><Latex formula=" u=3x-4 " inline/>
+                  <Latex formula=" v=2x^5+x " inline/></td>
+              </tr>
+              <tr>
+                <td>Usamos la regla para derivar un producto</td>
+                <><Latex formula=" g’(x)=(3x-4)\\cdot D_x (2x^5+x)+(2x^5+x)\\cdot D_x (3x-4) " inline/></td>
+              </tr>
+              <tr>
+                <td>Derivamos</td>
+                <td><Latex formula=" g’(x)=(3x-4)(10x+1)+(2x^5+x) (3) " inline/></td>
+              </tr>
+              <tr>
+                <td>Efectuamos las multiplicaciones</td>
+                <td><Latex formula=" g’(x)=30x^5+3x-40x^4-4+6x^5+3x " inline/></td>
+              </tr>
+              <tr>
+                <td>Simplificamos terminos semejantes</td>
+                <td><Latex formula=" 36x^5-40x^4+6x-4 " inline/></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Otra forma de derivar la misma función <Latex formula=" g(x)=(3x-4)(2x^5+x) " inline/> </p>
+
+        <div class="table-responsive xl:my-11" >
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Efectuamos el el producto</td>
+                <td><Latex formula=" g(x)=6x^6+3x^2-8x^5-4x " inline/></td>
+              </tr>
+              <tr>
+                <td>Derivamos</td>
+                <td><Latex formula=" g’(x)=36x^5+6x-40x^4-4 " inline/></td>
+              </tr>
+              <tr>
+                <td>Reordenamos</td>
+                <td><Latex formula=" g’(x)=36x^5-40x^4+6x-4 " inline/></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 class="text-center text-red">¡OBSERVACIÓN!</h4>
+        <p class="text-center text-rose-500">Cuando se busca derivar un producto de funciones, no siempre efectuar la multiplicación nos lleva a
+          obtener una forma simplificada que facilite la derivación, por ejemplo, la función <Latex formula=" f(x) = (2x–3)(x^4-1)^10 " inline/>
+          , por jerarquía de operaciones, antes de multiplicar se debe hacer el desarrollo del binomio a la 10,
+          por lo cual es poco práctico.</p>
+          <p>Actividad: Escribe cuál de las opciones (a, b, c) es la expresión que es derivada de la función dada. </p>
+
+
+          <p class="text-center text-orange-700"> Sencillo ¿no?</p>
+        </div>
+
+    </div>
+
+</Layout>
