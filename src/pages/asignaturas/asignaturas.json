@@ -393,25 +393,15 @@
 				},
 				{
 					"titulo": "Gráﬁca de Funciones",
-					"slug": "/asignaturas/matematicas-4/grafica-funciones",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/matematicas-4/grafica-funciones/inicio",
+					"portada": "/matematicas4/grafica-funciones/mate4-portada-6.jpg",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la gráﬁca de funciones en el ámbito de la matemática. Contiene una exploración exhaustiva de la representación gráﬁca de funciones matemáticas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Representación gráﬁca de funciones matemáticas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de gráﬁca de funciones",
-							"slug": "/asignaturas/matematicas-4/grafica-funciones/definicion",
+							"titulo": "Gráfica de funciones algebraicas",
+							"slug": "/asignaturas/matematicas-4/grafica-funciones/grafica-funciones-algebraicas",
 							"descripcion": "Definición y propiedades de la representación gráﬁca de funciones matemáticas."
-						},
-						{
-							"titulo": "Tipos de gráﬁcas de funciones",
-							"slug": "/asignaturas/matematicas-4/grafica-funciones/tipos",
-							"descripcion": "Tipos de representación gráﬁca de funciones matemáticas y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Interpretación geométrica de las gráﬁcas de funciones",
-							"slug": "/asignaturas/matematicas-4/grafica-funciones/interpretacion",
-							"descripcion": "Interpretación geométrica de las representaciones gráﬁcas de funciones matemáticas."
 						}
 					]
 				},
@@ -432,8 +422,8 @@
 				{
 					"titulo": "Sucesiones y series ",
 					"slug": "/asignaturas/calculo/sucesiones-series/inicio",
-					"portada": "/calculo/sucesiones-series/suceciones-series-portada.webp",
-					"descripcion": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
+					"portada": "/calculo/sucesiones-series/sucesiones-series-portada.webp",
+					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de las sucesiones y series en el ámbito de la matemática. Contiene una exploración exhaustiva de las sucesiones y series numéricas, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Sucesiones y series numéricas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
@@ -475,26 +465,12 @@
 				},
 				{
 					"titulo": "Límite de una función ",
-					"slug": "/asignaturas/calculo/limite-funcion",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/limite-funcion/inicio",
+					"portada": "/calculo-portada-2.webp",
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales del límite de una función en el ámbito de la matemática. Contiene una exploración exhaustiva del límite de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Límite de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						{
-							"titulo": "Definición de límite",
-							"slug": "/asignaturas/calculo/limite-funcion/limite",
-							"descripcion": "Definición y propiedades del límite de una función real."
-						},
-						{
-							"titulo": "Propiedades de los límites",
-							"slug": "/asignaturas/calculo/limite-funcion/propiedades",
-							"descripcion": "Propiedades de los límites de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Cálculo de límites",
-							"slug": "/asignaturas/calculo/limite-funcion/calculo",
-							"descripcion": "Métodos para calcular límites de funciones reales y su aplicación en la resolución de problemas matemáticos."
-						}
+						
 					]
 				},
 				{
@@ -610,25 +586,15 @@
 				},
 				{
 					"titulo": "Interpretación geométrica de la integral",
-					"slug": "/asignaturas/calculo/interpretacion-integral",
-					"portada": "/holder-cover.webp",
+					"slug": "/asignaturas/calculo/interpretacion-integral/inicio",
+					"portada": "/calculo/interpretacion-integral/calculo-portada-8.jpg",
 					"descripcion": "Este material aborda de manera detallada la interpretación geométrica de la integral en el ámbito de la matemática. Contiene una exploración exhaustiva de la interpretación geométrica de la integral de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Interpretación geométrica de la integral de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Área bajo la curva",
-							"slug": "/asignaturas/calculo/interpretacion-integral/area-curva",
-							"descripcion": "Interpretación geométrica de la integral: área bajo la curva."
-						},
-						{
-							"titulo": "Longitud de arco",
-							"slug": "/asignaturas/calculo/interpretacion-integral/longitud-arco",
-							"descripcion": "Interpretación geométrica de la integral: longitud de arco."
-						},
-						{
-							"titulo": "Volumen de sólidos de revolución",
-							"slug": "/asignaturas/calculo/interpretacion-integral/volumen-revolucion",
-							"descripcion": "Interpretación geométrica de la integral: volumen de sólidos de revolución."
+							"titulo": "Aproximación al valor del área sin integrales",
+							"slug": "/asignaturas/calculo/interpretacion-integral/aproximacion-integrales",
+							"descripcion": "Aproximación al valor del área sin integrales."
 						}
 					]
 				},

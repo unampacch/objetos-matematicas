@@ -2,13 +2,78 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import Lumi from "@/components/Lumi.astro";
+import ImagenCaption from '@/components/ImagenCaption.astro'
 ---
 
-<Layout>
+<Layout
+  title="Gráﬁca de Funciones"
+  description=""
+>
 
     <ObjetoAprendizaje index={6} asignatura={"matematicas_4"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto mb-5 max-w-screen-xl">
+
+        <h3>Introducción</h3>
+        <p>Es posible que no estés familiarizado con el término función, pero en la vida cotidiana utilizamos su concepto sin darnos cuenta. Las funciones describen la relación entre dos magnitudes, donde una depende de la otra. Por ejemplo, el costo de las tortillas en función de los kilos comprados, el consumo de gasolina de un automóvil según la distancia recorrida o el precio total de boletos del metro en función de la cantidad adquirida.</p>
+
+        <p>Las funciones tienen aplicaciones en una amplia variedad de disciplinas, no solo en matemáticas. Gracias a su capacidad para establecer relaciones entre magnitudes, se utilizan en física, biología, química, economía, medicina, sociología, psicología, entre muchas otras áreas. Además, permiten predecir valores con base en patrones previamente establecidos.</p>
+
+        <p>En términos matemáticos, una función es una correspondencia entre los elementos de dos conjuntos, definida por una regla que asocia a cada elemento del primer conjunto un único valor en el segundo.</p>
+      </div>
+
+          <Lumi
+            src="/matematicas4/grafica-funciones/p1 ej1.html"
+            nombre="Recordando"
+            instrucciones="Arrastra en cada espacio, los elementos de una función en el orden correcto:"
+            />
+        <div class="mx-auto mb-5 max-w-screen-xl">
+        <h3>Elementos de una función</h3>
+
+          <ul class="list-disc">
+          <li>Dominio:
+            <p>Es el conjunto de <b>todos los valores posibles</b> que puede tomar la variable independiente <Latex formula="x" inline={true}/> en una función <Latex formula="f(x)" inline={true}/>. En otras palabras, el dominio representa <b>los valores de entrada permitidos</b>.</p>
+            <p>Ejemplo:</p>
+            <p>Para la función <Latex formula="f(x)=\\frac{1}{x-2} " inline={true}/>, el dominio son <b>todos los números reales excepto</b> <Latex formula="x=2" inline={true}/>, ya que en ese punto la función no está definida (división entre cero).</p>
+          </li>
+
+          <li>Rango:
+            <p>Es el conjunto de <b>todos los valores posibles</b> que puede tomar la función <Latex formula="f(x)" inline={true}/>, es decir, los resultados o <b>valores de salida</b> de la función.</p>
+            <p>Ejemplo:</p>
+            <p>Para <Latex formula="f(x)=\\frac{1}{x}" inline={true}/>, el rango es <b>todos los números reales excepto </b> <Latex formula="y=0" inline={true}/>, ya que <Latex formula="\\frac{1}{x}" inline={true}/> nunca toma ese valor.
+
+            </p>
+          </li>
+
+          <li>Regla de correspondencia:
+            <p>Es la <b>expresión matemática o ley</b> que indica cómo se relacionan los elementos del dominio con los del rango. En otras palabras, es la <b>fórmula</b> que permite obtener la salida <Latex formula="f(x)" inline={true}/> a partir de un valor de entrada x.</p>
+            <p>Ejemplo:</p>
+            <p>Para <Latex formula="f(x)=2x+3" inline={true}/>, la regla de correspondencia nos dice que a cada valor de <Latex formula="x" inline={true}/> se le asocia un valor <Latex formula="f(x)" inline={true}/>, que se obtiene multiplicando <Latex formula="x" inline={true}/> por <Latex formula="2" inline={true}/> y sumando <Latex formula="3" inline={true}/>.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <Lumi
+            src="/matematicas4/grafica-funciones/p1 ej2.html"
+            nombre="Ejercicio"
+            instrucciones="En el siguiente plano cartesiano, ubica y escribe el nombre de los cuatro cuadrantes, señala el eje de las abscisas y el eje de las ordenadas."
+            />
+
+      <Lumi
+            src="/matematicas4/grafica-funciones/p1 ej3.html"
+            nombre="Ejercicio"
+            instrucciones="Ubica (arrastra) en el plano cartesiano cada uno de los siguientes puntos; ¿Los puntos tienen alguna forma?"
+            />
+
+      <Lumi
+            src="/matematicas4/grafica-funciones/p1 ej4.html"
+            nombre="Actividad"
+            instrucciones="Analiza cada una de las gráficas y selecciona la opción correcta."
+            />
+
+
     </div>
 
 </Layout>

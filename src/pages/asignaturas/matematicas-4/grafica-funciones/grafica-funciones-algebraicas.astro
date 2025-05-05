@@ -1,0 +1,207 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import LightBox from "@/components/LightBox.astro";
+---
+<LightBox />
+<Layout
+  title="Gráfica de funciones algebraicas"
+  description=""
+>
+
+    <ObjetoAprendizajePantalla index={6} pantallaIndex={0} asignatura={"matematicas_4"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto mb-5 max-w-screen-xl">
+
+          <h3>Introducción</h3>
+
+          <p>Las funciones algebraicas son expresiones matemáticas que relacionan una variable independiente con una variable dependiente a través de operaciones algebraicas como sumas, restas, multiplicaciones, divisiones y exponentes. Su representación gráfica en el plano cartesiano permite visualizar su comportamiento, identificar sus puntos de intersección con los ejes, determinar intervalos de crecimiento y decrecimiento, así como analizar sus máximos y mínimos. Dependiendo del tipo de función algebraica (lineal, cuadrática, cúbica, racional, etc.), la forma de su gráfica puede variar significativamente, mostrando características como simetría, asíntotas o puntos críticos.</p>
+
+          <p>El estudio de las gráficas de funciones algebraicas es fundamental en matemáticas, ya que facilita la interpretación de fenómenos naturales, económicos y físicos mediante modelos matemáticos. Para trazar una gráfica correctamente, es esencial determinar su dominio y rango, identificar sus raíces o ceros, calcular derivadas en caso de funciones diferenciables y analizar su comportamiento en diferentes intervalos. Estas herramientas permiten una mejor comprensión de cómo las funciones describen situaciones reales y ayudan a predecir su evolución en distintos contextos.</p>
+
+          <h4 class="text-center">Funciones polinomiales</h4>
+
+          <p>Las funciones polinomiales <Latex formula="f(x)" inline={true}/> son aquellas cuya expresión es un polinomio. Una función polinomial de grado <Latex formula="n" inline={true}/> se pueden reconocer con la siguiente expresión:</p>
+
+          <p class="text-center"><Latex formula="a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+...+a_{n}x^{n} " inline={true}/></p>
+
+          <p>El dominio de las funciones polinomiales es todo el conjunto de los números reales y estas son continuas en todo su dominio, el rango o contradominio depende del tipo de función polinomial de la que se trate.</p>
+
+          <p>Existen muchos tipos de funciones polinómicas, entre las más comunes están: funciones constantes, funciones de primer grado o lineales, funciones de segundo grado o cuadráticas y funciones de tercer grado o cúbicas.</p>
+
+          <p>El grado de las funciones polinomiales estará dado por el mayor de los exponentes que se
+            encuentren en su expresión.
+            </p>
+
+          <p>Observa la forma de la expresión y de la gráfica según el grado al que corresponde:</p>
+
+      <ImagenFullCaption
+        src="/matematicas4/grafica-funciones/img06.PNG"
+        />
+
+         <ul class="list-disc">
+          <li>Función constante: <Latex formula="f(x)=2 " inline={true}/></li>
+          <li>Función de primer grado o lineal: <Latex formula="\\textcolor{cyan}{f(x) = 3x - 2}" inline={true}/></li>
+          <li>	Función de segundo grado o cuadrática: <Latex formula="\\textcolor{orange}{f(x)=2x^2}" inline={true}/></li>
+          <li>Función de tercer grado o cúbica: <Latex formula="\\textcolor{violet}{f(x)=x^3-3x}" inline={true}/></li>
+          </ul>
+
+          <p class="mt-5">La representación gráfica de una función polinómica está determinada por su grado. A partir de esto, se pueden establecer las siguientes características:</p>
+
+
+          <ul class="list-disc mt-5">
+            <li><b>Intersecciones con el eje x:</b> Una función polinómica puede cortar el eje horizontal hasta tantas veces como indique su grado. </li>
+            <li><b>Puntos críticos:</b> El número de máximos y mínimos que puede presentar no excede el valor del <b>grado de la función menos uno</b>.</li>
+            <li><b>Puntos de inflexión:</b> La gráfica puede tener, como máximo, una cantidad de puntos de inflexión igual al grado del polinomio menos dos. Estos son los puntos donde <b>cambia la concavidad</b> de la curva.</li>
+            </ul>
+
+      <h4>Ejemplo</h4>
+            <p>Observa la siguiente información y analiza cada caso de función polinómica:</p>
+
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Nombre de la función</th>
+                      <th>Grado</th>
+                      <th>Expresión matemática</th>
+                      <th>Intersecciones con el eje x</th>
+                      <th>Número de puntos críticos</th>
+                      <th>Número de puntos de inflexión</th>
+                      <th>Gráfica (clic para ampliar)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr >
+                      <td class="border border-gray-400 p-4">
+                          <p>Constante</p>
+                      </td>
+                      <td class="border border-gray-400 p-4">
+                          <p class="text-center">0</p>
+                      </td>
+                      <td class="border border-gray-400 p-4">
+                        <p class="text-center"><Latex formula="f(x)=4" inline={true}/></p>
+                      </td>
+                      <td class="border border-gray-400 p-4">
+                        <p>Ninguna, ya que la función no toca el eje x cuando el valor constante es distinto de cero.
+                          </p>
+                      </td>
+                      <td class="border border-gray-400 p-4">
+                        <p>0 (no hay máximos ni mínimos)</p>
+                      </td>
+                      <td class="border border-gray-400 p-4">
+                        <p>0 (no cambia de concavidad)</p>
+                      </td>
+                      <td class="border border-gray-400 p-4">
+                        <div data-lightbox="true">
+                          <img
+                             src="/matematicas4/grafica-funciones/img07.PNG"
+                            />
+                        </div>
+                      </td>
+                  </tr>
+                  <tr >
+                    <td class="border border-gray-400 p-4">
+                        <p>Lineal</p>
+                    </td>
+                    <td class="border border-gray-400 p-4">
+                        <p class="text-center">1</p>
+                    </td>
+                    <td class="border border-gray-400 p-4">
+                      <p class="text-center"><Latex formula="f(x)=2x-3" inline={true}/></p>
+                    </td>
+                    <td class="border border-gray-400 p-4">
+                      <p>1 intersección, en <Latex formula="x= \\frac {3}{2}=1.5" inline={true}/>
+                        </p>
+                    </td>
+                    <td class="border border-gray-400 p-4">
+                      <p>0 (una línea recta no tiene máximos ni mínimos))</p>
+                    </td>
+                    <td class="border border-gray-400 p-4">
+                      <p>0 (la concavidad no cambia)</p>
+                    </td>
+                    <td class="border border-gray-400 p-4">
+                      <div data-lightbox="true">
+                        <img
+                           src="/matematicas4/grafica-funciones/img08.PNG"
+                          />
+                      </div>
+                    </td>
+                </tr>
+                <tr >
+                  <td class="border border-gray-400 p-4">
+                      <p>Cuadrática</p>
+                  </td>
+                  <td class="border border-gray-400 p-4">
+                      <p class="text-center">2</p>
+                  </td>
+                  <td class="border border-gray-400 p-4">
+                    <p class="text-center"><Latex formula="f(x)=x^{2}-4 " inline={true}/></p>
+                  </td>
+                  <td class="border border-gray-400 p-4">
+                    <p>Dos intersecciones: <Latex formula="x= -2" inline={true}/> y <Latex formula="x= 2" inline={true}/></p>
+                      </p>
+                  </td>
+                  <td class="border border-gray-400 p-4">
+                    <p>1 (mínimo local en x=0)</p>
+                  </td>
+                  <td class="border border-gray-400 p-4">
+                    <p>0 (la concavidad no cambia, siempre es hacia arriba)</p>
+                  </td>
+                  <td class="border border-gray-400 p-4">
+                    <div data-lightbox="true">
+                      <img
+                         src="/matematicas4/grafica-funciones/img09.PNG"
+                        />
+                    </div>
+                  </td>
+              </tr>
+              <tr >
+                <td class="border border-gray-400 p-4">
+                    <p>Cúbica</p>
+                </td>
+                <td class="border border-gray-400 p-4">
+                    <p class="text-center">3</p>
+                </td>
+                <td class="border border-gray-400 p-4">
+                  <p class="text-center"><Latex formula="f(x)=x^{3}-6x^{2}+11x-6 " inline={true}/></p>
+                </td>
+                <td class="border border-gray-400 p-4">
+                  <p>Tres intersecciones: <Latex formula="x=1" inline={true}/>, <Latex formula="x=2" inline={true}/> y <Latex formula="x=3" inline={true}/></p>
+                    </p>
+                </td>
+                <td class="border border-gray-400 p-4">
+                  <p>Hasta 2 (máximo y mínimo)</p>
+                </td>
+                <td class="border border-gray-400 p-4">
+                  <p>1 (donde cambia la concavidad)</p>
+                </td>
+                <td class="border border-gray-400 p-4">
+                  <div data-lightbox="true">
+                    <img
+                       src="/matematicas4/grafica-funciones/img10.PNG"
+                      />
+                  </div>
+                </td>
+            </tr>
+              </tbody>
+              </table>
+
+            </div>
+
+          <Lumi
+            src="/matematicas4/grafica-funciones/p2 ej1.html"
+            nombre="Actividad"
+            instrucciones="Relaciona la ecuación con su gráfica de manera correcta."
+            />
+
+      </div>
+    </div>
+
+</Layout>

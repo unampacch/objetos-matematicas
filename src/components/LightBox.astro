@@ -1,0 +1,45 @@
+<div class="app-lightbox">
+  <div class="portal"></div>
+</div>
+
+<script>
+  const lbTriggers = document.querySelectorAll('[data-lightbox="true"]');
+  const lightbox = document.querySelector('.app-lightbox');
+  const portal = lightbox?.querySelector('.portal');
+
+  for (const trig of lbTriggers) {
+    trig.addEventListener('click', () => {
+      if (portal) {
+        portal.innerHTML = trig.innerHTML;
+      }
+
+      setTimeout(() => {
+        const img = portal?.querySelectorAll('img')[0];
+        const ratio = (img?.naturalWidth ?? 0) / (img?.naturalHeight ?? 1);
+
+        if (img) {
+          img.sizes = `${window.innerHeight * ratio}px`;
+        }
+      }, 352);
+
+      if (lightbox) {
+        lightbox.classList.add('is-active');
+      }
+      document.documentElement.classList.add('scrollIsLocked');
+    });
+  }
+
+  if (lightbox) {
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.remove('is-active');
+      document.documentElement.classList.remove('scrollIsLocked');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        lightbox.classList.remove('is-active');
+        document.documentElement.classList.remove('scrollIsLocked');
+      }
+    });
+  }
+</script>
