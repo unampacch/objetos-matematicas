@@ -3,12 +3,11 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import ResalteBlanco from "@/components/ResalteBlanco.astro";
+import Lumi from "@/components/Lumi.astro";
 ---
 
-<Layout
-  title="Derivadas de funciones algebraicas simples"
-  description=""
->
+<Layout>
 
     <ObjetoAprendizaje index={4} asignatura={"calculo"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
@@ -18,76 +17,82 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
            es la pendiente de la recta tangente a una función en un punto. </p>
       </div>
 
-      <ImagenFullCaption src="/Calculo/Funciones algebraicas simples/interpretacion-geometrica-derivada.webp" bg="bg-red" />
+      <ImagenFullCaption src="/calculo/derivacion-algebraicas/interpretacion-geometrica-derivada.webp" bg="bg-red" />
 
       <div class="mx-auto max-w-screen-xl">
+        <ResalteBlanco>
+          <p>La derivada de una función <Latex inline formula="f" /> en un punto <Latex inline formula="x" /> es el límite del cociente incremental cuando el incremento de la variable independiente tiende a cero. Se denota por:</p>
+          <div class="mt-10 text-ellipsis"><Latex formula="f’(x)= \\displaystyle \\lim_{h\\to 0}\\dfrac{f(x+h)-f(x)}{h}" /></div>
+        </ResalteBlanco>
         <p>Grandes matemáticos aportaron su propia forma de representarla: </p>
-      </div>
+        <img src="/calculo/derivacion-algebraicas/representaciones-derivada.webp" alt="Representaciones de la derivada" class="mx-auto my-10" />
 
-        <ImagenFullCaption src="/Calculo/Funciones algebraicas simples/representaciones-derivada.webp" bg="bg-lightblue" />
-
-      <div class="mx-auto max-w-screen-xl">
         <h4>Deducción de la regla de derivación de algunas funciones </h4>
       <p>Podemos utilizar la definición formal de derivada para obtener algunas
         reglas de derivación útiles. Observa la infografía. </p>
       </div>
 
-      <ImagenFullCaption src="/Calculo/Funciones algebraicas simples/infografia-derivada.webp" bg="bg-blue" />
+      <ImagenFullCaption src="/calculo/derivacion-algebraicas/infografia-derivada.webp" bg="bg-blue" />
 
-      <div class="mx-auto max-w-screen-xl">
-        <p>Resumiendo:</p>
+      <div class="mx-auto max-w-screen-xl mb-10">
+        <h4>Resumiendo:</h4>
 
         <div class="table-responsive xl:my-11">
           <table class="table">
             <thead>
               <tr>
-                <th> Función <Latex formula="\[ f(x) \]" inline={true} /></th>
-                <th> Derivada <Latex formula="\[ f’(x) \]" inline={true} /></th>
+                <th> Función <Latex formula="f(x)" inline={true} /></th>
+                <th> Derivada <Latex formula="f’(x)" inline={true} /></th>
                 <th> Formula</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><Latex formula="\[ k \]"  inline={true}/></td>
-                <td><Latex formula="\[ 0 \]" inline={true}/></td>
-                <td><Latex formula="\[ D_{x}(k)=0 \]" inline={true}/></td>
+                <td><Latex formula="k"  inline={true}/></td>
+                <td><Latex formula="0" inline={true}/></td>
+                <td><Latex formula="D_{x}(k)=0" inline={true}/></td>
               </tr>
               <tr>
-                <td><Latex formula="\[ x \]"  inline={true}/></td>
-                <td><Latex formula="\[ 1 \]"  inline={true}/></td>
-                <td><Latex formula="\[ D_{x}(k)=1 \]"  inline={true}/></td>
+                <td><Latex formula="x"  inline={true}/></td>
+                <td><Latex formula="1"  inline={true}/></td>
+                <td><Latex formula="D_{x}(k)=1"  inline={true}/></td>
               </tr>
               <tr>
-                <td><Latex formula="\[ x^2 \]" inline={true}/></td>
-                <td><Latex formula="\[ 2x \]" inline={true}/></td>
-                <td><Latex formula="\[ D_{x}(x^n)=n x^{n-1} \]" inline={true}/></td>
+                <td><Latex formula="x^2" inline={true}/></td>
+                <td><Latex formula="2x" inline={true}/></td>
+                <td><Latex formula="D_{x}(x^n)=n x^{n-1}" inline={true}/></td>
               </tr>
               <tr>
-                <td><Latex formula="\[ x^3 \]" inline={true}/></td>
-                <td><Latex formula="\[ 3x^2 \]" inline={true}/></td>
-                <td><Latex formula="\[ D_{x}(x^n)=n x^{n-1} \]" inline={true}/></td>
+                <td><Latex formula="x^3" inline={true}/></td>
+                <td><Latex formula="3x^2" inline={true}/></td>
+                <td><Latex formula="D_{x}(x^n)=n x^{n-1}" inline={true}/></td>
               </tr>
               <tr>
-                <td><Latex formula="\[ x^28 \]" inline={true}/></td>
-                <td><Latex formula="\[ 28x^{27} \]" inline={true}/></td>
-                <td><Latex formula="\[ D_{x}(x^n)=n x^{n-1} \]" inline={true}/></td>
+                <td><Latex formula="x^28" inline={true}/></td>
+                <td><Latex formula="28x^{27}" inline={true}/></td>
+                <td><Latex formula="D_{x}(x^n)=n x^{n-1}" inline={true}/></td>
               </tr>
               <tr>
-                <td><Latex formula="\[ x^{-5} \]" inline={true}/></td>
-                <td><Latex formula="\[ -5x^{-6} \]" inline={true}/></td>
-                <td><Latex formula="\[ D_{x}(x^n)=n x^{n-1} \]" inline={true}/></td>
+                <td><Latex formula="x^{-5}" inline={true}/></td>
+                <td><Latex formula="-5x^{-6}" inline={true}/></td>
+                <td><Latex formula="D_{x}(x^n)=n x^{n-1}" inline={true}/></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-           <p class="text-red">Una herramienta que debes tener presente al obtener derivadas son las leyes de los exponentes,
+           <p>Una herramienta que debes tener presente al obtener derivadas son las leyes de los exponentes,
            ya que éstas nos ayudan a estructurar mejor algunas expresiones de manera que sea aplicable la fórmula de derivación. </p>
-           <p class="text-center">¡Veamos si las recuerdas!</p>
-           <p>ACTIVIDAD: Escribe en el recuadro la letra a o la letra b para la ley de exponentes correcta.  </p>
+           <ResalteBlanco>
+             <p>¡Veamos si las recuerdas!</p>
+           </ResalteBlanco>
       </div>
-
-      <div class="mx-auto max-w-screen-xl">
+      <Lumi
+        src="/calculo/derivacion-algebraicas/act1-escribe-en-el-recuadro.html"
+        nombre="Leyes de exponentes"
+        instrucciones="Elige la opción para la ley de exponentes correcta"
+        />
+      <div class="mx-auto max-w-screen-xl mt-10">
         <h4>Propiedades de las derivadas </h4>
         <p>Como en los límites, existen propiedades de las derivadas que pueden ser aplicadas a la función,
            para facilitar el proceso de derivación. </p>
@@ -102,68 +107,60 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
               </thead>
               <tbody>
                 <tr>
-                  <td> <Latex formula="\[ D_{x}(k \cdot f(x)=k D_{x}(f(x)) \]" inline={true}/></td>
+                  <td> <Latex formula="D_{x}(k \\cdot f(x)=k D_{x}(f(x))" inline={true}/></td>
                   <td>Si hay una constante multiplicando:
-                     <Latex formula="\[ D_{x}(5x^2)=5D_{x}(x^2) \]" inline={true}/> </td>
+                     <Latex formula="D_{x}(5x^2)=5D_{x}(x^2)" inline={true}/> </td>
                 </tr>
                 <tr>
-                  <td><Latex formula="\[ D_{x}(u\pm v)=D_{x}(u)\pm D_{x}(v) \]" inline={true}/></td>
+                  <td><Latex formula="D_{x}(u\\pm v)=D_{x}(u)\\pm D_{x}(v)" inline={true}/></td>
                   <td>Si la función que se va a derivar consta de varios términos:
-                    <Latex formula="\[ D_{x}(x^2-9x)=D_x(x^2)-D_{x}(9x) \]" inline={true}/></td>
+                    <Latex formula="D_{x}(x^2-9x)=D_x(x^2)-D_{x}(9x)" inline={true}/></td>
                 </tr>
               </tbody>
           </table>
         </div>
 
         <h4>Veamos un ejemplo:</h4>
-        <p>Obtendremos la derivada de la función <Latex formula="\[ f(x)=3x^8+\dfrac{2}{5x^7}-\sqrt[4]{x^3} \]" inline={true}/></p>
+        <p>Obtendremos la derivada de la función <Latex formula="f(x)=3x^8+\dfrac{2}{5x^7}-\sqrt[4]{x^3}" inline={true}/></p>
 
         <div class="table-responsive xl:my-11">
           <table class="table">
             <tbody>
               <tr>
                 <td>Aplicamos propiedad 2</td>
-                <td><Latex formula="\[ f’(x)=D_{x}(3x^8)+D_{x}\left(\\dfrac{2}{5x^7}\right)-D_{x}\left(\sqrt[4]{x^3}\right) \]" inline={true}/></td>
+                <td><Latex formula="f’(x)=D_{x}(3x^8)+D_{x}\\left(\\dfrac{2}{5x^7}\\right)-D_{x}\\left(\\sqrt[4]{x^3}\\right)" inline={true}/></td>
               </tr>
               <tr>
                 <td>Aplicamos propiedad 1</td>
-                <td><Latex formula="\[ f’(x)=3D_{x}(x^8)+\\dfrac{2}{5}D_{x}\left(\\dfrac{1}{x^7}\right)-D_{x}\left(\sqrt[4]{x^3}\right) \]" inline={true}/></td>
+                <td><Latex formula="f’(x)=3D_{x}(x^8)+\\dfrac{2}{5}D_{x}\\left(\\dfrac{1}{x^7}\\right)-D_{x}\\left(\\sqrt[4]{x^3}\\right)" inline={true}/></td>
               </tr>
               <tr>
                 <td>Utilizamos leyes de exponentes</td>
-                <td><Latex formula="\[ f’(x)=3D_{x}(x^8)+\\dfrac{2}{5}D_{x}(x^{-7})-D_{x}(x^{3/4}) \]" inline={true}/></td>
+                <td><Latex formula="f’(x)=3D_{x}(x^8)+\\dfrac{2}{5}D_{x}(x^{-7})-D_{x}(x^{3/4})" inline={true}/></td>
               </tr>
               <tr>
                 <td>Derivamos</td>
-                <td><Latex formula="\[ f’(x)=3(8x^7)+\\dfrac{2}{5}(-7x^{-8})-\left(\\dfrac{3}{4}x^{-1/4}\right) \] " inline={true}/></td>
+                <td><Latex formula="f’(x)=3(8x^7)+\\dfrac{2}{5}(-7x^{-8})-\\left(\\dfrac{3}{4}x^{-1/4}\\right) " inline={true}/></td>
               </tr>
               <tr>
                 <td>Efectuamos las multiplicaciones </td>
-                <td><Latex formula="\[ f’(x)=24x^{7}-\\dfrac{14}{5}x^{-8}-\\dfrac{3x^{-1/4}}{4} \]" inline={true}/></td>
+                <td><Latex formula="f’(x)=24x^{7}-\\dfrac{14}{5}x^{-8}-\\dfrac{3x^{-1/4}}{4}" inline={true}/></td>
               </tr>
               <tr>
                 <td>Simplificamos con leyes de exponentes </td>
-                <td><Latex formula="\[ f’(x)=24x^7-\\dfrac{14}{5x^8}-\\dfrac{3}{4\sqrt[4]{x}} \]" inline={true}/></td>
+                <td><Latex formula="f’(x)=24x^7-\\dfrac{14}{5x^8}-\\dfrac{3}{4\\sqrt[4]{x}}" inline={true}/></td>
               </tr>
             </tbody>
           </table>
         </div>
-
-        <p>ACTIVIDAD: Elige de entre las tres opciones dadas (a, b, c) como derivada de cada función aquella que sea correcta
-           (de ser necesario, aplica propiedades de las derivadas o leyes de los exponentes). Escribe en el recuadro la opción correcta. </p>
       </div>
+      <Lumi
+        src="/calculo/derivacion-algebraicas/act2-obten-la-derivada-1.html"
+        nombre="Obtén  la derivada de la función 1"
+        instrucciones="Elige de entre las tres opciones dadas (a, b, c) como derivada de cada función aquella que sea correcta (de ser necesario, aplica propiedades de las derivadas o leyes de los exponentes)."
+      />
 
     </div>
-
-
-
-
-
-
-
-
-    </div>
-
 </Layout>
 
 <Latex formula="" inline={true}/>

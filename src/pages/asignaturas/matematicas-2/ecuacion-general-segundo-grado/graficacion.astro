@@ -4,7 +4,7 @@ import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
 import GeogebraLink from "@/components/GeogebraLink.astro";
 import Lumi from "@/components/Lumi.astro";
-import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import ResalteBlanco from "@/components/ResalteBlanco.astro";
 ---
 
 <Layout>
@@ -14,10 +14,10 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <p>Ahora analicemos la gráfica de una de una ecuación de segundo grado con una incógnita.</p>
         <p>Para ello hagamos variar con diferentes valores la incógnita de una ecuación de segundo grado y veamos los diferentes valores resultantes. Si realizamos lo anterior, la incógnita y el resultado de la ecuación realmente se comportarán como variables, además dichos valores que toma ambas variables están relacionadas bajo una regla de correspondencia.</p>
         <p>De lo anteriormente mencionado, deberías haber notado que se parece a un concepto que probablemente ya has revisado antes, este es un concepto muy importante en matemáticas y es el concepto de <strong>función</strong>.</p>
-        <div class="max-w-3xl mx-auto text-center text-xl bg-slate-200 text-darkblue p-4 my-10">
+        <ResalteBlanco>
           <p class="text-2xl">¡Recuerda!</p>
           <p>Una función es una regla de correspondencia entre dos conjuntos de tal manera que a cada elemento del primer conjunto le corresponde uno y sólo un elemento del segundo conjunto.</p>
-        </div>
+        </ResalteBlanco>
         <p>La gráfica de una función es el conjunto de puntos en el plano de la forma <Latex inline formula="(x,y)" />  en donde <Latex inline formula="x" /> está en el dominio de la función y, además <Latex inline formula="y=f(x)" />. A continuación, revisaremos y discutiremos algunas cuestiones importantes de una función cuadrática:</p>
         <p class="text-center lg:text-xl my-10"><Latex formula="y=ax^2+bx+c" /></p>
         <p>Primero, <strong>¿Qué tipo de forma geométrica resulta tras ver la sucesión de puntos en el plano?</strong></p>

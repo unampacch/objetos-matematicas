@@ -1,0 +1,9 @@
+---
+interface Props {
+  bg?: string;
+}
+const { bg = "bg-white" } = Astro.props as Props;
+---
+<div class={`max-w-3xl mx-auto text-center text-xl text-darkblue p-4 my-10 ${bg}`}>
+  <slot />
+</div>
