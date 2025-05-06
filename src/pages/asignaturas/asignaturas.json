@@ -524,7 +524,7 @@
 				{
 					"titulo": "Derivación de funciones algebraicas simples",
 					"slug": "/asignaturas/calculo/derivacion-algebraicas/inicio",
-					"portada": "/holder-cover.webp",
+					"portada": "/calculo/derivacion-algebraicas/portada-derivaciones-algebraicas.webp",
 					"descripcion": "Este recurso aborda derivadas de funciones algebraicas simples, desde su interpretación geométrica y notaciones históricas hasta reglas básicas (potencias, constantes, suma/resta) y técnicas avanzadas como la regla de la cadena, derivadas de productos y cocientes. Incluye ejemplos prácticos, ejercicios interactivos de autoevaluación y recursos complementarios.",
 					"resumen": "Derivación de funciones algebraicas simples y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
