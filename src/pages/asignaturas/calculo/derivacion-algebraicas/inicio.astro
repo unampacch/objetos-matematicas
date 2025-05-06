@@ -5,6 +5,7 @@ import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
 import ResalteBlanco from "@/components/ResalteBlanco.astro";
 import Lumi from "@/components/Lumi.astro";
+import { BASE_PATH } from "@/config";
 ---
 
 <Layout>
@@ -25,7 +26,7 @@ import Lumi from "@/components/Lumi.astro";
           <div class="mt-10 text-ellipsis"><Latex formula="f’(x)= \\displaystyle \\lim_{h\\to 0}\\dfrac{f(x+h)-f(x)}{h}" /></div>
         </ResalteBlanco>
         <p>Grandes matemáticos aportaron su propia forma de representarla: </p>
-        <img src="/calculo/derivacion-algebraicas/representaciones-derivada.webp" alt="Representaciones de la derivada" class="mx-auto my-10" />
+        <img src={`${BASE_PATH}/calculo/derivacion-algebraicas/representaciones-derivada.webp`} alt="Representaciones de la derivada" class="mx-auto my-10" />
 
         <h4>Deducción de la regla de derivación de algunas funciones </h4>
       <p>Podemos utilizar la definición formal de derivada para obtener algunas

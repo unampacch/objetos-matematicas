@@ -4,6 +4,7 @@ import Latex from '@/components/Latex.astro'
 import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
 import Video from '@/components/Video.astro'
 import Lumi from '@/components/Lumi.astro'
+import { BASE_PATH } from '@/config'
 ---
 
 <Layout>
@@ -13,7 +14,7 @@ import Lumi from '@/components/Lumi.astro'
 			<p>Disponemos de los siguientes tipos de tarjetas, las cuales se distinguen por su área:</p>
 
 			<div class="my-10 grid grid-cols-2 items-center gap-4">
-				<img src="/matematicas2/factorizacion/rompecabezas-1.webp" alt="Tarjeta 1" />
+				<img src={`${BASE_PATH}/matematicas2/factorizacion/rompecabezas-1.webp`} alt="Tarjeta 1" />
 				<p>
 					El <strong>rectángulo verde</strong> mide "<Latex inline formula="x" />" en su lado mayor
 					y este es del mismo tamaño que el lado del <strong>cuadrado azul</strong>. Además, el lado
@@ -22,7 +23,7 @@ import Lumi from '@/components/Lumi.astro'
 				</p>
 			</div>
 			<div class="my-10 grid grid-cols-2 items-center gap-4">
-				<img src="/matematicas2/factorizacion/rompecabezas-2.webp" alt="Tarjeta 2" />
+				<img src={`${BASE_PATH}/matematicas2/factorizacion/rompecabezas-2.webp`} alt="Tarjeta 2" />
 				<p>
 					Todas las fichas anteriores tienen su equivalente de <strong>color rojo</strong>, sólo que
 					estas últimas representan áreas negativas.
@@ -44,11 +45,11 @@ import Lumi from '@/components/Lumi.astro'
 				Según la ecuación, el número de tarjetas para armar nuestro rompecabezas es el siguiente:
 			</p>
 			<div class="mx-auto my-10 max-w-2xl">
-				<img src="/matematicas2/factorizacion/rompecabezas-3.webp" alt="Tarjeta 3" />
+				<img src={`${BASE_PATH}/matematicas2/factorizacion/rompecabezas-3.webp`} alt="Tarjeta 3" />
 			</div>
 			<p>Aquí nuestro primer intento:</p>
 			<div class="mx-auto my-10 max-w-2xl">
-				<img src="/matematicas2/factorizacion/rompecabezas-4.webp" alt="Tarjeta 4" />
+				<img src={`${BASE_PATH}/matematicas2/factorizacion/rompecabezas-4.webp`} alt="Tarjeta 4" />
 			</div>
 			<p>La configuración no es exitosa porque no hemos logrado armar un cuadrilátero.</p>
 			<div class="my-10 text-center text-2xl">
@@ -57,7 +58,7 @@ import Lumi from '@/components/Lumi.astro'
 			<p>Intentemos de nuevo…</p>
 			<div class="my-10 grid grid-cols-2 items-center gap-4">
 				<article>
-					<img src="/matematicas2/factorizacion/rompecabezas-5.webp" alt="Tarjeta 2" />
+					<img src={`${BASE_PATH}/matematicas2/factorizacion/rompecabezas-5.webp`} alt="Tarjeta 2" />
 				</article>
 				<article>
 					<p>

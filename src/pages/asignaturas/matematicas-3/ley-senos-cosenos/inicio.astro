@@ -5,6 +5,7 @@ import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 import GeogebraLink from '@/components/GeogebraLink.astro'
 import BgFluido from '@/components/BgFluido.astro'
+import { BASE_PATH } from '@/config'
 ---
 
 <Layout>
@@ -19,7 +20,7 @@ import BgFluido from '@/components/BgFluido.astro'
 		</div>
 		<BgFluido bg="bg-red">
 			<div class="mx-auto text-center xl:max-w-screen-sm">
-				<img src="/matematicas3/leyes-senos-cosenos/tlsyc.webp" alt="" />
+				<img src={`${BASE_PATH}/matematicas3/leyes-senos-cosenos/tlsyc.webp`} alt="" />
 			</div>
 		</BgFluido>
 
@@ -57,7 +58,7 @@ import BgFluido from '@/components/BgFluido.astro'
 					<p class="font-extrabold text-darkblue xl:text-3xl">
 						Consideremos el siguiente triángulo:
 					</p>
-					<img class="xl:col-span-2" src="/matematicas3/leyes-senos-cosenos/te1.webp" alt="" />
+					<img class="xl:col-span-2" src={`${BASE_PATH}/matematicas3/leyes-senos-cosenos/te1.webp`} alt="" />
 				</div>
 			</div>
 		</BgFluido>
@@ -74,7 +75,7 @@ import BgFluido from '@/components/BgFluido.astro'
 						<p>Entonces el valor del tercer lado es:</p>
 						<Latex formula="c=6" class="text-center" />
 					</div>
-					<img class="xl:col-span-2" src="/matematicas3/leyes-senos-cosenos/te1-2.webp" alt="" />
+					<img class="xl:col-span-2" src={`${BASE_PATH}/matematicas3/leyes-senos-cosenos/te1-2.webp`} alt="" />
 				</div>
 			</div>
 		</BgFluido>
@@ -118,7 +119,7 @@ import BgFluido from '@/components/BgFluido.astro'
 		</div>
 		<BgFluido bg="bg-red my-5">
 			<div class="mx-auto text-center xl:max-w-screen-sm">
-				<img src="/matematicas3/leyes-senos-cosenos/te1-3.webp" alt="" />
+				<img src={`${BASE_PATH}/matematicas3/leyes-senos-cosenos/te1-3.webp`} alt="" />
 			</div>
 		</BgFluido>
 		<div class="mx-auto max-w-screen-xl">
@@ -130,7 +131,7 @@ import BgFluido from '@/components/BgFluido.astro'
 					<div class="xl:col-span-2">
 						<p>Supongamos que tenemos un triángulo del cual conocemos la longitud de sus lados:</p>
 					</div>
-					<img src="/matematicas3/leyes-senos-cosenos/te2-1.webp" alt="" />
+					<img src={`${BASE_PATH}/matematicas3/leyes-senos-cosenos/te2-1.webp`} alt="" />
 				</div>
 				<div class="mt-5 grid items-center gap-5 xl:grid-cols-3">
 					<div class="xl:col-span-2">
@@ -177,7 +178,7 @@ import BgFluido from '@/components/BgFluido.astro'
 							class="my-5 text-center xl:text-xl"
 						/>
 					</div>
-					<img src="/matematicas3/leyes-senos-cosenos/te2-2.webp" alt="" />
+					<img src={`${BASE_PATH}/matematicas3/leyes-senos-cosenos/te2-2.webp`} alt="" />
 				</div>
         <div class="mt-5 grid items-center gap-5 xl:grid-cols-3">
 					<div class="xl:col-span-2">
@@ -200,7 +201,7 @@ import BgFluido from '@/components/BgFluido.astro'
               <Latex formula="\\beta=78.46^o" />
             </div>
           </div>
-          <img src="/matematicas3/leyes-senos-cosenos/te2-3.webp" alt="" />
+          <img src={`${BASE_PATH}/matematicas3/leyes-senos-cosenos/te2-3.webp`} alt="" />
         </div>
         <div class="mt-5 grid items-center gap-5 xl:grid-cols-3">
           <div class="xl:col-span-2">
@@ -211,14 +212,14 @@ import BgFluido from '@/components/BgFluido.astro'
               />
             </p>
           </div>
-          <img src="/matematicas3/leyes-senos-cosenos/te2-4.webp" alt="" />
+          <img src={`${BASE_PATH}/matematicas3/leyes-senos-cosenos/te2-4.webp`} alt="" />
         </div>
 			</div>
 		</BgFluido>
 
 		<div class="mx-auto max-w-screen-xl">
 			<p class="text-2xl">A continuación,se muestra dos applets con los que puedes practicar:</p>
-      <div class="xl:grid xl:grid-cols-2 xl:gap-5">
+
         <GeogebraLink
           href="https://www.geogebra.org/m/e4y4babj"
           titulo="Ley de Cosenos"
@@ -229,7 +230,7 @@ import BgFluido from '@/components/BgFluido.astro'
           titulo="Ejercicios de aplicación"
           texto="¡Mejora y refuerza el conocimiento obtenido!"
         />
-      </div>
+
 		</div>
 	</div>
 </Layout>

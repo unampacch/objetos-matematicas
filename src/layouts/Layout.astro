@@ -8,7 +8,6 @@ import type { AsignaturasData } from "@/types/asignaturas";
 import asignaturasData from "@/pages/asignaturas/asignaturas.json" assert { type: "json" };
 import "@/styles/main.scss";
 const {
-  image,
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
   ogType,
@@ -56,7 +55,6 @@ if (title === SITE_TITLE) {
     <BaseHead
       title={dynamicTitle}
       description={description}
-      image={image}
       ogType={ogType}
     />
  </head>

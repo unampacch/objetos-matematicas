@@ -4,7 +4,7 @@ import Latex from '@/components/Latex.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import ImagenCaption from '@/components/ImagenCaption.astro'
 import BgFluido from '@/components/BgFluido.astro'
-
+import { BASE_PATH } from '@/config'
 ---
 
 <Layout
@@ -15,7 +15,7 @@ import BgFluido from '@/components/BgFluido.astro'
     <ObjetoAprendizaje index={5} asignatura={"matematicas_4"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
       <BgFluido bg="bg-red">
-        <div class="max-w-screen-sm mx-auto"><img src="/matematicas4/funciones-exp-logaritmicas/puma1.jpg"></div>
+        <div class="max-w-screen-sm mx-auto"><img src={`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/puma1.jpg`}></div>
       </BgFluido>
       <div class="mx-auto max-w-screen-xl">
         <h3>Crecimiento o decaimiento exponencial</h3>
@@ -77,7 +77,7 @@ import BgFluido from '@/components/BgFluido.astro'
                   </tbody>
                 </table>
               </div>
-              Suponiendo que dividimos el valor de la inversión de cada año entre la inversión del año anterior. 
+              Suponiendo que dividimos el valor de la inversión de cada año entre la inversión del año anterior.
               <div class="table-responsive2">
                 <table class="table2">
                   <thead>
@@ -95,14 +95,14 @@ import BgFluido from '@/components/BgFluido.astro'
                 </table>
               </div>
               Encontramos el valor 1.12, siendo el valor de la inversión de cada año. Así, por cada aumento de 1 en t, V se multiplica por 1.12.
-A continuación, se muestra en la tabla, en la fila del valor, distintas de encontrar el resultado, esto con el objetivo de notar la importancia de elevar un numero a un exponente. 
+A continuación, se muestra en la tabla, en la fila del valor, distintas de encontrar el resultado, esto con el objetivo de notar la importancia de elevar un numero a un exponente.
 
             </li>
             <li>Segundo</li>
             <li>Tercero</li>
           </ol>
 </div>
-          
+
 
 
 
