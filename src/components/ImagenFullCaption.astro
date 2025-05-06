@@ -4,13 +4,13 @@ interface Props {
 	src?: string
 	bg?: string
 }
-
+import { BASE_PATH } from "@/config";
 const { caption, src, bg } = Astro.props as Props
 ---
 
 <div class={`min-w-full py-1 lg:my-10 text-dark md:py-3 ${bg}`}>
 	<div class="mx-auto max-w-screen-lg">
-		<img alt={caption} src={`${src}`} class="mx-auto aspect-auto p-5" alt="" />
+		<img alt={caption} src={`${BASE_PATH}${src}`} class="mx-auto aspect-auto p-5" alt="" />
 		<div class={`img-caption mx-auto ${bg ? 'text-dark' : 'text-white'}`}>
 			{caption}
 		</div>

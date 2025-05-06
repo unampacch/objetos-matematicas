@@ -1,18 +1,20 @@
 ---
+import { BASE_PATH } from "@/config";
+
 interface Props {
-	caption?: string
-	src?: string
-	border?: boolean
+    caption?: string;
+    src?: string;
+    border?: boolean;
 }
 
-const { caption, src, border } = Astro.props as Props
+const { caption, src, border } = Astro.props as Props;
 ---
 
 <div class="text-center">
-	<div class={`${border ? 'bg-white p-1 sm:p-5' : 'p-0'}`}>
-		<img alt={caption} src={`${src}`} class="mx-auto aspect-auto" alt="" />
-	</div>
-	<div class={`img-caption mx-auto text-white`}>
-		{caption}
-	</div>
+    <div class={`${border ? 'bg-white p-1 sm:p-5' : 'p-0'}`}>
+        <img alt={caption} src={`${BASE_PATH}${src}`} class="mx-auto aspect-auto" alt="" />
+    </div>
+    <div class={`img-caption mx-auto text-white`}>
+        {caption}
+    </div>
 </div>

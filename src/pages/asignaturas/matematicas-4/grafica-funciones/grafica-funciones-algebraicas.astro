@@ -3,17 +3,12 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
-import GeogebraLink from '@/components/GeogebraLink.astro'
 import Lumi from '@/components/Lumi.astro'
-import ImagenCaption from '@/components/ImagenCaption.astro'
-import BgFluido from '@/components/BgFluido.astro'
 import LightBox from "@/components/LightBox.astro";
+import { BASE_PATH } from "@/config";
 ---
 <LightBox />
-<Layout
-  title="Gráfica de funciones algebraicas"
-  description=""
->
+<Layout>
 
     <ObjetoAprendizajePantalla index={6} pantallaIndex={0} asignatura={"matematicas_4"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
     <div class="objeto-aprendizaje mx-auto animate-fade">
@@ -101,7 +96,7 @@ import LightBox from "@/components/LightBox.astro";
                       <td class="border border-gray-400 p-4">
                         <div data-lightbox="true">
                           <img
-                             src="/matematicas4/grafica-funciones/img07.PNG"
+                          src={`${BASE_PATH}/matematicas4/grafica-funciones/img07.PNG`}
                             />
                         </div>
                       </td>
@@ -129,7 +124,7 @@ import LightBox from "@/components/LightBox.astro";
                     <td class="border border-gray-400 p-4">
                       <div data-lightbox="true">
                         <img
-                           src="/matematicas4/grafica-funciones/img08.PNG"
+                        src={`${BASE_PATH}/matematicas4/grafica-funciones/img08.PNG`}
                           />
                       </div>
                     </td>
@@ -157,7 +152,7 @@ import LightBox from "@/components/LightBox.astro";
                   <td class="border border-gray-400 p-4">
                     <div data-lightbox="true">
                       <img
-                         src="/matematicas4/grafica-funciones/img09.PNG"
+                      src={`${BASE_PATH}/matematicas4/grafica-funciones/img09.PNG`}
                         />
                     </div>
                   </td>
@@ -185,7 +180,7 @@ import LightBox from "@/components/LightBox.astro";
                 <td class="border border-gray-400 p-4">
                   <div data-lightbox="true">
                     <img
-                       src="/matematicas4/grafica-funciones/img10.PNG"
+                       src={`${BASE_PATH}/matematicas4/grafica-funciones/img10.PNG`}
                       />
                   </div>
                 </td>

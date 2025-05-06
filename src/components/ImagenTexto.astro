@@ -1,5 +1,6 @@
 ---
 const { texto = "", src = "" } = Astro.props;
+import { BASE_PATH } from "@/config";
 ---
 
 <div class="min-w-full lg:my-10 lg:py-3">
@@ -10,7 +11,7 @@ const { texto = "", src = "" } = Astro.props;
       </p>
     </div>
     <div>
-      {(<img class="w-full aspect-video" src={src} alt="" />)}
+      {(<img class="w-full aspect-video" src={`${BASE_PATH}${src}`} alt="" />)}
     </div>
   </div>
 </div>
