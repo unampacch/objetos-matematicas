@@ -3,12 +3,13 @@ import tailwind from "@astrojs/tailwind";
 
 import icon from "astro-icon";
 
-// https://astro.build/config
-// los icons son bootstrap icons https://icon-sets.iconify.design/bi/
+import partytown from '@astrojs/partytown';
+
 export default defineConfig({
+  base: import.meta.env.DEV ? "." : "/sumate", // Usa una variable para decidir
   integrations: [tailwind(),
     icon({
-      include:{
+      include: {
         bi: [
           'facebook',
           'twitter-x',
@@ -18,6 +19,7 @@ export default defineConfig({
           'usb-c'
         ]
       }
-    }
-  )]
+    }),
+    partytown()
+  ]
 });

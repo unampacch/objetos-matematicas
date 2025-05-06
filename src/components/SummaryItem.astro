@@ -1,8 +1,10 @@
 ---
+import { BASE_PATH } from "@/config"; // Importa BASE_PATH
+
 const { objeto } = Astro.props;
 ---
 
-<a href={objeto.slug}>
+<a href={`${BASE_PATH}${objeto.slug}`}>
   <article
     class="group relative
     h-full
@@ -20,7 +22,7 @@ const { objeto } = Astro.props;
     <img
       class="transition-scale absolute bottom-0 left-0 top-0 -z-10 h-full object-cover opacity-90 duration-1000 ease-in-out
       group-hover:scale-110 md:w-full"
-      src={objeto.portada}
+      src={`${BASE_PATH}${objeto.portada}`}
       alt={objeto.titulo}
     />
     <div

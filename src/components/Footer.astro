@@ -8,6 +8,7 @@ import { Icon } from "astro-icon/components";
 import LogoUNAM from "@/components/LogoUNAM.astro";
 import LogoCCH from "@/components/LogoCCH.astro";
 import LogoPACCH from "@/components/LogoPACCH.astro";
+import { BASE_PATH } from "@/config";
 ---
 
 <footer class="bg-lightblue mt-10">
@@ -15,7 +16,7 @@ import LogoPACCH from "@/components/LogoPACCH.astro";
     <div class="flex flex-col md:flex-row justify-around items-center py-10">
       <div class="text-center md:mb-0 md:text-left">
         <div class="w-ful">
-          <a href="/"><Logo class="h-10 md:h-14 hover:scale-110 transition-all ease-in-out" /></a>
+          <a href={BASE_PATH}><Logo class="h-10 md:h-14 hover:scale-110 transition-all ease-in-out" /></a>
         </div>
         <div class="w-full flex gap-2 mt-7 items-center justify-between">
           <a href="https://www.unam.mx/" target="_blank" rel="noreferrer"
@@ -43,7 +44,7 @@ import LogoPACCH from "@/components/LogoPACCH.astro";
           {
             footer.map((menu) => (
               <li class="m-3 inline-block">
-                <a class="hover:text-blue transition-all" href={menu.url}>
+                <a class="hover:text-blue transition-all" href={`${BASE_PATH}${menu.url}`}>
                   {menu.name}
                 </a>
               </li>

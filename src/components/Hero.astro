@@ -1,6 +1,7 @@
 ---
 import menu from "@/config/menu.json";
 import Lupa from "@/icons/Lupa.astro";
+import { BASE_PATH } from "@/config"; // Importa BASE_PATH
 
 export interface NavigationLink {
   name: string;
@@ -17,7 +18,7 @@ animate-fade animate-once animate-duration-[2000ms] animate-ease-in-out animate-
 </div>
 <section
   class="text-pretty bg-red text-light lg:h-dvh flex justify-between items-center bg-fixed"
-  style="background-image: url('./hero-portada.webp'); background-size: cover; background-position: center;"
+  style="background-image: url('hero-portada.webp'); background-size: cover; background-position: center;"
 >
   <div
     class="lg:h-dvh absolute z-10 min-w-full
@@ -53,7 +54,7 @@ animate-fade animate-once animate-duration-[2000ms] animate-ease-in-out animate-
             menu.children?.map((text) => (
             <div class="relative group">
               <a
-                href={text.url}
+                href={`${BASE_PATH}${text.url}`}
                 class="flex justify-center items-center text-center font-bold transition-all duration-300 ease-in-out border border-blue hover:bg-blue hover:text-light
                   bg-darkblue/70 text-lightblue
                   rounded-full overflow-hidden
@@ -75,11 +76,9 @@ animate-fade animate-once animate-duration-[2000ms] animate-ease-in-out animate-
                 <div class="absolute left-1/2 -translate-x-1 -bottom-1 w-2 h-2 bg-darkblue rotate-45"></div>
               </div>
             </div>
-
-
-
             ))
           )}
+        </div>
       </div>
     </div>
   </div>

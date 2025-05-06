@@ -2,6 +2,8 @@
 import Logo from "@/components/Logo.astro";
 import LogoM from "@/components/LogoM.astro";
 import menu from "@/config/menu.json";
+import { BASE_PATH } from "@/config"; // Importa BASE_PATH
+
 export interface ChildNavigationLink {
   name: string;
   url: string;
@@ -25,8 +27,8 @@ const { pathname } = Astro.url;
     <nav class="navbar md:px-5 mx-auto flex items-center justify-between">
       <!-- logo -->
       <div class="order-0">
-        <a href="/"><Logo class="hidden md:block h-10 w-15" /></a>
-        <a href="/"><LogoM class="md:hidden size-10" /></a>
+        <a href={`${BASE_PATH}/`}><Logo class="hidden md:block h-10 w-15" /></a>
+        <a href={`${BASE_PATH}/`}><LogoM class="md:hidden size-10" /></a>
       </div>
       <ul
         id="nav-menu"
@@ -41,9 +43,9 @@ const { pathname } = Astro.url;
                     id="has-children"
                     data-dropdown-toggle="child"
                     class={`inline-flex items-center hover:text-slate-400 transition-all ${
-                      menu.children?.map(({ url }) => url).includes(pathname) ||
+                      menu.children?.map(({ url }) => `${BASE_PATH}${url}`).includes(pathname) ||
                       menu.children
-                        ?.map(({ url }) => `${url}/`)
+                        ?.map(({ url }) => `${BASE_PATH}${url}/`)
                         .includes(pathname)
                         ? "active"
                         : ""
@@ -65,11 +67,11 @@ const { pathname } = Astro.url;
                       {menu.children?.map((child) => (
                         <li class="hover:bg-lightblue hover:darkblue hover:transition-all px-2 py-1 font-light">
                           <a
-                            href={child.url}
+                            href={`${BASE_PATH}${child.url}`}
                             aria-label={child.name}
                             class={`block  ${
-                              (pathname === `${child.url}/` ||
-                                pathname === child.url) &&
+                              (pathname === `${BASE_PATH}${child.url}/` ||
+                                pathname === `${BASE_PATH}${child.url}`) &&
                               ""
                             }`}
                           >
@@ -83,9 +85,9 @@ const { pathname } = Astro.url;
               ) : (
                 <li>
                   <a
-                    href={menu.url}
+                    href={`${BASE_PATH}${menu.url}`}
                     class={`hover:text-slate-400 transition-all ${
-                      (pathname === `${menu.url}/` || pathname === menu.url) &&
+                      (pathname === `${BASE_PATH}${menu.url}/` || pathname === `${BASE_PATH}${menu.url}`) &&
                       "active"
                     }`}
                   >
@@ -102,7 +104,6 @@ const { pathname } = Astro.url;
 </header>
 <style>
   a.active {
-
-    text-decoration: overline ;
+    text-decoration: overline;
   }
 </style>
