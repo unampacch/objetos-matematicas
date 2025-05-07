@@ -4,6 +4,7 @@ import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.as
 import Latex from '@/components/Latex.astro'
 import BgFluido from '@/components/BgFluido.astro'
 import Lumi from '@/components/Lumi.astro'
+import { BASE_PATH } from '@/config'
 ---
 
 <Layout>
@@ -48,7 +49,7 @@ import Lumi from '@/components/Lumi.astro'
 			<div class="mx-auto max-w-screen-xl">
 				<div class="grid w-full grid-cols-2 items-center">
 					<div>
-						<img src="/matematicas1/numeros-clasificacion/forma-polar.webp" alt="" />
+						<img src={`${BASE_PATH}/matematicas1/numeros-clasificacion/forma-polar.webp`} alt="" />
 					</div>
 					<div class="text-center text-2xl">
 						<Latex formula="z = a + bi" />

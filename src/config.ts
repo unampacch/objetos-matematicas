@@ -1,7 +1,11 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Mates al rescate - CCH, UNAM';
-export const SITE_DESCRIPTION = 'Mates al rescate es un proyecto del Colegio de Ciencias y Humanidades de la UNAM que busca ayudar a estudiantes de preparatoria en el aprendizaje de matemáticas.';
-export const GENERATE_SLUG_FROM_TITLE = true
-export const TRANSITION_API = true
+export const SITE_TITLE = 'SUMATE - CCH, UNAM';
+export const SITE_DESCRIPTION = 'SUMATE es un proyecto educativo del Colegio de Ciencias y Humanidades de la UNAM que busca apoyar a estudiantes de bachillerato y al público en general en el aprendizaje de matemáticas, ofreciendo actividades y recursos educativos diseñados para fortalecer sus conocimientos y habilidades matemáticas.';
+export const SITE_URL = 'https://portalacademico.cch.unam.mx/sumate/';
+export const SITE_IMAGE = 'https://portalacademico.cch.unam.mx/sumate/social_img.jpg';
+export const BASE_PATH = import.meta.env.BASE_PATH?.replace(/\/$/, '') || '';
+export const SITE_LANG = 'es';
+export const SITE_AUTHOR = 'Jesús Rodrigo Aizpuru Parra';
+export const SITE_KEYWORDS = 'matemáticas, educación, bachillerato, CCH UNAM, aprendizaje, recursos educativos, cálculo diferencial, estadística';

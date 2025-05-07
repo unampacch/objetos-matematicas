@@ -3,7 +3,7 @@ import Layout from '@/layouts/Layout.astro'
 import Latex from '@/components/Latex.astro'
 import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
 import Video from '@/components/Video.astro'
-import Hr from '@/components/Hr.astro'
+import { BASE_PATH } from '@/config'
 ---
 
 <Layout>
@@ -16,7 +16,7 @@ import Hr from '@/components/Hr.astro'
 				expresión en forma completa si aparecen los tres términos del polinomio.
 			</p>
 			<div class="mx-auto my-10 max-w-lg">
-				<img src="/matematicas2/factorizacion/polinomios-grado2-1.webp" alt="" />
+				<img src={`${BASE_PATH}/matematicas2/factorizacion/polinomios-grado2-1.webp`} alt="" />
 			</div>
 			<p>
 				Para aprender a factorizar polinomios de segundo grado, en su versión completa, te pedimos

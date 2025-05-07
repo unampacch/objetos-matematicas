@@ -1,14 +1,15 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-
 import icon from "astro-icon";
+import partytown from '@astrojs/partytown';
 
-// https://astro.build/config
-// los icons son bootstrap icons https://icon-sets.iconify.design/bi/
 export default defineConfig({
-  integrations: [tailwind(),
+  // Define el prefijo dinámico para las rutas
+  base: import.meta.env.VERCEL ? "/" : (import.meta.env.DEV ? "/" : "/sumate"),
+  integrations: [
+    tailwind(),
     icon({
-      include:{
+      include: {
         bi: [
           'facebook',
           'twitter-x',
@@ -18,6 +19,7 @@ export default defineConfig({
           'usb-c'
         ]
       }
-    }
-  )]
+    }),
+    partytown()
+  ]
 });

@@ -2,7 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
-import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import { BASE_PATH } from "@/config";
 ---
 
 <Layout>
@@ -69,7 +69,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
           <br><p>Como no satisface el segundo punto, podemos decir que la función <b>no es continua en el valor <Latex formula="{t}_{0}=2" inline={true}/></b>.</p>
           <p>La gráfica de la función es la siguiente:</p>
           <div class="mx-auto lg:w-1/2">
-            <img src="/calculo/continuidad-funciones/funcion.png" alt="Función." width="400" height="100"><br>
+            <img src={`${BASE_PATH}/calculo/continuidad-funciones/funcion.png`} alt="Funciones radicales." >
           </div>
           <p>Observemos dos cosas importantes:</p>
           <p>a)	La función <b>no está definida</b> en los valores en donde el denominador vale cero, esto es, en <Latex formula="{t}_{1}=-2" inline={true}/> y <Latex formula="{t}_{2}=2" inline={true}/>.</p>
@@ -111,7 +111,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <br><p>Y podemos concluir que esta función es continua en el punto <Latex formula="t=2" inline={true}/>. Su gráfica queda muy parecida a la anterior, pero sin el hueco.</p>
           <div class="mx-auto lg:w-1/2">
-            <img src="/calculo/continuidad-funciones/funcion-2.png" alt="Función." width="400" height="100"><br>
+            <img src={`${BASE_PATH}/calculo/continuidad-funciones/funcion-2.png`} alt="Funciones radicales." >
           </div>
         </div>
       </div>

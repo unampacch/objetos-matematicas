@@ -1,14 +1,15 @@
 ---
-import Instrucciones from './Instrucciones.astro'
+import { BASE_PATH } from "@/config";
+import Instrucciones from './Instrucciones.astro';
 
 interface Props {
-  src?: string
-  nombre?: string
-  instrucciones?: string
-  class?:string
+  src?: string;
+  nombre?: string;
+  instrucciones?: string;
+  class?: string;
 }
 
-const { src, nombre, instrucciones } = Astro.props as Props
+const { src, nombre, instrucciones } = Astro.props as Props;
 ---
 <section class={`${src ? 'lg:my-14 my-8' : ''}`}>
     <article class="container mx-auto">
@@ -25,14 +26,13 @@ const { src, nombre, instrucciones } = Astro.props as Props
         <div class="absolute top-0 z-10 block min-h-12 min-w-full translate-y-10 bg-red"></div>
         <div class="relative z-20 mx-auto max-w-screen-lg bg-white p-5 shadow-lg shadow-slate-900/[.8]">
             <iframe
-                src={`${src}`}
+                src={`${BASE_PATH}${src}`}
                 allowfullscreen="allowfullscreen"
                 allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
         </div>
     </article>
 </section>
-<script is:inline src="/scripts/h5p-resizer.js" charset="UTF-8"></script>
-
+<script is:inline src={`${BASE_PATH}/scripts/h5p-resizer.js`} charset="UTF-8"></script> <!-- Concatenar BASE_PATH -->
 <style>
     h3 {
         color: var(--css-red-pantone);

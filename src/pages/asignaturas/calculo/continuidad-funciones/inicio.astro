@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
 import Lumi from '@/components/Lumi.astro'
+import { BASE_PATH } from "@/config";
 ---
 
 <Layout>
@@ -15,33 +16,33 @@ import Lumi from '@/components/Lumi.astro'
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>1. Funciones polinomiales.</p>
           <div class="mx-auto lg:w-1/2">
-            <img src="/calculo/continuidad-funciones/funciones-polinomiales.png" alt="Funciones polinomiales." width="400" height="100">
+            <img src={`${BASE_PATH}/calculo/continuidad-funciones/funciones-polinomiales.png`} alt="Funciones polinomiales." >
           </div>
         </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>2. Funciones radicales.</p>
           <div class="mx-auto lg:w-1/2">
-            <img src="/calculo/continuidad-funciones/funciones-radicales.png" alt="Funciones radicales." width="400" height="100">
+            <img src={`${BASE_PATH}/calculo/continuidad-funciones/funciones-radicales.png`} alt="Funciones radicales." >
           </div>
         </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>3. Funciones seno y coseno.</p>
           <div class="mx-auto lg:w-1/2">
-            <img src="/calculo/continuidad-funciones/funciones-seno-coseno.png" alt="Funciones seno y coseno." width="400" height="100">
+            <img src={`${BASE_PATH}/calculo/continuidad-funciones/funciones-seno-coseno.png`} alt="Funciones seno y coseno." >
           </div>
         </div>
         <p>¿Cuáles son funciones que <strong>NO</strong> son continuas? Siguiendo con la idea anterior, una función no es continua si al trazar su gráfica se tiene que “despegar” el lápiz para poder trazarla completamente. Ejemplos de estas funciones son:</p>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>1. Funciones racionales, porque tienen asíntotas verticales y huecos.</p>
           <div class="mx-auto lg:w-1/2">
-            <img src="/calculo/continuidad-funciones/funciones-racionales.png" alt="Funciones racionales." width="400" height="100">
+            <img src={`${BASE_PATH}/calculo/continuidad-funciones/funciones-racionales.png`} alt="Funciones racionales." >
           </div>
         </div>
         <div class="mx-auto my-5 lg:max-w-screen-lg">
           <p>2. Las funciones tangente, cotangente, secante y cosecante.</p>
           <div class="mx-auto lg:w-1/2">
-            <img src="/calculo/continuidad-funciones/funcion-tangente.png" alt="Función tangente." width="400" height="100">&nbsp;&nbsp;
-            <img src="/calculo/continuidad-funciones/funcion-secante.png" alt="Función secante." width="400" height="100">
+            <img src={`${BASE_PATH}/calculo/continuidad-funciones/funcion-tangente.png`} alt="Función tangente." >
+            <img src={`${BASE_PATH}/calculo/continuidad-funciones/funcion-secante.png`} alt="Función secante." >
           </div>
         </div>
           <Lumi

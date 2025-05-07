@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import { BASE_PATH } from '@/config'
 ---
 
 <Layout>
@@ -19,7 +20,7 @@ import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 				lograr la factorización. A continuación, se muestran algunos ejemplos:
 			</p>
 			<div class="mx-auto my-10 max-w-2xl">
-				<img src="/matematicas2/factorizacion/arreglo-ejemplo.webp" alt="" />
+				<img src={`${BASE_PATH}/matematicas2/factorizacion/arreglo-ejemplo.webp`} alt="" />
 			</div>
 			<p>
 				En general, se busca que la expresión factorizada de un polinomio llegue a tener sólo

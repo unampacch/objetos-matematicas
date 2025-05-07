@@ -1,6 +1,8 @@
 ---
 import BentoItem from "@/components/BentoItem.astro";
 import { asignaturas } from "@/pages/asignaturas/asignaturas.json";
+import { BASE_PATH } from "@/config"; // Importa BASE_PATH
+
 const ASIGNATURA = "matematicas_4";
 const asignatura = asignaturas[ASIGNATURA];
 const { objetos_aprendizaje } = asignatura;
@@ -40,14 +42,17 @@ import Layout from "@/layouts/Layout.astro";
               ${index % 2 === 0 ? "animate-fade-right" : "animate-fade-left"}
             `}
           >
-
-            <BentoItem title={objeto.titulo} class="flex-1" slug={objeto.slug}>
+            <BentoItem
+              title={objeto.titulo}
+              class="flex-1"
+              slug={`${BASE_PATH}${objeto.slug}`}
+            >
               <img
                 slot="image"
                 class={`transition-scale absolute bottom-0 left-0 top-0
               -z-10 h-full object-cover md:w-full
                opacity-90  duration-1000 ease-in-out group-hover:scale-110`}
-                src={objeto.portada}
+                src={`${BASE_PATH}${objeto.portada}`}
               />
               <p slot="content" class="max-w-xl text-base md:text-lg">
                 {objeto.resumen}
@@ -60,18 +65,16 @@ import Layout from "@/layouts/Layout.astro";
   </div>
 </Layout>
 <style>
-
-  .col-span-4 {
-    grid-column: span 10 / span 10;
-    @media screen and (min-width: 920px) {
-      grid-column: span 4 / span 4;
-    }
-  }
-  .col-span-6 {
-    grid-column: span 10 / span 10;
-    @media screen and (min-width: 920px) {
-      grid-column: span 6 / span 6;
-    }
-  }
-
+	.col-span-4 {
+		grid-column: span 10 / span 10;
+		@media screen and (min-width: 920px) {
+			grid-column: span 4 / span 4;
+		}
+	}
+	.col-span-6 {
+		grid-column: span 10 / span 10;
+		@media screen and (min-width: 920px) {
+			grid-column: span 6 / span 6;
+		}
+	}
 </style>

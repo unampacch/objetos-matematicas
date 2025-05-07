@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import Latex from '@/components/Latex.astro'
+import { BASE_PATH } from '@/config'
 ---
 
 <Layout>
@@ -27,7 +28,7 @@ import Latex from '@/components/Latex.astro'
       <p>Al anterior axioma, también se le da el nombre de <em>ley distributiva</em>.</p>
       <p>Apliquemos esta ley para calcular el cuadrado de un binomio:</p>
       <div class="max-w-xl mx-auto bg-white px-5 my-5">
-        <img src="/matematicas2/binomio-cuadrado/formula-01.webp" alt="Ley distributiva" class="" />
+        <img src={`${BASE_PATH}/matematicas2/binomio-cuadrado/formula-01.webp`} alt="Ley distributiva" class="" />
       </div>
       <p>Sumando términos semejantes:</p>
       <Latex class="text-center my-10" formula='(a+b)^2=(a+b)(a+b)=a^2+2ab+b^2' />
@@ -39,7 +40,7 @@ import Latex from '@/components/Latex.astro'
       </ol>
       <p>Debe notarse que los términos <Latex inline formula="a^2" /> y <Latex inline formula="b^2" /> siempre son positivos, lo anterior porque el cuadrado de cualquier cantidad negativa o positiva, en todos los casos, es positiva. Sin embargo, el término  puede ser positivo o negativo según sean <Latex inline formula="a" /> y <Latex inline formula="b" /> del mismo signo, o de signos contrarios, respectivamente. Por ejemplo, elevemos al cuadrado el binomio <Latex inline formula="(a-b)" />:</p>
       <div class="max-w-xl mx-auto bg-white px-5 my-5">
-        <img src="/matematicas2/binomio-cuadrado/formula-02.webp" alt="Ley distributiva" class="" />
+        <img src={`${BASE_PATH}/matematicas2/binomio-cuadrado/formula-02.webp`} alt="Ley distributiva" class="" />
       </div>
       <p>Sumando términos semejantes:</p>
       <Latex class="text-center my-10" formula='(a-b)^2=(a-b)(a-b)=a^2-2ab+b^2' />

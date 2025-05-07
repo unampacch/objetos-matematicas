@@ -3,12 +3,11 @@ import BaseHead from "@/components/BaseHead.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import "@fontsource-variable/onest";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_LANG} from "../config";
 import type { AsignaturasData } from "@/types/asignaturas";
-import asignaturasData from "@/pages/asignaturas/asignaturas.json" assert { type: "json" }; // Asegúrate de usar `assert { type: "json" }`
-
+import asignaturasData from "@/pages/asignaturas/asignaturas.json" assert { type: "json" };
+import "@/styles/main.scss";
 const {
-  image,
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
   ogType,
@@ -50,12 +49,12 @@ if (title === SITE_TITLE) {
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={SITE_LANG}>
   <head>
+    <base href="{import.meta.env.BASE_URL}" />
     <BaseHead
       title={dynamicTitle}
       description={description}
-      image={image}
       ogType={ogType}
     />
  </head>
