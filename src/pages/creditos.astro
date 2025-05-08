@@ -1,0 +1,47 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import PersonaCard from '@/components/PersonaCard.astro'
+import equipo from '@/data/equipo.json';
+import PersonaLinea from '@/components/PersonaLinea.astro'
+---
+
+<Layout
+  title="Créditos - Objetos de Matemáticas"
+  description="Créditos de los recursos utilizados en Objetos de Matemáticas SUMATE."
+>
+<div class="mx-auto max-w-screen-xl">
+  <h1 class="text-4xl font-bold text-white mb-10 border-b border-gray-700 pb-4">Créditos</h1>
+
+    <!-- Desarrolladores -->
+    <section class="mb-12">
+      <h2 class="text-2xl text-cyan-400 font-semibold mb-6">Desarrollo Web</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {equipo.desarrolladores.map((persona) => (
+          <PersonaCard {...persona} />
+        ))}
+      </div>
+    </section>
+
+    <!-- Autores -->
+    <section class="mb-12">
+      <h2 class="text-2xl text-indigo-400 font-semibold mb-6">Autores de contenido</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        {equipo.autores.map((persona) => (
+          <PersonaLinea {...persona} />
+        ))}
+      </div>
+    </section>
+
+    <!-- Coordinación -->
+    <section class="mb-12">
+      <h2 class="text-2xl text-fuchsia-400 font-semibold mb-6">Coordinación y Dirección</h2>
+      <div class="space-y-4">
+        {equipo.coordinacion.map((persona) => (
+          <PersonaLinea {...persona} />
+        ))}
+      </div>
+  </section>
+
+</div>
+
+</Layout>

@@ -1,0 +1,71 @@
+{
+  "desarrolladores": [
+    {
+      "nombre": "Rodrigo Aizpuru",
+      "rol": "Coordinación técnica y desarrollo web",
+      "imagen": "/img/rodri.jpg",
+      "github": "https://github.com/rodrigoaiz",
+      "twitter": "https://twitter.com/rodrigoaiz"
+    },
+    {
+      "nombre": "María López",
+      "rol": "Backend Developer",
+      "imagen": "/img/maria.jpg",
+      "linkedin": "https://linkedin.com/in/marialopez"
+    },
+    {
+      "nombre": "Carlos Ruiz",
+      "rol": "Fullstack Developer",
+      "imagen": "/img/carlos.jpg",
+      "github": "https://github.com/carlosruiz"
+    }
+  ],
+  "autores": [
+    {
+      "nombre": "Dra. Verónica Gómez",
+      "rol": "Álgebra"
+    },
+    {
+      "nombre": "Mtro. Jorge Herrera",
+      "rol": "Cálculo diferencial"
+    },
+    {
+      "nombre": "Dra. Alicia Ramírez",
+      "rol": "Estadística"
+    },
+    {
+      "nombre": "Mtra. Patricia Sánchez",
+      "rol": "Geometría analítica"
+    },
+    {
+      "nombre": "Mtro. Iván Morales",
+      "rol": "Matemáticas aplicadas"
+    },
+    {
+      "nombre": "Lic. Fernanda Cortés",
+      "rol": "Asesoría pedagógica"
+    },
+    {
+      "nombre": "Dr. Eduardo Torres",
+      "rol": "Diseño instruccional"
+    },
+    {
+      "nombre": "Mtra. Laura Pineda",
+      "rol": "Desarrollo de contenidos digitales"
+    }
+  ],
+  "coordinacion": [
+    {
+      "nombre": "Mtra. Cecilia Estrada",
+      "rol": "Coordinación del proyecto"
+    },
+    {
+      "nombre": "Dr. Samuel Vargas",
+      "rol": "Dirección de Innovación Educativa"
+    },
+    {
+      "nombre": "Secretaría Académica",
+      "rol": "Supervisión institucional"
+    }
+  ]
+}
