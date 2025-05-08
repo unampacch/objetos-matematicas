@@ -62,13 +62,13 @@
     },
     {
       "nombre": "Felipe de Jesús Méndez Varela",
-      "rol": "Cálculo Diferencial e Integral",
+      "rol": "Matemáticas",
       "imagen": "/img/randoms/felipe-jesus.webp",
       "plantel": "Sur"
     },
     {
       "nombre": "Martín Eduardo Monterrosa Hernández",
-      "rol": "Estadística",
+      "rol": "Cálculo Diferencial e Integral",
       "imagen": "/img/randoms/martin-moterrosa.webp",
       "plantel": "Sur"
     },
@@ -86,15 +86,15 @@
     },
     {
       "nombre": "Josué David Sánchez Hernández",
-      "rol": "",
+      "rol": "Matemáticas",
       "plantel": "Naucalpan",
       "imagen": "/img/randoms/josue-david.webp"
     },
     {
       "nombre": "Blanca Cecilia Cruz Salcedo",
-      "rol": "",
+      "rol": "Matemáticas",
       "plantel": "Naucalpan",
-      "imagen": "/img/randoms/person.png"
+      "imagen": "/img/randoms/cecy-cruz.webp"
     },
     {
       "nombre": "Ma. Emma Bautista García",
