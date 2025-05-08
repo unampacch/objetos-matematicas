@@ -61,8 +61,7 @@ const { pathname } = Astro.url;
                     </svg>
                     <a
                         class="ms-1 text-sm font-light text-gray-400 hover:underline md:ms-2"
-                        href={`${BASE_PATH}${(asignaturaData as any).slug}`}>{asignaturaData.titulo}</a
-                    >
+                        href={`${BASE_PATH}/asignaturas/${(asignaturaData as any).slug}/`}>{asignaturaData.titulo}</a>
                 </div>
             </li>
             <li>
