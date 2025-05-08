@@ -1,5 +1,7 @@
 ---
 import { BASE_PATH } from "@/config"; // Importa BASE_PATH
+import type { AsignaturasData } from "@/types/asignaturas"; // Importa el tipo existente
+
 
 interface Props {
     class?: string;
@@ -12,7 +14,8 @@ interface Props {
 
 let { subtitulo, titulo, index = 0, asignatura, pantallaIndex } = Astro.props;
 import { asignaturas } from '@/pages/asignaturas/asignaturas.json';
-const asignaturaData = asignaturas[asignatura as keyof typeof asignaturas];
+const asignaturasData: AsignaturasData = { asignaturas }; // Usa el tipo AsignaturasData
+const asignaturaData = asignaturasData.asignaturas[asignatura];
 const { objetos_aprendizaje } = asignaturaData;
 
 // Acceder al título y descripción en pantallas según el índice proporcionado
@@ -61,8 +64,10 @@ const { pathname } = Astro.url;
                     </svg>
                     <a
                         class="ms-1 text-sm font-light text-gray-400 hover:underline md:ms-2"
-                        href={`${BASE_PATH}${(asignaturaData as any).slug}`}>{asignaturaData.titulo}</a
+                        href={`${BASE_PATH}/asignaturas/${asignaturaData.slug}/`}
                     >
+                        {asignaturaData.titulo}
+                    </a>
                 </div>
             </li>
             <li>
