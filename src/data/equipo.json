@@ -3,21 +3,21 @@
     {
       "nombre": "Jesús Rodrigo Aizpuru Parra",
       "imagen": "/img/devs/rodri.webp",
-      "rol": "Coordinación técnica y desarrollo web",
+      "rol": "Diseño y desarrollo integral del sitio",
       "github": "https://github.com/rodrigoaiz/",
       "linkedin": "https://www.linkedin.com/in/rodrigo-aizpuru/",
       "portfolio": "https://www.rodrigoaizpuru.com/"
     },
     {
       "nombre": "Karla Gabriela Moreno Vega",
-      "rol": "Desarrolladora y diseñadora Front-End",
+      "rol": "Diseño web y coordinación académica",
       "imagen": "/img/devs/kar.webp",
       "github": "https://github.com/KarMoreno"
     },
     {
       "nombre": "Karina Lisset Lavadores Pérez",
       "imagen": "/img/devs/lis.webp",
-      "rol": "Desarrolladora y diseñadora Front-End",
+      "rol": "Desarrollo y diseño Front-End",
       "github": "https://github.com/Lissetperez15"
     }
   ],
@@ -55,19 +55,19 @@
   ],
   "autores": [
     {
-      "nombre": "Dra. Verónica Gómez",
-      "rol": "Álgebra",
-      "imagen": "/img/randoms/person.png"
+      "nombre": "Juan Carlos Ramírez Maciel",
+      "rol": "Matemáticas",
+      "imagen": "/img/randoms/mtro-juan-carlos.webp"
     },
     {
-      "nombre": "Mtro. Jorge Herrera",
-      "rol": "Cálculo diferencial",
-      "imagen": "/img/randoms/person.png"
+      "nombre": "Felipe de Jesús Méndez Varela",
+      "rol": "Cálculo Diferencial e Integral",
+      "imagen": "/img/randoms/felipe-jesus.webp"
     },
     {
-      "nombre": "Dra. Alicia Ramírez",
+      "nombre": "Martín Eduardo Monterrosa Hernández",
       "rol": "Estadística",
-      "imagen": "/img/randoms/person.png"
+      "imagen": "/img/randoms/martin-moterrosa.webp"
     },
     {
       "nombre": "Mtra. Patricia Sánchez",
@@ -110,6 +110,16 @@
       "nombre": "Secretaría Académica",
       "rol": "Supervisión institucional",
       "imagen": "/img/randoms/person.png"
+    },
+    {
+      "nombre": "Susana Covarrubias Ariza",
+      "rol": "Secretaria auxiliar de Matemáticas de la Dirección General",
+      "imagen": "/img/randoms/susana.webp"
+    },
+    {
+      "nombre": "Alejandro Octavio Sánchez Nieto",
+      "rol": "Jefe de sección",
+      "imagen": "/img/randoms/alejandro-sanchez.webp"
     }
   ]
 }
