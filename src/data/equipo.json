@@ -57,41 +57,73 @@
     {
       "nombre": "Juan Carlos Ramírez Maciel",
       "rol": "Matemáticas",
-      "imagen": "/img/randoms/mtro-juan-carlos.webp"
+      "imagen": "/img/randoms/mtro-juan-carlos.webp",
+      "plantel": "Naucalpan"
     },
     {
       "nombre": "Felipe de Jesús Méndez Varela",
       "rol": "Cálculo Diferencial e Integral",
-      "imagen": "/img/randoms/felipe-jesus.webp"
+      "imagen": "/img/randoms/felipe-jesus.webp",
+      "plantel": "Sur"
     },
     {
       "nombre": "Martín Eduardo Monterrosa Hernández",
       "rol": "Estadística",
-      "imagen": "/img/randoms/martin-moterrosa.webp"
+      "imagen": "/img/randoms/martin-moterrosa.webp",
+      "plantel": "Sur"
     },
     {
-      "nombre": "Mtra. Patricia Sánchez",
-      "rol": "Geometría analítica",
+      "nombre": "Ignacio Cuauhtémoc Benítez Zúñiga",
+      "rol": "",
+      "imagen": "/img/randoms/person.png",
+      "plantel": "Azcapotzalco"
+    },
+    {
+      "nombre": "Luis Miguel Torres Sánchez",
+      "rol": "",
+      "plantel": "Azcapotzalco",
       "imagen": "/img/randoms/person.png"
     },
     {
-      "nombre": "Mtro. Iván Morales",
-      "rol": "Matemáticas aplicadas",
+      "nombre": "Josué David Sánchez Hernández",
+      "rol": "",
+      "plantel": "Naucalpan",
+      "imagen": "/img/randoms/josue-david.webp"
+    },
+    {
+      "nombre": "Blanca Cecilia Cruz Salcedo",
+      "rol": "",
+      "plantel": "Naucalpan",
       "imagen": "/img/randoms/person.png"
     },
     {
-      "nombre": "Lic. Fernanda Cortés",
-      "rol": "Asesoría pedagógica",
+      "nombre": "Ma. Emma Bautista García",
+      "rol": "",
+      "plantel": "Vallejo",
       "imagen": "/img/randoms/person.png"
     },
     {
-      "nombre": "Dr. Eduardo Torres",
-      "rol": "Diseño instruccional",
+      "nombre": "Fátima Sandra Rubiales Sánchez",
+      "rol": "",
+      "plantel": "Vallejo",
       "imagen": "/img/randoms/person.png"
     },
     {
-      "nombre": "Mtra. Laura Pineda",
-      "rol": "Desarrollo de contenidos digitales",
+      "nombre": "Gamar Zaid Joseph García Castillo",
+      "rol": "",
+      "plantel": "Oriente",
+      "imagen": "/img/randoms/person.png"
+    },
+    {
+      "nombre": "Erika López López",
+      "rol": "",
+      "plantel": "Oriente",
+      "imagen": "/img/randoms/person.png"
+    },
+    {
+      "nombre": "Francisco Díaz Cerón",
+      "rol": "",
+      "plantel": "Sur",
       "imagen": "/img/randoms/person.png"
     }
   ],
@@ -101,15 +133,11 @@
       "rol": "Secretario de servicios de apoyo al aprendizaje",
       "imagen": "/img/randoms/marroquin.webp"
     },
+
     {
       "nombre": "Claudia Durán Olmos",
       "rol": "Jefa del departamento de medios digitales",
       "imagen": "/img/randoms/clau.webp"
-    },
-    {
-      "nombre": "Secretaría Académica",
-      "rol": "Supervisión institucional",
-      "imagen": "/img/randoms/person.png"
     },
     {
       "nombre": "Susana Covarrubias Ariza",
@@ -120,6 +148,11 @@
       "nombre": "Alejandro Octavio Sánchez Nieto",
       "rol": "Jefe de sección",
       "imagen": "/img/randoms/alejandro-sanchez.webp"
+    },
+    {
+      "nombre": "Marcos Daniel Aguilar Ojeda",
+      "imagen": "/img/randoms/person.png",
+      "rol": "Integrante comité organizador"
     }
   ]
 }

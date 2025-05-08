@@ -36,6 +36,16 @@ import PersonaMinidevs from '@/components/PersonaMinidevs.astro';
       </div>
     </section>
 
+    <!-- Coordinación -->
+    <section class="mb-12">
+      <h3 class="text-xl text-fuchsia-400 font-semibold mb-6">Comité organizador</h3>
+      <div class="space-y-4">
+        {equipo.coordinacion.map((persona) => (
+          <PersonaLinea {...persona} />
+        ))}
+      </div>
+    </section>
+
     <!-- Autores -->
     <section class="mb-12">
       <h3 class="text-xl text-indigo-400 font-semibold mb-6">Autores de contenido</h3>
@@ -46,15 +56,7 @@ import PersonaMinidevs from '@/components/PersonaMinidevs.astro';
       </div>
     </section>
 
-    <!-- Coordinación -->
-    <section class="mb-12">
-      <h3 class="text-xl text-fuchsia-400 font-semibold mb-6">Coordinación y Dirección</h3>
-      <div class="space-y-4">
-        {equipo.coordinacion.map((persona) => (
-          <PersonaLinea {...persona} />
-        ))}
-      </div>
-  </section>
+
 
 </div>
 
