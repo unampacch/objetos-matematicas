@@ -3,18 +3,22 @@ import Layout from '@/layouts/Layout.astro'
 import PersonaCard from '@/components/PersonaCard.astro'
 import equipo from '@/data/equipo.json';
 import PersonaLinea from '@/components/PersonaLinea.astro'
+import PersonaMinidevs from '@/components/PersonaMinidevs.astro';
 ---
 
 <Layout
   title="Créditos - Objetos de Matemáticas"
   description="Créditos de los recursos utilizados en Objetos de Matemáticas SUMATE."
 >
-<div class="mx-auto max-w-screen-xl">
-  <h1 class="text-4xl font-bold text-white mb-10 border-b border-gray-700 pb-4">Créditos</h1>
+<div class="mx-auto max-w-screen-xl xl:mt-10">
+  <h2
+        class="my-5 transform animate-fade-down text-pretty bg-gradient-to-r from-blue
+    to-light bg-clip-text px-2 pb-1 font-extrabold text-light text-transparent transition duration-1000 ease-in-out md:px-0 text-2xl md:text-3xl lg:text-4xl"
+    >Créditos</h2>
 
     <!-- Desarrolladores -->
     <section class="mb-12">
-      <h2 class="text-2xl text-cyan-400 font-semibold mb-6">Desarrollo Web</h2>
+      <h3 class="text-xl text-cyan-400 font-semibold mb-6">Desarrollo Web</h3>
       <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
         {equipo.desarrolladores.map((persona) => (
           <PersonaCard {...persona} />
@@ -22,9 +26,19 @@ import PersonaLinea from '@/components/PersonaLinea.astro'
       </div>
     </section>
 
+     <!-- minidev -->
+     <section class="mb-12">
+      <h3 class="text-xl text-indigo-400 font-semibold mb-6">Desarrolladores de contenido</h3>
+      <div class="grid md:grid-cols-2 gap-4">
+        {equipo.minidev.map((persona) => (
+          <PersonaMinidevs {...persona} />
+        ))}
+      </div>
+    </section>
+
     <!-- Autores -->
     <section class="mb-12">
-      <h2 class="text-2xl text-indigo-400 font-semibold mb-6">Autores de contenido</h2>
+      <h3 class="text-xl text-indigo-400 font-semibold mb-6">Autores de contenido</h3>
       <div class="grid md:grid-cols-2 gap-4">
         {equipo.autores.map((persona) => (
           <PersonaLinea {...persona} />
@@ -34,7 +48,7 @@ import PersonaLinea from '@/components/PersonaLinea.astro'
 
     <!-- Coordinación -->
     <section class="mb-12">
-      <h2 class="text-2xl text-fuchsia-400 font-semibold mb-6">Coordinación y Dirección</h2>
+      <h3 class="text-xl text-fuchsia-400 font-semibold mb-6">Coordinación y Dirección</h3>
       <div class="space-y-4">
         {equipo.coordinacion.map((persona) => (
           <PersonaLinea {...persona} />

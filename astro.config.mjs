@@ -33,7 +33,10 @@ export default defineConfig({
           'youtube',
           'instagram',
           'box-arrow-in-right',
-          'usb-c'
+          'usb-c',
+          'linkedin',
+          'link-45deg',
+          'github'
         ]
       }
     }),

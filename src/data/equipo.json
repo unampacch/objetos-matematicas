@@ -1,71 +1,115 @@
 {
   "desarrolladores": [
     {
-      "nombre": "Rodrigo Aizpuru",
+      "nombre": "Jesús Rodrigo Aizpuru Parra",
+      "imagen": "/img/devs/rodri.webp",
       "rol": "Coordinación técnica y desarrollo web",
-      "imagen": "/img/rodri.jpg",
-      "github": "https://github.com/rodrigoaiz",
-      "twitter": "https://twitter.com/rodrigoaiz"
+      "github": "https://github.com/rodrigoaiz/",
+      "linkedin": "https://www.linkedin.com/in/rodrigo-aizpuru/",
+      "portfolio": "https://www.rodrigoaizpuru.com/"
     },
     {
-      "nombre": "María López",
-      "rol": "Backend Developer",
-      "imagen": "/img/maria.jpg",
-      "linkedin": "https://linkedin.com/in/marialopez"
+      "nombre": "Karla Gabriela Moreno Vega",
+      "rol": "Desarrolladora y diseñadora Front-End",
+      "imagen": "/img/devs/kar.webp",
+      "github": "https://github.com/KarMoreno"
     },
     {
-      "nombre": "Carlos Ruiz",
-      "rol": "Fullstack Developer",
-      "imagen": "/img/carlos.jpg",
-      "github": "https://github.com/carlosruiz"
+      "nombre": "Karina Lisset Lavadores Pérez",
+      "imagen": "/img/devs/lis.webp",
+      "rol": "Desarrolladora y diseñadora Front-End",
+      "github": "https://github.com/Lissetperez15"
+    }
+  ],
+  "minidev": [
+    {
+      "nombre": "Yadira Jiménez Taboada",
+      "rol": "Asesoría pedagógica",
+      "imagen": "/img/devs/yadi.webp"
+    },
+    {
+      "nombre": "Luis David Torres Ortuño",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/david.webp"
+    },
+    {
+      "nombre": "Nataly Rosaly Arteaga Romero",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/person.png"
+    },
+    {
+      "nombre": "Tania Lucia Hernandez Santiago",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/person.png"
+    },
+    {
+      "nombre": "Pablo Alexander Altamirano Hernández",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/person.png"
+    },
+    {
+      "nombre": "Daniela Yenedith Trejo Vargas",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/person.png"
     }
   ],
   "autores": [
     {
       "nombre": "Dra. Verónica Gómez",
-      "rol": "Álgebra"
+      "rol": "Álgebra",
+      "imagen": "/img/randoms/person.png"
     },
     {
       "nombre": "Mtro. Jorge Herrera",
-      "rol": "Cálculo diferencial"
+      "rol": "Cálculo diferencial",
+      "imagen": "/img/randoms/person.png"
     },
     {
       "nombre": "Dra. Alicia Ramírez",
-      "rol": "Estadística"
+      "rol": "Estadística",
+      "imagen": "/img/randoms/person.png"
     },
     {
       "nombre": "Mtra. Patricia Sánchez",
-      "rol": "Geometría analítica"
+      "rol": "Geometría analítica",
+      "imagen": "/img/randoms/person.png"
     },
     {
       "nombre": "Mtro. Iván Morales",
-      "rol": "Matemáticas aplicadas"
+      "rol": "Matemáticas aplicadas",
+      "imagen": "/img/randoms/person.png"
     },
     {
       "nombre": "Lic. Fernanda Cortés",
-      "rol": "Asesoría pedagógica"
+      "rol": "Asesoría pedagógica",
+      "imagen": "/img/randoms/person.png"
     },
     {
       "nombre": "Dr. Eduardo Torres",
-      "rol": "Diseño instruccional"
+      "rol": "Diseño instruccional",
+      "imagen": "/img/randoms/person.png"
     },
     {
       "nombre": "Mtra. Laura Pineda",
-      "rol": "Desarrollo de contenidos digitales"
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/randoms/person.png"
     }
   ],
   "coordinacion": [
     {
-      "nombre": "Mtra. Cecilia Estrada",
-      "rol": "Coordinación del proyecto"
+      "nombre": "Taurino Marroquín Cristóbal",
+      "rol": "Secretario de servicios de apoyo al aprendizaje",
+      "imagen": "/img/randoms/marroquin.webp"
     },
     {
-      "nombre": "Dr. Samuel Vargas",
-      "rol": "Dirección de Innovación Educativa"
+      "nombre": "Claudia Durán Olmos",
+      "rol": "Jefa del departamento de medios digitales",
+      "imagen": "/img/randoms/clau.webp"
     },
     {
       "nombre": "Secretaría Académica",
-      "rol": "Supervisión institucional"
+      "rol": "Supervisión institucional",
+      "imagen": "/img/randoms/person.png"
     }
   ]
 }
