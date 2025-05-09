@@ -163,7 +163,8 @@ if (urlIntermedia.endsWith(sufijoInicio)) {
             href={pantallaPathHref}
             class:list={[
               "ml-2 size-7 cursor-pointer rounded-md border bg-light text-center text-lg text-dark transition-all ease-in-out hover:scale-110 hover:bg-blue hover:text-light",
-              { active: currentAstroPathname === pantallaPathHref }
+              { active: currentAstroPathname.replace(BASE_PATH, '').replace(/\/$/, '') === pantalla.slug.replace(/\/$/, '') }
+
             ]}
             data-tooltip-placement="bottom"
           >
