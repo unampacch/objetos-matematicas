@@ -3,6 +3,7 @@ import Logo from "@/components/Logo.astro";
 import LogoM from "@/components/LogoM.astro";
 import LogoCCH from "@/components/LogoCCH.astro";
 import LogoUNAM from "@/components/LogoUNAM.astro";
+import LogoPACCHP from "@/components/LogoPACCHP.astro";
 
 
 import menu from "@/config/menu.json";
@@ -36,11 +37,19 @@ const { pathname } = Astro.url;
         <a href="https://www.unam.mx/" target="_blank" rel="noreferrer"
             ><LogoUNAM
               class="size-10 hidden md:block fill-lightblue"
+              alt="Logo UNAM"
             /></a
           >
           <a href="https://cch.unam.mx/" target="_blank" rel="noreferrer"
             ><LogoCCH
               class="size-10 hidden md:block fill-lightblue"
+              alt="Logo CCH"
+            /></a
+          >
+          <a href="http://portalacademico.cch.unam.mx/" target="_blank" rel="noreferrer"
+            ><LogoPACCHP
+              class="size-10 hidden md:block"
+              alt="Logo PACCHP"
             /></a
           >
       </div>
