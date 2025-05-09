@@ -1,0 +1,27 @@
+---
+const { nombre, rol, imagen, twitter, github, linkedin, portfolio } = Astro.props;
+import { Icon } from "astro-icon/components";
+---
+<div class="bg-gray-800 p-4 rounded-2xl shadow-md hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 text-center group overflow-hidden border-2 border-gray-700">
+
+  {imagen ? (
+    <img
+      src={imagen}
+      alt={`Foto de ${nombre}`}
+      class="rounded-full size-28 mx-auto mb-4 border-2 border-cyan-400 object-cover group-hover:scale-125 group-hover:-translate-y-2 transition-transform duration-700"
+    />
+  ) : (
+    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-700 flex items-center justify-center text-cyan-300 text-xl font-bold border-2 border-gray-600">
+      {nombre[0]}
+    </div>
+  )}
+  <h3 class="text-lg text-white font-bold">{nombre}</h3>
+  <p class="text-gray-400">{rol}</p>
+  <div class="mt-3 flex justify-center gap-4 text-cyan-400 text-xl">
+    {twitter && <a href={twitter} aria-label="Twitter" target="_blank" rel="noopener"><Icon name="bi:twitter-x" /></a>}
+    {github && <a href={github} aria-label="GitHub" target="_blank" rel="noopener"><Icon name="bi:github" /></a>}
+    {linkedin && <a href={linkedin} aria-label="LinkedIn" target="_blank" rel="noopener"><Icon name="bi:linkedin" /></a>}
+    {portfolio && <a href={portfolio} aria-label="portfolio" target="_blank" rel="noopener"><Icon name="bi:link-45deg" /></a>}
+
+  </div>
+</div>

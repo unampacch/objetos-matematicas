@@ -33,10 +33,41 @@ export default defineConfig({
           'youtube',
           'instagram',
           'box-arrow-in-right',
-          'usb-c'
+          'usb-c',
+          'linkedin',
+          'link-45deg',
+          'github'
         ]
       }
     }),
     partytown()
-  ]
+  ],
+  vite: {
+    server: {
+      watch: {
+        // Ignorar directorios que no necesitan ser observados
+        ignored: [
+          '**/node_modules/**',
+          '**/.git/**',
+          '**/.env/**',
+          '**/dist/**',
+          '**/.astro/**'
+        ],
+        // Opcional: Usar polling si persisten los problemas
+        usePolling: true,
+        interval: 1000
+      },
+      fs: {
+        // Limitar el acceso a archivos solo al proyecto
+        strict: true,
+        allow: [
+          process.cwd() // Solo permite archivos dentro del directorio del proyecto
+        ]
+      }
+    },
+    optimizeDeps: {
+      // Opcional: Forzar pre-empaquetado de dependencias
+      include: ['@astrojs/tailwind', 'astro-icon']
+    }
+  }
 });

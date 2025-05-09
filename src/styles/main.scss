@@ -55,13 +55,11 @@ body {
   p {
     text-wrap: pretty;
     padding: 0 1rem;
-    margin-bottom: 0.5rem;
+    margin-block: 1em;
+    margin-block: lh;
     @media (min-width: 768px) {
       padding: 0;
     }
-  }
-  p:last-child {
-    margin-bottom: 0;
   }
   a {
     text-decoration: underline;

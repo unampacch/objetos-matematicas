@@ -1,0 +1,158 @@
+{
+  "desarrolladores": [
+    {
+      "nombre": "Jesús Rodrigo Aizpuru Parra",
+      "imagen": "/img/devs/rodri.webp",
+      "rol": "Diseño y desarrollo integral del sitio",
+      "github": "https://github.com/rodrigoaiz/",
+      "linkedin": "https://www.linkedin.com/in/rodrigo-aizpuru/",
+      "portfolio": "https://www.rodrigoaizpuru.com/"
+    },
+    {
+      "nombre": "Karla Gabriela Moreno Vega",
+      "rol": "Diseño web y coordinación académica",
+      "imagen": "/img/devs/kar.webp",
+      "github": "https://github.com/KarMoreno"
+    },
+    {
+      "nombre": "Karina Lisset Lavadores Pérez",
+      "imagen": "/img/devs/lis.webp",
+      "rol": "Desarrollo y diseño Front-End",
+      "github": "https://github.com/Lissetperez15"
+    }
+  ],
+  "minidev": [
+    {
+      "nombre": "Yadira Jiménez Taboada",
+      "rol": "Asesoría pedagógica",
+      "imagen": "/img/devs/yadi.webp"
+    },
+    {
+      "nombre": "Luis David Torres Ortuño",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/david.webp"
+    },
+    {
+      "nombre": "Nataly Rosaly Arteaga Romero",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/person.png"
+    },
+    {
+      "nombre": "Tania Lucia Hernandez Santiago",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/person.png"
+    },
+    {
+      "nombre": "Pablo Alexander Altamirano Hernández",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/person.png"
+    },
+    {
+      "nombre": "Daniela Yenedith Trejo Vargas",
+      "rol": "Desarrollo de contenidos digitales",
+      "imagen": "/img/devs/person.png"
+    }
+  ],
+  "autores": [
+    {
+      "nombre": "Juan Carlos Ramírez Maciel",
+      "rol": "Matemáticas",
+      "imagen": "/img/randoms/mtro-juan-carlos.webp",
+      "plantel": "Naucalpan"
+    },
+    {
+      "nombre": "Felipe de Jesús Méndez Varela",
+      "rol": "Matemáticas",
+      "imagen": "/img/randoms/felipe-jesus.webp",
+      "plantel": "Sur"
+    },
+    {
+      "nombre": "Martín Eduardo Monterrosa Hernández",
+      "rol": "Cálculo Diferencial e Integral",
+      "imagen": "/img/randoms/martin-moterrosa.webp",
+      "plantel": "Sur"
+    },
+    {
+      "nombre": "Ignacio Cuauhtémoc Benítez Zúñiga",
+      "rol": "",
+      "imagen": "/img/randoms/person.png",
+      "plantel": "Azcapotzalco"
+    },
+    {
+      "nombre": "Luis Miguel Torres Sánchez",
+      "rol": "",
+      "plantel": "Azcapotzalco",
+      "imagen": "/img/randoms/person.png"
+    },
+    {
+      "nombre": "Josué David Sánchez Hernández",
+      "rol": "Matemáticas",
+      "plantel": "Naucalpan",
+      "imagen": "/img/randoms/josue-david.webp"
+    },
+    {
+      "nombre": "Blanca Cecilia Cruz Salcedo",
+      "rol": "Matemáticas",
+      "plantel": "Naucalpan",
+      "imagen": "/img/randoms/cecy-cruz.webp"
+    },
+    {
+      "nombre": "Ma. Emma Bautista García",
+      "rol": "",
+      "plantel": "Vallejo",
+      "imagen": "/img/randoms/person.png"
+    },
+    {
+      "nombre": "Fátima Sandra Rubiales Sánchez",
+      "rol": "",
+      "plantel": "Vallejo",
+      "imagen": "/img/randoms/person.png"
+    },
+    {
+      "nombre": "Gamar Zaid Joseph García Castillo",
+      "rol": "",
+      "plantel": "Oriente",
+      "imagen": "/img/randoms/person.png"
+    },
+    {
+      "nombre": "Erika López López",
+      "rol": "",
+      "plantel": "Oriente",
+      "imagen": "/img/randoms/person.png"
+    },
+    {
+      "nombre": "Francisco Díaz Cerón",
+      "rol": "Matemáticas y Cálculo",
+      "plantel": "Sur",
+      "imagen": "/img/randoms/fran-diaz.webp"
+    }
+  ],
+  "coordinacion": [
+    {
+      "nombre": "Taurino Marroquín Cristóbal",
+      "rol": "Secretario de servicios de apoyo al aprendizaje",
+      "imagen": "/img/randoms/marroquin.webp"
+    },
+
+    {
+      "nombre": "Claudia Durán Olmos",
+      "rol": "Jefa del departamento de medios digitales",
+      "imagen": "/img/randoms/clau.webp"
+    },
+    {
+      "nombre": "Susana Covarrubias Ariza",
+      "rol": "Secretaria auxiliar de Matemáticas de la Dirección General",
+      "imagen": "/img/randoms/susana.webp"
+    },
+    {
+      "nombre": "Alejandro Octavio Sánchez Nieto",
+      "rol": "Jefe de sección",
+      "imagen": "/img/randoms/alejandro-sanchez.webp"
+    },
+    {
+      "nombre": "Marcos Daniel Aguilar Ojeda",
+      "imagen": "/img/randoms/person.png",
+      "rol": "Integrante comité organizador"
+    }
+  ]
+}

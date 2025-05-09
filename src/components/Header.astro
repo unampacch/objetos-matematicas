@@ -1,6 +1,11 @@
 ---
 import Logo from "@/components/Logo.astro";
 import LogoM from "@/components/LogoM.astro";
+import LogoCCH from "@/components/LogoCCH.astro";
+import LogoUNAM from "@/components/LogoUNAM.astro";
+import LogoPACCHP from "@/components/LogoPACCHP.astro";
+
+
 import menu from "@/config/menu.json";
 import { BASE_PATH } from "@/config"; // Importa BASE_PATH
 
@@ -24,11 +29,29 @@ const { pathname } = Astro.url;
   class="bg-darkblue/[.8] w-full py-4 z-50 backdrop-blur-sm top-0 hover:transition-all sticky"
 >
   <div class="mx-auto">
-    <nav class="navbar md:px-5 mx-auto flex items-center justify-between">
+    <nav class="navbar px-2 md:px-5 mx-auto flex items-center justify-between">
       <!-- logo -->
-      <div class="order-0">
+      <div class="order-0 flex flex-row gap-x-6">
         <a href={`${BASE_PATH}/`}><Logo class="hidden md:block h-10 w-15" /></a>
         <a href={`${BASE_PATH}/`}><LogoM class="md:hidden size-10" /></a>
+        <a href="https://www.unam.mx/" target="_blank" rel="noreferrer"
+            ><LogoUNAM
+              class="size-10 hidden md:block fill-lightblue"
+              alt="Logo UNAM"
+            /></a
+          >
+          <a href="https://cch.unam.mx/" target="_blank" rel="noreferrer"
+            ><LogoCCH
+              class="size-10 hidden md:block fill-lightblue"
+              alt="Logo CCH"
+            /></a
+          >
+          <a href="http://portalacademico.cch.unam.mx/" target="_blank" rel="noreferrer"
+            ><LogoPACCHP
+              class="size-10 hidden md:block"
+              alt="Logo PACCHP"
+            /></a
+          >
       </div>
       <ul
         id="nav-menu"
