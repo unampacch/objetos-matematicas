@@ -1,17 +1,4 @@
 {
-  "site": {
-    "title": "Matemáticas remediales",
-    "base_url": "https://matematicasremediales.cch.unam.mx",
-    "base_path": "/",
-    "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "150",
-    "logo_height": "30",
-    "logo_text": "mates"
-  },
-
   "settings": {
     "search": true,
     "sticky_header": true,
@@ -24,6 +11,6 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Hecho en México con 🤎 | © Todos los derechos reservados. Esta página electrónica puede ser reproducida, sin objeto comercial, siempre y cuando su contenido no se mutile o altere, se cite la fuente completa y la dirección Web de conformidad con el artículo 148 de la Ley Federal del Derecho de Autor, de otra forma, se requerirá permiso previo y por escrito de la UNAM"
+    "copyright": "Hecho en México con ❤️ | © Todos los derechos reservados. Esta página electrónica puede ser reproducida, sin objeto comercial, siempre y cuando su contenido no se mutile o altere, se cite la fuente completa y la dirección Web de conformidad con el artículo 148 de la Ley Federal del Derecho de Autor, de otra forma, se requerirá permiso previo y por escrito de la UNAM."
   }
 }

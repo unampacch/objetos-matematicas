@@ -1,4 +1,5 @@
 ---
+import { BASE_PATH } from "@/config";
 const { nombre, rol, imagen, twitter, github, linkedin, portfolio } = Astro.props;
 import { Icon } from "astro-icon/components";
 ---
@@ -6,7 +7,7 @@ import { Icon } from "astro-icon/components";
 
   {imagen ? (
     <img
-      src={imagen}
+    src={`${BASE_PATH}${imagen}`}
       alt={`Foto de ${nombre}`}
       class="rounded-full size-28 mx-auto mb-4 border-2 border-cyan-400 object-cover group-hover:scale-125 group-hover:-translate-y-2 transition-transform duration-700"
     />

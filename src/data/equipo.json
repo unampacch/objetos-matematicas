@@ -10,14 +10,14 @@
     },
     {
       "nombre": "Karla Gabriela Moreno Vega",
-      "rol": "Diseño web y coordinación académica",
+      "rol": "Diseño web y coordinación editorial",
       "imagen": "/img/devs/kar.webp",
       "github": "https://github.com/KarMoreno"
     },
     {
       "nombre": "Karina Lisset Lavadores Pérez",
       "imagen": "/img/devs/lis.webp",
-      "rol": "Desarrollo y diseño Front-End",
+      "rol": "Integración y diseño Front-End",
       "github": "https://github.com/Lissetperez15"
     }
   ],
@@ -29,27 +29,27 @@
     },
     {
       "nombre": "Luis David Torres Ortuño",
-      "rol": "Desarrollo de contenidos digitales",
+      "rol": "Integración de contenidos digitales",
       "imagen": "/img/devs/david.webp"
     },
     {
       "nombre": "Nataly Rosaly Arteaga Romero",
-      "rol": "Desarrollo de contenidos digitales",
+      "rol": "Integración de contenidos digitales",
       "imagen": "/img/devs/person.png"
     },
     {
-      "nombre": "Tania Lucia Hernandez Santiago",
-      "rol": "Desarrollo de contenidos digitales",
+      "nombre": "Tania Lucía Hernández Santiago",
+      "rol": "Integración de contenidos digitales",
       "imagen": "/img/devs/person.png"
     },
     {
       "nombre": "Pablo Alexander Altamirano Hernández",
-      "rol": "Desarrollo de contenidos digitales",
+      "rol": "Integración de contenidos digitales",
       "imagen": "/img/devs/person.png"
     },
     {
       "nombre": "Daniela Yenedith Trejo Vargas",
-      "rol": "Desarrollo de contenidos digitales",
+      "rol": "Integración de contenidos digitales",
       "imagen": "/img/devs/person.png"
     }
   ],
@@ -98,9 +98,9 @@
     },
     {
       "nombre": "Ma. Emma Bautista García",
-      "rol": "",
+      "rol": "Matemáticas y Estadística",
       "plantel": "Vallejo",
-      "imagen": "/img/randoms/person.png"
+      "imagen": "/img/randoms/ema-bautista.webp"
     },
     {
       "nombre": "Fátima Sandra Rubiales Sánchez",
