@@ -359,10 +359,10 @@
 				},
 				{
 					"titulo": "Funciones exponenciales y logarítmicas",
-					"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/crecimiento-decaimiento",
+					"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/inicio",
 					"portada": "/matematicas4/funciones-exp-logaritmicas/portada-funcion-exp.jpg",
-					"descripcion": "Explora situaciones o fenómenos que corresponden a crecimiento o decaimiento exponencial, las relaciones o condiciones existentes y analiza las formas de variación.",
-					"resumen": "Aquí vas a utilizar las funciones exponencial y logarítmica para representar formas de variación de fenómenos de la naturaleza, y que éstas permitan modelar.",
+					"descripcion": "Al finalizar, el alumno: Utilizará las funciones exponencial y logarítmica para representar formas de variación de fenómenos de la naturaleza, que éstas permitan modelar. Retomará los conceptos de dominio y rango, así como el análisis de las relaciones entre los parámetros de estas funciones y su gráfica.",
+					"resumen": "Funciones exponenciales y logarítmicas y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
 							"titulo": "Comportamiento de funciones exponenciales",
@@ -470,7 +470,7 @@
 					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales del límite de una función en el ámbito de la matemática. Contiene una exploración exhaustiva del límite de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
 					"resumen": "Límite de una función real y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
-						
+
 					]
 				},
 				{

@@ -1,0 +1,25 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import Lumi from '@/components/Lumi.astro'
+import { BASE_PATH } from '@/config'
+---
+<p>Localiza en el siguiente applet las parejas de precios que sugeriste arriba, considera como la coordenada x  el precio de cada pluma y como la coordenada y  el precio de cada lápiz.</p>
+
+      <p>Como puedes notar, existe más de una solución al problema de Diego. De hecho, si definimos como <Latex formula="x" inline /> el precio cada pluma y como <Latex formula="y" inline /> el precio de cada lápiz, podemos modelar el problema por medio de la ecuación <Latex formula="12x+6y=102" inline />.</p>
+      <p>Los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra. Mueve el punto P que se encuentra sobre la recta y explora los diferentes precios que podrían tener cada pluma y cada lápiz.</p>
+
+    <p>Nota que existen soluciones que involucran números negativos; en el contexto del problema esto no tiene sentido, sin embargo, matemáticamente debemos considerarlas.</p>
+    <h3>Problema (Parte II)</h3>
+    <p>En la escuela, Diego se encontró con Paola y le comentó lo que le había ocurrido con su compra en la papelería. Paola se rio y le dijo que a ella le había ocurrido algo parecido; compró 5 plumas y 4 lápices y le cobraron 50 pesos, pero tampoco preguntó el precio de cada cosa.</p>
+    <p>¿Puedes encontrar tres posibles precios para cada pluma y cada lápiz en el caso de Paola?</p>
+    <p>Nuevamente, los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra, ¿puedes encontrar los puntos que representan los precios que consideraste en la pregunta anterior?</p>
+
+  <h3>Problema (Parte III)</h3>
+  <p>Finalmente Paola y Diego se dieron cuenta que podrían conocer el costo de cada pluma y de cada lápiz, pues sólo bastaba encontrar un punto que satisficiera ambas ecuaciones. Gráficamente esto significa encontrar el punto de intersección de las rectas que representan a las ecuaciones.</p>
+
+<p>A una ecuación de la forma <Latex formula="ax+by=c" inline/>, con <Latex formula="a" inline/>, <Latex formula="b" inline/> y <Latex formula="c" inline/> números reales, se le conoce como <em>Ecuación lineal en dos variables</em>, y a un conjunto de dos ecuaciones lineales en dos variables se le conoce como <em>Sistema de Ecuaciones Lineales (SEL) de <Latex formula="2x2" inline/></em>. </p>
+</div>
