@@ -153,15 +153,55 @@ import { BASE_PATH } from '@/config'
           </tbody>
         </table>
       </div>
+      <p>Completa la tabla, de los años 5, 6, 7, y 8. Detalla cada resultado como se muestra en cada recuadro, compara tus resultados dando clic en el botón.</p>
+      <Comprobar>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Años <Latex inline formula="t" /></th>
+                <th>Interés</th>
+                <th>Ganancia 12%</th>
+                <th>Valor</th>
+                <th>Inversión</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td><Latex inline formula='5,619.71 \\cdot 1.12 \\cdot 0.12' /></td>
+                <td> <Latex inline formula='755.28' /></td>
+                <td><Latex inline formula="5,619.71 \\times 1.12 \\times 0.12 + 6,294.07 = 7,049.35 6,294.07 \\times 1.12 = 7,049.35 4000 \\left(1.12\\right)^5 = 7,049.36" /></td>
+                <td><Latex inline formula="7,049.35" /></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><Latex inline formula='6,294.07 (1.12) (0.12)' /></td>
+                <td><Latex inline formula='845.92' /></td>
+                <td><Latex inline formula="6,294.07 \\times 1.12 \\times 0.12 + 7,049.35 = 7,895.27 7,049.35 \\times 1.12 = 7,895.27 4000 \\left(1.12\\right)^6 = 7,895.29" /></td>
+                <td><Latex inline formula="7,895.27" /></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><Latex inline formula='7,049.35 (1.12) (0.12)' /></td>
+                <td><Latex inline formula='947.43' /></td>
+                <td><Latex inline formula="7,049.35 \\times 1.12 \\times 0.12 + 7,895.27 = 8,842.70 7,895.27 \\times 1.12 = 8,842.70 4000 \\left(1.12\\right)^7 = 8,842.72" /></td>
+                <td><Latex inline formula="8,842.70" /></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><Latex inline formula='7,895.27(1.12) (0.12)' /></td>
+                <td><Latex inline formula='1,061.12' /></td>
+                <td><Latex inline formula="7,895.27 \\times 1.12 \\times 0.12 + 8,842.70 = 9,903.82 8,842.70 \\times 1.12 = 9,903.82 4000 \\left(1.12\\right)^8 = 9,903.85" /></td>
+                <td><Latex inline formula="9,903.82" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </Comprobar>
     </div>
     <Lumi
       src=""
-      nombre='2. Completa la tabla'
-      instrucciones='Completa la tabla, de los años 5, 6, 7, y 8. Detalla cada resultado como se muestra en cada recuadro'
-      class='mb-5'
-    />
-    <Lumi
-      src="3."
       nombre='Variables y modelo algebraico'
       instrucciones='Contesta las siguientes preguntas:'
       class='mb-5'
@@ -227,6 +267,37 @@ import { BASE_PATH } from '@/config'
           </tbody>
         </table>
       </div>
+      <p>Completa la tabla, de los años 3, 4, 5, y 6. Detalla cada resultado como se muestra en cada recuadro.</p>
+      <Comprobar>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Años</th>
+                <th>Valor</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3</td>
+                <td><Latex inline formula="169,280 \\times 0.92 = 155,737.60 200,000.00 \\left(0.92\\right)^3 = 155,737.60" /></td>
+                <td><Latex inline formula="155.737.60" /></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><Latex inline formula="155,737.60 \\times 0.92 = 143,278.59 200,000.00 \\left(0.92\\right)^4 = 143,278.59" /></td>
+                <td><Latex inline formula="143,278.59" /></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><Latex inline formula="143,278.59 \\times 0.92 = 131,817.10 200,000.00 \\left(0.92\\right)^5 = 131,817.10" /></td>
+                <td><Latex inline formula="131,817.10" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </Comprobar>
     </div>
     <Lumi
       src=""
