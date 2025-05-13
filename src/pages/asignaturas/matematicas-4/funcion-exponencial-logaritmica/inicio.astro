@@ -5,6 +5,7 @@ import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import ImagenCaption from '@/components/ImagenCaption.astro'
 import BgFluido from '@/components/BgFluido.astro'
 import Lumi from '@/components/Lumi.astro'
+import Comprobar from '@/components/Comprobar.astro'
 import { BASE_PATH } from '@/config'
 ---
 
@@ -198,6 +199,108 @@ import { BASE_PATH } from '@/config'
       <h4>1.</h4>
       <p>Para resolver el problema se te sugiere que primero completes la siguiente tabla, para ello considera:</p>
       <p class="text-center text-2xl"><Latex formula='\\frac{\\textbf{Depreciación en el primer año}} {\\textbf{Valor del automóvil}}' /></p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Años</th>
+              <th>Valor</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline formula="0" /></td>
+              <td></td>
+              <td><Latex inline formula='200,000.00' /></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><Latex inline formula="200,000.00 \\times 0.08 - 16,000 = 184,000 200,000.00 \\times 0.92 = 184,000" /></td>
+              <td><Latex inline formula="184,000.00" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><Latex inline formula="184,000 \\times 0.92 = 169,280.00 200,000.00 \\left(0.92\\right)^2 = 169,280.00" /></td>
+              <td><Latex inline formula="169,280.00" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <Lumi
+      src=""
+      nombre='Completa la tabla'
+      instrucciones='Contesta las siguientes preguntas:'
+      class='mb-5'
+    />
+    <Lumi
+      src=""
+      nombre='Responde las preguntas'
+      instrucciones='Contesta las siguientes preguntas:'
+      class='mb-5'
+    />
+    <div class="mx-auto max-w-screen-xl mb-10">
+      <h3>Actividad 3</h3>
+      <p>Una tarjeta de crédito común tiene un interés anual de 48% compuesto mensualmente. Si se realiza una compra de $ 400.00 y no se hace ningún pago durante un año, ¿cuál será la deuda al final del año?, ¿cuál será la deuda al cabo de 4, 5, 6, 7 y 8 meses?</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Años</th>
+              <th>Valor</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline formula="0" /></td>
+              <td></td>
+              <td><Latex inline formula='200,000.00' /></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><Latex inline formula="200,000.00 \\times 0.08 - 16,000 = 184,000 200,000.00 \\times 0.92 = 184,000" /></td>
+              <td><Latex inline formula="184,000.00" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><Latex inline formula="184,000 \\times 0.92 = 169,280.00 200,000.00 \\left(0.92\\right)^2 = 169,280.00" /></td>
+              <td><Latex inline formula="169,280.00" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <Comprobar>
+        <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Años</th>
+              <th>Valor</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline formula="0" /></td>
+              <td></td>
+              <td><Latex inline formula='200,000.00' /></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><Latex inline formula="200,000.00 \\times 0.08 - 16,000 = 184,000 200,000.00 \\times 0.92 = 184,000" /></td>
+              <td><Latex inline formula="184,000.00" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><Latex inline formula="184,000 \\times 0.92 = 169,280.00 200,000.00 \\left(0.92\\right)^2 = 169,280.00" /></td>
+              <td><Latex inline formula="169,280.00" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </Comprobar>
     </div>
   </div>
 
