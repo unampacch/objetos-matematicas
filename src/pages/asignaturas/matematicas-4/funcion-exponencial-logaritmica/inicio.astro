@@ -14,7 +14,7 @@ import { BASE_PATH } from '@/config'
   <ObjetoAprendizaje index={5} asignatura={"matematicas_4"} />
   <div class="objeto-aprendizaje mx-auto animate-fade">
     <BgFluido bg="bg-red">
-      <div class="max-w-screen-sm mx-auto"><img src={`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/puma1.jpg`}></div>
+      <div class="max-w-screen-sm mx-auto"><img src={`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/puma1.webp`}></div>
     </BgFluido>
     <div class="mx-auto max-w-screen-xl mb-10">
       <h3>Crecimiento o decaimiento exponencial</h3>
@@ -256,12 +256,12 @@ import { BASE_PATH } from '@/config'
             </tr>
             <tr>
               <td>1</td>
-              <td><Latex inline formula="200,000.00 \\times 0.08 - 16,000 = 184,000 200,000.00 \\times 0.92 = 184,000" /></td>
+              <td><Latex inline formula="200,000.00 \\times 0.08 - 16,000 = 184,000 \\newline 200,000.00 \\times 0.92 = 184,000" /></td>
               <td><Latex inline formula="184,000.00" /></td>
             </tr>
             <tr>
               <td>2</td>
-              <td><Latex inline formula="184,000 \\times 0.92 = 169,280.00 200,000.00 \\left(0.92\\right)^2 = 169,280.00" /></td>
+              <td><Latex inline formula="184,000 \\times 0.92 = 169,280.00 \\newline 200,000.00 \\left(0.92\\right)^2 = 169,280.00" /></td>
               <td><Latex inline formula="169,280.00" /></td>
             </tr>
           </tbody>
@@ -281,18 +281,23 @@ import { BASE_PATH } from '@/config'
             <tbody>
               <tr>
                 <td>3</td>
-                <td><Latex inline formula="169,280 \\times 0.92 = 155,737.60 200,000.00 \\left(0.92\\right)^3 = 155,737.60" /></td>
+                <td><Latex inline formula="169,280 \\times 0.92 = 155,737.60 \\newline \\newline 200,000.00 \\left(0.92\\right)^3 = 155,737.60" /></td>
                 <td><Latex inline formula="155.737.60" /></td>
               </tr>
               <tr>
                 <td>4</td>
-                <td><Latex inline formula="155,737.60 \\times 0.92 = 143,278.59 200,000.00 \\left(0.92\\right)^4 = 143,278.59" /></td>
+                <td><Latex inline formula="155,737.60 \\times 0.92 = 143,278.59 \\newline 200,000.00 \\left(0.92\\right)^4 = 143,278.59" /></td>
                 <td><Latex inline formula="143,278.59" /></td>
               </tr>
               <tr>
                 <td>5</td>
-                <td><Latex inline formula="143,278.59 \\times 0.92 = 131,817.10 200,000.00 \\left(0.92\\right)^5 = 131,817.10" /></td>
+                <td><Latex inline formula="143,278.59 \\times 0.92 = 131,817.10 \\newline 200,000.00 \\left(0.92\\right)^5 = 131,817.10" /></td>
                 <td><Latex inline formula="131,817.10" /></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><Latex inline formula="131,817.10 \\times 0.92 = 121,364.14 \\newline 200,000.00 \\left(0.92\\right)^6 = 121,364.14" /></td>
+                <td><Latex inline formula="121,364.14" /></td>
               </tr>
             </tbody>
           </table>
@@ -301,78 +306,117 @@ import { BASE_PATH } from '@/config'
     </div>
     <Lumi
       src=""
-      nombre='Completa la tabla'
-      instrucciones='Contesta las siguientes preguntas:'
-      class='mb-5'
-    />
-    <Lumi
-      src=""
       nombre='Responde las preguntas'
       instrucciones='Contesta las siguientes preguntas:'
       class='mb-5'
     />
-    <div class="mx-auto max-w-screen-xl mb-10">
+    <div class="mx-auto max-w-screen-xl my-10">
       <h3>Actividad 3</h3>
       <p>Una tarjeta de crédito común tiene un interés anual de 48% compuesto mensualmente. Si se realiza una compra de $ 400.00 y no se hace ningún pago durante un año, ¿cuál será la deuda al final del año?, ¿cuál será la deuda al cabo de 4, 5, 6, 7 y 8 meses?</p>
       <div class="table-responsive">
         <table class="table">
           <thead>
             <tr>
-              <th>Años</th>
-              <th>Valor</th>
-              <th>Valor</th>
+              <th>mes</th>
+              <th>Interés</th>
+              <th>Interés</th>
+              <th>Deuda</th>
+              <th>Deuda</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><Latex inline formula="0" /></td>
               <td></td>
-              <td><Latex inline formula='200,000.00' /></td>
+              <td><Latex inline formula="0" /></td>
+              <td></td>
+              <td><Latex inline formula='400' /></td>
             </tr>
             <tr>
               <td>1</td>
-              <td><Latex inline formula="200,000.00 \\times 0.08 - 16,000 = 184,000 200,000.00 \\times 0.92 = 184,000" /></td>
-              <td><Latex inline formula="184,000.00" /></td>
+              <td><Latex inline formula="400(0.48)" /></td>
+              <td><Latex inline formula="192" /></td>
+              <td> <Latex inline formula="400 \\times 0.48 + 400 = 400 \\times (0.48+1)" /> </td>
+              <td><Latex inline formula="592" /></td>
             </tr>
             <tr>
               <td>2</td>
-              <td><Latex inline formula="184,000 \\times 0.92 = 169,280.00 200,000.00 \\left(0.92\\right)^2 = 169,280.00" /></td>
-              <td><Latex inline formula="169,280.00" /></td>
+              <td><Latex inline formula="400 \\times (0.48+1) \\times 0.48" /></td>
+              <td><Latex inline formula="284.16" /></td>
+              <td> <Latex inline formula="400 \\times (0.48+1) \\times 0.48 + 400 \\times (0.48+1) = 400 \\times (0.48+1) \\times (0.48+1)" /> </td>
+              <td><Latex inline formula="876.16" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><Latex inline formula="400 \\times (0.48+1)^3 \\times 0.48" /></td>
+              <td><Latex inline formula="420.55" /></td>
+              <td> <Latex inline formula="400 \\times (0.48+1)^3" /> </td>
+              <td><Latex inline formula="1296.71" /></td>
             </tr>
           </tbody>
         </table>
       </div>
       <Comprobar>
         <div class="table-responsive">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Años</th>
-              <th>Valor</th>
-              <th>Valor</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><Latex inline formula="0" /></td>
-              <td></td>
-              <td><Latex inline formula='200,000.00' /></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td><Latex inline formula="200,000.00 \\times 0.08 - 16,000 = 184,000 200,000.00 \\times 0.92 = 184,000" /></td>
-              <td><Latex inline formula="184,000.00" /></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td><Latex inline formula="184,000 \\times 0.92 = 169,280.00 200,000.00 \\left(0.92\\right)^2 = 169,280.00" /></td>
-              <td><Latex inline formula="169,280.00" /></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>mes</th>
+                <th>Interés</th>
+                <th>Interés</th>
+                <th>Deuda</th>
+                <th>Deuda</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^3 \\times 0.48" /></td>
+                <td><Latex inline formula="921.18" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^4" /> </td>
+                <td><Latex inline formula="1,919.14" /></td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^4 \\times 0.48" /></td>
+                <td><Latex inline formula="1,363.35" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^5" /> </td>
+                <td><Latex inline formula="2,840.32" /></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^5 \\times 0.48" /></td>
+                <td><Latex inline formula="2,017.76" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^6" /> </td>
+                <td><Latex inline formula="4,203.68" /></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^6 \\times 0.48" /></td>
+                <td><Latex inline formula="2,986.29" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^7" /> </td>
+                <td><Latex inline formula="6,221.45" /></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^7 \\times 0.48" /></td>
+                <td><Latex inline formula="4,419.72" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^8" /> </td>
+                <td><Latex inline formula="9,207.75" /></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
       </Comprobar>
     </div>
+    <Lumi
+      src=""
+      nombre='Responde las preguntas'
+      instrucciones='Contesta las siguientes preguntas:'
+      class='mb-5'
+    />
   </div>
 
 </Layout>
