@@ -901,6 +901,190 @@ import ResalteOutline from '@/components/ResalteOutline.astro'
           <li>En la tercera función se multiplica el parámetro <Latex inline formula='a' />  por 7</li>
         </ul>
       </Comprobar>
+      <h4 class="!text-3xl my-10"><strong class="uppercase">Funciones de la forma</strong> <Latex inline formula='f(x) = b^{(x+h)}' /></h4>
+      <h4>En la <Latex inline formula='f(x) = b^{(x+h)}' /> el dominio y el rango son los mismos que <Latex inline formula='b^{x}' /></h4>
+      <ul class="ul-disc">
+        <li>El Dominio de la función es <Latex inline formula='(-\\infty, \\infty)' /></li>
+        <li>El Rango es <Latex inline formula='(-\\infty, 0)' /></li>
+        <li>Si <Latex inline formula='h>0' /> se traslada a la izquierda h-unidades </li>
+        <li>Si <Latex inline formula='h<0' /> se traslada a la derecha h-unidades</li>
+      </ul>
+      <h4>En la  <Latex inline formula='h(x) = b^{x}+k' /> se le aplica una traslación</h4>
+      <ul class="ul-disc">
+        <li>Si <Latex inline formula='k>0' /> hacia arriba </li>
+        <li>Si <Latex inline formula='k<0' /> hacia abajo</li>
+        <li>El Dominio de la función es <Latex inline formula='(-\\infty, \\infty)' /></li>
+        <li>El Rango es <Latex inline formula='(K, -\\infty)' /></li>
+      </ul>
+      <h4>Ejemplo</h4>
+      <ImagenCaption
+        src="/matematicas4/funciones-exp-logaritmicas/p2-funciones-exponenciales-3.webp"
+        caption='Funciones con traslación Derecha e Izquierda Elaboró: Ma. Emma Bautista García'
+      />
+      <div class="table-responsive my-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th rowspan="3">Funciones</th>
+              <th>Traslación a la Derecha o Izquierda</th>
+            </tr>
+            <tr>
+              <td class="text-center"><Latex inline formula='h>0' /> se traslada a la izquierda</td>
+            </tr>
+            <tr>
+              <td class="text-center"><Latex inline formula='h<0' /> se traslada a la derecja</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex formula='f(x)=5^{x+3} ' /></td>
+              <td class="flex justify-around"><Latex formula='x+3=0' /><Latex formula='x=-3' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='g(x)=5^{x+2} ' /></td>
+              <td class="flex justify-around"><Latex formula='x+2=0' /><Latex formula='x=-2' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='h(x)=5^{x} ' /></td>
+              <td class="flex justify-around"><Latex formula='x=0' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='j(x)=5^{x-2} ' /></td>
+              <td class="flex justify-around"><Latex formula='x-2=0' /><Latex formula='x=2' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='k(x)=5^{x-3} ' /></td>
+              <td class="flex justify-around"><Latex formula='x-3=0' /><Latex formula='x=3' /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-10">
+        <ImagenCaption
+          src="/matematicas4/funciones-exp-logaritmicas/p2-funciones-exponenciales-4.webp"
+          caption='Funciones con traslación hacia arriba o abajo Elaboró: Ma. Emma Bautista García'
+        />
     </div>
+    <div class="table-responsive my-10">
+      <table class="table">
+        <thead>
+          <tr>
+            <th rowspan="3">Funciones</th>
+            <th>Traslación hacia Arriba o Abajo</th>
+          </tr>
+          <tr>
+            <td class="text-center"><Latex inline formula='k>0' /> se traslada hacia arriba</td>
+          </tr>
+          <tr>
+            <td class="text-center"><Latex inline formula='k<0' /> se traslada hacia abajo</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><Latex formula='f(x)=5^{x}+3 ' /></td>
+            <td class="flex justify-around"><Latex formula='y = 0 + 3 = 3' /><Latex formula='y=3' /></td>
+          </tr>
+          <tr>
+            <td><Latex formula='g(x)=5^{x}+2 ' /></td>
+            <td class="flex justify-around"><Latex formula='y = 0 + 2 = 2' /><Latex formula='y=2' /></td>
+          </tr>
+          <tr>
+            <td><Latex formula='h(x)=5^{x} ' /></td>
+            <td class="flex justify-center"><Latex formula='y=0' /></td>
+          </tr>
+          <tr>
+            <td><Latex formula='j(x)=5^{x}-2 ' /></td>
+            <td class="flex justify-around"><Latex formula='y = 0 - 2 = -2' /><Latex formula='y=-2' /></td>
+          </tr>
+          <tr>
+            <td><Latex formula='k(x)=5^{x}-3 ' /></td>
+            <td class="flex justify-around"><Latex formula='y = 0 - 3 = -3' /><Latex formula='y=-3' /></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <h4>Actividad 4</h4>
+    <ol class="ol-number">
+      <li>
+
+        <p>Elabora una tabla con la función , considera para x, los valores de -4 a 4.</p>
+        <Comprobar>
+          <p>Solución:</p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><Latex formula='x' /></th>
+                  <th><Latex formula='f\\left(x\\right)=7^{x} ' /></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>-4</td>
+                  <td>0.000416493</td>
+                </tr>
+                <tr>
+                  <td>-3</td>
+                  <td>0.002915452</td>
+                </tr>
+                <tr>
+                  <td>-2</td>
+                  <td>0.020408163</td>
+                </tr>
+                <tr>
+                  <td>-1</td>
+                  <td>0.142857143</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>49</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>343</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2401</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </Comprobar>
+      </li>
+      <li>
+        <p>Identifica si la gráfica de la función <Latex inline formula='f(x)=7^x ' /> es falsa o verdadera</p>
+        <ImagenCaption
+          src="/matematicas4/funciones-exp-logaritmicas/p2-funciones-exponenciales-5.webp"
+          caption='Gráfica Elaboró: Ma. Emma Bautista García'
+        />
+        <Comprobar>
+          <p>Solución:</p>
+          <p class="text-center text-2xl text-red font-bold">Es verdadera</p>
+        </Comprobar>
+      </li>
+      <li>
+        <p>¿Cuál es el dominio de la función <Latex inline formula='f(x)=7^x ' /> </p>
+        <Comprobar>
+          <p>Solución:</p>
+          <p class="text-center text-2xl text-red font-bold"><Latex inline formula='(-\\infty, \\infty)' /></p>
+        </Comprobar>
+      </li>
+    </ol>
   </div>
+  <Lumi
+    src=''
+    nombre='Da respuesta a las siguientes preguntass'
+  />
 </Layout>
