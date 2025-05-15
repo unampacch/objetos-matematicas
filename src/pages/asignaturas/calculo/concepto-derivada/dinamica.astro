@@ -1,0 +1,29 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+---
+
+<Layout>
+
+    <ObjetoAprendizajePantalla index={3} pantallaIndex={0} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl mb-10">
+        <p>La derivada, cuando es interpretada como recta tangente, nos permite entender la dinámica de una función, es decir, averiguar cómo es su comportamiento: creciente, decreciente o constante.</p>
+        <p>Una herramienta útil para este propósito se conoce como el diagrama fase. En el siguiente video te platicamos cómo explotar esta herramienta en la comprensión de la dinámica de una función.</p>
+        <p class="text-2xl text-center rojo my-10"><a href="https://www.loom.com/share/3600936e8bd147a3a88406afe52c4d0c?sid=0acb14b4-8e2e-43bb-8d22-7900dfe5c520" target="_blank">Herramientas para analizar la dinámica de una función con la derivada</a></p>
+        <h3>Para practicar</h3>
+        <p>Encuentra la derivada de las siguientes funciones. Usa GeoGebra para encontrar la gráfica y la aplicación de DFIELD para encontrar el diagrama fase.</p>
+        <p>Con base en ello determina: a) las regiones de crecimiento, b) las regiones de decrecimiento, c) Los puntos donde la derivada se anula.</p>
+        <ol class="ol-alpha my-10 text-2xl">
+          <li><Latex formula="f(x)=x^2+3x-1" /></li>
+          <li><Latex formula="f(x)=-x^2-x+4" /></li>
+          <li><Latex formula="f(x)=-x^3+x^2" /></li>
+          <li><Latex formula="f(x)=2\\sqrt{x}+1" /></li>
+          <li><Latex formula="f(x)=\\frac{3}{x^2+1}" /></li>
+        </ol>
+      </div>
+    </div>
+
+</Layout>

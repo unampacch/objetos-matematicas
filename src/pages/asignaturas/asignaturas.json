@@ -378,16 +378,6 @@
 							"titulo": "Noción de función inversa",
 							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/funcion-inversa",
 							"descripcion": "Analiza la relación entre las gráficas de funciones exponenciales con diferentes bases."
-						},
-						{
-							"titulo": "Logaritmos con base 10 y naturales",
-							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/logaritmos-base-10",
-							"descripcion": "Analiza la relación entre las gráficas de funciones exponenciales con diferentes bases."
-						},
-						{
-							"titulo": "Gráficas de funciones logarítmicas",
-							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/graficas-funciones-logaritmicas",
-							"descripcion": "Analiza la relación entre las gráficas de funciones exponenciales con diferentes bases."
 						}
 					]
 				},
@@ -475,24 +465,19 @@
 				},
 				{
 					"titulo": "Concepto de derivada, su interpretación geométrica",
-					"slug": "/asignaturas/calculo/derivada-interpretacion",
-					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de la derivada y su interpretación geométrica en el ámbito de la matemática. Contiene una exploración exhaustiva de la derivada de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
+					"slug": "/asignaturas/calculo/concepto-derivada/inicio",
+					"portada": "/calculo/concepto-derivada/concepto-derivada-portada.webp",
+					"descripcion": "Identifica a la derivada de una función polinomial en un punto como el límite de las razones de cambio promedio.",
 					"resumen": "Derivada de una función real y su interpretación geométrica en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de derivada",
-							"slug": "/asignaturas/calculo/derivada-interpretacion/derivada",
+							"titulo": "Dinámica de la derivada",
+							"slug": "/asignaturas/calculo/concepto-derivada/dinamica",
 							"descripcion": "Definición y propiedades de la derivada de una función real."
 						},
 						{
-							"titulo": "Interpretación geométrica de la derivada",
-							"slug": "/asignaturas/calculo/derivada-interpretacion/interpretacion",
-							"descripcion": "Interpretación geométrica de la derivada de una función real y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Reglas de derivación",
-							"slug": "/asignaturas/calculo/derivada-interpretacion/reglas",
+							"titulo": "Derivable o no derivable",
+							"slug": "/asignaturas/calculo/concepto-derivada/derivable-o-no",
 							"descripcion": "Reglas de derivación de funciones reales y su aplicación en la resolución de problemas matemáticos."
 						}
 					]
