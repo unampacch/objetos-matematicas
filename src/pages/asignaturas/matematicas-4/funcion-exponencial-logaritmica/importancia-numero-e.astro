@@ -1,0 +1,276 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import ResalteBlanco from '@/components/ResalteBlanco.astro'
+import Comprobar from '@/components/Comprobar.astro'
+import ResalteOutline from '@/components/ResalteOutline.astro'
+---
+
+<Layout>
+	<ObjetoAprendizajePantalla index={5} pantallaIndex={1} asignatura={'matematicas_4'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+      <p>El número <Latex inline formula='e' />, conocido como número de Euler, es un número irracional muy importante, su valor es:  <Latex inline formula='e=2.71828182845...' />, A las funciones exponenciales con base <Latex inline formula='e' /> se les conoce como e<strong>xponenciales naturales</strong>: </p>
+      <p class="text-center text-2xl my-10"><Latex inline formula='f(x)=e^x' /></p>
+      <p>Donde <Latex inline formula='x' /> es un número real. </p>
+      <p>Analicemos la función exponencial, para ello vamos a construir una tabla y gráfica</p>
+      <div class="table-responsive my-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"><Latex inline formula='x' /></th>
+              <th scope="col"><Latex inline formula='-4' /></th>
+              <th scope="col"><Latex inline formula='-3' /></th>
+              <th scope="col"><Latex inline formula='-2' /></th>
+              <th scope="col"><Latex inline formula='-1' /></th>
+              <th scope="col"><Latex inline formula='0' /></th>
+              <th scope="col"><Latex inline formula='1' /></th>
+              <th scope="col"><Latex inline formula='2' /></th>
+              <th scope="col"><Latex inline formula='3' /></th>
+              <th scope="col"><Latex inline formula='4' /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><Latex inline formula='f(x)' /></th>
+              <td><Latex inline formula='0.0183' /></td>
+              <td><Latex inline formula='0.0498' /></td>
+              <td><Latex inline formula='0.1353' /></td>
+              <td><Latex inline formula='0.3679' /></td>
+              <td><Latex inline formula='1' /></td>
+              <td><Latex inline formula='2.7183' /></td>
+              <td><Latex inline formula='7.3891' /></td>
+              <td><Latex inline formula='20.0855' /></td>
+              <td><Latex inline formula='54.5982' /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ImagenCaption
+      src="/matematicas4/funciones-exp-logaritmicas/p3-funciones-numeroe-1.webp"
+      caption="Tabla de la función exponencial Elaboró: Ma. Emma Bautista García"
+      />
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Características</th>
+              <th><Latex formula='f(x)=e^x' /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dominio de la función</td>
+              <td><Latex formula='(-\\infty, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Rango</td>
+              <td><Latex formula='(0, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Ecuación de la asíntota</td>
+              <td><Latex formula='y = 0' /></td>
+            </tr>
+            <tr>
+              <td>¿La función es creciente, constante o decreciente?</td>
+              <td>Creciente</td>
+            </tr>
+            <tr>
+              <td>Concavidad</td>
+              <td>Cóncava hacia arriba</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>La gráfica de <Latex inline formula='f(x)=e^x' /> es de la misma forma que las gráficas de crecimiento exponencial: </p>
+      <div class="w-full flex justify-around">
+        <Latex inline formula='f(x)=b^x ' />,<Latex inline formula='f(x)=b^{(x+h)}  ' /> y <Latex inline formula='h(x)=b^x+k  ' />
+      </div>
+      <p>Función de la forma <Latex inline formula='f(x)=e^{2x}=(e^2)^x ' /> presenta un coeficiente multiplicando a la variable independiente, o bien se pueden aplicar las propiedades de las potencias <Latex inline formula='a^{bc} = (a^b)^c' /> . Elaboramos la tabla, gráfica y determinamos las características para ubicarla adecuadamente</p>
+      <div class="table-responsive my-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><Latex formula='x'/></th>
+              <th><Latex formula='f(x)=e^{2x}=(e^2)^x '/></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline formula='-4' /></td>
+              <td><Latex inline formula='0.000335463' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='-3' /></td>
+              <td><Latex inline formula='0.002478752' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='-2' /></td>
+              <td><Latex inline formula='0.018315639' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='-1' /></td>
+              <td><Latex inline formula='0.135335283' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='0' /></td>
+              <td><Latex inline formula='1' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='1' /></td>
+              <td><Latex inline formula='7.389056099' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='2' /></td>
+              <td><Latex inline formula='54.59815003' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='3' /></td>
+              <td><Latex inline formula='403.4287935' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='4' /></td>
+              <td><Latex inline formula='2980.957987' /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ImagenCaption
+      src="/matematicas4/funciones-exp-logaritmicas/p3-funciones-numeroe-2.webp"
+      caption="Tabla de la función exponencial Elaboró: Ma. Emma Bautista García"
+      />
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Características</th>
+              <th><Latex formula='f(x)=e^{2x}=(e^2)^x ' /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dominio de la función</td>
+              <td><Latex formula='(-\\infty, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Rango</td>
+              <td><Latex formula='(0, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Ecuación de la asíntota</td>
+              <td><Latex formula='y = 0' /></td>
+            </tr>
+            <tr>
+              <td>¿La función es creciente, constante o decreciente?</td>
+              <td>Creciente</td>
+            </tr>
+            <tr>
+              <td>Concavidad</td>
+              <td>Cóncava hacia arriba</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>La función <Latex inline formula='f(x)=-3(e^{x+7}) '/>combina dos tipos de transformaciones.</p>
+      <ul class="ul-disc">
+        <li>La base es, en todos los casos, un real positivo distinto de 1.</li>
+        <li>El signo menos es del coeficiente que multiplica a la función, se puede considerar como una reflexión vertical de la función original,</li>
+        <li>Elaboramos la tabla, gráfica y determinamos las características para ubicarla adecuadamente</li>
+      </ul>
+      <div class="table-responsive my-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><Latex formula='x'/></th>
+              <th><Latex formula='f(x)=-3(e^{x+7}) '/></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline formula='-4' /></td>
+              <td><Latex inline formula='-60.25661077' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='-3' /></td>
+              <td><Latex inline formula='-163.7944501' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='-2' /></td>
+              <td><Latex inline formula='-445.2394773' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='-1' /></td>
+              <td><Latex inline formula='-1210.28638' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='0' /></td>
+              <td><Latex inline formula='-3289.899475' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='1' /></td>
+              <td><Latex inline formula='-8942.873961' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='2' /></td>
+              <td><Latex inline formula='-24309.25178' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='3' /></td>
+              <td><Latex inline formula='-66079.39738' /></td>
+            </tr>
+            <tr>
+              <td><Latex inline formula='4' /></td>
+              <td><Latex inline formula='-179622.4251' /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ImagenCaption
+      src="/matematicas4/funciones-exp-logaritmicas/p3-funciones-numeroe-3.webp"
+      caption="Tabla de la función exponencial Elaboró: Ma. Emma Bautista García"
+      />
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Características</th>
+              <th><Latex formula='f(x)=-3(e^{x+7}) '/></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dominio de la función</td>
+              <td><Latex formula='(-\\infty, -\\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Rango</td>
+              <td><Latex formula='(0, -\\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Ecuación de la asíntota</td>
+              <td><Latex formula='y = 0' /></td>
+            </tr>
+            <tr>
+              <td>¿La función es creciente, constante o decreciente?</td>
+              <td>Decreciente</td>
+            </tr>
+            <tr>
+              <td>Concavidad</td>
+              <td>Cóncava hacia abajo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <Lumi
+      src=""
+      nombre="Número e"
+      instrucciones="Lee con cuidado cada pregunta y da respuesta a cada una de ellas."
+    />
+  </div>
+</Layout>

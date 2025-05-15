@@ -1,52 +1,422 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import Latex from "@/components/Latex.astro";
-import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
 import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import Lumi from '@/components/Lumi.astro'
+import Comprobar from '@/components/Comprobar.astro'
+import { BASE_PATH } from '@/config'
 ---
 
-<Layout
-  title="Funciones exponenciales y logarítmicas."
-  description="Aquí vas a utilizar las funciones exponencial y logarítmica para representar formas de variación de fenómenos de la naturaleza, y que éstas permitan modelar."
->
+<Layout>
 
-    <ObjetoAprendizaje index={5} asignatura={"matematicas_4"} />
-    <div class="objeto-aprendizaje mx-auto animate-fade">
-      <div class="mx-auto max-w-screen-xl">
-        <h3>Crecimiento o decaimiento exponencial</h3>
-        <h4>Introducción</h4>
-        <p>El crecimiento exponencial lo podemos observar en la vida cotidiana en las poblaciones de personas, bacterias o animales, ejemplo una familia de pollos, como se muestra en la imagen.</p>
-          <p>La función exponencial crece muy rápido para valores positivos de <Latex formula="x" inline={true}/>.</p>
-          <ImagenCaption src="../matematicas4/funciones-exp-logaritmicas/puma1.jpg" caption="Bienvenidxs a este tema" border={true} />
-
-
-
-
-        <p>Localiza en el siguiente applet las parejas de precios que sugeriste arriba, considera como la coordenada x  el precio de cada pluma y como la coordenada y  el precio de cada lápiz.</p>
-
-      <p>Como puedes notar, existe más de una solución al problema de Diego. De hecho, si definimos como <Latex
-        formula="x"
-        inline={true}
-      /> el precio cada pluma y como <Latex
-      formula="y"
-      inline={true}
-    /> el precio de cada lápiz, podemos modelar el problema por medio de la ecuación <Latex
-    formula="12x+6y=102"
-    inline={true}
-  />.</p>
-      <p>Los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra. Mueve el punto P que se encuentra sobre la recta y explora los diferentes precios que podrían tener cada pluma y cada lápiz.</p>
-
-    <p>Nota que existen soluciones que involucran números negativos; en el contexto del problema esto no tiene sentido, sin embargo, matemáticamente debemos considerarlas.</p>
-    <h3>Problema (Parte II)</h3>
-    <p>En la escuela, Diego se encontró con Paola y le comentó lo que le había ocurrido con su compra en la papelería. Paola se rio y le dijo que a ella le había ocurrido algo parecido; compró 5 plumas y 4 lápices y le cobraron 50 pesos, pero tampoco preguntó el precio de cada cosa.</p>
-    <p>¿Puedes encontrar tres posibles precios para cada pluma y cada lápiz en el caso de Paola?</p>
-    <p>Nuevamente, los puntos que satisfacen esta ecuación están representados por una recta, como se muestra en el siguiente applet de GeoGebra, ¿puedes encontrar los puntos que representan los precios que consideraste en la pregunta anterior?</p>
-
-  <h3>Problema (Parte III)</h3>
-  <p>Finalmente Paola y Diego se dieron cuenta que podrían conocer el costo de cada pluma y de cada lápiz, pues sólo bastaba encontrar un punto que satisficiera ambas ecuaciones. Gráficamente esto significa encontrar el punto de intersección de las rectas que representan a las ecuaciones.</p>
-
-<p>A una ecuación de la forma <Latex formula="ax+by=c" inline={true}/>, con <Latex formula="a" inline={true}/>, <Latex formula="b" inline={true}/> y <Latex formula="c" inline={true}/> números reales, se le conoce como <em>Ecuación lineal en dos variables</em>, y a un conjunto de dos ecuaciones lineales en dos variables se le conoce como <em>Sistema de Ecuaciones Lineales (SEL) de <Latex formula="2x2" inline={true}/></em>. </p>
-</div>
+  <ObjetoAprendizaje index={5} asignatura={"matematicas_4"} />
+  <div class="objeto-aprendizaje mx-auto animate-fade">
+    <BgFluido bg="bg-red">
+      <div class="max-w-screen-sm mx-auto"><img src={`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/puma1.webp`}></div>
+    </BgFluido>
+    <div class="mx-auto max-w-screen-xl mb-10">
+      <h3>Crecimiento o decaimiento exponencial</h3>
+      <h4>Introducción</h4>
+      <p>El crecimiento exponencial lo podemos observar en la vida cotidiana en las poblaciones de personas, bacterias o animales, ejemplo una familia de pollos, como se muestra en la imagen.</p>
+      <p>La función exponencial crece muy rápido para valores positivos de <Latex formula="x" inline/>.</p>
+      <ImagenCaption src="/matematicas4/funciones-exp-logaritmicas/imagen1.jpg" caption="Una familia de pollos" border={false} />
+      <p class="mt-5">Otro ejemplo son el valor de una inversión cuando se reinvierten los intereses, el crecimiento demográfico, y la depreciación o decaimiento; todos se apegan al modelo exponencial.</p>
+      <p>Para ilustrar cómo puede aparecer una función exponencial, analizaremos algunos problemas de interés compuesto. </p>
+      <h4 class="mt-5">Actividad 1</h4>
+      <p>Supongamos que inviertes $4,000.00 en un fondo de inversión que te garantiza un 12% al año, capitalizado anualmente.</p>
+      <h4>1.</h4>
+      <p>En la siguiente tabla, se muestra el valor de una inversión en un período de 7 años:</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Años <Latex inline formula="t" /></th>
+              <th>Interés</th>
+              <th>Ganancia 12%</th>
+              <th>Valor</th>
+              <th>Inversión</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>4,000</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>4,000(0.12)</td>
+              <td>480</td>
+              <td>
+                <ul class="ul">
+                  <li>4,000 (0.12) + 4000= 4,480</li>
+                  <li>4,000 (1.12) = 4,480</li>
+                </ul>
+              </td>
+              <td>4,480</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>4,000(1.12) (0.12)</td>
+              <td>537.60</td>
+              <td>
+                <ul class="ul">
+                  <li>4,000 (1.12) (0.12) + 4,480= 5,017.60</li>
+                  <li>4,480 (1.12) = 5,017.60</li>
+                </ul>
+              </td>
+              <td>5,017.60</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Suponiendo que dividimos el valor de la inversión de cada año entre la inversión del año anterior. </p>
+      <div class="table-responsive2">
+        <table class="table2">
+          <thead>
+            <tr>
+              <th>Primer año</th>
+              <th>Segundo año</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-darkblue"><Latex inline formula="\\frac{\\text{Inversión en el primer año}}{\\text{inversión inicial}} = \\frac{4,480}{4,000} = 1.12" /></td>
+              <td class="text-darkblue"><Latex inline formula="\\text{Inversión en el segundo año} = \\frac{5,017.60}{4,480} = 1.12" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Encontramos el valor 1.12, siendo el valor de la inversión de cada año. Así, por cada aumento de 1 en <Latex inline formula='t' />, <Latex inline formula='V' /> se multiplica por 1.12.</p>
+      <p>A continuación, se muestra en la tabla, en la fila del valor, distintas de encontrar el resultado, esto con el objetivo de notar la importancia de elevar un numero a un exponente. </p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Años <Latex inline formula="t" /></th>
+              <th>Interés</th>
+              <th>Ganancia 12%</th>
+              <th>Valor</th>
+              <th>Inversión</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline formula="0" /></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><Latex inline formula="4,000" /></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><Latex inline formula="4,000(0.12)" /></td>
+              <td><Latex inline formula="480" /></td>
+              <td>
+                <p><Latex inline formula="4,000 (0.12) + 4000= 4,480" /></p>
+                <p><Latex inline formula="4,000 (1.12) = 4,480" /></p>
+              </td>
+              <td><Latex inline formula="4,480" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><Latex inline formula="4,000(1.12) (0.12)" /></td>
+              <td><Latex inline formula="537.60" /></td>
+              <td>
+                <p><Latex inline formula="4,000 (1.12) (0.12) + 4,480= 5,017.60" /></p>
+                <p><Latex inline formula="4,480 (1.12) = 5,017.60" /></p>
+              </td>
+              <td><Latex inline formula="5,017.60" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><Latex inline formula="4,480 \\cdot 1.12 \\cdot 0.12" /></td>
+              <td><Latex inline formula="602.11" /></td>
+              <td>
+                <p><Latex inline formula="4,480 \\times 1.12 \\times 0.12 + 5,017.60 = 5,619.71 5,017.60 \\times 1.12 = 5,619.71 4000 \\left(1.12\\right)^3 = 5,619.71" /></p>
+              </td>
+              <td><Latex inline formula="5,619.71" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><Latex inline formula="5,017.60 (1.12) (0.12)" /></td>
+              <td><Latex inline formula="674.36" /></td>
+              <td>
+                <p><Latex inline formula="5,017.60 \\times 1.12 \\times 0.12 + 5,619.71 = 6,294.07 5,619.71 \\times 1.12 = 6,294.07 4000 \\left(1.12\\right)^4 = 6,294.07" /></p>
+              </td>
+              <td><Latex inline formula="6,294.07" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Completa la tabla, de los años 5, 6, 7, y 8. Detalla cada resultado como se muestra en cada recuadro, compara tus resultados dando clic en el botón.</p>
+      <Comprobar>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Años <Latex inline formula="t" /></th>
+                <th>Interés</th>
+                <th>Ganancia 12%</th>
+                <th>Valor</th>
+                <th>Inversión</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td><Latex inline formula='5,619.71 \\cdot 1.12 \\cdot 0.12' /></td>
+                <td> <Latex inline formula='755.28' /></td>
+                <td><Latex inline formula="5,619.71 \\times 1.12 \\times 0.12 + 6,294.07 = 7,049.35 6,294.07 \\times 1.12 = 7,049.35 4000 \\left(1.12\\right)^5 = 7,049.36" /></td>
+                <td><Latex inline formula="7,049.35" /></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><Latex inline formula='6,294.07 (1.12) (0.12)' /></td>
+                <td><Latex inline formula='845.92' /></td>
+                <td><Latex inline formula="6,294.07 \\times 1.12 \\times 0.12 + 7,049.35 = 7,895.27 7,049.35 \\times 1.12 = 7,895.27 4000 \\left(1.12\\right)^6 = 7,895.29" /></td>
+                <td><Latex inline formula="7,895.27" /></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><Latex inline formula='7,049.35 (1.12) (0.12)' /></td>
+                <td><Latex inline formula='947.43' /></td>
+                <td><Latex inline formula="7,049.35 \\times 1.12 \\times 0.12 + 7,895.27 = 8,842.70 7,895.27 \\times 1.12 = 8,842.70 4000 \\left(1.12\\right)^7 = 8,842.72" /></td>
+                <td><Latex inline formula="8,842.70" /></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><Latex inline formula='7,895.27(1.12) (0.12)' /></td>
+                <td><Latex inline formula='1,061.12' /></td>
+                <td><Latex inline formula="7,895.27 \\times 1.12 \\times 0.12 + 8,842.70 = 9,903.82 8,842.70 \\times 1.12 = 9,903.82 4000 \\left(1.12\\right)^8 = 9,903.85" /></td>
+                <td><Latex inline formula="9,903.82" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </Comprobar>
     </div>
+    <Lumi
+      src=""
+      nombre='Variables y modelo algebraico'
+      instrucciones='Contesta las siguientes preguntas:'
+      class='mb-5'
+    />
+    <div class="mx-auto max-w-screen-xl mb-10">
+      <h3>Funciones exponenciales.</h3>
+      <h4>Una función exponencial es de la forma <Latex inline formula='f(x)=ab^x' /></h4>
+      <p>Donde:</p>
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th><Latex formula='x' /></th>
+              <td><strong>Exponente</strong>, La variable (<Latex inline formula='años' />) variable independiente</td>
+            </tr>
+            <tr>
+              <td><Latex formula='a' /></td>
+              <td><strong>Condición inicial</strong></td>
+            </tr>
+            <tr>
+              <td><Latex formula='b' /></td>
+              <td>
+                <p>Factor numérico que determina el <strong>crecimiento</strong> o <strong>decrecimiento</strong> (la inversión en cada año)</p>
+                <p>Es un número real positivo distinto de 1.</p>
+                <p>Si <Latex inline formula='b > 1' /> tenemos crecimiento exponencial.</p>
+                <p>Si <Latex inline formula='0 < b < 1' /> tenemos decaimiento exponencial.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Para reconocer que una tabla de valores de <Latex inline formula='b' /> y <Latex inline formula='f(x)' />  proviene de una función exponencial <Latex inline formula='\\bm{f}(\\bm{x}) = \\bm{a}\\bm{b}^{\\bm{x}}' /> , buscamos razones de valores <Latex inline formula='f(x)' />  que sean constantes para valores  <Latex inline formula='x' />  igualmente espaciados. </p>
+      <h4>Actividad 2</h4>
+      <p>Depreciación de bienes. El valor actual de un automóvil es de $200,000.00, si cada año se deprecia a una tasa de 8% anual y suponiendo que la tasa se conserva constante, determina una función que nos permita calcular su valor dentro de algunos años.</p>
+      <h4>1.</h4>
+      <p>Para resolver el problema se te sugiere que primero completes la siguiente tabla, para ello considera:</p>
+      <p class="text-center text-2xl"><Latex formula='\\frac{\\textbf{Depreciación en el primer año}} {\\textbf{Valor del automóvil}}' /></p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Años</th>
+              <th>Valor</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline formula="0" /></td>
+              <td></td>
+              <td><Latex inline formula='200,000.00' /></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><Latex inline formula="200,000.00 \\times 0.08 - 16,000 = 184,000 \\newline 200,000.00 \\times 0.92 = 184,000" /></td>
+              <td><Latex inline formula="184,000.00" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><Latex inline formula="184,000 \\times 0.92 = 169,280.00 \\newline 200,000.00 \\left(0.92\\right)^2 = 169,280.00" /></td>
+              <td><Latex inline formula="169,280.00" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Completa la tabla, de los años 3, 4, 5, y 6. Detalla cada resultado como se muestra en cada recuadro.</p>
+      <Comprobar>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Años</th>
+                <th>Valor</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3</td>
+                <td><Latex inline formula="169,280 \\times 0.92 = 155,737.60 \\newline \\newline 200,000.00 \\left(0.92\\right)^3 = 155,737.60" /></td>
+                <td><Latex inline formula="155.737.60" /></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><Latex inline formula="155,737.60 \\times 0.92 = 143,278.59 \\newline 200,000.00 \\left(0.92\\right)^4 = 143,278.59" /></td>
+                <td><Latex inline formula="143,278.59" /></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><Latex inline formula="143,278.59 \\times 0.92 = 131,817.10 \\newline 200,000.00 \\left(0.92\\right)^5 = 131,817.10" /></td>
+                <td><Latex inline formula="131,817.10" /></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><Latex inline formula="131,817.10 \\times 0.92 = 121,364.14 \\newline 200,000.00 \\left(0.92\\right)^6 = 121,364.14" /></td>
+                <td><Latex inline formula="121,364.14" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </Comprobar>
+    </div>
+    <Lumi
+      src=""
+      nombre='Responde las preguntas'
+      instrucciones='Contesta las siguientes preguntas:'
+      class='mb-5'
+    />
+    <div class="mx-auto max-w-screen-xl my-10">
+      <h3>Actividad 3</h3>
+      <p>Una tarjeta de crédito común tiene un interés anual de 48% compuesto mensualmente. Si se realiza una compra de $ 400.00 y no se hace ningún pago durante un año, ¿cuál será la deuda al final del año?, ¿cuál será la deuda al cabo de 4, 5, 6, 7 y 8 meses?</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>mes</th>
+              <th>Interés</th>
+              <th>Interés</th>
+              <th>Deuda</th>
+              <th>Deuda</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline formula="0" /></td>
+              <td></td>
+              <td><Latex inline formula="0" /></td>
+              <td></td>
+              <td><Latex inline formula='400' /></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><Latex inline formula="400(0.48)" /></td>
+              <td><Latex inline formula="192" /></td>
+              <td> <Latex inline formula="400 \\times 0.48 + 400 = 400 \\times (0.48+1)" /> </td>
+              <td><Latex inline formula="592" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><Latex inline formula="400 \\times (0.48+1) \\times 0.48" /></td>
+              <td><Latex inline formula="284.16" /></td>
+              <td> <Latex inline formula="400 \\times (0.48+1) \\times 0.48 + 400 \\times (0.48+1) = 400 \\times (0.48+1) \\times (0.48+1)" /> </td>
+              <td><Latex inline formula="876.16" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><Latex inline formula="400 \\times (0.48+1)^3 \\times 0.48" /></td>
+              <td><Latex inline formula="420.55" /></td>
+              <td> <Latex inline formula="400 \\times (0.48+1)^3" /> </td>
+              <td><Latex inline formula="1296.71" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <Comprobar>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>mes</th>
+                <th>Interés</th>
+                <th>Interés</th>
+                <th>Deuda</th>
+                <th>Deuda</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^3 \\times 0.48" /></td>
+                <td><Latex inline formula="921.18" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^4" /> </td>
+                <td><Latex inline formula="1,919.14" /></td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^4 \\times 0.48" /></td>
+                <td><Latex inline formula="1,363.35" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^5" /> </td>
+                <td><Latex inline formula="2,840.32" /></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^5 \\times 0.48" /></td>
+                <td><Latex inline formula="2,017.76" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^6" /> </td>
+                <td><Latex inline formula="4,203.68" /></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^6 \\times 0.48" /></td>
+                <td><Latex inline formula="2,986.29" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^7" /> </td>
+                <td><Latex inline formula="6,221.45" /></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td><Latex inline formula="400 \\times (0.48+1)^7 \\times 0.48" /></td>
+                <td><Latex inline formula="4,419.72" /></td>
+                <td> <Latex inline formula="400 \\times (0.48+1)^8" /> </td>
+                <td><Latex inline formula="9,207.75" /></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </Comprobar>
+    </div>
+    <Lumi
+      src=""
+      nombre='Responde las preguntas'
+      instrucciones='Contesta las siguientes preguntas:'
+      class='mb-5'
+    />
+  </div>
 
 </Layout>

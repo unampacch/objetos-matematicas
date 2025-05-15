@@ -1,0 +1,29 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import { BASE_PATH } from '@/config'
+---
+
+<Layout>
+
+    <ObjetoAprendizajePantalla index={3} pantallaIndex={1} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl mb-10">
+        <p>Para realizar esta actividad, revisa la <a href={`${BASE_PATH}/calculo/concepto-derivada/derivable-lectura.pdf`} target="_blank" >lectura sobre derivabilidad</a>.</p>
+        <p>La siguiente imagen nos muestra los circuitos de carreras de la <strong>Fórmula 1</strong> que se corrieron en 2022. Si las imaginamos como <strong>curvas</strong> en el plano cartesiano, encierra en un círculo aquellas secciones del circuito donde <strong>no sería posible</strong> trazar la recta tangente que representa la derivada.</p>
+        <div class="max-w-2xl mx-auto">
+          <img src={`${BASE_PATH}/calculo/concepto-derivada/p3-f1.webp`} alt="">
+        </div>
+        <h4 class="mt-10">Cuestionario</h4>
+        <ol class="ol-number">
+          <li>¿En qué circuitos podemos encontrar tramos donde la derivada vale cero?</li>
+          <li>¿En qué circuitos encontramos segmentos donde la derivada tiene un valor indeterminado (infinito)?</li>
+          <li>Observa el circuito brasileño ¿En qué región el valor de la derivada parece mantenerse constante?</li>
+          <li>Identifica en qué regiones del primer circuito de marzo la derivada es constante y de signo negativo.</li>
+          <li>Una forma de comprobar que una curva no es derivable en un punto <Latex inline formula="x=a" />  , es mostrar que ANTES de dicho punto, las derivadas son positivas, pero DESPUES de dicho punto, hallamos derivadas negativas, o viceversa. Observa el circuito de Mónaco y encuentra al menos tres puntos donde este comportamiento ocurre. </li>
+        </ol>
+      </div>
+    </div>
+</Layout>

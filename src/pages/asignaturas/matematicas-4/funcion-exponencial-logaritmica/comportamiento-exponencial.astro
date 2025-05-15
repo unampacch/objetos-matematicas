@@ -1,0 +1,1088 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import ResalteBlanco from '@/components/ResalteBlanco.astro'
+import Comprobar from '@/components/Comprobar.astro'
+import ResalteOutline from '@/components/ResalteOutline.astro'
+---
+
+<Layout>
+	<ObjetoAprendizajePantalla index={5} pantallaIndex={0} asignatura={'matematicas_4'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto max-w-screen-xl">
+			<h4><Latex formula='\\mathbf{f}(x) = \\mathbf{a}\\mathbf{b}^\\mathbf{x} \\quad \\text{con} \\quad \\mathbf{b} > \\mathbf{1} \\quad \\text{y} \\quad \\mathbf{a} \\neq 0' /></h4>
+      <h4><Latex formula='\\mathbf{f}(x) = \\mathbf{a}\\left(\\frac{\\mathbf{1}}{{b}}\\right)^{x} \\quad \\text{con} \\quad {b} > \\mathbf{1} \\quad \\text{y} \\quad \\mathbf{a} \\neq 0' /></h4>
+      <p>Las funciones exponenciales se utilizan para muchas aplicaciones del mundo real como finanzas, Sector salud, ciencias de la computación, Ciencias Sociales, etc. Trabajar con una ecuación que describe una situación del mundo real nos da un método para hacer predicciones. </p>
+      <ResalteBlanco>
+        <p>La función exponencial en su forma sencilla se expresa de la forma:</p>
+        <p><Latex formula='\\mathbf{f}(x) = {b}^{x}' /></p>
+        <p>Donde <Latex inline formula='b' />, es la base de la función exponencial.</p>
+        <p>Es un número real mayor que 0 y distinto de 1.</p>
+        <p>Determina si la función es creciente o decreciente: </p>
+        <p>Si <Latex inline formula='b > 1' />, la función es creciente</p>
+        <p>Si <Latex inline formula='b < 1' />, la función es decreciente</p>
+      </ResalteBlanco>
+      <p>Empecemos a usar la función:</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><Latex formula='x' /></th>
+              <th><Latex formula='-4' /></th>
+              <th><Latex formula='-3' /></th>
+              <th><Latex formula='-2' /></th>
+              <th><Latex formula='-1' /></th>
+              <th><Latex formula='0' /></th>
+              <th><Latex formula='1' /></th>
+              <th><Latex formula='2' /></th>
+              <th><Latex formula='3' /></th>
+              <th><Latex formula='4' /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex formula='f\\left(x\\right)=2^x ' /></td>
+              <td><Latex formula='0.0625' /></td>
+              <td><Latex formula='0.125' /></td>
+              <td><Latex formula='0.25' /></td>
+              <td><Latex formula='0.5' /></td>
+              <td><Latex formula='1' /></td>
+              <td><Latex formula='2' /></td>
+              <td><Latex formula='4' /></td>
+              <td><Latex formula='8' /></td>
+              <td><Latex formula='16' /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Observe cómo cambian los valores de salida en Tabla, a medida que el valor de x aumenta un valor.</p>
+      <ul class="ul-disc">
+        <li>Los valores de la función son positivos</li>
+        <li>Si los valores x, son mayores a cero, los valores de la función aumentan rápidamente</li>
+        <li>Si los valores x, son menores a cero, los valores de la función disminuyen paulatinamente, acercándose a cero, pero nunca tocando el eje, lo cual se aprecia en la coordenada (-4, 0.0625) </li>
+      </ul>
+      <p>En la gráfica se observa la función de crecimiento exponencial <Latex inline formula='f\\left(x\\right)=2^x ' />.</p>
+      <ImagenCaption
+        src="/matematicas4/funciones-exp-logaritmicas/p2-grafica-funcion.webp"
+        caption='Gráfica Elaboró: Ma. Emma Bautista García'
+      />
+      <p>Análisis de la gráfica de la función <Latex inline formula='f\\left(x\\right)=2^x ' />.</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Características por determinar </th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dominio de la función</td>
+              <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Rango</td>
+              <td><Latex inline formula='(0, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Asíntota horizontal (Las coordenadas del punto donde interceptan al eje y)</td>
+              <td><Latex inline formula='(0, 1)' /></td>
+            </tr>
+            <tr>
+              <td>¿La función tiene ceros?</td>
+              <td>No tiene, porque ahí está la asíntota horizontal</td>
+            </tr>
+            <tr>
+              <td>¿La función tiene asíntotas? Si es el caso, ¿cuáles son sus ecuaciones?</td>
+              <td><Latex inline formula='(y=0)' /></td>
+            </tr>
+            <tr>
+              <td>¿La función es creciente, constante o decreciente?</td>
+              <td>Creciente</td>
+            </tr>
+            <tr>
+              <td>Justificación:</td>
+              <td>Conforme aumenta el valor de la variable independiente, la variable dependiente aumenta rápidamente</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h4 class="mt-10">Actividad 1</h4>
+      <p>Analicemos la función <Latex inline formula='f(x) = \\left(\\frac{1}{2}\\right)^x' /></p>
+      <p>Pero antes recordemos que:</p>
+      <p>Observa que <Latex inline formula='f(x) = \\left(\\frac{1}{2}\\right)^x = \\frac{1}{2^x} = 2^{-x}' /></p>
+      <p>Por ejemplo, si x = – 3 entonces:</p>
+      <p class="text-center break-words text-2xl my-2"><Latex formula='\\left(\\frac{1}{2}\\right)^{-3} = \\frac{1}{2^{-3}} = 2^{-(-3)} = 2^3 = 8' /></p>
+      <p><strong>Instrucciones:</strong></p>
+      <ol class="ol-number">
+        <li>
+          <p><strong>Estamos listos</strong>, identifica, si la siguiente tabla de la <Latex inline formula='f(x) = \\left(\\frac{1}{2}\\right)^x' /> es correcta o falsa:</p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><Latex formula='x' /></th>
+                  <th><Latex formula='-4' /></th>
+                  <th><Latex formula='-3' /></th>
+                  <th><Latex formula='-2' /></th>
+                  <th><Latex formula='-1' /></th>
+                  <th><Latex formula='0' /></th>
+                  <th><Latex formula='1' /></th>
+                  <th><Latex formula='2' /></th>
+                  <th><Latex formula='3' /></th>
+                  <th><Latex formula='4' /></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><Latex formula='f(x) = \\left(\\frac{1}{2}\\right)^x ' /></td>
+                  <td><Latex formula='0.0625' /></td>
+                  <td><Latex formula='0.125' /></td>
+                  <td><Latex formula='0.25' /></td>
+                  <td><Latex formula='0.5' /></td>
+                  <td><Latex formula='1' /></td>
+                  <td><Latex formula='2' /></td>
+                  <td><Latex formula='4' /></td>
+                  <td><Latex formula='8' /></td>
+                  <td><Latex formula='16' /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <Comprobar>
+            <p class="text-center text-2xl text-red font-bold">Es falsa</p>
+          </Comprobar>
+        </li>
+        <li>
+          <p>La gráfica de la función <Latex inline formula='f(x) = \\left(\\frac{1}{2}\\right)^x' /> ¿es correcta o falsa? </p>
+          <ImagenCaption
+            src="/matematicas4/funciones-exp-logaritmicas/p2-grafica-funcion-2.webp"
+            caption='Gráfica Elaboró: Ma. Emma Bautista García'
+          />
+          <Comprobar>
+            <p class="text-center text-2xl text-red font-bold">Es correcta</p>
+          </Comprobar>
+        </li>
+        <li>
+          <p>Realiza el Análisis de la gráfica de la función <Latex inline formula='f(x) = \\left(\\frac{1}{2}\\right)^x' />, e identifica de esta tabla que característica es falsa </p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Características por determinar </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dominio de la función</td>
+                  <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+                </tr>
+                <tr>
+                  <td>Rango</td>
+                  <td><Latex inline formula='(0, \\infty)' /></td>
+                </tr>
+                <tr>
+                  <td>Asíntota horizontal (Las coordenadas del punto donde interceptan al eje y)</td>
+                  <td><Latex inline formula='(0, 1)' /></td>
+                </tr>
+                <tr>
+                  <td>La ecuación de su asíntota</td>
+                  <td><Latex inline formula='(y=0)' /></td>
+                </tr>
+                <tr>
+                  <td>¿La función es creciente, constante o decreciente?</td>
+                  <td>Creciente</td>
+                </tr>
+                <tr>
+                  <td>Justificación:</td>
+                  <td>Conforme aumenta el valor de la variable independiente, la variable dependiente aumenta rápidamente</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <Comprobar>
+            <p class="text-center text-2xl text-red font-bold">La característica 5 es falsa</p>
+          </Comprobar>
+        </li>
+      </ol>
+      <p>¿Cuáles serán las diferencias? De las gráficas de las funciones</p>
+      <p class="text-center my-10 text-2xl"><Latex inline formula='f(x) = 2^{-x}' /> y <Latex inline formula='f(x) = 2^{x}' /></p>
+      <ImagenCaption
+        src="/matematicas4/funciones-exp-logaritmicas/p2-grafica-funcion-3.webp"
+        caption='Gráfica Elaboró: Ma. Emma Bautista García'
+      />
+      <p>Diferencias de las gráficas de las funciones:</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Características por determinar </th>
+              <th><Latex formula='f(x) = 2^{x}'/></th>
+              <th><Latex formula='f(x) = 2^{-x}'/></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dominio de la función</td>
+              <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+              <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Rango</td>
+              <td><Latex inline formula='(0, \\infty)' /></td>
+              <td><Latex inline formula='(0, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Asíntota horizontal (Las coordenadas del punto donde interceptan al eje y)</td>
+              <td><Latex inline formula='(0, 1)' /></td>
+              <td><Latex inline formula='(0, 1)' /></td>
+            </tr>
+            <tr>
+              <td>¿La función tiene ceros?</td>
+              <td>No tiene, porque ahí está la asíntota horizontal</td>
+              <td>No tiene, porque ahí está la asíntota horizontal</td>
+            </tr>
+            <tr>
+              <td>La ecuación de su asíntota</td>
+              <td><Latex inline formula='(y=0)' /></td>
+              <td><Latex inline formula='(y=0)' /></td>
+            </tr>
+            <tr>
+              <td>¿La función es creciente, constante o decreciente?</td>
+              <td>Creciente</td>
+              <td>Decrece</td>
+            </tr>
+            <tr>
+              <td>Justificación:</td>
+              <td>Al aumentar la variable independiente, <strong>aumenta la variable dependiente</strong> </td>
+              <td>Al aumentar la variable independiente, <strong>disminuye la variable dependiente</strong></td>
+            </tr>
+            <tr>
+              <td colspan="3">Observa que las gráficas son simétricas con respecto al eje y, son muy similares, solo que la gráfica de la función <Latex inline formula='f(x) = 2^x' /> crece y la gráfica de la función <Latex inline formula='f(x) = 2^{-x}' /> decrece, en todo lo demás son iguales.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h4 class="mt-10">Actividad 2</h4>
+      <ol class="ol-number">
+        <li>
+          <p>Identifica si la suiente tabla de funciones es Verdadera</p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><Latex formula='x' /></th>
+                  <th><Latex formula='-4' /></th>
+                  <th><Latex formula='-3' /></th>
+                  <th><Latex formula='-2' /></th>
+                  <th><Latex formula='-1' /></th>
+                  <th><Latex formula='0' /></th>
+                  <th><Latex formula='1' /></th>
+                  <th><Latex formula='2' /></th>
+                  <th><Latex formula='3' /></th>
+                  <th><Latex formula='4' /></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><Latex formula='g(x) = 5^x ' /></td>
+                  <td><Latex formula='0.0016' /></td>
+                  <td><Latex formula='0.008' /></td>
+                  <td><Latex formula='0.04' /></td>
+                  <td><Latex formula='0.2' /></td>
+                  <td><Latex formula='1' /></td>
+                  <td><Latex formula='5' /></td>
+                  <td><Latex formula='25' /></td>
+                  <td><Latex formula='125' /></td>
+                  <td><Latex formula='625' /></td>
+                </tr>
+                <tr>
+                  <td><Latex formula='g\\left(x\\right) = \\left(\\frac{1}{5}\\right)^x ' /></td>
+                  <td><Latex formula='625' /></td>
+                  <td><Latex formula='125' /></td>
+                  <td><Latex formula='25' /></td>
+                  <td><Latex formula='5' /></td>
+                  <td><Latex formula='1' /></td>
+                  <td><Latex formula='0.2' /></td>
+                  <td><Latex formula='0.04' /></td>
+                  <td><Latex formula='0.008' /></td>
+                  <td><Latex formula='0.0016' /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <Comprobar>
+            <p class="text-center text-2xl text-red font-bold">Es verdadera</p>
+          </Comprobar>
+        </li>
+        <li>
+          <p>Determina si la gráfica de funciones es verdadera</p>
+          <ImagenCaption
+            src="/matematicas4/funciones-exp-logaritmicas/p2-grafica-funcion-4.webp"
+            caption='Gráfica Elaboró: Ma. Emma Bautista García'
+          />
+          <Comprobar>
+            <p class="text-center text-2xl text-red font-bold">Es verdadera</p>
+          </Comprobar>
+        </li>
+        <li>
+          <p>Completa la tabla de características de las funciones:</p>
+          <p class="text-center text-2xl"><Latex inline formula='g(x) = 5^x' /> y <Latex inline formula='g(x) = 5^{-x}' /></p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Características por determinar </th>
+                  <th><Latex formula='g(x) = 5^{x}'/></th>
+                  <th><Latex formula='g(x) = 5^{-x}'/></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dominio de la función</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Rango</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Asíntota horizontal (Las coordenadas del punto donde interceptan al eje y)</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>¿La función tiene ceros?</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>La ecuación de su asíntota</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>¿La función es creciente, constante o decreciente?</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Justificación:</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                </table>
+              </tbody>
+            </table>
+          </div>
+          <Comprobar>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Características por determinar </th>
+                    <th><Latex formula='g(x) = 5^{x}'/></th>
+                    <th><Latex formula='g(x) = 5^{-x}'/></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Dominio de la función</td>
+                    <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+                    <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+                  </tr>
+                  <tr>
+                    <td>Rango</td>
+                    <td><Latex inline formula='(0, \\infty)' /></td>
+                    <td><Latex inline formula='(0, \\infty)' /></td>
+                  </tr>
+                  <tr>
+                    <td>Asíntota horizontal (Las coordenadas del punto donde interceptan al eje y)</td>
+                    <td><Latex inline formula='(0, 1)' /></td>
+                    <td><Latex inline formula='(0, 1)' /></td>
+                  </tr>
+                  <tr>
+                    <td>¿La función tiene ceros?</td>
+                    <td>No tiene, porque ahí está la asíntota horizontal</td>
+                    <td>No tiene, porque ahí está la asíntota horizontal</td>
+                  </tr>
+                  <tr>
+                    <td>La ecuación de su asíntota</td>
+                    <td><Latex inline formula='(y=0)' /></td>
+                    <td><Latex inline formula='(y=0)' /></td>
+                  </tr>
+                  <tr>
+                    <td>¿La función es creciente, constante o decreciente?</td>
+                    <td>Creciente</td>
+                    <td>Decrece</td>
+                  </tr>
+                  <tr>
+                    <td>Justificación:</td>
+                    <td>Al aumentar la variable independiente, <strong>aumenta la variable dependiente</strong> </td>
+                    <td>Al aumentar la variable independiente, <strong>disminuye la variable dependiente</strong></td>
+                  </tr>
+                  </table>
+                </tbody>
+              </table>
+            </div>
+          </Comprobar>
+        </li>
+      </ol>
+      <h4 class="mt-10">Propiedades de la función exponencial</h4>
+      <h4><Latex formula='f(x) = b^{x}' /></h4>
+      <p>Con esta actividad logramos confirmar las propiedades de la función exponencial.</p>
+      <ResalteBlanco>
+        <ol class="ol-number text-left">
+          <li>La función está definida para todos los valores reales de <Latex inline formula='x' />, es decir, el dominio de la función es el conjunto de los números reales.</li>
+          <li>Para todo valor de <Latex inline formula='x' /> la función siempre asume un valor positivo, es decir, el rango de la función es el conjunto de los números reales positivos.</li>
+          <li>La función es creciente cuando <Latex inline formula='b > 1' />, y es decreciente si <Latex inline formula=' 0 < b < 1' /></li>
+          <li>La curva es cóncava hacia arriba cuando <Latex inline formula='b > 1' />1 y cuando 0 <Latex inline formula=' 0 < b < 1' /></li>
+          <li>La gráfica de la función intercepta al eje <Latex inline formula='y' /> en el punto (0, 1). No hay abscisa al origen, es decir la gráfica no intercepta al eje <Latex inline formula='x' />.</li>
+          <li> El eje “x” es una asíntota horizontal a la gráfica. </li>
+        </ol>
+      </ResalteBlanco>
+      <p>Revisemos ahora cuando una función se traslada y el manejo de los parámetros a, h y k, que modifican la función</p>
+      <p class="text-center text-2xl"><Latex formula='f(x) = ab^{(x-h)} + k' /></p>
+      <ResalteOutline>
+        <p><span class="text-4xl"><Latex inline formula='a' /></span> modifica la gráfica </p>
+        <p>En el ensanchamiento, si <Latex inline formula='a<1' /></p>
+        <p>En el alargamiento, si <Latex inline formula='a>1' /></p>
+        <p><span class="text-4xl"><Latex inline formula='h' /></span> traslada la gráfica horizontalmente</p>
+        <p><span class="text-4xl"><Latex inline formula='k' /></span> traslada la gráfica verticalmente</p>
+      </ResalteOutline>
+      <h4>Ejemplo</h4>
+      <p>Realizaremos una tabla de funciones, las cuales serán ubicadas en una gráfica, para observar su comportamiento.</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><Latex formula='x' /></th>
+              <th><Latex formula='f\\left(x\\right)=4^x ' /></th>
+              <th><Latex formula='h(x) = 3 4^x' /></th>
+              <th><Latex formula='j(x) = 7 4^x' /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex formula='-4 ' /></td>
+              <td><Latex formula='0.00390625' /></td>
+              <td><Latex formula='0.01171875' /></td>
+              <td><Latex formula='0.02734375' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='-3.5' /></td>
+              <td><Latex formula='0.0078125' /></td>
+              <td><Latex formula='0.0234375' /></td>
+              <td><Latex formula='0.0546875' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='3' /></td>
+              <td><Latex formula='64' /></td>
+              <td><Latex formula='192' /></td>
+              <td><Latex formula='448' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='-2.5' /></td>
+              <td><Latex formula='0.03125' /></td>
+              <td><Latex formula='0.09375' /></td>
+              <td><Latex formula='0.21875' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='-2' /></td>
+              <td><Latex formula='0.0625' /></td>
+              <td><Latex formula='0.1875' /></td>
+              <td><Latex formula='0.4375' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='-1.5' /></td>
+              <td><Latex formula='0.125' /></td>
+              <td><Latex formula='0.375' /></td>
+              <td><Latex formula='0.875' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='-1' /></td>
+              <td><Latex formula='0.25' /></td>
+              <td><Latex formula='0.75' /></td>
+              <td><Latex formula='1.75' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='-0.5' /></td>
+              <td><Latex formula='0.5' /></td>
+              <td><Latex formula='1.5' /></td>
+              <td><Latex formula='3.5' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='0' /></td>
+              <td><Latex formula='1' /></td>
+              <td><Latex formula='3' /></td>
+              <td><Latex formula='7' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='0.5' /></td>
+              <td><Latex formula='2' /></td>
+              <td><Latex formula='6' /></td>
+              <td><Latex formula='14' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='1' /></td>
+              <td><Latex formula='4' /></td>
+              <td><Latex formula='12' /></td>
+              <td><Latex formula='28' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='1.5' /></td>
+              <td><Latex formula='8' /></td>
+              <td><Latex formula='24' /></td>
+              <td><Latex formula='56' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='2' /></td>
+              <td><Latex formula='16' /></td>
+              <td><Latex formula='48' /></td>
+              <td><Latex formula='112' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='2.5' /></td>
+              <td><Latex formula='32' /></td>
+              <td><Latex formula='96' /></td>
+              <td><Latex formula='224' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='3.5' /></td>
+              <td><Latex formula='128' /></td>
+              <td><Latex formula='384' /></td>
+              <td><Latex formula='896' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='4' /></td>
+              <td><Latex formula='256' /></td>
+              <td><Latex formula='768' /></td>
+              <td><Latex formula='1792' /></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="my-10">
+        <ImagenCaption
+          src="/matematicas4/funciones-exp-logaritmicas/p2-funciones-exponenciales-1.webp"
+          caption=' Funciones Exponenciales Elaboró: Ma. Emma Bautista García'
+        />
+      </div>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Características </th>
+              <th><Latex formula='f(x) = 4^{x}'/></th>
+              <th><Latex formula='h(x) = 3 4^{x}'/></th>
+              <th><Latex formula='j(x) = 7 4^{x}'/></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dominio de la función</td>
+              <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+              <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+              <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>Rango</td>
+              <td><Latex inline formula='(0, \\infty)' /></td>
+              <td><Latex inline formula='(0, \\infty)' /></td>
+              <td><Latex inline formula='(0, \\infty)' /></td>
+            </tr>
+            <tr>
+              <td>La asíntota horizontal es</td>
+              <td><Latex inline formula='(y=0)' /></td>
+              <td><Latex inline formula='(y=0)' /></td>
+              <td><Latex inline formula='(y=0)' /></td>
+            </tr>
+            <tr>
+              <td>¿La función es creciente, constante o decreciente?</td>
+              <td>Creciente</td>
+              <td>Creciente</td>
+              <td>Creciente</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h4 class="mt-10">Observaciones generales:</h4>
+      <ul class="ul-disc">
+        <li>El Dominio y el Rango es el mismo para las tres funciones</li>
+        <li>La primera función se traslada hacia la izquierda</li>
+        <li>En la segunda función se triplica o multiplica el parámetro  por 3</li>
+        <li>En la tercera función se multiplica el parámetro  por 7</li>
+      </ul>
+      <h4>Actividad 3</h4>
+      <p>Determina la siguiente tabla de funciones. </p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><Latex formula='x' /></th>
+              <th><Latex formula='f\\left(x\\right)=2^x ' /></th>
+              <th><Latex formula='h(x) = 3 2^x' /></th>
+              <th><Latex formula='j(x) = 7 2^x' /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>-4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>-3.5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>-2.5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>-2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>-1.5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>-1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>-0.5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>0.5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1.5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2.5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3.5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Realiza la gráfica donde se encuentren las funciones:</p>
+      <p class="text-2xl w-full flex justify-around"><Latex inline formula='f(x) = {-4}^x' /><Latex inline formula='j(x) = -7  4^x' /><Latex inline formula='h(x) = -3  4^x' /></p>
+      <p>Realiza una tabla comparativa donde se observen las crácteristicas de cada función.</p>
+      <Comprobar>
+        <p>Solución:</p>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th><Latex formula='x' /></th>
+                <th><Latex formula='f\\left(x\\right)=2^x ' /></th>
+                <th><Latex formula='h(x) = 3 2^x' /></th>
+                <th><Latex formula='j(x) = 7 2^x' /></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td>-4</td>
+              <td>-0.00390625</td>
+              <td>-0.01171875</td>
+              <td>-0.02734375</td>
+              </tr>
+              <tr>
+              <td>-3.5</td>
+              <td>-0.0078125</td>
+              <td>-0.0234375</td>
+              <td>-0.0546875</td>
+              </tr>
+              <tr>
+              <td>3</td>
+              <td>-64</td>
+              <td>-192</td>
+              <td>-448</td>
+              </tr>
+              <tr>
+              <td>-2.5</td>
+              <td>-0.03125</td>
+              <td>-0.09375</td>
+              <td>-0.21875</td>
+              </tr>
+              <tr>
+              <td>-2</td>
+              <td>-0.0625</td>
+              <td>-0.1875</td>
+              <td>-0.4375</td>
+              </tr>
+              <tr>
+              <td>-1.5</td>
+              <td>-0.125</td>
+              <td>-0.375</td>
+              <td>-0.875</td>
+              </tr>
+              <tr>
+              <td>-1</td>
+              <td>-0.25</td>
+              <td>-0.75</td>
+              <td>-1.75</td>
+              </tr>
+              <tr>
+              <td>-0.5</td>
+              <td>-0.5</td>
+              <td>-1.5</td>
+              <td>-3.5</td>
+              </tr>
+              <tr>
+              <td>0</td>
+              <td>-1</td>
+              <td>-3</td>
+              <td>-7</td>
+              </tr>
+              <tr>
+              <td>0.5</td>
+              <td>-2</td>
+              <td>-6</td>
+              <td>-14</td>
+              </tr>
+              <tr>
+              <td>1</td>
+              <td>-4</td>
+              <td>-12</td>
+              <td>-28</td>
+              </tr>
+              <tr>
+              <td>1.5</td>
+              <td>-8</td>
+              <td>-24</td>
+              <td>-56</td>
+              </tr>
+              <tr>
+              <td>2</td>
+              <td>-16</td>
+              <td>-48</td>
+              <td>-112</td>
+              </tr>
+              <tr>
+              <td>2.5</td>
+              <td>-32</td>
+              <td>-96</td>
+              <td>-224</td>
+              </tr>
+              <tr>
+              <td>3.5</td>
+              <td>-128</td>
+              <td>-384</td>
+              <td>-896</td>
+              </tr>
+              <tr>
+              <td>4</td>
+              <td>-256</td>
+              <td>-768</td>
+              <td>-1792</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="my-10">
+          <ImagenCaption
+          src="/matematicas4/funciones-exp-logaritmicas/p2-funciones-exponenciales-2.webp"
+          caption='Gráfica Elaboró: Ma. Emma Bautista García'
+          />
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Características </th>
+                <th><Latex formula='f(x) = -4^{x}'/></th>
+                <th><Latex formula='h(x) = -3 (4^{x})'/></th>
+                <th><Latex formula='j(x) = 7 (4^{x})'/></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dominio de la función</td>
+                <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+                <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+                <td>Todos los números reales <Latex inline formula='(-\\infty, \\infty)' /></td>
+              </tr>
+              <tr>
+                <td>Rango</td>
+                <td><Latex inline formula='(-\\infty, 0)' /></td>
+                <td><Latex inline formula='(-\\infty, 0)' /></td>
+                <td><Latex inline formula='(-\\infty, 0)' /></td>
+              </tr>
+              <tr>
+                <td>La asíntota horizontal es</td>
+                <td><Latex inline formula='(y=0)' /></td>
+                <td><Latex inline formula='(y=0)' /></td>
+                <td><Latex inline formula='(y=0)' /></td>
+              </tr>
+              <tr>
+                <td>¿La función es creciente, constante o decreciente?</td>
+                <td>Decreciente</td>
+                <td>Decreciente</td>
+                <td>Decreciente</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Observaciones generales:</p>
+        <ul class="ul-disc">
+          <li>El Dominio y el Rango es el mismo para las tres funciones</li>
+          <li>La primera función se traslada hacia la izquierda</li>
+          <li>En la segunda función se triplica o multiplica el parámetro <Latex inline formula='a' /> por 3</li>
+          <li>En la tercera función se multiplica el parámetro <Latex inline formula='a' />  por 7</li>
+        </ul>
+      </Comprobar>
+      <h4 class="!text-3xl my-10"><strong class="uppercase">Funciones de la forma</strong> <Latex inline formula='f(x) = b^{(x+h)}' /></h4>
+      <h4>En la <Latex inline formula='f(x) = b^{(x+h)}' /> el dominio y el rango son los mismos que <Latex inline formula='b^{x}' /></h4>
+      <ul class="ul-disc">
+        <li>El Dominio de la función es <Latex inline formula='(-\\infty, \\infty)' /></li>
+        <li>El Rango es <Latex inline formula='(-\\infty, 0)' /></li>
+        <li>Si <Latex inline formula='h>0' /> se traslada a la izquierda h-unidades </li>
+        <li>Si <Latex inline formula='h<0' /> se traslada a la derecha h-unidades</li>
+      </ul>
+      <h4>En la  <Latex inline formula='h(x) = b^{x}+k' /> se le aplica una traslación</h4>
+      <ul class="ul-disc">
+        <li>Si <Latex inline formula='k>0' /> hacia arriba </li>
+        <li>Si <Latex inline formula='k<0' /> hacia abajo</li>
+        <li>El Dominio de la función es <Latex inline formula='(-\\infty, \\infty)' /></li>
+        <li>El Rango es <Latex inline formula='(K, -\\infty)' /></li>
+      </ul>
+      <h4>Ejemplo</h4>
+      <ImagenCaption
+        src="/matematicas4/funciones-exp-logaritmicas/p2-funciones-exponenciales-3.webp"
+        caption='Funciones con traslación Derecha e Izquierda Elaboró: Ma. Emma Bautista García'
+      />
+      <div class="table-responsive my-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th rowspan="3">Funciones</th>
+              <th>Traslación a la Derecha o Izquierda</th>
+            </tr>
+            <tr>
+              <td class="text-center"><Latex inline formula='h>0' /> se traslada a la izquierda</td>
+            </tr>
+            <tr>
+              <td class="text-center"><Latex inline formula='h<0' /> se traslada a la derecja</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex formula='f(x)=5^{x+3} ' /></td>
+              <td class="flex justify-around"><Latex formula='x+3=0' /><Latex formula='x=-3' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='g(x)=5^{x+2} ' /></td>
+              <td class="flex justify-around"><Latex formula='x+2=0' /><Latex formula='x=-2' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='h(x)=5^{x} ' /></td>
+              <td class="flex justify-around"><Latex formula='x=0' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='j(x)=5^{x-2} ' /></td>
+              <td class="flex justify-around"><Latex formula='x-2=0' /><Latex formula='x=2' /></td>
+            </tr>
+            <tr>
+              <td><Latex formula='k(x)=5^{x-3} ' /></td>
+              <td class="flex justify-around"><Latex formula='x-3=0' /><Latex formula='x=3' /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="my-10">
+        <ImagenCaption
+          src="/matematicas4/funciones-exp-logaritmicas/p2-funciones-exponenciales-4.webp"
+          caption='Funciones con traslación hacia arriba o abajo Elaboró: Ma. Emma Bautista García'
+        />
+    </div>
+    <div class="table-responsive my-10">
+      <table class="table">
+        <thead>
+          <tr>
+            <th rowspan="3">Funciones</th>
+            <th>Traslación hacia Arriba o Abajo</th>
+          </tr>
+          <tr>
+            <td class="text-center"><Latex inline formula='k>0' /> se traslada hacia arriba</td>
+          </tr>
+          <tr>
+            <td class="text-center"><Latex inline formula='k<0' /> se traslada hacia abajo</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><Latex formula='f(x)=5^{x}+3 ' /></td>
+            <td class="flex justify-around"><Latex formula='y = 0 + 3 = 3' /><Latex formula='y=3' /></td>
+          </tr>
+          <tr>
+            <td><Latex formula='g(x)=5^{x}+2 ' /></td>
+            <td class="flex justify-around"><Latex formula='y = 0 + 2 = 2' /><Latex formula='y=2' /></td>
+          </tr>
+          <tr>
+            <td><Latex formula='h(x)=5^{x} ' /></td>
+            <td class="flex justify-center"><Latex formula='y=0' /></td>
+          </tr>
+          <tr>
+            <td><Latex formula='j(x)=5^{x}-2 ' /></td>
+            <td class="flex justify-around"><Latex formula='y = 0 - 2 = -2' /><Latex formula='y=-2' /></td>
+          </tr>
+          <tr>
+            <td><Latex formula='k(x)=5^{x}-3 ' /></td>
+            <td class="flex justify-around"><Latex formula='y = 0 - 3 = -3' /><Latex formula='y=-3' /></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <h4>Actividad 4</h4>
+    <ol class="ol-number">
+      <li>
+
+        <p>Elabora una tabla con la función , considera para x, los valores de -4 a 4.</p>
+        <Comprobar>
+          <p>Solución:</p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><Latex formula='x' /></th>
+                  <th><Latex formula='f\\left(x\\right)=7^{x} ' /></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>-4</td>
+                  <td>0.000416493</td>
+                </tr>
+                <tr>
+                  <td>-3</td>
+                  <td>0.002915452</td>
+                </tr>
+                <tr>
+                  <td>-2</td>
+                  <td>0.020408163</td>
+                </tr>
+                <tr>
+                  <td>-1</td>
+                  <td>0.142857143</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>49</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>343</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2401</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </Comprobar>
+      </li>
+      <li>
+        <p>Identifica si la gráfica de la función <Latex inline formula='f(x)=7^x ' /> es falsa o verdadera</p>
+        <ImagenCaption
+          src="/matematicas4/funciones-exp-logaritmicas/p2-funciones-exponenciales-5.webp"
+          caption='Gráfica Elaboró: Ma. Emma Bautista García'
+        />
+        <Comprobar>
+          <p>Solución:</p>
+          <p class="text-center text-2xl text-red font-bold">Es verdadera</p>
+        </Comprobar>
+      </li>
+      <li>
+        <p>¿Cuál es el dominio de la función <Latex inline formula='f(x)=7^x ' /> </p>
+        <Comprobar>
+          <p>Solución:</p>
+          <p class="text-center text-2xl text-red font-bold"><Latex inline formula='(-\\infty, \\infty)' /></p>
+        </Comprobar>
+      </li>
+    </ol>
+  </div>
+  <Lumi
+    src=''
+    nombre='Da respuesta a las siguientes preguntas'
+  />
+</Layout>

@@ -1,0 +1,111 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import { BASE_PATH } from '@/config'
+import BgFluido from "@/components/BgFluido.astro";
+import Lumi from "@/components/Lumi.astro";
+---
+
+<Layout>
+    <ObjetoAprendizaje index={3} asignatura={"calculo"} />
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl mb-10">
+        <h3>Usando polinomios para resolver ecuaciones diferenciales</h3>
+        <p>En el universo de las ecuaciones, aquellas conocidas como “diferenciales” tienen un especial interés, ya que sus incógnitas no son valores particulares de una variable, sino fórmulas completas. De modo que resolver una ecuación diferencial significa hallar una función que cumple un conjunto de características relacionadas con su derivada.</p>
+        <p>Pero ¿qué es la derivada? Por ahora, nos conformaremos con decir que la derivada de una función es un operador que nos indica la dirección y rapidez de escape de una partícula sometida a un campo de fuerzas.</p>
+        <p>Para que te familiarices con esto, imagina que eres una partícula de polvo y que estás sobre una mesa, en una posición determinada por las coordenadas <Latex inline formula="P(x,y)" />. En determinado momento, se abre la puerta y todas las ventanas de la habitación, además que se prenden todos los ventiladores. Es de esperarse que tu movimiento dependa de qué tan cerca o lejos estés de cada fuente de viento, y de cómo se combinen éstos. Supongamos que las direcciones de escape están modeladas por las siguientes ecuaciones:</p>
+        <p class="text-2xl"><Latex formula="\\dot{x}=5x-3y" /></p>
+        <p class="text-2xl"><Latex formula="\\dot{y}=2x+2y" /></p>
+      </div>
+      <BgFluido bg="bg-lightblue my-10">
+        <div class="max-w-6xl mx-auto md:grid grid-cols-3 py-10 gap-x-10 items-center text-darkblue">
+          <div class="col-span-2">
+            <p>Como estamos sobre una mesa, la primera ecuación nos dice qué tanta fuerza experimentaremos en el sentido horizontal (Derecha-Izquierda), mientras que la segunda, nos dice lo consecuente en el sentido vertical (Arriba-Abajo). Por ejemplo, si estamos situados en <Latex inline formula="P(1,2)" />, sucede que:</p>
+            <p class="text-2xl"><Latex formula="\\dot{x}=5(1)-3(2)=-1" /></p>
+            <p class="text-2xl"><Latex formula="\\dot{y}=2(1)+2(2)=6" /></p>
+            <p>Esto significa que la partícula de polvo experimenta una fuerza de modo que se movería 1 cuadro a la izquierda por cada 6 hacia arriba. La diagonal del rectángulo formado por estos dos avances representa la dirección global del movimiento.</p>
+            <p>Notará el lector que cada punto sobre la mesa (plano cartesiano) tiene asociada una flecha de movimiento. Cuando una partícula de polvo se mueve de su lugar, según estas flechas, describe una trayectoria muy especial determinada por todas las fuerzas posicionales experimentadas. Esta trayectoria será la solución de la ecuación diferencial.</p>
+          </div>
+          <div>
+            <img src={`${BASE_PATH}/calculo/concepto-derivada/p1-grafica-1.webp`} alt="">
+          </div>
+        </div>
+      </BgFluido>
+      <div class="max-w-screen-xl mx-auto">
+        <h3>Veamos cómo los polinomios nos pueden ayudar a esta tarea.</h3>
+        <h4>Actividad 1</h4>
+        <p>Considera cada uno de los siguientes sistemas de ecuaciones diferenciales. En lugar de evaluar numéricamente cada modelo en diferentes puntos del plano cartesiano, utiliza la aplicación de <a href="https://aeb019.hosted.uark.edu/pplane.html" target="_blank">PPLANE</a> para encontrar el “Plano fase” o campo de direcciones.</p>
+        <p>Explora diferentes valores máximos y mínimos, así como los formatos de las flechas. Una vez familiarizado con ellas, incluye una captura de pantalla de los planos fase de cada sistema.</p>
+        <div class="max-w-2xl mx-auto">
+          <img src={`${BASE_PATH}/calculo/concepto-derivada/p1-grafica-2.webp`} alt="">
+        </div>
+        <div class="grid grid-cols-3 gap-x-4 gap-y-10 my-10 text-lg">
+            <div class="text-center">
+              <Latex formula="\\dot{x}=2x-3y" />
+              <Latex formula="\\dot{y}=x-2y" />
+            </div>
+            <div class="text-center">
+              <Latex formula="\\dot{x}=4x+y" />
+              <Latex formula="\\dot{y}=x-y" />
+            </div>
+            <div class="text-center">
+              <Latex formula="\\dot{x}=-4x+3y" />
+              <Latex formula="\\dot{y}=3x+4y" />
+            </div>
+            <div class="col-span-3 text-center">
+              <Latex formula="\\dot{x}=x+2y" />
+              <Latex formula="\\dot{y}=-5x-4y" />
+            </div>
+        </div>
+        <h4>Actividad 2</h4>
+        <p>Es común que en cada sistema podamos encontrar “puntos de equilibrio”. Es decir, lugares en el plano cartesiano donde no se experimenta ninguna fuerza de empuje, por lo que en estos sitios un grano de polvo permanecería quieto sobre la mesa, pese a que su alrededor pueda soplar muy fuerte el viento. En esta actividad te pediremos que encuentres los puntos de equilibrio de cada sistema, igualando a cero ambas ecuaciones del sistema y resolviendo para (x,y).</p>
+        <div class="max-w-xl mx-auto">
+          <img src={`${BASE_PATH}/calculo/concepto-derivada/p1-grafica-3.webp`} alt="">
+        </div>
+        <h4 class="mt-10">Actividad 3</h4>
+        <p>La vía para poder encontrar la fórmula de las trayectorias descritas en la actividad anterior, se conoce como el método de los eigenvalores y el polinomio característico.</p>
+        <p>Veamos cómo se obtiene este polinomio poderoso.</p>
+        <p>Considere el sistema:</p>
+        <ul class="ul-disc">
+          <li>
+            <Latex formula="\\dot{x}=-4x+7y" />
+            <Latex formula="\\dot{y}=x+2y" />
+          </li>
+          <li>
+            <p>Cuyos coeficientes se escribe como una matriz A:</p>
+            <p class="text-2xl"><Latex formula="A=\\begin{pmatrix}-4 & 7 \\\\ 1 & 2 \\end{pmatrix}" /></p>
+          </li>
+          <li>
+            <p>Para generar el polinomio característico, siempre se resta el valor λ a los elementos de la diagonal:</p>
+            <p class="text-2xl"><Latex formula="(A-\\lambda I)=\\begin{pmatrix}-4-\\lambda & 7 \\\\ 1 & 2-\\lambda \\end{pmatrix}" /></p>
+          </li>
+          <li>
+            <p>Ahora se calcula el determinante de esta nueva matriz, y se iguala a cero. Recuerde que esto se obtiene multiplicando los elementos de la diagonal que baja, restado del producto de los elementos de la diagonal que sube.</p>
+            <p class="text-2xl"><Latex formula="det(A-\\lambda I)=(-4-\\lambda)(2-\\lambda)-(1)(7)=0" /></p>
+          </li>
+          <li>
+            <p>Haciendo las operaciones resulta:</p>
+            <p class="text-2xl"><Latex formula="\\lambda^2+2\\lambda-15=0" /></p>
+          </li>
+          <li>
+            <p>Este polinomio lo puedes resolver por fórmula general o por método de completar el T.C.P. A los valores encontrados, se les conoce como valores característicos, y son parte medular de la solución. En este caso, los eigenvalores son: <Latex inline formula="\\lambda_1=-5\\; y \\; \\lambda_2=3" /></p>
+            <p>Encuentra los eigenvalores de los ejercicios de la actividad anterior.</p>
+          </li>
+        </ul>
+        <h4 class="mt-10">Actividad 4 (Extra)</h4>
+        <p>Ahora, veamos la parte crucial: si bien podemos visualizar las trayectorias seguidas por las partículas de polvo, es preciso determinar también sus ecuaciones. Para ello, es necesario encontrar algo conocido como eigenvectores, o vectores asociados a cada una de las raíces del polinomio característico. Estos vectores, combinados con ciertas funciones exponenciales, nos permitirán escribir las ecuaciones de las curvas solución.</p>
+        <p>El procedimiento para esta tarea, está incluida en los siguientes videos seriados:</p>
+        <ul class="ul-disc">
+          <li><a href="https://www.loom.com/share/ec07f7cd4bab40d1bbab891638fe44c2?sid=c2170886-c042-46b2-80bd-7500ef58aa7b" target="_blank">Valores propios</a></li>
+          <li><a href="https://www.loom.com/share/c741ea3c0dfa4c8db5bb4b1e54de3073?sid=b08b95f9-df74-4490-bb40-a23624a58417" target="_blank">Vectores propios</a></li>
+          <li><a href="https://www.loom.com/share/f37aceac2e88407d84af8f72317459d0?sid=38aeab54-15d8-4f55-8c6e-c3824d68c766" target="_blank">Gráfica de soluciones</a></li>
+        </ul>
+      </div>
+      <Lumi
+        src="/calculo/concepto-derivada/la-tortuga.html"
+        nombre="La tortuga de Aquiles"
+        instrucciones=""
+      />
+    </div>
+</Layout>
