@@ -503,27 +503,10 @@
 				},
 				{
 					"titulo": "Puntos de inﬂexión de la curva, concepto de máximo y mínimo",
-					"slug": "/asignaturas/calculo/puntos-inflexion",
-					"portada": "/holder-cover.webp",
-					"descripcion": "Este material aborda de manera detallada los conceptos fundamentales de los puntos de inﬂexión de la curva y el concepto de máximo y mínimo en el ámbito de la matemática. Contiene una exploración exhaustiva de los puntos de inﬂexión, máximos y mínimos de una función real, junto con su aplicación en la resolución de problemas matemáticos. Además, proporciona ejemplos prácticos, actividades interactivas y ejercicios diseñados para fortalecer la comprensión de los estudiantes de bachillerato en este tema crucial.",
-					"resumen": "Puntos de inﬂexión de la curva, máximos y mínimos de una función real y su aplicación en la resolución de problemas matemáticos.",
-					"pantallas": [
-						{
-							"titulo": "Definición de puntos de inﬂexión",
-							"slug": "/asignaturas/calculo/puntos-inflexion/inflexion",
-							"descripcion": "Definición y propiedades de los puntos de inﬂexión de una función real."
-						},
-						{
-							"titulo": "Criterios de máximos y mínimos",
-							"slug": "/asignaturas/calculo/puntos-inflexion/maximos-minimos",
-							"descripcion": "Criterios de máximos y mínimos de una función real y su aplicación en la resolución de problemas matemáticos."
-						},
-						{
-							"titulo": "Aplicaciones de los puntos de inﬂexión y máximos y mínimos",
-							"slug": "/asignaturas/calculo/puntos-inflexion/aplicaciones",
-							"descripcion": "Aplicaciones de los puntos de inﬂexión y máximos y mínimos en la resolución de problemas matemáticos."
-						}
-					]
+					"slug": "/asignaturas/calculo/puntos-inflexion/inicio",
+					"portada": "/calculo/puntos-inflexion/portada-puntos-inflexion.webp",
+					"descripcion": "Calcula los puntos críticos de una función y los clasifica en máximos, mínimos o puntos de inflexión.",
+					"resumen": "Puntos de inﬂexión de la curva, concepto de máximo y mínimo y su aplicación en la resolución de problemas matemáticos."
 				},
 				{
 					"titulo": "Aplicaciones físicas de la derivada",
