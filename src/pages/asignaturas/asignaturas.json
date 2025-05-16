@@ -627,9 +627,14 @@
 					"resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de ordenaciones",
-							"slug": "/asignaturas/estadistica/permutaciones/difinicion",
-							"descripcion": "Definición y propiedades de las ordenaciones de elementos."
+							"titulo": "Principio fundamental del conteo",
+							"slug": "/asignaturas/estadistica/permutaciones/principio-fundamental-conteo",
+							"descripcion": "Principio fundamental del conteo (regla multiplicativa)"
+						},
+						{
+							"titulo": "Ordenaciones o permutaciones",
+							"slug": "/asignaturas/estadistica/permutaciones/ordenaciones-permutaciones",
+							"descripcion": "Ordenaciones o Permutaciones"
 						}
 					]
 				},

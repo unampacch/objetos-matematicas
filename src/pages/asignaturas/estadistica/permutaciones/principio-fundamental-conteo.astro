@@ -1,0 +1,75 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import Lumi from '@/components/Lumi.astro'
+import LightBox from "@/components/LightBox.astro";
+import { BASE_PATH } from "@/config";
+import BgFluido from '@/components/BgFluido.astro'
+---
+
+<Layout
+	title="Principio fundamental del conteo"
+  	description="">
+	
+	<ObjetoAprendizajePantalla index={0} pantallaIndex={1} asignatura={'estadistica'} />
+	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<h3>Principio fundamental del conteo (regla multiplicativa)</h3>
+
+			<h4>Introducción</h4>
+			<p>Si un evento puede realizarse de <Latex inline={true} formula="n_1" /> maneras diferentes, y si, un segundo evento puede realizarse de <Latex inline={true} formula="n_2" /> maneras diferentes, y si después de efectuados, un tercer evento puede realizarse de <Latex inline={true} formula="n_3" /> maneras diferentes, y así sucesivamente, entonces el número de maneras en que los eventos pueden realizarse en el orden indicado es el producto</p>
+			<p><Latex inline={true} formula="n_1*n_2*n_3...n_k" /> maneras posibles de hacer todas las elecciones.</p>
+			<p>Para comprender un poco de más del tema te invito a ver el video Permutaciones (Principio de la multiplicación).</p>
+
+			<BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/r6VdoMNnKtc?si=GRrGaeBqPSfaUeVo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+		</div>
+			<Lumi
+				src="/estadistica/permutaciones/p2 ej1.html"
+				nombre="Actividad"
+				instrucciones="Determina el número de maneras en que se pueden realizar las siguientes elecciones."
+			/>
+			<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<p>Al <b>principio de la multiplicación</b> también se le conoce como:</p>
+			<p><b>Principio fundamental del conteo</b></p>
+			<p>Si un evento <b>A</b> puede ocurrir de <b>m</b> maneras diferentes y otro evento <b>B</b> puede ocurrir de <b>n</b> formas diferentes, entonces el número total de formas en que ambos pueden ocurrir es de <b>m*n</b> maneras</p>
+
+			<p>Para comprender un poco de más del tema te invito a ver el video Principio de la multiplicación 2</p>
+			<BgFluido bg="bg-blue">
+		  <div class="mx-auto mb-5 max-w-screen-md">
+			<iframe
+			  class="aspect-video w-full"
+			  src="https://www.youtube.com/embed/0g1a2v4q8mE?si=3r7xXk6b9JYj0WzR"
+			  title="YouTube video player"
+			  frameborder="0"
+			  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			  referrerpolicy="strict-origin-when-cross-origin"
+			  allowfullscreen></iframe>   
+		  </div>
+		</BgFluido>
+
+		
+			</div>
+
+			<Lumi
+				src="/estadistica/permutaciones/p2 ej2.html"
+				nombre="Actividad"
+				instrucciones="Determina el número de maneras en que se pueden realizar las siguientes elecciones."
+			/>
+	
+	</div>
+</Layout>
