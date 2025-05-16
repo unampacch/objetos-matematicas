@@ -2,13 +2,31 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import { BASE_PATH } from '@/config'
+import Lumi from "@/components/Lumi.astro";
 ---
 
 <Layout>
 
     <ObjetoAprendizaje index={6} asignatura={"calculo"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl mb-10">
+        <p>Se conoce como derivadas sucesivas al proceso de derivar lo derivado. Y aunque no lo parezca, este proceso, aplicado al movimiento de los cuerpos, permite establecer una relación entre tres cantidades físicas: la distancia recorrida, la velocidad y la aceleración.</p>
+        <div class="max-w-xl mx-auto my-10">
+          <img src={`${BASE_PATH}/calculo/aplicaciones-fisicas/p1-imagen1.webp`} alt="">
+        </div>
+        <p>Lee con atención el siguiente texto, titulado <a href={`${BASE_PATH}/calculo/aplicaciones-fisicas/lectura-aplicaciones.pdf`}>Aplicaciones al movimiento</a>, y contesta el cuestionario que se adjunta.</p>
+      </div>
+      <Lumi
+        src="/calculo/aplicaciones-fisicas/aplicaciones.html"
+        nombre="Cuestionario"
+        instrucciones="Contesta el cuestionario"
+      />
+      <div class="mx-auto max-w-screen-xl my-10">
+        <h4>Para practicar</h4>
+        <p>Una vez que hayas concluido el cuestionario, resuelve los problemas sobre movimiento de la actividad titulada Problemas de aplicación.</p>
+        <p>Usa como guía los ejemplos incluidos en la lectura.</p>
+      </div>
     </div>
 
 </Layout>
