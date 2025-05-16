@@ -2,9 +2,40 @@
 import Layout from '@/layouts/Layout.astro'
 import Latex from '@/components/Latex.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import Video from '@/components/Video.astro'
+import Lumi from '@/components/Lumi.astro'
+import Comprobar from '@/components/Comprobar.astro'
 ---
 
 <Layout>
 	<ObjetoAprendizaje index={0} asignatura={'estadistica'} />
-	<div class="objeto-aprendizaje mx-auto animate-fade">Aquí va el contenido 👈</div>
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+    <div class="mx-auto max-w-screen-xl mb-10">
+      <h4>Introducción</h4>
+      <p>No es viable hacer predicciones razonables a menos de que conozcamos lo que es posible antes de juzgar lo que es probable.</p>
+      <ul class="ul-disc">
+        <li>En el análisis de lo que es posible, es importante <strong>especificar cuántas distintas situaciones pueden suceder</strong>. </li>
+        <li>Para conocer todas las posibles ocurrencias de un evento determinado <strong>es necesario contar el número de elementos de las combinaciones entre varios conjuntos</strong>.</li>
+        <p>Para comprender un poco de más del tema te invito a ver el video Diagrama de árbol.</p>
+        <Video
+          src="https://www.youtube.com/watch?v=yjVUggyKUdU"
+          pie="Diagrama de árbol, Ma. Emma Bautista García"
+        />
+      </ul>
+    </div>
+    <Lumi
+      src=""
+      nombre=""
+      instrucciones="Después de revisar el video y para identificar lo que has aprendido hasta el momento, te invitamos a dar respuesta a la siguiente trivia:"
+    />
+    <div class="mx-auto max-w-screen-xl my-10">
+      <p>Supongamos que el Comité Ejecutivo Estatal de un partido político debe elegir un candidato a diputado local y un candidato como diputado suplente por un distrito. Los posibles candidatos titulares a diputados son el Sr. Hurtado, la Sra. Fernández y la Sra. Ramírez y los candidatos a diputados suplentes son la Sra. Arteaga, el Sr. Torres y el S r. Uribe.</p>
+      <p>¿Cuántas posibles fórmulas pueden integrar si para ganar el voto femenino deciden que un candidato sea hombre y otra mujer? </p>
+      <p>Realiza el diagrama de árbol para dar respuesta a la pregunta</p>
+      <Comprobar>
+        <p>El diagrama para dar la respuesta correcta es como el que se muestra a continuación.</p>
+        <img src="" alt="Diagrama de árbol" class="mx-auto" />
+      </Comprobar>
+    </div>
+  </div>
 </Layout>

@@ -583,20 +583,25 @@
 		"estadistica": {
 			"slug": "estadistica",
 			"titulo": "Estadística",
-			"descripcion": "Curso de Estadística para estudiantes de bachillerato. Aprende a analizar datos y tomar decisiones basadas en la información.",
+			"descripcion": "Curso de Estadística para estudiantes de bachillerato. Aprende los conceptos básicos de estadística descriptiva, permutaciones, combinaciones y su aplicación en la resolución de problemas matemáticos.",
 			"objetos_aprendizaje": [
 				{
 					"titulo": "Permutaciones",
 					"slug": "/asignaturas/estadistica/permutaciones/inicio",
 					"portada": "/holder-cover.webp",
-					"descripcion": "Las permutaciones en la estadistica son un tema importante para el análisis de datos.",
+					"descripcion": "Las permutaciones son agrupaciones en las que importa el orden de los objetos o eventos. En esta secuencia se trata de analizar situaciones, mediante la resolución de problemas.",
 					"resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de ordenaciones",
-							"slug": "/asignaturas/estadistica/permutaciones/difinicion",
-							"descripcion": "Definición y propiedades de las ordenaciones de elementos."
-						}
+							"titulo": "Regla multiplicativa",
+							"slug": "/asignaturas/estadistica/permutaciones/regla-multiplicativa",
+							"descripcion": "La regla multiplicativa es una herramienta fundamental en la estadística que permite calcular el número total de formas en que se pueden organizar o seleccionar elementos de un conjunto."
+						},
+            {
+              "titulo": "Ordenaciones o Permutaciones",
+              "slug": "/asignaturas/estadistica/permutaciones/ordenaciones-permutaciones",
+              "descripcion": "Las permutaciones son una forma de contar y organizar elementos en un conjunto, considerando el orden de los mismos."
+            }
 					]
 				},
 				{
