@@ -593,15 +593,15 @@
 					"resumen": "Ordenaciones, permutaciones y combinaciones y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Regla multiplicativa",
-							"slug": "/asignaturas/estadistica/permutaciones/regla-multiplicativa",
-							"descripcion": "La regla multiplicativa es una herramienta fundamental en la estadística que permite calcular el número total de formas en que se pueden organizar o seleccionar elementos de un conjunto."
+							"titulo": "Principio fundamental del conteo",
+							"slug": "/asignaturas/estadistica/permutaciones/principio-fundamental-conteo",
+							"descripcion": "Principio fundamental del conteo (regla multiplicativa)"
 						},
-            {
-              "titulo": "Ordenaciones o Permutaciones",
-              "slug": "/asignaturas/estadistica/permutaciones/ordenaciones-permutaciones",
-              "descripcion": "Las permutaciones son una forma de contar y organizar elementos en un conjunto, considerando el orden de los mismos."
-            }
+						{
+							"titulo": "Ordenaciones o permutaciones",
+							"slug": "/asignaturas/estadistica/permutaciones/ordenaciones-permutaciones",
+							"descripcion": "Ordenaciones o Permutaciones"
+						}
 					]
 				},
 				{
