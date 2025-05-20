@@ -1,0 +1,108 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import Lumi from '@/components/Lumi.astro'
+import LightBox from "@/components/LightBox.astro";
+import { BASE_PATH } from "@/config";
+import BgFluido from '@/components/BgFluido.astro'
+---
+
+<Layout
+	title="Principio fundamental del conteo"
+  	description="">
+	
+	<ObjetoAprendizajePantalla index={0} pantallaIndex={1} asignatura={'estadistica'} />
+	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<h3>Ordenaciones o Permutaciones</h3>
+		<ImagenFullCaption
+				src="/estadistica/permutaciones/permutaciones.png"
+				/>
+			<p>Una ordenación de un conjunto de <Latex inline={true} formula="n" /> objetos en un orden se llama una permutación de los objetos (tomados todos a la vez).</p>
+			<p>Una ordenación de un número <Latex inline={true} formula="r" /> de dichos objetos, <Latex inline={true} formula="r ≤ n" />, en un orden dado, se llama una permutación <Latex inline={true} formula="r" /> o una permutación de los <Latex inline={true} formula="n" /> objetos tomados <Latex inline={true} formula="r" /> a la vez. Lo denotamos por: <Latex inline={true} formula="P (n, r)" /></p>
+
+			<p>Para comprender un poco de más del tema te invito a ver el video Permutaciones</p>
+
+			<BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/H9vjavpHnng?si=rEVd9jFdLGiQWwax"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+		</div>
+
+		<Lumi
+        src="/estadistica/permutaciones/p3 ej1.html"
+        nombre="Actividad"
+        instrucciones="Después de revisar el video y para identificar lo que has aprendido hasta el momento, te invitamos a dar respuesta a la siguiente trivia:"
+        />
+		
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<h4>Permutaciones con repeticiones</h4>
+			<p>Se desea saber el número de permutaciones de objetos, de los que algunos son iguales, como se indica a continuación.</p>
+			<p>Teorema</p>
+			<p>El número de permutaciones de <Latex inline={true} formula="n" /> objeto de los cuales <Latex inline={true} formula="n_1" /> son iguales, <Latex inline={true} formula="n_2" /> son iguales, … <Latex inline={true} formula="n_r" /> son iguales </p>
+
+			<p class="text-center"><Latex inline={true} formula="P_c^n = \\frac{n!}{n_1! \\cdot n_2! \\cdots n_r!} " /></p>
+
+			<p>Para comprender un poco de más del tema te invito a ver el video Permutaciones con repeticiones </p>
+
+			<BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/qlxb3oDjJ2g?si=0jrn3op7OyBXGBLo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+
+		</div>
+
+		<Lumi
+        src="/estadistica/permutaciones/p3 ej2.html"
+        nombre="Actividad"
+        instrucciones="Después de revisar el video y para identificar lo que has aprendido hasta el momento, te invitamos a identificar los enunciados falsos o verdaderos"
+        />
+		
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<h4>Pruebas ordenadas</h4>
+			<p> Muchos problemas del análisis, de probabilidad se relacionan con la selección de una canica tomada de una urna que contiene <Latex inline={true} formula="n" /> canicas (o una carta de una baraja, o una persona de una población). Cuando escogemos una canica tras otra de una urna, <Latex inline={true} formula="r" /> veces, definimos esta selección como una prueba ordenada de tamaño <Latex inline={true} formula="r" />. se consideran dos casos: con sustitución y sin sustitución</p>
+
+			<p>Instrucciones</p>
+
+			<p>Para comprender un poco de más del tema te invito a ver el video Permutaciones con repeticiones </p>
+
+			<BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/d0jRToagPXI?si=7Ag9x-OdH9KK6rMt"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+
+		</div>
+		<Lumi
+			src="/estadistica/permutaciones/p3 ej3.html"
+			nombre="Actividad"
+			instrucciones="Después de revisar el video y para identificar lo que has aprendido hasta el momento, te invitamos a dar respuesta a la siguiente relación de columnas:"
+			/>
+	</div>
+</Layout>

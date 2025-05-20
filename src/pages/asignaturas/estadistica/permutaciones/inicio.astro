@@ -1,10 +1,53 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import Latex from '@/components/Latex.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import Lumi from '@/components/Lumi.astro'
+import LightBox from "@/components/LightBox.astro";
+import { BASE_PATH } from "@/config";
+import BgFluido from '@/components/BgFluido.astro'
 ---
 
 <Layout>
 	<ObjetoAprendizaje index={0} asignatura={'estadistica'} />
-	<div class="objeto-aprendizaje mx-auto animate-fade">Aquí va el contenido 👈</div>
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		 <div class="mx-auto mb-5 max-w-screen-xl">
+			<h3>Diagrama de árbol</h3>
+
+			<h4>Introducción</h4>
+
+			<p><b> No es viable hacer predicciones razonables a menos de que conozcamos lo que es posible antes de juzgar lo que es probable.</b></p>
+
+			<ul class="ul-circle">
+				<li>En el análisis de lo que es posible, es importante especificar cuántas distintas situaciones pueden suceder. </li>
+				<li>Para conocer todas las posibles ocurrencias de un evento determinado es necesario contar el número de elementos de las combinaciones entre varios conjuntos.</li>
+			</ul>
+
+			<ImagenFullCaption
+				src="/estadistica/permutaciones/Diagrama-arbol.png"
+				/>
+			<p><b>Para comprender un poco de más del tema te invito a ver el video Diagrama de árbol </b></p>
+
+			<BgFluido bg="bg-blue">
+          <div class="mx-auto mb-5 max-w-screen-md">
+            <iframe
+              class="aspect-video w-full"
+              src="https://www.youtube.com/embed/yjVUggyKUdU?si=63T3rW3__j5l4Wxj"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>   
+          </div>
+        </BgFluido>
+		</div>
+		
+		<Lumi
+        src="/estadistica/permutaciones/p1 ej1.html"
+        nombre="Actividad"
+        instrucciones="Determina la solución de cada una de las siguientes integrales indefinidas."
+        />
+		 
+		</div>
 </Layout>
