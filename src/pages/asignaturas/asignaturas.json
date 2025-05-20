@@ -660,18 +660,38 @@
 					"resumen": "Estadística descriptiva y su aplicación en la resolución de problemas matemáticos.",
 					"pantallas": [
 						{
-							"titulo": "Definición de estadística descriptiva",
-							"slug": "/asignaturas/estadistica/descriptiva/definicion",
+							"titulo": "Tabla de frecuencias para datos no agrupados",
+							"slug": "/asignaturas/estadistica/descriptiva/tabla-no-agrupados",
 							"descripcion": "Definición y propiedades de la estadística descriptiva."
 						},
 						{
-							"titulo": "Medidas de tendencia central",
-							"slug": "/asignaturas/estadistica/descriptiva/tendencia-central",
+							"titulo": "Tabla de frecuencias para datos agrupados",
+							"slug": "/asignaturas/estadistica/descriptiva/tabla-agrupados",
 							"descripcion": "Medidas de tendencia central y su aplicación en la resolución de problemas matemáticos."
 						},
 						{
-							"titulo": "Medidas de dispersión",
-							"slug": "/asignaturas/estadistica/descriptiva/dispersion",
+							"titulo": "Histograma",
+							"slug": "/asignaturas/estadistica/descriptiva/histograma",
+							"descripcion": "Medidas de dispersión y su aplicación en la resolución de problemas matemáticos."
+						},
+						{
+							"titulo": "Medidas de tendencia central.",
+							"slug": "/asignaturas/estadistica/descriptiva/medidas-tendencia-central",
+							"descripcion": "Medidas de dispersión y su aplicación en la resolución de problemas matemáticos."
+						},
+						{
+							"titulo": "Medidas de dispersión.",
+							"slug": "/asignaturas/estadistica/descriptiva/medidas-dispersion",
+							"descripcion": "Medidas de dispersión y su aplicación en la resolución de problemas matemáticos."
+						},
+						{
+							"titulo": "Medidas de posición.",
+							"slug": "/asignaturas/estadistica/descriptiva/medidas-posicion",
+							"descripcion": "Medidas de tendencia central y su aplicación en la resolución de problemas matemáticos."
+						},
+						{
+							"titulo": "Diagrama de caja y bigotes",
+							"slug": "/asignaturas/estadistica/descriptiva/diagrama-caja-bigotes",
 							"descripcion": "Medidas de dispersión y su aplicación en la resolución de problemas matemáticos."
 						}
 					]
