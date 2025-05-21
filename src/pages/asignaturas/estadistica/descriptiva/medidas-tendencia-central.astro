@@ -8,7 +8,236 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 <Layout>
 	<ObjetoAprendizajePantalla index={2} pantallaIndex={3} asignatura={'estadistica'} />
 	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
-	<div class="objeto-aprendizaje mx-auto animate-fade"><div class="mx-auto mb-5 max-w-screen-xl">
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img04.PNG"
+				/>
+			<h4>Ejercicio</h4>	
+
+			<p>De igual manera, con papel y lápiz, realiza la tabla de distribución de frecuencias para datos agrupados y no agrupados de las estaturas de los siguientes 16 alumnos y calcula la media aritmética en ambos casos.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla15.PNG"
+				/>
+
+			<h4>Solución</h4>
+
+			<h3>Para datos no agrupados</h3>
+
+			<p>Primero ordenamos los datos de menor a mayor o de mayor a menor:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla16.PNG"
+				/>
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{\\sum x}{n} = \\frac{200 + 201 + 201 + 201 + 201 + 202 + 202 + \\cdots + 210}{30} = \\frac{6155}{30} = \\textbf{205.16}" /></p>	
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{\\sum x}{n} = \\frac{6155}{30} = \\textbf{205.16}" /></p>	
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\textbf{205.16}" /></p>
+			
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla17.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla18.PNG"
+				/>
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{\\sum x \\cdot f}{n} = \\frac{6151}{30} = \\mathbf{205.03}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\mathbf{205.03}" /></p>			
+
+			<p>La tabla de frecuencias para datos no agrupados es la siguiente:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla19.PNG"
+				/>
+
+			<p>Tenemos dos opciones para calcular la media en datos no agrupados, la primera es la tradicional, sumamos todos los datos y el resultado lo dividimos por el número total de datos:</p>
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{(1.52 + 1.52 + 1.53 + 1.53 + 1.57 + 1.58 + 1.58 + 1.64 + 1.64 + 1.64 + 1.66 + 1.66 + 1.70 + 1.74 + 1.76 + 1.79)}{16}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{(26.06)}{16} = 1.62875" /></p>
+
+			<p>La segunda es sumar todas las multiplicaciones de cada dato por su respectiva frecuencia absoluta y el resultado dividirlo por el número total de datos:</p>
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{[(1.52 \\times 2) + (1.53 \\times 2) + (1.57 \\times 1) + (1.58 \\times 2) + (1.64 \\times 3) + (1.66 \\times 2) + (1.7 \\times 1) + (1.74 \\times 1) + (1.76 \\times 1) + (1.79 \\times 1)]}{16} = \\frac{26.06}{16} = 1.62875" /></p>
+
+			<h3>Para datos agrupados</h3>
+
+			<p>La tabla de frecuencias para datos agrupados es la siguiente:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla20.PNG"
+				/>
+
+			<p>Para datos agrupados, la forma de obtener la media es sumar todas las multiplicaciones de cada una de las marcas de clase por su respectiva frecuencia absoluta y el resultado lo dividimos por el número total de datos:</p>
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{\\sum x \\cdot f}{n}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{[(1.55 \\times 7) + (1.62 \\times 3) + (1.69 \\times 3) + (1.76 \\times 3)]}{16} = \\frac{26.06}{16} = 1.62875" /></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img05.PNG"
+				/>
+
+			<h4>Datos no agrupados</h4>
+
+			<p>Primero hay que ordenar los dos, de menor a mayor o de mayor a menor. Debes encontrar la posición de la mediana de la siguiente forma:</p>
+
+			<p class="text-center"><Latex inline={true} formula="\\tilde{x} = \\frac{x_{(\\frac{n}{2})} + x_{(\\frac{n}{2}+1)}}{2} \\rightarrow \\text{Cuando el número total de datos es par}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="\\tilde{x} = x_{(\\frac{n+1}{2})} \\rightarrow \\text{Cuando el número total de datos es impar}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="n = \\text{número de datos.}" /></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla21.PNG"
+				/>
+
+			<h4>Ejemplo</h4>	
+
+			<p>Realiza la tabla de distribución de frecuencias para datos agrupados y no agrupados de las estaturas de los siguientes 16 alumnos y calcula la mediana en ambos casos.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla22.PNG"
+				/>
+
+			<h4>Solución</h4>
+
+			<h3>Para datos no agrupados</h3>
+
+			<ul>
+				<li>Tenemos 16 datos, por lo tanto, es un número de datos par y utilizamos la siguiente relación:
+
+					<p class="text-center"><Latex inline={true} formula="\\tilde{x} = \\frac{x_{(\\frac{30}{2})} + x_{(\\frac{30}{2}+1)}}{2} = \\frac{x_{(15)} + x_{(16)}}{2} = \\frac{205 + 206}{2} = \\mathbf{205.5}" /></p>
+
+				</li>
+
+				<li>Ubicamos los valores y hacemos el promedio de los datos:
+					<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla23.PNG"
+				/>
+					
+				<p>Por lo tanto:</p>
+
+				<p class="text-center"><Latex inline={true} formula="\\tilde{x} = \\frac{1.64 + 1.64}{2} = 1.64" /></p>
+
+				</li>
+			</ul>
+
+			<h3>Para dats agrupados</h3>
+
+			<p>La tabla de frecuencias para datos agrupados es la siguiente:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla24.PNG"
+				/>
+
+			<p>Para saber cuál es la <b>clase mediana</b>, debemos fijarnos en la columna de Frecuencia relativa acumulada y elegir la clase que cubra el 50% de los datos, en este caso 0.625 es la frecuencia que cubre el 0.5 o el 50% de los datos.</p>
+
+			<p class="text-center"><Latex inline={true} formula="\\tilde{x} = L_i + \\frac{\\frac{n}{2} - F_{i-1}}{f_i} \\cdot a" /></p>
+
+			<p>Identificamos los datos de la fórmula:</p>
+
+			<p><Latex inline={true} formula="n = 16" /></p>
+
+			<p><Latex inline={true} formula="L_i = 1.585" /></p>
+
+			<p><Latex inline={true} formula="f_i = 3" /></p>
+
+			<p><Latex inline={true} formula="F_{i-1} = 7" /></p>
+
+			<p><Latex inline={true} formula="a = 0.07" /></p>
+
+			<p>Sustituimos los valores en la fórmula:</p>
+
+			<p class="text-center"><Latex inline={true} formula="\\tilde{x} = 1.585 + \\frac{\\frac{16}{2} - 7}{3} (0.07) = \\mathbf{1.6083}" /></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla25.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla26.PNG"
+				/>
+			
+			<p class="text-center"><Latex inline={true} formula="\\tilde{x} = L_i + \\frac{\\frac{n}{2} - F_{i-1}}{f_i} \\cdot a" /></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla27.PNG"
+				/>
+			
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla28.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla29.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla30.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla31.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla32.PNG"
+				/>
+
+			<p class="text-center"><Latex inline={true} formula="\\hat{x} = L_i + \\frac{f_{i+1}}{f_{i-1} + f_{i+1}} \\cdot a" /></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla33.PNG"
+				/>
+
+			<h4>Ejemplo</h4>
+
+			<p>Realiza la tabla de distribución de frecuencias para datos agrupados y no agrupados de las estaturas de los siguientes 16 alumnos y calcula la <b>moda</b> en ambos casos.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla34.PNG"
+				/>
+
+			<h4>Solución</h4>
+
+			<h3>Para datos no agrupados</h3>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla35.PNG"
+				/>
+
+			<h3>Para datos agrupados</h3>
+
+			<p>La tabla de frecuencias para datos agrupados es la siguiente:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla36.PNG"
+				/>
+
+			<p>Para saber cuál es la <b>clase modal</b>, debemos fijarnos en la columna de Frecuencia absoluta y elegir la clase que tenga mayor frecuencia; si hay clases donde la mayor frecuencia se repita, se deberá sacar la moda para cada una de esas clases.</p>
+
+			<p class="text-center"><Latex inline={true} formula="\\hat{x} = L_i + \\frac{f_{i+1}}{f_{i-1} + f_{i+1}} \\cdot a" /></p>
+
+			<p>Identificamos los datos de la fórmula:</p>
+
+			<p><Latex inline={true} formula="L_i = 1.52" /></p>
+
+			<p><Latex inline={true} formula="f_{i+1} = 3" /></p>
+
+			<p><Latex inline={true} formula="f_{i-1} = 0" /></p>
+
+			<p><Latex inline={true} formula="a = 0.07" /></p>
+
+			<p>Sustituimos los valores en la fórmula:</p>
+
+			<p class="text-center"><Latex inline={true} formula="\\hat{x} = 1.515 + \\frac{3}{0 + 3}(0.07) = \\mathbf{1.585}" /></p>
+
 
 
 		</div>
