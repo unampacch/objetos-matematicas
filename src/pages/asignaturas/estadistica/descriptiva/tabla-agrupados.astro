@@ -8,9 +8,99 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 <Layout>
 	<ObjetoAprendizajePantalla index={2} pantallaIndex={1} asignatura={'estadistica'} />
 	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
-	<div class="objeto-aprendizaje mx-auto animate-fade"><div class="mx-auto mb-5 max-w-screen-xl">
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<p>Cuando el número de datos de estudio es grande, resulta conveniente agrupar los valores en intervalos consecutivos llamados <b>clases</b>. Estos intervalos son de la forma <Latex inline={true} formula="[L_i, L_s]" />, cuyo extremo <Latex inline={true} formula="L_i" /> es el límite inferior de la clase y el extremo <Latex inline={true} formula="L_s" /> es el límite superior de la clase. Existen diferentes maneras de obtener el número de clases, pero la experiencia recomienda que sean entre 5 y 20 clases</p>
+			<p><b>Pasos para construir una tabla de frecuencias para datos agrupados</b></p>
+
+			<ol class="ol-number">
+				<li>Ordena todos los datos de menor a mayor.</li>
+				<li>Determinamos el <b>Rango (R)</b>, que se calcula de la siguiente manera:
+				<p class="text-center"><Latex inline={true} formula="R = x_{\\text{max}} - x_{\\text{min}}" /></p>
+				<p>Donde</p>
+				<p><Latex inline={true} formula="x_{\\text{max}}" /> es el dato mayor.</p>
+				<p><Latex inline={true} formula="x_{\\text{min}}" /> es el dato minimo</p>
+				</li>
+				<li>Determinamos el <b>número de intervalos</b> o <b>clases (k)</b>. Hay varias formar de determinarlo, una alternativa es usando la raíz cuadrada del total de datos n (generalmente se redondea al siguiente valor). Por lo tanto:
+				<p class="text-center"><Latex inline={true} formula="k \\approx \\sqrt{n}" /></p>
+				</li>
+				<li>Calculamos la <b>amplitud de clase</b> o <b>amplitud del intervalo (a)</b>, que corresponde a la cantidad de datos que van en cada clase; esto se hace dividiendo el rango R entre el número de clases k (generalmente se redondea al siguiente valor).
+				<p class="text-center"><Latex inline={true} formula="a = \\frac{R}{k}" /></p>
+				</li>
+				<li>Construimos los intervalos o clases:
+
+					<p>Para obtener los limites inferiores <Latex inline={true} formula="L_i" />:</p>
+					<ul class="list-disc">
+						<li>En la primera clase hacemos <Latex inline={true} formula="L_i1 = X_min" /> (el dato más pequeño).</li>
+						<li>Para las demás clases el límite inferior se obtiene sumando la <Latex inline={true} formula="X_min" /> y la amplitud</li>
+					
+					<p>Para obtener los limites inferiores <Latex inline={true} formula="L_s" />:</p>
+					<ul class="list-disc">
+						<li>El límite superior de la primera clase será el valor anterior al límite inferior de la clase siguiente.</li>
+						<li>Para las demás clases se va sumando la amplitud al límite superior de la clase anterior.</li>	
+
+				<p class="text-center"><Latex inline={true} formula="k \\approx \\sqrt{n}" /></p>
+				</li>
+				<li>Calculamos los <b>límites reales de clase</b> o <b>fronteras</b>, son aquéllos que se obtienen restándole media unidad de medida al límite inferior de una clase y sumándole media unidad de medida al límite superior de las diferentes clases.
+				<p>Ejemplo</p>	
+
+				<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla7.PNG"
+				/>
+
+				</li>
+				<li>Calculamos las marcas de clase (M), que corresponden al punto medio cada intervalo. Se calcula sacando el promedio del límite inferior y el límite superior de cada clase o también, sacando el promedio de las fronteras de cada clase.</li>
+
+				<li>Para completar la tabla de frecuencias de datos agrupados se obtienen las siguientes frecuencias:
+					<ul class="list-disc">
+						<li><b>Frecuencia absoluta (f)</b>, es el número de datos que caen en determinado intervalo.</li>
+						<li><b>Frecuencia relativa (f')</b></li>
+						<li><b>Frecuencia acumulada (F)</b></li>
+						<li><b>Frecuencia acumulada relativa (F')</b></li>
+					</ul>
+				</li>
+			</ol>
+
+			<h4>Ejercicio</h4>
+			<p>Con los siguientes datos, que corresponden a los años de servicio de 60 empleados de una empresa, realiza una tabla de distribución de frecuencias para datos agrupados.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla8.PNG"
+				/>
+
+			<h4>Ejercicio</h4>
+			<p>Realiza la tabla de distribución de frecuencias para datos agrupados de las estaturas de los siguientes 16 alumnos.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla9.PNG"
+				/>	
 
 
+			<h3>Marcas de clase</h3>
+			<p>Las marcas de clase son los puntos medios o los promedios de los límites de clase o de las fronteras de clase. La siguiente tabla muestra una distribución de frecuencias de datos agrupados, con diez clases y una amplitud de intervalo de 5 unidades.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla10.PNG"
+				/>
+
+			<p>Observa los límites de clase, las fronteras de clase, las marcas de clase y la amplitud en la recta numérica, tomemos como ejemplo las primeras cinco clases:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img02.PNG"
+				/>
+
+			<ul class="list-disc">
+				<li>Del límite inferior de una clase al límite inferior de la siguiente clase, la amplitud es la misma, en este caso es igual a 5.</li>
+				<li>De la frontera inferior a la frontera superior de la misma clase, la amplitud es la misma, en este caso es igual a 5</li>
+				<li>El rango entre dos marcas de clase consecutivas debe ser igual a la amplitud, en este caso es igual a 5.</li>
+			</ul>
+
+			<h3>Representaciones gráficas</h3>
+
+			<p>Obtenidos los datos hay que mostrarlos de forma ordenada y comprensible. La forma más sencilla es colocarlos en una tabla, donde se muestran las variables, las categorías de cada variable y el número de eventos de cada categoría. En ciertas ocasiones, especialmente cuando trabajamos con un gran número de datos, las tablas no son prácticas y es necesario una mejor visión de los datos con una mirada rápida. Esto se consigue con los gráficos. La selección del gráfico dependerá del tipo de datos empleados. Comenzaremos con los gráficos para datos cuantitativos.</p>
+
+			<p>Los gráficos estadísticos nos transmiten información de modo más expresivo, nos van a permitir, con un sólo golpe de vista, entender de qué se nos habla, observar las características más importantes de un conjunto de datos e incluso sacar alguna conclusión sobre el comportamiento de la muestra donde se está realizando el estudio.</p>
+			
 		</div>
 	</div>
 </Layout>
