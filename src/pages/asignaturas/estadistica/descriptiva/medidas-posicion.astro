@@ -8,7 +8,197 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 <Layout>
 	<ObjetoAprendizajePantalla index={2} pantallaIndex={5} asignatura={'estadistica'} />
 	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
-	<div class="objeto-aprendizaje mx-auto animate-fade"><div class="mx-auto mb-5 max-w-screen-xl">
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img08.PNG"
+				/>
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla47.PNG"
+				/>
+
+			<p>Se busca la posición del cuartil dentro de un conjunto de datos ordenado de menor a mayor de la siguiente manera:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_k = \\frac{k(n + 1)}{4} \\quad \\text{para } k = 1, 2, 3" /></p>
+
+			<p><b>Para el cuatril 1</b></p>
+
+			<p class="text-center"><Latex inline={true} formula="Para \\quad k= 1" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_1 = \\frac{1(30 + 1)}{4} = \\frac{31}{4} = \\mathbf{7.75}" /></p>
+
+			<p>Como no es un valor entero, se está indicando que el valor del cuartil 1 está entre la posición 7 y la 8, entonces debemos hacer una interpolación:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla48.PNG"
+				/>
+
+			<p class="text-center"><Latex inline={true} formula="Q_k = L_i + \\frac{k(L_s - L_i)}{4}" /></p>
+			<p class="text-center"><Latex inline={true} formula="Q_1 = 202 + \\frac{1(203 - 202)}{4} = 202 + \\frac{1}{4} = \\mathbf{202.25}" /></p>
+
+			<p><b>Para el cuartil 2 que debe coincidir con la mediana:</b></p>
+
+			<p class="text-center"><Latex inline={true} formula="\\text{Para } k = 2:" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_2 = \\frac{2(30 + 1)}{4} = \\frac{62}{4} = \\mathbf{15.5}" /></p>
+
+			<p>Como no es un valor entero, se está indicando que el valor del cuartil 1 está entre la posición 15 y la 16, entonces debemos hacer una interpolación:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla49.PNG"
+				/>
+
+			<p class="text-center"><Latex inline={true} formula="Q_k = L_i + \\frac{k(L_s - L_i)}{4}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_2 = 205 + \\frac{2(206 - 205)}{4} = 205 + \\frac{2}{4} = \\mathbf{205.5}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_1 = 202 + \\frac{1(203 - 202)}{4} = 202 + \\frac{1}{4} = \\mathbf{202.25}" /></p>
+
+			<p><b>Para el cuartil 3:</b></p>
+
+			<p class="text-center"><Latex inline={true} formula="\\text{Para } k = 3:" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_3 = \\frac{3(30 + 1)}{4} = \\frac{93}{4} = \\mathbf{23.25}" /></p>
+
+			<p>Como no es un valor entero, se está indicando que el valor del cuartil 1 está entre la posición 23 y la 24, entonces debemos hacer una interpolación:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla50.PNG"
+				/>
+
+			<p class="text-center"><Latex inline={true} formula="Q_k = L_i + \\frac{k(L_s - L_i)}{4}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_3 = 207 + \\frac{3(208 - 207)}{4} = 207 + \\frac{3}{4} = \\mathbf{207.75}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_2 = 205 + \\frac{2(206 - 205)}{4} = 205 + \\frac{2}{4} = \\mathbf{205.5}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_1 = 202 + \\frac{1(203 - 202)}{4} = 202 + \\frac{1}{4} = \\mathbf{202.25}" /></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img09.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img10.PNG"
+				/>
+
+			<h4>Ejercicio</h4>
+
+			<p>calcularás las Medidas de Posición para datos agrupados y no agrupados del siguiente problema:</p>
+
+			<p>Estaturas de alumnos:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla51.PNG"
+				/>
+
+			<p>Tabla de frecuencias de datos agrupados</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla52.PNG"
+				/>
+
+			<h4>Solución:</h4>
+
+			<h3>Cuartiles para datos no agrupados</h3>
+
+			<p>El primer paso es ordenar los datos de menor a mayor y localizamos la posición de los cuartiles 1, 2 y 3, de la siguiente manera:</p>
+
+			<p><b>Primer cuartil:</b></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_1 = \\frac{1(16 + 1)}{4} = \\frac{17}{4} = \\mathbf{4.25}" /></p>
+
+			<p>Lo cual indica que el primer cuartil está entre la posición 4 y 5, por lo tanto, definimos un valor anterior (<Latex inline={true} formula="L_i" />) y un valor superior (<Latex inline={true} formula="L_s" />) para poder interpolar:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img11.PNG"
+				/>
+
+			<p>Interpolamos de la siguiente manera:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_k = L_i + \\frac{k(L_s - L_i)}{4} = 1.53 + \\frac{1(1.57 - 1.53)}{4} = 1.53 + \\frac{0.04}{4} = \\mathbf{1.54}" /></p>
+
+			<p>Por lo tanto:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_1 = \\mathbf{1.54}" /></p>
+
+			<p><b>Segundo cuartil:</b></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_2 = \\frac{2(16 + 1)}{4} = \\frac{34}{4} = \\mathbf{8.5}" /></p>
+
+			<p>Lo cual indica que el primer cuartil está entre la posición 8 y 9, por lo tanto, definimos un valor anterior (<Latex inline={true} formula="L_i" />) y un valor superior (<Latex inline={true} formula="L_s" />) para poder interpolar:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img12.PNG"
+				/>
+
+			<p>Interpolamos de la siguiente manera:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_k = L_i + \\frac{k(L_s - L_i)}{4} = 1.64 + \\frac{2(1.64 - 1.64)}{4} = 1.64 + \\frac{0}{4} = \\mathbf{1.64}" /></p>
+
+			<p>Por lo tanto:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_2 = \\mathbf{1.64}" /></p>
+
+			<p><b>Tercer cuartil:</b></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_3 = \\frac{3(16 + 1)}{4} = \\frac{51}{4} = \\mathbf{12.75}" /></p>
+
+			<p>Lo cual indica que el primer cuartil está entre la posición 12 y 13, por lo tanto, definimos un valor anterior (<Latex inline={true} formula="L_i" />) y un valor superior (<Latex inline={true} formula="L_s" />) para poder interpolar:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img13.PNG"
+				/>
+
+			<p>Interpolamos de la siguiente manera:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_k = L_i + \\frac{k(L_s - L_i)}{4} = 1.66 + \\frac{3(1.70 - 1.66)}{4} = 1.66 + \\frac{0.12}{4} = \\mathbf{1.69}" /></p>
+
+			<p>Por lo tanto:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_3 = \\mathbf{1.69}" /></p>
+
+			<h3>Cuartiles para datos agrupados</h3>
+
+			<p><b>Primer cuartil:</b></p>
+
+			<p>Identificamos la clase donde se encuentra el primer cuartil, que es la que tiene una frecuencia acumulada relativa igual al 25% o la inmediata superior al 25%:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla53.PNG"
+				/>
+
+			<p>Sustituimos en la fórmula:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_1 = L_i + \\left( \\frac{\\left(\\frac{k \\cdot n}{4} - F_{i-1} \\right)}{f_i} \\right) \\cdot a \\quad = 1.515 + \\left( \\frac{\\left(\\frac{1 \\cdot 16}{4} - 0 \\right)}{7} \\right) \\cdot 0.07 = 1.515 + \\left( \\frac{4}{7} \\right) \\cdot 0.07 = \\mathbf{1.555}" /></p>
+
+			<p><b>Segundo cuartil:</b></p>
+
+			<p>Identificamos la clase donde se encuentra el segundo cuartil, que es la que tiene una frecuencia acumulada relativa igual 50% o la inmediata superior al 50%:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla54.PNG"
+				/>
+
+			<p>Sustituimos en la fórmula:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_k = L_i + \\frac{k(L_s - L_i)}{4}" /></p>
+
+			<p><b>Tercer cuartil:</b></p>
+
+			<p>Identificamos la clase donde se encuentra el tercer cuartil, que es la que tiene una frecuencia acumulada relativa igual 75% o la inmediata superior al 75%:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla55.PNG"
+				/>
+
+			<p>Sustituimos en la fórmula:</p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_3 = L_i + \\left( \\frac{\\left(\\frac{k \\cdot n}{4} - F_{i-1} \\right)}{f_i} \\right) \\cdot a \\quad = 1.655 + \\left( \\frac{\\left(\\frac{3 \\cdot 16}{4} - 10 \\right)}{3} \\right) \\cdot 0.07 = 1.655 + \\left( \\frac{2}{3} \\right) \\cdot 0.07 = \\mathbf{1.7016}" /></p>
+
+
+			
 
 
 		</div>
