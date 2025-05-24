@@ -2,13 +2,65 @@
 import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizaje from "@/components/ObjetoAprendizaje.astro";
+import { BASE_PATH } from '@/config'
 ---
 
 <Layout>
 
     <ObjetoAprendizaje index={5} asignatura={"calculo"} />
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl mb-10">
+        <h3>Encontrando máximos y mínimos de funciones polinomiales</h3>
+        <p>Una de las características más interesantes de una función, es la que está relacionada con sus valores extremos.</p>
+        <p>En muchas circunstancias nos enfrentamos a situaciones donde nos interesa maximizar las ganancias, o minimizar los costos de producción de algún bien. Cuando las variables implicadas en estas situaciones llegan fusionarse en un modelo matemático, es posible crear un procedimiento para rastrear los valores extremos del modelo, mejor conocidos como máximos o mínimos.</p>
+        <p>En este procedimiento entran en juego dos criterios muy importantes en Cálculo Diferencial: los criterios de la primera y segunda derivada.</p>
+        <div class="max-w-2xl mx-auto">
+          <img src={`${BASE_PATH}/calculo/puntos-inflexion/p1-imagen-1.webp`} alt="">
+        </div>
+        <p>Observa con atención el siguiente video, en el cual se detalla cómo describir los aspectos más importantes de funciones polinomiales, mediante argumentos algebraicos.</p>
+        <div class="max-w-2xl mx-auto">
+          <img src={`${BASE_PATH}/calculo/puntos-inflexion/p1-imagen-2.webp`} alt="">
+        </div>
+        <p>El segundo video nos muestra cómo obtener los mismos resultados, pero mediante la herramienta de GeoGebra.</p>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-10 my-10 text-center">
+          <p><a href="https://www.loom.com/share/f3f7bc57b5d34b5285ffbe2e03f38f0c?sid=a49f80ec-95fa-45a3-99fc-31ac9c2b0264" target="_blank" class="text-2xl text-red font-bold text-center">Video 1</a></p>
+          <p><a href="https://www.loom.com/share/a192b93671f74d53acdab6283917d04b?sid=dd856eac-dea0-4e27-8cb7-ed0960587f63" target="_blank" class="text-2xl text-red font-bold text-center">Video 2</a></p>
+        </div>
+        <h4 class="mt-10">Para practicar</h4>
+        <p>Para cada una de las siguientes funciones polinomiales, determina su gráfica, raíces, puntos críticos y valores extremos. Para ello usa los criterios de la primera y segunda derivada.</p>
+        <ol class="ol-alpha">
+          <li><Latex formula="f(x)=x^3+5x^2-8x-12" /></li>
+          <li><Latex formula="f(x)=-x^3+4x^2+7x+10" /></li>
+          <li><Latex formula="f(x)=x^4-x^3-24x^2+4x+80" /></li>
+          <li><Latex formula="f(x)=-x^4+2x^3-7x^2+8x+12" /></li>
+        </ol>
+        <h4 class="mt-10">Máximos y mínimos de funciones racionales e irracionales</h4>
+        <p>Cuando las funciones a estudiar tienen una regla de correspondencia que no es un polinomio, las reglas de derivación se tornan más interesantes.</p>
+        <div class="max-w-lg mx-auto">
+          <img src={`${BASE_PATH}/calculo/puntos-inflexion/p1-imagen-3.webp`} alt="">
+        </div>
+        <p>A continuación, te presentamos un video que muestra el procedimiento para encontrar valores extremos de funciones más complicadas.</p>
+        <div class="my-10 text-center">
+          <p><a href=" https://www.loom.com/share/60526cf74a524d1fa6d1cca0683adb29?sid=219287f1-04b8-4466-b857-67d912b6f725" target="_blank" class="text-2xl text-red font-bold text-center">Video 3</a></p>
+        </div>
+        <div class="max-w-2xl mx-auto">
+          <img src={`${BASE_PATH}/calculo/puntos-inflexion/p1-imagen-4.webp`} alt="">
+        </div>
+        <h4 class="mt-10">Para practicar</h4>
+        <p>Para cada una de las siguientes funciones, determina su gráfica, puntos críticos y valores extremos.</p>
+        <p>Para ello usa los criterios de la primera derivada y el análisis de asíntotas.</p>
+        <div class="max-w-2xl mx-auto">
+          <img src={`${BASE_PATH}/calculo/puntos-inflexion/p1-imagen-5.webp`} alt="">
+        </div>
+        <h4 class="mt-10">Problemas de optimización</h4>
+        <p>Una de las aplicaciones más comunes de la derivada es su contribución al modelado y resolución de problemas de optimización.</p>
+        <div class="max-w-md mx-auto text-center">
+          <img src={`${BASE_PATH}/calculo/puntos-inflexion/p1-imagen-6.webp`} alt="">
+        </div>
+        <p>En este tipo de problemas, no solo se pone en práctica la habilidad para traducir situaciones de la vida real al lenguaje algebraico, sino que también se ponen a prueba nuestras capacidades de interpretación de los resultados arrojados por un modelo matemático.</p>
+        <p>En la lectura titulada <a href={`${BASE_PATH}/calculo/puntos-inflexion/valores-extremos.pdf`} target="_blank">Valores extremos de una función</a>, se analizan las potencialidades del criterio de la primera y segunda derivada en el estudio de una población de moscas. </p>
+        <p>Te invitamos a leerla y a responder las preguntas relacionadas con el modelo aplicado a la medicina que se incluye al final del documento.</p>
+      </div>
     </div>
 
 </Layout>
