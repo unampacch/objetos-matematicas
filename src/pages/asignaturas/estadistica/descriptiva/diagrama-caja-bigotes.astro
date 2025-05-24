@@ -8,7 +8,68 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 <Layout>
 	<ObjetoAprendizajePantalla index={2} pantallaIndex={6} asignatura={'estadistica'} />
 	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
-	<div class="objeto-aprendizaje mx-auto animate-fade"><div class="mx-auto mb-5 max-w-screen-xl">
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+
+			<p>Los diagramas de caja y bigotes son una presentación visual que describe características importantes de un conjunto de datos, como la dispersión y simetría. Está formado por un rectángulo (<b>la caja</b>) y dos segmentos (<b>los bigotes</b>), uno a cada lado del rectángulo. La caja abarca el <b>rango intercuartílico</b>, que es el intervalo comprendido entre el primer cuartil <Latex inline={true} formula="Q_1" /> y el tercer cuartil <Latex inline={true} formula="Q_3" />. Dentro de la caja se representa con un segmento la <b>mediana</b> de la distribución. El bigote izquierdo queda determinado por el <b>valor mínimo</b> y el primer cuartil y el derecho por el tercer cuartil y el <b>valor máximo</b>, excepto si existen <b>valores atípicos</b>.</p>
+
+			<p>Se consideran <b>valores atípicos</b> los menores que <Latex inline={true} formula="Q_1-1.5·(Q_3- Q_1)" /> y los mayores que <Latex inline={true} formula="Q_3+1.5·(Q_3- Q_1)" />. Cuando hay valores atípicos, estos se representan fuera del diagrama de caja, mediante asteriscos o puntos.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img14.PNG"
+				/>
+
+			<p>Los diagramas de caja permiten una fácil lectura e interpretación del tipo de simetría de una distribución:</p>
+
+			<ul class="list-disc pl-5">
+				<li>Es simétrica cuando la media, mediana y moda de la distribución coinciden y los datos se distribuyen de igual forma a ambos lados de esas medidas.
+					<ImagenFullCaption
+				src="/estadistica/descriptiva/img15.PNG"
+				/>
+				</li>
+
+				<li>Es asimétrica positiva o sesgada a la derecha, cuando los datos tienden a concentrarse hacia la parte inferior de la distribución. La media se situaría a la derecha de la mediana.
+					<ImagenFullCaption
+				src="/estadistica/descriptiva/img16.PNG"
+				/>
+				</li>
+				<li>Es asimétrica negativa o sesgada hacia la izquierda cuando los datos tienden a concentrarse hacia la parte superior de la distribución. La media se situaría a la izquierda de la mediana.
+					<ImagenFullCaption
+				src="/estadistica/descriptiva/img17.PNG"
+				/>
+				</li>
+			</ul>
+			<p><b>Ejemplos de interpretación de un diagrama de caja y bigotes:</b> Podemos obtener abundante información de una distribución a partir de estas representaciones. Supongamos que estamos hablando de edades: </p>
+			<ul class="list-disc pl-5">
+				<li>La parte izquierda de la caja es mayor que la de la derecha; ello quiere decir que las edades comprendidas entre el 25% y el 50% de la población están más dispersas que entre el 50% y el 75%.</li>
+				<li>El bigote de la izquierda (Valor mínimo, Q1) es más corto que el de la derecha; por ello el 25% de los más jóvenes están más concentrados que el 25% de los mayores.</li>
+				<li>El rango intercuartílico = Q3 - Q1 = 14.5; el 50 % de la población tiene 14.5 años.</li>
+			</ul>
+			<h4>Ejercicio</h4>
+			<p>Dibuja el diagrama de caja y bigotes para los datos de las estaturas de los 16 estudiantes. Utiliza datos no agrupados.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla56.PNG"
+				/>
+
+			<p class="text-center"><Latex inline={true} formula="Q_1 = \\mathbf{202.25}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_2 = \\mathbf{205.5}" /></p>
+
+			<p class="text-center"><Latex inline={true} formula="Q_3 = \\mathbf{207.75}" /></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla57.PNG"
+				/>
+			<p>Como no hay valores menores a <b>194</b> ni mayores a <b>216</b>, no existen valores atípicos. Por lo tanto, ya podemos dibujar el diagrama de la siguiente forma:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla58.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img18.PNG"
+				/>
 
 
 		</div>
