@@ -1,0 +1,195 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+---
+
+<Layout>
+	<ObjetoAprendizajePantalla index={2} pantallaIndex={4} asignatura={'estadistica'} />
+	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla37.PNG"
+				/>
+
+			<h4>Ejemplo</h4>
+			<p> La experiencia en años de 10 trabajadores se muestra a continuación, determina el <b>rango</b> para una distribución de frecuencias con datos agrupados y no agrupados.</p>
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla38.PNG"
+				/>
+
+			<h4>Solución</h4>
+			<h3>Para datos no agrupados</h3>
+
+			<p>Para datos no agrupados, lo ideal es ordenarlos de menor a mayor y después hacer su diferencia.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img06.PNG"
+				/>
+			
+			<h3>Para datos agrupados</h3>
+
+			<p>La tabla de frecuencias para datos agrupados es la siguiente:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla39.PNG"
+				/>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla40.PNG"
+				/>
+			
+		<h4>Ejemplo</h4>
+		<p>La experiencia en años de 10 trabajadores se muestra a continuación, determina el rango para una distribución de frecuencias con datos agrupados y no agrupados. </p>
+
+		<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla41.PNG"
+				/>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\frac{[(200 - 205.16)^2 + (201 - 205.16)^2 + (201 - 205.16)^2 + \\cdots + (210 - 205.16)^2]}{30}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="= \\frac{258.168}{30} = 8.6056" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="= s^2 = \\mathbf{8.6056}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\frac{\\sum x_i^2}{n} - (\\bar{x})^2" /></p>
+
+		<p class="text-center"><Latex inline={true} formula=" \\frac{1263059}{30} - (205.16)^2" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="= 42,101.96 - 42,093.26 = 8.6056" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\mathbf{9.3155}" /></p>
+
+		<h4>Solución</h4>
+
+		<h3>Para datos no agrupados</h3>
+
+		<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla42.PNG"
+				/>
+		
+		<p>Utilizamos la fórmula:</p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}" /></p>
+
+		<p>Recordamos que la media para datos no agrupados es:</p>
+
+		<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{\\sum x}{n} = \\frac{(2 + 3 + 4 + 4 + 5 + 5 + 6 + 8 + 8 + 8)}{10} = 5.3" /></p>
+
+		<p>Sustituimos valores:</p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\frac{[(2 - 5.3)^2 + (3 - 5.3)^2 + (4 - 5.3)^2 + (4 - 5.3)^2 + (5 - 5.3)^2 + (5 - 5.3)^2 + (6 - 5.3)^2 + (8 - 5.3)^2 + (8 - 5.3)^2 + (8 - 5.3)^2]}{10}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\frac{[10.89 + 5.29 + 1.69 + 1.69 + 0.09 + 0.09 + 0.49 + 7.29 + 7.29 + 7.29]}{10}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\frac{42.1}{10} = \\mathbf{4.21}" /></p>
+
+		<h3>Para datos agrupados</h3>
+
+		<p>La tabla de frecuencias para datos agrupados es la siguiente:</p>
+
+		<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla43.PNG"
+				/>
+
+		<p>Utilizamos la fórmula:</p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\frac{\\sum (x_i - \\bar{x})^2 \\cdot f_i}{n}" /></p>
+
+		<p>Recordado la media para datos agrupados:</p>
+
+		<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{\\sum x \\cdot f}{n} = \\frac{[(2.9 \\times 2) + (4.8 \\times 4) + (6.7 \\times 1) + (8.6 \\times 3)]}{10} = \\frac{57.5}{10} = \\mathbf{5.75}" /></p>
+
+		<p>Para hacer los cálculos más sencillos, podemos extender la tabla con las siguientes columnas:</p>
+
+		<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla44.PNG"
+				/>
+
+		<p class="text-center"><Latex inline={true} formula="\\mathbf{s^2 = \\frac{\\sum (x_i - \\bar{x})^2 \\cdot f_i}{n} = \\frac{45.125}{10} = \\mathbf{4.5125}}" /></p>
+
+		<ImagenFullCaption
+				src="/estadistica/descriptiva/img07.PNG"
+				/>
+		
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\mathbf{8.6056}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\sqrt{s^2}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\sqrt{8.6056}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\sqrt{8.6056} = 2.93" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\mathbf{2.93}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="C.V. = \\frac{2.93}{205.16} = \\mathbf{0.01428}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s^2 = \\mathbf{9.3155}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\sqrt{s^2}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\sqrt{9.3155}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\sqrt{9.3155} = 3.052" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\mathbf{3.052}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="C.V. = \\frac{3.052}{205.03} = \\mathbf{0.01488}" /></p>
+
+		<h4>Ejemplo</h4>
+
+		<p>La experiencia en años de 10 trabajadores se muestra a continuación, determina la desviación estándar y el coeficiente de variación para una distribución de frecuencias con datos agrupados y no agrupados. </p>
+
+		<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla45.PNG"
+				/>
+
+		<h4>Solución</h4>
+		<h3>Para datos no agrupados</h3>
+
+		<p>La desviación estándar es la raíz cuadrada de la varianza, por lo tanto, únicamente hacemos el siguiente cálculo:</p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\sqrt{s^2} = \\sqrt{4.21} = \\mathbf{2.051}" /></p>
+
+		<p>Para obtener el coeficiente de variación, dividimos la desviación estándar por la media.</p>
+
+		<p>Recordamos que la media para datos no agrupados es:</p>
+
+		<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{\\sum x}{n} = \\frac{(2 + 3 + 4 + 4 + 5 + 5 + 6 + 8 + 8 + 8)}{10} = 5.3" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="C.V. = \\frac{s}{\\bar{x}} = \\frac{2.051}{5.3} = \\mathbf{0.387}" /></p>
+
+		<h3>Para datos agrupados</h3>
+
+		<p>La desviación estándar es la raíz cuadrada de la varianza, por lo tanto, únicamente hacemos el siguiente cálculo:</p>
+
+		<p class="text-center"><Latex inline={true} formula="s = \\sqrt{s^2} = \\sqrt{4.5125} = \\mathbf{2.124}" /></p>
+
+		<p>Para obtener el coeficiente de variación, dividimos la desviación estándar por la media.</p>
+
+		<p>Recordado la media para datos agrupados:</p>
+
+		<p class="text-center"><Latex inline={true} formula="\\bar{x} = \\frac{(2.9 \\times 2) + (4.8 \\times 4) + (6.7 \\times 1) + (8.6 \\times 3)}{10} = \\frac{57.5}{10} = \\mathbf{5.75}" /></p>
+
+		<p class="text-center"><Latex inline={true} formula="C.V. = \\frac{s}{\\bar{x}} = \\frac{2.124}{5.75} = \\mathbf{0.369}" /></p>
+
+		<h4>Ejercicio</h4>
+
+		<p>Un estudiante compra una torta diaria durante 20 días. Los siguientes datos muestran los precios en pesos de la torta que compró el alumno cada día con “El Tony” en su negocio afuera del CCH Oriente:</p>
+
+		<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla46.PNG"
+				/>
+
+		<p>Determina las medidas de tendencia central y las medidas de dispersión para datos agrupados y no agrupados de los precios de las tortas.</p>
+
+
+
+
+		</div>
+	</div>
+</Layout>

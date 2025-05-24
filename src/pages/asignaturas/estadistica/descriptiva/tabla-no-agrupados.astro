@@ -1,0 +1,72 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+---
+
+<Layout>
+	<ObjetoAprendizajePantalla index={2} pantallaIndex={0} asignatura={'estadistica'} />
+	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+	<div class="objeto-aprendizaje mx-auto animate-fade"><div class="mx-auto mb-5 max-w-screen-xl">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<p>La <b>estadística descriptiva</b> se encarga de la organización, presentación y descripción de los datos recolectados, y de obtener información a partir de ellos. El objetivo de la organización de datos es acomodarlos en forma útil para revelar sus características esenciales y simplificar ciertos análisis. </p>
+			<p>La <b>distribución de frecuencias</b> es una ordenación en forma de tabla de los datos de un problema determinado, asignando a cada dato su frecuencia correspondiente. Los cuatro tipos de frecuencia son los siguientes:</p>
+
+			<ol class="ol-alpha">
+				<li><b>Frecuencia absoluta.</b> La frecuencia absoluta es el número de veces que aparece determinado valor en un estudio estadístico. Se representa con la letra f.</li>
+				<li><b>Frecuencia relativa.</b>La frecuencia relativa es el cociente entre la frecuencia absoluta de un determinado valor y el número total de datos. Se representa por f' y también se puede expresar en porcentaje.
+				<p class="text-center"><Latex inline={true} formula="f' = \\frac{f}{n}" /></p>
+				<p>Donde</p>
+				<p>f= frecuencia absoluta</p>
+				<p>n= numero total de datos</p>
+				</li>
+				<li><b>Frecuencia acumulada.</b> La frecuencia acumulada es la suma de las frecuencias absolutas de todos los valores inferiores o iguales al valor considerado. Se representa con la letra <Latex inline={true} formula="F" />.</li>
+				<li><b>Frecuencia acumulada relativa.</b> La frecuencia relativa acumulada es el cociente entre la frecuencia acumulada de un determinado valor y el número total de datos. También se puede expresar en porcentaje.
+				<p class="text-center"><Latex inline={true} formula="F' = \\frac{f}{n}" /></p>
+				<p>Donde</p>
+				<p>F= frecuencia acumulada</p>
+				<p>n= numero total de datos</p>
+			</li>
+
+			<p>Utilicemos un ejemplo para identificar cada elemento de una distribución de frecuencias. En un grupo de Estadística I del CCH Oriente, los alumnos registraron las temperaturas máximas del mes de julio, los resultados fueron los siguientes:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla1.PNG"
+				/>
+
+			<p>Ordenamos los datos de menor a mayor:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla2.PNG"
+				/>
+
+			<p>Frecuencia absoluta:</p>	
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla3.PNG"
+				/>
+
+			<p><b>Frecuencia relativa.</b>La frecuencia relativa es el cociente entre la frecuencia absoluta de un determinado valor y el número total de datos. Se representa por f' y también se puede expresar en porcentaje.</p>
+
+			<p class="text-center"><Latex inline={true} formula="f' = \\frac{f}{n}" /></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla4.PNG"
+				/>
+
+			<p>Frecuencia relativa acumulada:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla5.PNG"
+				/>
+				
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla6.PNG"
+				/>
+			
+
+		</div>
+		</div>
+	</div>
+</Layout>

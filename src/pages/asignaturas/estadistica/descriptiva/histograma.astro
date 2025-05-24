@@ -1,0 +1,57 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+---
+
+<Layout>
+	<ObjetoAprendizajePantalla index={2} pantallaIndex={2} asignatura={'estadistica'} />
+	<!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<p>Un histograma es una representación gráfica de una variable en forma de barras. Se utilizan para variables continuas o para variables discretas que están agrupadas en clases. En el eje abscisas (eje x) se construyen unos rectángulos que tienen por base la amplitud del intervalo, y por altura, la frecuencia de cada clase. Existen histogramas con frecuencias absolutas y también hay histogramas que se construyen con frecuencias acumuladas.</p>
+
+			<p><b><u>Datos a utilizados para graficar</u></b> Marcas de clase vs frecuencias absolutas o acumuladas.</p>
+
+			<h4>Polígono de Frecuencias</h4>
+			<p>Para construir el polígono de frecuencias se toma la marca de clase, que coincide con el punto medio de la parte superior de cada rectángulo del histograma y se unen los puntos mediante líneas rectas. Si deseas que el polígono de frecuencias toque el eje de las abscisas debes calcular una marca de clase anterior a la primera y una posterior a la última. </p>
+
+			<p><b><u>Datos a utilizados para graficar</u></b> Marcas de clase vs frecuencias absolutas o acumuladas.</p>
+
+			<h4>Ojiva</h4>
+			<p>La ojiva es la distribución de frecuencias de los datos, o sea, que en ella se permite ver cuántas observaciones están por encima o por debajo de ciertos valores, en vez de exhibir solo los números asignados a cada intervalo.</p>
+
+			<p><b><u>Datos a utilizados para graficar</u></b> Fronteras (frontera inferior de la primera clase y todas las fronteras superiores) vs frecuencias acumuladas.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla11.PNG"
+				/>
+
+			<p><b>Ejercicio:</b> treinta pilas AA se pusieron a prueba para determinar su tiempo de duración. Los resultados, que se muestran en minutos, se presentan continuación:</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla12.PNG"
+				/>
+
+			<p>En una hoja de tu cuaderno, realiza la tabla de distribución de frecuencias para datos agrupados y dibuja el histograma (de frecuencias absolutas y acumuladas), el polígono de frecuencias y la ojiva para dichos datos.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla13.PNG"
+				/>
+
+			<p><b>Ejercicio:</b> Ahora completa la siguiente tabla de distribución de frecuencias para datos agrupados y realiza todas las gráficas vistas hasta el momento (en tu cuaderno). </p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/tabla14.PNG"
+				/>
+
+			<p><b>Ejercicio:</b> A partir de la siguiente gráfica, realiza la tabla de distribución de frecuencias para datos agrupados.</p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img03.PNG"
+				/>
+
+		</div>
+	</div>
+</Layout>

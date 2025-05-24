@@ -1,10 +1,39 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import Latex from '@/components/Latex.astro'
 import ObjetoAprendizaje from '@/components/ObjetoAprendizaje.astro'
+import Layout from "@/layouts/Layout.astro";
+import Latex from "@/components/Latex.astro";
+import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import Lumi from '@/components/Lumi.astro'
+import LightBox from "@/components/LightBox.astro";
+import { BASE_PATH } from "@/config";
+import BgFluido from '@/components/BgFluido.astro'
 ---
 
 <Layout>
-	<ObjetoAprendizaje index={1} asignatura={'estadistica'} />
-	<div class="objeto-aprendizaje mx-auto animate-fade">Aquí va el contenido 👈</div>
+	<ObjetoAprendizaje index={2} asignatura={'estadistica'} />
+	<div class="objeto-aprendizaje mx-auto animate-fade">
+		<div class="mx-auto mb-5 max-w-screen-xl">
+			<h3>Conceptos básicos</h3>
+			<p><b>Estadística.</b> Es la ciencia que estudia cómo aprender de los datos. Con ese objetivo se ocupa de desarrollar métodos para recolectar, organizar, resumir y analizar datos, así como para dar conclusiones válidas y tomar decisiones razonables. Los datos proporcionan un conocimiento más sólido y veraz que el conocimiento basado en anécdotas, creencias o intuiciones; por ello, la estadística se ha convertido en una herramienta valiosa en diversas áreas del quehacer humano y en la vida cotidiana.</p>
+
+			<p><b>Variables.</b> Las características de interés en una población o una muestra se llaman variables. Como estas características no se mantienen constantes de un individuo a otro, pueden asumir más de un valor, (de ahí su nombre).</p>
+
+			<p><b>Datos</b> Son las observaciones, los valores que asumen las variables en cada individuo.</p>
+
+			<p><b>Clasificación de las variables:</b></p>
+
+			<ImagenFullCaption
+				src="/estadistica/descriptiva/img01.PNG"
+				/>
+
+			<p><b>Ejemplos de los tipos de variables:</b></p>
+
+			<ul class="list-disc">
+				<li><b>Variable cualitativa nominal:</b> El estado civil: soltero, casado, separado, divorciado y viudo.</li>
+				<li><b>Variable cualitativa ordinal:</b> Medallas de una prueba deportiva: oro, plata y bronce.</li>
+				<li><b>Variable cuantitativa discreta:</b> El número de hermanos de 5 amigos: 2, 1, 0, 1, 3</li>
+				<li><b>Variable cuantitativa continua:</b>La estatura de 5 amigos: 1.73, 1.82, 1.77, 1.69, 1.75.</li>
+
+		</div>
+	</div>
 </Layout>
