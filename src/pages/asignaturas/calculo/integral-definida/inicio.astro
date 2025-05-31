@@ -26,7 +26,7 @@ import Video from '@/components/Video.astro'
             <p>
               Si <Latex inline={true} formula="f(x)"/>  es una función continua definida para <Latex inline={true} formula="a≤x≤b"/>. Se divide el intervalo <Latex inline={true} formula="[a,b]"/> en n partes iguales <Latex inline={true} formula="\\Delta x = \\dfrac{b-a}{n}"/> y tomamos los extremos finales <Latex inline={true} formula="x_i"/> de estos subintervalos. <b>La integral definida de f, desde a hasta b</b>, está dada por
             </p>
-            <p class="text-center"> <Latex inline={true} formula="\\int_{a}^{b}{f(x) dx}=\\lim_{n\\to \\infty}\\sum_{i=1}^{n}f(x_{i})\\Delta x"/></p>
+            <p class="text-center"> <Latex inline={true} formula=" \\displaystyle \\int_{a}^{b}{f(x) dx}=\\lim_{n\\to \\infty}\\sum_{i=1}^{n}f(x_{i})\\Delta x"/></p>
 
               <ImagenCaption
               src="/calculo/integral-definida/img01.png">
@@ -45,7 +45,7 @@ import Video from '@/components/Video.astro'
              <b>Teorema Fundamental del Cálculo</b>
             </p>
             <p>Sea <Latex inline={true} formula="f(x)"/> una función continua definida en el intervalo <Latex inline={true} formula="[a,b]"/>, si <Latex inline={true} formula="F(x)"/> es una antiderivada de <Latex inline={true} formula="f(x)"/>, entonces</p>
-            <p class="text-center"> <Latex inline={true} formula="\\int_{a}^{b}f(x) dx = F(b)-F(a)"/>
+            <p class="text-center"> <Latex inline={true} formula="\\displaystyle \\int_{a}^{b}f(x) dx = F(b)-F(a)"/>
 
               
           </div>
@@ -57,19 +57,19 @@ import Video from '@/components/Video.astro'
         <ol class="ol-number">
           <li>
             <p>Determina el valor de la integral</p>
-            <p class="text-center"><Latex inline={true} formula="\\int_{0}^{2}x^2\\, dx"/></p>
+            <p class="text-center"><Latex inline={true} formula=" \\displaystyle \\int_{0}^{2}x^2\\, dx"/></p>
             <p>Solución: Como <Latex inline={true} formula="F(x)=\\dfrac{x^3}{3}"/> es una antiderivada de <Latex inline={true} formula="f(x)=x^2"/>, entonces</p>
-            <p class="text-center"><Latex inline={true} formula="\\int_{0}^{2}x^2\\, dx =\\dfrac{x^3}{3}\\Bigg|_{0}^{2}"/></p>
+            <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{0}^{2}x^2\\, dx =\\dfrac{x^3}{3}\\Bigg|_{0}^{2}"/></p>
             <p class="text-center"><Latex inline={true} formula="=\\left(\\dfrac{2^3}{3} \\right)-\\left(\\dfrac{0^3}{3} \\right)"/></p>
             <p class="text-center"><Latex inline={true} formula="=\\dfrac{8}{3}"/></p>
             <p>Podemos concluir que </p>
-            <p class="text-center"><Latex inline={true} formula="\\int_{0}{2} x^2\\, dx =\\dfrac{8}{3}"/></p>
+            <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{0}^{2} x^2\\, dx =\\dfrac{8}{3}"/></p>
           </li>
           <li>
             <p>Calcula el valor de la integral</p>
-            <p class="text-center"><Latex inline={true} formula="\\int_{0}^{\\pi / 2}\\cos(x)\\, dx"/></p>
+            <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{0}^{\\pi / 2}\\cos(x)\\, dx"/></p>
             <p>Solución: Tenemos que <Latex inline={true} formula="G(x)=sen(x)"/> es una antiderivada de <Latex inline={true} formula="G(x)=cos(x)"/>, por lo que </p>
-            <p class="text-center"><Latex inline={true} formula="\\int_{0}^{\\pi /2} \\cos(x) \\, dx= sen(x)\\Bigg|_{0}^{\\pi / 2}"/></p>
+            <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{0}^{\\pi /2} \\cos(x) \\, dx= sen(x)\\Bigg|_{0}^{\\pi / 2}"/></p>
             <p class="text-center"><Latex inline={true} formula="=sen\\left(\\dfrac{\\pi}{2} \\right)-sen(0)"/></p>
             <p class="text-center"><Latex inline={true} formula="=1-0"/></p>
             <p class="text-center"><Latex inline={true} formula="=1"/></p>
@@ -79,11 +79,11 @@ import Video from '@/components/Video.astro'
         <p>Además, hay un par de propiedades que nos llevan a poder determinar la integral definida de una mayor cantidad de funciones, y otras tres que son relativas al intervalo de integración. Dichas propiedades las enunciamos a continuación.</p>
 
         <ol class="ol-number">
-          <li><p class="text-center"><Latex inline={true} formula="\\int_{a}^{b} k\\cdot f(x)\\, dx=k\\cdot \\int_{a}^{b} f(x) \\, dx"/></p></li>
-          <li><p class="text-center"><Latex inline={true} formula="\\int_{a}^{b}[f(x)+g(x)]\\, dx=\\int_{a}^{b}f(x) \\, dx+\\int_{a}^{b} g(x)\\, dx"/></p></li>
-          <li><p class="text-center"><Latex inline={true} formula="\\int_{a}^{b} f(x) \\, dx=-\\int_{b}^{a} f(x) \\, dx"/></p></li>
-          <li><p class="text-center"><Latex inline={true} formula="\\int_{a}^{a} f(x) \\, dx =0"/></p></li>
-          <li><p class="text-center"><Latex inline={true} formula="\\int_{a}^{b} f(x) \\, dx= \\int_{a}^{c} f(x) \\, dx+\\int_{c}^{b} f(x) \\, dx"/></p></li>
+          <li><p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{a}^{b} k\\cdot f(x)\\, dx=k\\cdot \\displaystyle \\int_{a}^{b} f(x) \\, dx"/></p></li>
+          <li><p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{a}^{b}[f(x)+g(x)]\\, dx=\\displaystyle \\int_{a}^{b}f(x) \\, dx+\\displaystyle \\int_{a}^{b} g(x)\\, dx"/></p></li>
+          <li><p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{a}^{b} f(x) \\, dx=-\\displaystyle \\int_{b}^{a} f(x) \\, dx"/></p></li>
+          <li><p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{a}^{a} f(x) \\, dx =0"/></p></li>
+          <li><p class="text-center"><Latex inline={true} formula="\\displaystyle \\int_{a}^{b} f(x) \\, dx= \\displaystyle \\int_{a}^{c} f(x) \\, dx+\\displaystyle \\int_{c}^{b} f(x) \\, dx"/></p></li>
         </ol>
        </div>
 
@@ -95,7 +95,7 @@ import Video from '@/components/Video.astro'
        <Lumi
        src="/calculo/integral-definida/p1 ej2.html"
        nombre="Actividad"
-       instrucciones="Selecciona los pares que corresponden a una integral con su propiedad."
+       instrucciones="Con base en el Teorema Fundamental del Cálculo y utilizando las propiedades de las integrales definidas, determina el valor de cada una de las siguientes integrales. Redondea el valor a dos decimales. "
        />
     </div>
 

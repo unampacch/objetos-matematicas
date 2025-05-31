@@ -26,12 +26,13 @@ import BgFluido from '@/components/BgFluido.astro'
           <tbody>
               
               <tr>
-                <td class="border border-gray-400 p-4"> 
+                <td class="border border-gray-400 p-4 "> 
                   
-                  <ImagenCaption
+                  <ImagenCaption 
                   src="/calculo/interpretacion-integral/imagen7.PNG"
+                  
                   />
-                  <p class="text-center">(Área bajo la curva 6)</p> 
+                  
                 </td>
                   <td class="border border-gray-400 p-4">
                       <p>La gráfica delimitada por la función <Latex formula="f(x)=-\\dfrac{1}{2}x+2 " inline={true}/>, el eje X y las rectas  <Latex formula="x=-4" inline={true}/> y  <Latex formula="x=2" inline={true}/>, puede ser calculada, de forma exacta, tomando el área del rectángulo y un cuadrado resultando 15 unidades cuadradas, como se observa.</p>
@@ -45,7 +46,7 @@ import BgFluido from '@/components/BgFluido.astro'
 
         <p>Existen áreas encerradas por funciones en las que resulta complicado hacer una división en figuras conocidas; es entonces cuando se pueden hacer aproximaciones al área por medio de rectángulos.</p>
 
-        <p>En las gráficas que se muestran se hacen aproximaciones al valor del área encerrada por la función <Latex formula="f(x)=-\\dfrac{1}{2}x^2+2 " inline={true}/>, tomando cada vez una mayor cantidad de rectángulos. Para dicha aproximación se utilizan rectángulos cuya altura es el valor de la función para el extremo izquierdo de su base.</p>
+        <p>En las gráficas que se muestran se hacen aproximaciones al valor del área encerrada por la función <Latex formula="f(x)=\\dfrac{1}{2}x^2+2 " inline={true}/>, tomando cada vez una mayor cantidad de rectángulos. Para dicha aproximación se utilizan rectángulos cuya altura es el valor de la función para el extremo izquierdo de su base.</p>
 
         <div class="table-responsive">
           <table class="table">
@@ -57,14 +58,14 @@ import BgFluido from '@/components/BgFluido.astro'
                   <ImagenCaption
                   src="/calculo/interpretacion-integral/imagen8.PNG"
                   />
-                  <p class="text-center">(Área bajo la curva 7)</p> 
+                 
                 </td>
                 <td class="border border-gray-400 p-4"> 
                   <p class="text-center"><b>4 rectángulos <Latex formula="A_(aprox.)" inline={true}/>=4.875</b></p>
                   <ImagenCaption
                   src="/calculo/interpretacion-integral/imagen9.PNG"
                   />
-                  <p class="text-center">(Área bajo la curva 8)</p> 
+                  
                 </td>
               </tr>
 
@@ -74,14 +75,14 @@ import BgFluido from '@/components/BgFluido.astro'
                   <ImagenCaption
                   src="/calculo/interpretacion-integral/imagen10.PNG"
                   />
-                  <p class="text-center">(Área bajo la curva 9)</p> 
+                   
                 </td>
                 <td class="border border-gray-400 p-4"> 
                   <p class="text-center"><b>16 rectángulos <Latex formula="A_(aprox.)" inline={true}/>=5.212</b></p>
                   <ImagenCaption
                   src="/calculo/interpretacion-integral/imagen11.PNG"
                   />
-                  <p class="text-center">(Área bajo la curva 10)</p> 
+                  
                 </td>
               </tr>
               
@@ -103,7 +104,7 @@ import BgFluido from '@/components/BgFluido.astro'
 
     <div class="mx-auto mb-5 max-w-screen-xl">
           <ol class="ol-number">
-            <li>Primero debes ingresar los coeficientes de la función polinomial que vas a analizar, la cual puede ser constante <Latex formula="(a=0 y b=0)" inline={true}/>, lineal <Latex formula="(a=0)" inline={true}/> o cuadrática.</li>
+            <li>Primero debes ingresar los coeficientes de la función polinomial que vas a analizar, la cual puede ser constante <Latex formula="(a=0 \\quad y \\quad b=0)" inline={true}/>, lineal <Latex formula="(a=0)" inline={true}/> o cuadrática.</li>
             <li>Después ingresa el intervalo <Latex formula="[a,b]" inline={true}/> en el que deseas calcular el área</li>
             <li>Finalmente, con ayuda del deslizador, modifica el número de rectángulos con el que se te pide aproximar el valor del área.</li>
           </ol>
@@ -122,7 +123,7 @@ import BgFluido from '@/components/BgFluido.astro'
       <h4>Por ejemplo:</h4>
       <p>La siguiente gráfica describe la velocidad de un móvil (eje Y) con respecto al tiempo (eje X), siendo el área bajo la curva que ha recorrido el móvil en el intervalo de tiempo considerado, es decir:</p>
 
-      <p class="text-center"><Latex formula="d=\\int_{a}^{b} v(t)\\, dt" inline={true}/></p>
+      <p class="text-center"><Latex formula="d= \\displaystyle \\int_{a}^{b} v(t)\\, dt" inline={true}/></p>
 
       <div class="table-responsive">
         <table class="table">
@@ -138,7 +139,7 @@ import BgFluido from '@/components/BgFluido.astro'
               </td>
                 <td class="border border-gray-400 p-4">
                   <p>En este caso:</p>
-                  <p class="text-center"><Latex formula="d=\\int_{0}^{4} v(t)\\, dt = 8" inline={true}/></p>
+                  <p class="text-center"><Latex formula="d= \\displaystyle \\int_{0}^{4} v(t)\\, dt = 8" inline={true}/></p>
                     <p>Considerando que si <Latex formula="v(t)" inline={true}/> están en metros sobre segundo y <Latex formula="t" inline={true}/> en metros, significa que la distancia que recorrió el móvil (área bajo la curva) en el intervalo <Latex formula="[0,4]" inline={true}/> es 8 metros.</p>
                 </td>
             </tr>
