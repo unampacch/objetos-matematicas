@@ -57,13 +57,13 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <h4 class="font-extrabold uppercase !text-darkblue">Ejemplo 1</h4>
       </BgFluido>
       <div class="mx-auto max-w-screen-xl">
-        <p>Encontrar la ecuación ordinaria de la parábola con vértice en el punto <Latex formula="V(4,1)" inline={true}/>, eje focal paralelo al y  foco <Latex formula="F(4,3)" inline={true}/>. Además de la ecuación de la directriz y la longitud del lado recto.</p>
+        <p>Encontrar la ecuación ordinaria de la parábola con vértice en el punto <Latex formula="V(4,1)" inline={true}/>, eje focal paralelo al eje <Latex formula="y" inline={true}/>y foco<Latex formula="F(4,3)" inline={true}/>. Además de la ecuación de la directriz y la longitud del lado recto.</p>
         <p><u>Solución:</u></p>
         <p>Como la parábola es vertical, se usa la ecuación:</p>
         <div class="my-5 text-center text-xl">
           <Latex formula="(x-h)^2=4p(y-k)"/>
         </div>
-        <p>Del vértice proporcionado se obtienes los valores de <Latex formula="h" inline={true}/> y <Latex formula="k" inline={true}/>, donde:</p>
+        <p>Del vértice proporcionado se obtienen los valores de <Latex formula="h" inline={true}/> y <Latex formula="k" inline={true}/>, donde:</p>
         <div class="my-5 text-center text-xl">
           <Latex formula="h=4\\;y\\;k=1"/>
         </div>
@@ -126,7 +126,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <p>Al ser  negativo es una parábola que abre a la izquierda.</p>
         <p>El foco de la parábola está dado por <Latex formula="F(h+p,k)" inline={true}/></p>
         <div class="my-5 text-center text-xl">
-          <Latex formula="F(1+(-4),6)\\rightarrow F(-3,6)"/>
+          <Latex formula="F(1+(-4),-6)\\rightarrow F(-3,-6)"/>
         </div>
         <p>La ecuación de la directriz está dada por <Latex formula="x=h-p" inline={true}/></p>
         <div class="my-5 text-center text-xl">
@@ -139,7 +139,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <p>Entonces, los elementos de la parábola son:</p>
         <ul class="ul-disc">
           <li>Vértice: <Latex formula="(1,-6)" inline={true}/></li>
-          <li>Foco: <Latex formula="(-3,6)" inline={true}/></li>
+          <li>Foco: <Latex formula="(-3,-6)" inline={true}/></li>
           <li>Directriz: <Latex formula="x=5" inline={true}/></li>
           <li>Longitud del lado recto: <Latex formula="16" inline={true}/></li>
         </ul>
