@@ -23,13 +23,13 @@ import Hr from '@/components/Hr.astro'
 			<div class="mx-auto max-w-screen-lg rounded-xl bg-red p-5">
 				<ol class="ol-alpha mt-5 text-2xl">
 					<li>
-						<Latex inline={true} formula="24 \\cdot 22 \\cdot 24 = 2(4 + 2 + 4) = 210 = 1024 " />
+						<Latex inline={true} formula="2^4 \\cdot 2^2 \\cdot 2^4 = 2^{(4 + 2 + 4)} = 2^{10} = 1024 " />
 					</li>
 					<li>
 						<Latex inline={true} formula="5^2 \\cdot 5^7 = 5^{2+7} = 5^9 = 1953125 " />
 					</li>
 					<li>
-						<Latex inline={true} formula="35 \\cdot 3^{-2} = 35 + (-2) = 35 - 2 = 33 = 27 " />
+						<Latex inline={true} formula="3^5 \\cdot 3^{-2} = 3^{5 + (-2)} = 3^{5 - 2} = 3^3 = 27 " />
 					</li>
 				</ol>
 			</div>
@@ -47,7 +47,7 @@ import Hr from '@/components/Hr.astro'
 						<Latex inline={true} formula="(2^3)^4 = 2^{3 \\cdot 4} = 2^{12} = 4096  " />
 					</li>
 					<li>
-						<Latex inline={true} formula="(32)^3 = 36 = 729  " />
+						<Latex inline={true} formula="(3^2)^3 = 3^6 = 729  " />
 					</li>
 					<li>
 						<Latex
@@ -102,6 +102,31 @@ import Hr from '@/components/Hr.astro'
 			<div class="my-5 text-center text-2xl">
 				<Latex inline={true} formula="(ab)^n = a^n b^n" />
 			</div>
+			<h4 class="mt-5">Ejemplos</h4>
+
+			<div class="mx-auto mb-5 max-w-screen-lg rounded-xl bg-red p-5">
+				<ol class="ol-alpha mt-5 text-2xl">
+					<li>
+						<Latex inline={true} formula="(20)^4 = (2 \\cdot 10)^4 = 2^4 \\cdot 10^4=" />
+						<Latex inline={true} formula="(2 \\cdot 2 \\cdot 2\\cdot 2) (10 \\cdot 10 \\cdot 10 \\cdot 10) = 16 \\cdot 10000 = 160000" />
+						
+					</li>
+					<li>
+						<Latex inline={true} formula="(3 \\quad s \\quad t)^4 = 3^4 s^4 t^4 =" />
+
+						<Latex inline={true} formula="(3 \\cdot 3 \\cdot 3 \\cdot 3) (s \\cdot s \\cdot s \\cdot s) (t \\cdot t \\cdot t \\cdot t)=" />
+
+						<Latex inline={true} formula="81 s^4 t^4" />
+					</li>
+					<li>
+						<Latex inline={true} formula="(3 \\cdot 2 \\cdot3 )^2 = 3^2 \\cdot 2^2 \\cdot 3^2 ="/>
+						<Latex inline={true} formula="(3 \\cdot 3)(2 \\cdot 2)(3 \\cdot 3) = 9 \\cdot 4 \\cdot 9 = 324" /> 
+						<p>o </p> 
+						<Latex inline={true} formula="(3 \\cdot 2 \\cdot 3)^2 =18^2 = 324" /> 
+
+			</li>
+			</ol>
+			</div>
 			<Hr />
 			<h4>4<sup>a</sup> ley de los Exponentes</h4>
 			<p>
@@ -135,7 +160,7 @@ import Hr from '@/components/Hr.astro'
 			<div class="my-5 text-center text-2xl">
 				<Latex
 					inline={true}
-					formula="\\left(\\frac{a}{b}\\right)^n = \\left(\\frac{a}{b}\\right) \\cdot \\left(\\frac{a}{b}\\right) \\cdot \\left(\\frac{a}{b}\\right) \\ldots \\left(\\frac{a}{b}\\right) \\quad m \\text{ veces} "
+					formula="\\left(\\frac{a}{b}\\right)^n = \\left(\\frac{a}{b}\\right) \\cdot \\left(\\frac{a}{b}\\right) \\cdot \\left(\\frac{a}{b}\\right) \\ldots \\left(\\frac{a}{b}\\right) \\quad n \\text{ veces} "
 				/>
 			</div>
 			<p>Veces el producto</p>
@@ -146,7 +171,7 @@ import Hr from '@/components/Hr.astro'
 			<div class="my-5 text-center text-2xl">
 				<Latex
 					inline={true}
-					formula="\\left ( \\frac{a}{n} \\right )^{n} = \\frac{(a\\cdot a\\cdot a,\\ldots,a\\cdot a)}{(b\\cdot b\\cdot b,\\ldots,b\\cdot b)} = \\frac{(a)^n}{b^n} "
+					formula="\\left ( \\frac{a}{b} \\right )^{n} = \\frac{(a\\cdot a\\cdot a,\\ldots,a\\cdot a)}{(b\\cdot b\\cdot b,\\ldots,b\\cdot b)} = \\frac{(a)^n}{b^n} = (\\frac{a^n}{b^n}) = \\frac{(a)^n}{(b)^n} "
 				/>
 			</div>
 			<Hr />
@@ -175,14 +200,14 @@ import Hr from '@/components/Hr.astro'
 			<div class="my-5 text-center text-2xl">
 				<Latex
 					inline={true}
-					formula="\\frac{2^{^{5}}}{2^{3}} = \\frac{2 \\cdot 2 \\cdot 2}{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2} = \\frac{1}{2^2} = \\frac{1}{4}  "
+					formula="\\frac{2^{^{3}}}{2^{5}} = \\frac{2 \\cdot 2 \\cdot 2}{2 \\cdot 2 \\cdot 2 \\cdot 2 \\cdot 2} = \\frac{1}{2^2} = \\frac{1}{4}  "
 				/>
 			</div>
 			<p>Es decir:</p>
 			<div class="my-5 text-center text-2xl">
 				<Latex
 					inline={true}
-					formula="\\frac{2^{^{5}}}{2^{3}}=\\frac{1}{2^{5-3}}=\\frac{1}{2^{2}}=\\frac{1}{4}"
+					formula="\\frac{2^{^{3}}}{2^{3}}=\\frac{1}{2^{5-3}}=\\frac{1}{2^{5}}=\\frac{1}{4}"
 				/>
 			</div>
 		</div>

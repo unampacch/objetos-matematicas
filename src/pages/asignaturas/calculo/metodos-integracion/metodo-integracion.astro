@@ -37,7 +37,7 @@ import BgFluido from '@/components/BgFluido.astro'
 
         <p>Resolvamos la integral</p>
 
-        <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int{e^5x}dx"/></p>
+        <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int e^{5x}dx"/></p>
 
         <p>A primera instancia, parece una integral tan sencilla como <Latex inline={true} formula="\\displaystyle \\int{e^x}dx=e^x +C "/>, sin embargo, al no ser el exponente una simple <Latex inline={true} formula="x"/>, entonces debemos reconocerla como una nueva variable <Latex inline={true} formula="u"/>, por lo que nuestra regla se ha actualizado a:</p>
 
@@ -51,7 +51,7 @@ import BgFluido from '@/components/BgFluido.astro'
 
         <p>Nos damos cuenta de que en la integral hace falta multiplicar por 5 para tener completa la diferencial, sin embargo, también se divide por 5, de manera que integral no se altere.</p>
 
-        <p class="text-center"><Latex inline={true} formula="\\int \\dfrac{e^{5x} \\cdot 5 \\,dx}{5} = \\int \\dfrac{e^u \\,du}{5}"/></p>
+        <p class="text-center"><Latex inline={true} formula="\\displaystyle \\int \\dfrac{e^{5x} \\cdot 5 \\,dx}{5} = \\int \\dfrac{e^u \\,du}{5}"/></p>
 
         <p>Ahora podemos integrar</p>
 

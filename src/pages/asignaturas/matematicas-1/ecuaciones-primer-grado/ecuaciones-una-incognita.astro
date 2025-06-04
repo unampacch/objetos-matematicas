@@ -4,6 +4,7 @@ import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
 import Lumi from "@/components/Lumi.astro";
+import Hr from '@/components/Hr.astro'
 ---
 
 <Layout
@@ -66,7 +67,7 @@ import Lumi from "@/components/Lumi.astro";
       <Lumi
 			    src="/matematicas1/ecuaciones-primer-grado/pant3-ej2.html"
 			    nombre="Ejercicios"
-			    instrucciones="Encuentra la solución de las siguientes ecuaciones de primer grado."
+			    instrucciones="Escribe las siguientes ecuaciones de primer grado en su forma más simplificada. Si la ecuación no tienesolución, escribe: Sin solución."
 		    />
         
     <div class="mx-auto max-w-screen-xl"> 
@@ -110,6 +111,8 @@ import Lumi from "@/components/Lumi.astro";
         <p class="my-5 text-center"><Latex formula="-4+6=2" inline={true}/></p>
 
         <p class="my-5 text-center"><Latex formula="2=2" inline={true}/></p>
+
+        <Hr />
 
         <p class="my-5">Encontremos la solución de otra ecuación un poco más compleja</p>
 
@@ -169,6 +172,8 @@ import Lumi from "@/components/Lumi.astro";
 
         <p class="my-5">Comprobamos que <Latex formula="x=56" inline={true}/> sí satisface la igualdad, por lo tanto es solución.</p>
 
+        <Hr />
+
         <p class="my-5">Veamos un último ejemplo:</p>
 
         <p class="my-5 text-center"><Latex formula="\\frac{2(3-4x)}{5} = \\frac{1}{3} (x+4) - \\frac{3x+2}{2} " inline={true}/></p>
@@ -224,7 +229,7 @@ import Lumi from "@/components/Lumi.astro";
         <p class="my-5 text-center"><Latex formula="-2 = -2" inline={true}/></p>
     </div>
         <Lumi
-        src="/matematicas1/ecuaciones-primer-grado/Pant3-ej3.html"
+        src="/matematicas1/ecuaciones-primer-grado/pant3-ej3.html"
         nombre="Ejercicios"
         instrucciones="Encuentra la solución de las siguientes ecuaciones de primer grado."
       />
