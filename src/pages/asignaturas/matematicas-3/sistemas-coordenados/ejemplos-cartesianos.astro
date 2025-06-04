@@ -70,23 +70,23 @@ import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
 					</div>
 		 		</li>
 
-	  <div>
-		<table class="table border-collapse bg-slate-900 text-white">
+	  <div class="table-responsive">
+		<table class="table">
 			<tbody>
 				<tr>
-					<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La ecuación de la línea recta <Latex formula="y = mx + b" inline={true}/></td>
-					<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="-3x + y = -1" inline={true}/></td>
-					<td class="border-b px-4 py-2 text-center">O lo que es lo mismo: <Latex formula="y = -1 + 3x" inline={true}/></td>
+					<td class=" text-center">La ecuación de la línea recta <Latex formula="y = mx + b" inline={true}/></td>
+					<td colspan="2" class=" text-center"><Latex formula="-3x+y=-1" inline={true}/></td>
+					<td class=" text-center">O lo que es lo mismo: <Latex formula="y=-1+3x" inline={true}/></td>
 				</tr>
 				<tr>
-					<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La pendiente (m)</td>
-					<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="m = 3" inline={true}/> </td>
-					<td class="border-b px-4 py-2 text-center">La pendiente es positiva su inclinación es de abajo hacia arriba y se encuentra en el cuadrante I, siendo su valor igual a 3</td>
+					<td class=" text-center">La pendiente (m)</td>
+					<td colspan="2"class=" text-center"><Latex formula="m = 3" inline={true}/> </td>
+					<td class=" text-center">La pendiente es positiva su inclinación es de abajo hacia arriba y se encuentra en el cuadrante I, siendo su valor igual a 3</td>
 				</tr>
 				<tr>
-					<td class="border-b border-r border-slate-50 px-4 py-2 text-center">La ordenada al origen (b)</td>
-					<td class="border-b border-r border-slate-50 px-4 py-2 text-center"><Latex formula="b = -1" inline={true}/></td>
-					<td class="border-b px-4 py-2 text-center">Cuando <Latex formula="x = 0 \\ y = -1" inline={true}/></td>
+					<td class=" text-center">La ordenada al origen (b)</td>
+					<td colspan="2"class=" text-center"><Latex formula="b = -1" inline={true}/></td>
+					<td class=" text-center">Cuando <Latex formula="x = 0 \\ y = -1" inline={true}/></td>
 				</tr>
 
 				</tbody>

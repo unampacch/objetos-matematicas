@@ -12,7 +12,7 @@ import ResalteOutline from "@/components/ResalteOutline.astro";
   <ObjetoAprendizajePantalla index={4} pantallaIndex={1} asignatura={"calculo"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
   <div class="objeto-aprendizaje mx-auto animate-fade">
     <div class="mx-auto max-w-screen-xl">
-      <h3>Ahora, derivemos la función <Latex formula="f(x)=(4-x^3)^5 (x^2-x)" inline/></h3>
+      <p class="text-3xl text-red">Ahora, derivemos la función <Latex formula="f(x)=(4-x^3)^5 (x^2-x)" inline={true}/></p>
       <div class="table-responsive xl:my-11">
         <table class="table">
           <tbody>
@@ -60,7 +60,7 @@ import ResalteOutline from "@/components/ResalteOutline.astro";
     <div class="mx-auto max-w-screen-xl mb-10">
       <ResalteOutline>
         <h4 class="flex justify-center">Derivada de un cociente de funciones</h4>
-        <div class="my-10"><Latex formula="D_x \\left( \\dfrac{u}{v} \\right)=\\dfrac{v\\cdot D_x u + u \\cdot D_x v}{v^2}" /></div>
+        <div class="my-10"><Latex formula="D_x \\left( \\dfrac{u}{v} \\right)=\\dfrac{v\\cdot D_x u - u \\cdot D_x v}{v^2}" /></div>
         <p>Donde <Latex inline formula="u" /> y <Latex inline formula="v" /> son funciones de <Latex inline formula="x" />.</p>
       </ResalteOutline>
       <h4>Ejemplos de práctica</h4>
@@ -75,15 +75,15 @@ import ResalteOutline from "@/components/ResalteOutline.astro";
             </tr>
             <tr>
               <td>Usamos la regla para derivar un cociente</td>
-              <td><Latex formula="h’(m)=\\dfrac{(2m-m^3)\\cdot D_m (4m^7-1)+(4m^7-1)\\cdot D_m (2m-m^3)}{(2m-m^3)^2}" inline/></td>
+              <td><Latex formula="h’(m)=\\dfrac{(2m-m^3)\\cdot D_m (4m^7-1)-(4m^7-1)\\cdot D_m (2m-m^3)}{(2m-m^3)^2}" inline/></td>
             </tr>
             <tr>
               <td>Derivamos</td>
-              <td><Latex formula="h’(m)=\\dfrac{(2m-m^3)(28m^6)+(4m^7-1)(2-3m^2)}{(2m-m^3)^2}" inline/></td>
+              <td><Latex formula="h’(m)=\\dfrac{(2m-m^3)(28m^6)-(4m^7-1)(2-3m^2)}{(2m-m^3)^2}" inline/></td>
             </tr>
             <tr>
               <td>Efectuamos las multiplicaciones</td>
-              <td><Latex formula="h’(m)=\\dfrac{56m^7-28m^{9}+8m^7-12m^{9}-2+3m^2}{(2m-m^3)^2}" inline/></td>
+              <td><Latex formula="h’(m)=\\dfrac{56m^7-28m^{9}-8m^7+12m^{9}+2-3m^2}{(2m-m^3)^2}" inline/></td>
             </tr>
             <tr>
               <td>Simplificamos terminos semejantes</td>
@@ -102,11 +102,11 @@ import ResalteOutline from "@/components/ResalteOutline.astro";
             </tr>
             <tr>
               <th>Derivamos usando regla de la cadena</th>
-              <td><Latex formula="w’(x)=\\dfrac{(3x^2-4x)^3 \\cdot 20x^3) -5x^4\\cdot  3(3x^2-4x)^2 (6x-4)}{(3x^2-4x)^6}" /></td>
+              <td><Latex formula="w’(x)=\\dfrac{(3x^2-4x)^3 \\cdot (20x^3) -5x^4\\cdot  3(3x^2-4x)^2 (6x-4)}{(3x^2-4x)^6}" /></td>
             </tr>
             <tr>
               <th>Derivamos la función interna</th>
-              <td><Latex formula="w’(x)=\\dfrac{(3x^2-4x)^3 \\cdot 20x^3) -15x^4 (3x^2-4x)^2 (6x-4)}{(3x^2-4x)^6}" /></td>
+              <td><Latex formula="w’(x)=\\dfrac{(3x^2-4x)^3 \\cdot (20x^3) -15x^4 (3x^2-4x)^2 (6x-4)}{(3x^2-4x)^6}" /></td>
             </tr>
             <tr>
               <th>Factorizamos</th>

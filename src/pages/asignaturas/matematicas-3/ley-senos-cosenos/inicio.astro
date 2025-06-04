@@ -34,9 +34,9 @@ import { BASE_PATH } from '@/config'
 			</div>
 			<div class="text-center">
 				<h4 class="">Ley de Cosenos:</h4>
-				<Latex formula="c^2=a^2+b^2-2ab\cos\gamma " />
-				<Latex formula="b^2=a^2+c^2-2ac\cos\\beta " />
-				<Latex formula="a^2=b^2+c^2-2bc\cos\alpha " />
+				<Latex formula="c^2=a^2+b^2-2ab\\cos\\gamma " />
+				<Latex formula="b^2=a^2+c^2-2ac\\cos\\beta " />
+				<Latex formula="a^2=b^2+c^2-2bc\\cos\\alpha " />
 			</div>
 			<div class="self-center">
 				<p class="text-center font-bold">
@@ -68,8 +68,8 @@ import { BASE_PATH } from '@/config'
 					<div class="text-darkblue">
 						<p>De acuerdo con la Ley de cosenos:</p>
 						<div class="text-center">
-						  <Latex formula="c^2=a^2+b^2-2ab\cos\gamma" />
-  						<Latex formula="c^2=(5.66)^2+(4.47)^2-2(5.66)(4.47)\cos(71.57^o) " />
+						  <Latex formula="c^2=a^2+b^2-2ab\\cos\\gamma" />
+  						<Latex formula="c^2=(5.66)^2+(4.47)^2-2(5.66)(4.47)\\cos(71.57^o) " />
   						<Latex formula="c^2=36.02 " />
 						</div>
 						<p>Entonces el valor del tercer lado es:</p>
@@ -93,7 +93,7 @@ import { BASE_PATH } from '@/config'
 				<p>Y por lo tanto:</p>
 				<Latex
 					class="xl:text-xl"
-					formula="\\alpha=sen^{-1}\\left(\\frac{a sen\gamma}{c}\\right) "
+					formula="\\alpha=sen^{-1}\\left(\\frac{a sen\\gamma}{c}\\right) "
 				/>
 				<p>Entonces:</p>
 				<Latex
@@ -140,12 +140,12 @@ import { BASE_PATH } from '@/config'
 							cosenos.
 						</p>
 						<p>
-							Consideremos, por ejemplo <Latex formula="a^2=b^2+c^2-2bccos\\alpha" inline={true} /> y
+							Consideremos, por ejemplo <Latex formula="a^2=b^2+c^2-2bc \\cos\\alpha" inline={true} /> y
 							despejemos
 							<Latex formula="\\alpha" inline={true} /> de la siguiente manera.
 						</p>
 						<p>
-							Primero sumando <Latex formula="2bc\cos\alpha-a^2 " inline={true} /> de ambos lados, obtenemos:
+							Primero sumando <Latex formula="2bc\\cos\\alpha-a^2 " inline={true} /> de ambos lados, obtenemos:
 						</p>
 						<Latex class="my-5 text-center xl:text-xl" formula="2bc\\cos\\alpha=b^2+c^2-a^2 " />
 						<p>
