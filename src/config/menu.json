@@ -1,8 +1,13 @@
 {
   "main": [
+
     {
-      "name": "Inicio",
-      "url": "/"
+      "name": "Acerca de",
+      "url": "/acerca-de"
+    },
+    {
+      "name": "Créditos",
+      "url": "/creditos"
     },
     {
       "name": "Asignaturas",
