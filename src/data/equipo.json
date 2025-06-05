@@ -50,7 +50,7 @@
     {
       "nombre": "Daniela Yenedith Trejo Vargas",
       "rol": "Integración de contenidos digitales",
-      "imagen": "/img/devs/person.png"
+      "imagen": "/img/devs/dann.webp"
     }
   ],
   "autores": [
@@ -116,9 +116,9 @@
     },
     {
       "nombre": "Erika López López",
-      "rol": "",
+      "rol": "Matemáticas",
       "plantel": "Oriente",
-      "imagen": "/img/randoms/person.png"
+      "imagen": "/img/randoms/erika-lopez-lopez.webp"
     },
     {
       "nombre": "Francisco Díaz Cerón",
@@ -151,7 +151,7 @@
     },
     {
       "nombre": "Marcos Daniel Aguilar Ojeda",
-      "imagen": "/img/randoms/person.png",
+      "imagen": "/img/randoms/marcos.webp",
       "rol": "Integrante comité organizador"
     }
   ]
