@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import partytown from '@astrojs/partytown';
+import sitemap from '@astrojs/sitemap';
 
 // Determinar el 'base' path
 let base = '/sumate'; // Valor por defecto para tu build de producción (ej. /sumate)
@@ -24,6 +25,7 @@ export default defineConfig({
   site: site,
   base: base,
   integrations: [
+    sitemap(),
     tailwind(),
     icon({
       include: {
