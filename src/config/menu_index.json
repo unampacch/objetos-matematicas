@@ -1,7 +1,14 @@
 {
   "main": [
 
-
+    {
+      "name": "Acerca de",
+      "url": "/acerca-de"
+    },
+    {
+      "name": "Créditos",
+      "url": "/creditos"
+    },
     {
       "name": "Asignaturas",
       "url": "",

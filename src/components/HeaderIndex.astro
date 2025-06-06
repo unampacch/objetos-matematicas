@@ -1,0 +1,132 @@
+---
+import Logo from "@/components/Logo.astro";
+import LogoM from "@/components/LogoM.astro";
+import LogoCCH from "@/components/LogoCCH.astro";
+import LogoUNAM from "@/components/LogoUNAM.astro";
+import LogoPACCHP from "@/components/LogoPACCHP.astro";
+
+
+import menu from "@/config/menu_index.json";
+import { BASE_PATH } from "@/config"; // Importa BASE_PATH
+
+export interface ChildNavigationLink {
+  name: string;
+  url: string;
+}
+
+export interface NavigationLink {
+  name: string;
+  url: string;
+  hasChildren?: boolean;
+  children?: ChildNavigationLink[];
+}
+
+const { main }: { main: NavigationLink[] } = menu;
+const { pathname } = Astro.url;
+---
+
+<header
+  class="bg-darkblue/[.8] w-full py-4 z-50 backdrop-blur-sm top-0 hover:transition-all sticky"
+>
+  <div class="mx-auto">
+    <nav class="navbar px-2 md:px-5 mx-auto flex items-center justify-between">
+      <!-- logo -->
+      <div class="order-0 flex flex-row gap-x-6">
+        <a href={`${BASE_PATH}/`}><Logo class="hidden md:block h-10 w-15" /></a>
+        <a href={`${BASE_PATH}/`}><LogoM class="md:hidden size-10" /></a>
+        <a href="https://www.unam.mx/" target="_blank" rel="noreferrer"
+            ><LogoUNAM
+              class="size-10 hidden md:block fill-lightblue"
+              alt="Logo UNAM"
+            /></a
+          >
+          <a href="https://cch.unam.mx/" target="_blank" rel="noreferrer"
+            ><LogoCCH
+              class="size-10 hidden md:block fill-lightblue"
+              alt="Logo CCH"
+            /></a
+          >
+          <a href="http://portalacademico.cch.unam.mx/" target="_blank" rel="noreferrer"
+            ><LogoPACCHP
+              class="size-10 hidden md:block"
+              alt="Logo PACCHP"
+            /></a
+          >
+      </div>
+      <ul
+        id="nav-menu"
+        class="navbar-nav order-1 xl:text-lg cursor-pointer flex w-auto space-x-2 xl:space-x-8 text-light font-semibold uppercase"
+      >
+        {
+          main.map((menu, index) => (
+            <>
+              {menu.hasChildren ? (
+                <li class={`${index === main.length - 1 ? 'block' : 'hidden lg:block'}`}>
+                  <a
+                    id="has-children"
+                    data-dropdown-toggle="child"
+                    class={`inline-flex items-center hover:text-slate-400 transition-all ${
+                      menu.children?.map(({ url }) => `${BASE_PATH}${url}`).includes(pathname) ||
+                      menu.children
+                        ?.map(({ url }) => `${BASE_PATH}${url}/`)
+                        .includes(pathname)
+                        ? "active"
+                        : ""
+                    }`}
+                  >
+                    {menu.name}
+                    <svg class="size-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </a>
+                  <div
+                    id="child"
+                    class="z-50 hidden text-darkblue shadow !top-4"
+                  >
+                    <ul
+                      class="cursor-pointer bg-light z-50"
+                      aria-labelledby="haschildren"
+                    >
+                      {menu.children?.map((child) => (
+                        <li class="hover:bg-lightblue hover:darkblue hover:transition-all px-2 py-1 font-light">
+                          <a
+                            href={`${BASE_PATH}${child.url}`}
+                            aria-label={child.name}
+                            class={`block  ${
+                              (pathname === `${BASE_PATH}${child.url}/` ||
+                                pathname === `${BASE_PATH}${child.url}`) &&
+                              ""
+                            }`}
+                          >
+                            {child.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ) : (
+                <li class={`${index === main.length - 1 ? 'block' : 'hidden lg:block'}`}>
+                  <a
+                    href={`${BASE_PATH}${menu.url}`}
+                    class={`hover:text-slate-400 transition-all ${
+                      (pathname === `${BASE_PATH}${menu.url}/` || pathname === `${BASE_PATH}${menu.url}`) &&
+                      "active"
+                    }`}
+                  >
+                    {menu.name}
+                  </a>
+                </li>
+              )}
+            </>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+<style>
+  a.active {
+    text-decoration: overline;
+  }
+</style>
