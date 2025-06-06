@@ -1,9 +1,9 @@
 ---
 import LayoutIndex from '@/layouts/LayoutIndex.astro';
 import Hero from '@/components/Hero.astro';
-import Summary from '@/components/Summary.astro';
 import Prefooter from '@/components/Prefooter.astro';
 import RutaInicio from '@/components/RutaInicio..astro';
+import ObjetosAleatorios from '@/components/ObjetosAleatorios.tsx';
 ---
 
 <LayoutIndex
@@ -12,7 +12,7 @@ import RutaInicio from '@/components/RutaInicio..astro';
 
 		<Hero />
 		<RutaInicio />
-		<Summary />
+    <ObjetosAleatorios client:load />
 		<Prefooter />
 
 </LayoutIndex>
