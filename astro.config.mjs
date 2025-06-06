@@ -3,6 +3,7 @@ import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import partytown from '@astrojs/partytown';
 import sitemap from '@astrojs/sitemap';
+import react from '@astrojs/react';
 
 // Determinar el 'base' path
 let base = '/sumate'; // Valor por defecto para tu build de producción (ej. /sumate)
@@ -27,6 +28,7 @@ export default defineConfig({
   integrations: [
     sitemap(),
     tailwind(),
+    react(),
     icon({
       include: {
         bi: [
