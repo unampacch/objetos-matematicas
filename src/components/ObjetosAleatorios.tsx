@@ -5,7 +5,7 @@ export default function ObjetosAleatorios() {
   const [objetos, setObjetos] = useState<any[] | null>(null);
 
  useEffect(() => {
-  fetch('data/asignaturas.json')
+  fetch('/data/asignaturas.json')
     .then((res) => {
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
