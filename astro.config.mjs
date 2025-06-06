@@ -4,6 +4,8 @@ import icon from "astro-icon";
 import partytown from '@astrojs/partytown';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
+import fs from 'fs';
+import path from 'path';
 
 // Determinar el 'base' path
 let base = '/sumate'; // Valor por defecto para tu build de producción (ej. /sumate)
@@ -47,9 +49,24 @@ export default defineConfig({
     partytown()
   ],
   vite: {
+    buildStart() {
+      const src = path.resolve('src/pages/asignaturas/asignaturas.json');
+      const dest = path.resolve('public/data/asignaturas.json');
+
+      try {
+        // Asegura que la carpeta de destino exista
+        fs.mkdirSync(path.dirname(dest), { recursive: true });
+
+        // Copia el archivo
+        fs.copyFileSync(src, dest);
+        console.log('✅ Copiado: asignaturas.json -> public/data');
+      } catch (err) {
+        console.error('❌ Error copiando asignaturas.json:', err);
+      }
+    },
+
     server: {
       watch: {
-        // Ignorar directorios que no necesitan ser observados
         ignored: [
           '**/node_modules/**',
           '**/.git/**',
@@ -57,20 +74,16 @@ export default defineConfig({
           '**/dist/**',
           '**/.astro/**'
         ],
-        // Opcional: Usar polling si persisten los problemas
         usePolling: true,
         interval: 1000
       },
       fs: {
-        // Limitar el acceso a archivos solo al proyecto
         strict: true,
-        allow: [
-          process.cwd() // Solo permite archivos dentro del directorio del proyecto
-        ]
+        allow: [process.cwd()]
       }
     },
+
     optimizeDeps: {
-      // Opcional: Forzar pre-empaquetado de dependencias
       include: ['@astrojs/tailwind', 'astro-icon']
     }
   }
