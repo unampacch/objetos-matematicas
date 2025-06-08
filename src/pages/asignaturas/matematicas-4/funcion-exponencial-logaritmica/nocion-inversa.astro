@@ -1,0 +1,191 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import ResalteBlanco from '@/components/ResalteBlanco.astro'
+import Comprobar from '@/components/Comprobar.astro'
+import ResalteOutline from '@/components/ResalteOutline.astro'
+import { BASE_PATH } from '@/config'
+---
+
+<Layout
+  title="Funciones exponenciales y logarítmicas."
+  description="Aquí vas a utilizar las funciones exponencial y logarítmica para representar formas de variación de fenómenos de la naturaleza, y que éstas permitan modelar."
+>
+
+    	<ObjetoAprendizajePantalla index={5} pantallaIndex={2} asignatura={'matematicas_4'} />
+      <div class="objeto-aprendizaje mx-auto animate-fade">
+        <div class="mx-auto max-w-screen-xl">
+        <p>La función logarítmica es la inversa de la <b>función exponencial</b></p>
+
+        <p>Una <b>función logarítmica</b> es aquella que genéricamente se expresa como</p>
+        <p class="text-center"><Latex inline={true} formula="y = \log_b(x)" /></p>
+        <p>Siendo a la <b>base</b> de esta función, positiva y distinta de 1.</p>
+
+        <ResalteBlanco>
+          <p><b>Función logarítmica base <Latex inline={true} formula="b" /></b></p>
+          <p>Donde <Latex inline={true} formula="b>0"/> y <Latex inline={true} formula="b \\neq 1"/></p>
+          <p>Se denota por <Latex inline={true} formula="y = \\log_b x"/> (se lee “y es igual al logaritmo de x con la base b”) </p>
+          <p>Se define como </p>
+          <p class="text-center"><Latex inline={true} formula="y={log}_b(x) " /> Sí y sólo sí <Latex inline={true} formula="x = b^y" /></p>
+        </ResalteBlanco>
+
+        <p>Observa que hemos tomado a <Latex inline={true} formula="y" /> en la ecuación <Latex inline={true} formula="x = b^y" /> y lo hemos definido como el logaritmo. </p>
+
+        <p>Por lo tanto, <b>un logaritmo es un exponente</b> y cada enunciado exponencial puede reescribirse como un enunciado equivalente acerca de logaritmos, estableciéndose que el logaritmo de un número en una determinada base es el exponente que afecta a esa base para obtener la potencia.</p>
+
+        <p>De ahí que <b>el exponente al que se debe elevar b para obtener un número x es</b> "<Latex inline={true} formula="y = \\log_b(x)" />"</p>
+
+        <ImagenCaption
+            src="/matematicas4/funciones-exp-logaritmicas/img18.webp"
+            caption="Enunciado equivalente"
+      />
+
+        <ResalteBlanco>
+          <p class="text-left">Donde:</p>
+
+          <ul class=" text-left list-disc pl-6">
+            <li>Leemos como <Latex inline={true} formula="\\log_{b}({x})" /> “el logaritmo con base <Latex inline={true} formula="b"/> de <Latex inline={true} formula="x"/>” o la “base logarítmica <Latex inline={true} formula="b"/> de <Latex inline={true} formula="x"/>.</li>
+            <li>El logaritmo <Latex inline={true} formula="y"/> es el exponente al que <Latex inline={true} formula="b" /> debe elevar para llegar a <Latex inline={true} formula="x" /></li>
+          </ul>
+
+          <p class="text-left">Dado que las funciones logarítmica y exponencial cambian los <Latex inline={true} formula="y"/> valores <Latex inline={true} formula="x" /> y, el dominio y el rango de la función exponencial, intercambiando por la función logarítmica. Por lo tanto,</p>
+
+          <ul class="text-left list-disc pl-6">
+            <li>El dominio de la función logaritmo con base <Latex inline={true} formula="b"/> es <Latex inline={true} formula="(0, ∞)"/> </li>
+            <li>El rango de la función logaritmo con base <Latex inline={true} formula="b"/> es <Latex inline={true} formula="(−∞, ∞)"/>
+          </ul>
+          <p class="text-left">Los logaritmos más importantes son:</p>
+          <ul class="list-disc pl-6 text-left">
+            <li>El logaritmo en base 10:<Latex inline={true} formula="y = log x"/> sí y solo sí <Latex inline={true} formula="x = 10^y"/></li>
+            <li>El logaritmo natural (es el log en base <Latex inline={true} formula="e" /> :  <Latex inline={true} formula="log_e (x) =  ln ( x )" /> 
+            </li>
+
+        </ResalteBlanco>
+
+        </div>
+        <div class="mx-auto max-w-screen-xl">
+        <h3>Ejemplo 1</h3>
+
+        <p>La siguiente tabla muestra algunas expresiones exponenciales y sus formas logarítmicas equivalentes</p>
+
+        <div class="table-responsive my-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Forma exponencial </th>
+              <th>Forma logarítmica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline={true} formula="3^2 = 9" /></td>
+              <td><Latex inline={true} formula="\\log_3 9 = 2" /></td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="8^3 = 512" /></td>
+              <td><Latex inline={true} formula="\\log_8 512 = 3" /></td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="9^2 = 81" /></td>
+              <td><Latex inline={true} formula="\\log_9 81 = 2" /></td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="6^{-2} = \\frac{1}{36}" /></td>
+              <td><Latex inline={true} formula="\\log_{6} \\left(\\frac{1}{36}\\right) = -2 " /></td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="25^{\\frac {1}{2}} = 5" /></td>
+              <td><Latex inline={true} formula="\\log_{25} 5 = \\frac{1}{2} " /></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>Si la información es proporcionada en forma logarítmica para pasarla a su equivalente en forma exponencial</p>
+
+        <div class="table-responsive my-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>forma logarítmica </th>
+              <th>Procedimiento</th>
+              <th>forma exponencial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><Latex inline={true} formula="\\log_3 9 = 2" /></td>
+              <td> 
+                <p>Problema de forma logarítmica: <Latex inline={true} formula="\\log_3 9 = 2" /></p>
+                <p>Problema de forma exponencial:<Latex inline={true} formula="3^2 = 9" /></p></td>
+                <td><Latex inline={true} formula="3^2 = 9" /></td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="\\log_{5} 0.2 " /></td>
+              <td><Latex inline={true} formula="0.2 = \\frac{2}{10} = \\frac{1}{5} = 5^{-1} " />
+              <p>por lo que <Latex inline={true} formula="\\log_5 0.2 = -1" /></p> </td>
+              <td><Latex inline={true} formula="-1" /></td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="\\log_{7} \\sqrt{7} " /></td>
+              <td><Latex inline={true} formula="\\sqrt{7} = {7^{\\frac{1}{2}}}" /></td>
+              <td><Latex inline={true} formula="7^{\\frac{1}{2}} " /></td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="log_6 6^3 " /></td>
+              <td> Como <Latex inline={true} formula="6^3 = 216" /> entonces <Latex inline={true} formula="log_6 6^3 = log_6 216" />
+              <p>Si <Latex inline={true} formula="y = log_6 216" />, entonces <Latex inline={true} formula="6^y = 216 = 6^3" /></p>
+              <p>y por lo tanto <Latex inline={true} formula="log_6 6^3 = 3" /></p>
+            </td>
+            <td><Latex inline={true} formula="6^{\\log_{6}3}=3 " /></td>
+            </tr>
+            <tr>
+              <td><Latex inline={true} formula="\\log_{8} 8^{4} " /></td>
+              <td>se tiene <Latex inline={true} formula="8^y = 8^4" />Por lo tanto, <Latex inline={true} formula="\\log_8 8^4 = 4" /></td>
+              <td><Latex inline={true} formula="8^{\\log_{8}4}=4 " /></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <ResalteBlanco>
+          <p class="text-left">Generalización de dos funciones que son inversas</p>
+          <div class="table-responsive my-10">
+          <table class="table">
+            <thead>
+              <tr>
+                <th><Latex inline={true} formula="a^{\\log_{a} x} = x " /></th>
+                <th><Latex inline={true} formula="\\log_{a} a^{x} = x " /></th>
+              </tr>
+            </thead>
+            </table>
+          </div>
+
+          <p class="text-left">Diremos que dos funciones <Latex inline={true} formula="f" /> y <Latex inline={true} formula="g" /> son <b>inversas</b> sí y sólo si</p>
+          <ol class="list-disc pl-6 text-left">
+            <li>Para cada <Latex inline={true} formula="x"/> en el dominio de <Latex inline={true} formula="g"/>,<Latex inline={true} formula="g(x)"/> está en el dominio de:
+            <p class="text-center"><Latex inline={true} formula="f" /> y <Latex inline={true} formula="(fog)(x)=f(g(x)) = x" /></p>
+            </li>
+
+            <li>Para cada x en el dominio de <Latex inline={true} formula="f" />, <Latex inline={true} formula="f(x)"/> está en el dominio de:
+            <p class="text-center"><Latex inline={true} formula="g" /> y <Latex inline={true} formula="(gof)(x)=g(f(x)) = x" /></p>
+            </li>
+          </ol>
+          <p class="text-left">Nota: A <Latex inline={true} formula="(f o g) ( x )"/> se le llama la composición de las funciones <Latex inline={true} formula="f"/> y <Latex inline={true} formula="g"/></p>
+          <p class="text-left">Con frecuencia se usa la notación <Latex inline={true} formula="f^-1"/> para representar la función inversa de <Latex inline={true} formula="f"/>.  Por ejemplo, la función inversa de <Latex inline={true} formula="f(x) = x^3"/> es <Latex inline={true} formula="f^-1(x) = \\sqrt[3]{x} "/></p>
+          
+        </ResalteBlanco>
+        </div>
+
+        <Lumi
+      src="/matematicas4/funciones-exp-logaritmicas/p4 ej1.html"
+      nombre='Actividad'
+      instrucciones='Relaciona las siguientes columnas, ubicando cada función exponencial con su función logarítmica'
+      class='mb-5'
+    />
+      </div>
+</Layout>

@@ -376,8 +376,18 @@
 						},
 						{
 							"titulo": "Noción de función inversa",
-							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/funcion-inversa",
+							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/nocion-inversa",
 							"descripcion": "Analiza la relación entre las gráficas de funciones exponenciales con diferentes bases."
+						},
+						{
+							"titulo": "Logaritmos con base 10 y naturales. Propiedades de los logaritmos incluyendo la expresión para cambio de base.",
+							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/base-diez",
+							"descripcion": "Comprende el concepto de logaritmo como la función inversa de la exponencial, y las propiedades de los logaritmos con base 10 y naturales, incluyendo la expresión para el cambio de base."
+						},
+						{
+							"titulo": "Gráficas de funciones logarítmicas.",
+							"slug": "/asignaturas/matematicas-4/funcion-exponencial-logaritmica/grafica-log",
+							"descripcion": "Analiza la relación entre las gráficas de funciones logarítmicas con diferentes bases y las gráficas de funciones exponenciales."
 						}
 					]
 				},
