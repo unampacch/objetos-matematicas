@@ -1,0 +1,450 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Latex from '@/components/Latex.astro'
+import ObjetoAprendizajePantalla from '@/components/ObjetoAprendizajePantalla.astro'
+import GeogebraLink from '@/components/GeogebraLink.astro'
+import Lumi from '@/components/Lumi.astro'
+import ImagenCaption from '@/components/ImagenCaption.astro'
+import BgFluido from '@/components/BgFluido.astro'
+import ResalteBlanco from '@/components/ResalteBlanco.astro'
+import Comprobar from '@/components/Comprobar.astro'
+import ResalteOutline from '@/components/ResalteOutline.astro'
+import { BASE_PATH } from '@/config'
+import ImagenFullCaption from '@/components/ImagenFullCaption.astro'
+import Hr from '@/components/Hr.astro'
+---
+
+<Layout>
+
+    <ObjetoAprendizajePantalla index={5} pantallaIndex={3} asignatura={"matematicas_4"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
+    <div class="objeto-aprendizaje mx-auto animate-fade">
+      <div class="mx-auto max-w-screen-xl">
+         <p>El matemático inglés Henry Briggs fue el que elaboró la primera tabla de logaritmos decimales. El sistema de logaritmos decimales es el más usado para los cálculos numéricos. El logaritmo decimal de una cantidad x se indica de la siguiente forma: <Latex inline={true} formula="Lgx" />, entendiéndose que se trata del Lg10x, aunque no se escriba la base.</p>
+
+        <p>Los logaritmos con base 10, llamados logaritmo decimal.</p>
+
+        <p>El sistema de logaritmos decimales es el más usado para los cálculos numéricos. </p>
+        <p>Por comodidad, cuando la base es 10, se omite el subíndice que acompaña a la abreviatura “log”, escribiendo simplemente <Latex inline={true} formula="log(x)" /> en vez de escribir <Latex inline={true} formula="log_10 x" />. Así, decimos que</p>
+
+        <p class="text-center"><Latex inline={true} formula="y = log(x)" /> significa <Latex inline={true} formula="10^y  = x" /></p>
+
+        <p>En otras palabras, el logaritmo de base 10 de <Latex inline={true} formula="x" /> es la potencia de 10 necesaria para obtener <Latex inline={true} formula="x" /></p>
+
+        <h4>Ejemplo:</h4>
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+              <tbody>
+                <tr>
+                <th><Latex inline={true} formula="\\log 1000 = \\log 10^{3} " /></th>
+                <th class="text-center"><p>El numero 3 es la potencia de 10 necesaria para obtener <Latex inline={true} formula="1000"/></p> </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Actividad 1</h3>
+
+        <p>Instrucciones: Completa la tabla con logaritmos, faltantes</p>
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Logaritmo</th>
+                <th>Valor</th>
+                <th>Logaritmo</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody class="text-left text-xs">
+              <tr >
+                <td><Latex inline={true} formula="\\log 1 =0" /></td>
+                <td></td>
+
+                <td><Latex inline={true} formula="\\log_{10} 0.1 = -1 " /></td>
+                <td><Latex class="text-orange-400" inline={true} formula="10^{-1} = \\frac{1}{10} = 0.1" /> </td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\log 10 =1" /></td>
+                <td></td>
+
+                <td><Latex inline={true} formula="\\log_{10} 0.01 = -2 " /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\log 100 = 2" /></td>
+                <td><Latex class="text-orange-400" inline={true} formula="10^2 = 100" /></td>
+
+                <td><Latex inline={true} formula="\\log 0.001=-3" /></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+          <Comprobar>
+            <p>Respuestas:</p>
+            <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Logaritmo</th>
+                <th>Valor</th>
+                <th>Logaritmo</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody class="text-left text-xs">
+              <tr >
+                <td><Latex inline={true} formula="\\log 1 =0" /></td>
+                <td><Latex class="text-orange-400" inline={true} formula="10^{0}=1 " /></td>
+
+                <td><Latex inline={true} formula="\\log_{10} 0.1 = -1 " /></td>
+                <td><Latex class="text-orange-400" inline={true} formula="10^{-1} = \\frac{1}{10} = 0.1" /> </td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\log 10 =1" /></td>
+                <td><Latex class="text-orange-400" inline={true} formula="10^{1}=10" /> </td>
+
+                <td><Latex inline={true} formula="\\log_{10} 0.01 = -2 " /></td>
+                <td><Latex class="text-orange-400" inline={true} formula="10^{-2} = 0.01 " /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\log 100 = 2" /></td>
+                <td><Latex class="text-orange-400" inline={true} formula="10^2 = 100" /></td>
+
+                <td><Latex inline={true} formula="\\log 0.001=-3" /></td>
+                <td><Latex class="text-orange-400" inline={true} formula="10^{-3} = 0.001" /> </td>
+              </tr>
+            </tbody>
+          </table>
+          </Comprobar>
+
+          </div>
+          <div class="mx-auto max-w-screen-xl">
+
+          <p class="text-3xl text-red"><b>EL <Latex inline={true} formula="log (x)" /> NO ESTÁ DEFINIDO SI <Latex inline={true} formula="x" /> ES NEGATIVO O CERO</b></p>
+
+          <p>El logaritmo de un número positivo es el exponente al que hay que elevar la base para obtener ese número. Por consiguiente, siendo el logaritmo un exponente, cumple con las leyes de los exponentes, y así podremos señalar las propiedades de los logaritmos que son válidas para logaritmos de cualquier base</p>
+
+          <ResalteBlanco>
+            <p>En las siguientes propiedades <Latex inline={true} formula="M, N" /> y <Latex inline={true} formula="b" /> son números reales positivos, con <Latex inline={true} formula="b > 0" /> y <Latex inline={true} formula="b \\neq 1" />, y <Latex inline={true} formula="n" /> es cualquier número real.</p>
+
+            <ol class="list-decimal list-inside text-left">
+              <li><Latex inline={true} formula="\\log_b MN = \\log_b M + \\log_b N" /></li>
+              <li><Latex inline={true} formula="\\log_b \\frac{M}{N} = \\log_b M - \\log_b N" /></li>
+              <li><Latex inline={true} formula="\\log_b M^n = n \\cdot \\log_b M" /></li>
+              
+            </ol>
+          </ResalteBlanco>
+
+          </div>
+
+          <div class="mx-auto max-w-screen-xl">
+            <p>A continuación, demostraremos la propiedad 1.</p>
+
+            <p class="text-center">Sean <Latex inline={true} formula="A = \\log_b(M) " /> y <Latex inline={true} formula="B = \\log_b(N) " /></p>
+
+            <p>Estas expresiones son equivalentes a las expresiones exponenciales</p>
+
+            <p class="text-center"><Latex inline={true} formula="b^{A} = M " /> y <Latex inline={true} formula="b^{B} = N " /></p>
+
+            <p>Ahora</p>
+
+            <p class="text-center"><Latex inline={true} formula="\\log_b(MN) = \\log_b(b^A \\cdot b^B) \\ = \\log_b(b^{A+B})" /></p>
+            <p class="text-center"><Latex inline={true} formula="= A+B" /></p>
+            <p class="text-center"><Latex inline={true} formula="= \\log_b M + \\log_b N" /></p>
+
+            <p>Podemos utilizar los logaritmos para transformar productos en sumas, cocientes en diferencias, y potencias en factores. Tales transformaciones demuestran su utilidad cuando se aplican en ciertos tipos de problemas del cálculo diferencial e integral.</p>
+
+            <h4>Ejemplo 1</h4>
+
+            <p>En este ejemplo se comprueba para números positivos <i>A, B</i> y <i>C</i> se cumplen las 3 propiedades</p>
+
+            <p class="text-center"><Latex inline={true} formula="\\log_b \\left( \\frac{A B^2}{C} \\right) = \\log_b (A B^2) - \\log_b C " /></p>
+
+            <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Propiedad</th>
+                <th>Desarrollo</th>
+              </tr>
+            </thead>
+            <tbody class="text-left text-xs">
+              <tr>
+                <td><p class="text-rose-400 text-center">2</p><Latex inline={true} formula="\\log_b \\left( \\frac{M}{N} \\right) = \\log_b M - \\log_b N" /></td>
+                <td><Latex inline={true} formula="\\log_b \\left( \\frac{A B^2}{C} \\right) = \\log_b (A B^2) - \\log_b C" /></td>
+              </tr>
+              <tr>
+                <td><p class="text-rose-400 text-center">1</p><Latex inline={true} formula="\\log_{b}(MN) = \\log_{b}(M) + \\log_{b}(N)" /></td>
+                <td><Latex inline={true} formula="\\log_b A + \\log_b B^2 - \\log_b C " /> </td>
+              </tr>
+              <tr>
+                <td><p class="text-rose-400 text-center">3</p><Latex inline={true} formula="\\log_b(M^n) = n \\log_b(M)" /></td>
+                <td><Latex inline={true} formula="\\log_b A + 2 \\log_b B - \\log_b C " /></td>
+
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h4>Ejemplo 2</h4>
+          <p>En este ejemplo se desarrolla la siguiente expresión <Latex inline={true} formula="\\log_b \\left( \\frac{X^2 \\sqrt[3]{X^2 - 1}}{(X + 1)^4} \\right)" /></p>
+          <p>como suma y diferencia de logaritmos, expresando todas las potencias como factores.</p>
+
+          <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Propiedad</th>
+                <th>Desarrollo</th>
+              </tr>
+            </thead>
+            <tbody class="text-left text-xs">
+              <tr>
+                <td><p class="text-rose-400 text-center">2</p><Latex inline={true} formula="\\log_b \\left( \\frac{M}{N} \\right) = \\log_b M - \\log_b N" /></td>
+                <td><Latex inline={true} formula="\\log_b \\left( \\frac{X^2 \\sqrt[3]{X^2 - 1}}{(X + 1)^4} \\right)= "/>
+                  <Latex inline={true} formula="\\log_b (x^2 \\sqrt[3]{x^2-1}) -\\log_b(x+1)^4" /></td>
+              </tr>
+              <tr>
+                <td><p class="text-rose-400 text-center">1</p><Latex inline={true} formula="\\log_{b}(MN) = \\log_{b}(M) + \\log_{b}(N)" /></td>
+                <td><Latex inline={true} formula="\\log_b X^2 + \\log_b \\sqrt[3]{X^2 - 1} - \\log_b (X + 1)^4 " /> </td>
+              </tr>
+
+              <tr>
+                <td><p>Definición de raíz cúbica</p> </td>
+                <td><Latex inline={true} formula="\\log_b X^2 + \\log_b (X^2-1) - \\log_b (X + 1)^4 " /></td>
+
+              </tr>
+              <tr>
+                <td><p class="text-rose-400 text-center">3</p><Latex inline={true} formula="\\log_b(M^n) = n \\log_b(M) " /></td>
+                <td><Latex inline={true} formula="2 \\log_{b} X + \\dfrac{1}{3} \\log_{b} (X^2 - 1) - 4 \\log_{b} (X + 1) " /></td>
+
+              </tr>
+              <tr>
+                <td><p>Diferencia de cuadrados</p> </td>
+                <td><Latex inline={true} formula="2 \\log_{b} X + \\dfrac{1}{3} \\log_{b} (X - 1)(X + 1) - 4 \\log_{b} (X + 1) " /></td>
+
+              </tr>
+              <tr>
+              <td><p class="text-rose-400 text-center">1</p><Latex inline={true} formula="\\log_{b}(MN) = \\log_{b}(M) + \\log_{b}(N)" /></td>
+                <td><Latex inline={true} formula="2 \\log_{b} X + \\dfrac{1}{3} (\\log_{b} (X - 1) + \\log_{b} (X + 1))- 4 log_{b}( X+1)" /> </td>
+              </tr>
+
+              <tr>
+                <td><p>Propiedad distributiva</p> </td>
+                <td><Latex inline={true} formula="2 \\log_{b} X + \\dfrac{1}{3} (\\log_{b} (X-1) + \\dfrac{1}{3} (\\log_{b} (X+1) - 4 \\log_{b} (X+1))) " /></td>
+
+              </tr>
+
+              <tr>
+                <td></td>
+                <td><Latex inline={true} formula="2 \\log_{b} X + \\dfrac{1}{3} (\\log_{b}(X-1) - \\dfrac{11}{3} \\log_{b}(X+1)) " /></td>
+
+              </tr>
+              
+            </tbody>
+          </table>
+          </div>
+
+          <p>En algunas aplicaciones científicas y técnicas se escriben los números en notación científica y, por consiguiente, se usan logaritmos de base 10.</p>
+
+          <h4>Ejemplo 3</h4>
+          <p>Aplicando logaritmos de ambos lados, tenemos</p>
+
+          <div class="table-responsive">
+          <table class="table table-bordered">
+            <tbody class="text-left text-xs">
+              <tr>
+                <td><Latex inline={true} formula="\\log_{b} 1.2 = \\log_{b} (1.1)^{t} " /></td>
+                <td>Propiedad 3</td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\log_{1.1} 1.2 = t \\log_{1.1} (1.1) " /></td>
+                <td>Se despeja la variable t </td>
+              </tr>
+
+              <tr>
+                
+                <td><Latex inline={true} formula="t = \\dfrac{\\log(1.2)}{\\log(1.1)} " /></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="t \\approx 1.912928474" /></td>
+                <td></td>
+
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>En el campo de las Ciencias e Ingeniería, la base que se usa con frecuencia es la del número <Latex inline={true} formula="e \\approx 2.71828. . ." /> se llama <b>logaritmo natural</b> y se denota por <b>Ln</b>.</p>
+
+          <ResalteBlanco>
+            <p><b>Definición. La función inversa de </b></p>
+            <p class="text-center"><Latex class="text-orange-700" inline={true} formula="y = e^{x} " /> es <Latex class="text-cyan-400" inline={true} formula="y = \\log_{e} (x) = \\ln(x) "></p>
+          </ResalteBlanco>
+
+          </div>
+
+          <div class="mx-auto max-w-screen-xl">
+            <p>Observa que <Latex inline={true} formula="Ln(x)" /> <b>es la potencia de <Latex inline={true} formula="e" /> necesaria para obtener x.</b></p>
+
+            <p>Las propiedades para manejar logaritmos naturales son similares a las de los logaritmos de cualquier base. Por ejemplo, la propiedad del producto de logaritmos naturales es:</p>
+
+            <p class="text-center"><Latex inline={true} formula="Ln (AB) = Ln A + Ln B." /></p>
+
+            <p>En la mayoría de las calculadoras se encuentra la tecla <b>Ln</b> y su parte superior <Latex inline={true} formula="e^x" />, lo que es una indicación de la importancia que tiene <Latex inline={true} formula="Ln" /></p>
+
+            <p>Los logaritmos de base 10 se pueden determinar en una calculadora empleando la tecla <Latex inline={true} formula="Log" />, y la tecla <Latex inline={true} formula="Ln" /> se puede usar para determinar los logaritmos naturales.</p>
+        </div>
+        <Lumi
+          src="/matematicas4/funciones-exp-logaritmicas/p5 ej1.html"
+          nombre='Actividad 2'
+          instrucciones='Con apoyo de tu calculadora científica, Identifica en los resultados de los incisos, cuales son verdaderas o falsas:'
+          class='mb-5'
+        />
+
+        <div class="mx-auto max-w-screen-xl">
+
+          <p>Podríamos utilizar log para encontrar el valor de <i>x</i>, pero utilizaremos <i>ln</i> Observemos el ejemplo:  </p>
+
+          <div class="table-responsive">
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td></td>
+                <td><Latex inline={true} formula="5^{x} = 60 " /></td>
+              </tr>
+              <tr>
+                <td><p>Se aplicó ln a ambos miembros de la ecuación</p></td>
+                <td><Latex inline={true} formula="\\ln(5^{x}) = \\ln(60) " /> </td>
+              </tr>
+              <tr>
+                <td><p>Propiedad: igualdad numérica   Propiedad: 3 de los logaritmos</p></td>
+                <td><Latex inline={true} formula="x\\ln(5) =\\ln(60) " /></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><Latex inline={true} formula="x = \\frac{\\ln(60)}{\\ln(5)} = \\frac{4.0943}{1.6094} = 2.5439 " /></td>
+              </tr>
+              <tr>
+                <td><p>Otra forma es utilizar log para despejar x.</p></td>
+                <td>
+                  <p><Latex inline={true} formula="5^{x} = 60 " /></p> 
+                  <p><Latex inline={true} formula="\\log(5^{x}) = \\log(60) " /></p>
+                  <p><Latex inline={true} formula="x \\log(5) = \\log(60) " /></p>
+                  <p><Latex inline={true} formula="x = \\frac{\\log(60)}{\\log(5)} = 2.5439 " /></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h4>Ejemplo 4</h4>
+          <p>Vamos a convertir <Latex inline={true} formula="\\frac{1}{2} \\ln(x^2 + 1) - \\ln(x^2 - x - 2) + \\ln(x + 1)  " /> en el logaritmo natural de una sola expresión en x.</p>
+
+
+          <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Propiedad</th>
+                <th>Desarrollo</th>
+              </tr>
+            </thead>
+            <tbody class="text-left text-xs">
+              <tr>
+                <td><p>Propiedad 3</p></td>
+                <td><Latex inline={true} formula="\\frac{1}{2} \\ln(x^2 + 1) - \\ln(x^2 - x - 2) + \\ln(x + 1)" /></td>
+              </tr>
+              <tr>
+                <td><p>Se expresa la potencia fraccionaria por  la raiz cuadrada y  el termino cuadratico se factoriza de ser posible</p></td>
+                <td><Latex inline={true} formula="\\ln \\left( \\sqrt{x^2 + 1} \\right) + \\ln(x + 1) - \\ln(x^2 - x - 2)" /> </td>
+              </tr>
+              <tr>
+                <td><p>Propiedad 1</p></td>
+                <td><Latex inline={true} formula="\\ln \\sqrt{(x^2 + 1)} + \\ln(x + 1) - \\ln((x - 2)(x + 1))" /></td>
+
+              </tr>
+
+              <tr>
+                <td><p>Propiedad 2</p></td>
+                <td><Latex inline={true} formula="\\ln \\sqrt{(x^2 + 1)}(x + 1) - \\ln((x - 2)(x + 1)) " /></td>
+              </tr>
+              <tr>
+                <td><p>Reducción de términos</p></td>
+                <td><Latex inline={true} formula="\\ln \\sqrt{\\frac{(x^2 + 1)(x + 1)}{(x - 2)(x + 1)}} " /> </td>
+              </tr>
+              <tr>
+                <td><p>Expresión final</p></td>
+                <td><Latex inline={true} formula="\\ln \\sqrt{\\frac{(x^2 + 1)}{(x - 2)}} " /></td>
+
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Un problema que tienen algunas calculadoras es que no pueden calcular logaritmos de cualquier base. La fórmula siguiente hace ver que los logaritmos con cualquier base se pueden expresar en términos del logaritmo natural.</p>
+
+          <p>Para cualquier número positivo b (b≠1), tenemos <Latex inline={true} formula="\\log_{b} x = \\frac{\\ln x}{\\ln b} " /></p>
+
+          <p>A continuación, te explicamos de donde surge la fórmula anterior. </p>
+
+          <p class="text-center"><Latex inline={true} formula="y = \\log_{b} x" /> </p>
+
+          <p>A partir de la definición, tenemos <Latex inline={true} formula="by= x." /> Si se toman logaritmos naturales de ambos miembros de esta ecuación, obtenemos:</p>
+
+          <p class="text-center"><Latex inline={true} formula="y \\ln(b) = \\ln(x) " /> </p>
+
+          <p class="text-center">Por lo tanto <Latex inline={true} formula="→ y = \\frac{\\ln(x)}{\\ln(b)} " /> </p>
+
+
+          <h3>Actividad 3</h3>
+
+          <p>Es hora de que apliques lo que has aprendido hasta el momento, a continuación, se muestran unas funciones, las cuales debes de simplificar, trata de llevar orden en cada procedimiento que realices.</p>
+
+          <p class="text-center"><Latex class="text-3xl" inline={true} formula="f(x) = \\frac{2^{(3x-5)}}{64^{(x-1)}} - 8 " /> </p>
+
+          <Comprobar>
+            <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/a-solucion.png`
+              caption="Desarrollo de la función"/>
+          </Comprobar>
+
+          <Hr/>
+
+          <p class="text-center"><Latex class="text-3xl" inline={true} formula="f(x) = \\frac{25^{(3x-4)}}{625^{(-2x-3)}} - 3 " /> </p>
+
+          <Comprobar>
+            <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/b-solucion.png`
+              caption="Desarrollo de la función"/>
+          </Comprobar>
+
+          <Hr/>
+
+          <p class="text-center"><Latex class="text-3xl" inline={true} formula="f(x) = \\frac{256^{(x+2)}}{64^{(2x+3)}} + 2 " /> </p>
+
+          <Comprobar>
+            <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/c-solucion.png`
+              caption="Desarrollo de la función"/>
+          </Comprobar>
+
+          <Hr/>
+
+          <p class="text-center"><Latex class="text-3xl" inline={true} formula="f(x) = \\frac{3125^{2x+3}}{125^{3x-1}} + 4 " /> </p>
+
+          <Comprobar>
+            <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/d-solucion.png`
+              caption="Desarrollo de la función"/>
+          </Comprobar>
+        </div>
+    </div>
+
+</Layout>
