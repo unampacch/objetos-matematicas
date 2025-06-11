@@ -3,13 +3,639 @@ import Layout from "@/layouts/Layout.astro";
 import Latex from "@/components/Latex.astro";
 import ObjetoAprendizajePantalla from "@/components/ObjetoAprendizajePantalla.astro";
 import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
+import { BASE_PATH } from '@/config';
+import Comprobar from "@/components/Comprobar.astro";
+import Hr from '@/components/Hr.astro'
 ---
 
 <Layout>
 
     <ObjetoAprendizajePantalla index={5} pantallaIndex={4} asignatura={"matematicas_4"} /> <!-- Cambiar el número de pantallaIndex de manera incremental, 0 es la primera -->
     <div class="objeto-aprendizaje mx-auto animate-fade">
-      Aquí va el contenido 👈
+      <div class="mx-auto max-w-screen-xl">
+        <p>Funciones logarítmicas de la forma: <Latex inline={true} formula="f(x) = \\log x" />,  y <Latex inline={true} formula="f(x) = \\log_a x" /> a partir de reflejar la gráfica de su inversa, en la recta <Latex inline={true} formula="y = x" /></p>
+
+        <p>La función  <Latex inline={true} formula="y= \\log_bx" /> es la función inversa de la función exponencial.</p>
+
+        <h4>Ejemplo 1.</h4>
+
+        <p class=" text-3xl">Función <Latex inline={true} formula="y = 3^x" /></p>
+
+        <p>Su tabla y gráfica son:</p>
+
+        <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/ej1.png`
+              caption="Desarrollo de la función"/>
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Características</th>
+                <th><Latex inline={true} formula="f(x) = \\log_2x" /></th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td>Dominio de la función</td>
+                <td><Latex inline={true} formula="(0, -\\infty)" /></td>
+              </tr>
+              <tr>
+                <td>Rango</td>
+                <td><Latex inline={true} formula="(-\\infty,\\infty) " /></td>
+              </tr>
+              <tr>
+                <td>Las coordenadas del punto donde intercepta al eje x.</td>
+                <td><Latex inline={true} formula="(1,0) " /></td>
+              </tr>
+              <tr>
+                <td><p class="text-xl">Ecuación de la asíntota</p>
+                <p>El eje que es una asíntota de la gráfica.</p>
+              <p>(recuerda que, para obtener la  AV, el argumento se iguala a cero y se despeja la variable)</p>
+              <Latex inline={true} formula="x=0" /> </td>
+                <td><Latex inline={true} formula="(x=0) " />
+                </td>
+              </tr>
+              <tr>
+                <td>¿La función es creciente, constante o decreciente?</td>
+                <td>Creciente</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Cuando no se escribe ninguna base, se supone que el log es base 10.</p>
+
+        <ol class="list-disc list-inside">
+          <li>El logaritmo en base 10:  <Latex inline={true} formula="y = \\log x" /> </li>
+        </ol>
+
+         <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/ej1.1.png`/>
+
+        <p>La gráfica de la función inversa de cualquier función es el reflejo de la gráfica de la función sobre la recta <Latex inline={true} formula="y = x." /> Así, la gráfica de la función logarítmica <Latex inline={true} formula="y=\\log_3x" /> que es la inversa de la función <Latex inline={true} formula="y = 3^x" /></p>
+        <p>Es la reflexión de la gráfica anterior sobre la recta <Latex inline={true} formula="y = x." /></p>
+
+       <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/d-solucion.png`/>
+
+       <h4>Ejemplo 2.</h4>
+
+        <p class=" text-3xl">Dada la función <Latex inline={true} formula="f(x)=-\\log_3(3x-15)" />, se determinó </p>
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <tbody>
+              <tr class="text-left text-sm">
+                <td><p>A) La ecuación de la asíntota</p> 
+                  <p>B) La gráfica de la función, a partir de la AV ponemos los valores para la tabulación:</p></td>
+                <td><p><Latex inline={true} formula="3x - 15 = 0 " /></p>
+                <p><Latex inline={true} formula="x = \\frac{15}{3} = 5," /></p>
+              <p><Latex inline={true} formula="AV: x=5" /></p></td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+
+        <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/ej2.png`
+              />
+
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Características</th>
+                <th><Latex inline={true} formula="f(x) = -\\log_{3}(3x - 15) " /></th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td>Dominio de la función</td>
+                <td><Latex inline={true} formula="(5, -\\infty)" /></td>
+              </tr>
+              <tr>
+                <td>Rango</td>
+                <td><Latex inline={true} formula="(-\\infty,\\infty) " /></td>
+              </tr>
+              <tr>
+                <td>Las coordenadas del punto donde intercepta al eje y.</td>
+                <td>No lo interseca</td>
+              </tr>
+              <tr>
+                <td><p>Ecuación de la asíntota</p>
+                </td>
+                <td><Latex inline={true} formula="3x-15=0" />
+                  <Latex inline={true} formula="x = \\frac{15}{3}= 5, AV: x=5" />
+                  <Latex inline={true} formula="x = 5" />
+                </td>
+              </tr>
+              <tr>
+                <td>Los ceros de la función</td>
+                <td>
+                  <p><Latex inline={true} formula="f(x) = -\\log_{3}(3x - 15) " /></p>
+                  <p><Latex inline={true} formula="0 = -\\log_{3}(3x - 15) " /></p>
+                  <p><Latex inline={true} formula="0 = (-1)\\log_{3}(3x - 15) " /></p>
+                  <p><Latex inline={true} formula="0 = \\log_{3}(3x - 15)^{-1} " /></p>
+                  <p><Latex inline={true} formula="3^{0} = (3x - 15)^{-1} = \\frac{1}{3x - 15} " /></p>
+                 <p><Latex inline={true} formula="1 = \\frac{1}{3x - 15} " /></p> 
+                  <p><Latex inline={true} formula="3x - 15 = 1 " /></p>
+                  <p><Latex inline={true} formula="3x = 1+15,x = \\frac{16}{3} = 5.\\overline{333} " /></p>
+                  <p><Latex inline={true} formula="(5.33, 0)" /></p>
+                </td>
+              </tr>
+              <tr>
+                <td>¿La función es creciente, constante o decreciente?</td>
+                <td>creciente</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <br />
+
+        <h3>Actividad 1</h3>
+
+        <br />
+
+        <ol class="ol-number">
+          <li>De la función <Latex inline={true} formula="f(x) = \log_{2}(x) - 2 " />determinar las características de la función
+          
+          <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Características</th>
+                <th><Latex inline={true} formula="f(x) = \\log_{2}(x) - 2 " /></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td>Dominio de la función</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Rango</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Las coordenadas del punto donde intercepta al eje x (ceros).</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><p>Ecuación de la asíntota</p></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Intersección con el eje y</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>¿La función es creciente, constante o decreciente?</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+
+
+          <li>Completa la tabla 
+             <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>x</th>
+                <th><Latex inline={true} formula="f(x)" /></th>
+                
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr >
+                <td><Latex inline={true} formula="\\frac{1}{5}" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\frac{1}{2}" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\frac{4}{5}" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="1" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="2" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="3" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="4" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="5" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="6" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="7" /></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          </li>
+          <li>Realiza la gráfica correspondiente</li>
+        </ol>
+
+        <Comprobar>
+
+          <ol class="ol-number">
+          <li>
+          <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Características</th>
+                <th><Latex inline={true} formula="f(x) = \\log_{2}(x) - 2 " /></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td>Dominio de la función</td>
+                <td><Latex inline={true} formula="(0, \\infty )" /></td>
+              </tr>
+              <tr>
+                <td>Rango</td>
+                <td><Latex inline={true} formula="(-\\infty, \\infty )" /></td>
+              </tr>
+              <tr>
+                <td>Las coordenadas del punto donde intercepta al eje x (ceros).</td>
+                <td><Latex inline={true} formula="(4,0)" /></td>
+              </tr>
+              <tr>
+                <td><p>Ecuación de la asíntota</p></td>
+                <td><Latex inline={true} formula="x = 0" /></td>
+              </tr>
+              <tr>
+                <td>Intersección con el eje y</td>
+                <td>No ingterseca el eje y</td>
+              </tr>
+              <tr>
+                <td>¿La función es creciente, constante o decreciente?</td>
+                <td>Creciente</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+
+
+          <li>Completa la tabla 
+             <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>x</th>
+                <th><Latex inline={true} formula="f(x)" /></th>
+                
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr >
+                <td><Latex inline={true} formula="\\frac{1}{5}" /></td>
+                <td><Latex inline={true} formula="-4.32" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\frac{1}{2}" /></td>
+                <td><Latex inline={true} formula="-3" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="\\frac{4}{5}" /></td>
+                <td><Latex inline={true} formula="-2.32" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="1" /></td>
+                <td><Latex inline={true} formula="-2" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="2" /></td>
+                <td><Latex inline={true} formula="-1" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="3" /></td>
+                <td><Latex inline={true} formula="-0.41" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="4" /></td>
+                <td><Latex inline={true} formula="0" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="5" /></td>
+                <td><Latex inline={true} formula="0.32" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="6" /></td>
+                <td><Latex inline={true} formula="0.58" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="7" /></td>
+                <td><Latex inline={true} formula="0.8" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          </li>
+          <li>Realiza la gráfica correspondiente
+            <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/img23.webp`
+              />
+          </li>
+        </ol>
+        </Comprobar>
+
+        <Hr/>
+
+        <h3>Actividad 2</h3>
+
+        <br />
+
+        <p>De la función <Latex class="text-3xl" inline={true} formula="f(x) = \\frac{16^{(x-3)}}{64^{(-x-2)}} - 5 " />Determina:</p>
+
+        <ol class="ol-alpha">
+          <li><p>La función simplificada</p></li>
+
+
+          <li> La tabla y gráfica 
+            <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>x</th>
+                <th></th>
+                
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr >
+                <td><Latex inline={true} formula="-5" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="-4" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="-3" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="-2" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="-1" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.1" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.3" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.4" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.6" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.8" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.9" /></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="1" /></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          </li>
+
+
+          <li>
+
+            <p>Características</p>
+            
+            <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Características</th>
+                <th><Latex inline={true} formula="f(x) = \\frac{16^{(x-3)}}{64^{(-x-2)}} - 5 " /></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td>Dominio de la función</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Rango</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Las coordenadas del punto donde intercepta al eje y.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><p>La asíntota horizontal</p></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Los ceros de la función</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>¿La función es creciente, constante o decreciente?</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div></li>
+        </ol>
+
+        <Comprobar>
+
+          <ol class="ol-alpha">
+          <li><p>La función simplificada</p>
+          <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/e-solucion.png`
+              />
+          </li>
+
+
+          <li> La tabla y gráfica 
+            <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>x</th>
+                <th><Latex inline={true} formula="f(x) = 2^{10x} -5" /></th>
+                
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr >
+                <td><Latex inline={true} formula="-5" /></td>
+                <td><Latex inline={true} formula="-5" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="-4" /></td>
+                <td><Latex inline={true} formula="-5" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="-3" /></td>
+                <td><Latex inline={true} formula="-4.9999999" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="-2" /></td>
+                <td><Latex inline={true} formula="-4.999999046" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="-1" /></td>
+                <td><Latex inline={true} formula="-4.999023438" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0" /></td>
+                <td><Latex inline={true} formula="-4" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.1" /></td>
+                <td><Latex inline={true} formula="-3" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.3" /></td>
+                <td><Latex inline={true} formula="3" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.4" /></td>
+                <td><Latex inline={true} formula="11" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.6" /></td>
+                <td><Latex inline={true} formula="59" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.8" /></td>
+                <td><Latex inline={true} formula="251" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="0.9" /></td>
+                <td><Latex inline={true} formula="507" /></td>
+              </tr>
+              <tr>
+                <td><Latex inline={true} formula="1" /></td>
+                <td><Latex inline={true} formula="1019" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+          <ImagenFullCaption
+              src=`${BASE_PATH}/matematicas4/funciones-exp-logaritmicas/img24.webp`
+              />
+          </li>
+
+
+          <li>
+
+            <p>Características</p>
+            
+            <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Características</th>
+                <th><Latex inline={true} formula="f(x) = \\frac{16^{(x-3)}}{64^{(-x-2)}} - 5 " /></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td>Dominio de la función</td>
+                <td><Latex inline={true} formula="(0, \\infty)" /></td>
+              </tr>
+              <tr>
+                <td>Rango</td>
+                <td><Latex inline={true} formula="(-\\infty, \\infty)" /></td>
+              </tr>
+              <tr>
+                <td>Las coordenadas del punto donde intercepta al eje y.</td>
+                <td>
+                  <p><Latex inline={true} formula="f\\left(x\\right)=2^{10x}-5" /></p>
+                  <p><Latex inline={true} formula="10x = 0" /></p>
+                  <p><Latex inline={true} formula="x=\\frac{0}{10}=0" /></p>
+                  <p>Sustituyendo:</p>
+                  <p><Latex inline={true} formula="f\\left(0\\right)=2^{10\\left(0\\right)}-5" /></p>
+                  <p><Latex inline={true} formula="2^0 - 5" /></p>
+                  <p><Latex inline={true} formula="1-5" /></p>
+                  <p><Latex inline={true} formula="-4" /></p>
+                  <p><Latex inline={true} formula="(0,-4)" /></p>
+                </td>
+              </tr>
+              <tr>
+                <td><p>La asíntota horizontal</p></td>
+                <td><Latex inline={true} formula="y = -5" /></td>
+              </tr>
+              <tr>
+                <td>Los ceros de la función</td>
+                <td><p><Latex inline={true} formula="f\\left(x\\right)=2^{10x}-5" /></p>
+                  <p><Latex inline={true} formula="2^{(10x)}-5 = 0" /></p>
+                  <p><Latex inline={true} formula="2^{(10x)} = 5 " /></p>
+                  <p><Latex inline={true} formula="\\log_{2} (5) = 10x " /></p>
+                  <p><Latex inline={true} formula="x = \\frac{\\log_{2}(5)}{10}" /></p>
+                  <p><Latex inline={true} formula="x=\\frac{2.32193}{10}=0.232193" /></p></td>
+              </tr>
+              <tr>
+                <td>¿La función es creciente, constante o decreciente?</td>
+                <td>Creciente</td>
+              </tr>
+            </tbody>
+          </table>
+        </div></li>
+        </ol>
+        </Comprobar>
+
+       
+
+
+
+
+      </div>
     </div>
 
 </Layout>
