@@ -109,9 +109,16 @@ import Lumi from "@/components/Lumi.astro";
 				</div>
 			</BgFluido>
 
+			
+
 			<div class="mx-auto mb-5 max-w-screen-xl">
 
-			<p>Si nosotros conocemos las coordenadas rectangulares x y y podemos obtener las coordenadas polares.</p>
+				<p>Despejamos el ángulo <Latex inline={true} formula="\\theta" /></p>
+
+			<p class="text-center"><Latex class="text-3xl" inline={true} formula="\\theta = tang^{-1} (\\frac {y}{x})" /></p>
+
+
+			<p>Si nosotros conocemos las coordenadas rectangulares <Latex inline={true} formula="x" /> y <Latex inline={true} formula="y" /> podemos obtener las coordenadas polares.</p>
 
 			<p>Pero como podemos conocer las coordenadas de polares a rectangulares, para ello nos podemos apoyar del seno y coseno </p>
 

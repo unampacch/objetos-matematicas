@@ -25,7 +25,8 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
             </div>
             <p>La hipérbola también se define como la sección cónica de una curva abierta de dos ramas obtenida al cortar un cono por un plano perpendicular a la base de este.</p>
             <div class="mx-auto  lg:w-1/2">
-                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/35.PNG" caption=""/> <a href="https://es.wikipedia.org/wiki/Hip%C3%A9rbola" target="_blank" ></a>
+                <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/35.PNG" caption="Por Drini - Trabajo propio, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=4676566"/> 
+                
             </div>
             <BgFluido bg="bg-blue">
                 <h4 class="font-extrabold uppercase !text-stone-50">Definición de hipérbola</h4>
@@ -36,9 +37,11 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
             <ul class="ul-disc">
                 <li>El <b>centro C</b> es el punto donde se intersecan los ejes mayor y menor, representa además el punto medio entre los focos y los vértices.</li>
                 <li>Los <b>vértices V1 y V2</b> son los puntos de intersección del eje focal con la hipérbola, la distancia entre ellos es  <Latex formula="2a" inline={true}/>.</li>
-                <li>Los <b>focos F1 y F2</b> son los puntos ubicados sobre el eje focal dentro de la hipérbola, designando a la distancia entre ellos como <b><Latex formula="2c" inline={true}/></b>.</li>
+                <li>Los <b>focos F1 y F2</b> son los puntos ubicados sobre el eje focal dentro de la hipérbola, designando a la distancia entre ellos como <Latex formula="2c" inline={true}/>, para calcular el valor de <Latex formula="c" inline={true}/>, se utiliza la siguiente fórmula:
+                <p class="text-center"><Latex formula="c = \\sqrt {a^2 + b^2}" inline={true}/></p>
+                </li>
                 <li><b>Eje transversal  <Latex formula="2a" inline={true}/></b> es la distancia entre los vértices “V1” y “V2”.</li>
-                <li><b>Eje conjugado   <Latex formula="2a" inline={true}/></b> es la distancia entre “B1” y “B2” y es perpendicular al eje mayor.</li>
+                <li><b>Eje conjugado   <Latex formula="2b" inline={true}/></b> es la distancia entre “B1” y “B2” y es perpendicular al eje mayor.</li>
                 <li><b>Lado Recto L.R.</b> son los segmentos que pasan por cada foco y que son perpendiculares al eje transversal.</li>
                 <li><b>Distancia Focal <Latex formula="2c" inline={true}/></b> es la distancia que existe entre los focos.</li>
                 <li><b>Excentricidad  <Latex formula="e" inline={true}/></b> es la relación que existe entre la distancia focal <Latex formula="(2c)" inline={true}/> y la longitud del eje mayor <Latex formula="(2a)" inline={true}/>.</li>
@@ -113,7 +116,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
             <ul class="ul-disc">  
                 <li>Vértices: <Latex formula="V1(0,6)" inline={true}/> y <Latex formula="V2(0,-6)" inline={true}/></li>
                 <li>Focos: <Latex formula="F1(0,\\sqrt{52})" inline={true}/> y <Latex formula="F2(0,-\\sqrt{52})" inline={true}/></li>
-                <li>Extremos del eje conjugado: <Latex formula="B1(b,0)" inline={true}/> y <Latex formula="B2(-b,0)" inline={true}/></li>
+                <li>Extremos del eje conjugado: <Latex formula="B1(b,40)" inline={true}/> y <Latex formula="B2(-4,0)" inline={true}/></li>
                 <li>Asíntotas: <Latex formula="l1:y=\\frac{6}{4}x\\hspace{1cm}l2:y=-\\frac{6}{4}x" inline={true}/></li>
                 <li>Lado Recto: <Latex formula="LR=\\left|\\frac{2b^2}{a}\\right|=\\left|\\frac{2*16}{6}\\right|=\\left|\\frac{32}{6}\\right|=5.3" inline={true}/></li>
                 <li>Excentricidad: <Latex formula="e=\\frac{\\sqrt{52}}{6}\\hspace{1cm}(e>1)" inline={true}/></li>
