@@ -47,7 +47,7 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
             <p>Excentricidad <Latex formula="e" inline={true}/> es la relación que existe entre la distancia focal (2c) y la longitud del eje mayor (2a).</p>
         </BgFluido>
         <div class="mx-auto ">
-            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/26.png" caption="Cono"/>
+            <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/26.png" caption="Elementos de la elipse"/>
         </div>
         <h4>Ecuación y elementos de la elipse con centro en el origen</h4>
         <p><strong><u>Ecuación de la elipse horizontal</u></strong></p>
@@ -67,11 +67,11 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
             <li>Excentricidad: <Latex formula="e=\\frac{c}{a}" inline={true}/></li>
         </ul>
         <h4>Excentricidad de la elipse</h4>
-        <p>En una elipse, la razón que existe entre c y a que expresado como cociente es <Latex formula="ca" inline={true}/>, se llama excentricidad de la elipse. Se determina con la siguiente expresión:</p>
+        <p>La excentricidad de una elipse es un parámetro que indica cuánto se aparta la forma de la elipse de ser un círculo perfecto. Matemáticamente, se define como el cociente entre la distancia focal (<Latex formula="c" inline={true}/>) y la longitud del semieje mayor (<Latex formula="a" inline={true}/>) </p>
         <div class="my-5 text-center text-xl">
             <Latex formula="e=\\frac{c}{a}"/>
         </div>
-        <p>Si se desconoce el valor de <Latex formula="c" inline={true}/>, se puede calcular con base en el triángulo <Latex formula="F1\\;C\\;B1" inline={true}/>, aplicando el teorema de Pitágoras.</p>
+        <p>Si se desconoce el valor de <Latex formula="c" inline={true}/>, se puede calcular con base en el triángulo <Latex formula="F2\\;C\\;B1" inline={true}/>, aplicando el teorema de Pitágoras.</p>
         <div class="mx-auto ">
             <ImagenFullCaption src="/matematicas3/ecuaciones-conicas/28.png" caption="Excentricidad de la elipse"/>
         </div>
@@ -85,10 +85,10 @@ import ImagenFullCaption from "@/components/ImagenFullCaption.astro";
         <div class="my-5 text-center text-xl">
             <Latex formula="c=\\sqrt{a^2-b^2}"/>
         </div>
-        <p>La excentricidad indica la forma de la elipse cuyo valor varía de <Latex formula="0<e<1" inline={true}/>.</p>
+        <p></p>
         <ul class="ul-disc">
-            <li>Cuando e se aproxima a cero la curva se asemeja a una circunferencia.</li>
-            <li>Cuando e se aproxima a 1 la elipse se alarga y se hace angosta.</li>
+            <li>El rango de la excentricidad va de 0 a 1.</li>
+            <li>Cuando <Latex formula="e"/> se aproxima a cero, la curva adquiere la forma de una circunferencia, mientras que al acercarse a 1, la elipse se alarga y se estrecha. </li>
         </ul>
         <p><strong><u>Elipse vertical</u></strong></p>
         <p>El eje mayor coincide con el eje <Latex formula="Y" inline={true}/>.</p>
