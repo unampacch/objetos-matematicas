@@ -6,13 +6,9 @@ import RutaInicio from '@/components/RutaInicio..astro';
 import ObjetosAleatorios from '@/components/ObjetosAleatorios.tsx';
 ---
 
-<LayoutIndex
-	title="SÚMATE - Recursos de aprendizaje"
-	description="Los objetos de matemáticas son recursos para reforzar tus conocimientos. Aquí encontrarás ejercicios, explicaciones y ejemplos para aprender matemáticas.">
-
-		<Hero />
-		<RutaInicio />
-    <ObjetosAleatorios client:load />
-		<Prefooter />
-
+<LayoutIndex>
+  <Hero />
+  <RutaInicio />
+  <ObjetosAleatorios client:load />
+  <Prefooter />
 </LayoutIndex>
