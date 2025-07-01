@@ -247,41 +247,41 @@
 					]
 				},
 				{
-					"titulo": "Ecuación del círculo, elipse, parábola e hipérbola",
-					"slug": "/asignaturas/matematicas-3/ecuacion-circulo/inicio",
+					"titulo": "Ecuación de la circunferencia, elipse, parábola e hipérbola",
+					"slug": "/asignaturas/matematicas-3/ecuacion-circunferencia/inicio",
 					"portada": "/mate3-portada-5.webp",
-					"descripcion": "En esta sección se repasarán algunos temas de la circunferencia, conocerás los elementos que caracterizan a la circunferencia, como son el radio y las coordenadas del centro. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él.",
-					"resumen": "Ecuación del círculo, elipse, parábola e hipérbola y su aplicación en la resolución de problemas matemáticos.",
+					"descripcion": "Este material aborda los conceptos fundamentales de la ecuación de la circunferencia, elipse, parábola e hipérbola junto con su aplicación en la resolución de problemas matemáticos. We repasarán algunos temas de la circunferencia, conocerás los elementos que caracterizan a la circunferencia, como son el radio y las coordenadas del centro. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él.",
+					"resumen": "Ecuación de la circunferencia, elipse, parábola e hipérbola.",
 					"pantallas": [
 						{
 							"titulo": "La parabola y su ecuación cartesiana",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/parabola",
-							"descripcion": ""
+							"slug": "/asignaturas/matematicas-3/ecuacion-circunferencia/parabola",
+							"descripcion": "En esta sección se repasará el tema de la parábola, donde conocerás los elementos que la caracterizan, como son: el vértice, el foco, la directriz y sus asíntotas. Además, se revisará la ecuación ordinaria con vértice en el origen."
 						},
 						{
 							"titulo": "Ecuación ordinaria de la parábola con vértice en cualquier punto del plano cartesiano",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/parabola2",
-							"descripcion": ""
+							"slug": "/asignaturas/matematicas-3/ecuacion-circunferencia/parabola2",
+							"descripcion": "En esta sección se repasará el tema de la parábola, donde conocerás los elementos que la caracterizan, como son: el vértice, el foco, la directriz y sus asíntotas. Además, se revisará la ecuación ordinaria con vértice en cualquier punto del plano cartesiano."
 						},
 						{
 							"titulo": "Circunferencia, la elipse y sus ecuaciones cartesianas",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/elipse",
-							"descripcion": ""
+							"slug": "/asignaturas/matematicas-3/ecuacion-circunferencia/elipse",
+							"descripcion": "En esta sección se repasará el tema de la elipse, donde conocerás los elementos que la caracterizan, como son: los vértices, los focos, el centro, los lados rectos y sus asíntotas. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él."
 						},
 						{
 							"titulo": "Elementos y ecuación de una elipse con centro en (𝒉,𝒌)",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/elipse2",
-							"descripcion": ""
+							"slug": "/asignaturas/matematicas-3/ecuacion-circunferencia/elipse2",
+							"descripcion": "En esta sección se repasará el tema de la elipse, donde conocerás los elementos que la caracterizan, como son: los vértices, los focos, el centro, los lados rectos y sus asíntotas. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él."
 						},
 						{
 							"titulo": "Hipérbola",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/hiperbola",
+							"slug": "/asignaturas/matematicas-3/ecuacion-circunferencia/hiperbola",
 							"descripcion": "En esta sección se repasará el tema de la hipérbola, donde conocerás los elementos que la caracterizan, como son: los vértices, los focos, el centro, los lados rectos y sus asíntotas. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él."
 						},
 						{
 							"titulo": "Elementos y ecuación de una hipérbola con centro en (𝒉,𝒌)",
-							"slug": "/asignaturas/matematicas-3/ecuacion-circulo/hiperbola2",
-							"descripcion": ""
+							"slug": "/asignaturas/matematicas-3/ecuacion-circunferencia/hiperbola2",
+							"descripcion": "En esta sección se repasará el tema de la hipérbola, donde conocerás los elementos que la caracterizan, como son: los vértices, los focos, el centro, los lados rectos y sus asíntotas. Además, se revisará la ecuación ordinaria con centro en el origen y fuera de él."
 						}
 					]
 				}
